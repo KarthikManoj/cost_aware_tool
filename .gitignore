@@ -1,0 +1,30 @@
+__pycache__/
+.venv/
+*.pyc
+.DS_Store
+data/synthetic/*
+data/models/*
+data/performance/*.tmp
+spark-warehouse/
+.streamlit/secrets.toml
+
+# AWS / secrets
+.env
+*.pem
+.aws/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Data / large files
+*.csv
+*.parquet
+data/
+*.log
+
+# OS
+.DS_Store
+EOF

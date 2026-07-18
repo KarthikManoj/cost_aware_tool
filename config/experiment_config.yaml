@@ -1,0 +1,23 @@
+aws:
+  region: ap-south-1
+  s3_bucket: cost-aware-spark-research-manoj-2026
+  s3_prefix: spark-workloads
+  emr_release_label: emr-6.15.0
+  log_uri: s3://cost-aware-spark-research-manoj-2026/emr-logs/
+  spark_py_files_uri: s3://cost-aware-spark-research-manoj-2026/spark-workloads/packages/spark_jobs.zip
+
+datasets:
+  sizes_mb: [100, 500, 1024, 5120]
+  format: csv
+
+workloads:
+  - cpu-heavy
+  - memory-heavy
+  - io-heavy
+
+cluster:
+  applications: [Spark]
+  ec2_key_name: ""
+  subnet_id: subnet-0790d25ecc4deae64
+  service_role: EMR_DefaultRole
+  job_flow_role: EMR_EC2_DefaultRole
