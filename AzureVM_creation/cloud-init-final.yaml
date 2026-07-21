@@ -1,0 +1,70 @@
+#cloud-config
+package_update: true
+package_upgrade: false
+
+packages:
+  - openjdk-17-jdk-headless
+  - python3-pip
+  - wget
+  - sysstat
+  - curl
+  - sshpass
+
+write_files:
+  - path: /opt/benchmark/download_jobs.py
+    permissions: '0644'
+    content: |
+      from azure.storage.blob import BlobServiceClient
+      import os
+
+      conn_str = (
+          "DefaultEndpointsProtocol=https;"
+          "AccountName=newsares;"
+          "AccountKey=7grclRPnHIDxOgZ6FTCfi+kxkxeVn6fAnCF6hL8cQ+MXtBJF95FMxGQZAuPwgS/LaG9vIiCgEOeS+AStfuAOWw==;"
+          "EndpointSuffix=core.windows.net"
+      )
+      client = BlobServiceClient.from_connection_string(conn_str)
+      container = client.get_container_client("scripts")
+      os.makedirs("/opt/benchmark/spark_jobs", exist_ok=True)
+      for blob in container.list_blobs():
+          local_path = "/opt/benchmark/spark_jobs/" + blob.name
+          with open(local_path, "wb") as f:
+              f.write(container.download_blob(blob.name).readall())
+          print("Downloaded", blob.name)
+
+  - path: /opt/benchmark/install.sh
+    permissions: '0755'
+    content: |
+      #!/bin/bash
+      set -e
+      SPARK_VERSION=3.5.1
+      HADOOP_VERSION=3
+
+      mkdir -p /opt/benchmark/{datasets,jobs,results}
+      cd /opt/spark_install 2>/dev/null || mkdir -p /opt/spark_install && cd /opt/spark_install
+      wget -q https://archive.apache.org/dist/spark/spark-${SPARK_VERSION}/spark-${SPARK_VERSION}-bin-hadoop${HADOOP_VERSION}.tgz
+      tar -xzf spark-${SPARK_VERSION}-bin-hadoop${HADOOP_VERSION}.tgz
+      mv spark-${SPARK_VERSION}-bin-hadoop${HADOOP_VERSION} /opt/spark
+
+      cd /opt/spark/jars
+      wget -q https://repo1.maven.org/maven2/org/apache/hadoop/hadoop-azure/3.3.6/hadoop-azure-3.3.6.jar
+      wget -q https://repo1.maven.org/maven2/com/microsoft/azure/azure-storage/8.6.6/azure-storage-8.6.6.jar
+      wget -q https://repo1.maven.org/maven2/org/wildfly/openssl/wildfly-openssl/1.1.3.Final/wildfly-openssl-1.1.3.Final.jar
+
+      cat >> /etc/profile.d/spark.sh << 'EOF'
+      export JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64
+      export SPARK_HOME=/opt/spark
+      export PATH=$PATH:$SPARK_HOME/bin:$SPARK_HOME/sbin
+      EOF
+      source /etc/profile.d/spark.sh
+
+      pip3 install --quiet pandas numpy azure-storage-blob requests
+
+      # Pull job scripts (small, fine to bake into every VM at boot).
+      # Uses the account key directly via the Python SDK - no SAS token needed.
+      python3 /opt/benchmark/download_jobs.py
+
+      touch /opt/benchmark/INSTALL_DONE
+
+runcmd:
+  - bash /opt/benchmark/install.sh
