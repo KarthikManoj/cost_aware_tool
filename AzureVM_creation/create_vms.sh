@@ -28,8 +28,9 @@ fi
 read -r vcpu ram <<< "$(vm_specs "$size")"
 if [ "$(fits_quota "$region" "$size" "$nodes")" == "no" ]; then
   needed=$((vcpu * nodes))
-  cap="${REGION_VCPU_CAP[$region]:-unknown}"
-  echo "ERROR: needs ${needed} vCPUs, region cap for $region is ${cap}. Pick a smaller size/node count."
+  family="$(vm_family "$size")"
+  cap="${REGION_FAMILY_VCPU_CAP[${region}:${family}]:-unknown}"
+  echo "ERROR: needs ${needed} vCPUs, ${family} family cap for $region is ${cap}. Pick a smaller size/node count."
   exit 1
 fi
 

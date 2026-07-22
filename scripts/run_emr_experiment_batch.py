@@ -90,7 +90,7 @@ def build_experiment(bucket: str, prefix: str, dataset_size_mb: float, workload:
 def main() -> None:
     parser = argparse.ArgumentParser(description="Run a sequential EMR experiment batch.")
     parser.add_argument("--config", default="config/experiment_config.yaml")
-    parser.add_argument("--dataset-sizes-mb", default="100,500")
+    parser.add_argument("--dataset-sizes-mb", default="100,500,1024,2048,3072,5120")
     parser.add_argument("--workloads", default="cpu-heavy,memory-heavy,io-heavy")
     parser.add_argument("--instance-type", default="m5.xlarge")
     parser.add_argument("--nodes", type=int, default=2)

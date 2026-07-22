@@ -27,9 +27,11 @@ run_combo() {
 
   if [ "$(fits_quota "$region" "$size" "$nodes")" == "no" ]; then
     local needed=$((vcpu * nodes))
-    local cap="${REGION_VCPU_CAP[$region]}"
-    echo "SKIP: needs ${needed} vCPUs, region cap is ${cap}."
-    echo "$region,$size,$nodes,SKIPPED,needs ${needed} vCPU > cap ${cap}" >> "$SUMMARY_FILE"
+    local family
+    family="$(vm_family "$size")"
+    local cap="${REGION_FAMILY_VCPU_CAP[${region}:${family}]:-0}"
+    echo "SKIP: needs ${needed} vCPUs, ${family} family cap in ${region} is ${cap}."
+    echo "$region,$size,$nodes,SKIPPED,needs ${needed} vCPU > ${family} cap ${cap}" >> "$SUMMARY_FILE"
     return
   fi
 

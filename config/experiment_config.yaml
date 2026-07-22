@@ -7,7 +7,7 @@ aws:
   spark_py_files_uri: s3://cost-aware-spark-research-manoj-2026/spark-workloads/packages/spark_jobs.zip
 
 datasets:
-  sizes_mb: [100, 500, 1024, 5120]
+  sizes_mb: [100, 500, 1024, 2048, 3072, 5120]
   format: csv
 
 workloads:
@@ -17,7 +17,7 @@ workloads:
 
 cluster:
   applications: [Spark]
-  ec2_key_name: ""
+  ec2_key_name: "cost-aware-emr-key"
   subnet_id: subnet-0790d25ecc4deae64
   service_role: EMR_DefaultRole
   job_flow_role: EMR_EC2_DefaultRole

@@ -130,11 +130,24 @@ def load_yaml(path: str) -> dict[str, Any]:
         return yaml.safe_load(handle)
 
 
-def write_temp_regional_config(base_config_path: str, region: str, subnet_id: str | None) -> str:
+def write_temp_regional_config(
+    base_config_path: str,
+    region: str,
+    subnet_id: str | None,
+    ec2_key_name: str | None,
+) -> str:
     config = load_yaml(base_config_path)
     config["aws"]["region"] = region
     if subnet_id is not None:
-        config["cluster"]["subnet_id"] = subnet_id
+        if subnet_id:
+            config["cluster"]["subnet_id"] = subnet_id
+        else:
+            config["cluster"].pop("subnet_id", None)
+    if ec2_key_name is not None:
+        if ec2_key_name:
+            config["cluster"]["ec2_key_name"] = ec2_key_name
+        else:
+            config["cluster"].pop("ec2_key_name", None)
     temp = tempfile.NamedTemporaryFile("w", suffix=".yaml", delete=False, encoding="utf-8")
     with temp:
         yaml.safe_dump(config, temp, sort_keys=False)
@@ -179,6 +192,7 @@ def manual_command(args: argparse.Namespace, dataset_size_mb: float, workload: s
         f"--workloads {workload} "
         f"--instance-types {instance_type} "
         f"--nodes-list {nodes} "
+        f"--ec2-key-name {args.ec2_key_name or ''} "
         f"--pricing-model {args.pricing_model} "
         f"--price-path {args.price_path} "
         f"--step-timeout-minutes {args.step_timeout_minutes:g} "
@@ -347,6 +361,10 @@ def run_one(
 
     if step_state != "COMPLETED":
         reason = failure_reason_from_step(step)
+        cluster_reason = cluster.get("Status", {}).get("StateChangeReason", {})
+        error_details = cluster.get("Status", {}).get("ErrorDetails", [])
+        if cluster_reason or error_details:
+            reason = f"{reason} | cluster_reason={cluster_reason} | error_details={error_details}"
         print(f"STEP FAILED: {cluster_id} {step_id} ended as {step_state}: {reason}")
         record_failure(
             args,
@@ -401,7 +419,8 @@ def main() -> None:
     parser.add_argument("--config", default="config/experiment_config.yaml")
     parser.add_argument("--region", default="ap-southeast-1")
     parser.add_argument("--subnet-id", default=None, help="Subnet in the target region. Use empty string to omit subnet.")
-    parser.add_argument("--dataset-sizes-mb", default="10,100,500,1024,5120")
+    parser.add_argument("--ec2-key-name", default=None, help="EC2 key pair in the target region. Use empty string to omit SSH key.")
+    parser.add_argument("--dataset-sizes-mb", default="10,100,500,1024,2048,3072,5120")
     parser.add_argument("--workloads", default="cpu-heavy,memory-heavy,io-heavy")
     parser.add_argument("--instance-types", default="m5.xlarge")
     parser.add_argument("--nodes-list", default="4")
@@ -419,10 +438,9 @@ def main() -> None:
     bucket = base_config["aws"]["s3_bucket"]
     prefix = base_config["aws"]["s3_prefix"].strip("/")
     subnet_id = args.subnet_id
-    if subnet_id == "":
-        subnet_id = None
+    ec2_key_name = args.ec2_key_name
 
-    config_path = write_temp_regional_config(args.config, args.region, subnet_id)
+    config_path = write_temp_regional_config(args.config, args.region, subnet_id, ec2_key_name)
     emr = boto3.client("emr", region_name=args.region)
 
     for dataset_size_mb in parse_sizes(args.dataset_sizes_mb):

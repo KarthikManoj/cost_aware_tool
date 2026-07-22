@@ -44,13 +44,30 @@ max_node_count() {
   echo "$max"
 }
 
-# Returns "yes" if node_count VMs of this size fit under the region's total
-# vCPU cap, "no" otherwise. Prevents submitting combos that will just fail.
+# Azure quota family name for a VM size - used to look up
+# REGION_FAMILY_VCPU_CAP, since quota is enforced per (region, family),
+# not per size or per a single regional total.
+vm_family() {
+  case "$1" in
+    Standard_D2s_v3|Standard_D4s_v3) echo "DSv3" ;;
+    Standard_D2as_v4|Standard_D4as_v4) echo "DASv4" ;;
+    Standard_D2ds_v4|Standard_D4ds_v4) echo "DDSv4" ;;
+    Standard_D2s_v5|Standard_D4s_v5) echo "DSv5" ;;
+    Standard_D2as_v5|Standard_D4as_v5) echo "DASv5" ;;
+    *) echo "unknown" ;;
+  esac
+}
+
+# Returns "yes" if node_count VMs of this size fit under the region's
+# per-family vCPU cap, "no" otherwise. Prevents submitting combos that will
+# just fail against Azure's real (region, family) quota.
 fits_quota() {
   local region="$1" size="$2" nodes="$3"
   read -r vcpu ram <<< "$(vm_specs "$size")"
   local needed=$((vcpu * nodes))
-  local cap="${REGION_VCPU_CAP[$region]}"
+  local family
+  family="$(vm_family "$size")"
+  local cap="${REGION_FAMILY_VCPU_CAP[${region}:${family}]:-0}"
   if [ "$needed" -gt "$cap" ]; then
     echo "no"
   else
