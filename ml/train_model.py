@@ -113,8 +113,8 @@ def compare_models(input_path: str, output_dir: str) -> dict[str, dict[str, dict
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="Train runtime and cost prediction model.")
-    parser.add_argument("--input", default="data/performance/performance_dataset.csv")
-    parser.add_argument("--model-output", default="data/models/performance_model.joblib")
+    parser.add_argument("--input", default="data/models/cloud_carbon_model_dataset.csv")
+    parser.add_argument("--model-output", default="data/models/cloud_carbon_performance_model.joblib")
     parser.add_argument("--metrics-output", default="data/models/model_metrics.json")
     parser.add_argument("--model-type", choices=["random_forest", "linear"], default="random_forest")
     parser.add_argument("--compare-output-dir", default=None)

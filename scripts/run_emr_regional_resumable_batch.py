@@ -430,7 +430,7 @@ def main() -> None:
     parser.add_argument("--price-path", default="cloud_prices/aws_prices.csv")
     parser.add_argument("--output", default="data/performance/performance_dataset.csv")
     parser.add_argument("--failed-output", default="data/performance/failed_emr_experiments.csv")
-    parser.add_argument("--skip-completed", action="store_true", default=True)
+    parser.add_argument("--skip-completed", action=argparse.BooleanOptionalAction, default=True)
     parser.add_argument("--submit", action="store_true", help="Create billable EMR clusters. Default is dry-run.")
     args = parser.parse_args()
 

@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # Run after run_sequential_matrix.sh finishes (or was interrupted) to build
 # the pass/fail/missing lists. Safe to run multiple times.
 set -e

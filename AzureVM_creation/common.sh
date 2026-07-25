@@ -80,7 +80,7 @@ wait_for_install() {
   local ip="$1"
   local tries=0
   while [ "$tries" -lt "$INSTALL_POLL_MAX_TRIES" ]; do
-    if sshpass -p "$ADMIN_PASSWORD" ssh -o StrictHostKeyChecking=no -o ConnectTimeout=5 \
+    if sshpass -p "$ADMIN_PASSWORD" ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -o ConnectTimeout=5 \
         "$ADMIN_USERNAME@$ip" "test -f /opt/benchmark/INSTALL_DONE" 2>/dev/null; then
       echo "  install finished on $ip"
       return 0
@@ -92,7 +92,7 @@ wait_for_install() {
 
   echo "  install marker was not found on $ip"
   echo "  last cloud-init status/log lines from $ip:"
-  sshpass -p "$ADMIN_PASSWORD" ssh -o StrictHostKeyChecking=no -o ConnectTimeout=10 \
+  sshpass -p "$ADMIN_PASSWORD" ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -o ConnectTimeout=10 \
       "$ADMIN_USERNAME@$ip" \
       "cloud-init status --long || true; sudo tail -80 /var/log/cloud-init-output.log || true" || true
   return 1
@@ -120,7 +120,7 @@ kill_stale_benchmark_processes() {
   # remote command line literally contains the search pattern, so a plain
   # 'run_benchmark.py' pattern matches itself and kills the SSH session
   # before it finishes (silently, as a 255 SSH-level failure).
-  sshpass -p "$ADMIN_PASSWORD" ssh -o StrictHostKeyChecking=no -o ConnectTimeout=10 \
+  sshpass -p "$ADMIN_PASSWORD" ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -o ConnectTimeout=10 \
     "$ADMIN_USERNAME@$ip" \
     "pkill -9 -f '[r]un_benchmark.py' 2>/dev/null; pkill -9 -f 'org.apache.spark.deploy.[S]parkSubmit' 2>/dev/null; true"
 }
@@ -128,5 +128,5 @@ kill_stale_benchmark_processes() {
 # Ensures the benchmark user can write datasets, outputs, logs, and results.
 repair_benchmark_permissions() {
   local ip="$1"
-  sshpass -p "$ADMIN_PASSWORD" ssh -o StrictHostKeyChecking=no -o ConnectTimeout=10       "$ADMIN_USERNAME@$ip"       "sudo mkdir -p /opt/benchmark/datasets /opt/benchmark/output /opt/benchmark/results /opt/benchmark/spark_jobs && sudo chown -R $ADMIN_USERNAME:$ADMIN_USERNAME /opt/benchmark && sudo chmod -R u+rwX /opt/benchmark"
+  sshpass -p "$ADMIN_PASSWORD" ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -o ConnectTimeout=10       "$ADMIN_USERNAME@$ip"       "sudo mkdir -p /opt/benchmark/datasets /opt/benchmark/output /opt/benchmark/results /opt/benchmark/spark_jobs && sudo chown -R $ADMIN_USERNAME:$ADMIN_USERNAME /opt/benchmark && sudo chmod -R u+rwX /opt/benchmark"
 }

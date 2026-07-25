@@ -83,7 +83,7 @@ def ensure_region_overrides_build_valid_requests(args: argparse.Namespace) -> No
             "--region",
             region,
             "--dataset-sizes-mb",
-            "10",
+            "9999",
             "--workloads",
             "cpu-heavy",
             "--instance-types",

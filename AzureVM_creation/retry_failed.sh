@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # Run after ./collect_results.sh has produced combos_to_retry.csv.
 # Recreates VMs only for combos with gaps, and only redoes the specific
 # missing/failed (dataset, workload, run_number) tuples - not the whole combo.
@@ -28,9 +28,10 @@ fi
 SUMMARY_FILE="retry_run_summary.csv"
 echo "region,vm_size,nodes,status,note" > "$SUMMARY_FILE"
 
-tail -n +2 combos_to_retry.csv | while IFS=',' read -r region size nodes retry_list; do
+while IFS=',' read -r -u 3 region size nodes retry_list; do
+  retry_list="${retry_list%$'\r'}"
   run_combo "$region" "$size" "$nodes" "$retry_list"
-done
+done 3< <(tail -n +2 combos_to_retry.csv)
 
 echo ""
 echo "Retry pass complete. See $SUMMARY_FILE."

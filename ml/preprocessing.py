@@ -6,10 +6,25 @@ from sklearn.compose import ColumnTransformer
 from sklearn.preprocessing import OneHotEncoder, StandardScaler
 
 
-FEATURE_COLUMNS = ["dataset_size_mb", "workload_type", "instance_type", "nodes"]
+FEATURE_COLUMNS = [
+    "cloud",
+    "region",
+    "electricity_zone",
+    "dataset_size_mb",
+    "workload_type",
+    "machine_type",
+    "nodes",
+    "carbon_intensity_mean",
+    "renewable_percentage_mean",
+]
 TARGET_COLUMNS = ["runtime_minutes", "cost_usd"]
-CATEGORICAL_COLUMNS = ["workload_type", "instance_type"]
-NUMERIC_COLUMNS = ["dataset_size_mb", "nodes"]
+CATEGORICAL_COLUMNS = ["cloud", "region", "electricity_zone", "workload_type", "machine_type"]
+NUMERIC_COLUMNS = [
+    "dataset_size_mb",
+    "nodes",
+    "carbon_intensity_mean",
+    "renewable_percentage_mean",
+]
 
 
 def build_preprocessor() -> ColumnTransformer:

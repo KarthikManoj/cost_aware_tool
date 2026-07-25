@@ -130,9 +130,9 @@ def replicate_to_workers(local_path, worker_ips, admin_user, admin_password):
     for ip in worker_ips:
         print(f"Replicating dataset to worker {ip} (excluded from timer)...")
         cmd = (
-            f"sshpass -p {shlex.quote(admin_password)} ssh -o StrictHostKeyChecking=no "
+            f"sshpass -p {shlex.quote(admin_password)} ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null "
             f"{admin_user}@{ip} 'mkdir -p {remote_dir}' && "
-            f"sshpass -p {shlex.quote(admin_password)} scp -o StrictHostKeyChecking=no "
+            f"sshpass -p {shlex.quote(admin_password)} scp -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null "
             f"{local_path} {admin_user}@{ip}:{remote_dir}"
         )
         subprocess.run(cmd, shell=True, check=True)
@@ -145,7 +145,7 @@ def cleanup_dataset(local_path, worker_ips, admin_user, admin_password):
     fname = os.path.basename(local_path)
     for ip in worker_ips:
         cmd = (
-            f"sshpass -p {shlex.quote(admin_password)} ssh -o StrictHostKeyChecking=no "
+            f"sshpass -p {shlex.quote(admin_password)} ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null "
             f"{admin_user}@{ip} 'rm -f /opt/benchmark/datasets/{fname}'"
         )
         subprocess.run(cmd, shell=True)
@@ -212,7 +212,11 @@ def upload_results(blob_client, container, local_csv):
     # entirely when launched via nohup over a non-interactive SSH command,
     # which silently collapsed every such run onto the same overwritten
     # "results_unknown.csv" blob). socket.gethostname() asks the OS directly.
-    blob_name = f"results/results_{socket.gethostname()}.csv"
+    # The timestamp suffix is required too: a retry recreates a VM with the
+    # SAME hostname and starts from an empty local results.csv, so without
+    # it a retry's (smaller, partial) upload would overwrite - not add to -
+    # the original full-matrix results already sitting at that blob path.
+    blob_name = f"results/results_{socket.gethostname()}_{int(time.time())}.csv"
     with open(local_csv, "rb") as f:
         container_client.upload_blob(name=blob_name, data=f, overwrite=True)
     print(f"Uploaded results to {blob_name}")

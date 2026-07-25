@@ -32,8 +32,8 @@ fi
 read -r vcpu ram <<< "$(vm_specs "$size")"
 master_ip="${VM_IPS[0]}"
 worker_ips=("${VM_IPS[@]:1}")
-ssh_base=(sshpass -p "$ADMIN_PASSWORD" ssh -o StrictHostKeyChecking=no)
-scp_base=(sshpass -p "$ADMIN_PASSWORD" scp -o StrictHostKeyChecking=no)
+ssh_base=(sshpass -p "$ADMIN_PASSWORD" ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null)
+scp_base=(sshpass -p "$ADMIN_PASSWORD" scp -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null)
 
 echo "Killing any stale benchmark processes from a prior run on these VMs..."
 for ip in "${VM_IPS[@]}"; do

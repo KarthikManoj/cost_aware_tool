@@ -10,8 +10,36 @@
 #   Dataset_Size_MB,Workload,Run_Number - if given, only those specific
 #   runs are executed instead of the full dataset x workload x repetition set.
 
+
+# `az vm delete` only deletes the VM resource itself - the NIC, public IP,
+# and OS disk it was created with are left behind as orphans. Over a long
+# multi-combo run these accumulate silently until they hit a subscription-
+# wide quota (e.g. 20 PublicIpAddress per subscription) and start blocking
+# EVERY subsequent VM create, regardless of region or vCPU family. Always
+# delete the VM through this wrapper instead of calling `az vm delete` bare.
+delete_vm_full() {
+  local name="$1"
+  local os_disk_id
+  os_disk_id=$(az vm show --resource-group "$RESOURCE_GROUP" --name "$name" --query "storageProfile.osDisk.managedDisk.id" -o tsv 2>/dev/null)
+  az vm delete --resource-group "$RESOURCE_GROUP" --name "$name" --yes --output none
+  az network nic delete --resource-group "$RESOURCE_GROUP" --name "${name}VMNic" --output none 2>/dev/null
+  az network public-ip delete --resource-group "$RESOURCE_GROUP" --name "${name}PublicIP" --output none 2>/dev/null
+  if [ -n "$os_disk_id" ]; then
+    az disk delete --ids "$os_disk_id" --yes --output none 2>/dev/null
+  fi
+}
+
 run_combo() {
   local region="$1" size="$2" nodes="$3" retry_list="${4:-}"
+  # Callers run with `set -e`. A single combo hitting a transient Azure
+  # error (quota, throttling, validation) must never abort the whole matrix
+  # run and abandon whatever VMs it already created - each combo is
+  # independent, so errexit is disabled for the duration of this function
+  # and every risky step is checked explicitly instead. `trap ... RETURN`
+  # guarantees it's restored no matter which of the function's several
+  # `return` points fires.
+  set +e
+  trap 'set -e' RETURN
   read -r vcpu ram <<< "$(vm_specs "$size")"
 
   echo ""
@@ -37,6 +65,8 @@ run_combo() {
 
   VM_NAMES=()
   VM_IPS=()
+  local created_names=()
+  local create_failed=false
   for idx in $(seq 1 "$nodes"); do
     name="bench-$(region_abbr "$region")-$(size_short "$size")-n${nodes}-${idx}"
     VM_NAMES+=("$name")
@@ -54,15 +84,42 @@ run_combo() {
       --public-ip-sku Standard \
       --no-wait \
       --output none
+    if [ $? -ne 0 ]; then
+      echo "ERROR: az vm create request failed for $name"
+      create_failed=true
+    else
+      created_names+=("$name")
+    fi
   done
 
-  for name in "${VM_NAMES[@]}"; do
+  # Only wait on VMs whose create request actually succeeded - a name that
+  # failed above was never accepted by Azure, so no resource exists and
+  # `az vm wait --created` would poll forever with no timeout. Waiting on
+  # it wedges the whole matrix run indefinitely on a resource that can
+  # never appear (e.g. SkuNotAvailable in this region/zone right now).
+  local wait_failed=false
+  for name in "${created_names[@]}"; do
     echo "Waiting for $name to finish provisioning..."
-    az vm wait --resource-group "$RESOURCE_GROUP" --name "$name" --created --output none
+    az vm wait --resource-group "$RESOURCE_GROUP" --name "$name" --created --timeout 900 --output none
+    if [ $? -ne 0 ]; then
+      echo "ERROR: $name failed to provision (quota, capacity, validation error, or timed out)"
+      wait_failed=true
+      continue
+    fi
     ip=$(az vm show -d -g "$RESOURCE_GROUP" -n "$name" --query publicIps -o tsv)
     VM_IPS+=("$ip")
     echo "  $name -> $ip"
   done
+
+  if [ "$create_failed" = "true" ] || [ "$wait_failed" = "true" ]; then
+    echo "$region,$size,$nodes,FAILED,vm creation or provisioning error" >> "$SUMMARY_FILE"
+    echo "Cleaning up any VMs created for this failed combo..."
+    for name in "${VM_NAMES[@]}"; do
+      delete_vm_full "$name" &
+    done
+    wait
+    return
+  fi
 
   local install_ok=true
   for ip in "${VM_IPS[@]}"; do
@@ -85,7 +142,7 @@ run_combo() {
 
     echo "Deleting partially-broken VMs..."
     for name in "${VM_NAMES[@]}"; do
-      az vm delete --resource-group "$RESOURCE_GROUP" --name "$name" --yes --output none &
+      delete_vm_full "$name" &
     done
     wait
     return
@@ -98,7 +155,7 @@ run_combo() {
 
   local master_ip="${VM_IPS[0]}"
   local worker_ips=("${VM_IPS[@]:1}")
-  local ssh_prefix="sshpass -p $ADMIN_PASSWORD ssh -o StrictHostKeyChecking=no $ADMIN_USERNAME@"
+  local ssh_prefix="sshpass -p $ADMIN_PASSWORD ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null $ADMIN_USERNAME@"
 
   local master_private_ip
   master_private_ip=$(private_ip_for "$master_ip")
@@ -112,16 +169,16 @@ run_combo() {
   local worker_ips_csv
   worker_ips_csv=$(IFS=,; echo "${worker_ips[*]}")
 
-  sshpass -p "$ADMIN_PASSWORD" scp -o StrictHostKeyChecking=no \
+  sshpass -p "$ADMIN_PASSWORD" scp -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null \
     run_benchmark.py "$ADMIN_USERNAME@$master_ip:/tmp/run_benchmark.py"
-  sshpass -p "$ADMIN_PASSWORD" ssh -o StrictHostKeyChecking=no "$ADMIN_USERNAME@$master_ip" \
+  sshpass -p "$ADMIN_PASSWORD" ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null "$ADMIN_USERNAME@$master_ip" \
     "sudo mkdir -p /opt/benchmark && sudo mv /tmp/run_benchmark.py /opt/benchmark/run_benchmark.py && sudo chown $ADMIN_USERNAME:$ADMIN_USERNAME /opt/benchmark/run_benchmark.py"
 
   local retry_arg=""
   if [ -n "$retry_list" ]; then
-    sshpass -p "$ADMIN_PASSWORD" scp -o StrictHostKeyChecking=no \
+    sshpass -p "$ADMIN_PASSWORD" scp -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null \
       "$retry_list" "$ADMIN_USERNAME@$master_ip:/tmp/retry_list.csv"
-    sshpass -p "$ADMIN_PASSWORD" ssh -o StrictHostKeyChecking=no "$ADMIN_USERNAME@$master_ip" \
+    sshpass -p "$ADMIN_PASSWORD" ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null "$ADMIN_USERNAME@$master_ip" \
       "sudo mkdir -p /opt/benchmark && sudo mv /tmp/retry_list.csv /opt/benchmark/retry_list.csv && sudo chown $ADMIN_USERNAME:$ADMIN_USERNAME /opt/benchmark/retry_list.csv"
     retry_arg="--retry-list /opt/benchmark/retry_list.csv"
   fi
@@ -139,7 +196,7 @@ run_combo() {
     --dataset-sizes $dataset_sizes_csv --workloads $workloads_csv \
     --repetitions $REPETITIONS $retry_arg"
 
-  if sshpass -p "$ADMIN_PASSWORD" ssh -o StrictHostKeyChecking=no "$ADMIN_USERNAME@$master_ip" "$remote_cmd"; then
+  if sshpass -p "$ADMIN_PASSWORD" ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null "$ADMIN_USERNAME@$master_ip" "$remote_cmd"; then
     echo "$region,$size,$nodes,SUCCESS," >> "$SUMMARY_FILE"
   else
     echo "$region,$size,$nodes,FAILED,benchmark run error" >> "$SUMMARY_FILE"
@@ -147,7 +204,7 @@ run_combo() {
 
   echo "Deleting VMs for this combo..."
   for name in "${VM_NAMES[@]}"; do
-    az vm delete --resource-group "$RESOURCE_GROUP" --name "$name" --yes --output none &
+    delete_vm_full "$name" &
   done
   wait
   echo "Combo done: $region / $size / $nodes nodes"
