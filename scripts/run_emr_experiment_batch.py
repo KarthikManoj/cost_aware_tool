@@ -19,7 +19,7 @@ if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
 from aws.emr_runner import EmrExperiment, WORKLOAD_TO_SCRIPT, run_experiment
-from metrics.collect_metrics import ExperimentMetric, append_metric, calculate_cost
+from metrics.collect_metrics import ExperimentMetric, append_metric, calculate_cost, zone_for_region
 
 
 TERMINAL_CLUSTER_STATES = {"TERMINATED", "TERMINATED_WITH_ERRORS"}
@@ -130,11 +130,14 @@ def main() -> None:
                 ExperimentMetric(
                     dataset_size_mb=dataset_size_mb,
                     workload_type=workload,
-                    instance_type=args.instance_type,
+                    machine_type=args.instance_type,
                     nodes=args.nodes,
                     runtime_minutes=minutes,
                     cost_usd=cost,
+                    region=region,
                     source=f"aws-emr:{cluster_id}:{step['Id']}",
+                    cloud="aws",
+                    electricity_zone=zone_for_region(region),
                 ),
                 args.output,
             )

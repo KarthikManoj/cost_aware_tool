@@ -18,7 +18,13 @@ FEATURE_COLUMNS = [
     "renewable_percentage_mean",
 ]
 TARGET_COLUMNS = ["runtime_minutes", "cost_usd"]
-CATEGORICAL_COLUMNS = ["cloud", "region", "electricity_zone", "workload_type", "machine_type"]
+CATEGORICAL_COLUMNS = [
+    "cloud",
+    "region",
+    "electricity_zone",
+    "workload_type",
+    "machine_type",
+]
 NUMERIC_COLUMNS = [
     "dataset_size_mb",
     "nodes",
@@ -30,7 +36,11 @@ NUMERIC_COLUMNS = [
 def build_preprocessor() -> ColumnTransformer:
     return ColumnTransformer(
         transformers=[
-            ("categorical", OneHotEncoder(handle_unknown="ignore"), CATEGORICAL_COLUMNS),
+            (
+                "categorical",
+                OneHotEncoder(handle_unknown="ignore"),
+                CATEGORICAL_COLUMNS,
+            ),
             ("numeric", StandardScaler(), NUMERIC_COLUMNS),
         ]
     )

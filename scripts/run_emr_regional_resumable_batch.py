@@ -28,7 +28,7 @@ if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
 from aws.emr_runner import EmrExperiment, WORKLOAD_TO_SCRIPT, run_experiment
-from metrics.collect_metrics import ExperimentMetric, append_metric, calculate_cost
+from metrics.collect_metrics import ExperimentMetric, append_metric, calculate_cost, zone_for_region
 
 
 TERMINAL_CLUSTER_STATES = {"TERMINATED", "TERMINATED_WITH_ERRORS"}
@@ -274,13 +274,16 @@ def already_completed(
         data = pd.read_csv(path, on_bad_lines="skip")
     except Exception:
         return False
-    required = {"dataset_size_mb", "workload_type", "instance_type", "nodes", "source"}
+    # The performance CSV names this column machine_type; accept the legacy
+    # instance_type name too so older files still resume correctly.
+    machine_column = "machine_type" if "machine_type" in data.columns else "instance_type"
+    required = {"dataset_size_mb", "workload_type", machine_column, "nodes", "source"}
     if not required.issubset(data.columns):
         return False
     matches = data[
         (data["dataset_size_mb"].astype(float) == float(dataset_size_mb))
         & (data["workload_type"] == workload)
-        & (data["instance_type"] == instance_type)
+        & (data[machine_column] == instance_type)
         & (data["nodes"].astype(int) == int(nodes))
         & (data["source"].astype(str).str.contains(f"aws-emr:{region}:", regex=False))
     ]
@@ -400,11 +403,14 @@ def run_one(
         ExperimentMetric(
             dataset_size_mb=dataset_size_mb,
             workload_type=workload,
-            instance_type=instance_type,
+            machine_type=instance_type,
             nodes=nodes,
             runtime_minutes=minutes,
             cost_usd=cost,
+            region=args.region,
             source=f"aws-emr:{args.region}:{cluster_id}:{step_id}",
+            cloud="aws",
+            electricity_zone=zone_for_region(args.region),
         ),
         args.output,
     )

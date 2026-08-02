@@ -13,7 +13,7 @@ import plotly.express as px
 REQUIRED_COLUMNS = [
     "dataset_size_mb",
     "workload_type",
-    "instance_type",
+    "machine_type",
     "nodes",
     "runtime_minutes",
     "cost_usd",
@@ -41,7 +41,7 @@ def generate_eda(input_path: str, output_dir: str) -> dict:
         "rows": int(len(data)),
         "dataset_sizes_mb": sorted(data["dataset_size_mb"].dropna().unique().tolist()),
         "workloads": sorted(data["workload_type"].dropna().unique().tolist()),
-        "instance_types": sorted(data["instance_type"].dropna().unique().tolist()),
+        "machine_types": sorted(data["machine_type"].dropna().unique().tolist()),
         "node_counts": sorted(data["nodes"].dropna().unique().tolist()),
         "runtime_minutes": {
             "min": round(float(data["runtime_minutes"].min()), 4),
@@ -57,7 +57,7 @@ def generate_eda(input_path: str, output_dir: str) -> dict:
 
     data.describe(include="all").to_csv(output / "descriptive_statistics.csv")
     (
-        data.groupby(["dataset_size_mb", "workload_type", "instance_type", "nodes"], as_index=False)
+        data.groupby(["dataset_size_mb", "workload_type", "machine_type", "nodes"], as_index=False)
         .agg(runtime_mean=("runtime_minutes", "mean"), cost_mean=("cost_usd", "mean"), runs=("runtime_minutes", "count"))
         .to_csv(output / "grouped_summary.csv", index=False)
     )
@@ -71,7 +71,7 @@ def generate_eda(input_path: str, output_dir: str) -> dict:
             x="dataset_size_mb",
             y="runtime_minutes",
             color="workload_type",
-            line_dash="instance_type",
+            line_dash="machine_type",
             markers=True,
             facet_col="nodes",
             labels={"dataset_size_mb": "Dataset size (MB)", "runtime_minutes": "Runtime (minutes)"},
@@ -84,7 +84,7 @@ def generate_eda(input_path: str, output_dir: str) -> dict:
             x="runtime_minutes",
             y="cost_usd",
             color="workload_type",
-            symbol="instance_type",
+            symbol="machine_type",
             size="dataset_size_mb",
             hover_data=["nodes"],
             labels={"runtime_minutes": "Runtime (minutes)", "cost_usd": "Cost (USD)"},
@@ -96,17 +96,17 @@ def generate_eda(input_path: str, output_dir: str) -> dict:
             data,
             x="workload_type",
             y="runtime_minutes",
-            color="instance_type",
+            color="machine_type",
             labels={"workload_type": "Workload", "runtime_minutes": "Runtime (minutes)"},
         ),
         output / "runtime_distribution_by_workload.html",
     )
     write_chart(
         px.bar(
-            data.groupby(["workload_type", "instance_type"], as_index=False)["cost_usd"].mean(),
+            data.groupby(["workload_type", "machine_type"], as_index=False)["cost_usd"].mean(),
             x="workload_type",
             y="cost_usd",
-            color="instance_type",
+            color="machine_type",
             barmode="group",
             labels={"workload_type": "Workload", "cost_usd": "Average cost (USD)"},
         ),
@@ -117,7 +117,7 @@ def generate_eda(input_path: str, output_dir: str) -> dict:
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="Generate EDA tables and HTML charts.")
-    parser.add_argument("--input", default="data/performance/cleaned_data/cleaned_dataset.csv")
+    parser.add_argument("--input", default="data/performance/performance_dataset.csv")
     parser.add_argument("--output-dir", default="data/eda")
     args = parser.parse_args()
     print(json.dumps(generate_eda(args.input, args.output_dir), indent=2))

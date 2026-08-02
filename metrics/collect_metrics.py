@@ -1,4 +1,8 @@
-"""Build and maintain the performance dataset used for ML training."""
+"""Build and maintain the performance dataset used for ML training.
+
+The column order below matches the existing data/performance/performance_dataset.csv
+header exactly. Do not reorder fields without migrating the CSV.
+"""
 
 from __future__ import annotations
 
@@ -13,27 +17,42 @@ import pandas as pd
 PERFORMANCE_COLUMNS = [
     "dataset_size_mb",
     "workload_type",
-    "instance_type",
+    "machine_type",
     "nodes",
     "runtime_minutes",
     "cost_usd",
+    "region",
+    "source",
+    "cloud",
+    "electricity_zone",
     "cpu_avg_pct",
     "memory_avg_pct",
-    "source",
 ]
+
+REGION_TO_ZONE = {
+    "ap-south-1": "IN",
+    "ap-southeast-1": "SG",
+}
 
 
 @dataclass(frozen=True)
 class ExperimentMetric:
     dataset_size_mb: float
     workload_type: str
-    instance_type: str
+    machine_type: str
     nodes: int
     runtime_minutes: float
     cost_usd: float
+    region: str
+    source: str = "manual"
+    cloud: str = "aws"
+    electricity_zone: str = ""
     cpu_avg_pct: float | None = None
     memory_avg_pct: float | None = None
-    source: str = "manual"
+
+
+def zone_for_region(region: str) -> str:
+    return REGION_TO_ZONE.get(region.strip().lower(), "")
 
 
 def load_prices(price_path: str) -> pd.DataFrame:
@@ -67,9 +86,12 @@ def main() -> None:
     parser = argparse.ArgumentParser(description="Append one experiment result to performance CSV.")
     parser.add_argument("--dataset-size-mb", type=float, required=True)
     parser.add_argument("--workload-type", required=True, choices=["cpu-heavy", "memory-heavy", "io-heavy"])
-    parser.add_argument("--instance-type", required=True)
+    parser.add_argument("--machine-type", "--instance-type", dest="machine_type", required=True)
     parser.add_argument("--nodes", type=int, required=True)
     parser.add_argument("--runtime-minutes", type=float, required=True)
+    parser.add_argument("--region", required=True, help="Cloud region, e.g. ap-south-1")
+    parser.add_argument("--cloud", default="aws")
+    parser.add_argument("--electricity-zone", default=None, help="Defaults to the known zone for --region.")
     parser.add_argument("--cpu-avg-pct", type=float, default=None)
     parser.add_argument("--memory-avg-pct", type=float, default=None)
     parser.add_argument("--source", default="manual")
@@ -77,17 +99,20 @@ def main() -> None:
     parser.add_argument("--output", default="data/performance/performance_dataset.csv")
     args = parser.parse_args()
 
-    cost = calculate_cost(args.instance_type, args.nodes, args.runtime_minutes, args.price_path)
+    cost = calculate_cost(args.machine_type, args.nodes, args.runtime_minutes, args.price_path)
     metric = ExperimentMetric(
         dataset_size_mb=args.dataset_size_mb,
         workload_type=args.workload_type,
-        instance_type=args.instance_type,
+        machine_type=args.machine_type,
         nodes=args.nodes,
         runtime_minutes=args.runtime_minutes,
         cost_usd=cost,
+        region=args.region,
+        source=args.source,
+        cloud=args.cloud,
+        electricity_zone=args.electricity_zone if args.electricity_zone is not None else zone_for_region(args.region),
         cpu_avg_pct=args.cpu_avg_pct,
         memory_avg_pct=args.memory_avg_pct,
-        source=args.source,
     )
     append_metric(metric, args.output)
     print(f"Appended metric with cost ${cost:.4f} to {args.output}")
@@ -95,4 +120,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-

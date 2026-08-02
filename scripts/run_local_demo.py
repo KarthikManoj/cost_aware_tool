@@ -1,8 +1,11 @@
-"""Run the local non-AWS demo: train a model and print one recommendation."""
+"""Run the local demo: train/compare models and print recommendations.
+
+Uses the merged carbon-aware dataset and the RecommendationEngine — the same
+path the Streamlit dashboard uses. No cloud access required.
+"""
 
 from __future__ import annotations
 
-import json
 import sys
 from pathlib import Path
 
@@ -11,29 +14,36 @@ ROOT = Path(__file__).resolve().parents[1]
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
-from ml.optimizer import recommend
-from ml.train_model import train
+from ml.recommendation_engine import RecommendationEngine
+from ml.train_model import compare_models
+
+
+DATASET_PATH = ROOT / "data" / "models" / "cloud_carbon_model_dataset.csv"
+MODELS_DIR = ROOT / "data" / "models"
+MODEL_PATH = MODELS_DIR / "best_cloud_model.joblib"
 
 
 def main() -> None:
-    performance_path = ROOT / "data" / "performance" / "sample_performance_dataset.csv"
-    model_path = ROOT / "data" / "models" / "performance_model.joblib"
-    metrics_path = ROOT / "data" / "models" / "model_metrics.json"
+    if not DATASET_PATH.exists():
+        raise SystemExit(
+            f"Merged dataset not found: {DATASET_PATH}\n"
+            "Run `python ml/merge_model_dataset.py` first."
+        )
 
-    metrics = train(str(performance_path), str(model_path), str(metrics_path), "random_forest")
-    print("Model metrics:")
-    print(json.dumps(metrics, indent=2))
+    compare_models(str(DATASET_PATH), str(MODELS_DIR), str(MODEL_PATH))
 
-    result = recommend(
-        dataset_size_mb=1024,
-        workload_type="cpu-heavy",
-        sla_minutes=12,
-        model_path=str(model_path),
-        candidate_path=str(ROOT / "config" / "candidate_configurations.csv"),
-        price_path=str(ROOT / "config" / "instance_prices.csv"),
-    )
-    print("Recommendation:")
-    print(json.dumps(result["recommendation"], indent=2, default=float))
+    engine = RecommendationEngine(model_path=MODEL_PATH, dataset_path=DATASET_PATH)
+    for goal in ["cost", "runtime", "carbon", "balanced"]:
+        print()
+        print(f"Top 3 — optimization goal: {goal}")
+        recommendations = engine.recommend_top_n(
+            dataset_size_mb=500,
+            workload_type="cpu-heavy",
+            sla_runtime_minutes=6,
+            optimization_goal=goal,
+            top_n=3,
+        )
+        print(recommendations.to_string(index=False))
 
 
 if __name__ == "__main__":

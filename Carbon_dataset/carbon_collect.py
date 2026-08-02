@@ -1,106 +1,104 @@
-import requests
+"""Fetch daily carbon-intensity data from ElectricityMaps for each cloud region.
+
+Requires an ElectricityMaps API key. Set it as an environment variable
+rather than hardcoding it in this file:
+
+    export ELECTRICITYMAPS_API_KEY="your-key-here"
+    python Carbon_dataset/carbon_collect.py
+"""
+
+from __future__ import annotations
+
+import argparse
+import os
+import sys
+from pathlib import Path
+
 import pandas as pd
+import requests
 
-# ==========================
-# Configuration
-# ==========================
+sys.path.insert(0, str(Path(__file__).resolve().parent))
 
-API_KEY = "em_k9YNFgfC8GMf5b4xmNgwceaSKJMXySVn"
-
-HEADERS = {
-    "auth-token": API_KEY
-}
-
-START_DATE = "2025-11-01T00:00:00Z"
-END_DATE = "2026-07-15T00:00:00Z"
-
-REGIONS = [
-    ("AWS", "ap-south-1", "IN"),
-    ("AWS", "ap-southeast-1", "SG"),
-    ("Azure", "Central India", "IN"),
-    ("Azure", "Southeast Asia", "SG")
-]
+from zones import REGIONS, validate_regions
 
 BASE_URL = "https://api.electricitymaps.com/v4/carbon-intensity/past-range"
+DEFAULT_OUTPUT = Path(__file__).resolve().parent / "carbon_intensity_daily.csv"
 
-# ==========================
-# Fetch data
-# ==========================
 
-zone_cache = {}
-rows = []
+def fetch(start_date: str, end_date: str, api_key: str) -> pd.DataFrame:
+    headers = {"auth-token": api_key}
+    zone_cache: dict[str, list[dict]] = {}
+    rows: list[dict] = []
 
-for cloud, region, zone in REGIONS:
+    for cloud, region, zone in REGIONS:
+        if zone not in zone_cache:
+            params = {
+                "zone": zone,
+                "start": start_date,
+                "end": end_date,
+                "temporalGranularity": "daily",
+            }
+            print(f"\nFetching data for zone: {zone}")
 
-    # Fetch each electricity zone only once
-    if zone not in zone_cache:
+            response = requests.get(BASE_URL, headers=headers, params=params)
+            print("Status Code:", response.status_code)
+            response.raise_for_status()
 
-        params = {
-            "zone": zone,
-            "start": START_DATE,
-            "end": END_DATE,
-            "temporalGranularity": "daily"
-        }
+            json_data = response.json()
+            if "data" not in json_data:
+                raise RuntimeError(f"No data returned for zone '{zone}'.\nResponse:\n{json_data}")
 
-        print(f"\nFetching data for zone: {zone}")
+            zone_cache[zone] = json_data["data"]
+            print(f"Retrieved {len(zone_cache[zone])} daily records.")
 
-        response = requests.get(
-            BASE_URL,
-            headers=HEADERS,
-            params=params
-        )
-
-        print("Status Code:", response.status_code)
-
-        response.raise_for_status()
-
-        json_data = response.json()
-
-        if "data" not in json_data:
-            raise Exception(
-                f"No data returned for zone '{zone}'.\nResponse:\n{json_data}"
+        for item in zone_cache[zone]:
+            rows.append(
+                {
+                    "Date": item["datetime"],
+                    "Cloud": cloud,
+                    "Region": region,
+                    "Electricity_Zone": zone,
+                    "Carbon_Intensity_gCO2eq_per_kWh": item["carbonIntensity"],
+                    "Emission_Factor_Type": item.get("emissionFactorType"),
+                    "Is_Estimated": item.get("isEstimated"),
+                    "Estimation_Method": item.get("estimationMethod"),
+                    "Created_At": item.get("createdAt"),
+                    "Updated_At": item.get("updatedAt"),
+                }
             )
 
-        zone_cache[zone] = json_data["data"]
+    return pd.DataFrame(rows).sort_values(by=["Cloud", "Region", "Date"])
 
-        print(f"Retrieved {len(zone_cache[zone])} daily records.")
 
-    # Map the zone data to each cloud region
-    for item in zone_cache[zone]:
+def main() -> None:
+    parser = argparse.ArgumentParser(description="Fetch daily carbon intensity from ElectricityMaps.")
+    parser.add_argument("--start", default="2025-11-01T00:00:00Z")
+    parser.add_argument("--end", default="2026-07-15T00:00:00Z")
+    parser.add_argument("--output", default=str(DEFAULT_OUTPUT))
+    args = parser.parse_args()
 
-        rows.append({
-            "Date": item["datetime"],
-            "Cloud": cloud,
-            "Region": region,
-            "Electricity_Zone": zone,
-            "Carbon_Intensity_gCO2eq_per_kWh": item["carbonIntensity"],
-            "Emission_Factor_Type": item.get("emissionFactorType"),
-            "Is_Estimated": item.get("isEstimated"),
-            "Estimation_Method": item.get("estimationMethod"),
-            "Created_At": item.get("createdAt"),
-            "Updated_At": item.get("updatedAt")
-        })
+    api_key = os.environ.get("ELECTRICITYMAPS_API_KEY", "").strip()
+    if not api_key:
+        raise SystemExit(
+            "Set ELECTRICITYMAPS_API_KEY before running this script "
+            "(never hardcode API keys in source files)."
+        )
 
-# ==========================
-# Save CSV
-# ==========================
+    validate_regions()
+    df = fetch(args.start, args.end, api_key)
+    output_path = Path(args.output)
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    df.to_csv(output_path, index=False)
 
-df = pd.DataFrame(rows)
+    print("\n====================================")
+    print("Carbon dataset successfully created!")
+    print("====================================")
+    print(f"Rows: {len(df)}")
+    print(f"Columns: {len(df.columns)}")
+    print(f"Output File: {output_path}")
+    print("\nPreview:")
+    print(df.head())
 
-df.sort_values(
-    by=["Cloud", "Region", "Date"],
-    inplace=True
-)
 
-output_file = "carbon_intensity_daily.csv"
-
-df.to_csv(output_file, index=False)
-
-print("\n====================================")
-print("Carbon dataset successfully created!")
-print("====================================")
-print(f"Rows: {len(df)}")
-print(f"Columns: {len(df.columns)}")
-print(f"Output File: {output_file}")
-print("\nPreview:")
-print(df.head())
+if __name__ == "__main__":
+    main()

@@ -1,11 +1,13 @@
+# Python
 __pycache__/
-.venv/
 *.pyc
-.DS_Store
-data/synthetic/*
-data/models/*
-data/performance/*.tmp
+.venv/
+venv/
+
+# Spark
 spark-warehouse/
+
+# Streamlit
 .streamlit/secrets.toml
 
 # AWS / secrets
@@ -13,18 +15,11 @@ spark-warehouse/
 *.pem
 .aws/
 
-# Python
-__pycache__/
-*.pyc
-.venv/
-venv/
-
-# Data / large files
-*.csv
-*.parquet
-data/
-*.log
-
 # OS
 .DS_Store
-EOF
+
+# Data and generated artifacts (regenerate via the scripts/ml pipeline)
+data/
+*.csv
+*.parquet
+*.log

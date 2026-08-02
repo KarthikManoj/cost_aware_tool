@@ -68,7 +68,12 @@ run_combo() {
   local created_names=()
   local create_failed=false
   for idx in $(seq 1 "$nodes"); do
-    name="bench-$(region_abbr "$region")-$(size_short "$size")-n${nodes}-${idx}"
+    # RUN_TAG lets a caller run multiple concurrent instances of the SAME
+    # (size, nodes) combo without VM-name collisions - needed for
+    # repeat_dispatcher.sh to use full vCPU headroom when only a few
+    # distinct combo types exist and single-instance-per-type parallelism
+    # would leave quota idle.
+    name="bench-$(region_abbr "$region")-$(size_short "$size")-n${nodes}${RUN_TAG:+-${RUN_TAG}}-${idx}"
     VM_NAMES+=("$name")
     echo "Creating $name..."
     az vm create \

@@ -78,7 +78,7 @@ df = df.dropna(
     subset=[
         "dataset_size_mb",
         "workload_type",
-        "instance_type",
+        "machine_type",
         "nodes",
         "runtime_minutes",
         "cost_usd",
@@ -97,7 +97,7 @@ print(f"Rows Removed Due To Null Values : {null_rows_removed}")
 # ----------------------------------------------------
 text_columns = [
     "workload_type",
-    "instance_type",
+    "machine_type",
     "source"
 ]
 
@@ -150,13 +150,13 @@ valid_instances = [
     "m5.xlarge"
 ]
 
-df = df.filter(col("instance_type").isin(valid_instances))
+df = df.filter(col("machine_type").isin(valid_instances))
 
 # ----------------------------------------------------
 # Remove Empty Strings
 # ----------------------------------------------------
 df = df.filter(col("workload_type") != "")
-df = df.filter(col("instance_type") != "")
+df = df.filter(col("machine_type") != "")
 df = df.filter(col("source") != "")
 
 # ----------------------------------------------------
