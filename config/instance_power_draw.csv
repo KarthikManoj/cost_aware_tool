@@ -1,0 +1,13 @@
+machine_type,vcpus,power_w,source,watts_per_vcpu,microarchitecture,utilisation_assumed
+Standard_D2as_v4,2,2.17,"Cloud Carbon Footprint coefficients (Azure, EPYC 2nd Gen) at 50% vCPU utilisation; AMD EPYC 7452 (Rome)",1.0836,EPYC 2nd Gen,0.5
+Standard_D2ds_v4,2,4.61,"Cloud Carbon Footprint coefficients (Azure, Cascade Lake) at 50% vCPU utilisation; Ddsv4 is Cascade Lake",2.3031,Cascade Lake,0.5
+Standard_D2s_v3,2,5.44,"Cloud Carbon Footprint coefficients (Azure, Haswell + Cascade Lake + Skylake + Broadwell) at 50% vCPU utilisation; Dsv3 spans four processor generations",2.7195,Haswell + Cascade Lake + Skylake + Broadwell,0.5
+Standard_D4as_v4,4,4.33,"Cloud Carbon Footprint coefficients (Azure, EPYC 2nd Gen) at 50% vCPU utilisation; AMD EPYC 7452 (Rome)",1.0836,EPYC 2nd Gen,0.5
+Standard_D4ds_v4,4,9.21,"Cloud Carbon Footprint coefficients (Azure, Cascade Lake) at 50% vCPU utilisation; Ddsv4 is Cascade Lake",2.3031,Cascade Lake,0.5
+Standard_D4s_v3,4,10.88,"Cloud Carbon Footprint coefficients (Azure, Haswell + Cascade Lake + Skylake + Broadwell) at 50% vCPU utilisation; Dsv3 spans four processor generations",2.7195,Haswell + Cascade Lake + Skylake + Broadwell,0.5
+c5.xlarge,4,9.44,"Cloud Carbon Footprint coefficients (AWS, Sky Lake + Cascade Lake) at 50% vCPU utilisation; Xeon Platinum 8124M / 8275CL",2.3611,Sky Lake + Cascade Lake,0.5
+c5a.xlarge,4,4.33,"Cloud Carbon Footprint coefficients (AWS, EPYC 2nd Gen) at 50% vCPU utilisation; AMD EPYC 7R32 (Rome)",1.0836,EPYC 2nd Gen,0.5
+c6i.xlarge,4,9.21,"Cloud Carbon Footprint coefficients (AWS, Cascade Lake) at 50% vCPU utilisation; Xeon Ice Lake 8375C; not present in CCF data, nearest generation substituted",2.3031,Cascade Lake,0.5
+m5.xlarge,4,9.44,"Cloud Carbon Footprint coefficients (AWS, Sky Lake + Cascade Lake) at 50% vCPU utilisation; Xeon Platinum 8175M / 8259CL",2.3611,Sky Lake + Cascade Lake,0.5
+m5a.xlarge,4,6.75,"Cloud Carbon Footprint coefficients (AWS, EPYC 1st Gen) at 50% vCPU utilisation; AMD EPYC 7571 (Naples)",1.6879,EPYC 1st Gen,0.5
+m6i.xlarge,4,9.21,"Cloud Carbon Footprint coefficients (AWS, Cascade Lake) at 50% vCPU utilisation; Xeon Ice Lake 8375C; CCF has no Ice Lake coefficient, nearest generation substituted",2.3031,Cascade Lake,0.5

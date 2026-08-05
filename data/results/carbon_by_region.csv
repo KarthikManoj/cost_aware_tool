@@ -1,0 +1,5 @@
+cloud,region,electricity_zone,configurations,mean_carbon_intensity,mean_renewable_pct,mean_runtime_minutes,mean_cost_usd,mean_energy_kwh,mean_emissions_gco2eq,total_emissions_gco2eq
+Azure,Central India,IN-WE,101,643.324219,18.929688,2.041348,0.010452,0.000456,0.346464,34.992842
+Azure,Southeast Asia,SG,84,480.703125,5.832031,2.287181,0.018133,0.000789,0.447625,37.600482
+AWS,ap-southeast-1,SG,252,480.703125,5.832031,2.240754,0.021889,0.000845,0.467366,117.776324
+AWS,ap-south-1,IN-WE,252,643.324219,18.929688,2.033625,0.015251,0.000767,0.567284,142.955494

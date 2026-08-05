@@ -1,0 +1,15 @@
+region,vm_size,nodes,status,note
+centralindia,Standard_D2s_v3,2,SUCCESS,
+centralindia,Standard_D2s_v3,4,SUCCESS,
+centralindia,Standard_D4s_v3,2,SUCCESS,
+centralindia,Standard_D4s_v3,4,SKIPPED,needs 16 vCPU > DSv3 cap 10
+centralindia,Standard_D2as_v4,2,SUCCESS,
+centralindia,Standard_D2as_v4,4,SUCCESS,
+centralindia,Standard_D4as_v4,2,SUCCESS,
+centralindia,Standard_D4as_v4,4,SKIPPED,needs 16 vCPU > DASv4 cap 10
+centralindia,Standard_D4ds_v4,2,FAILED,vm creation or provisioning error
+centralindia,Standard_D4ds_v4,4,FAILED,vm creation or provisioning error
+centralindia,Standard_D2ds_v4,2,FAILED,benchmark run error
+centralindia,Standard_D2ds_v4,4,FAILED,benchmark run error
+centralindia,Standard_D4ds_v4,2,FAILED,benchmark run error
+centralindia,Standard_D4ds_v4,4,FAILED,benchmark run error

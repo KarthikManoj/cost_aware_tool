@@ -1,0 +1,3 @@
+Region,VM_Size,vCPU,RAM_GB,Nodes,Spark_Version,Java_Version,Dataset,Dataset_Size_MB,Workload,Run_Number,Timestamp,Runtime_Minutes,CPU_Avg_Pct,Cost_USD,Exit_Status
+southeastasia,Standard_D4s_v3,4,16,2,3.5.1,17.0.19,10MB.csv,10,cpu,1,2026-07-25T18:53:35.526046+00:00,0.3156,45.76,0.0026,SUCCESS
+southeastasia,Standard_D4s_v3,4,16,2,3.5.1,17.0.19,10MB.csv,10,cpu,2,2026-07-25T18:53:59.783344+00:00,0.3292,41.68,0.0027,SUCCESS

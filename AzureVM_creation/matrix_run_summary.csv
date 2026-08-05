@@ -1,0 +1,5 @@
+region,vm_size,nodes,status,note
+southeastasia,Standard_D2s_v3,2,FAILED,benchmark run error
+southeastasia,Standard_D2s_v3,4,FAILED,benchmark run error
+southeastasia,Standard_D4s_v3,2,FAILED,benchmark run error
+southeastasia,Standard_D4s_v3,4,SUCCESS,

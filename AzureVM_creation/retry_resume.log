@@ -1,0 +1,61 @@
+
+############################################################
+# centralindia | Standard_D4ds_v4 | 4 nodes (RETRY: retry_lists/centralindia_Standard_D4ds_v4_n4.csv)
+############################################################
+Creating bench-cin-d4ds_v4-n4-1...
+Creating bench-cin-d4ds_v4-n4-2...
+Creating bench-cin-d4ds_v4-n4-3...
+Creating bench-cin-d4ds_v4-n4-4...
+Waiting for bench-cin-d4ds_v4-n4-1 to finish provisioning...
+  bench-cin-d4ds_v4-n4-1 -> 20.219.140.240
+Waiting for bench-cin-d4ds_v4-n4-2 to finish provisioning...
+  bench-cin-d4ds_v4-n4-2 -> 20.198.65.50
+Waiting for bench-cin-d4ds_v4-n4-3 to finish provisioning...
+  bench-cin-d4ds_v4-n4-3 -> 20.219.132.48
+Waiting for bench-cin-d4ds_v4-n4-4 to finish provisioning...
+  bench-cin-d4ds_v4-n4-4 -> 40.80.93.218
+  waiting for install on 20.219.140.240 (1/180)...
+  waiting for install on 20.219.140.240 (2/180)...
+  waiting for install on 20.219.140.240 (3/180)...
+  waiting for install on 20.219.140.240 (4/180)...
+  install finished on 20.219.140.240
+  install finished on 20.198.65.50
+  install finished on 20.219.132.48
+  waiting for install on 40.80.93.218 (1/180)...
+  install finished on 40.80.93.218
+Repairing /opt/benchmark permissions on all VMs...
+Warning: Permanently added '20.219.140.240' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.198.65.50' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.219.132.48' (ED25519) to the list of known hosts.
+Warning: Permanently added '40.80.93.218' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.219.140.240' (ED25519) to the list of known hosts.
+starting org.apache.spark.deploy.master.Master, logging to /opt/spark/logs/spark-benchadmin-org.apache.spark.deploy.master.Master-1-bench-cin-d4dsv4-n4-1.out
+Warning: Permanently added '20.198.65.50' (ED25519) to the list of known hosts.
+starting org.apache.spark.deploy.worker.Worker, logging to /opt/spark/logs/spark-benchadmin-org.apache.spark.deploy.worker.Worker-1-bench-cin-d4dsv4-n4-2.out
+Warning: Permanently added '20.219.132.48' (ED25519) to the list of known hosts.
+starting org.apache.spark.deploy.worker.Worker, logging to /opt/spark/logs/spark-benchadmin-org.apache.spark.deploy.worker.Worker-1-bench-cin-d4dsv4-n4-3.out
+Warning: Permanently added '40.80.93.218' (ED25519) to the list of known hosts.
+starting org.apache.spark.deploy.worker.Worker, logging to /opt/spark/logs/spark-benchadmin-org.apache.spark.deploy.worker.Worker-1-bench-cin-d4dsv4-n4-4.out
+Cluster up: spark://10.0.0.10:7077 (4 nodes)
+Warning: Permanently added '20.219.140.240' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.219.140.240' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.219.140.240' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.219.140.240' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.219.140.240' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.198.65.50' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.198.65.50' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.219.132.48' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.219.132.48' (ED25519) to the list of known hosts.
+Warning: Permanently added '40.80.93.218' (ED25519) to the list of known hosts.
+Warning: Permanently added '40.80.93.218' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.198.65.50' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.219.132.48' (ED25519) to the list of known hosts.
+Warning: Permanently added '40.80.93.218' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.198.65.50' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.198.65.50' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.219.132.48' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.219.132.48' (ED25519) to the list of known hosts.
+Warning: Permanently added '40.80.93.218' (ED25519) to the list of known hosts.
+Warning: Permanently added '40.80.93.218' (ED25519) to the list of known hosts.
+Read from remote host 20.219.140.240: Operation timed out
+client_loop: send disconnect: Broken pipe

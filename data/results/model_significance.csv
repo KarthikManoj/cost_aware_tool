@@ -1,0 +1,13 @@
+target,metric,model_a,model_b,folds,mean_a,mean_b,mean_difference,ci95_lower,ci95_upper,paired_t_statistic,paired_t_p_value,wilcoxon_statistic,wilcoxon_p_value,cohens_d,significant_at_0_05,ci_excludes_zero
+runtime_minutes,mae,decision_tree,gradient_boosting,5,0.334407,0.284848,0.049559,0.012834,0.086285,3.7467,0.02,0.0,0.0625,1.6756,True,True
+runtime_minutes,mae,decision_tree,linear_regression,5,0.334407,0.574468,-0.24006,-0.310826,-0.169294,-9.4186,0.0007,0.0,0.0625,-4.2121,True,True
+runtime_minutes,mae,decision_tree,random_forest,5,0.334407,0.269578,0.06483,0.04129,0.088369,7.6464,0.0016,0.0,0.0625,3.4196,True,True
+runtime_minutes,mae,gradient_boosting,linear_regression,5,0.284848,0.574468,-0.28962,-0.335562,-0.243678,-17.5028,0.0001,0.0,0.0625,-7.8275,True,True
+runtime_minutes,mae,gradient_boosting,random_forest,5,0.284848,0.269578,0.01527,-0.011271,0.041812,1.5974,0.1854,3.0,0.3125,0.7144,False,False
+runtime_minutes,mae,linear_regression,random_forest,5,0.574468,0.269578,0.30489,0.244531,0.365248,14.0247,0.0001,0.0,0.0625,6.272,True,True
+cost_usd,mae,decision_tree,gradient_boosting,5,0.00295,0.002507,0.000443,-0.000108,0.000995,2.2306,0.0895,1.0,0.125,0.9976,False,False
+cost_usd,mae,decision_tree,linear_regression,5,0.00295,0.004313,-0.001363,-0.001621,-0.001104,-14.6439,0.0001,0.0,0.0625,-6.549,True,True
+cost_usd,mae,decision_tree,random_forest,5,0.00295,0.002391,0.00056,7e-05,0.001049,3.1763,0.0337,0.0,0.0625,1.4205,True,True
+cost_usd,mae,gradient_boosting,linear_regression,5,0.002507,0.004313,-0.001806,-0.002189,-0.001423,-13.0809,0.0002,0.0,0.0625,-5.8499,True,True
+cost_usd,mae,gradient_boosting,random_forest,5,0.002507,0.002391,0.000117,-4e-05,0.000274,2.0683,0.1074,1.0,0.125,0.925,False,False
+cost_usd,mae,linear_regression,random_forest,5,0.004313,0.002391,0.001923,0.001532,0.002313,13.674,0.0002,0.0,0.0625,6.1152,True,True

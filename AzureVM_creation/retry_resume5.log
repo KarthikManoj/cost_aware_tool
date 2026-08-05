@@ -1,0 +1,90 @@
+
+############################################################
+# southeastasia | Standard_D2as_v4 | 2 nodes (RETRY: retry_lists/southeastasia_Standard_D2as_v4_n2.csv)
+############################################################
+Creating bench-sea-d2as_v4-n2-1...
+ERROR: {"error":{"code":"InvalidTemplateDeployment","message":"The template deployment 'vm_deploy_DZH6i7XchVjOPmBjcTyfp5XmaxLj68VN' is not valid according to the validation procedure. The following resource provider(s) - 'Microsoft.Compute/virtualMachines (2024-07-01)' reported preflight validation errors. Tracking id is '000f81d4-c536-41f5-ad74-1c4300171e7e'. See inner errors for details.","details":[{"code":"SkuNotAvailable","message":"The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_D2as_v4' is currently not available in location 'southeastasia'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details."}]}}
+ERROR: az vm create request failed for bench-sea-d2as_v4-n2-1
+Creating bench-sea-d2as_v4-n2-2...
+ERROR: {"error":{"code":"InvalidTemplateDeployment","message":"The template deployment 'vm_deploy_9DRftbvhmbb3FtNlLHJaUp3KQNm8VzUh' is not valid according to the validation procedure. The following resource provider(s) - 'Microsoft.Compute/virtualMachines (2024-07-01)' reported preflight validation errors. Tracking id is 'f053c142-1bb0-4af9-8833-6f1b28e65fc0'. See inner errors for details.","details":[{"code":"SkuNotAvailable","message":"The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_D2as_v4' is currently not available in location 'southeastasia'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details."}]}}
+ERROR: az vm create request failed for bench-sea-d2as_v4-n2-2
+Cleaning up any VMs created for this failed combo...
+
+############################################################
+# southeastasia | Standard_D2as_v4 | 4 nodes (RETRY: retry_lists/southeastasia_Standard_D2as_v4_n4.csv)
+############################################################
+Creating bench-sea-d2as_v4-n4-1...
+ERROR: {"error":{"code":"InvalidTemplateDeployment","message":"The template deployment 'vm_deploy_ES8XTUllwNNcnhXrnOKfh6Q9tR3sbCXK' is not valid according to the validation procedure. The following resource provider(s) - 'Microsoft.Compute/virtualMachines (2024-07-01)' reported preflight validation errors. Tracking id is 'dbe77dfe-275e-4bfb-86f1-5e855bea6a49'. See inner errors for details.","details":[{"code":"SkuNotAvailable","message":"The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_D2as_v4' is currently not available in location 'southeastasia'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details."}]}}
+ERROR: az vm create request failed for bench-sea-d2as_v4-n4-1
+Creating bench-sea-d2as_v4-n4-2...
+ERROR: {"error":{"code":"InvalidTemplateDeployment","message":"The template deployment 'vm_deploy_ZyHVHldxcw1XPCEqFyWlitmXtSqlovb6' is not valid according to the validation procedure. The following resource provider(s) - 'Microsoft.Compute/virtualMachines (2024-07-01)' reported preflight validation errors. Tracking id is '1961d792-562a-4751-8b3e-db48bf355502'. See inner errors for details.","details":[{"code":"SkuNotAvailable","message":"The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_D2as_v4' is currently not available in location 'southeastasia'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details."}]}}
+ERROR: az vm create request failed for bench-sea-d2as_v4-n4-2
+Creating bench-sea-d2as_v4-n4-3...
+ERROR: {"error":{"code":"InvalidTemplateDeployment","message":"The template deployment 'vm_deploy_FRVyx6pFDEWBmuHY0wXOWX2USu8KOBDn' is not valid according to the validation procedure. The following resource provider(s) - 'Microsoft.Compute/virtualMachines (2024-07-01)' reported preflight validation errors. Tracking id is 'bb85a57c-b739-4539-8306-b20533efaa30'. See inner errors for details.","details":[{"code":"SkuNotAvailable","message":"The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_D2as_v4' is currently not available in location 'southeastasia'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details."}]}}
+ERROR: az vm create request failed for bench-sea-d2as_v4-n4-3
+Creating bench-sea-d2as_v4-n4-4...
+ERROR: {"error":{"code":"InvalidTemplateDeployment","message":"The template deployment 'vm_deploy_5XMlPwvJUhwxWcyZo0v7Jule6knIpzMx' is not valid according to the validation procedure. The following resource provider(s) - 'Microsoft.Compute/virtualMachines (2024-07-01)' reported preflight validation errors. Tracking id is 'a2d3d524-5630-4ac7-b5ac-59189d7fe41c'. See inner errors for details.","details":[{"code":"SkuNotAvailable","message":"The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_D2as_v4' is currently not available in location 'southeastasia'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details."}]}}
+ERROR: az vm create request failed for bench-sea-d2as_v4-n4-4
+Cleaning up any VMs created for this failed combo...
+
+############################################################
+# southeastasia | Standard_D4as_v4 | 2 nodes (RETRY: retry_lists/southeastasia_Standard_D4as_v4_n2.csv)
+############################################################
+Creating bench-sea-d4as_v4-n2-1...
+ERROR: {"error":{"code":"InvalidTemplateDeployment","message":"The template deployment 'vm_deploy_EmrvzyRqqVQQYCWGzzeQePWzy46449Ph' is not valid according to the validation procedure. The following resource provider(s) - 'Microsoft.Compute/virtualMachines (2024-07-01)' reported preflight validation errors. Tracking id is '9b79a49d-6ce3-42a4-b364-f5f978372fe9'. See inner errors for details.","details":[{"code":"SkuNotAvailable","message":"The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_D4as_v4' is currently not available in location 'southeastasia'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details."}]}}
+ERROR: az vm create request failed for bench-sea-d4as_v4-n2-1
+Creating bench-sea-d4as_v4-n2-2...
+ERROR: {"error":{"code":"InvalidTemplateDeployment","message":"The template deployment 'vm_deploy_44rh8PsInSSbjIhg43m107guiqZ2xFVG' is not valid according to the validation procedure. The following resource provider(s) - 'Microsoft.Compute/virtualMachines (2024-07-01)' reported preflight validation errors. Tracking id is '53b2cd84-06e2-4560-91b2-807cfc0135e6'. See inner errors for details.","details":[{"code":"SkuNotAvailable","message":"The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_D4as_v4' is currently not available in location 'southeastasia'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details."}]}}
+ERROR: az vm create request failed for bench-sea-d4as_v4-n2-2
+Cleaning up any VMs created for this failed combo...
+
+############################################################
+# southeastasia | Standard_D4as_v4 | 4 nodes (RETRY: retry_lists/southeastasia_Standard_D4as_v4_n4.csv)
+############################################################
+SKIP: needs 16 vCPUs, DASv4 family cap in southeastasia is 10.
+
+############################################################
+# southeastasia | Standard_D2ds_v4 | 2 nodes (RETRY: retry_lists/southeastasia_Standard_D2ds_v4_n2.csv)
+############################################################
+Creating bench-sea-d2ds_v4-n2-1...
+ERROR: {"error":{"code":"InvalidTemplateDeployment","message":"The template deployment 'vm_deploy_3rU6Z6r6MsRsIjXpJPgOfgHECOQ4bzoW' is not valid according to the validation procedure. The following resource provider(s) - 'Microsoft.Compute/virtualMachines (2024-07-01)' reported preflight validation errors. Tracking id is '7245981f-dd12-4b72-814c-f828eae1c635'. See inner errors for details.","details":[{"code":"SkuNotAvailable","message":"The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_D2ds_v4' is currently not available in location 'southeastasia'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details."}]}}
+ERROR: az vm create request failed for bench-sea-d2ds_v4-n2-1
+Creating bench-sea-d2ds_v4-n2-2...
+ERROR: {"error":{"code":"InvalidTemplateDeployment","message":"The template deployment 'vm_deploy_G6XPC8uVBlbUmthZFZy8kIcm9d1DqYzm' is not valid according to the validation procedure. The following resource provider(s) - 'Microsoft.Compute/virtualMachines (2024-07-01)' reported preflight validation errors. Tracking id is '423708e3-b2b5-47e6-8bb6-0730cd28d9f4'. See inner errors for details.","details":[{"code":"SkuNotAvailable","message":"The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_D2ds_v4' is currently not available in location 'southeastasia'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details."}]}}
+ERROR: az vm create request failed for bench-sea-d2ds_v4-n2-2
+Cleaning up any VMs created for this failed combo...
+
+############################################################
+# southeastasia | Standard_D2ds_v4 | 4 nodes (RETRY: retry_lists/southeastasia_Standard_D2ds_v4_n4.csv)
+############################################################
+Creating bench-sea-d2ds_v4-n4-1...
+ERROR: {"error":{"code":"InvalidTemplateDeployment","message":"The template deployment 'vm_deploy_Jfi3oryz9u3g0h5ZlgGRNEcpqBBGu1Io' is not valid according to the validation procedure. The following resource provider(s) - 'Microsoft.Compute/virtualMachines (2024-07-01)' reported preflight validation errors. Tracking id is 'e333e39e-8af4-4ee4-b694-c20fc86ad72b'. See inner errors for details.","details":[{"code":"SkuNotAvailable","message":"The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_D2ds_v4' is currently not available in location 'southeastasia'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details."}]}}
+ERROR: az vm create request failed for bench-sea-d2ds_v4-n4-1
+Creating bench-sea-d2ds_v4-n4-2...
+ERROR: {"error":{"code":"InvalidTemplateDeployment","message":"The template deployment 'vm_deploy_86B7znHVpAfb5qUGU5kGqPxAxiliOlIY' is not valid according to the validation procedure. The following resource provider(s) - 'Microsoft.Compute/virtualMachines (2024-07-01)' reported preflight validation errors. Tracking id is '198dd053-4728-4a6b-96a3-1b1f8c624e7c'. See inner errors for details.","details":[{"code":"SkuNotAvailable","message":"The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_D2ds_v4' is currently not available in location 'southeastasia'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details."}]}}
+ERROR: az vm create request failed for bench-sea-d2ds_v4-n4-2
+Creating bench-sea-d2ds_v4-n4-3...
+ERROR: {"error":{"code":"InvalidTemplateDeployment","message":"The template deployment 'vm_deploy_gFPLn3NaKZH3UVIu5siHXyUvX5gXfgxM' is not valid according to the validation procedure. The following resource provider(s) - 'Microsoft.Compute/virtualMachines (2024-07-01)' reported preflight validation errors. Tracking id is '925470f8-d147-43b0-be42-5e42410daaec'. See inner errors for details.","details":[{"code":"SkuNotAvailable","message":"The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_D2ds_v4' is currently not available in location 'southeastasia'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details."}]}}
+ERROR: az vm create request failed for bench-sea-d2ds_v4-n4-3
+Creating bench-sea-d2ds_v4-n4-4...
+ERROR: {"error":{"code":"InvalidTemplateDeployment","message":"The template deployment 'vm_deploy_pyrN4By3t43plM8GIdlramfT1NnX0z8u' is not valid according to the validation procedure. The following resource provider(s) - 'Microsoft.Compute/virtualMachines (2024-07-01)' reported preflight validation errors. Tracking id is 'b2363046-3ae9-436d-926f-414e84eb8523'. See inner errors for details.","details":[{"code":"SkuNotAvailable","message":"The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_D2ds_v4' is currently not available in location 'southeastasia'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details."}]}}
+ERROR: az vm create request failed for bench-sea-d2ds_v4-n4-4
+Cleaning up any VMs created for this failed combo...
+
+############################################################
+# southeastasia | Standard_D4ds_v4 | 2 nodes (RETRY: retry_lists/southeastasia_Standard_D4ds_v4_n2.csv)
+############################################################
+Creating bench-sea-d4ds_v4-n2-1...
+ERROR: {"error":{"code":"InvalidTemplateDeployment","message":"The template deployment 'vm_deploy_HKAnepytaZAl5ErnhI7iamVoLENTJmps' is not valid according to the validation procedure. The following resource provider(s) - 'Microsoft.Compute/virtualMachines (2024-07-01)' reported preflight validation errors. Tracking id is '20390e1d-f43b-41f2-9308-0162d54142c4'. See inner errors for details.","details":[{"code":"SkuNotAvailable","message":"The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_D4ds_v4' is currently not available in location 'southeastasia'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details."}]}}
+ERROR: az vm create request failed for bench-sea-d4ds_v4-n2-1
+Creating bench-sea-d4ds_v4-n2-2...
+ERROR: {"error":{"code":"InvalidTemplateDeployment","message":"The template deployment 'vm_deploy_GZeoP3Y2jTduwGWyQ7QwjwyIU6rcx1op' is not valid according to the validation procedure. The following resource provider(s) - 'Microsoft.Compute/virtualMachines (2024-07-01)' reported preflight validation errors. Tracking id is '2cf34121-547c-433c-9f42-6bc75efed576'. See inner errors for details.","details":[{"code":"SkuNotAvailable","message":"The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_D4ds_v4' is currently not available in location 'southeastasia'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details."}]}}
+ERROR: az vm create request failed for bench-sea-d4ds_v4-n2-2
+Cleaning up any VMs created for this failed combo...
+
+############################################################
+# southeastasia | Standard_D4ds_v4 | 4 nodes (RETRY: retry_lists/southeastasia_Standard_D4ds_v4_n4.csv)
+############################################################
+SKIP: needs 16 vCPUs, DDSv4 family cap in southeastasia is 10.
+
+Resume pass complete. See retry_run_summary.csv.

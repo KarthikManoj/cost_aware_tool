@@ -1,0 +1,67 @@
+[
+  {
+    "Rank":1,
+    "Cloud":"Azure",
+    "Region":"Central India",
+    "Machine Type":"Standard_D2as_v4",
+    "Nodes":4,
+    "Predicted Runtime (minutes)":0.4045450175,
+    "Predicted Cost (USD)":0.0017327,
+    "Carbon Intensity":605.22265625,
+    "Renewable Percentage":23.890625,
+    "Optimization Score":0.2074472493,
+    "Recommendation Reason":"ranked by best trade-off between runtime, cost, carbon, and renewable energy."
+  },
+  {
+    "Rank":2,
+    "Cloud":"Azure",
+    "Region":"Southeast Asia",
+    "Machine Type":"Standard_D4s_v3",
+    "Nodes":4,
+    "Predicted Runtime (minutes)":0.4652049488,
+    "Predicted Cost (USD)":0.0077259925,
+    "Carbon Intensity":479.62890625,
+    "Renewable Percentage":5.9921875,
+    "Optimization Score":0.2174658096,
+    "Recommendation Reason":"ranked by best trade-off between runtime, cost, carbon, and renewable energy."
+  },
+  {
+    "Rank":3,
+    "Cloud":"Azure",
+    "Region":"Southeast Asia",
+    "Machine Type":"Standard_D4s_v3",
+    "Nodes":2,
+    "Predicted Runtime (minutes)":0.6128740471,
+    "Predicted Cost (USD)":0.0051224761,
+    "Carbon Intensity":479.62890625,
+    "Renewable Percentage":5.9921875,
+    "Optimization Score":0.2178497321,
+    "Recommendation Reason":"ranked by best trade-off between runtime, cost, carbon, and renewable energy."
+  },
+  {
+    "Rank":4,
+    "Cloud":"Azure",
+    "Region":"Central India",
+    "Machine Type":"Standard_D2as_v4",
+    "Nodes":2,
+    "Predicted Runtime (minutes)":0.5807005571,
+    "Predicted Cost (USD)":0.0012539287,
+    "Carbon Intensity":605.22265625,
+    "Renewable Percentage":23.890625,
+    "Optimization Score":0.2487677291,
+    "Recommendation Reason":"ranked by best trade-off between runtime, cost, carbon, and renewable energy."
+  },
+  {
+    "Rank":5,
+    "Cloud":"Azure",
+    "Region":"Southeast Asia",
+    "Machine Type":"Standard_D2s_v3",
+    "Nodes":4,
+    "Predicted Runtime (minutes)":0.7006878949,
+    "Predicted Cost (USD)":0.005822846,
+    "Carbon Intensity":479.62890625,
+    "Renewable Percentage":5.9921875,
+    "Optimization Score":0.2530547275,
+    "Recommendation Reason":"ranked by best trade-off between runtime, cost, carbon, and renewable energy."
+  }
+]

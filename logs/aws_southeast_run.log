@@ -1,0 +1,3489 @@
+Skipping completed 10MB cpu-heavy m5.xlarge x 2 in ap-southeast-1
+Skipping completed 10MB cpu-heavy m5.xlarge x 4 in ap-southeast-1
+Starting 10MB cpu-heavy on m5a.xlarge x 2 in ap-southeast-1
+{
+  "JobFlowId": "j-34ZRDWTY0U3YO",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-34ZRDWTY0U3YO",
+  "ResponseMetadata": {
+    "RequestId": "83ae8421-39c5-4fa3-8519-9d4c8f45d7de",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "83ae8421-39c5-4fa3-8519-9d4c8f45d7de",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Wed, 22 Jul 2026 19:55:20 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-34ZRDWTY0U3YO step s-04041655OGLWNW6S0DL is PENDING
+j-34ZRDWTY0U3YO step s-04041655OGLWNW6S0DL is PENDING
+j-34ZRDWTY0U3YO step s-04041655OGLWNW6S0DL is PENDING
+j-34ZRDWTY0U3YO step s-04041655OGLWNW6S0DL is PENDING
+j-34ZRDWTY0U3YO step s-04041655OGLWNW6S0DL is PENDING
+j-34ZRDWTY0U3YO step s-04041655OGLWNW6S0DL is PENDING
+j-34ZRDWTY0U3YO step s-04041655OGLWNW6S0DL is PENDING
+j-34ZRDWTY0U3YO step s-04041655OGLWNW6S0DL is RUNNING
+j-34ZRDWTY0U3YO step s-04041655OGLWNW6S0DL is RUNNING
+j-34ZRDWTY0U3YO step s-04041655OGLWNW6S0DL is COMPLETED
+j-34ZRDWTY0U3YO cluster is TERMINATING
+j-34ZRDWTY0U3YO cluster is TERMINATING
+j-34ZRDWTY0U3YO cluster is TERMINATED
+Saved cpu-heavy 10MB m5a.xlarge x 2 runtime=1.1093 min cost=$0.0080; cluster=TERMINATED
+Skipping completed 10MB cpu-heavy m5a.xlarge x 4 in ap-southeast-1
+Starting 10MB cpu-heavy on c5.xlarge x 2 in ap-southeast-1
+{
+  "JobFlowId": "j-3EF4GZ0BPHQXK",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-3EF4GZ0BPHQXK",
+  "ResponseMetadata": {
+    "RequestId": "c82bc7e2-e9e4-4cfa-8406-ad72a8c4245d",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "c82bc7e2-e9e4-4cfa-8406-ad72a8c4245d",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Wed, 22 Jul 2026 20:00:54 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-3EF4GZ0BPHQXK step s-01402203JKBBL00TMATS is PENDING
+j-3EF4GZ0BPHQXK step s-01402203JKBBL00TMATS is PENDING
+j-3EF4GZ0BPHQXK step s-01402203JKBBL00TMATS is PENDING
+j-3EF4GZ0BPHQXK step s-01402203JKBBL00TMATS is PENDING
+j-3EF4GZ0BPHQXK step s-01402203JKBBL00TMATS is PENDING
+j-3EF4GZ0BPHQXK step s-01402203JKBBL00TMATS is PENDING
+j-3EF4GZ0BPHQXK step s-01402203JKBBL00TMATS is PENDING
+j-3EF4GZ0BPHQXK step s-01402203JKBBL00TMATS is RUNNING
+j-3EF4GZ0BPHQXK step s-01402203JKBBL00TMATS is RUNNING
+j-3EF4GZ0BPHQXK step s-01402203JKBBL00TMATS is COMPLETED
+j-3EF4GZ0BPHQXK cluster is TERMINATING
+j-3EF4GZ0BPHQXK cluster is TERMINATED
+Saved cpu-heavy 10MB c5.xlarge x 2 runtime=0.9729 min cost=$0.0064; cluster=TERMINATED
+Skipping completed 10MB cpu-heavy c5.xlarge x 4 in ap-southeast-1
+Skipping completed 10MB cpu-heavy c5a.xlarge x 2 in ap-southeast-1
+Skipping completed 10MB cpu-heavy c5a.xlarge x 4 in ap-southeast-1
+Starting 10MB cpu-heavy on c6i.xlarge x 2 in ap-southeast-1
+{
+  "JobFlowId": "j-2TS0G8M9FF9KM",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-2TS0G8M9FF9KM",
+  "ResponseMetadata": {
+    "RequestId": "92215bf6-f74c-4357-b743-ee8f7bd49dae",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "92215bf6-f74c-4357-b743-ee8f7bd49dae",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Wed, 22 Jul 2026 20:05:59 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-2TS0G8M9FF9KM step s-0381770Z3LQ8KS11DIB is PENDING
+j-2TS0G8M9FF9KM step s-0381770Z3LQ8KS11DIB is PENDING
+j-2TS0G8M9FF9KM step s-0381770Z3LQ8KS11DIB is PENDING
+j-2TS0G8M9FF9KM step s-0381770Z3LQ8KS11DIB is PENDING
+j-2TS0G8M9FF9KM step s-0381770Z3LQ8KS11DIB is PENDING
+j-2TS0G8M9FF9KM step s-0381770Z3LQ8KS11DIB is PENDING
+j-2TS0G8M9FF9KM step s-0381770Z3LQ8KS11DIB is PENDING
+j-2TS0G8M9FF9KM step s-0381770Z3LQ8KS11DIB is RUNNING
+j-2TS0G8M9FF9KM step s-0381770Z3LQ8KS11DIB is RUNNING
+j-2TS0G8M9FF9KM step s-0381770Z3LQ8KS11DIB is COMPLETED
+j-2TS0G8M9FF9KM cluster is TERMINATING
+j-2TS0G8M9FF9KM cluster is TERMINATED
+Saved cpu-heavy 10MB c6i.xlarge x 2 runtime=0.6727 min cost=$0.0044; cluster=TERMINATED
+Skipping completed 10MB cpu-heavy c6i.xlarge x 4 in ap-southeast-1
+Skipping completed 10MB memory-heavy m5.xlarge x 2 in ap-southeast-1
+Skipping completed 10MB memory-heavy m5.xlarge x 4 in ap-southeast-1
+Starting 10MB memory-heavy on m5a.xlarge x 2 in ap-southeast-1
+{
+  "JobFlowId": "j-33SZ0E4DDTG12",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-33SZ0E4DDTG12",
+  "ResponseMetadata": {
+    "RequestId": "56fcaa8f-cd0a-4b18-95ef-5c67b6a8e048",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "56fcaa8f-cd0a-4b18-95ef-5c67b6a8e048",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Wed, 22 Jul 2026 20:11:03 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-33SZ0E4DDTG12 step s-0699635VDNI2LBVOKL6 is PENDING
+j-33SZ0E4DDTG12 step s-0699635VDNI2LBVOKL6 is PENDING
+j-33SZ0E4DDTG12 step s-0699635VDNI2LBVOKL6 is PENDING
+j-33SZ0E4DDTG12 step s-0699635VDNI2LBVOKL6 is PENDING
+j-33SZ0E4DDTG12 step s-0699635VDNI2LBVOKL6 is PENDING
+j-33SZ0E4DDTG12 step s-0699635VDNI2LBVOKL6 is PENDING
+j-33SZ0E4DDTG12 step s-0699635VDNI2LBVOKL6 is PENDING
+j-33SZ0E4DDTG12 step s-0699635VDNI2LBVOKL6 is PENDING
+j-33SZ0E4DDTG12 step s-0699635VDNI2LBVOKL6 is RUNNING
+j-33SZ0E4DDTG12 step s-0699635VDNI2LBVOKL6 is RUNNING
+j-33SZ0E4DDTG12 step s-0699635VDNI2LBVOKL6 is RUNNING
+j-33SZ0E4DDTG12 step s-0699635VDNI2LBVOKL6 is COMPLETED
+j-33SZ0E4DDTG12 cluster is TERMINATING
+j-33SZ0E4DDTG12 cluster is TERMINATING
+j-33SZ0E4DDTG12 cluster is TERMINATED
+Saved memory-heavy 10MB m5a.xlarge x 2 runtime=1.1755 min cost=$0.0085; cluster=TERMINATED
+Skipping completed 10MB memory-heavy m5a.xlarge x 4 in ap-southeast-1
+Starting 10MB memory-heavy on c5.xlarge x 2 in ap-southeast-1
+{
+  "JobFlowId": "j-2VKER4JWQNVTR",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-2VKER4JWQNVTR",
+  "ResponseMetadata": {
+    "RequestId": "558c3840-8b47-447d-927a-5200e010cfc5",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "558c3840-8b47-447d-927a-5200e010cfc5",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Wed, 22 Jul 2026 20:17:37 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-2VKER4JWQNVTR step s-0132129PK4BSA1PYUOG is PENDING
+j-2VKER4JWQNVTR step s-0132129PK4BSA1PYUOG is PENDING
+j-2VKER4JWQNVTR step s-0132129PK4BSA1PYUOG is PENDING
+j-2VKER4JWQNVTR step s-0132129PK4BSA1PYUOG is PENDING
+j-2VKER4JWQNVTR step s-0132129PK4BSA1PYUOG is PENDING
+j-2VKER4JWQNVTR step s-0132129PK4BSA1PYUOG is PENDING
+j-2VKER4JWQNVTR step s-0132129PK4BSA1PYUOG is PENDING
+j-2VKER4JWQNVTR step s-0132129PK4BSA1PYUOG is RUNNING
+j-2VKER4JWQNVTR step s-0132129PK4BSA1PYUOG is RUNNING
+j-2VKER4JWQNVTR step s-0132129PK4BSA1PYUOG is COMPLETED
+j-2VKER4JWQNVTR cluster is TERMINATING
+j-2VKER4JWQNVTR cluster is TERMINATED
+Saved memory-heavy 10MB c5.xlarge x 2 runtime=0.8726 min cost=$0.0057; cluster=TERMINATED
+Skipping completed 10MB memory-heavy c5.xlarge x 4 in ap-southeast-1
+Skipping completed 10MB memory-heavy c5a.xlarge x 2 in ap-southeast-1
+Skipping completed 10MB memory-heavy c5a.xlarge x 4 in ap-southeast-1
+Starting 10MB memory-heavy on c6i.xlarge x 2 in ap-southeast-1
+{
+  "JobFlowId": "j-II0PPMQAN009",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-II0PPMQAN009",
+  "ResponseMetadata": {
+    "RequestId": "a53a96f4-52ff-43c7-afae-22748595c612",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "a53a96f4-52ff-43c7-afae-22748595c612",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "121",
+      "date": "Wed, 22 Jul 2026 20:22:41 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-II0PPMQAN009 step s-03498012MV2QCSZVCUZF is PENDING
+j-II0PPMQAN009 step s-03498012MV2QCSZVCUZF is PENDING
+j-II0PPMQAN009 step s-03498012MV2QCSZVCUZF is PENDING
+j-II0PPMQAN009 step s-03498012MV2QCSZVCUZF is PENDING
+j-II0PPMQAN009 step s-03498012MV2QCSZVCUZF is PENDING
+j-II0PPMQAN009 step s-03498012MV2QCSZVCUZF is PENDING
+j-II0PPMQAN009 step s-03498012MV2QCSZVCUZF is RUNNING
+j-II0PPMQAN009 step s-03498012MV2QCSZVCUZF is COMPLETED
+j-II0PPMQAN009 cluster is TERMINATING
+j-II0PPMQAN009 cluster is TERMINATING
+j-II0PPMQAN009 cluster is TERMINATING
+j-II0PPMQAN009 cluster is TERMINATED
+Saved memory-heavy 10MB c6i.xlarge x 2 runtime=0.7053 min cost=$0.0046; cluster=TERMINATED
+Skipping completed 10MB memory-heavy c6i.xlarge x 4 in ap-southeast-1
+Skipping completed 10MB io-heavy m5.xlarge x 2 in ap-southeast-1
+Skipping completed 10MB io-heavy m5.xlarge x 4 in ap-southeast-1
+Starting 10MB io-heavy on m5a.xlarge x 2 in ap-southeast-1
+{
+  "JobFlowId": "j-VT4YFU5KIGTJ",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-VT4YFU5KIGTJ",
+  "ResponseMetadata": {
+    "RequestId": "4ecb10e0-b40f-404b-b7d6-dbc943d3ff7e",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "4ecb10e0-b40f-404b-b7d6-dbc943d3ff7e",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "121",
+      "date": "Wed, 22 Jul 2026 20:27:46 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-VT4YFU5KIGTJ step s-092885915RRIF9VQD3KD is PENDING
+j-VT4YFU5KIGTJ step s-092885915RRIF9VQD3KD is PENDING
+j-VT4YFU5KIGTJ step s-092885915RRIF9VQD3KD is PENDING
+j-VT4YFU5KIGTJ step s-092885915RRIF9VQD3KD is PENDING
+j-VT4YFU5KIGTJ step s-092885915RRIF9VQD3KD is PENDING
+j-VT4YFU5KIGTJ step s-092885915RRIF9VQD3KD is PENDING
+j-VT4YFU5KIGTJ step s-092885915RRIF9VQD3KD is PENDING
+j-VT4YFU5KIGTJ step s-092885915RRIF9VQD3KD is PENDING
+j-VT4YFU5KIGTJ step s-092885915RRIF9VQD3KD is RUNNING
+j-VT4YFU5KIGTJ step s-092885915RRIF9VQD3KD is RUNNING
+j-VT4YFU5KIGTJ step s-092885915RRIF9VQD3KD is RUNNING
+j-VT4YFU5KIGTJ step s-092885915RRIF9VQD3KD is COMPLETED
+j-VT4YFU5KIGTJ cluster is TERMINATING
+j-VT4YFU5KIGTJ cluster is TERMINATING
+j-VT4YFU5KIGTJ cluster is TERMINATED
+Saved io-heavy 10MB m5a.xlarge x 2 runtime=1.2753 min cost=$0.0092; cluster=TERMINATED
+Skipping completed 10MB io-heavy m5a.xlarge x 4 in ap-southeast-1
+Starting 10MB io-heavy on c5.xlarge x 2 in ap-southeast-1
+{
+  "JobFlowId": "j-15UOHNBOJ3SHF",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-15UOHNBOJ3SHF",
+  "ResponseMetadata": {
+    "RequestId": "98757b1f-3568-4840-a263-93a6d00c2da2",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "98757b1f-3568-4840-a263-93a6d00c2da2",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Wed, 22 Jul 2026 20:34:20 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-15UOHNBOJ3SHF step s-04048152K7XCW5STF5GS is PENDING
+j-15UOHNBOJ3SHF step s-04048152K7XCW5STF5GS is PENDING
+j-15UOHNBOJ3SHF step s-04048152K7XCW5STF5GS is PENDING
+j-15UOHNBOJ3SHF step s-04048152K7XCW5STF5GS is PENDING
+j-15UOHNBOJ3SHF step s-04048152K7XCW5STF5GS is PENDING
+j-15UOHNBOJ3SHF step s-04048152K7XCW5STF5GS is PENDING
+j-15UOHNBOJ3SHF step s-04048152K7XCW5STF5GS is PENDING
+j-15UOHNBOJ3SHF step s-04048152K7XCW5STF5GS is RUNNING
+j-15UOHNBOJ3SHF step s-04048152K7XCW5STF5GS is RUNNING
+j-15UOHNBOJ3SHF step s-04048152K7XCW5STF5GS is COMPLETED
+j-15UOHNBOJ3SHF cluster is TERMINATING
+j-15UOHNBOJ3SHF cluster is TERMINATED
+Saved io-heavy 10MB c5.xlarge x 2 runtime=0.9051 min cost=$0.0059; cluster=TERMINATED
+Skipping completed 10MB io-heavy c5.xlarge x 4 in ap-southeast-1
+Skipping completed 10MB io-heavy c5a.xlarge x 2 in ap-southeast-1
+Skipping completed 10MB io-heavy c5a.xlarge x 4 in ap-southeast-1
+Starting 10MB io-heavy on c6i.xlarge x 2 in ap-southeast-1
+{
+  "JobFlowId": "j-2GK6UJVLCY90F",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-2GK6UJVLCY90F",
+  "ResponseMetadata": {
+    "RequestId": "198ecdfd-cbce-4318-bfcb-2ca90cfca967",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "198ecdfd-cbce-4318-bfcb-2ca90cfca967",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Wed, 22 Jul 2026 20:39:25 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-2GK6UJVLCY90F step s-0403705I1ZCC9KUEIWS is PENDING
+j-2GK6UJVLCY90F step s-0403705I1ZCC9KUEIWS is PENDING
+j-2GK6UJVLCY90F step s-0403705I1ZCC9KUEIWS is PENDING
+j-2GK6UJVLCY90F step s-0403705I1ZCC9KUEIWS is PENDING
+j-2GK6UJVLCY90F step s-0403705I1ZCC9KUEIWS is PENDING
+j-2GK6UJVLCY90F step s-0403705I1ZCC9KUEIWS is PENDING
+j-2GK6UJVLCY90F step s-0403705I1ZCC9KUEIWS is RUNNING
+j-2GK6UJVLCY90F step s-0403705I1ZCC9KUEIWS is RUNNING
+j-2GK6UJVLCY90F step s-0403705I1ZCC9KUEIWS is COMPLETED
+j-2GK6UJVLCY90F cluster is TERMINATING
+j-2GK6UJVLCY90F cluster is TERMINATING
+j-2GK6UJVLCY90F cluster is TERMINATED
+Saved io-heavy 10MB c6i.xlarge x 2 runtime=0.8387 min cost=$0.0055; cluster=TERMINATED
+Skipping completed 10MB io-heavy c6i.xlarge x 4 in ap-southeast-1
+Starting 100MB cpu-heavy on m5.xlarge x 2 in ap-southeast-1
+{
+  "JobFlowId": "j-7A1Q3IUPF8L0",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-7A1Q3IUPF8L0",
+  "ResponseMetadata": {
+    "RequestId": "4731d02f-404e-4f01-b28e-9b789641975e",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "4731d02f-404e-4f01-b28e-9b789641975e",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "121",
+      "date": "Wed, 22 Jul 2026 20:44:29 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-7A1Q3IUPF8L0 step s-06793391A3T2IHLK9VYA is PENDING
+j-7A1Q3IUPF8L0 step s-06793391A3T2IHLK9VYA is PENDING
+j-7A1Q3IUPF8L0 step s-06793391A3T2IHLK9VYA is PENDING
+j-7A1Q3IUPF8L0 step s-06793391A3T2IHLK9VYA is PENDING
+j-7A1Q3IUPF8L0 step s-06793391A3T2IHLK9VYA is PENDING
+j-7A1Q3IUPF8L0 step s-06793391A3T2IHLK9VYA is PENDING
+j-7A1Q3IUPF8L0 step s-06793391A3T2IHLK9VYA is PENDING
+j-7A1Q3IUPF8L0 step s-06793391A3T2IHLK9VYA is RUNNING
+j-7A1Q3IUPF8L0 step s-06793391A3T2IHLK9VYA is RUNNING
+j-7A1Q3IUPF8L0 step s-06793391A3T2IHLK9VYA is COMPLETED
+j-7A1Q3IUPF8L0 cluster is TERMINATING
+j-7A1Q3IUPF8L0 cluster is TERMINATED
+Saved cpu-heavy 100MB m5.xlarge x 2 runtime=0.9731 min cost=$0.0078; cluster=TERMINATED
+Skipping completed 100MB cpu-heavy m5.xlarge x 4 in ap-southeast-1
+Starting 100MB cpu-heavy on m5a.xlarge x 2 in ap-southeast-1
+{
+  "JobFlowId": "j-3OQE2QH0I3V6M",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-3OQE2QH0I3V6M",
+  "ResponseMetadata": {
+    "RequestId": "68944371-aa65-41c0-bd5d-aec56e11f62a",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "68944371-aa65-41c0-bd5d-aec56e11f62a",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Wed, 22 Jul 2026 20:49:33 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-3OQE2QH0I3V6M step s-0926064H9FDH7PBCSDN is PENDING
+j-3OQE2QH0I3V6M step s-0926064H9FDH7PBCSDN is PENDING
+j-3OQE2QH0I3V6M step s-0926064H9FDH7PBCSDN is PENDING
+j-3OQE2QH0I3V6M step s-0926064H9FDH7PBCSDN is PENDING
+j-3OQE2QH0I3V6M step s-0926064H9FDH7PBCSDN is PENDING
+j-3OQE2QH0I3V6M step s-0926064H9FDH7PBCSDN is PENDING
+j-3OQE2QH0I3V6M step s-0926064H9FDH7PBCSDN is PENDING
+j-3OQE2QH0I3V6M step s-0926064H9FDH7PBCSDN is PENDING
+j-3OQE2QH0I3V6M step s-0926064H9FDH7PBCSDN is PENDING
+j-3OQE2QH0I3V6M step s-0926064H9FDH7PBCSDN is RUNNING
+j-3OQE2QH0I3V6M step s-0926064H9FDH7PBCSDN is RUNNING
+j-3OQE2QH0I3V6M step s-0926064H9FDH7PBCSDN is RUNNING
+j-3OQE2QH0I3V6M step s-0926064H9FDH7PBCSDN is COMPLETED
+j-3OQE2QH0I3V6M cluster is TERMINATED
+Saved cpu-heavy 100MB m5a.xlarge x 2 runtime=1.2074 min cost=$0.0087; cluster=TERMINATED
+Skipping completed 100MB cpu-heavy m5a.xlarge x 4 in ap-southeast-1
+Starting 100MB cpu-heavy on c5.xlarge x 2 in ap-southeast-1
+{
+  "JobFlowId": "j-3ZGK37BS3D4J",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-3ZGK37BS3D4J",
+  "ResponseMetadata": {
+    "RequestId": "32f66bda-0ffe-424b-aca8-bf7ac4a84e65",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "32f66bda-0ffe-424b-aca8-bf7ac4a84e65",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "121",
+      "date": "Wed, 22 Jul 2026 20:55:38 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-3ZGK37BS3D4J step s-01740391GXWT01W29RSR is PENDING
+j-3ZGK37BS3D4J step s-01740391GXWT01W29RSR is PENDING
+j-3ZGK37BS3D4J step s-01740391GXWT01W29RSR is PENDING
+j-3ZGK37BS3D4J step s-01740391GXWT01W29RSR is PENDING
+j-3ZGK37BS3D4J step s-01740391GXWT01W29RSR is PENDING
+j-3ZGK37BS3D4J step s-01740391GXWT01W29RSR is PENDING
+j-3ZGK37BS3D4J step s-01740391GXWT01W29RSR is PENDING
+j-3ZGK37BS3D4J step s-01740391GXWT01W29RSR is RUNNING
+j-3ZGK37BS3D4J step s-01740391GXWT01W29RSR is RUNNING
+j-3ZGK37BS3D4J step s-01740391GXWT01W29RSR is COMPLETED
+j-3ZGK37BS3D4J cluster is TERMINATING
+j-3ZGK37BS3D4J cluster is TERMINATED
+Saved cpu-heavy 100MB c5.xlarge x 2 runtime=0.8727 min cost=$0.0057; cluster=TERMINATED
+Skipping completed 100MB cpu-heavy c5.xlarge x 4 in ap-southeast-1
+Skipping completed 100MB cpu-heavy c5a.xlarge x 2 in ap-southeast-1
+Skipping completed 100MB cpu-heavy c5a.xlarge x 4 in ap-southeast-1
+Starting 100MB cpu-heavy on c6i.xlarge x 2 in ap-southeast-1
+{
+  "JobFlowId": "j-NZDHRB3S4TDD",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-NZDHRB3S4TDD",
+  "ResponseMetadata": {
+    "RequestId": "a710bc5b-8505-44a3-a99e-6e3105696e38",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "a710bc5b-8505-44a3-a99e-6e3105696e38",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "121",
+      "date": "Wed, 22 Jul 2026 21:00:42 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-NZDHRB3S4TDD step s-015380919C4FHL7NARHE is PENDING
+j-NZDHRB3S4TDD step s-015380919C4FHL7NARHE is PENDING
+j-NZDHRB3S4TDD step s-015380919C4FHL7NARHE is PENDING
+j-NZDHRB3S4TDD step s-015380919C4FHL7NARHE is PENDING
+j-NZDHRB3S4TDD step s-015380919C4FHL7NARHE is PENDING
+j-NZDHRB3S4TDD step s-015380919C4FHL7NARHE is PENDING
+j-NZDHRB3S4TDD step s-015380919C4FHL7NARHE is RUNNING
+j-NZDHRB3S4TDD step s-015380919C4FHL7NARHE is RUNNING
+j-NZDHRB3S4TDD step s-015380919C4FHL7NARHE is COMPLETED
+j-NZDHRB3S4TDD cluster is TERMINATING
+j-NZDHRB3S4TDD cluster is TERMINATING
+j-NZDHRB3S4TDD cluster is TERMINATED
+Saved cpu-heavy 100MB c6i.xlarge x 2 runtime=1.0055 min cost=$0.0066; cluster=TERMINATED
+Skipping completed 100MB cpu-heavy c6i.xlarge x 4 in ap-southeast-1
+Starting 100MB memory-heavy on m5.xlarge x 2 in ap-southeast-1
+{
+  "JobFlowId": "j-3D1MYYTLF2M5M",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-3D1MYYTLF2M5M",
+  "ResponseMetadata": {
+    "RequestId": "2ebbdd73-5713-4077-ac46-558722961f28",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "2ebbdd73-5713-4077-ac46-558722961f28",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Wed, 22 Jul 2026 21:05:46 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-3D1MYYTLF2M5M step s-01252821ZO23JL16TQFH is PENDING
+j-3D1MYYTLF2M5M step s-01252821ZO23JL16TQFH is PENDING
+j-3D1MYYTLF2M5M step s-01252821ZO23JL16TQFH is PENDING
+j-3D1MYYTLF2M5M step s-01252821ZO23JL16TQFH is PENDING
+j-3D1MYYTLF2M5M step s-01252821ZO23JL16TQFH is PENDING
+j-3D1MYYTLF2M5M step s-01252821ZO23JL16TQFH is PENDING
+j-3D1MYYTLF2M5M step s-01252821ZO23JL16TQFH is PENDING
+j-3D1MYYTLF2M5M step s-01252821ZO23JL16TQFH is RUNNING
+j-3D1MYYTLF2M5M step s-01252821ZO23JL16TQFH is RUNNING
+j-3D1MYYTLF2M5M step s-01252821ZO23JL16TQFH is COMPLETED
+j-3D1MYYTLF2M5M cluster is TERMINATING
+j-3D1MYYTLF2M5M cluster is TERMINATED
+Saved memory-heavy 100MB m5.xlarge x 2 runtime=1.0057 min cost=$0.0080; cluster=TERMINATED
+Skipping completed 100MB memory-heavy m5.xlarge x 4 in ap-southeast-1
+Starting 100MB memory-heavy on m5a.xlarge x 2 in ap-southeast-1
+{
+  "JobFlowId": "j-3N31G8YXRHCD9",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-3N31G8YXRHCD9",
+  "ResponseMetadata": {
+    "RequestId": "b489cbe7-c53d-4bf8-a159-b6eb7d1bd9a3",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "b489cbe7-c53d-4bf8-a159-b6eb7d1bd9a3",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Wed, 22 Jul 2026 21:10:49 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-3N31G8YXRHCD9 step s-038134334AFOY5RWT21O is PENDING
+j-3N31G8YXRHCD9 step s-038134334AFOY5RWT21O is PENDING
+j-3N31G8YXRHCD9 step s-038134334AFOY5RWT21O is PENDING
+j-3N31G8YXRHCD9 step s-038134334AFOY5RWT21O is PENDING
+j-3N31G8YXRHCD9 step s-038134334AFOY5RWT21O is PENDING
+j-3N31G8YXRHCD9 step s-038134334AFOY5RWT21O is PENDING
+j-3N31G8YXRHCD9 step s-038134334AFOY5RWT21O is PENDING
+j-3N31G8YXRHCD9 step s-038134334AFOY5RWT21O is RUNNING
+j-3N31G8YXRHCD9 step s-038134334AFOY5RWT21O is RUNNING
+j-3N31G8YXRHCD9 step s-038134334AFOY5RWT21O is RUNNING
+j-3N31G8YXRHCD9 step s-038134334AFOY5RWT21O is COMPLETED
+j-3N31G8YXRHCD9 cluster is TERMINATING
+j-3N31G8YXRHCD9 cluster is TERMINATED
+Saved memory-heavy 100MB m5a.xlarge x 2 runtime=1.2748 min cost=$0.0092; cluster=TERMINATED
+Skipping completed 100MB memory-heavy m5a.xlarge x 4 in ap-southeast-1
+Starting 100MB memory-heavy on c5.xlarge x 2 in ap-southeast-1
+{
+  "JobFlowId": "j-3T3Y4UC96Q0BC",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-3T3Y4UC96Q0BC",
+  "ResponseMetadata": {
+    "RequestId": "4ae1576c-7d1c-4815-bd33-15fddf2aeda8",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "4ae1576c-7d1c-4815-bd33-15fddf2aeda8",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Wed, 22 Jul 2026 21:16:23 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-3T3Y4UC96Q0BC step s-0678137GBT63URI92YN is PENDING
+j-3T3Y4UC96Q0BC step s-0678137GBT63URI92YN is PENDING
+j-3T3Y4UC96Q0BC step s-0678137GBT63URI92YN is PENDING
+j-3T3Y4UC96Q0BC step s-0678137GBT63URI92YN is PENDING
+j-3T3Y4UC96Q0BC step s-0678137GBT63URI92YN is PENDING
+j-3T3Y4UC96Q0BC step s-0678137GBT63URI92YN is PENDING
+j-3T3Y4UC96Q0BC step s-0678137GBT63URI92YN is PENDING
+j-3T3Y4UC96Q0BC step s-0678137GBT63URI92YN is RUNNING
+j-3T3Y4UC96Q0BC step s-0678137GBT63URI92YN is RUNNING
+j-3T3Y4UC96Q0BC step s-0678137GBT63URI92YN is COMPLETED
+j-3T3Y4UC96Q0BC cluster is TERMINATING
+j-3T3Y4UC96Q0BC cluster is TERMINATED
+Saved memory-heavy 100MB c5.xlarge x 2 runtime=0.9058 min cost=$0.0059; cluster=TERMINATED
+Skipping completed 100MB memory-heavy c5.xlarge x 4 in ap-southeast-1
+Skipping completed 100MB memory-heavy c5a.xlarge x 2 in ap-southeast-1
+Skipping completed 100MB memory-heavy c5a.xlarge x 4 in ap-southeast-1
+Starting 100MB memory-heavy on c6i.xlarge x 2 in ap-southeast-1
+{
+  "JobFlowId": "j-24OLDO4I7S0MV",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-24OLDO4I7S0MV",
+  "ResponseMetadata": {
+    "RequestId": "187a25dc-41a8-4ff4-83aa-664ab67f1fe1",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "187a25dc-41a8-4ff4-83aa-664ab67f1fe1",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Wed, 22 Jul 2026 21:21:27 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-24OLDO4I7S0MV step s-06684435HJ1B2DGIDX2 is PENDING
+j-24OLDO4I7S0MV step s-06684435HJ1B2DGIDX2 is PENDING
+j-24OLDO4I7S0MV step s-06684435HJ1B2DGIDX2 is PENDING
+j-24OLDO4I7S0MV step s-06684435HJ1B2DGIDX2 is PENDING
+j-24OLDO4I7S0MV step s-06684435HJ1B2DGIDX2 is PENDING
+j-24OLDO4I7S0MV step s-06684435HJ1B2DGIDX2 is PENDING
+j-24OLDO4I7S0MV step s-06684435HJ1B2DGIDX2 is RUNNING
+j-24OLDO4I7S0MV step s-06684435HJ1B2DGIDX2 is COMPLETED
+j-24OLDO4I7S0MV cluster is TERMINATING
+j-24OLDO4I7S0MV cluster is TERMINATING
+j-24OLDO4I7S0MV cluster is TERMINATING
+j-24OLDO4I7S0MV cluster is TERMINATED
+Saved memory-heavy 100MB c6i.xlarge x 2 runtime=0.7712 min cost=$0.0050; cluster=TERMINATED
+Skipping completed 100MB memory-heavy c6i.xlarge x 4 in ap-southeast-1
+Starting 100MB io-heavy on m5.xlarge x 2 in ap-southeast-1
+{
+  "JobFlowId": "j-O8VQFMYGQCR2",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-O8VQFMYGQCR2",
+  "ResponseMetadata": {
+    "RequestId": "84a7acd0-9dab-4c70-aa02-3bd934acdd8b",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "84a7acd0-9dab-4c70-aa02-3bd934acdd8b",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "121",
+      "date": "Wed, 22 Jul 2026 21:26:31 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-O8VQFMYGQCR2 step s-01909842BMT54J482AZR is PENDING
+j-O8VQFMYGQCR2 step s-01909842BMT54J482AZR is PENDING
+j-O8VQFMYGQCR2 step s-01909842BMT54J482AZR is PENDING
+j-O8VQFMYGQCR2 step s-01909842BMT54J482AZR is PENDING
+j-O8VQFMYGQCR2 step s-01909842BMT54J482AZR is PENDING
+j-O8VQFMYGQCR2 step s-01909842BMT54J482AZR is PENDING
+j-O8VQFMYGQCR2 step s-01909842BMT54J482AZR is PENDING
+j-O8VQFMYGQCR2 step s-01909842BMT54J482AZR is RUNNING
+j-O8VQFMYGQCR2 step s-01909842BMT54J482AZR is RUNNING
+j-O8VQFMYGQCR2 step s-01909842BMT54J482AZR is COMPLETED
+j-O8VQFMYGQCR2 cluster is TERMINATING
+j-O8VQFMYGQCR2 cluster is TERMINATED
+Saved io-heavy 100MB m5.xlarge x 2 runtime=1.1063 min cost=$0.0089; cluster=TERMINATED
+Skipping completed 100MB io-heavy m5.xlarge x 4 in ap-southeast-1
+Starting 100MB io-heavy on m5a.xlarge x 2 in ap-southeast-1
+{
+  "JobFlowId": "j-180VHKYBN6NCG",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-180VHKYBN6NCG",
+  "ResponseMetadata": {
+    "RequestId": "bfc9dbb8-27b1-41ec-a195-449ac4009035",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "bfc9dbb8-27b1-41ec-a195-449ac4009035",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Wed, 22 Jul 2026 21:31:35 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-180VHKYBN6NCG step s-06755243CSHOSA79TQ2M is PENDING
+j-180VHKYBN6NCG step s-06755243CSHOSA79TQ2M is PENDING
+j-180VHKYBN6NCG step s-06755243CSHOSA79TQ2M is PENDING
+j-180VHKYBN6NCG step s-06755243CSHOSA79TQ2M is PENDING
+j-180VHKYBN6NCG step s-06755243CSHOSA79TQ2M is PENDING
+j-180VHKYBN6NCG step s-06755243CSHOSA79TQ2M is PENDING
+j-180VHKYBN6NCG step s-06755243CSHOSA79TQ2M is PENDING
+j-180VHKYBN6NCG step s-06755243CSHOSA79TQ2M is RUNNING
+j-180VHKYBN6NCG step s-06755243CSHOSA79TQ2M is RUNNING
+j-180VHKYBN6NCG step s-06755243CSHOSA79TQ2M is RUNNING
+j-180VHKYBN6NCG step s-06755243CSHOSA79TQ2M is COMPLETED
+j-180VHKYBN6NCG cluster is TERMINATING
+j-180VHKYBN6NCG cluster is TERMINATING
+j-180VHKYBN6NCG cluster is TERMINATING
+j-180VHKYBN6NCG cluster is TERMINATED
+Saved io-heavy 100MB m5a.xlarge x 2 runtime=1.3769 min cost=$0.0099; cluster=TERMINATED
+Skipping completed 100MB io-heavy m5a.xlarge x 4 in ap-southeast-1
+Starting 100MB io-heavy on c5.xlarge x 2 in ap-southeast-1
+{
+  "JobFlowId": "j-1S6QMES1L8DGA",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-1S6QMES1L8DGA",
+  "ResponseMetadata": {
+    "RequestId": "222c73da-1cf6-4edf-a776-ca80148a2034",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "222c73da-1cf6-4edf-a776-ca80148a2034",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Wed, 22 Jul 2026 21:38:11 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-1S6QMES1L8DGA step s-092581411CHELS0A4Q1Y is PENDING
+j-1S6QMES1L8DGA step s-092581411CHELS0A4Q1Y is PENDING
+j-1S6QMES1L8DGA step s-092581411CHELS0A4Q1Y is PENDING
+j-1S6QMES1L8DGA step s-092581411CHELS0A4Q1Y is PENDING
+j-1S6QMES1L8DGA step s-092581411CHELS0A4Q1Y is PENDING
+j-1S6QMES1L8DGA step s-092581411CHELS0A4Q1Y is PENDING
+j-1S6QMES1L8DGA step s-092581411CHELS0A4Q1Y is PENDING
+j-1S6QMES1L8DGA step s-092581411CHELS0A4Q1Y is RUNNING
+j-1S6QMES1L8DGA step s-092581411CHELS0A4Q1Y is RUNNING
+j-1S6QMES1L8DGA step s-092581411CHELS0A4Q1Y is COMPLETED
+j-1S6QMES1L8DGA cluster is TERMINATING
+j-1S6QMES1L8DGA cluster is TERMINATING
+j-1S6QMES1L8DGA cluster is TERMINATING
+j-1S6QMES1L8DGA cluster is TERMINATED
+Saved io-heavy 100MB c5.xlarge x 2 runtime=1.0049 min cost=$0.0066; cluster=TERMINATED
+Skipping completed 100MB io-heavy c5.xlarge x 4 in ap-southeast-1
+Skipping completed 100MB io-heavy c5a.xlarge x 2 in ap-southeast-1
+Skipping completed 100MB io-heavy c5a.xlarge x 4 in ap-southeast-1
+Starting 100MB io-heavy on c6i.xlarge x 2 in ap-southeast-1
+{
+  "JobFlowId": "j-1Z1I7HMZ9TWLN",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-1Z1I7HMZ9TWLN",
+  "ResponseMetadata": {
+    "RequestId": "1b80773f-cfc0-4bee-9ba9-43d59f05923c",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "1b80773f-cfc0-4bee-9ba9-43d59f05923c",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Wed, 22 Jul 2026 21:44:17 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-1Z1I7HMZ9TWLN step s-04044272OEJAOIN2QSV7 is PENDING
+j-1Z1I7HMZ9TWLN step s-04044272OEJAOIN2QSV7 is PENDING
+j-1Z1I7HMZ9TWLN step s-04044272OEJAOIN2QSV7 is PENDING
+j-1Z1I7HMZ9TWLN step s-04044272OEJAOIN2QSV7 is PENDING
+j-1Z1I7HMZ9TWLN step s-04044272OEJAOIN2QSV7 is PENDING
+j-1Z1I7HMZ9TWLN step s-04044272OEJAOIN2QSV7 is PENDING
+j-1Z1I7HMZ9TWLN step s-04044272OEJAOIN2QSV7 is RUNNING
+j-1Z1I7HMZ9TWLN step s-04044272OEJAOIN2QSV7 is RUNNING
+j-1Z1I7HMZ9TWLN step s-04044272OEJAOIN2QSV7 is COMPLETED
+j-1Z1I7HMZ9TWLN cluster is TERMINATING
+j-1Z1I7HMZ9TWLN cluster is TERMINATING
+j-1Z1I7HMZ9TWLN cluster is TERMINATED
+Saved io-heavy 100MB c6i.xlarge x 2 runtime=0.9045 min cost=$0.0059; cluster=TERMINATED
+Skipping completed 100MB io-heavy c6i.xlarge x 4 in ap-southeast-1
+Starting 500MB cpu-heavy on m5.xlarge x 2 in ap-southeast-1
+{
+  "JobFlowId": "j-H9XBCX9F6B7J",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-H9XBCX9F6B7J",
+  "ResponseMetadata": {
+    "RequestId": "899d069b-9a81-4173-822c-a9469f1d7287",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "899d069b-9a81-4173-822c-a9469f1d7287",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "121",
+      "date": "Wed, 22 Jul 2026 21:49:22 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-H9XBCX9F6B7J step s-01714751PQXM2S31D8AS is PENDING
+j-H9XBCX9F6B7J step s-01714751PQXM2S31D8AS is PENDING
+j-H9XBCX9F6B7J step s-01714751PQXM2S31D8AS is PENDING
+j-H9XBCX9F6B7J step s-01714751PQXM2S31D8AS is PENDING
+j-H9XBCX9F6B7J step s-01714751PQXM2S31D8AS is PENDING
+j-H9XBCX9F6B7J step s-01714751PQXM2S31D8AS is PENDING
+j-H9XBCX9F6B7J step s-01714751PQXM2S31D8AS is PENDING
+j-H9XBCX9F6B7J step s-01714751PQXM2S31D8AS is RUNNING
+j-H9XBCX9F6B7J step s-01714751PQXM2S31D8AS is RUNNING
+j-H9XBCX9F6B7J step s-01714751PQXM2S31D8AS is COMPLETED
+j-H9XBCX9F6B7J cluster is TERMINATING
+j-H9XBCX9F6B7J cluster is TERMINATING
+j-H9XBCX9F6B7J cluster is TERMINATING
+j-H9XBCX9F6B7J cluster is TERMINATED
+Saved cpu-heavy 500MB m5.xlarge x 2 runtime=1.3074 min cost=$0.0105; cluster=TERMINATED
+Skipping completed 500MB cpu-heavy m5.xlarge x 4 in ap-southeast-1
+Starting 500MB cpu-heavy on m5a.xlarge x 2 in ap-southeast-1
+{
+  "JobFlowId": "j-UEMRYBXBTJRF",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-UEMRYBXBTJRF",
+  "ResponseMetadata": {
+    "RequestId": "e7320a83-a64f-4299-8ae8-9cf73b012951",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "e7320a83-a64f-4299-8ae8-9cf73b012951",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "121",
+      "date": "Wed, 22 Jul 2026 21:55:39 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-UEMRYBXBTJRF step s-01539372HACU8762BG5 is PENDING
+j-UEMRYBXBTJRF step s-01539372HACU8762BG5 is PENDING
+j-UEMRYBXBTJRF step s-01539372HACU8762BG5 is PENDING
+j-UEMRYBXBTJRF step s-01539372HACU8762BG5 is PENDING
+j-UEMRYBXBTJRF step s-01539372HACU8762BG5 is PENDING
+j-UEMRYBXBTJRF step s-01539372HACU8762BG5 is PENDING
+j-UEMRYBXBTJRF step s-01539372HACU8762BG5 is PENDING
+j-UEMRYBXBTJRF step s-01539372HACU8762BG5 is PENDING
+j-UEMRYBXBTJRF step s-01539372HACU8762BG5 is RUNNING
+j-UEMRYBXBTJRF step s-01539372HACU8762BG5 is RUNNING
+j-UEMRYBXBTJRF step s-01539372HACU8762BG5 is RUNNING
+j-UEMRYBXBTJRF step s-01539372HACU8762BG5 is COMPLETED
+j-UEMRYBXBTJRF cluster is TERMINATING
+j-UEMRYBXBTJRF cluster is TERMINATING
+j-UEMRYBXBTJRF cluster is TERMINATED
+Saved cpu-heavy 500MB m5a.xlarge x 2 runtime=1.6748 min cost=$0.0121; cluster=TERMINATED
+Skipping completed 500MB cpu-heavy m5a.xlarge x 4 in ap-southeast-1
+Starting 500MB cpu-heavy on c5.xlarge x 2 in ap-southeast-1
+{
+  "JobFlowId": "j-3DY3CG8F5IRGE",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-3DY3CG8F5IRGE",
+  "ResponseMetadata": {
+    "RequestId": "c83b88bd-8513-4c55-8afa-601196f34ceb",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "c83b88bd-8513-4c55-8afa-601196f34ceb",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Wed, 22 Jul 2026 22:02:14 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-3DY3CG8F5IRGE step s-038353412IPZBK2XV0ZO is PENDING
+j-3DY3CG8F5IRGE step s-038353412IPZBK2XV0ZO is PENDING
+j-3DY3CG8F5IRGE step s-038353412IPZBK2XV0ZO is PENDING
+j-3DY3CG8F5IRGE step s-038353412IPZBK2XV0ZO is PENDING
+j-3DY3CG8F5IRGE step s-038353412IPZBK2XV0ZO is PENDING
+j-3DY3CG8F5IRGE step s-038353412IPZBK2XV0ZO is PENDING
+j-3DY3CG8F5IRGE step s-038353412IPZBK2XV0ZO is PENDING
+j-3DY3CG8F5IRGE step s-038353412IPZBK2XV0ZO is RUNNING
+j-3DY3CG8F5IRGE step s-038353412IPZBK2XV0ZO is RUNNING
+j-3DY3CG8F5IRGE step s-038353412IPZBK2XV0ZO is RUNNING
+j-3DY3CG8F5IRGE step s-038353412IPZBK2XV0ZO is COMPLETED
+j-3DY3CG8F5IRGE cluster is TERMINATING
+j-3DY3CG8F5IRGE cluster is TERMINATING
+j-3DY3CG8F5IRGE cluster is TERMINATED
+Saved cpu-heavy 500MB c5.xlarge x 2 runtime=1.3071 min cost=$0.0085; cluster=TERMINATED
+Skipping completed 500MB cpu-heavy c5.xlarge x 4 in ap-southeast-1
+Skipping completed 500MB cpu-heavy c5a.xlarge x 2 in ap-southeast-1
+Skipping completed 500MB cpu-heavy c5a.xlarge x 4 in ap-southeast-1
+Starting 500MB cpu-heavy on c6i.xlarge x 2 in ap-southeast-1
+{
+  "JobFlowId": "j-2U4F7D0VSNU98",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-2U4F7D0VSNU98",
+  "ResponseMetadata": {
+    "RequestId": "2e1aac41-3c4d-44cb-82dc-48fc97e0bccd",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "2e1aac41-3c4d-44cb-82dc-48fc97e0bccd",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Wed, 22 Jul 2026 22:08:18 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-2U4F7D0VSNU98 step s-07015352RDYSRKVJSI8U is PENDING
+j-2U4F7D0VSNU98 step s-07015352RDYSRKVJSI8U is PENDING
+j-2U4F7D0VSNU98 step s-07015352RDYSRKVJSI8U is PENDING
+j-2U4F7D0VSNU98 step s-07015352RDYSRKVJSI8U is PENDING
+j-2U4F7D0VSNU98 step s-07015352RDYSRKVJSI8U is PENDING
+j-2U4F7D0VSNU98 step s-07015352RDYSRKVJSI8U is PENDING
+j-2U4F7D0VSNU98 step s-07015352RDYSRKVJSI8U is PENDING
+j-2U4F7D0VSNU98 step s-07015352RDYSRKVJSI8U is RUNNING
+j-2U4F7D0VSNU98 step s-07015352RDYSRKVJSI8U is RUNNING
+j-2U4F7D0VSNU98 step s-07015352RDYSRKVJSI8U is COMPLETED
+j-2U4F7D0VSNU98 cluster is TERMINATING
+j-2U4F7D0VSNU98 cluster is TERMINATING
+j-2U4F7D0VSNU98 cluster is TERMINATING
+j-2U4F7D0VSNU98 cluster is TERMINATED
+Saved cpu-heavy 500MB c6i.xlarge x 2 runtime=1.0388 min cost=$0.0068; cluster=TERMINATED
+Skipping completed 500MB cpu-heavy c6i.xlarge x 4 in ap-southeast-1
+Starting 500MB memory-heavy on m5.xlarge x 2 in ap-southeast-1
+{
+  "JobFlowId": "j-3KGJJQ630PKZR",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-3KGJJQ630PKZR",
+  "ResponseMetadata": {
+    "RequestId": "9f38f2ba-a1c4-472e-b595-3ff95c195df5",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "9f38f2ba-a1c4-472e-b595-3ff95c195df5",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Wed, 22 Jul 2026 22:14:23 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-3KGJJQ630PKZR step s-01537551NH55EFUFVTOZ is PENDING
+j-3KGJJQ630PKZR step s-01537551NH55EFUFVTOZ is PENDING
+j-3KGJJQ630PKZR step s-01537551NH55EFUFVTOZ is PENDING
+j-3KGJJQ630PKZR step s-01537551NH55EFUFVTOZ is PENDING
+j-3KGJJQ630PKZR step s-01537551NH55EFUFVTOZ is PENDING
+j-3KGJJQ630PKZR step s-01537551NH55EFUFVTOZ is PENDING
+j-3KGJJQ630PKZR step s-01537551NH55EFUFVTOZ is PENDING
+j-3KGJJQ630PKZR step s-01537551NH55EFUFVTOZ is RUNNING
+j-3KGJJQ630PKZR step s-01537551NH55EFUFVTOZ is RUNNING
+j-3KGJJQ630PKZR step s-01537551NH55EFUFVTOZ is RUNNING
+j-3KGJJQ630PKZR step s-01537551NH55EFUFVTOZ is COMPLETED
+j-3KGJJQ630PKZR cluster is TERMINATING
+j-3KGJJQ630PKZR cluster is TERMINATING
+j-3KGJJQ630PKZR cluster is TERMINATED
+Saved memory-heavy 500MB m5.xlarge x 2 runtime=1.3735 min cost=$0.0110; cluster=TERMINATED
+Skipping completed 500MB memory-heavy m5.xlarge x 4 in ap-southeast-1
+Starting 500MB memory-heavy on m5a.xlarge x 2 in ap-southeast-1
+{
+  "JobFlowId": "j-3E1I6YDT3T1H9",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-3E1I6YDT3T1H9",
+  "ResponseMetadata": {
+    "RequestId": "664d214f-37a3-4681-838a-087c647d565d",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "664d214f-37a3-4681-838a-087c647d565d",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Wed, 22 Jul 2026 22:20:27 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-3E1I6YDT3T1H9 step s-038253636HH5QHQPUYVS is PENDING
+j-3E1I6YDT3T1H9 step s-038253636HH5QHQPUYVS is PENDING
+j-3E1I6YDT3T1H9 step s-038253636HH5QHQPUYVS is PENDING
+j-3E1I6YDT3T1H9 step s-038253636HH5QHQPUYVS is PENDING
+j-3E1I6YDT3T1H9 step s-038253636HH5QHQPUYVS is PENDING
+j-3E1I6YDT3T1H9 step s-038253636HH5QHQPUYVS is PENDING
+j-3E1I6YDT3T1H9 step s-038253636HH5QHQPUYVS is PENDING
+j-3E1I6YDT3T1H9 step s-038253636HH5QHQPUYVS is PENDING
+j-3E1I6YDT3T1H9 step s-038253636HH5QHQPUYVS is RUNNING
+j-3E1I6YDT3T1H9 step s-038253636HH5QHQPUYVS is RUNNING
+j-3E1I6YDT3T1H9 step s-038253636HH5QHQPUYVS is RUNNING
+j-3E1I6YDT3T1H9 step s-038253636HH5QHQPUYVS is RUNNING
+j-3E1I6YDT3T1H9 step s-038253636HH5QHQPUYVS is COMPLETED
+j-3E1I6YDT3T1H9 cluster is TERMINATING
+j-3E1I6YDT3T1H9 cluster is TERMINATED
+Saved memory-heavy 500MB m5a.xlarge x 2 runtime=1.7754 min cost=$0.0128; cluster=TERMINATED
+Skipping completed 500MB memory-heavy m5a.xlarge x 4 in ap-southeast-1
+Starting 500MB memory-heavy on c5.xlarge x 2 in ap-southeast-1
+{
+  "JobFlowId": "j-13D59YO3BC0V3",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-13D59YO3BC0V3",
+  "ResponseMetadata": {
+    "RequestId": "c8dc1240-32ae-4fa7-9132-157e681722c2",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "c8dc1240-32ae-4fa7-9132-157e681722c2",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Wed, 22 Jul 2026 22:27:02 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-13D59YO3BC0V3 step s-03830322JTOBTR87Y14M is PENDING
+j-13D59YO3BC0V3 step s-03830322JTOBTR87Y14M is PENDING
+j-13D59YO3BC0V3 step s-03830322JTOBTR87Y14M is PENDING
+j-13D59YO3BC0V3 step s-03830322JTOBTR87Y14M is PENDING
+j-13D59YO3BC0V3 step s-03830322JTOBTR87Y14M is PENDING
+j-13D59YO3BC0V3 step s-03830322JTOBTR87Y14M is PENDING
+j-13D59YO3BC0V3 step s-03830322JTOBTR87Y14M is PENDING
+j-13D59YO3BC0V3 step s-03830322JTOBTR87Y14M is RUNNING
+j-13D59YO3BC0V3 step s-03830322JTOBTR87Y14M is RUNNING
+j-13D59YO3BC0V3 step s-03830322JTOBTR87Y14M is RUNNING
+j-13D59YO3BC0V3 step s-03830322JTOBTR87Y14M is COMPLETED
+j-13D59YO3BC0V3 cluster is TERMINATING
+j-13D59YO3BC0V3 cluster is TERMINATING
+j-13D59YO3BC0V3 cluster is TERMINATED
+Saved memory-heavy 500MB c5.xlarge x 2 runtime=1.2730 min cost=$0.0083; cluster=TERMINATED
+Skipping completed 500MB memory-heavy c5.xlarge x 4 in ap-southeast-1
+Skipping completed 500MB memory-heavy c5a.xlarge x 2 in ap-southeast-1
+Skipping completed 500MB memory-heavy c5a.xlarge x 4 in ap-southeast-1
+Starting 500MB memory-heavy on c6i.xlarge x 2 in ap-southeast-1
+{
+  "JobFlowId": "j-2RSK4HCDDSMBP",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-2RSK4HCDDSMBP",
+  "ResponseMetadata": {
+    "RequestId": "4465a9eb-4f07-4481-9b8b-8dccaac30ff2",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "4465a9eb-4f07-4481-9b8b-8dccaac30ff2",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Wed, 22 Jul 2026 22:33:06 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-2RSK4HCDDSMBP step s-01260633VMFBLFY2FDPM is PENDING
+j-2RSK4HCDDSMBP step s-01260633VMFBLFY2FDPM is PENDING
+j-2RSK4HCDDSMBP step s-01260633VMFBLFY2FDPM is PENDING
+j-2RSK4HCDDSMBP step s-01260633VMFBLFY2FDPM is PENDING
+j-2RSK4HCDDSMBP step s-01260633VMFBLFY2FDPM is PENDING
+j-2RSK4HCDDSMBP step s-01260633VMFBLFY2FDPM is PENDING
+j-2RSK4HCDDSMBP step s-01260633VMFBLFY2FDPM is RUNNING
+j-2RSK4HCDDSMBP step s-01260633VMFBLFY2FDPM is RUNNING
+j-2RSK4HCDDSMBP step s-01260633VMFBLFY2FDPM is COMPLETED
+j-2RSK4HCDDSMBP cluster is TERMINATING
+j-2RSK4HCDDSMBP cluster is TERMINATING
+j-2RSK4HCDDSMBP cluster is TERMINATED
+Saved memory-heavy 500MB c6i.xlarge x 2 runtime=1.0743 min cost=$0.0070; cluster=TERMINATED
+Skipping completed 500MB memory-heavy c6i.xlarge x 4 in ap-southeast-1
+Skipping completed 500MB io-heavy m5.xlarge x 2 in ap-southeast-1
+Skipping completed 500MB io-heavy m5.xlarge x 4 in ap-southeast-1
+Starting 500MB io-heavy on m5a.xlarge x 2 in ap-southeast-1
+{
+  "JobFlowId": "j-15RD457U4S2GW",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-15RD457U4S2GW",
+  "ResponseMetadata": {
+    "RequestId": "4f463f37-788f-4652-9945-1ee08248c211",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "4f463f37-788f-4652-9945-1ee08248c211",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Wed, 22 Jul 2026 22:38:10 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-15RD457U4S2GW step s-042364419HS0PNBKJN79 is PENDING
+j-15RD457U4S2GW step s-042364419HS0PNBKJN79 is PENDING
+j-15RD457U4S2GW step s-042364419HS0PNBKJN79 is PENDING
+j-15RD457U4S2GW step s-042364419HS0PNBKJN79 is PENDING
+j-15RD457U4S2GW step s-042364419HS0PNBKJN79 is PENDING
+j-15RD457U4S2GW step s-042364419HS0PNBKJN79 is PENDING
+j-15RD457U4S2GW step s-042364419HS0PNBKJN79 is PENDING
+j-15RD457U4S2GW step s-042364419HS0PNBKJN79 is PENDING
+j-15RD457U4S2GW step s-042364419HS0PNBKJN79 is RUNNING
+j-15RD457U4S2GW step s-042364419HS0PNBKJN79 is RUNNING
+j-15RD457U4S2GW step s-042364419HS0PNBKJN79 is RUNNING
+j-15RD457U4S2GW step s-042364419HS0PNBKJN79 is RUNNING
+j-15RD457U4S2GW step s-042364419HS0PNBKJN79 is COMPLETED
+j-15RD457U4S2GW cluster is TERMINATING
+j-15RD457U4S2GW cluster is TERMINATING
+j-15RD457U4S2GW cluster is TERMINATING
+j-15RD457U4S2GW cluster is TERMINATED
+Saved io-heavy 500MB m5a.xlarge x 2 runtime=2.0413 min cost=$0.0147; cluster=TERMINATED
+Skipping completed 500MB io-heavy m5a.xlarge x 4 in ap-southeast-1
+Starting 500MB io-heavy on c5.xlarge x 2 in ap-southeast-1
+{
+  "JobFlowId": "j-2MGPANPFWDGV7",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-2MGPANPFWDGV7",
+  "ResponseMetadata": {
+    "RequestId": "77ad025e-f331-4014-9b48-04d763395199",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "77ad025e-f331-4014-9b48-04d763395199",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Wed, 22 Jul 2026 22:45:46 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-2MGPANPFWDGV7 step s-0176654190VOS0GJ0YBD is PENDING
+j-2MGPANPFWDGV7 step s-0176654190VOS0GJ0YBD is PENDING
+j-2MGPANPFWDGV7 step s-0176654190VOS0GJ0YBD is PENDING
+j-2MGPANPFWDGV7 step s-0176654190VOS0GJ0YBD is PENDING
+j-2MGPANPFWDGV7 step s-0176654190VOS0GJ0YBD is PENDING
+j-2MGPANPFWDGV7 step s-0176654190VOS0GJ0YBD is PENDING
+j-2MGPANPFWDGV7 step s-0176654190VOS0GJ0YBD is PENDING
+j-2MGPANPFWDGV7 step s-0176654190VOS0GJ0YBD is RUNNING
+j-2MGPANPFWDGV7 step s-0176654190VOS0GJ0YBD is RUNNING
+j-2MGPANPFWDGV7 step s-0176654190VOS0GJ0YBD is RUNNING
+j-2MGPANPFWDGV7 step s-0176654190VOS0GJ0YBD is COMPLETED
+j-2MGPANPFWDGV7 cluster is TERMINATING
+j-2MGPANPFWDGV7 cluster is TERMINATING
+j-2MGPANPFWDGV7 cluster is TERMINATED
+Saved io-heavy 500MB c5.xlarge x 2 runtime=1.5072 min cost=$0.0098; cluster=TERMINATED
+Skipping completed 500MB io-heavy c5.xlarge x 4 in ap-southeast-1
+Skipping completed 500MB io-heavy c5a.xlarge x 2 in ap-southeast-1
+Skipping completed 500MB io-heavy c5a.xlarge x 4 in ap-southeast-1
+Starting 500MB io-heavy on c6i.xlarge x 2 in ap-southeast-1
+{
+  "JobFlowId": "j-2JY3BRQ1X6AL0",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-2JY3BRQ1X6AL0",
+  "ResponseMetadata": {
+    "RequestId": "0c4c6117-bd99-465a-a153-8d791503b5fe",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "0c4c6117-bd99-465a-a153-8d791503b5fe",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Wed, 22 Jul 2026 22:51:50 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-2JY3BRQ1X6AL0 step s-0677944330MAV6QFDQ20 is PENDING
+j-2JY3BRQ1X6AL0 step s-0677944330MAV6QFDQ20 is PENDING
+j-2JY3BRQ1X6AL0 step s-0677944330MAV6QFDQ20 is PENDING
+j-2JY3BRQ1X6AL0 step s-0677944330MAV6QFDQ20 is PENDING
+j-2JY3BRQ1X6AL0 step s-0677944330MAV6QFDQ20 is PENDING
+j-2JY3BRQ1X6AL0 step s-0677944330MAV6QFDQ20 is PENDING
+j-2JY3BRQ1X6AL0 step s-0677944330MAV6QFDQ20 is RUNNING
+j-2JY3BRQ1X6AL0 step s-0677944330MAV6QFDQ20 is RUNNING
+j-2JY3BRQ1X6AL0 step s-0677944330MAV6QFDQ20 is RUNNING
+j-2JY3BRQ1X6AL0 step s-0677944330MAV6QFDQ20 is COMPLETED
+j-2JY3BRQ1X6AL0 cluster is TERMINATING
+j-2JY3BRQ1X6AL0 cluster is TERMINATED
+Saved io-heavy 500MB c6i.xlarge x 2 runtime=1.3048 min cost=$0.0085; cluster=TERMINATED
+Skipping completed 500MB io-heavy c6i.xlarge x 4 in ap-southeast-1
+Starting 1024MB cpu-heavy on m5.xlarge x 2 in ap-southeast-1
+{
+  "JobFlowId": "j-1D6YAFPIQL1IG",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-1D6YAFPIQL1IG",
+  "ResponseMetadata": {
+    "RequestId": "96372136-8167-4191-b594-a956786f97f6",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "96372136-8167-4191-b594-a956786f97f6",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Wed, 22 Jul 2026 22:56:56 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-1D6YAFPIQL1IG step s-092620917GWFF6YVX0A5 is PENDING
+j-1D6YAFPIQL1IG step s-092620917GWFF6YVX0A5 is PENDING
+j-1D6YAFPIQL1IG step s-092620917GWFF6YVX0A5 is PENDING
+j-1D6YAFPIQL1IG step s-092620917GWFF6YVX0A5 is PENDING
+j-1D6YAFPIQL1IG step s-092620917GWFF6YVX0A5 is PENDING
+j-1D6YAFPIQL1IG step s-092620917GWFF6YVX0A5 is PENDING
+j-1D6YAFPIQL1IG step s-092620917GWFF6YVX0A5 is PENDING
+j-1D6YAFPIQL1IG step s-092620917GWFF6YVX0A5 is RUNNING
+j-1D6YAFPIQL1IG step s-092620917GWFF6YVX0A5 is RUNNING
+j-1D6YAFPIQL1IG step s-092620917GWFF6YVX0A5 is RUNNING
+j-1D6YAFPIQL1IG step s-092620917GWFF6YVX0A5 is RUNNING
+j-1D6YAFPIQL1IG step s-092620917GWFF6YVX0A5 is COMPLETED
+j-1D6YAFPIQL1IG cluster is TERMINATING
+j-1D6YAFPIQL1IG cluster is TERMINATED
+Saved cpu-heavy 1024MB m5.xlarge x 2 runtime=1.9734 min cost=$0.0158; cluster=TERMINATED
+Skipping completed 1024MB cpu-heavy m5.xlarge x 4 in ap-southeast-1
+Starting 1024MB cpu-heavy on m5a.xlarge x 2 in ap-southeast-1
+{
+  "JobFlowId": "j-SP4QGJPP14ZX",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-SP4QGJPP14ZX",
+  "ResponseMetadata": {
+    "RequestId": "95939597-4734-4102-ac83-f21c85425f84",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "95939597-4734-4102-ac83-f21c85425f84",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "121",
+      "date": "Wed, 22 Jul 2026 23:03:00 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-SP4QGJPP14ZX step s-09104952C2ETZ5MWE6PL is PENDING
+j-SP4QGJPP14ZX step s-09104952C2ETZ5MWE6PL is PENDING
+j-SP4QGJPP14ZX step s-09104952C2ETZ5MWE6PL is PENDING
+j-SP4QGJPP14ZX step s-09104952C2ETZ5MWE6PL is PENDING
+j-SP4QGJPP14ZX step s-09104952C2ETZ5MWE6PL is PENDING
+j-SP4QGJPP14ZX step s-09104952C2ETZ5MWE6PL is PENDING
+j-SP4QGJPP14ZX step s-09104952C2ETZ5MWE6PL is PENDING
+j-SP4QGJPP14ZX step s-09104952C2ETZ5MWE6PL is RUNNING
+j-SP4QGJPP14ZX step s-09104952C2ETZ5MWE6PL is RUNNING
+j-SP4QGJPP14ZX step s-09104952C2ETZ5MWE6PL is RUNNING
+j-SP4QGJPP14ZX step s-09104952C2ETZ5MWE6PL is RUNNING
+j-SP4QGJPP14ZX step s-09104952C2ETZ5MWE6PL is RUNNING
+j-SP4QGJPP14ZX step s-09104952C2ETZ5MWE6PL is COMPLETED
+j-SP4QGJPP14ZX cluster is TERMINATING
+j-SP4QGJPP14ZX cluster is TERMINATED
+Saved cpu-heavy 1024MB m5a.xlarge x 2 runtime=2.4085 min cost=$0.0173; cluster=TERMINATED
+Skipping completed 1024MB cpu-heavy m5a.xlarge x 4 in ap-southeast-1
+Starting 1024MB cpu-heavy on c5.xlarge x 2 in ap-southeast-1
+{
+  "JobFlowId": "j-2S3L38QZ3BFTZ",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-2S3L38QZ3BFTZ",
+  "ResponseMetadata": {
+    "RequestId": "72c38f93-2eed-4954-a72d-19ad2ff3877f",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "72c38f93-2eed-4954-a72d-19ad2ff3877f",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Wed, 22 Jul 2026 23:09:35 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-2S3L38QZ3BFTZ step s-0928508BG3KXR34X3W6 is PENDING
+j-2S3L38QZ3BFTZ step s-0928508BG3KXR34X3W6 is PENDING
+j-2S3L38QZ3BFTZ step s-0928508BG3KXR34X3W6 is PENDING
+j-2S3L38QZ3BFTZ step s-0928508BG3KXR34X3W6 is PENDING
+j-2S3L38QZ3BFTZ step s-0928508BG3KXR34X3W6 is PENDING
+j-2S3L38QZ3BFTZ step s-0928508BG3KXR34X3W6 is PENDING
+j-2S3L38QZ3BFTZ step s-0928508BG3KXR34X3W6 is PENDING
+j-2S3L38QZ3BFTZ step s-0928508BG3KXR34X3W6 is RUNNING
+j-2S3L38QZ3BFTZ step s-0928508BG3KXR34X3W6 is RUNNING
+j-2S3L38QZ3BFTZ step s-0928508BG3KXR34X3W6 is RUNNING
+j-2S3L38QZ3BFTZ step s-0928508BG3KXR34X3W6 is COMPLETED
+j-2S3L38QZ3BFTZ cluster is TERMINATING
+j-2S3L38QZ3BFTZ cluster is TERMINATING
+j-2S3L38QZ3BFTZ cluster is TERMINATED
+Saved cpu-heavy 1024MB c5.xlarge x 2 runtime=1.6066 min cost=$0.0105; cluster=TERMINATED
+Skipping completed 1024MB cpu-heavy c5.xlarge x 4 in ap-southeast-1
+Skipping completed 1024MB cpu-heavy c5a.xlarge x 2 in ap-southeast-1
+Skipping completed 1024MB cpu-heavy c5a.xlarge x 4 in ap-southeast-1
+Starting 1024MB cpu-heavy on c6i.xlarge x 2 in ap-southeast-1
+{
+  "JobFlowId": "j-CQX8V7EIH6PF",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-CQX8V7EIH6PF",
+  "ResponseMetadata": {
+    "RequestId": "81fc3c24-f440-43cf-b094-4b2f929cec22",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "81fc3c24-f440-43cf-b094-4b2f929cec22",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "121",
+      "date": "Wed, 22 Jul 2026 23:15:40 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-CQX8V7EIH6PF step s-03816833JW3ICV2T51LL is PENDING
+j-CQX8V7EIH6PF step s-03816833JW3ICV2T51LL is PENDING
+j-CQX8V7EIH6PF step s-03816833JW3ICV2T51LL is PENDING
+j-CQX8V7EIH6PF step s-03816833JW3ICV2T51LL is PENDING
+j-CQX8V7EIH6PF step s-03816833JW3ICV2T51LL is PENDING
+j-CQX8V7EIH6PF step s-03816833JW3ICV2T51LL is PENDING
+j-CQX8V7EIH6PF step s-03816833JW3ICV2T51LL is RUNNING
+j-CQX8V7EIH6PF step s-03816833JW3ICV2T51LL is RUNNING
+j-CQX8V7EIH6PF step s-03816833JW3ICV2T51LL is RUNNING
+j-CQX8V7EIH6PF step s-03816833JW3ICV2T51LL is COMPLETED
+j-CQX8V7EIH6PF cluster is TERMINATING
+j-CQX8V7EIH6PF cluster is TERMINATED
+Saved cpu-heavy 1024MB c6i.xlarge x 2 runtime=1.4722 min cost=$0.0096; cluster=TERMINATED
+Skipping completed 1024MB cpu-heavy c6i.xlarge x 4 in ap-southeast-1
+Skipping completed 1024MB memory-heavy m5.xlarge x 2 in ap-southeast-1
+Skipping completed 1024MB memory-heavy m5.xlarge x 4 in ap-southeast-1
+Starting 1024MB memory-heavy on m5a.xlarge x 2 in ap-southeast-1
+{
+  "JobFlowId": "j-1VBIQ1D0VG3JA",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-1VBIQ1D0VG3JA",
+  "ResponseMetadata": {
+    "RequestId": "dcba1cfd-207d-40ce-b0c6-1c91e8769ae1",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "dcba1cfd-207d-40ce-b0c6-1c91e8769ae1",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Wed, 22 Jul 2026 23:20:44 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-1VBIQ1D0VG3JA step s-0162667LC8IOAQIIO0G is PENDING
+j-1VBIQ1D0VG3JA step s-0162667LC8IOAQIIO0G is PENDING
+j-1VBIQ1D0VG3JA step s-0162667LC8IOAQIIO0G is PENDING
+j-1VBIQ1D0VG3JA step s-0162667LC8IOAQIIO0G is PENDING
+j-1VBIQ1D0VG3JA step s-0162667LC8IOAQIIO0G is PENDING
+j-1VBIQ1D0VG3JA step s-0162667LC8IOAQIIO0G is PENDING
+j-1VBIQ1D0VG3JA step s-0162667LC8IOAQIIO0G is PENDING
+j-1VBIQ1D0VG3JA step s-0162667LC8IOAQIIO0G is PENDING
+j-1VBIQ1D0VG3JA step s-0162667LC8IOAQIIO0G is RUNNING
+j-1VBIQ1D0VG3JA step s-0162667LC8IOAQIIO0G is RUNNING
+j-1VBIQ1D0VG3JA step s-0162667LC8IOAQIIO0G is RUNNING
+j-1VBIQ1D0VG3JA step s-0162667LC8IOAQIIO0G is RUNNING
+j-1VBIQ1D0VG3JA step s-0162667LC8IOAQIIO0G is RUNNING
+j-1VBIQ1D0VG3JA step s-0162667LC8IOAQIIO0G is COMPLETED
+j-1VBIQ1D0VG3JA cluster is TERMINATING
+j-1VBIQ1D0VG3JA cluster is TERMINATING
+j-1VBIQ1D0VG3JA cluster is TERMINATED
+Saved memory-heavy 1024MB m5a.xlarge x 2 runtime=2.6090 min cost=$0.0188; cluster=TERMINATED
+Skipping completed 1024MB memory-heavy m5a.xlarge x 4 in ap-southeast-1
+Starting 1024MB memory-heavy on c5.xlarge x 2 in ap-southeast-1
+{
+  "JobFlowId": "j-23AT1SHLH0VND",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-23AT1SHLH0VND",
+  "ResponseMetadata": {
+    "RequestId": "313b54c5-c499-4394-9729-6b41257b746e",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "313b54c5-c499-4394-9729-6b41257b746e",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Wed, 22 Jul 2026 23:28:19 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-23AT1SHLH0VND step s-0191805NU9WKC2GV5MH is PENDING
+j-23AT1SHLH0VND step s-0191805NU9WKC2GV5MH is PENDING
+j-23AT1SHLH0VND step s-0191805NU9WKC2GV5MH is PENDING
+j-23AT1SHLH0VND step s-0191805NU9WKC2GV5MH is PENDING
+j-23AT1SHLH0VND step s-0191805NU9WKC2GV5MH is PENDING
+j-23AT1SHLH0VND step s-0191805NU9WKC2GV5MH is PENDING
+j-23AT1SHLH0VND step s-0191805NU9WKC2GV5MH is PENDING
+j-23AT1SHLH0VND step s-0191805NU9WKC2GV5MH is RUNNING
+j-23AT1SHLH0VND step s-0191805NU9WKC2GV5MH is RUNNING
+j-23AT1SHLH0VND step s-0191805NU9WKC2GV5MH is RUNNING
+j-23AT1SHLH0VND step s-0191805NU9WKC2GV5MH is RUNNING
+j-23AT1SHLH0VND step s-0191805NU9WKC2GV5MH is COMPLETED
+j-23AT1SHLH0VND cluster is TERMINATING
+j-23AT1SHLH0VND cluster is TERMINATED
+Saved memory-heavy 1024MB c5.xlarge x 2 runtime=1.7730 min cost=$0.0116; cluster=TERMINATED
+Skipping completed 1024MB memory-heavy c5.xlarge x 4 in ap-southeast-1
+Skipping completed 1024MB memory-heavy c5a.xlarge x 2 in ap-southeast-1
+Skipping completed 1024MB memory-heavy c5a.xlarge x 4 in ap-southeast-1
+Starting 1024MB memory-heavy on c6i.xlarge x 2 in ap-southeast-1
+{
+  "JobFlowId": "j-1THZ87QQADJP",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-1THZ87QQADJP",
+  "ResponseMetadata": {
+    "RequestId": "b1bfabfa-45a8-4bde-9355-cb1e4e3664d9",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "b1bfabfa-45a8-4bde-9355-cb1e4e3664d9",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "121",
+      "date": "Wed, 22 Jul 2026 23:34:24 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-1THZ87QQADJP step s-03824402BPD4RQIW6CKE is PENDING
+j-1THZ87QQADJP step s-03824402BPD4RQIW6CKE is PENDING
+j-1THZ87QQADJP step s-03824402BPD4RQIW6CKE is PENDING
+j-1THZ87QQADJP step s-03824402BPD4RQIW6CKE is PENDING
+j-1THZ87QQADJP step s-03824402BPD4RQIW6CKE is PENDING
+j-1THZ87QQADJP step s-03824402BPD4RQIW6CKE is PENDING
+j-1THZ87QQADJP step s-03824402BPD4RQIW6CKE is RUNNING
+j-1THZ87QQADJP step s-03824402BPD4RQIW6CKE is RUNNING
+j-1THZ87QQADJP step s-03824402BPD4RQIW6CKE is RUNNING
+j-1THZ87QQADJP step s-03824402BPD4RQIW6CKE is COMPLETED
+j-1THZ87QQADJP cluster is TERMINATING
+j-1THZ87QQADJP cluster is TERMINATING
+j-1THZ87QQADJP cluster is TERMINATING
+j-1THZ87QQADJP cluster is TERMINATED
+Saved memory-heavy 1024MB c6i.xlarge x 2 runtime=1.5054 min cost=$0.0098; cluster=TERMINATED
+Skipping completed 1024MB memory-heavy c6i.xlarge x 4 in ap-southeast-1
+Skipping completed 1024MB io-heavy m5.xlarge x 2 in ap-southeast-1
+Skipping completed 1024MB io-heavy m5.xlarge x 4 in ap-southeast-1
+Starting 1024MB io-heavy on m5a.xlarge x 2 in ap-southeast-1
+{
+  "JobFlowId": "j-20OH6FB9KJ54A",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-20OH6FB9KJ54A",
+  "ResponseMetadata": {
+    "RequestId": "22c0dc96-9297-4e01-b9fb-3ce8181be36f",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "22c0dc96-9297-4e01-b9fb-3ce8181be36f",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Wed, 22 Jul 2026 23:40:28 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-20OH6FB9KJ54A step s-01668801VZIBL60GZW7K is PENDING
+j-20OH6FB9KJ54A step s-01668801VZIBL60GZW7K is PENDING
+j-20OH6FB9KJ54A step s-01668801VZIBL60GZW7K is PENDING
+j-20OH6FB9KJ54A step s-01668801VZIBL60GZW7K is PENDING
+j-20OH6FB9KJ54A step s-01668801VZIBL60GZW7K is PENDING
+j-20OH6FB9KJ54A step s-01668801VZIBL60GZW7K is PENDING
+j-20OH6FB9KJ54A step s-01668801VZIBL60GZW7K is PENDING
+j-20OH6FB9KJ54A step s-01668801VZIBL60GZW7K is RUNNING
+j-20OH6FB9KJ54A step s-01668801VZIBL60GZW7K is RUNNING
+j-20OH6FB9KJ54A step s-01668801VZIBL60GZW7K is RUNNING
+j-20OH6FB9KJ54A step s-01668801VZIBL60GZW7K is RUNNING
+j-20OH6FB9KJ54A step s-01668801VZIBL60GZW7K is RUNNING
+j-20OH6FB9KJ54A step s-01668801VZIBL60GZW7K is RUNNING
+j-20OH6FB9KJ54A step s-01668801VZIBL60GZW7K is COMPLETED
+j-20OH6FB9KJ54A cluster is TERMINATING
+j-20OH6FB9KJ54A cluster is TERMINATING
+j-20OH6FB9KJ54A cluster is TERMINATED
+Saved io-heavy 1024MB m5a.xlarge x 2 runtime=2.9091 min cost=$0.0209; cluster=TERMINATED
+Skipping completed 1024MB io-heavy m5a.xlarge x 4 in ap-southeast-1
+Starting 1024MB io-heavy on c5.xlarge x 2 in ap-southeast-1
+{
+  "JobFlowId": "j-3K73YL2W5Y5V",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-3K73YL2W5Y5V",
+  "ResponseMetadata": {
+    "RequestId": "a8556d78-15ec-42ee-9342-1c214f06bc66",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "a8556d78-15ec-42ee-9342-1c214f06bc66",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "121",
+      "date": "Wed, 22 Jul 2026 23:48:03 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-3K73YL2W5Y5V step s-01377452URBOWDGSWLRI is PENDING
+j-3K73YL2W5Y5V step s-01377452URBOWDGSWLRI is PENDING
+j-3K73YL2W5Y5V step s-01377452URBOWDGSWLRI is PENDING
+j-3K73YL2W5Y5V step s-01377452URBOWDGSWLRI is PENDING
+j-3K73YL2W5Y5V step s-01377452URBOWDGSWLRI is PENDING
+j-3K73YL2W5Y5V step s-01377452URBOWDGSWLRI is PENDING
+j-3K73YL2W5Y5V step s-01377452URBOWDGSWLRI is PENDING
+j-3K73YL2W5Y5V step s-01377452URBOWDGSWLRI is RUNNING
+j-3K73YL2W5Y5V step s-01377452URBOWDGSWLRI is RUNNING
+j-3K73YL2W5Y5V step s-01377452URBOWDGSWLRI is RUNNING
+j-3K73YL2W5Y5V step s-01377452URBOWDGSWLRI is RUNNING
+j-3K73YL2W5Y5V step s-01377452URBOWDGSWLRI is COMPLETED
+j-3K73YL2W5Y5V cluster is TERMINATING
+j-3K73YL2W5Y5V cluster is TERMINATED
+Saved io-heavy 1024MB c5.xlarge x 2 runtime=2.0728 min cost=$0.0135; cluster=TERMINATED
+Skipping completed 1024MB io-heavy c5.xlarge x 4 in ap-southeast-1
+Skipping completed 1024MB io-heavy c5a.xlarge x 2 in ap-southeast-1
+Skipping completed 1024MB io-heavy c5a.xlarge x 4 in ap-southeast-1
+Starting 1024MB io-heavy on c6i.xlarge x 2 in ap-southeast-1
+{
+  "JobFlowId": "j-3VU15ZSZLLLK",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-3VU15ZSZLLLK",
+  "ResponseMetadata": {
+    "RequestId": "d01e11ed-f641-48fd-9e88-d2738b909ebf",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "d01e11ed-f641-48fd-9e88-d2738b909ebf",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "121",
+      "date": "Wed, 22 Jul 2026 23:54:08 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-3VU15ZSZLLLK step s-00560922H9CKHYGUBIFP is PENDING
+j-3VU15ZSZLLLK step s-00560922H9CKHYGUBIFP is PENDING
+j-3VU15ZSZLLLK step s-00560922H9CKHYGUBIFP is PENDING
+j-3VU15ZSZLLLK step s-00560922H9CKHYGUBIFP is PENDING
+j-3VU15ZSZLLLK step s-00560922H9CKHYGUBIFP is PENDING
+j-3VU15ZSZLLLK step s-00560922H9CKHYGUBIFP is PENDING
+j-3VU15ZSZLLLK step s-00560922H9CKHYGUBIFP is RUNNING
+j-3VU15ZSZLLLK step s-00560922H9CKHYGUBIFP is RUNNING
+j-3VU15ZSZLLLK step s-00560922H9CKHYGUBIFP is RUNNING
+j-3VU15ZSZLLLK step s-00560922H9CKHYGUBIFP is RUNNING
+j-3VU15ZSZLLLK step s-00560922H9CKHYGUBIFP is COMPLETED
+j-3VU15ZSZLLLK cluster is TERMINATING
+j-3VU15ZSZLLLK cluster is TERMINATING
+j-3VU15ZSZLLLK cluster is TERMINATED
+Saved io-heavy 1024MB c6i.xlarge x 2 runtime=1.8052 min cost=$0.0118; cluster=TERMINATED
+Skipping completed 1024MB io-heavy c6i.xlarge x 4 in ap-southeast-1
+Starting 2048MB cpu-heavy on m5.xlarge x 2 in ap-southeast-1
+{
+  "JobFlowId": "j-PB1A0IO40YSK",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-PB1A0IO40YSK",
+  "ResponseMetadata": {
+    "RequestId": "01cc2bea-36b4-4993-971d-0628be159b5d",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "01cc2bea-36b4-4993-971d-0628be159b5d",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "121",
+      "date": "Thu, 23 Jul 2026 00:00:13 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-PB1A0IO40YSK step s-06783578KUN9757O3XM is PENDING
+j-PB1A0IO40YSK step s-06783578KUN9757O3XM is PENDING
+j-PB1A0IO40YSK step s-06783578KUN9757O3XM is PENDING
+j-PB1A0IO40YSK step s-06783578KUN9757O3XM is PENDING
+j-PB1A0IO40YSK step s-06783578KUN9757O3XM is PENDING
+j-PB1A0IO40YSK step s-06783578KUN9757O3XM is PENDING
+j-PB1A0IO40YSK step s-06783578KUN9757O3XM is PENDING
+j-PB1A0IO40YSK step s-06783578KUN9757O3XM is RUNNING
+j-PB1A0IO40YSK step s-06783578KUN9757O3XM is RUNNING
+j-PB1A0IO40YSK step s-06783578KUN9757O3XM is RUNNING
+j-PB1A0IO40YSK step s-06783578KUN9757O3XM is RUNNING
+j-PB1A0IO40YSK step s-06783578KUN9757O3XM is RUNNING
+j-PB1A0IO40YSK step s-06783578KUN9757O3XM is RUNNING
+j-PB1A0IO40YSK step s-06783578KUN9757O3XM is COMPLETED
+j-PB1A0IO40YSK cluster is TERMINATING
+j-PB1A0IO40YSK cluster is TERMINATING
+j-PB1A0IO40YSK cluster is TERMINATED
+Saved cpu-heavy 2048MB m5.xlarge x 2 runtime=2.8409 min cost=$0.0227; cluster=TERMINATED
+Starting 2048MB cpu-heavy on m5.xlarge x 4 in ap-southeast-1
+{
+  "JobFlowId": "j-HL9D5KEQQHTS",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-HL9D5KEQQHTS",
+  "ResponseMetadata": {
+    "RequestId": "350e22ce-9b09-4d85-a784-0592f0fa392e",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "350e22ce-9b09-4d85-a784-0592f0fa392e",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "121",
+      "date": "Thu, 23 Jul 2026 00:07:48 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-HL9D5KEQQHTS step s-03940772LISV5A0TK9D1 is PENDING
+j-HL9D5KEQQHTS step s-03940772LISV5A0TK9D1 is PENDING
+j-HL9D5KEQQHTS step s-03940772LISV5A0TK9D1 is PENDING
+j-HL9D5KEQQHTS step s-03940772LISV5A0TK9D1 is PENDING
+j-HL9D5KEQQHTS step s-03940772LISV5A0TK9D1 is PENDING
+j-HL9D5KEQQHTS step s-03940772LISV5A0TK9D1 is PENDING
+j-HL9D5KEQQHTS step s-03940772LISV5A0TK9D1 is PENDING
+j-HL9D5KEQQHTS step s-03940772LISV5A0TK9D1 is RUNNING
+j-HL9D5KEQQHTS step s-03940772LISV5A0TK9D1 is RUNNING
+j-HL9D5KEQQHTS step s-03940772LISV5A0TK9D1 is RUNNING
+j-HL9D5KEQQHTS step s-03940772LISV5A0TK9D1 is RUNNING
+j-HL9D5KEQQHTS step s-03940772LISV5A0TK9D1 is COMPLETED
+j-HL9D5KEQQHTS cluster is TERMINATING
+j-HL9D5KEQQHTS cluster is TERMINATING
+j-HL9D5KEQQHTS cluster is TERMINATED
+Saved cpu-heavy 2048MB m5.xlarge x 4 runtime=1.9405 min cost=$0.0310; cluster=TERMINATED
+Starting 2048MB cpu-heavy on m5a.xlarge x 2 in ap-southeast-1
+{
+  "JobFlowId": "j-3QAU43QTCENJU",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-3QAU43QTCENJU",
+  "ResponseMetadata": {
+    "RequestId": "96b92883-3b8e-4542-ba0a-eb8fa85a5c7f",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "96b92883-3b8e-4542-ba0a-eb8fa85a5c7f",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Thu, 23 Jul 2026 00:14:23 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-3QAU43QTCENJU step s-05256661TCGWX2Y1CIMA is PENDING
+j-3QAU43QTCENJU step s-05256661TCGWX2Y1CIMA is PENDING
+j-3QAU43QTCENJU step s-05256661TCGWX2Y1CIMA is PENDING
+j-3QAU43QTCENJU step s-05256661TCGWX2Y1CIMA is PENDING
+j-3QAU43QTCENJU step s-05256661TCGWX2Y1CIMA is PENDING
+j-3QAU43QTCENJU step s-05256661TCGWX2Y1CIMA is PENDING
+j-3QAU43QTCENJU step s-05256661TCGWX2Y1CIMA is PENDING
+j-3QAU43QTCENJU step s-05256661TCGWX2Y1CIMA is RUNNING
+j-3QAU43QTCENJU step s-05256661TCGWX2Y1CIMA is RUNNING
+j-3QAU43QTCENJU step s-05256661TCGWX2Y1CIMA is RUNNING
+j-3QAU43QTCENJU step s-05256661TCGWX2Y1CIMA is RUNNING
+j-3QAU43QTCENJU step s-05256661TCGWX2Y1CIMA is RUNNING
+j-3QAU43QTCENJU step s-05256661TCGWX2Y1CIMA is RUNNING
+j-3QAU43QTCENJU step s-05256661TCGWX2Y1CIMA is RUNNING
+j-3QAU43QTCENJU step s-05256661TCGWX2Y1CIMA is RUNNING
+j-3QAU43QTCENJU step s-05256661TCGWX2Y1CIMA is COMPLETED
+j-3QAU43QTCENJU cluster is TERMINATING
+j-3QAU43QTCENJU cluster is TERMINATING
+j-3QAU43QTCENJU cluster is TERMINATED
+Saved cpu-heavy 2048MB m5a.xlarge x 2 runtime=3.7780 min cost=$0.0272; cluster=TERMINATED
+Starting 2048MB cpu-heavy on m5a.xlarge x 4 in ap-southeast-1
+{
+  "JobFlowId": "j-M36RZ87WJQK4",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-M36RZ87WJQK4",
+  "ResponseMetadata": {
+    "RequestId": "3b1bb1ef-8166-4761-9225-731d4c0bdc6d",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "3b1bb1ef-8166-4761-9225-731d4c0bdc6d",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "121",
+      "date": "Thu, 23 Jul 2026 00:22:59 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-M36RZ87WJQK4 step s-01443191VS3I30MV3NFK is PENDING
+j-M36RZ87WJQK4 step s-01443191VS3I30MV3NFK is PENDING
+j-M36RZ87WJQK4 step s-01443191VS3I30MV3NFK is PENDING
+j-M36RZ87WJQK4 step s-01443191VS3I30MV3NFK is PENDING
+j-M36RZ87WJQK4 step s-01443191VS3I30MV3NFK is PENDING
+j-M36RZ87WJQK4 step s-01443191VS3I30MV3NFK is PENDING
+j-M36RZ87WJQK4 step s-01443191VS3I30MV3NFK is PENDING
+j-M36RZ87WJQK4 step s-01443191VS3I30MV3NFK is PENDING
+j-M36RZ87WJQK4 step s-01443191VS3I30MV3NFK is RUNNING
+j-M36RZ87WJQK4 step s-01443191VS3I30MV3NFK is RUNNING
+j-M36RZ87WJQK4 step s-01443191VS3I30MV3NFK is RUNNING
+j-M36RZ87WJQK4 step s-01443191VS3I30MV3NFK is RUNNING
+j-M36RZ87WJQK4 step s-01443191VS3I30MV3NFK is RUNNING
+j-M36RZ87WJQK4 step s-01443191VS3I30MV3NFK is COMPLETED
+j-M36RZ87WJQK4 cluster is TERMINATING
+j-M36RZ87WJQK4 cluster is TERMINATING
+j-M36RZ87WJQK4 cluster is TERMINATED
+Saved cpu-heavy 2048MB m5a.xlarge x 4 runtime=2.4089 min cost=$0.0347; cluster=TERMINATED
+Starting 2048MB cpu-heavy on c5.xlarge x 2 in ap-southeast-1
+{
+  "JobFlowId": "j-3IT1577QXBZXE",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-3IT1577QXBZXE",
+  "ResponseMetadata": {
+    "RequestId": "45e97331-4004-46d7-9d5a-d2bae2b8bd95",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "45e97331-4004-46d7-9d5a-d2bae2b8bd95",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Thu, 23 Jul 2026 00:30:34 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-3IT1577QXBZXE step s-0134631367PC8LQNFQGP is PENDING
+j-3IT1577QXBZXE step s-0134631367PC8LQNFQGP is PENDING
+j-3IT1577QXBZXE step s-0134631367PC8LQNFQGP is PENDING
+j-3IT1577QXBZXE step s-0134631367PC8LQNFQGP is PENDING
+j-3IT1577QXBZXE step s-0134631367PC8LQNFQGP is PENDING
+j-3IT1577QXBZXE step s-0134631367PC8LQNFQGP is PENDING
+j-3IT1577QXBZXE step s-0134631367PC8LQNFQGP is PENDING
+j-3IT1577QXBZXE step s-0134631367PC8LQNFQGP is RUNNING
+j-3IT1577QXBZXE step s-0134631367PC8LQNFQGP is RUNNING
+j-3IT1577QXBZXE step s-0134631367PC8LQNFQGP is RUNNING
+j-3IT1577QXBZXE step s-0134631367PC8LQNFQGP is RUNNING
+j-3IT1577QXBZXE step s-0134631367PC8LQNFQGP is RUNNING
+j-3IT1577QXBZXE step s-0134631367PC8LQNFQGP is COMPLETED
+j-3IT1577QXBZXE cluster is TERMINATING
+j-3IT1577QXBZXE cluster is TERMINATING
+j-3IT1577QXBZXE cluster is TERMINATED
+Saved cpu-heavy 2048MB c5.xlarge x 2 runtime=2.6407 min cost=$0.0173; cluster=TERMINATED
+Starting 2048MB cpu-heavy on c5.xlarge x 4 in ap-southeast-1
+{
+  "JobFlowId": "j-BPTCEQA55XVH",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-BPTCEQA55XVH",
+  "ResponseMetadata": {
+    "RequestId": "3edda3db-4dbe-4aee-8d37-78511031fa0c",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "3edda3db-4dbe-4aee-8d37-78511031fa0c",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "121",
+      "date": "Thu, 23 Jul 2026 00:37:40 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-BPTCEQA55XVH step s-067839431GWM2A49YW4S is PENDING
+j-BPTCEQA55XVH step s-067839431GWM2A49YW4S is PENDING
+j-BPTCEQA55XVH step s-067839431GWM2A49YW4S is PENDING
+j-BPTCEQA55XVH step s-067839431GWM2A49YW4S is PENDING
+j-BPTCEQA55XVH step s-067839431GWM2A49YW4S is PENDING
+j-BPTCEQA55XVH step s-067839431GWM2A49YW4S is PENDING
+j-BPTCEQA55XVH step s-067839431GWM2A49YW4S is PENDING
+j-BPTCEQA55XVH step s-067839431GWM2A49YW4S is RUNNING
+j-BPTCEQA55XVH step s-067839431GWM2A49YW4S is RUNNING
+j-BPTCEQA55XVH step s-067839431GWM2A49YW4S is RUNNING
+j-BPTCEQA55XVH step s-067839431GWM2A49YW4S is COMPLETED
+j-BPTCEQA55XVH cluster is TERMINATING
+j-BPTCEQA55XVH cluster is TERMINATING
+j-BPTCEQA55XVH cluster is TERMINATED
+Saved cpu-heavy 2048MB c5.xlarge x 4 runtime=1.5063 min cost=$0.0197; cluster=TERMINATED
+Starting 2048MB cpu-heavy on c5a.xlarge x 2 in ap-southeast-1
+{
+  "JobFlowId": "j-3O4PZIGMKZ1ZQ",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-3O4PZIGMKZ1ZQ",
+  "ResponseMetadata": {
+    "RequestId": "932ea2ae-be70-43f9-a59a-b6da694697f5",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "932ea2ae-be70-43f9-a59a-b6da694697f5",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Thu, 23 Jul 2026 00:43:48 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-3O4PZIGMKZ1ZQ step s-04345523378RWSLMGE1M is PENDING
+j-3O4PZIGMKZ1ZQ step s-04345523378RWSLMGE1M is PENDING
+j-3O4PZIGMKZ1ZQ step s-04345523378RWSLMGE1M is PENDING
+j-3O4PZIGMKZ1ZQ step s-04345523378RWSLMGE1M is PENDING
+j-3O4PZIGMKZ1ZQ step s-04345523378RWSLMGE1M is PENDING
+j-3O4PZIGMKZ1ZQ step s-04345523378RWSLMGE1M is PENDING
+j-3O4PZIGMKZ1ZQ step s-04345523378RWSLMGE1M is RUNNING
+j-3O4PZIGMKZ1ZQ step s-04345523378RWSLMGE1M is RUNNING
+j-3O4PZIGMKZ1ZQ step s-04345523378RWSLMGE1M is RUNNING
+j-3O4PZIGMKZ1ZQ step s-04345523378RWSLMGE1M is RUNNING
+j-3O4PZIGMKZ1ZQ step s-04345523378RWSLMGE1M is RUNNING
+j-3O4PZIGMKZ1ZQ step s-04345523378RWSLMGE1M is COMPLETED
+j-3O4PZIGMKZ1ZQ cluster is TERMINATING
+j-3O4PZIGMKZ1ZQ cluster is TERMINATED
+Saved cpu-heavy 2048MB c5a.xlarge x 2 runtime=2.4053 min cost=$0.0141; cluster=TERMINATED
+Starting 2048MB cpu-heavy on c5a.xlarge x 4 in ap-southeast-1
+{
+  "JobFlowId": "j-35UC53BOKFELT",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-35UC53BOKFELT",
+  "ResponseMetadata": {
+    "RequestId": "e89b2ef0-b207-48b4-b3fa-a057a189652c",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "e89b2ef0-b207-48b4-b3fa-a057a189652c",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Thu, 23 Jul 2026 00:49:52 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-35UC53BOKFELT step s-09285323S8PEQA9AHJXE is PENDING
+j-35UC53BOKFELT step s-09285323S8PEQA9AHJXE is PENDING
+j-35UC53BOKFELT step s-09285323S8PEQA9AHJXE is PENDING
+j-35UC53BOKFELT step s-09285323S8PEQA9AHJXE is PENDING
+j-35UC53BOKFELT step s-09285323S8PEQA9AHJXE is PENDING
+j-35UC53BOKFELT step s-09285323S8PEQA9AHJXE is PENDING
+j-35UC53BOKFELT step s-09285323S8PEQA9AHJXE is RUNNING
+j-35UC53BOKFELT step s-09285323S8PEQA9AHJXE is RUNNING
+j-35UC53BOKFELT step s-09285323S8PEQA9AHJXE is RUNNING
+j-35UC53BOKFELT step s-09285323S8PEQA9AHJXE is COMPLETED
+j-35UC53BOKFELT cluster is TERMINATING
+j-35UC53BOKFELT cluster is TERMINATED
+Saved cpu-heavy 2048MB c5a.xlarge x 4 runtime=1.4721 min cost=$0.0173; cluster=TERMINATED
+Starting 2048MB cpu-heavy on c6i.xlarge x 2 in ap-southeast-1
+{
+  "JobFlowId": "j-2YG4B0FS1Z786",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-2YG4B0FS1Z786",
+  "ResponseMetadata": {
+    "RequestId": "9a44acb8-69dc-4459-9044-02f32f299a42",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "9a44acb8-69dc-4459-9044-02f32f299a42",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Thu, 23 Jul 2026 00:54:56 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-2YG4B0FS1Z786 step s-01228971VJR9ROBFTU3E is PENDING
+j-2YG4B0FS1Z786 step s-01228971VJR9ROBFTU3E is PENDING
+j-2YG4B0FS1Z786 step s-01228971VJR9ROBFTU3E is PENDING
+j-2YG4B0FS1Z786 step s-01228971VJR9ROBFTU3E is PENDING
+j-2YG4B0FS1Z786 step s-01228971VJR9ROBFTU3E is PENDING
+j-2YG4B0FS1Z786 step s-01228971VJR9ROBFTU3E is PENDING
+j-2YG4B0FS1Z786 step s-01228971VJR9ROBFTU3E is PENDING
+j-2YG4B0FS1Z786 step s-01228971VJR9ROBFTU3E is RUNNING
+j-2YG4B0FS1Z786 step s-01228971VJR9ROBFTU3E is RUNNING
+j-2YG4B0FS1Z786 step s-01228971VJR9ROBFTU3E is RUNNING
+j-2YG4B0FS1Z786 step s-01228971VJR9ROBFTU3E is RUNNING
+j-2YG4B0FS1Z786 step s-01228971VJR9ROBFTU3E is COMPLETED
+j-2YG4B0FS1Z786 cluster is TERMINATING
+j-2YG4B0FS1Z786 cluster is TERMINATING
+j-2YG4B0FS1Z786 cluster is TERMINATING
+j-2YG4B0FS1Z786 cluster is TERMINATED
+Saved cpu-heavy 2048MB c6i.xlarge x 2 runtime=2.1722 min cost=$0.0142; cluster=TERMINATED
+Starting 2048MB cpu-heavy on c6i.xlarge x 4 in ap-southeast-1
+{
+  "JobFlowId": "j-2R21FMUZ8WBEF",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-2R21FMUZ8WBEF",
+  "ResponseMetadata": {
+    "RequestId": "7cf592e4-86a0-4289-89b5-e15043c0d1b5",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "7cf592e4-86a0-4289-89b5-e15043c0d1b5",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Thu, 23 Jul 2026 01:02:02 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-2R21FMUZ8WBEF step s-03825331X9WZWEB43SEG is PENDING
+j-2R21FMUZ8WBEF step s-03825331X9WZWEB43SEG is PENDING
+j-2R21FMUZ8WBEF step s-03825331X9WZWEB43SEG is PENDING
+j-2R21FMUZ8WBEF step s-03825331X9WZWEB43SEG is PENDING
+j-2R21FMUZ8WBEF step s-03825331X9WZWEB43SEG is PENDING
+j-2R21FMUZ8WBEF step s-03825331X9WZWEB43SEG is PENDING
+j-2R21FMUZ8WBEF step s-03825331X9WZWEB43SEG is PENDING
+j-2R21FMUZ8WBEF step s-03825331X9WZWEB43SEG is RUNNING
+j-2R21FMUZ8WBEF step s-03825331X9WZWEB43SEG is RUNNING
+j-2R21FMUZ8WBEF step s-03825331X9WZWEB43SEG is RUNNING
+j-2R21FMUZ8WBEF step s-03825331X9WZWEB43SEG is COMPLETED
+j-2R21FMUZ8WBEF cluster is TERMINATING
+j-2R21FMUZ8WBEF cluster is TERMINATING
+j-2R21FMUZ8WBEF cluster is TERMINATED
+Saved cpu-heavy 2048MB c6i.xlarge x 4 runtime=1.3714 min cost=$0.0179; cluster=TERMINATED
+Starting 2048MB memory-heavy on m5.xlarge x 2 in ap-southeast-1
+{
+  "JobFlowId": "j-2FVIIZHAD9XF3",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-2FVIIZHAD9XF3",
+  "ResponseMetadata": {
+    "RequestId": "4672afb0-07e7-4933-b6bb-da0daba62284",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "4672afb0-07e7-4933-b6bb-da0daba62284",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Thu, 23 Jul 2026 01:08:07 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-2FVIIZHAD9XF3 step s-0659867DL86W2JJD6K3 is PENDING
+j-2FVIIZHAD9XF3 step s-0659867DL86W2JJD6K3 is PENDING
+j-2FVIIZHAD9XF3 step s-0659867DL86W2JJD6K3 is PENDING
+j-2FVIIZHAD9XF3 step s-0659867DL86W2JJD6K3 is PENDING
+j-2FVIIZHAD9XF3 step s-0659867DL86W2JJD6K3 is PENDING
+j-2FVIIZHAD9XF3 step s-0659867DL86W2JJD6K3 is PENDING
+j-2FVIIZHAD9XF3 step s-0659867DL86W2JJD6K3 is PENDING
+j-2FVIIZHAD9XF3 step s-0659867DL86W2JJD6K3 is RUNNING
+j-2FVIIZHAD9XF3 step s-0659867DL86W2JJD6K3 is RUNNING
+j-2FVIIZHAD9XF3 step s-0659867DL86W2JJD6K3 is RUNNING
+j-2FVIIZHAD9XF3 step s-0659867DL86W2JJD6K3 is RUNNING
+j-2FVIIZHAD9XF3 step s-0659867DL86W2JJD6K3 is RUNNING
+j-2FVIIZHAD9XF3 step s-0659867DL86W2JJD6K3 is RUNNING
+j-2FVIIZHAD9XF3 step s-0659867DL86W2JJD6K3 is COMPLETED
+j-2FVIIZHAD9XF3 cluster is TERMINATING
+j-2FVIIZHAD9XF3 cluster is TERMINATED
+Saved memory-heavy 2048MB m5.xlarge x 2 runtime=2.8057 min cost=$0.0224; cluster=TERMINATED
+Starting 2048MB memory-heavy on m5.xlarge x 4 in ap-southeast-1
+{
+  "JobFlowId": "j-1RHB643VW9ZVP",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-1RHB643VW9ZVP",
+  "ResponseMetadata": {
+    "RequestId": "b4220dff-a369-4bbb-9a85-8bd5c55bb0a4",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "b4220dff-a369-4bbb-9a85-8bd5c55bb0a4",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Thu, 23 Jul 2026 01:15:12 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-1RHB643VW9ZVP step s-0178908RELDGT8WH3L9 is PENDING
+j-1RHB643VW9ZVP step s-0178908RELDGT8WH3L9 is PENDING
+j-1RHB643VW9ZVP step s-0178908RELDGT8WH3L9 is PENDING
+j-1RHB643VW9ZVP step s-0178908RELDGT8WH3L9 is PENDING
+j-1RHB643VW9ZVP step s-0178908RELDGT8WH3L9 is PENDING
+j-1RHB643VW9ZVP step s-0178908RELDGT8WH3L9 is PENDING
+j-1RHB643VW9ZVP step s-0178908RELDGT8WH3L9 is PENDING
+j-1RHB643VW9ZVP step s-0178908RELDGT8WH3L9 is RUNNING
+j-1RHB643VW9ZVP step s-0178908RELDGT8WH3L9 is RUNNING
+j-1RHB643VW9ZVP step s-0178908RELDGT8WH3L9 is RUNNING
+j-1RHB643VW9ZVP step s-0178908RELDGT8WH3L9 is RUNNING
+j-1RHB643VW9ZVP step s-0178908RELDGT8WH3L9 is COMPLETED
+j-1RHB643VW9ZVP cluster is TERMINATING
+j-1RHB643VW9ZVP cluster is TERMINATING
+j-1RHB643VW9ZVP cluster is TERMINATED
+Saved memory-heavy 2048MB m5.xlarge x 4 runtime=2.0399 min cost=$0.0326; cluster=TERMINATED
+Starting 2048MB memory-heavy on m5a.xlarge x 2 in ap-southeast-1
+{
+  "JobFlowId": "j-KK4QPB8PO2G2",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-KK4QPB8PO2G2",
+  "ResponseMetadata": {
+    "RequestId": "005bb0ff-9aea-4aa2-84f6-cd84a15e8878",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "005bb0ff-9aea-4aa2-84f6-cd84a15e8878",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "121",
+      "date": "Thu, 23 Jul 2026 01:21:47 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-KK4QPB8PO2G2 step s-09291202PP53DWBPIJ61 is PENDING
+j-KK4QPB8PO2G2 step s-09291202PP53DWBPIJ61 is PENDING
+j-KK4QPB8PO2G2 step s-09291202PP53DWBPIJ61 is PENDING
+j-KK4QPB8PO2G2 step s-09291202PP53DWBPIJ61 is PENDING
+j-KK4QPB8PO2G2 step s-09291202PP53DWBPIJ61 is PENDING
+j-KK4QPB8PO2G2 step s-09291202PP53DWBPIJ61 is PENDING
+j-KK4QPB8PO2G2 step s-09291202PP53DWBPIJ61 is PENDING
+j-KK4QPB8PO2G2 step s-09291202PP53DWBPIJ61 is PENDING
+j-KK4QPB8PO2G2 step s-09291202PP53DWBPIJ61 is RUNNING
+j-KK4QPB8PO2G2 step s-09291202PP53DWBPIJ61 is RUNNING
+j-KK4QPB8PO2G2 step s-09291202PP53DWBPIJ61 is RUNNING
+j-KK4QPB8PO2G2 step s-09291202PP53DWBPIJ61 is RUNNING
+j-KK4QPB8PO2G2 step s-09291202PP53DWBPIJ61 is RUNNING
+j-KK4QPB8PO2G2 step s-09291202PP53DWBPIJ61 is RUNNING
+j-KK4QPB8PO2G2 step s-09291202PP53DWBPIJ61 is RUNNING
+j-KK4QPB8PO2G2 step s-09291202PP53DWBPIJ61 is RUNNING
+j-KK4QPB8PO2G2 step s-09291202PP53DWBPIJ61 is COMPLETED
+j-KK4QPB8PO2G2 cluster is TERMINATING
+j-KK4QPB8PO2G2 cluster is TERMINATED
+Saved memory-heavy 2048MB m5a.xlarge x 2 runtime=3.7752 min cost=$0.0272; cluster=TERMINATED
+Starting 2048MB memory-heavy on m5a.xlarge x 4 in ap-southeast-1
+{
+  "JobFlowId": "j-90D1IQO7JF5X",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-90D1IQO7JF5X",
+  "ResponseMetadata": {
+    "RequestId": "60bef7a5-9fd9-47a5-b746-276ce290ed1f",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "60bef7a5-9fd9-47a5-b746-276ce290ed1f",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "121",
+      "date": "Thu, 23 Jul 2026 01:30:23 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-90D1IQO7JF5X step s-0660554FN26IJA1JCG5 is PENDING
+j-90D1IQO7JF5X step s-0660554FN26IJA1JCG5 is PENDING
+j-90D1IQO7JF5X step s-0660554FN26IJA1JCG5 is PENDING
+j-90D1IQO7JF5X step s-0660554FN26IJA1JCG5 is PENDING
+j-90D1IQO7JF5X step s-0660554FN26IJA1JCG5 is PENDING
+j-90D1IQO7JF5X step s-0660554FN26IJA1JCG5 is PENDING
+j-90D1IQO7JF5X step s-0660554FN26IJA1JCG5 is PENDING
+j-90D1IQO7JF5X step s-0660554FN26IJA1JCG5 is PENDING
+j-90D1IQO7JF5X step s-0660554FN26IJA1JCG5 is RUNNING
+j-90D1IQO7JF5X step s-0660554FN26IJA1JCG5 is RUNNING
+j-90D1IQO7JF5X step s-0660554FN26IJA1JCG5 is RUNNING
+j-90D1IQO7JF5X step s-0660554FN26IJA1JCG5 is RUNNING
+j-90D1IQO7JF5X step s-0660554FN26IJA1JCG5 is RUNNING
+j-90D1IQO7JF5X step s-0660554FN26IJA1JCG5 is COMPLETED
+j-90D1IQO7JF5X cluster is TERMINATING
+j-90D1IQO7JF5X cluster is TERMINATING
+j-90D1IQO7JF5X cluster is TERMINATED
+Saved memory-heavy 2048MB m5a.xlarge x 4 runtime=2.6089 min cost=$0.0376; cluster=TERMINATED
+Starting 2048MB memory-heavy on c5.xlarge x 2 in ap-southeast-1
+{
+  "JobFlowId": "j-3LVKYOHTHSB8A",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-3LVKYOHTHSB8A",
+  "ResponseMetadata": {
+    "RequestId": "815f3e4b-bc18-4942-a5c6-354a19c68fc7",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "815f3e4b-bc18-4942-a5c6-354a19c68fc7",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Thu, 23 Jul 2026 01:37:59 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-3LVKYOHTHSB8A step s-01765741WTHM7ALZ9VA8 is PENDING
+j-3LVKYOHTHSB8A step s-01765741WTHM7ALZ9VA8 is PENDING
+j-3LVKYOHTHSB8A step s-01765741WTHM7ALZ9VA8 is PENDING
+j-3LVKYOHTHSB8A step s-01765741WTHM7ALZ9VA8 is PENDING
+j-3LVKYOHTHSB8A step s-01765741WTHM7ALZ9VA8 is PENDING
+j-3LVKYOHTHSB8A step s-01765741WTHM7ALZ9VA8 is PENDING
+j-3LVKYOHTHSB8A step s-01765741WTHM7ALZ9VA8 is RUNNING
+j-3LVKYOHTHSB8A step s-01765741WTHM7ALZ9VA8 is RUNNING
+j-3LVKYOHTHSB8A step s-01765741WTHM7ALZ9VA8 is RUNNING
+j-3LVKYOHTHSB8A step s-01765741WTHM7ALZ9VA8 is RUNNING
+j-3LVKYOHTHSB8A step s-01765741WTHM7ALZ9VA8 is RUNNING
+j-3LVKYOHTHSB8A step s-01765741WTHM7ALZ9VA8 is COMPLETED
+j-3LVKYOHTHSB8A cluster is TERMINATING
+j-3LVKYOHTHSB8A cluster is TERMINATING
+j-3LVKYOHTHSB8A cluster is TERMINATING
+j-3LVKYOHTHSB8A cluster is TERMINATED
+Saved memory-heavy 2048MB c5.xlarge x 2 runtime=2.6397 min cost=$0.0172; cluster=TERMINATED
+Starting 2048MB memory-heavy on c5.xlarge x 4 in ap-southeast-1
+{
+  "JobFlowId": "j-1LEU6NCZ03PRU",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-1LEU6NCZ03PRU",
+  "ResponseMetadata": {
+    "RequestId": "31317a3c-22f4-4251-ae60-adee59e806c3",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "31317a3c-22f4-4251-ae60-adee59e806c3",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Thu, 23 Jul 2026 01:45:04 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-1LEU6NCZ03PRU step s-0655684JP62ZG9NDPOF is PENDING
+j-1LEU6NCZ03PRU step s-0655684JP62ZG9NDPOF is PENDING
+j-1LEU6NCZ03PRU step s-0655684JP62ZG9NDPOF is PENDING
+j-1LEU6NCZ03PRU step s-0655684JP62ZG9NDPOF is PENDING
+j-1LEU6NCZ03PRU step s-0655684JP62ZG9NDPOF is PENDING
+j-1LEU6NCZ03PRU step s-0655684JP62ZG9NDPOF is PENDING
+j-1LEU6NCZ03PRU step s-0655684JP62ZG9NDPOF is PENDING
+j-1LEU6NCZ03PRU step s-0655684JP62ZG9NDPOF is RUNNING
+j-1LEU6NCZ03PRU step s-0655684JP62ZG9NDPOF is RUNNING
+j-1LEU6NCZ03PRU step s-0655684JP62ZG9NDPOF is RUNNING
+j-1LEU6NCZ03PRU step s-0655684JP62ZG9NDPOF is COMPLETED
+j-1LEU6NCZ03PRU cluster is TERMINATING
+j-1LEU6NCZ03PRU cluster is TERMINATING
+j-1LEU6NCZ03PRU cluster is TERMINATED
+Saved memory-heavy 2048MB c5.xlarge x 4 runtime=1.5384 min cost=$0.0201; cluster=TERMINATED
+Starting 2048MB memory-heavy on c5a.xlarge x 2 in ap-southeast-1
+{
+  "JobFlowId": "j-3FNDM6XI3AY0Y",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-3FNDM6XI3AY0Y",
+  "ResponseMetadata": {
+    "RequestId": "9eaa65b5-290a-47e2-914a-20b86b47a091",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "9eaa65b5-290a-47e2-914a-20b86b47a091",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Thu, 23 Jul 2026 01:51:09 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-3FNDM6XI3AY0Y step s-01492202M3QSILTHHBF8 is PENDING
+j-3FNDM6XI3AY0Y step s-01492202M3QSILTHHBF8 is PENDING
+j-3FNDM6XI3AY0Y step s-01492202M3QSILTHHBF8 is PENDING
+j-3FNDM6XI3AY0Y step s-01492202M3QSILTHHBF8 is PENDING
+j-3FNDM6XI3AY0Y step s-01492202M3QSILTHHBF8 is PENDING
+j-3FNDM6XI3AY0Y step s-01492202M3QSILTHHBF8 is PENDING
+j-3FNDM6XI3AY0Y step s-01492202M3QSILTHHBF8 is PENDING
+j-3FNDM6XI3AY0Y step s-01492202M3QSILTHHBF8 is RUNNING
+j-3FNDM6XI3AY0Y step s-01492202M3QSILTHHBF8 is RUNNING
+j-3FNDM6XI3AY0Y step s-01492202M3QSILTHHBF8 is RUNNING
+j-3FNDM6XI3AY0Y step s-01492202M3QSILTHHBF8 is RUNNING
+j-3FNDM6XI3AY0Y step s-01492202M3QSILTHHBF8 is RUNNING
+j-3FNDM6XI3AY0Y step s-01492202M3QSILTHHBF8 is COMPLETED
+j-3FNDM6XI3AY0Y cluster is TERMINATING
+j-3FNDM6XI3AY0Y cluster is TERMINATING
+j-3FNDM6XI3AY0Y cluster is TERMINATED
+Saved memory-heavy 2048MB c5a.xlarge x 2 runtime=2.4396 min cost=$0.0143; cluster=TERMINATED
+Starting 2048MB memory-heavy on c5a.xlarge x 4 in ap-southeast-1
+{
+  "JobFlowId": "j-28Z4OO4M360MS",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-28Z4OO4M360MS",
+  "ResponseMetadata": {
+    "RequestId": "ac8c48ad-74e4-4ea3-85b5-9a6212ff15bb",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "ac8c48ad-74e4-4ea3-85b5-9a6212ff15bb",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Thu, 23 Jul 2026 01:58:14 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-28Z4OO4M360MS step s-01907771VOQ4AT6H5TE9 is PENDING
+j-28Z4OO4M360MS step s-01907771VOQ4AT6H5TE9 is PENDING
+j-28Z4OO4M360MS step s-01907771VOQ4AT6H5TE9 is PENDING
+j-28Z4OO4M360MS step s-01907771VOQ4AT6H5TE9 is PENDING
+j-28Z4OO4M360MS step s-01907771VOQ4AT6H5TE9 is PENDING
+j-28Z4OO4M360MS step s-01907771VOQ4AT6H5TE9 is PENDING
+j-28Z4OO4M360MS step s-01907771VOQ4AT6H5TE9 is PENDING
+j-28Z4OO4M360MS step s-01907771VOQ4AT6H5TE9 is RUNNING
+j-28Z4OO4M360MS step s-01907771VOQ4AT6H5TE9 is RUNNING
+j-28Z4OO4M360MS step s-01907771VOQ4AT6H5TE9 is RUNNING
+j-28Z4OO4M360MS step s-01907771VOQ4AT6H5TE9 is COMPLETED
+j-28Z4OO4M360MS cluster is TERMINATING
+j-28Z4OO4M360MS cluster is TERMINATING
+j-28Z4OO4M360MS cluster is TERMINATED
+Saved memory-heavy 2048MB c5a.xlarge x 4 runtime=1.4720 min cost=$0.0173; cluster=TERMINATED
+Starting 2048MB memory-heavy on c6i.xlarge x 2 in ap-southeast-1
+{
+  "JobFlowId": "j-3D4XU08Y1SPRO",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-3D4XU08Y1SPRO",
+  "ResponseMetadata": {
+    "RequestId": "1edf428d-7055-4b03-b10b-46c97bc636df",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "1edf428d-7055-4b03-b10b-46c97bc636df",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Thu, 23 Jul 2026 02:04:18 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-3D4XU08Y1SPRO step s-09289051EWC49DKZDPCU is PENDING
+j-3D4XU08Y1SPRO step s-09289051EWC49DKZDPCU is PENDING
+j-3D4XU08Y1SPRO step s-09289051EWC49DKZDPCU is PENDING
+j-3D4XU08Y1SPRO step s-09289051EWC49DKZDPCU is PENDING
+j-3D4XU08Y1SPRO step s-09289051EWC49DKZDPCU is PENDING
+j-3D4XU08Y1SPRO step s-09289051EWC49DKZDPCU is PENDING
+j-3D4XU08Y1SPRO step s-09289051EWC49DKZDPCU is PENDING
+j-3D4XU08Y1SPRO step s-09289051EWC49DKZDPCU is RUNNING
+j-3D4XU08Y1SPRO step s-09289051EWC49DKZDPCU is RUNNING
+j-3D4XU08Y1SPRO step s-09289051EWC49DKZDPCU is RUNNING
+j-3D4XU08Y1SPRO step s-09289051EWC49DKZDPCU is RUNNING
+j-3D4XU08Y1SPRO step s-09289051EWC49DKZDPCU is RUNNING
+j-3D4XU08Y1SPRO step s-09289051EWC49DKZDPCU is COMPLETED
+j-3D4XU08Y1SPRO cluster is TERMINATING
+j-3D4XU08Y1SPRO cluster is TERMINATING
+j-3D4XU08Y1SPRO cluster is TERMINATED
+Saved memory-heavy 2048MB c6i.xlarge x 2 runtime=2.2062 min cost=$0.0144; cluster=TERMINATED
+Starting 2048MB memory-heavy on c6i.xlarge x 4 in ap-southeast-1
+{
+  "JobFlowId": "j-3TJVMW151QHA8",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-3TJVMW151QHA8",
+  "ResponseMetadata": {
+    "RequestId": "1b75cf98-fc1f-4c94-aa9d-3bc8caec4052",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "1b75cf98-fc1f-4c94-aa9d-3bc8caec4052",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Thu, 23 Jul 2026 02:11:23 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-3TJVMW151QHA8 step s-0867985O6VBARU4YFQI is PENDING
+j-3TJVMW151QHA8 step s-0867985O6VBARU4YFQI is PENDING
+j-3TJVMW151QHA8 step s-0867985O6VBARU4YFQI is PENDING
+j-3TJVMW151QHA8 step s-0867985O6VBARU4YFQI is PENDING
+j-3TJVMW151QHA8 step s-0867985O6VBARU4YFQI is PENDING
+j-3TJVMW151QHA8 step s-0867985O6VBARU4YFQI is PENDING
+j-3TJVMW151QHA8 step s-0867985O6VBARU4YFQI is RUNNING
+j-3TJVMW151QHA8 step s-0867985O6VBARU4YFQI is RUNNING
+j-3TJVMW151QHA8 step s-0867985O6VBARU4YFQI is RUNNING
+j-3TJVMW151QHA8 step s-0867985O6VBARU4YFQI is COMPLETED
+j-3TJVMW151QHA8 cluster is TERMINATING
+j-3TJVMW151QHA8 cluster is TERMINATED
+Saved memory-heavy 2048MB c6i.xlarge x 4 runtime=1.3714 min cost=$0.0179; cluster=TERMINATED
+Starting 2048MB io-heavy on m5.xlarge x 2 in ap-southeast-1
+{
+  "JobFlowId": "j-2RI1AUL5JBVLU",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-2RI1AUL5JBVLU",
+  "ResponseMetadata": {
+    "RequestId": "9699fdbd-9448-4326-adcf-5a67d4c24ca7",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "9699fdbd-9448-4326-adcf-5a67d4c24ca7",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Thu, 23 Jul 2026 02:16:28 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-2RI1AUL5JBVLU step s-03820093SCYBFNS3OOLM is PENDING
+j-2RI1AUL5JBVLU step s-03820093SCYBFNS3OOLM is PENDING
+j-2RI1AUL5JBVLU step s-03820093SCYBFNS3OOLM is PENDING
+j-2RI1AUL5JBVLU step s-03820093SCYBFNS3OOLM is PENDING
+j-2RI1AUL5JBVLU step s-03820093SCYBFNS3OOLM is PENDING
+j-2RI1AUL5JBVLU step s-03820093SCYBFNS3OOLM is PENDING
+j-2RI1AUL5JBVLU step s-03820093SCYBFNS3OOLM is PENDING
+j-2RI1AUL5JBVLU step s-03820093SCYBFNS3OOLM is RUNNING
+j-2RI1AUL5JBVLU step s-03820093SCYBFNS3OOLM is RUNNING
+j-2RI1AUL5JBVLU step s-03820093SCYBFNS3OOLM is RUNNING
+j-2RI1AUL5JBVLU step s-03820093SCYBFNS3OOLM is RUNNING
+j-2RI1AUL5JBVLU step s-03820093SCYBFNS3OOLM is RUNNING
+j-2RI1AUL5JBVLU step s-03820093SCYBFNS3OOLM is RUNNING
+j-2RI1AUL5JBVLU step s-03820093SCYBFNS3OOLM is RUNNING
+j-2RI1AUL5JBVLU step s-03820093SCYBFNS3OOLM is COMPLETED
+j-2RI1AUL5JBVLU cluster is TERMINATING
+j-2RI1AUL5JBVLU cluster is TERMINATING
+j-2RI1AUL5JBVLU cluster is TERMINATED
+Saved io-heavy 2048MB m5.xlarge x 2 runtime=3.6077 min cost=$0.0289; cluster=TERMINATED
+Starting 2048MB io-heavy on m5.xlarge x 4 in ap-southeast-1
+{
+  "JobFlowId": "j-460YU0RP417D",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-460YU0RP417D",
+  "ResponseMetadata": {
+    "RequestId": "35fe601e-ae16-4de8-bc50-07301894a773",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "35fe601e-ae16-4de8-bc50-07301894a773",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "121",
+      "date": "Thu, 23 Jul 2026 02:24:34 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-460YU0RP417D step s-03819403RP7UOG994RTA is PENDING
+j-460YU0RP417D step s-03819403RP7UOG994RTA is PENDING
+j-460YU0RP417D step s-03819403RP7UOG994RTA is PENDING
+j-460YU0RP417D step s-03819403RP7UOG994RTA is PENDING
+j-460YU0RP417D step s-03819403RP7UOG994RTA is PENDING
+j-460YU0RP417D step s-03819403RP7UOG994RTA is PENDING
+j-460YU0RP417D step s-03819403RP7UOG994RTA is PENDING
+j-460YU0RP417D step s-03819403RP7UOG994RTA is RUNNING
+j-460YU0RP417D step s-03819403RP7UOG994RTA is RUNNING
+j-460YU0RP417D step s-03819403RP7UOG994RTA is RUNNING
+j-460YU0RP417D step s-03819403RP7UOG994RTA is RUNNING
+j-460YU0RP417D step s-03819403RP7UOG994RTA is RUNNING
+j-460YU0RP417D step s-03819403RP7UOG994RTA is COMPLETED
+j-460YU0RP417D cluster is TERMINATING
+j-460YU0RP417D cluster is TERMINATING
+j-460YU0RP417D cluster is TERMINATED
+Saved io-heavy 2048MB m5.xlarge x 4 runtime=2.5409 min cost=$0.0407; cluster=TERMINATED
+Starting 2048MB io-heavy on m5a.xlarge x 2 in ap-southeast-1
+{
+  "JobFlowId": "j-281P4HQOSRK0M",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-281P4HQOSRK0M",
+  "ResponseMetadata": {
+    "RequestId": "f83184a3-edd6-47be-b3ca-a5f08cb4136f",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "f83184a3-edd6-47be-b3ca-a5f08cb4136f",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Thu, 23 Jul 2026 02:31:39 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-281P4HQOSRK0M step s-0381897ESLGBAQZZXL1 is PENDING
+j-281P4HQOSRK0M step s-0381897ESLGBAQZZXL1 is PENDING
+j-281P4HQOSRK0M step s-0381897ESLGBAQZZXL1 is PENDING
+j-281P4HQOSRK0M step s-0381897ESLGBAQZZXL1 is PENDING
+j-281P4HQOSRK0M step s-0381897ESLGBAQZZXL1 is PENDING
+j-281P4HQOSRK0M step s-0381897ESLGBAQZZXL1 is PENDING
+j-281P4HQOSRK0M step s-0381897ESLGBAQZZXL1 is PENDING
+j-281P4HQOSRK0M step s-0381897ESLGBAQZZXL1 is PENDING
+j-281P4HQOSRK0M step s-0381897ESLGBAQZZXL1 is RUNNING
+j-281P4HQOSRK0M step s-0381897ESLGBAQZZXL1 is RUNNING
+j-281P4HQOSRK0M step s-0381897ESLGBAQZZXL1 is RUNNING
+j-281P4HQOSRK0M step s-0381897ESLGBAQZZXL1 is RUNNING
+j-281P4HQOSRK0M step s-0381897ESLGBAQZZXL1 is RUNNING
+j-281P4HQOSRK0M step s-0381897ESLGBAQZZXL1 is RUNNING
+j-281P4HQOSRK0M step s-0381897ESLGBAQZZXL1 is RUNNING
+j-281P4HQOSRK0M step s-0381897ESLGBAQZZXL1 is RUNNING
+j-281P4HQOSRK0M step s-0381897ESLGBAQZZXL1 is RUNNING
+j-281P4HQOSRK0M step s-0381897ESLGBAQZZXL1 is COMPLETED
+j-281P4HQOSRK0M cluster is TERMINATING
+j-281P4HQOSRK0M cluster is TERMINATING
+j-281P4HQOSRK0M cluster is TERMINATED
+Saved io-heavy 2048MB m5a.xlarge x 2 runtime=4.6411 min cost=$0.0334; cluster=TERMINATED
+Starting 2048MB io-heavy on m5a.xlarge x 4 in ap-southeast-1
+{
+  "JobFlowId": "j-3JY5LAFCKH75E",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-3JY5LAFCKH75E",
+  "ResponseMetadata": {
+    "RequestId": "374dc6dc-c1d3-44f4-aaa0-4f599477ee99",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "374dc6dc-c1d3-44f4-aaa0-4f599477ee99",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Thu, 23 Jul 2026 02:41:17 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-3JY5LAFCKH75E step s-0679129AW7U9FU0CM2I is PENDING
+j-3JY5LAFCKH75E step s-0679129AW7U9FU0CM2I is PENDING
+j-3JY5LAFCKH75E step s-0679129AW7U9FU0CM2I is PENDING
+j-3JY5LAFCKH75E step s-0679129AW7U9FU0CM2I is PENDING
+j-3JY5LAFCKH75E step s-0679129AW7U9FU0CM2I is PENDING
+j-3JY5LAFCKH75E step s-0679129AW7U9FU0CM2I is PENDING
+j-3JY5LAFCKH75E step s-0679129AW7U9FU0CM2I is PENDING
+j-3JY5LAFCKH75E step s-0679129AW7U9FU0CM2I is PENDING
+j-3JY5LAFCKH75E step s-0679129AW7U9FU0CM2I is RUNNING
+j-3JY5LAFCKH75E step s-0679129AW7U9FU0CM2I is RUNNING
+j-3JY5LAFCKH75E step s-0679129AW7U9FU0CM2I is RUNNING
+j-3JY5LAFCKH75E step s-0679129AW7U9FU0CM2I is RUNNING
+j-3JY5LAFCKH75E step s-0679129AW7U9FU0CM2I is RUNNING
+j-3JY5LAFCKH75E step s-0679129AW7U9FU0CM2I is RUNNING
+j-3JY5LAFCKH75E step s-0679129AW7U9FU0CM2I is COMPLETED
+j-3JY5LAFCKH75E cluster is TERMINATING
+j-3JY5LAFCKH75E cluster is TERMINATING
+j-3JY5LAFCKH75E cluster is TERMINATING
+j-3JY5LAFCKH75E cluster is TERMINATED
+Saved io-heavy 2048MB m5a.xlarge x 4 runtime=3.1448 min cost=$0.0453; cluster=TERMINATED
+Starting 2048MB io-heavy on c5.xlarge x 2 in ap-southeast-1
+{
+  "JobFlowId": "j-1YCM5IN92A532",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-1YCM5IN92A532",
+  "ResponseMetadata": {
+    "RequestId": "2969137e-3fb0-44e0-9218-90bcf26f417a",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "2969137e-3fb0-44e0-9218-90bcf26f417a",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Thu, 23 Jul 2026 02:49:54 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-1YCM5IN92A532 step s-03841661XHEYVA0DB4L0 is PENDING
+j-1YCM5IN92A532 step s-03841661XHEYVA0DB4L0 is PENDING
+j-1YCM5IN92A532 step s-03841661XHEYVA0DB4L0 is PENDING
+j-1YCM5IN92A532 step s-03841661XHEYVA0DB4L0 is PENDING
+j-1YCM5IN92A532 step s-03841661XHEYVA0DB4L0 is PENDING
+j-1YCM5IN92A532 step s-03841661XHEYVA0DB4L0 is PENDING
+j-1YCM5IN92A532 step s-03841661XHEYVA0DB4L0 is PENDING
+j-1YCM5IN92A532 step s-03841661XHEYVA0DB4L0 is RUNNING
+j-1YCM5IN92A532 step s-03841661XHEYVA0DB4L0 is RUNNING
+j-1YCM5IN92A532 step s-03841661XHEYVA0DB4L0 is RUNNING
+j-1YCM5IN92A532 step s-03841661XHEYVA0DB4L0 is RUNNING
+j-1YCM5IN92A532 step s-03841661XHEYVA0DB4L0 is RUNNING
+j-1YCM5IN92A532 step s-03841661XHEYVA0DB4L0 is RUNNING
+j-1YCM5IN92A532 step s-03841661XHEYVA0DB4L0 is RUNNING
+j-1YCM5IN92A532 step s-03841661XHEYVA0DB4L0 is COMPLETED
+j-1YCM5IN92A532 cluster is TERMINATING
+j-1YCM5IN92A532 cluster is TERMINATING
+j-1YCM5IN92A532 cluster is TERMINATED
+Saved io-heavy 2048MB c5.xlarge x 2 runtime=3.4398 min cost=$0.0225; cluster=TERMINATED
+Starting 2048MB io-heavy on c5.xlarge x 4 in ap-southeast-1
+{
+  "JobFlowId": "j-3R0IIG1XW4172",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-3R0IIG1XW4172",
+  "ResponseMetadata": {
+    "RequestId": "4cc9b6cd-7983-44ba-99a4-c90d24df3872",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "4cc9b6cd-7983-44ba-99a4-c90d24df3872",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Thu, 23 Jul 2026 02:58:01 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-3R0IIG1XW4172 step s-09289843UL29VRU5AHDQ is PENDING
+j-3R0IIG1XW4172 step s-09289843UL29VRU5AHDQ is PENDING
+j-3R0IIG1XW4172 step s-09289843UL29VRU5AHDQ is PENDING
+j-3R0IIG1XW4172 step s-09289843UL29VRU5AHDQ is PENDING
+j-3R0IIG1XW4172 step s-09289843UL29VRU5AHDQ is PENDING
+j-3R0IIG1XW4172 step s-09289843UL29VRU5AHDQ is PENDING
+j-3R0IIG1XW4172 step s-09289843UL29VRU5AHDQ is PENDING
+j-3R0IIG1XW4172 step s-09289843UL29VRU5AHDQ is RUNNING
+j-3R0IIG1XW4172 step s-09289843UL29VRU5AHDQ is RUNNING
+j-3R0IIG1XW4172 step s-09289843UL29VRU5AHDQ is RUNNING
+j-3R0IIG1XW4172 step s-09289843UL29VRU5AHDQ is RUNNING
+j-3R0IIG1XW4172 step s-09289843UL29VRU5AHDQ is COMPLETED
+j-3R0IIG1XW4172 cluster is TERMINATING
+j-3R0IIG1XW4172 cluster is TERMINATED
+Saved io-heavy 2048MB c5.xlarge x 4 runtime=2.0730 min cost=$0.0271; cluster=TERMINATED
+Starting 2048MB io-heavy on c5a.xlarge x 2 in ap-southeast-1
+{
+  "JobFlowId": "j-1ISK3UQ7DVIAM",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-1ISK3UQ7DVIAM",
+  "ResponseMetadata": {
+    "RequestId": "84fbe6e8-4e8f-4a74-b362-e451d09f4ce6",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "84fbe6e8-4e8f-4a74-b362-e451d09f4ce6",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Thu, 23 Jul 2026 03:04:06 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-1ISK3UQ7DVIAM step s-03823661BGDU9T4UYZMF is PENDING
+j-1ISK3UQ7DVIAM step s-03823661BGDU9T4UYZMF is PENDING
+j-1ISK3UQ7DVIAM step s-03823661BGDU9T4UYZMF is PENDING
+j-1ISK3UQ7DVIAM step s-03823661BGDU9T4UYZMF is PENDING
+j-1ISK3UQ7DVIAM step s-03823661BGDU9T4UYZMF is PENDING
+j-1ISK3UQ7DVIAM step s-03823661BGDU9T4UYZMF is PENDING
+j-1ISK3UQ7DVIAM step s-03823661BGDU9T4UYZMF is PENDING
+j-1ISK3UQ7DVIAM step s-03823661BGDU9T4UYZMF is RUNNING
+j-1ISK3UQ7DVIAM step s-03823661BGDU9T4UYZMF is RUNNING
+j-1ISK3UQ7DVIAM step s-03823661BGDU9T4UYZMF is RUNNING
+j-1ISK3UQ7DVIAM step s-03823661BGDU9T4UYZMF is RUNNING
+j-1ISK3UQ7DVIAM step s-03823661BGDU9T4UYZMF is RUNNING
+j-1ISK3UQ7DVIAM step s-03823661BGDU9T4UYZMF is RUNNING
+j-1ISK3UQ7DVIAM step s-03823661BGDU9T4UYZMF is RUNNING
+j-1ISK3UQ7DVIAM step s-03823661BGDU9T4UYZMF is COMPLETED
+j-1ISK3UQ7DVIAM cluster is TERMINATING
+j-1ISK3UQ7DVIAM cluster is TERMINATING
+j-1ISK3UQ7DVIAM cluster is TERMINATED
+Saved io-heavy 2048MB c5a.xlarge x 2 runtime=3.3051 min cost=$0.0194; cluster=TERMINATED
+Starting 2048MB io-heavy on c5a.xlarge x 4 in ap-southeast-1
+{
+  "JobFlowId": "j-22SPO3MKE3E5H",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-22SPO3MKE3E5H",
+  "ResponseMetadata": {
+    "RequestId": "0e6c6a0d-8413-4801-8cfb-6102731059ea",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "0e6c6a0d-8413-4801-8cfb-6102731059ea",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Thu, 23 Jul 2026 03:12:12 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-22SPO3MKE3E5H step s-03818551IL5RR7RDIVIQ is PENDING
+j-22SPO3MKE3E5H step s-03818551IL5RR7RDIVIQ is PENDING
+j-22SPO3MKE3E5H step s-03818551IL5RR7RDIVIQ is PENDING
+j-22SPO3MKE3E5H step s-03818551IL5RR7RDIVIQ is PENDING
+j-22SPO3MKE3E5H step s-03818551IL5RR7RDIVIQ is PENDING
+j-22SPO3MKE3E5H step s-03818551IL5RR7RDIVIQ is PENDING
+j-22SPO3MKE3E5H step s-03818551IL5RR7RDIVIQ is RUNNING
+j-22SPO3MKE3E5H step s-03818551IL5RR7RDIVIQ is RUNNING
+j-22SPO3MKE3E5H step s-03818551IL5RR7RDIVIQ is RUNNING
+j-22SPO3MKE3E5H step s-03818551IL5RR7RDIVIQ is RUNNING
+j-22SPO3MKE3E5H step s-03818551IL5RR7RDIVIQ is COMPLETED
+j-22SPO3MKE3E5H cluster is TERMINATING
+j-22SPO3MKE3E5H cluster is TERMINATING
+j-22SPO3MKE3E5H cluster is TERMINATED
+Saved io-heavy 2048MB c5a.xlarge x 4 runtime=1.7727 min cost=$0.0208; cluster=TERMINATED
+Starting 2048MB io-heavy on c6i.xlarge x 2 in ap-southeast-1
+{
+  "JobFlowId": "j-2KPQCPFB4153R",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-2KPQCPFB4153R",
+  "ResponseMetadata": {
+    "RequestId": "b04e0575-f0ee-4b85-80f1-a0c9a16711ae",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "b04e0575-f0ee-4b85-80f1-a0c9a16711ae",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Thu, 23 Jul 2026 03:18:17 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-2KPQCPFB4153R step s-09063211VN8Z76VSTQXM is PENDING
+j-2KPQCPFB4153R step s-09063211VN8Z76VSTQXM is PENDING
+j-2KPQCPFB4153R step s-09063211VN8Z76VSTQXM is PENDING
+j-2KPQCPFB4153R step s-09063211VN8Z76VSTQXM is PENDING
+j-2KPQCPFB4153R step s-09063211VN8Z76VSTQXM is PENDING
+j-2KPQCPFB4153R step s-09063211VN8Z76VSTQXM is PENDING
+j-2KPQCPFB4153R step s-09063211VN8Z76VSTQXM is PENDING
+j-2KPQCPFB4153R step s-09063211VN8Z76VSTQXM is RUNNING
+j-2KPQCPFB4153R step s-09063211VN8Z76VSTQXM is RUNNING
+j-2KPQCPFB4153R step s-09063211VN8Z76VSTQXM is RUNNING
+j-2KPQCPFB4153R step s-09063211VN8Z76VSTQXM is RUNNING
+j-2KPQCPFB4153R step s-09063211VN8Z76VSTQXM is RUNNING
+j-2KPQCPFB4153R step s-09063211VN8Z76VSTQXM is RUNNING
+j-2KPQCPFB4153R step s-09063211VN8Z76VSTQXM is COMPLETED
+j-2KPQCPFB4153R cluster is TERMINATING
+j-2KPQCPFB4153R cluster is TERMINATING
+j-2KPQCPFB4153R cluster is TERMINATING
+j-2KPQCPFB4153R cluster is TERMINATED
+Saved io-heavy 2048MB c6i.xlarge x 2 runtime=3.0044 min cost=$0.0196; cluster=TERMINATED
+Starting 2048MB io-heavy on c6i.xlarge x 4 in ap-southeast-1
+{
+  "JobFlowId": "j-1D0IBGSD04H7I",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-1D0IBGSD04H7I",
+  "ResponseMetadata": {
+    "RequestId": "2c72b1e9-0a0d-4e84-996f-092da4f35389",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "2c72b1e9-0a0d-4e84-996f-092da4f35389",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Thu, 23 Jul 2026 03:26:24 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-1D0IBGSD04H7I step s-0403565J0A4T89XI405 is PENDING
+j-1D0IBGSD04H7I step s-0403565J0A4T89XI405 is PENDING
+j-1D0IBGSD04H7I step s-0403565J0A4T89XI405 is PENDING
+j-1D0IBGSD04H7I step s-0403565J0A4T89XI405 is PENDING
+j-1D0IBGSD04H7I step s-0403565J0A4T89XI405 is PENDING
+j-1D0IBGSD04H7I step s-0403565J0A4T89XI405 is PENDING
+j-1D0IBGSD04H7I step s-0403565J0A4T89XI405 is RUNNING
+j-1D0IBGSD04H7I step s-0403565J0A4T89XI405 is RUNNING
+j-1D0IBGSD04H7I step s-0403565J0A4T89XI405 is RUNNING
+j-1D0IBGSD04H7I step s-0403565J0A4T89XI405 is RUNNING
+j-1D0IBGSD04H7I step s-0403565J0A4T89XI405 is COMPLETED
+j-1D0IBGSD04H7I cluster is TERMINATING
+j-1D0IBGSD04H7I cluster is TERMINATING
+j-1D0IBGSD04H7I cluster is TERMINATED
+Saved io-heavy 2048MB c6i.xlarge x 4 runtime=1.9727 min cost=$0.0258; cluster=TERMINATED
+Starting 3072MB cpu-heavy on m5.xlarge x 2 in ap-southeast-1
+{
+  "JobFlowId": "j-31LT8LOXVDEQC",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-31LT8LOXVDEQC",
+  "ResponseMetadata": {
+    "RequestId": "8438e05a-0de8-4557-a62b-f3d4b0e7afff",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "8438e05a-0de8-4557-a62b-f3d4b0e7afff",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Thu, 23 Jul 2026 03:32:28 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-31LT8LOXVDEQC step s-06555453O236JIRTVF41 is PENDING
+j-31LT8LOXVDEQC step s-06555453O236JIRTVF41 is PENDING
+j-31LT8LOXVDEQC step s-06555453O236JIRTVF41 is PENDING
+j-31LT8LOXVDEQC step s-06555453O236JIRTVF41 is PENDING
+j-31LT8LOXVDEQC step s-06555453O236JIRTVF41 is PENDING
+j-31LT8LOXVDEQC step s-06555453O236JIRTVF41 is PENDING
+j-31LT8LOXVDEQC step s-06555453O236JIRTVF41 is PENDING
+j-31LT8LOXVDEQC step s-06555453O236JIRTVF41 is RUNNING
+j-31LT8LOXVDEQC step s-06555453O236JIRTVF41 is RUNNING
+j-31LT8LOXVDEQC step s-06555453O236JIRTVF41 is RUNNING
+j-31LT8LOXVDEQC step s-06555453O236JIRTVF41 is RUNNING
+j-31LT8LOXVDEQC step s-06555453O236JIRTVF41 is RUNNING
+j-31LT8LOXVDEQC step s-06555453O236JIRTVF41 is RUNNING
+j-31LT8LOXVDEQC step s-06555453O236JIRTVF41 is RUNNING
+j-31LT8LOXVDEQC step s-06555453O236JIRTVF41 is RUNNING
+j-31LT8LOXVDEQC step s-06555453O236JIRTVF41 is COMPLETED
+j-31LT8LOXVDEQC cluster is TERMINATING
+j-31LT8LOXVDEQC cluster is TERMINATED
+Saved cpu-heavy 3072MB m5.xlarge x 2 runtime=3.8426 min cost=$0.0307; cluster=TERMINATED
+Starting 3072MB cpu-heavy on m5.xlarge x 4 in ap-southeast-1
+{
+  "JobFlowId": "j-3PTC5Z7JLWNRZ",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-3PTC5Z7JLWNRZ",
+  "ResponseMetadata": {
+    "RequestId": "f30f1f39-dfca-4d34-9a76-c150448a8bfc",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "f30f1f39-dfca-4d34-9a76-c150448a8bfc",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Thu, 23 Jul 2026 03:40:34 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-3PTC5Z7JLWNRZ step s-038170817Q6UO0WF9K1J is PENDING
+j-3PTC5Z7JLWNRZ step s-038170817Q6UO0WF9K1J is PENDING
+j-3PTC5Z7JLWNRZ step s-038170817Q6UO0WF9K1J is PENDING
+j-3PTC5Z7JLWNRZ step s-038170817Q6UO0WF9K1J is PENDING
+j-3PTC5Z7JLWNRZ step s-038170817Q6UO0WF9K1J is PENDING
+j-3PTC5Z7JLWNRZ step s-038170817Q6UO0WF9K1J is PENDING
+j-3PTC5Z7JLWNRZ step s-038170817Q6UO0WF9K1J is PENDING
+j-3PTC5Z7JLWNRZ step s-038170817Q6UO0WF9K1J is RUNNING
+j-3PTC5Z7JLWNRZ step s-038170817Q6UO0WF9K1J is RUNNING
+j-3PTC5Z7JLWNRZ step s-038170817Q6UO0WF9K1J is RUNNING
+j-3PTC5Z7JLWNRZ step s-038170817Q6UO0WF9K1J is RUNNING
+j-3PTC5Z7JLWNRZ step s-038170817Q6UO0WF9K1J is RUNNING
+j-3PTC5Z7JLWNRZ step s-038170817Q6UO0WF9K1J is COMPLETED
+j-3PTC5Z7JLWNRZ cluster is TERMINATING
+j-3PTC5Z7JLWNRZ cluster is TERMINATING
+j-3PTC5Z7JLWNRZ cluster is TERMINATED
+Saved cpu-heavy 3072MB m5.xlarge x 4 runtime=2.3729 min cost=$0.0380; cluster=TERMINATED
+Starting 3072MB cpu-heavy on m5a.xlarge x 2 in ap-southeast-1
+{
+  "JobFlowId": "j-1NBWW93PUOJ5J",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-1NBWW93PUOJ5J",
+  "ResponseMetadata": {
+    "RequestId": "d79303c5-052d-4b26-98bd-6904b2f574c0",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "d79303c5-052d-4b26-98bd-6904b2f574c0",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Thu, 23 Jul 2026 03:47:40 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-1NBWW93PUOJ5J step s-03823882XRQ9BGLG0H0J is PENDING
+j-1NBWW93PUOJ5J step s-03823882XRQ9BGLG0H0J is PENDING
+j-1NBWW93PUOJ5J step s-03823882XRQ9BGLG0H0J is PENDING
+j-1NBWW93PUOJ5J step s-03823882XRQ9BGLG0H0J is PENDING
+j-1NBWW93PUOJ5J step s-03823882XRQ9BGLG0H0J is PENDING
+j-1NBWW93PUOJ5J step s-03823882XRQ9BGLG0H0J is PENDING
+j-1NBWW93PUOJ5J step s-03823882XRQ9BGLG0H0J is PENDING
+j-1NBWW93PUOJ5J step s-03823882XRQ9BGLG0H0J is PENDING
+j-1NBWW93PUOJ5J step s-03823882XRQ9BGLG0H0J is RUNNING
+j-1NBWW93PUOJ5J step s-03823882XRQ9BGLG0H0J is RUNNING
+j-1NBWW93PUOJ5J step s-03823882XRQ9BGLG0H0J is RUNNING
+j-1NBWW93PUOJ5J step s-03823882XRQ9BGLG0H0J is RUNNING
+j-1NBWW93PUOJ5J step s-03823882XRQ9BGLG0H0J is RUNNING
+j-1NBWW93PUOJ5J step s-03823882XRQ9BGLG0H0J is RUNNING
+j-1NBWW93PUOJ5J step s-03823882XRQ9BGLG0H0J is RUNNING
+j-1NBWW93PUOJ5J step s-03823882XRQ9BGLG0H0J is RUNNING
+j-1NBWW93PUOJ5J step s-03823882XRQ9BGLG0H0J is RUNNING
+j-1NBWW93PUOJ5J step s-03823882XRQ9BGLG0H0J is RUNNING
+j-1NBWW93PUOJ5J step s-03823882XRQ9BGLG0H0J is COMPLETED
+j-1NBWW93PUOJ5J cluster is TERMINATING
+j-1NBWW93PUOJ5J cluster is TERMINATING
+j-1NBWW93PUOJ5J cluster is TERMINATING
+j-1NBWW93PUOJ5J cluster is TERMINATED
+Saved cpu-heavy 3072MB m5a.xlarge x 2 runtime=4.9444 min cost=$0.0356; cluster=TERMINATED
+Starting 3072MB cpu-heavy on m5a.xlarge x 4 in ap-southeast-1
+{
+  "JobFlowId": "j-2R6ZG3MCV4G2Q",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-2R6ZG3MCV4G2Q",
+  "ResponseMetadata": {
+    "RequestId": "bbcd40a4-29a6-42f6-8244-af2237e4201e",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "bbcd40a4-29a6-42f6-8244-af2237e4201e",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Thu, 23 Jul 2026 03:58:17 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-2R6ZG3MCV4G2Q step s-0928214E2STVEO3ML7K is PENDING
+j-2R6ZG3MCV4G2Q step s-0928214E2STVEO3ML7K is PENDING
+j-2R6ZG3MCV4G2Q step s-0928214E2STVEO3ML7K is PENDING
+j-2R6ZG3MCV4G2Q step s-0928214E2STVEO3ML7K is PENDING
+j-2R6ZG3MCV4G2Q step s-0928214E2STVEO3ML7K is PENDING
+j-2R6ZG3MCV4G2Q step s-0928214E2STVEO3ML7K is PENDING
+j-2R6ZG3MCV4G2Q step s-0928214E2STVEO3ML7K is PENDING
+j-2R6ZG3MCV4G2Q step s-0928214E2STVEO3ML7K is RUNNING
+j-2R6ZG3MCV4G2Q step s-0928214E2STVEO3ML7K is RUNNING
+j-2R6ZG3MCV4G2Q step s-0928214E2STVEO3ML7K is RUNNING
+j-2R6ZG3MCV4G2Q step s-0928214E2STVEO3ML7K is RUNNING
+j-2R6ZG3MCV4G2Q step s-0928214E2STVEO3ML7K is RUNNING
+j-2R6ZG3MCV4G2Q step s-0928214E2STVEO3ML7K is RUNNING
+j-2R6ZG3MCV4G2Q step s-0928214E2STVEO3ML7K is COMPLETED
+j-2R6ZG3MCV4G2Q cluster is TERMINATING
+j-2R6ZG3MCV4G2Q cluster is TERMINATING
+j-2R6ZG3MCV4G2Q cluster is TERMINATED
+Saved cpu-heavy 3072MB m5a.xlarge x 4 runtime=2.9757 min cost=$0.0428; cluster=TERMINATED
+Starting 3072MB cpu-heavy on c5.xlarge x 2 in ap-southeast-1
+{
+  "JobFlowId": "j-39LPFEHUUY626",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-39LPFEHUUY626",
+  "ResponseMetadata": {
+    "RequestId": "4a33a3e4-70d6-4b4e-b056-b85be401864c",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "4a33a3e4-70d6-4b4e-b056-b85be401864c",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Thu, 23 Jul 2026 04:05:52 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-39LPFEHUUY626 step s-0000245NWJH4S99CZFN is PENDING
+j-39LPFEHUUY626 step s-0000245NWJH4S99CZFN is PENDING
+j-39LPFEHUUY626 step s-0000245NWJH4S99CZFN is PENDING
+j-39LPFEHUUY626 step s-0000245NWJH4S99CZFN is PENDING
+j-39LPFEHUUY626 step s-0000245NWJH4S99CZFN is PENDING
+j-39LPFEHUUY626 step s-0000245NWJH4S99CZFN is PENDING
+j-39LPFEHUUY626 step s-0000245NWJH4S99CZFN is PENDING
+j-39LPFEHUUY626 step s-0000245NWJH4S99CZFN is RUNNING
+j-39LPFEHUUY626 step s-0000245NWJH4S99CZFN is RUNNING
+j-39LPFEHUUY626 step s-0000245NWJH4S99CZFN is RUNNING
+j-39LPFEHUUY626 step s-0000245NWJH4S99CZFN is RUNNING
+j-39LPFEHUUY626 step s-0000245NWJH4S99CZFN is RUNNING
+j-39LPFEHUUY626 step s-0000245NWJH4S99CZFN is RUNNING
+j-39LPFEHUUY626 step s-0000245NWJH4S99CZFN is RUNNING
+j-39LPFEHUUY626 step s-0000245NWJH4S99CZFN is COMPLETED
+j-39LPFEHUUY626 cluster is TERMINATING
+j-39LPFEHUUY626 cluster is TERMINATING
+j-39LPFEHUUY626 cluster is TERMINATED
+Saved cpu-heavy 3072MB c5.xlarge x 2 runtime=3.4735 min cost=$0.0227; cluster=TERMINATED
+Starting 3072MB cpu-heavy on c5.xlarge x 4 in ap-southeast-1
+{
+  "JobFlowId": "j-3APAQYJ6KMM9W",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-3APAQYJ6KMM9W",
+  "ResponseMetadata": {
+    "RequestId": "af11c408-c411-47b4-8290-73b004a77a8f",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "af11c408-c411-47b4-8290-73b004a77a8f",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Thu, 23 Jul 2026 04:13:58 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-3APAQYJ6KMM9W step s-0697165IBR6GLRO4BGW is PENDING
+j-3APAQYJ6KMM9W step s-0697165IBR6GLRO4BGW is PENDING
+j-3APAQYJ6KMM9W step s-0697165IBR6GLRO4BGW is PENDING
+j-3APAQYJ6KMM9W step s-0697165IBR6GLRO4BGW is PENDING
+j-3APAQYJ6KMM9W step s-0697165IBR6GLRO4BGW is PENDING
+j-3APAQYJ6KMM9W step s-0697165IBR6GLRO4BGW is PENDING
+j-3APAQYJ6KMM9W step s-0697165IBR6GLRO4BGW is PENDING
+j-3APAQYJ6KMM9W step s-0697165IBR6GLRO4BGW is RUNNING
+j-3APAQYJ6KMM9W step s-0697165IBR6GLRO4BGW is RUNNING
+j-3APAQYJ6KMM9W step s-0697165IBR6GLRO4BGW is RUNNING
+j-3APAQYJ6KMM9W step s-0697165IBR6GLRO4BGW is RUNNING
+j-3APAQYJ6KMM9W step s-0697165IBR6GLRO4BGW is COMPLETED
+j-3APAQYJ6KMM9W cluster is TERMINATING
+j-3APAQYJ6KMM9W cluster is TERMINATING
+j-3APAQYJ6KMM9W cluster is TERMINATING
+j-3APAQYJ6KMM9W cluster is TERMINATED
+Saved cpu-heavy 3072MB c5.xlarge x 4 runtime=1.9395 min cost=$0.0253; cluster=TERMINATED
+Starting 3072MB cpu-heavy on c5a.xlarge x 2 in ap-southeast-1
+{
+  "JobFlowId": "j-1IQ9T9039DC5M",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-1IQ9T9039DC5M",
+  "ResponseMetadata": {
+    "RequestId": "6a93afd1-a65e-43e4-8dd5-fcb143b2b62c",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "6a93afd1-a65e-43e4-8dd5-fcb143b2b62c",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Thu, 23 Jul 2026 04:21:03 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-1IQ9T9039DC5M step s-01535902IQPGB0O1FOTB is PENDING
+j-1IQ9T9039DC5M step s-01535902IQPGB0O1FOTB is PENDING
+j-1IQ9T9039DC5M step s-01535902IQPGB0O1FOTB is PENDING
+j-1IQ9T9039DC5M step s-01535902IQPGB0O1FOTB is PENDING
+j-1IQ9T9039DC5M step s-01535902IQPGB0O1FOTB is PENDING
+j-1IQ9T9039DC5M step s-01535902IQPGB0O1FOTB is PENDING
+j-1IQ9T9039DC5M step s-01535902IQPGB0O1FOTB is PENDING
+j-1IQ9T9039DC5M step s-01535902IQPGB0O1FOTB is RUNNING
+j-1IQ9T9039DC5M step s-01535902IQPGB0O1FOTB is RUNNING
+j-1IQ9T9039DC5M step s-01535902IQPGB0O1FOTB is RUNNING
+j-1IQ9T9039DC5M step s-01535902IQPGB0O1FOTB is RUNNING
+j-1IQ9T9039DC5M step s-01535902IQPGB0O1FOTB is RUNNING
+j-1IQ9T9039DC5M step s-01535902IQPGB0O1FOTB is RUNNING
+j-1IQ9T9039DC5M step s-01535902IQPGB0O1FOTB is RUNNING
+j-1IQ9T9039DC5M step s-01535902IQPGB0O1FOTB is COMPLETED
+j-1IQ9T9039DC5M cluster is TERMINATING
+j-1IQ9T9039DC5M cluster is TERMINATING
+j-1IQ9T9039DC5M cluster is TERMINATED
+Saved cpu-heavy 3072MB c5a.xlarge x 2 runtime=3.3723 min cost=$0.0198; cluster=TERMINATED
+Starting 3072MB cpu-heavy on c5a.xlarge x 4 in ap-southeast-1
+{
+  "JobFlowId": "j-1WX3CDNT49NQ4",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-1WX3CDNT49NQ4",
+  "ResponseMetadata": {
+    "RequestId": "699eb053-c1b2-4664-956c-294f2f799674",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "699eb053-c1b2-4664-956c-294f2f799674",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Thu, 23 Jul 2026 04:29:09 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-1WX3CDNT49NQ4 step s-09259782L5ZB3ZWPZL1Y is PENDING
+j-1WX3CDNT49NQ4 step s-09259782L5ZB3ZWPZL1Y is PENDING
+j-1WX3CDNT49NQ4 step s-09259782L5ZB3ZWPZL1Y is PENDING
+j-1WX3CDNT49NQ4 step s-09259782L5ZB3ZWPZL1Y is PENDING
+j-1WX3CDNT49NQ4 step s-09259782L5ZB3ZWPZL1Y is PENDING
+j-1WX3CDNT49NQ4 step s-09259782L5ZB3ZWPZL1Y is PENDING
+j-1WX3CDNT49NQ4 step s-09259782L5ZB3ZWPZL1Y is PENDING
+j-1WX3CDNT49NQ4 step s-09259782L5ZB3ZWPZL1Y is RUNNING
+j-1WX3CDNT49NQ4 step s-09259782L5ZB3ZWPZL1Y is RUNNING
+j-1WX3CDNT49NQ4 step s-09259782L5ZB3ZWPZL1Y is RUNNING
+j-1WX3CDNT49NQ4 step s-09259782L5ZB3ZWPZL1Y is RUNNING
+j-1WX3CDNT49NQ4 step s-09259782L5ZB3ZWPZL1Y is COMPLETED
+j-1WX3CDNT49NQ4 cluster is TERMINATING
+j-1WX3CDNT49NQ4 cluster is TERMINATED
+Saved cpu-heavy 3072MB c5a.xlarge x 4 runtime=1.8722 min cost=$0.0220; cluster=TERMINATED
+Starting 3072MB cpu-heavy on c6i.xlarge x 2 in ap-southeast-1
+{
+  "JobFlowId": "j-2AZ32THWBI984",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-2AZ32THWBI984",
+  "ResponseMetadata": {
+    "RequestId": "f0080bb7-d3a5-4c1f-9c54-34fd56a9beef",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "f0080bb7-d3a5-4c1f-9c54-34fd56a9beef",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Thu, 23 Jul 2026 04:35:14 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-2AZ32THWBI984 step s-03814052YYYBIVLKBN2 is PENDING
+j-2AZ32THWBI984 step s-03814052YYYBIVLKBN2 is PENDING
+j-2AZ32THWBI984 step s-03814052YYYBIVLKBN2 is PENDING
+j-2AZ32THWBI984 step s-03814052YYYBIVLKBN2 is PENDING
+j-2AZ32THWBI984 step s-03814052YYYBIVLKBN2 is PENDING
+j-2AZ32THWBI984 step s-03814052YYYBIVLKBN2 is PENDING
+j-2AZ32THWBI984 step s-03814052YYYBIVLKBN2 is RUNNING
+j-2AZ32THWBI984 step s-03814052YYYBIVLKBN2 is RUNNING
+j-2AZ32THWBI984 step s-03814052YYYBIVLKBN2 is RUNNING
+j-2AZ32THWBI984 step s-03814052YYYBIVLKBN2 is RUNNING
+j-2AZ32THWBI984 step s-03814052YYYBIVLKBN2 is RUNNING
+j-2AZ32THWBI984 step s-03814052YYYBIVLKBN2 is RUNNING
+j-2AZ32THWBI984 step s-03814052YYYBIVLKBN2 is COMPLETED
+j-2AZ32THWBI984 cluster is TERMINATING
+j-2AZ32THWBI984 cluster is TERMINATING
+j-2AZ32THWBI984 cluster is TERMINATED
+Saved cpu-heavy 3072MB c6i.xlarge x 2 runtime=3.0062 min cost=$0.0196; cluster=TERMINATED
+Starting 3072MB cpu-heavy on c6i.xlarge x 4 in ap-southeast-1
+{
+  "JobFlowId": "j-3N62GTA6KUIR1",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-3N62GTA6KUIR1",
+  "ResponseMetadata": {
+    "RequestId": "faab32f2-d40d-4812-8102-a664a49891a1",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "faab32f2-d40d-4812-8102-a664a49891a1",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Thu, 23 Jul 2026 04:42:19 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-3N62GTA6KUIR1 step s-092035318E0JGCBFTD17 is PENDING
+j-3N62GTA6KUIR1 step s-092035318E0JGCBFTD17 is PENDING
+j-3N62GTA6KUIR1 step s-092035318E0JGCBFTD17 is PENDING
+j-3N62GTA6KUIR1 step s-092035318E0JGCBFTD17 is PENDING
+j-3N62GTA6KUIR1 step s-092035318E0JGCBFTD17 is PENDING
+j-3N62GTA6KUIR1 step s-092035318E0JGCBFTD17 is PENDING
+j-3N62GTA6KUIR1 step s-092035318E0JGCBFTD17 is RUNNING
+j-3N62GTA6KUIR1 step s-092035318E0JGCBFTD17 is RUNNING
+j-3N62GTA6KUIR1 step s-092035318E0JGCBFTD17 is RUNNING
+j-3N62GTA6KUIR1 step s-092035318E0JGCBFTD17 is RUNNING
+j-3N62GTA6KUIR1 step s-092035318E0JGCBFTD17 is COMPLETED
+j-3N62GTA6KUIR1 cluster is TERMINATING
+j-3N62GTA6KUIR1 cluster is TERMINATING
+j-3N62GTA6KUIR1 cluster is TERMINATED
+Saved cpu-heavy 3072MB c6i.xlarge x 4 runtime=1.7741 min cost=$0.0232; cluster=TERMINATED
+Starting 3072MB memory-heavy on m5.xlarge x 2 in ap-southeast-1
+{
+  "JobFlowId": "j-S28WZAQN426",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-S28WZAQN426",
+  "ResponseMetadata": {
+    "RequestId": "02795259-eebf-45fb-a2a1-b716159b629e",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "02795259-eebf-45fb-a2a1-b716159b629e",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "119",
+      "date": "Thu, 23 Jul 2026 04:48:23 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-S28WZAQN426 step s-0404419WARCCKHDTG44 is PENDING
+j-S28WZAQN426 step s-0404419WARCCKHDTG44 is PENDING
+j-S28WZAQN426 step s-0404419WARCCKHDTG44 is PENDING
+j-S28WZAQN426 step s-0404419WARCCKHDTG44 is PENDING
+j-S28WZAQN426 step s-0404419WARCCKHDTG44 is PENDING
+j-S28WZAQN426 step s-0404419WARCCKHDTG44 is PENDING
+j-S28WZAQN426 step s-0404419WARCCKHDTG44 is PENDING
+j-S28WZAQN426 step s-0404419WARCCKHDTG44 is RUNNING
+j-S28WZAQN426 step s-0404419WARCCKHDTG44 is RUNNING
+j-S28WZAQN426 step s-0404419WARCCKHDTG44 is RUNNING
+j-S28WZAQN426 step s-0404419WARCCKHDTG44 is RUNNING
+j-S28WZAQN426 step s-0404419WARCCKHDTG44 is RUNNING
+j-S28WZAQN426 step s-0404419WARCCKHDTG44 is RUNNING
+j-S28WZAQN426 step s-0404419WARCCKHDTG44 is RUNNING
+j-S28WZAQN426 step s-0404419WARCCKHDTG44 is RUNNING
+j-S28WZAQN426 step s-0404419WARCCKHDTG44 is COMPLETED
+j-S28WZAQN426 cluster is TERMINATING
+j-S28WZAQN426 cluster is TERMINATED
+Saved memory-heavy 3072MB m5.xlarge x 2 runtime=3.7749 min cost=$0.0302; cluster=TERMINATED
+Starting 3072MB memory-heavy on m5.xlarge x 4 in ap-southeast-1
+{
+  "JobFlowId": "j-324WFP57UZC5F",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-324WFP57UZC5F",
+  "ResponseMetadata": {
+    "RequestId": "9e9bfa20-90c9-420e-8650-6be2c7fde922",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "9e9bfa20-90c9-420e-8650-6be2c7fde922",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Thu, 23 Jul 2026 04:56:36 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-324WFP57UZC5F step s-040378616Z4II751ELPB is PENDING
+j-324WFP57UZC5F step s-040378616Z4II751ELPB is PENDING
+j-324WFP57UZC5F step s-040378616Z4II751ELPB is PENDING
+j-324WFP57UZC5F step s-040378616Z4II751ELPB is PENDING
+j-324WFP57UZC5F step s-040378616Z4II751ELPB is PENDING
+j-324WFP57UZC5F step s-040378616Z4II751ELPB is PENDING
+j-324WFP57UZC5F step s-040378616Z4II751ELPB is PENDING
+j-324WFP57UZC5F step s-040378616Z4II751ELPB is RUNNING
+j-324WFP57UZC5F step s-040378616Z4II751ELPB is RUNNING
+j-324WFP57UZC5F step s-040378616Z4II751ELPB is RUNNING
+j-324WFP57UZC5F step s-040378616Z4II751ELPB is RUNNING
+j-324WFP57UZC5F step s-040378616Z4II751ELPB is RUNNING
+j-324WFP57UZC5F step s-040378616Z4II751ELPB is COMPLETED
+j-324WFP57UZC5F cluster is TERMINATING
+j-324WFP57UZC5F cluster is TERMINATING
+j-324WFP57UZC5F cluster is TERMINATED
+Saved memory-heavy 3072MB m5.xlarge x 4 runtime=2.5389 min cost=$0.0406; cluster=TERMINATED
+Starting 3072MB memory-heavy on m5a.xlarge x 2 in ap-southeast-1
+{
+  "JobFlowId": "j-CF6TFW8BN5XM",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-CF6TFW8BN5XM",
+  "ResponseMetadata": {
+    "RequestId": "f98e5b98-0945-4182-b526-12d496dc6a89",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "f98e5b98-0945-4182-b526-12d496dc6a89",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "121",
+      "date": "Thu, 23 Jul 2026 05:03:41 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-CF6TFW8BN5XM step s-06761811LGJAF3COOZ1R is PENDING
+j-CF6TFW8BN5XM step s-06761811LGJAF3COOZ1R is PENDING
+j-CF6TFW8BN5XM step s-06761811LGJAF3COOZ1R is PENDING
+j-CF6TFW8BN5XM step s-06761811LGJAF3COOZ1R is PENDING
+j-CF6TFW8BN5XM step s-06761811LGJAF3COOZ1R is PENDING
+j-CF6TFW8BN5XM step s-06761811LGJAF3COOZ1R is PENDING
+j-CF6TFW8BN5XM step s-06761811LGJAF3COOZ1R is PENDING
+j-CF6TFW8BN5XM step s-06761811LGJAF3COOZ1R is PENDING
+j-CF6TFW8BN5XM step s-06761811LGJAF3COOZ1R is RUNNING
+j-CF6TFW8BN5XM step s-06761811LGJAF3COOZ1R is RUNNING
+j-CF6TFW8BN5XM step s-06761811LGJAF3COOZ1R is RUNNING
+j-CF6TFW8BN5XM step s-06761811LGJAF3COOZ1R is RUNNING
+j-CF6TFW8BN5XM step s-06761811LGJAF3COOZ1R is RUNNING
+j-CF6TFW8BN5XM step s-06761811LGJAF3COOZ1R is RUNNING
+j-CF6TFW8BN5XM step s-06761811LGJAF3COOZ1R is RUNNING
+j-CF6TFW8BN5XM step s-06761811LGJAF3COOZ1R is RUNNING
+j-CF6TFW8BN5XM step s-06761811LGJAF3COOZ1R is RUNNING
+j-CF6TFW8BN5XM step s-06761811LGJAF3COOZ1R is RUNNING
+j-CF6TFW8BN5XM step s-06761811LGJAF3COOZ1R is COMPLETED
+j-CF6TFW8BN5XM cluster is TERMINATING
+j-CF6TFW8BN5XM cluster is TERMINATING
+j-CF6TFW8BN5XM cluster is TERMINATING
+j-CF6TFW8BN5XM cluster is TERMINATED
+Saved memory-heavy 3072MB m5a.xlarge x 2 runtime=5.2432 min cost=$0.0378; cluster=TERMINATED
+Starting 3072MB memory-heavy on m5a.xlarge x 4 in ap-southeast-1
+{
+  "JobFlowId": "j-1LRCEFS40VW90",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-1LRCEFS40VW90",
+  "ResponseMetadata": {
+    "RequestId": "e993f526-787b-4588-a648-0a5697be2da8",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "e993f526-787b-4588-a648-0a5697be2da8",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Thu, 23 Jul 2026 05:14:31 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-1LRCEFS40VW90 step s-0678948ROGXUA3YB3N9 is PENDING
+j-1LRCEFS40VW90 step s-0678948ROGXUA3YB3N9 is PENDING
+j-1LRCEFS40VW90 step s-0678948ROGXUA3YB3N9 is PENDING
+j-1LRCEFS40VW90 step s-0678948ROGXUA3YB3N9 is PENDING
+j-1LRCEFS40VW90 step s-0678948ROGXUA3YB3N9 is PENDING
+j-1LRCEFS40VW90 step s-0678948ROGXUA3YB3N9 is PENDING
+j-1LRCEFS40VW90 step s-0678948ROGXUA3YB3N9 is PENDING
+j-1LRCEFS40VW90 step s-0678948ROGXUA3YB3N9 is PENDING
+j-1LRCEFS40VW90 step s-0678948ROGXUA3YB3N9 is RUNNING
+j-1LRCEFS40VW90 step s-0678948ROGXUA3YB3N9 is RUNNING
+j-1LRCEFS40VW90 step s-0678948ROGXUA3YB3N9 is RUNNING
+j-1LRCEFS40VW90 step s-0678948ROGXUA3YB3N9 is RUNNING
+j-1LRCEFS40VW90 step s-0678948ROGXUA3YB3N9 is RUNNING
+j-1LRCEFS40VW90 step s-0678948ROGXUA3YB3N9 is RUNNING
+j-1LRCEFS40VW90 step s-0678948ROGXUA3YB3N9 is COMPLETED
+j-1LRCEFS40VW90 cluster is TERMINATING
+j-1LRCEFS40VW90 cluster is TERMINATING
+j-1LRCEFS40VW90 cluster is TERMINATING
+j-1LRCEFS40VW90 cluster is TERMINATED
+Saved memory-heavy 3072MB m5a.xlarge x 4 runtime=3.0764 min cost=$0.0443; cluster=TERMINATED
+Starting 3072MB memory-heavy on c5.xlarge x 2 in ap-southeast-1
+{
+  "JobFlowId": "j-3JZHFIFNS1L7F",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-3JZHFIFNS1L7F",
+  "ResponseMetadata": {
+    "RequestId": "390f37e5-dd60-4118-ad29-6043b5a8e4ff",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "390f37e5-dd60-4118-ad29-6043b5a8e4ff",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Thu, 23 Jul 2026 05:23:09 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-3JZHFIFNS1L7F step s-0153545YZMQHXFN2HPY is PENDING
+j-3JZHFIFNS1L7F step s-0153545YZMQHXFN2HPY is PENDING
+j-3JZHFIFNS1L7F step s-0153545YZMQHXFN2HPY is PENDING
+j-3JZHFIFNS1L7F step s-0153545YZMQHXFN2HPY is PENDING
+j-3JZHFIFNS1L7F step s-0153545YZMQHXFN2HPY is PENDING
+j-3JZHFIFNS1L7F step s-0153545YZMQHXFN2HPY is PENDING
+j-3JZHFIFNS1L7F step s-0153545YZMQHXFN2HPY is PENDING
+j-3JZHFIFNS1L7F step s-0153545YZMQHXFN2HPY is RUNNING
+j-3JZHFIFNS1L7F step s-0153545YZMQHXFN2HPY is RUNNING
+j-3JZHFIFNS1L7F step s-0153545YZMQHXFN2HPY is RUNNING
+j-3JZHFIFNS1L7F step s-0153545YZMQHXFN2HPY is RUNNING
+j-3JZHFIFNS1L7F step s-0153545YZMQHXFN2HPY is RUNNING
+j-3JZHFIFNS1L7F step s-0153545YZMQHXFN2HPY is RUNNING
+j-3JZHFIFNS1L7F step s-0153545YZMQHXFN2HPY is RUNNING
+j-3JZHFIFNS1L7F step s-0153545YZMQHXFN2HPY is RUNNING
+j-3JZHFIFNS1L7F step s-0153545YZMQHXFN2HPY is COMPLETED
+j-3JZHFIFNS1L7F cluster is TERMINATING
+j-3JZHFIFNS1L7F cluster is TERMINATED
+Saved memory-heavy 3072MB c5.xlarge x 2 runtime=3.7068 min cost=$0.0242; cluster=TERMINATED
+Starting 3072MB memory-heavy on c5.xlarge x 4 in ap-southeast-1
+{
+  "JobFlowId": "j-1B0J6GVFG42GF",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-1B0J6GVFG42GF",
+  "ResponseMetadata": {
+    "RequestId": "40a29b1a-a82d-49c6-8eba-9fdf932a3adf",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "40a29b1a-a82d-49c6-8eba-9fdf932a3adf",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Thu, 23 Jul 2026 05:31:15 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-1B0J6GVFG42GF step s-04218401YLEWT6SJYE2T is PENDING
+j-1B0J6GVFG42GF step s-04218401YLEWT6SJYE2T is PENDING
+j-1B0J6GVFG42GF step s-04218401YLEWT6SJYE2T is PENDING
+j-1B0J6GVFG42GF step s-04218401YLEWT6SJYE2T is PENDING
+j-1B0J6GVFG42GF step s-04218401YLEWT6SJYE2T is PENDING
+j-1B0J6GVFG42GF step s-04218401YLEWT6SJYE2T is PENDING
+j-1B0J6GVFG42GF step s-04218401YLEWT6SJYE2T is PENDING
+j-1B0J6GVFG42GF step s-04218401YLEWT6SJYE2T is RUNNING
+j-1B0J6GVFG42GF step s-04218401YLEWT6SJYE2T is RUNNING
+j-1B0J6GVFG42GF step s-04218401YLEWT6SJYE2T is RUNNING
+j-1B0J6GVFG42GF step s-04218401YLEWT6SJYE2T is COMPLETED
+j-1B0J6GVFG42GF cluster is TERMINATED
+Saved memory-heavy 3072MB c5.xlarge x 4 runtime=1.8398 min cost=$0.0240; cluster=TERMINATED
+Starting 3072MB memory-heavy on c5a.xlarge x 2 in ap-southeast-1
+{
+  "JobFlowId": "j-2L58M5DD0DQ9K",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-2L58M5DD0DQ9K",
+  "ResponseMetadata": {
+    "RequestId": "a7ddc61c-8650-4e70-bc5b-797f2e85a02a",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "a7ddc61c-8650-4e70-bc5b-797f2e85a02a",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Thu, 23 Jul 2026 05:44:40 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-2L58M5DD0DQ9K step s-01664311O1TPC8Y4KQL6 is PENDING
+j-2L58M5DD0DQ9K step s-01664311O1TPC8Y4KQL6 is PENDING
+j-2L58M5DD0DQ9K step s-01664311O1TPC8Y4KQL6 is PENDING
+j-2L58M5DD0DQ9K step s-01664311O1TPC8Y4KQL6 is PENDING
+j-2L58M5DD0DQ9K step s-01664311O1TPC8Y4KQL6 is PENDING
+j-2L58M5DD0DQ9K step s-01664311O1TPC8Y4KQL6 is PENDING
+j-2L58M5DD0DQ9K step s-01664311O1TPC8Y4KQL6 is PENDING
+j-2L58M5DD0DQ9K step s-01664311O1TPC8Y4KQL6 is RUNNING
+j-2L58M5DD0DQ9K step s-01664311O1TPC8Y4KQL6 is RUNNING
+j-2L58M5DD0DQ9K step s-01664311O1TPC8Y4KQL6 is RUNNING
+j-2L58M5DD0DQ9K step s-01664311O1TPC8Y4KQL6 is RUNNING
+j-2L58M5DD0DQ9K step s-01664311O1TPC8Y4KQL6 is RUNNING
+j-2L58M5DD0DQ9K step s-01664311O1TPC8Y4KQL6 is RUNNING
+j-2L58M5DD0DQ9K step s-01664311O1TPC8Y4KQL6 is RUNNING
+j-2L58M5DD0DQ9K step s-01664311O1TPC8Y4KQL6 is COMPLETED
+j-2L58M5DD0DQ9K cluster is TERMINATING
+j-2L58M5DD0DQ9K cluster is TERMINATING
+j-2L58M5DD0DQ9K cluster is TERMINATED
+Saved memory-heavy 3072MB c5a.xlarge x 2 runtime=3.3067 min cost=$0.0194; cluster=TERMINATED
+Starting 3072MB memory-heavy on c5a.xlarge x 4 in ap-southeast-1
+{
+  "JobFlowId": "j-Q59B3QED5LRO",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-Q59B3QED5LRO",
+  "ResponseMetadata": {
+    "RequestId": "7fa7bb3c-f05f-4022-8292-c6c9f579e729",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "7fa7bb3c-f05f-4022-8292-c6c9f579e729",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "121",
+      "date": "Thu, 23 Jul 2026 05:52:46 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-Q59B3QED5LRO step s-016743521EC9AJ9KM9T6 is PENDING
+j-Q59B3QED5LRO step s-016743521EC9AJ9KM9T6 is PENDING
+j-Q59B3QED5LRO step s-016743521EC9AJ9KM9T6 is PENDING
+j-Q59B3QED5LRO step s-016743521EC9AJ9KM9T6 is PENDING
+j-Q59B3QED5LRO step s-016743521EC9AJ9KM9T6 is PENDING
+j-Q59B3QED5LRO step s-016743521EC9AJ9KM9T6 is PENDING
+j-Q59B3QED5LRO step s-016743521EC9AJ9KM9T6 is RUNNING
+j-Q59B3QED5LRO step s-016743521EC9AJ9KM9T6 is RUNNING
+j-Q59B3QED5LRO step s-016743521EC9AJ9KM9T6 is RUNNING
+j-Q59B3QED5LRO step s-016743521EC9AJ9KM9T6 is RUNNING
+j-Q59B3QED5LRO step s-016743521EC9AJ9KM9T6 is COMPLETED
+j-Q59B3QED5LRO cluster is TERMINATING
+j-Q59B3QED5LRO cluster is TERMINATING
+j-Q59B3QED5LRO cluster is TERMINATED
+Saved memory-heavy 3072MB c5a.xlarge x 4 runtime=1.7736 min cost=$0.0208; cluster=TERMINATED
+Starting 3072MB memory-heavy on c6i.xlarge x 2 in ap-southeast-1
+{
+  "JobFlowId": "j-18MMQHH02MLRH",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-18MMQHH02MLRH",
+  "ResponseMetadata": {
+    "RequestId": "ac99f74e-e5f1-4b56-b35d-b656b1894281",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "ac99f74e-e5f1-4b56-b35d-b656b1894281",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Thu, 23 Jul 2026 05:58:50 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-18MMQHH02MLRH step s-01458059PO4PTG383RT is PENDING
+j-18MMQHH02MLRH step s-01458059PO4PTG383RT is PENDING
+j-18MMQHH02MLRH step s-01458059PO4PTG383RT is PENDING
+j-18MMQHH02MLRH step s-01458059PO4PTG383RT is PENDING
+j-18MMQHH02MLRH step s-01458059PO4PTG383RT is PENDING
+j-18MMQHH02MLRH step s-01458059PO4PTG383RT is PENDING
+j-18MMQHH02MLRH step s-01458059PO4PTG383RT is RUNNING
+j-18MMQHH02MLRH step s-01458059PO4PTG383RT is RUNNING
+j-18MMQHH02MLRH step s-01458059PO4PTG383RT is RUNNING
+j-18MMQHH02MLRH step s-01458059PO4PTG383RT is RUNNING
+j-18MMQHH02MLRH step s-01458059PO4PTG383RT is RUNNING
+j-18MMQHH02MLRH step s-01458059PO4PTG383RT is RUNNING
+j-18MMQHH02MLRH step s-01458059PO4PTG383RT is COMPLETED
+j-18MMQHH02MLRH cluster is TERMINATING
+j-18MMQHH02MLRH cluster is TERMINATING
+j-18MMQHH02MLRH cluster is TERMINATED
+Saved memory-heavy 3072MB c6i.xlarge x 2 runtime=3.0061 min cost=$0.0196; cluster=TERMINATED
+Starting 3072MB memory-heavy on c6i.xlarge x 4 in ap-southeast-1
+{
+  "JobFlowId": "j-36SGNQK3QB5K1",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-36SGNQK3QB5K1",
+  "ResponseMetadata": {
+    "RequestId": "eeb2fe59-0f8e-4e20-af67-4900fe67777d",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "eeb2fe59-0f8e-4e20-af67-4900fe67777d",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Thu, 23 Jul 2026 06:05:55 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-36SGNQK3QB5K1 step s-0381577G21FQ2RJUKLE is PENDING
+j-36SGNQK3QB5K1 step s-0381577G21FQ2RJUKLE is PENDING
+j-36SGNQK3QB5K1 step s-0381577G21FQ2RJUKLE is PENDING
+j-36SGNQK3QB5K1 step s-0381577G21FQ2RJUKLE is PENDING
+j-36SGNQK3QB5K1 step s-0381577G21FQ2RJUKLE is PENDING
+j-36SGNQK3QB5K1 step s-0381577G21FQ2RJUKLE is PENDING
+j-36SGNQK3QB5K1 step s-0381577G21FQ2RJUKLE is RUNNING
+j-36SGNQK3QB5K1 step s-0381577G21FQ2RJUKLE is RUNNING
+j-36SGNQK3QB5K1 step s-0381577G21FQ2RJUKLE is RUNNING
+j-36SGNQK3QB5K1 step s-0381577G21FQ2RJUKLE is COMPLETED
+j-36SGNQK3QB5K1 cluster is TERMINATING
+j-36SGNQK3QB5K1 cluster is TERMINATING
+j-36SGNQK3QB5K1 cluster is TERMINATING
+j-36SGNQK3QB5K1 cluster is TERMINATED
+Saved memory-heavy 3072MB c6i.xlarge x 4 runtime=1.6420 min cost=$0.0215; cluster=TERMINATED
+Starting 3072MB io-heavy on m5.xlarge x 2 in ap-southeast-1
+{
+  "JobFlowId": "j-31LRJCJEFLLGH",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-31LRJCJEFLLGH",
+  "ResponseMetadata": {
+    "RequestId": "1c940261-f42d-49be-9e74-a530a5479995",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "1c940261-f42d-49be-9e74-a530a5479995",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Thu, 23 Jul 2026 06:12:00 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-31LRJCJEFLLGH step s-065926110YHPQLJSRXQB is PENDING
+j-31LRJCJEFLLGH step s-065926110YHPQLJSRXQB is PENDING
+j-31LRJCJEFLLGH step s-065926110YHPQLJSRXQB is PENDING
+j-31LRJCJEFLLGH step s-065926110YHPQLJSRXQB is PENDING
+j-31LRJCJEFLLGH step s-065926110YHPQLJSRXQB is PENDING
+j-31LRJCJEFLLGH step s-065926110YHPQLJSRXQB is PENDING
+j-31LRJCJEFLLGH step s-065926110YHPQLJSRXQB is RUNNING
+j-31LRJCJEFLLGH step s-065926110YHPQLJSRXQB is RUNNING
+j-31LRJCJEFLLGH step s-065926110YHPQLJSRXQB is COMPLETED
+j-31LRJCJEFLLGH cluster is TERMINATING
+j-31LRJCJEFLLGH cluster is TERMINATING
+j-31LRJCJEFLLGH cluster is TERMINATING
+j-31LRJCJEFLLGH cluster is TERMINATED
+Saved io-heavy 3072MB m5.xlarge x 2 runtime=5.1073 min cost=$0.0409; cluster=TERMINATED
+Starting 3072MB io-heavy on m5.xlarge x 4 in ap-southeast-1
+{
+  "JobFlowId": "j-3VBQ40AVY68WF",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-3VBQ40AVY68WF",
+  "ResponseMetadata": {
+    "RequestId": "6b60bfc3-ff7e-48e1-bc2f-8c574f9825e4",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "6b60bfc3-ff7e-48e1-bc2f-8c574f9825e4",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Thu, 23 Jul 2026 06:22:14 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-3VBQ40AVY68WF step s-0063912GCHBW4R48X6O is PENDING
+j-3VBQ40AVY68WF step s-0063912GCHBW4R48X6O is PENDING
+j-3VBQ40AVY68WF step s-0063912GCHBW4R48X6O is PENDING
+j-3VBQ40AVY68WF step s-0063912GCHBW4R48X6O is PENDING
+j-3VBQ40AVY68WF step s-0063912GCHBW4R48X6O is PENDING
+j-3VBQ40AVY68WF step s-0063912GCHBW4R48X6O is PENDING
+j-3VBQ40AVY68WF step s-0063912GCHBW4R48X6O is PENDING
+j-3VBQ40AVY68WF step s-0063912GCHBW4R48X6O is RUNNING
+j-3VBQ40AVY68WF step s-0063912GCHBW4R48X6O is RUNNING
+j-3VBQ40AVY68WF step s-0063912GCHBW4R48X6O is RUNNING
+j-3VBQ40AVY68WF step s-0063912GCHBW4R48X6O is RUNNING
+j-3VBQ40AVY68WF step s-0063912GCHBW4R48X6O is COMPLETED
+j-3VBQ40AVY68WF cluster is TERMINATED
+Saved io-heavy 3072MB m5.xlarge x 4 runtime=3.0404 min cost=$0.0486; cluster=TERMINATED
+Starting 3072MB io-heavy on m5a.xlarge x 2 in ap-southeast-1
+{
+  "JobFlowId": "j-2XS2NN0DWGP4F",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-2XS2NN0DWGP4F",
+  "ResponseMetadata": {
+    "RequestId": "3f339c5f-e718-42c4-8b1c-e842132bdbfa",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "3f339c5f-e718-42c4-8b1c-e842132bdbfa",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Thu, 23 Jul 2026 06:31:41 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-2XS2NN0DWGP4F step s-04002641648UG6FTENR4 is PENDING
+j-2XS2NN0DWGP4F step s-04002641648UG6FTENR4 is PENDING
+j-2XS2NN0DWGP4F step s-04002641648UG6FTENR4 is COMPLETED
+j-2XS2NN0DWGP4F cluster is TERMINATED
+Saved io-heavy 3072MB m5a.xlarge x 2 runtime=6.1419 min cost=$0.0442; cluster=TERMINATED
+Starting 3072MB io-heavy on m5a.xlarge x 4 in ap-southeast-1
+{
+  "JobFlowId": "j-3UPQEKRT27KRE",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-3UPQEKRT27KRE",
+  "ResponseMetadata": {
+    "RequestId": "720a4351-4e2d-4f66-8aa7-e1359d4ac888",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "720a4351-4e2d-4f66-8aa7-e1359d4ac888",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Thu, 23 Jul 2026 06:47:43 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-3UPQEKRT27KRE step s-03821632EDJN9H3SOB4O is PENDING
+j-3UPQEKRT27KRE step s-03821632EDJN9H3SOB4O is PENDING
+j-3UPQEKRT27KRE step s-03821632EDJN9H3SOB4O is COMPLETED
+j-3UPQEKRT27KRE cluster is TERMINATED
+Saved io-heavy 3072MB m5a.xlarge x 4 runtime=3.6102 min cost=$0.0520; cluster=TERMINATED
+Starting 3072MB io-heavy on c5.xlarge x 2 in ap-southeast-1
+{
+  "JobFlowId": "j-3056XG7R6DV44",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-3056XG7R6DV44",
+  "ResponseMetadata": {
+    "RequestId": "2a03255b-1745-423d-8187-fd88459965b0",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "2a03255b-1745-423d-8187-fd88459965b0",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Thu, 23 Jul 2026 07:03:45 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-3056XG7R6DV44 step s-09334622QW40OTLBDGCA is PENDING
+j-3056XG7R6DV44 step s-09334622QW40OTLBDGCA is PENDING
+j-3056XG7R6DV44 step s-09334622QW40OTLBDGCA is RUNNING
+j-3056XG7R6DV44 step s-09334622QW40OTLBDGCA is COMPLETED
+j-3056XG7R6DV44 cluster is TERMINATED
+Saved io-heavy 3072MB c5.xlarge x 2 runtime=4.4056 min cost=$0.0288; cluster=TERMINATED
+Starting 3072MB io-heavy on c5.xlarge x 4 in ap-southeast-1
+{
+  "JobFlowId": "j-18WUI8NYBGL5V",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-18WUI8NYBGL5V",
+  "ResponseMetadata": {
+    "RequestId": "39144699-4bbb-47ea-a23c-ba1c0b5c865b",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "39144699-4bbb-47ea-a23c-ba1c0b5c865b",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Thu, 23 Jul 2026 07:24:15 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-18WUI8NYBGL5V step s-0672346HDCNDJVBIFYZ is PENDING
+j-18WUI8NYBGL5V step s-0672346HDCNDJVBIFYZ is PENDING
+j-18WUI8NYBGL5V step s-0672346HDCNDJVBIFYZ is COMPLETED
+j-18WUI8NYBGL5V cluster is TERMINATED
+Saved io-heavy 3072MB c5.xlarge x 4 runtime=2.2064 min cost=$0.0288; cluster=TERMINATED
+Starting 3072MB io-heavy on c5a.xlarge x 2 in ap-southeast-1
+{
+  "JobFlowId": "j-1KK70SPLNVUJS",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-1KK70SPLNVUJS",
+  "ResponseMetadata": {
+    "RequestId": "47d5c339-9ae9-48b5-a3a4-40690375ea5c",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "47d5c339-9ae9-48b5-a3a4-40690375ea5c",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Thu, 23 Jul 2026 07:42:36 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-1KK70SPLNVUJS step s-01786643O9MJO1IDGV8T is PENDING
+j-1KK70SPLNVUJS step s-01786643O9MJO1IDGV8T is PENDING
+j-1KK70SPLNVUJS step s-01786643O9MJO1IDGV8T is COMPLETED
+j-1KK70SPLNVUJS cluster is TERMINATED
+Saved io-heavy 3072MB c5a.xlarge x 2 runtime=4.1057 min cost=$0.0241; cluster=TERMINATED
+Starting 3072MB io-heavy on c5a.xlarge x 4 in ap-southeast-1
+{
+  "JobFlowId": "j-2UPTIAS7O1WSC",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-2UPTIAS7O1WSC",
+  "ResponseMetadata": {
+    "RequestId": "ab93182a-0277-4b0d-ac20-457c24b84ec8",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "ab93182a-0277-4b0d-ac20-457c24b84ec8",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Thu, 23 Jul 2026 07:58:39 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-2UPTIAS7O1WSC step s-01518362FGBJ4ATNWZX is PENDING
+j-2UPTIAS7O1WSC step s-01518362FGBJ4ATNWZX is COMPLETED
+j-2UPTIAS7O1WSC cluster is TERMINATED
+Saved io-heavy 3072MB c5a.xlarge x 4 runtime=2.0387 min cost=$0.0239; cluster=TERMINATED
+Starting 3072MB io-heavy on c6i.xlarge x 2 in ap-southeast-1
+{
+  "JobFlowId": "j-KJ9WRM83MRLD",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-KJ9WRM83MRLD",
+  "ResponseMetadata": {
+    "RequestId": "abd3ac09-1aad-41e7-8626-bf96c745e7fa",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "abd3ac09-1aad-41e7-8626-bf96c745e7fa",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "121",
+      "date": "Thu, 23 Jul 2026 08:14:10 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-KJ9WRM83MRLD step s-012560366MR9CZ2FPOQ is PENDING
+j-KJ9WRM83MRLD step s-012560366MR9CZ2FPOQ is PENDING
+j-KJ9WRM83MRLD step s-012560366MR9CZ2FPOQ is COMPLETED
+j-KJ9WRM83MRLD cluster is TERMINATED
+Saved io-heavy 3072MB c6i.xlarge x 2 runtime=3.7049 min cost=$0.0242; cluster=TERMINATED
+Starting 3072MB io-heavy on c6i.xlarge x 4 in ap-southeast-1
+{
+  "JobFlowId": "j-1JF2U380S900M",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-1JF2U380S900M",
+  "ResponseMetadata": {
+    "RequestId": "b6a5bb61-cbba-4e98-9055-8e0767e46ebf",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "b6a5bb61-cbba-4e98-9055-8e0767e46ebf",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Thu, 23 Jul 2026 08:27:57 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-1JF2U380S900M step s-064921228O69Z64XYCQ2 is PENDING
+j-1JF2U380S900M step s-064921228O69Z64XYCQ2 is COMPLETED
+j-1JF2U380S900M cluster is TERMINATED
+Saved io-heavy 3072MB c6i.xlarge x 4 runtime=1.9063 min cost=$0.0249; cluster=TERMINATED
+Skipping completed 5120MB cpu-heavy m5.xlarge x 2 in ap-southeast-1
+Skipping completed 5120MB cpu-heavy m5.xlarge x 4 in ap-southeast-1
+Starting 5120MB cpu-heavy on m5a.xlarge x 2 in ap-southeast-1
+{
+  "JobFlowId": "j-S6DTHUO7EB02",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-S6DTHUO7EB02",
+  "ResponseMetadata": {
+    "RequestId": "3f12043f-db18-41ad-9931-96c6dee69167",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "3f12043f-db18-41ad-9931-96c6dee69167",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "121",
+      "date": "Thu, 23 Jul 2026 08:43:28 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-S6DTHUO7EB02 step s-06784943OMD75H9RCU1B is PENDING
+j-S6DTHUO7EB02 step s-06784943OMD75H9RCU1B is PENDING
+j-S6DTHUO7EB02 step s-06784943OMD75H9RCU1B is COMPLETED
+j-S6DTHUO7EB02 cluster is TERMINATED
+Saved cpu-heavy 5120MB m5a.xlarge x 2 runtime=7.5767 min cost=$0.0546; cluster=TERMINATED
+Skipping completed 5120MB cpu-heavy m5a.xlarge x 4 in ap-southeast-1
+Starting 5120MB cpu-heavy on c5.xlarge x 2 in ap-southeast-1
+{
+  "JobFlowId": "j-2OJJ4SIBATLIW",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-2OJJ4SIBATLIW",
+  "ResponseMetadata": {
+    "RequestId": "d009486c-70f4-48eb-b537-7547de340925",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "d009486c-70f4-48eb-b537-7547de340925",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Thu, 23 Jul 2026 08:59:29 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-2OJJ4SIBATLIW step s-06595203TNDEYPKQR9M9 is PENDING
+j-2OJJ4SIBATLIW step s-06595203TNDEYPKQR9M9 is COMPLETED
+j-2OJJ4SIBATLIW cluster is TERMINATED
+Saved cpu-heavy 5120MB c5.xlarge x 2 runtime=5.7403 min cost=$0.0375; cluster=TERMINATED
+Skipping completed 5120MB cpu-heavy c5.xlarge x 4 in ap-southeast-1
+Skipping completed 5120MB cpu-heavy c5a.xlarge x 2 in ap-southeast-1
+Skipping completed 5120MB cpu-heavy c5a.xlarge x 4 in ap-southeast-1
+Starting 5120MB cpu-heavy on c6i.xlarge x 2 in ap-southeast-1
+{
+  "JobFlowId": "j-28NTX6QGI1ZEE",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-28NTX6QGI1ZEE",
+  "ResponseMetadata": {
+    "RequestId": "49efa3f8-175b-43f0-8741-a1520954faee",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "49efa3f8-175b-43f0-8741-a1520954faee",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Thu, 23 Jul 2026 09:15:00 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-28NTX6QGI1ZEE step s-067929421477JULQA50F is PENDING
+j-28NTX6QGI1ZEE step s-067929421477JULQA50F is PENDING
+j-28NTX6QGI1ZEE step s-067929421477JULQA50F is COMPLETED
+j-28NTX6QGI1ZEE cluster is TERMINATED
+Saved cpu-heavy 5120MB c6i.xlarge x 2 runtime=4.5046 min cost=$0.0294; cluster=TERMINATED
+Skipping completed 5120MB cpu-heavy c6i.xlarge x 4 in ap-southeast-1
+Skipping completed 5120MB memory-heavy m5.xlarge x 2 in ap-southeast-1
+Skipping completed 5120MB memory-heavy m5.xlarge x 4 in ap-southeast-1
+Starting 5120MB memory-heavy on m5a.xlarge x 2 in ap-southeast-1
+{
+  "JobFlowId": "j-3061452FCFA2S",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-3061452FCFA2S",
+  "ResponseMetadata": {
+    "RequestId": "8f41e2ef-5990-49f9-95c1-4272ddab2a4a",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "8f41e2ef-5990-49f9-95c1-4272ddab2a4a",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Thu, 23 Jul 2026 09:31:02 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-3061452FCFA2S step s-03811492K942OZ62CCK2 is PENDING
+j-3061452FCFA2S step s-03811492K942OZ62CCK2 is PENDING
+j-3061452FCFA2S step s-03811492K942OZ62CCK2 is RUNNING
+j-3061452FCFA2S step s-03811492K942OZ62CCK2 is COMPLETED
+j-3061452FCFA2S cluster is TERMINATED
+Saved memory-heavy 5120MB m5a.xlarge x 2 runtime=7.7760 min cost=$0.0560; cluster=TERMINATED
+Skipping completed 5120MB memory-heavy m5a.xlarge x 4 in ap-southeast-1
+Starting 5120MB memory-heavy on c5.xlarge x 2 in ap-southeast-1
+{
+  "JobFlowId": "j-2OC5E2Q19HS8Y",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-2OC5E2Q19HS8Y",
+  "ResponseMetadata": {
+    "RequestId": "77e5958a-21a6-4aa0-8910-8551ed67d4fd",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "77e5958a-21a6-4aa0-8910-8551ed67d4fd",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Thu, 23 Jul 2026 09:51:06 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-2OC5E2Q19HS8Y step s-06721711Z9EDH1HMF45E is PENDING
+j-2OC5E2Q19HS8Y step s-06721711Z9EDH1HMF45E is COMPLETED
+j-2OC5E2Q19HS8Y cluster is TERMINATED
+Saved memory-heavy 5120MB c5.xlarge x 2 runtime=5.2732 min cost=$0.0345; cluster=TERMINATED
+Skipping completed 5120MB memory-heavy c5.xlarge x 4 in ap-southeast-1
+Skipping completed 5120MB memory-heavy c5a.xlarge x 2 in ap-southeast-1
+Skipping completed 5120MB memory-heavy c5a.xlarge x 4 in ap-southeast-1
+Starting 5120MB memory-heavy on c6i.xlarge x 2 in ap-southeast-1
+{
+  "JobFlowId": "j-1IE39DUL2TCHO",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-1IE39DUL2TCHO",
+  "ResponseMetadata": {
+    "RequestId": "1bbb658e-0230-4a08-aef1-ed1df0a3c002",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "1bbb658e-0230-4a08-aef1-ed1df0a3c002",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Thu, 23 Jul 2026 10:06:38 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-1IE39DUL2TCHO step s-069690522Y2LI0ZK96XH is PENDING
+j-1IE39DUL2TCHO step s-069690522Y2LI0ZK96XH is RUNNING
+j-1IE39DUL2TCHO step s-069690522Y2LI0ZK96XH is COMPLETED
+j-1IE39DUL2TCHO cluster is TERMINATED
+Saved memory-heavy 5120MB c6i.xlarge x 2 runtime=4.3719 min cost=$0.0286; cluster=TERMINATED
+Skipping completed 5120MB memory-heavy c6i.xlarge x 4 in ap-southeast-1
+Skipping completed 5120MB io-heavy m5.xlarge x 2 in ap-southeast-1
+Skipping completed 5120MB io-heavy m5.xlarge x 4 in ap-southeast-1
+Starting 5120MB io-heavy on m5a.xlarge x 2 in ap-southeast-1
+{
+  "JobFlowId": "j-6KSGIUQY8U31",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-6KSGIUQY8U31",
+  "ResponseMetadata": {
+    "RequestId": "fa535c16-5239-4f88-9721-b6861a8b4d1a",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "fa535c16-5239-4f88-9721-b6861a8b4d1a",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "121",
+      "date": "Thu, 23 Jul 2026 10:26:35 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-6KSGIUQY8U31 step s-0679093VB6RM7HEA9X1 is PENDING
+j-6KSGIUQY8U31 step s-0679093VB6RM7HEA9X1 is PENDING
+j-6KSGIUQY8U31 step s-0679093VB6RM7HEA9X1 is PENDING
+j-6KSGIUQY8U31 step s-0679093VB6RM7HEA9X1 is PENDING
+j-6KSGIUQY8U31 step s-0679093VB6RM7HEA9X1 is RUNNING
+j-6KSGIUQY8U31 step s-0679093VB6RM7HEA9X1 is RUNNING
+j-6KSGIUQY8U31 step s-0679093VB6RM7HEA9X1 is RUNNING
+j-6KSGIUQY8U31 step s-0679093VB6RM7HEA9X1 is COMPLETED
+j-6KSGIUQY8U31 cluster is TERMINATED
+Saved io-heavy 5120MB m5a.xlarge x 2 runtime=9.8097 min cost=$0.0706; cluster=TERMINATED
+Skipping completed 5120MB io-heavy m5a.xlarge x 4 in ap-southeast-1
+Starting 5120MB io-heavy on c5.xlarge x 2 in ap-southeast-1
+{
+  "JobFlowId": "j-G39DCU4LKFGD",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-G39DCU4LKFGD",
+  "ResponseMetadata": {
+    "RequestId": "75c3948b-1ed8-480b-81b8-3157ffff4cf6",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "75c3948b-1ed8-480b-81b8-3157ffff4cf6",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "121",
+      "date": "Thu, 23 Jul 2026 10:47:25 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-G39DCU4LKFGD step s-03829361S05FR6230WJO is PENDING
+j-G39DCU4LKFGD step s-03829361S05FR6230WJO is PENDING
+j-G39DCU4LKFGD step s-03829361S05FR6230WJO is COMPLETED
+j-G39DCU4LKFGD cluster is TERMINATED
+Saved io-heavy 5120MB c5.xlarge x 2 runtime=7.3740 min cost=$0.0482; cluster=TERMINATED
+Skipping completed 5120MB io-heavy c5.xlarge x 4 in ap-southeast-1
+Starting 5120MB io-heavy on c5a.xlarge x 2 in ap-southeast-1
+{
+  "JobFlowId": "j-10X5B9YDV1UVA",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-10X5B9YDV1UVA",
+  "ResponseMetadata": {
+    "RequestId": "2094aabb-f84b-4fac-aa47-9d87403ca9b6",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "2094aabb-f84b-4fac-aa47-9d87403ca9b6",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Thu, 23 Jul 2026 11:01:03 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-10X5B9YDV1UVA step s-04246551JXPT1EMSQJ1A is PENDING
+j-10X5B9YDV1UVA step s-04246551JXPT1EMSQJ1A is COMPLETED
+j-10X5B9YDV1UVA cluster is TERMINATED
+Saved io-heavy 5120MB c5a.xlarge x 2 runtime=6.4055 min cost=$0.0376; cluster=TERMINATED
+Skipping completed 5120MB io-heavy c5a.xlarge x 4 in ap-southeast-1
+Starting 5120MB io-heavy on c6i.xlarge x 2 in ap-southeast-1
+{
+  "JobFlowId": "j-5KKOQ3QS2WJT",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-5KKOQ3QS2WJT",
+  "ResponseMetadata": {
+    "RequestId": "ec24374e-ff16-4172-99cc-4070a62fb5da",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "ec24374e-ff16-4172-99cc-4070a62fb5da",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "121",
+      "date": "Thu, 23 Jul 2026 11:16:34 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-5KKOQ3QS2WJT step s-06492576LXJQGZUMR91 is PENDING
+j-5KKOQ3QS2WJT step s-06492576LXJQGZUMR91 is PENDING
+j-5KKOQ3QS2WJT step s-06492576LXJQGZUMR91 is RUNNING
+j-5KKOQ3QS2WJT step s-06492576LXJQGZUMR91 is COMPLETED
+j-5KKOQ3QS2WJT cluster is TERMINATED
+Saved io-heavy 5120MB c6i.xlarge x 2 runtime=5.8391 min cost=$0.0381; cluster=TERMINATED
+Skipping completed 5120MB io-heavy c6i.xlarge x 4 in ap-southeast-1
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv

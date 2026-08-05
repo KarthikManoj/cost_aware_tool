@@ -1,0 +1,6 @@
+Rank,Cloud,Region,Machine Type,Nodes,Predicted Runtime (minutes),Predicted Cost (USD),Carbon Intensity,Renewable Percentage,Optimization Score,Recommendation Reason
+1,Azure,Central India,Standard_D4ds_v4,2,0.18945941177080874,0.005570389947475943,540.0,32.0,0.16570831187827167,"ranked by best trade-off between runtime, cost, carbon, and renewable energy."
+2,Azure,Central India,Standard_D2as_v4,4,0.5380021487871298,0.0018877741147156984,540.0,32.0,0.1747773434572058,"ranked by best trade-off between runtime, cost, carbon, and renewable energy."
+3,Azure,Central India,Standard_D4ds_v4,4,0.2562235182430116,0.007030324809629278,540.0,32.0,0.19827174119277802,"ranked by best trade-off between runtime, cost, carbon, and renewable energy."
+4,Azure,Central India,Standard_D2as_v4,2,0.9026827693299151,0.0006834530994372145,540.0,32.0,0.22197507245180045,"ranked by best trade-off between runtime, cost, carbon, and renewable energy."
+5,Azure,Central India,Standard_D2ds_v4,4,0.7734978606924638,0.006346944764081765,540.0,32.0,0.27980863016112484,"ranked by best trade-off between runtime, cost, carbon, and renewable energy."

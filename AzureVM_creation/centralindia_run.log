@@ -1,0 +1,1952 @@
+
+############################################################
+# centralindia | Standard_D2s_v3 | 2 nodes 
+############################################################
+Creating bench-cin-d2s_v3-n2-1...
+Creating bench-cin-d2s_v3-n2-2...
+Waiting for bench-cin-d2s_v3-n2-1 to finish provisioning...
+  bench-cin-d2s_v3-n2-1 -> 20.198.72.239
+Waiting for bench-cin-d2s_v3-n2-2 to finish provisioning...
+  bench-cin-d2s_v3-n2-2 -> 4.224.34.228
+  waiting for install on 20.198.72.239 (1/180)...
+  waiting for install on 20.198.72.239 (2/180)...
+  waiting for install on 20.198.72.239 (3/180)...
+  waiting for install on 20.198.72.239 (4/180)...
+  waiting for install on 20.198.72.239 (5/180)...
+  waiting for install on 20.198.72.239 (6/180)...
+  install finished on 20.198.72.239
+  install finished on 4.224.34.228
+Repairing /opt/benchmark permissions on all VMs...
+Warning: Permanently added '20.198.72.239' (ED25519) to the list of known hosts.
+Warning: Permanently added '4.224.34.228' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.198.72.239' (ED25519) to the list of known hosts.
+starting org.apache.spark.deploy.master.Master, logging to /opt/spark/logs/spark-benchadmin-org.apache.spark.deploy.master.Master-1-bench-cin-d2sv3-n2-1.out
+Warning: Permanently added '4.224.34.228' (ED25519) to the list of known hosts.
+starting org.apache.spark.deploy.worker.Worker, logging to /opt/spark/logs/spark-benchadmin-org.apache.spark.deploy.worker.Worker-1-bench-cin-d2sv3-n2-2.out
+Cluster up: spark://10.0.0.4:7077 (2 nodes)
+Warning: Permanently added '20.198.72.239' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.198.72.239' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.198.72.239' (ED25519) to the list of known hosts.
+Warning: Permanently added '4.224.34.228' (ED25519) to the list of known hosts.
+Warning: Permanently added '4.224.34.228' (ED25519) to the list of known hosts.
+Warning: Permanently added '4.224.34.228' (ED25519) to the list of known hosts.
+Warning: Permanently added '4.224.34.228' (ED25519) to the list of known hosts.
+Warning: Permanently added '4.224.34.228' (ED25519) to the list of known hosts.
+Warning: Permanently added '4.224.34.228' (ED25519) to the list of known hosts.
+Warning: Permanently added '4.224.34.228' (ED25519) to the list of known hosts.
+Warning: Permanently added '4.224.34.228' (ED25519) to the list of known hosts.
+Downloading events_10mb.csv (excluded from timer)...
+Replicating dataset to worker 4.224.34.228 (excluded from timer)...
+
+=== Standard_D2s_v3 | 2 nodes | 10MB | cpu | run 1 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '10MB.csv', 'Dataset_Size_MB': 10, 'Workload': 'cpu', 'Run_Number': 1, 'Timestamp': '2026-07-22T19:57:37.698367+00:00', 'Runtime_Minutes': 0.3645, 'CPU_Avg_Pct': 74.23, 'Cost_USD': 0.0013, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2sv3-n2-1.csv
+
+=== Standard_D2s_v3 | 2 nodes | 10MB | cpu | run 2 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '10MB.csv', 'Dataset_Size_MB': 10, 'Workload': 'cpu', 'Run_Number': 2, 'Timestamp': '2026-07-22T19:58:02.113712+00:00', 'Runtime_Minutes': 0.3558, 'CPU_Avg_Pct': 64.61, 'Cost_USD': 0.0012, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2sv3-n2-1.csv
+
+=== Standard_D2s_v3 | 2 nodes | 10MB | memory | run 1 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '10MB.csv', 'Dataset_Size_MB': 10, 'Workload': 'memory', 'Run_Number': 1, 'Timestamp': '2026-07-22T19:58:32.500718+00:00', 'Runtime_Minutes': 0.4966, 'CPU_Avg_Pct': 66.6, 'Cost_USD': 0.0017, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2sv3-n2-1.csv
+
+=== Standard_D2s_v3 | 2 nodes | 10MB | memory | run 2 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '10MB.csv', 'Dataset_Size_MB': 10, 'Workload': 'memory', 'Run_Number': 2, 'Timestamp': '2026-07-22T19:59:08.922170+00:00', 'Runtime_Minutes': 0.5053, 'CPU_Avg_Pct': 51.93, 'Cost_USD': 0.0018, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2sv3-n2-1.csv
+
+=== Standard_D2s_v3 | 2 nodes | 10MB | io | run 1 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '10MB.csv', 'Dataset_Size_MB': 10, 'Workload': 'io', 'Run_Number': 1, 'Timestamp': '2026-07-22T19:59:39.325077+00:00', 'Runtime_Minutes': 0.4436, 'CPU_Avg_Pct': 97.28, 'Cost_USD': 0.0016, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2sv3-n2-1.csv
+
+=== Standard_D2s_v3 | 2 nodes | 10MB | io | run 2 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '10MB.csv', 'Dataset_Size_MB': 10, 'Workload': 'io', 'Run_Number': 2, 'Timestamp': '2026-07-22T20:00:09.722458+00:00', 'Runtime_Minutes': 0.4509, 'CPU_Avg_Pct': 96.7, 'Cost_USD': 0.0016, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2sv3-n2-1.csv
+Downloading events_100mb.csv (excluded from timer)...
+Replicating dataset to worker 4.224.34.228 (excluded from timer)...
+
+=== Standard_D2s_v3 | 2 nodes | 100MB | cpu | run 1 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '100MB.csv', 'Dataset_Size_MB': 100, 'Workload': 'cpu', 'Run_Number': 1, 'Timestamp': '2026-07-22T20:00:43.493168+00:00', 'Runtime_Minutes': 0.4388, 'CPU_Avg_Pct': 39.98, 'Cost_USD': 0.0015, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2sv3-n2-1.csv
+
+=== Standard_D2s_v3 | 2 nodes | 100MB | cpu | run 2 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '100MB.csv', 'Dataset_Size_MB': 100, 'Workload': 'cpu', 'Run_Number': 2, 'Timestamp': '2026-07-22T20:01:13.875612+00:00', 'Runtime_Minutes': 0.4146, 'CPU_Avg_Pct': 55.11, 'Cost_USD': 0.0015, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2sv3-n2-1.csv
+
+=== Standard_D2s_v3 | 2 nodes | 100MB | memory | run 1 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '100MB.csv', 'Dataset_Size_MB': 100, 'Workload': 'memory', 'Run_Number': 1, 'Timestamp': '2026-07-22T20:01:56.299068+00:00', 'Runtime_Minutes': 0.622, 'CPU_Avg_Pct': 44.27, 'Cost_USD': 0.0022, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2sv3-n2-1.csv
+
+=== Standard_D2s_v3 | 2 nodes | 100MB | memory | run 2 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '100MB.csv', 'Dataset_Size_MB': 100, 'Workload': 'memory', 'Run_Number': 2, 'Timestamp': '2026-07-22T20:02:38.697317+00:00', 'Runtime_Minutes': 0.633, 'CPU_Avg_Pct': 36.2, 'Cost_USD': 0.0022, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2sv3-n2-1.csv
+
+=== Standard_D2s_v3 | 2 nodes | 100MB | io | run 1 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '100MB.csv', 'Dataset_Size_MB': 100, 'Workload': 'io', 'Run_Number': 1, 'Timestamp': '2026-07-22T20:03:20.974280+00:00', 'Runtime_Minutes': 0.6418, 'CPU_Avg_Pct': 97.2, 'Cost_USD': 0.0022, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2sv3-n2-1.csv
+
+=== Standard_D2s_v3 | 2 nodes | 100MB | io | run 2 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '100MB.csv', 'Dataset_Size_MB': 100, 'Workload': 'io', 'Run_Number': 2, 'Timestamp': '2026-07-22T20:04:03.421845+00:00', 'Runtime_Minutes': 0.6166, 'CPU_Avg_Pct': 93.45, 'Cost_USD': 0.0022, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2sv3-n2-1.csv
+Downloading events_500mb.csv (excluded from timer)...
+Replicating dataset to worker 4.224.34.228 (excluded from timer)...
+
+=== Standard_D2s_v3 | 2 nodes | 500MB | cpu | run 1 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '500MB.csv', 'Dataset_Size_MB': 500, 'Workload': 'cpu', 'Run_Number': 1, 'Timestamp': '2026-07-22T20:05:05.348223+00:00', 'Runtime_Minutes': 0.7935, 'CPU_Avg_Pct': 28.48, 'Cost_USD': 0.0028, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2sv3-n2-1.csv
+
+=== Standard_D2s_v3 | 2 nodes | 500MB | cpu | run 2 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '500MB.csv', 'Dataset_Size_MB': 500, 'Workload': 'cpu', 'Run_Number': 2, 'Timestamp': '2026-07-22T20:05:53.758959+00:00', 'Runtime_Minutes': 0.7823, 'CPU_Avg_Pct': 24.5, 'Cost_USD': 0.0027, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2sv3-n2-1.csv
+
+=== Standard_D2s_v3 | 2 nodes | 500MB | memory | run 1 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '500MB.csv', 'Dataset_Size_MB': 500, 'Workload': 'memory', 'Run_Number': 1, 'Timestamp': '2026-07-22T20:07:06.191852+00:00', 'Runtime_Minutes': 1.1599, 'CPU_Avg_Pct': 25.45, 'Cost_USD': 0.0041, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2sv3-n2-1.csv
+
+=== Standard_D2s_v3 | 2 nodes | 500MB | memory | run 2 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '500MB.csv', 'Dataset_Size_MB': 500, 'Workload': 'memory', 'Run_Number': 2, 'Timestamp': '2026-07-22T20:08:18.488769+00:00', 'Runtime_Minutes': 1.1898, 'CPU_Avg_Pct': 23.56, 'Cost_USD': 0.0042, 'Exit_Status': 'SUCCESS'}
+Warning: Permanently added '4.224.34.228' (ED25519) to the list of known hosts.
+Warning: Permanently added '4.224.34.228' (ED25519) to the list of known hosts.
+Warning: Permanently added '4.224.34.228' (ED25519) to the list of known hosts.
+Warning: Permanently added '4.224.34.228' (ED25519) to the list of known hosts.
+Warning: Permanently added '4.224.34.228' (ED25519) to the list of known hosts.
+Warning: Permanently added '4.224.34.228' (ED25519) to the list of known hosts.
+Warning: Permanently added '4.224.34.228' (ED25519) to the list of known hosts.
+Warning: Permanently added '4.224.34.228' (ED25519) to the list of known hosts.
+Warning: Permanently added '4.224.34.228' (ED25519) to the list of known hosts.
+Uploaded results to results/results_bench-cin-d2sv3-n2-1.csv
+
+=== Standard_D2s_v3 | 2 nodes | 500MB | io | run 1 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '500MB.csv', 'Dataset_Size_MB': 500, 'Workload': 'io', 'Run_Number': 1, 'Timestamp': '2026-07-22T20:09:43.072280+00:00', 'Runtime_Minutes': 1.3358, 'CPU_Avg_Pct': 98.75, 'Cost_USD': 0.0047, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2sv3-n2-1.csv
+
+=== Standard_D2s_v3 | 2 nodes | 500MB | io | run 2 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '500MB.csv', 'Dataset_Size_MB': 500, 'Workload': 'io', 'Run_Number': 2, 'Timestamp': '2026-07-22T20:11:07.598707+00:00', 'Runtime_Minutes': 1.3436, 'CPU_Avg_Pct': 97.8, 'Cost_USD': 0.0047, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2sv3-n2-1.csv
+Downloading events_1024mb.csv (excluded from timer)...
+Replicating dataset to worker 4.224.34.228 (excluded from timer)...
+
+=== Standard_D2s_v3 | 2 nodes | 1024MB | cpu | run 1 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '1024MB.csv', 'Dataset_Size_MB': 1024, 'Workload': 'cpu', 'Run_Number': 1, 'Timestamp': '2026-07-22T20:12:51.827240+00:00', 'Runtime_Minutes': 1.2617, 'CPU_Avg_Pct': 17.25, 'Cost_USD': 0.0044, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2sv3-n2-1.csv
+
+=== Standard_D2s_v3 | 2 nodes | 1024MB | cpu | run 2 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '1024MB.csv', 'Dataset_Size_MB': 1024, 'Workload': 'cpu', 'Run_Number': 2, 'Timestamp': '2026-07-22T20:14:10.260321+00:00', 'Runtime_Minutes': 1.23, 'CPU_Avg_Pct': 22.97, 'Cost_USD': 0.0043, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2sv3-n2-1.csv
+
+=== Standard_D2s_v3 | 2 nodes | 1024MB | memory | run 1 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '1024MB.csv', 'Dataset_Size_MB': 1024, 'Workload': 'memory', 'Run_Number': 1, 'Timestamp': '2026-07-22T20:15:58.753236+00:00', 'Runtime_Minutes': 1.7968, 'CPU_Avg_Pct': 18.89, 'Cost_USD': 0.0063, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2sv3-n2-1.csv
+
+=== Standard_D2s_v3 | 2 nodes | 1024MB | memory | run 2 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '1024MB.csv', 'Dataset_Size_MB': 1024, 'Workload': 'memory', 'Run_Number': 2, 'Timestamp': '2026-07-22T20:17:53.225843+00:00', 'Runtime_Minutes': 1.8234, 'CPU_Avg_Pct': 20.87, 'Cost_USD': 0.0064, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2sv3-n2-1.csv
+
+=== Standard_D2s_v3 | 2 nodes | 1024MB | io | run 1 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '1024MB.csv', 'Dataset_Size_MB': 1024, 'Workload': 'io', 'Run_Number': 1, 'Timestamp': '2026-07-22T20:20:17.880087+00:00', 'Runtime_Minutes': 2.3202, 'CPU_Avg_Pct': 96.45, 'Cost_USD': 0.0081, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2sv3-n2-1.csv
+
+=== Standard_D2s_v3 | 2 nodes | 1024MB | io | run 2 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '1024MB.csv', 'Dataset_Size_MB': 1024, 'Workload': 'io', 'Run_Number': 2, 'Timestamp': '2026-07-22T20:22:36.544911+00:00', 'Runtime_Minutes': 2.3024, 'CPU_Avg_Pct': 97.6, 'Cost_USD': 0.0081, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2sv3-n2-1.csv
+Downloading events_2048.csv (excluded from timer)...
+Replicating dataset to worker 4.224.34.228 (excluded from timer)...
+
+=== Standard_D2s_v3 | 2 nodes | 2048MB | cpu | run 1 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '2048MB.csv', 'Dataset_Size_MB': 2048, 'Workload': 'cpu', 'Run_Number': 1, 'Timestamp': '2026-07-22T20:25:38.836974+00:00', 'Runtime_Minutes': 2.0962, 'CPU_Avg_Pct': 12.41, 'Cost_USD': 0.0073, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2sv3-n2-1.csv
+
+=== Standard_D2s_v3 | 2 nodes | 2048MB | cpu | run 2 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '2048MB.csv', 'Dataset_Size_MB': 2048, 'Workload': 'cpu', 'Run_Number': 2, 'Timestamp': '2026-07-22T20:27:51.381090+00:00', 'Runtime_Minutes': 2.1139, 'CPU_Avg_Pct': 10.67, 'Cost_USD': 0.0074, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2sv3-n2-1.csv
+
+=== Standard_D2s_v3 | 2 nodes | 2048MB | memory | run 1 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '2048MB.csv', 'Dataset_Size_MB': 2048, 'Workload': 'memory', 'Run_Number': 1, 'Timestamp': '2026-07-22T20:31:04.005458+00:00', 'Runtime_Minutes': 3.1725, 'CPU_Avg_Pct': 10.67, 'Cost_USD': 0.0111, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2sv3-n2-1.csv
+
+=== Standard_D2s_v3 | 2 nodes | 2048MB | memory | run 2 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '2048MB.csv', 'Dataset_Size_MB': 2048, 'Workload': 'memory', 'Run_Number': 2, 'Timestamp': '2026-07-22T20:34:22.684244+00:00', 'Runtime_Minutes': 3.3005, 'CPU_Avg_Pct': 10.93, 'Cost_USD': 0.0116, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2sv3-n2-1.csv
+
+=== Standard_D2s_v3 | 2 nodes | 2048MB | io | run 1 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '2048MB.csv', 'Dataset_Size_MB': 2048, 'Workload': 'io', 'Run_Number': 1, 'Timestamp': '2026-07-22T20:38:23.614292+00:00', 'Runtime_Minutes': 4.0039, 'CPU_Avg_Pct': 98.37, 'Cost_USD': 0.014, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2sv3-n2-1.csv
+
+=== Standard_D2s_v3 | 2 nodes | 2048MB | io | run 2 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '2048MB.csv', 'Dataset_Size_MB': 2048, 'Workload': 'io', 'Run_Number': 2, 'Timestamp': '2026-07-22T20:42:36.594868+00:00', 'Runtime_Minutes': 4.124, 'CPU_Avg_Pct': 97.47, 'Cost_USD': 0.0144, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2sv3-n2-1.csv
+Downloading events_3072.csv (excluded from timer)...
+Replicating dataset to worker 4.224.34.228 (excluded from timer)...
+
+=== Standard_D2s_v3 | 2 nodes | 3072MB | cpu | run 1 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '3072MB.csv', 'Dataset_Size_MB': 3072, 'Workload': 'cpu', 'Run_Number': 1, 'Timestamp': '2026-07-22T20:47:24.824187+00:00', 'Runtime_Minutes': 3.182, 'CPU_Avg_Pct': 7.0, 'Cost_USD': 0.0111, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2sv3-n2-1.csv
+
+=== Standard_D2s_v3 | 2 nodes | 3072MB | cpu | run 2 ===
+Warning: Permanently added '4.224.34.228' (ED25519) to the list of known hosts.
+Warning: Permanently added '4.224.34.228' (ED25519) to the list of known hosts.
+Warning: Permanently added '4.224.34.228' (ED25519) to the list of known hosts.
+Warning: Permanently added '4.224.34.228' (ED25519) to the list of known hosts.
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '3072MB.csv', 'Dataset_Size_MB': 3072, 'Workload': 'cpu', 'Run_Number': 2, 'Timestamp': '2026-07-22T20:50:25.468555+00:00', 'Runtime_Minutes': 2.9478, 'CPU_Avg_Pct': 10.72, 'Cost_USD': 0.0103, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2sv3-n2-1.csv
+
+=== Standard_D2s_v3 | 2 nodes | 3072MB | memory | run 1 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '3072MB.csv', 'Dataset_Size_MB': 3072, 'Workload': 'memory', 'Run_Number': 1, 'Timestamp': '2026-07-22T20:55:20.167401+00:00', 'Runtime_Minutes': 4.8102, 'CPU_Avg_Pct': 8.31, 'Cost_USD': 0.0168, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2sv3-n2-1.csv
+
+=== Standard_D2s_v3 | 2 nodes | 3072MB | memory | run 2 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '3072MB.csv', 'Dataset_Size_MB': 3072, 'Workload': 'memory', 'Run_Number': 2, 'Timestamp': '2026-07-22T21:00:02.936774+00:00', 'Runtime_Minutes': 4.6921, 'CPU_Avg_Pct': 7.27, 'Cost_USD': 0.0164, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2sv3-n2-1.csv
+
+=== Standard_D2s_v3 | 2 nodes | 3072MB | io | run 1 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '3072MB.csv', 'Dataset_Size_MB': 3072, 'Workload': 'io', 'Run_Number': 1, 'Timestamp': '2026-07-22T21:05:45.903734+00:00', 'Runtime_Minutes': 5.626, 'CPU_Avg_Pct': 96.66, 'Cost_USD': 0.0197, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2sv3-n2-1.csv
+
+=== Standard_D2s_v3 | 2 nodes | 3072MB | io | run 2 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '3072MB.csv', 'Dataset_Size_MB': 3072, 'Workload': 'io', 'Run_Number': 2, 'Timestamp': '2026-07-22T21:11:29.086738+00:00', 'Runtime_Minutes': 5.6826, 'CPU_Avg_Pct': 97.22, 'Cost_USD': 0.0199, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2sv3-n2-1.csv
+Downloading events_5120mb.csv (excluded from timer)...
+Replicating dataset to worker 4.224.34.228 (excluded from timer)...
+
+=== Standard_D2s_v3 | 2 nodes | 5120MB | cpu | run 1 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '5120MB.csv', 'Dataset_Size_MB': 5120, 'Workload': 'cpu', 'Run_Number': 1, 'Timestamp': '2026-07-22T21:18:30.342132+00:00', 'Runtime_Minutes': 4.4859, 'CPU_Avg_Pct': 6.1, 'Cost_USD': 0.0157, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2sv3-n2-1.csv
+
+=== Standard_D2s_v3 | 2 nodes | 5120MB | cpu | run 2 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '5120MB.csv', 'Dataset_Size_MB': 5120, 'Workload': 'cpu', 'Run_Number': 2, 'Timestamp': '2026-07-22T21:23:13.095025+00:00', 'Runtime_Minutes': 4.6605, 'CPU_Avg_Pct': 6.37, 'Cost_USD': 0.0163, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2sv3-n2-1.csv
+
+=== Standard_D2s_v3 | 2 nodes | 5120MB | memory | run 1 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '5120MB.csv', 'Dataset_Size_MB': 5120, 'Workload': 'memory', 'Run_Number': 1, 'Timestamp': '2026-07-22T21:30:44.047456+00:00', 'Runtime_Minutes': 7.4762, 'CPU_Avg_Pct': 5.36, 'Cost_USD': 0.0262, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2sv3-n2-1.csv
+
+=== Standard_D2s_v3 | 2 nodes | 5120MB | memory | run 2 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '5120MB.csv', 'Dataset_Size_MB': 5120, 'Workload': 'memory', 'Run_Number': 2, 'Timestamp': '2026-07-22T21:38:21.010210+00:00', 'Runtime_Minutes': 7.5864, 'CPU_Avg_Pct': 5.68, 'Cost_USD': 0.0266, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2sv3-n2-1.csv
+
+=== Standard_D2s_v3 | 2 nodes | 5120MB | io | run 1 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '5120MB.csv', 'Dataset_Size_MB': 5120, 'Workload': 'io', 'Run_Number': 1, 'Timestamp': '2026-07-22T21:47:41.257112+00:00', 'Runtime_Minutes': 9.2301, 'CPU_Avg_Pct': 97.95, 'Cost_USD': 0.0323, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2sv3-n2-1.csv
+
+=== Standard_D2s_v3 | 2 nodes | 5120MB | io | run 2 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '5120MB.csv', 'Dataset_Size_MB': 5120, 'Workload': 'io', 'Run_Number': 2, 'Timestamp': '2026-07-22T21:56:48.846330+00:00', 'Runtime_Minutes': 9.0448, 'CPU_Avg_Pct': 97.09, 'Cost_USD': 0.0317, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2sv3-n2-1.csv
+Uploaded results to results/results_bench-cin-d2sv3-n2-1.csv
+
+All runs complete for this cluster configuration.
+Deleting VMs for this combo...
+Combo done: centralindia / Standard_D2s_v3 / 2 nodes
+
+############################################################
+# centralindia | Standard_D2s_v3 | 4 nodes 
+############################################################
+Creating bench-cin-d2s_v3-n4-1...
+Creating bench-cin-d2s_v3-n4-2...
+Creating bench-cin-d2s_v3-n4-3...
+Creating bench-cin-d2s_v3-n4-4...
+Waiting for bench-cin-d2s_v3-n4-1 to finish provisioning...
+  bench-cin-d2s_v3-n4-1 -> 104.211.76.191
+Waiting for bench-cin-d2s_v3-n4-2 to finish provisioning...
+  bench-cin-d2s_v3-n4-2 -> 20.219.63.13
+Waiting for bench-cin-d2s_v3-n4-3 to finish provisioning...
+  bench-cin-d2s_v3-n4-3 -> 20.198.88.100
+Waiting for bench-cin-d2s_v3-n4-4 to finish provisioning...
+  bench-cin-d2s_v3-n4-4 -> 52.140.114.228
+  waiting for install on 104.211.76.191 (1/180)...
+  waiting for install on 104.211.76.191 (2/180)...
+  waiting for install on 104.211.76.191 (3/180)...
+  waiting for install on 104.211.76.191 (4/180)...
+  install finished on 104.211.76.191
+  waiting for install on 20.219.63.13 (1/180)...
+  install finished on 20.219.63.13
+  install finished on 20.198.88.100
+  waiting for install on 52.140.114.228 (1/180)...
+  install finished on 52.140.114.228
+Repairing /opt/benchmark permissions on all VMs...
+Warning: Permanently added '104.211.76.191' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.219.63.13' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.198.88.100' (ED25519) to the list of known hosts.
+Warning: Permanently added '52.140.114.228' (ED25519) to the list of known hosts.
+Warning: Permanently added '104.211.76.191' (ED25519) to the list of known hosts.
+starting org.apache.spark.deploy.master.Master, logging to /opt/spark/logs/spark-benchadmin-org.apache.spark.deploy.master.Master-1-bench-cin-d2sv3-n4-1.out
+Warning: Permanently added '20.219.63.13' (ED25519) to the list of known hosts.
+starting org.apache.spark.deploy.worker.Worker, logging to /opt/spark/logs/spark-benchadmin-org.apache.spark.deploy.worker.Worker-1-bench-cin-d2sv3-n4-2.out
+Warning: Permanently added '20.198.88.100' (ED25519) to the list of known hosts.
+starting org.apache.spark.deploy.worker.Worker, logging to /opt/spark/logs/spark-benchadmin-org.apache.spark.deploy.worker.Worker-1-bench-cin-d2sv3-n4-3.out
+Warning: Permanently added '52.140.114.228' (ED25519) to the list of known hosts.
+starting org.apache.spark.deploy.worker.Worker, logging to /opt/spark/logs/spark-benchadmin-org.apache.spark.deploy.worker.Worker-1-bench-cin-d2sv3-n4-4.out
+Cluster up: spark://10.0.0.6:7077 (4 nodes)
+Warning: Permanently added '104.211.76.191' (ED25519) to the list of known hosts.
+Warning: Permanently added '104.211.76.191' (ED25519) to the list of known hosts.
+Warning: Permanently added '104.211.76.191' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.219.63.13' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.219.63.13' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.198.88.100' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.198.88.100' (ED25519) to the list of known hosts.
+Warning: Permanently added '52.140.114.228' (ED25519) to the list of known hosts.
+Warning: Permanently added '52.140.114.228' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.219.63.13' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.198.88.100' (ED25519) to the list of known hosts.
+Warning: Permanently added '52.140.114.228' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.219.63.13' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.219.63.13' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.198.88.100' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.198.88.100' (ED25519) to the list of known hosts.
+Warning: Permanently added '52.140.114.228' (ED25519) to the list of known hosts.
+Warning: Permanently added '52.140.114.228' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.219.63.13' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.198.88.100' (ED25519) to the list of known hosts.
+Warning: Permanently added '52.140.114.228' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.219.63.13' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.219.63.13' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.198.88.100' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.198.88.100' (ED25519) to the list of known hosts.
+Warning: Permanently added '52.140.114.228' (ED25519) to the list of known hosts.
+Warning: Permanently added '52.140.114.228' (ED25519) to the list of known hosts.
+Downloading events_10mb.csv (excluded from timer)...
+Replicating dataset to worker 20.219.63.13 (excluded from timer)...
+Replicating dataset to worker 20.198.88.100 (excluded from timer)...
+Replicating dataset to worker 52.140.114.228 (excluded from timer)...
+
+=== Standard_D2s_v3 | 4 nodes | 10MB | cpu | run 1 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 4, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '10MB.csv', 'Dataset_Size_MB': 10, 'Workload': 'cpu', 'Run_Number': 1, 'Timestamp': '2026-07-22T22:01:48.120304+00:00', 'Runtime_Minutes': 0.3904, 'CPU_Avg_Pct': 47.97, 'Cost_USD': 0.0027, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2sv3-n4-1.csv
+
+=== Standard_D2s_v3 | 4 nodes | 10MB | cpu | run 2 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 4, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '10MB.csv', 'Dataset_Size_MB': 10, 'Workload': 'cpu', 'Run_Number': 2, 'Timestamp': '2026-07-22T22:02:12.494121+00:00', 'Runtime_Minutes': 0.38, 'CPU_Avg_Pct': 64.69, 'Cost_USD': 0.0027, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2sv3-n4-1.csv
+
+=== Standard_D2s_v3 | 4 nodes | 10MB | memory | run 1 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 4, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '10MB.csv', 'Dataset_Size_MB': 10, 'Workload': 'memory', 'Run_Number': 1, 'Timestamp': '2026-07-22T22:02:42.892754+00:00', 'Runtime_Minutes': 0.4976, 'CPU_Avg_Pct': 52.14, 'Cost_USD': 0.0035, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2sv3-n4-1.csv
+
+=== Standard_D2s_v3 | 4 nodes | 10MB | memory | run 2 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 4, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '10MB.csv', 'Dataset_Size_MB': 10, 'Workload': 'memory', 'Run_Number': 2, 'Timestamp': '2026-07-22T22:03:13.321463+00:00', 'Runtime_Minutes': 0.487, 'CPU_Avg_Pct': 67.48, 'Cost_USD': 0.0034, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2sv3-n4-1.csv
+
+=== Standard_D2s_v3 | 4 nodes | 10MB | io | run 1 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 4, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '10MB.csv', 'Dataset_Size_MB': 10, 'Workload': 'io', 'Run_Number': 1, 'Timestamp': '2026-07-22T22:03:43.734241+00:00', 'Runtime_Minutes': 0.4437, 'CPU_Avg_Pct': 96.39, 'Cost_USD': 0.0031, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2sv3-n4-1.csv
+
+=== Standard_D2s_v3 | 4 nodes | 10MB | io | run 2 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 4, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '10MB.csv', 'Dataset_Size_MB': 10, 'Workload': 'io', 'Run_Number': 2, 'Timestamp': '2026-07-22T22:04:14.170725+00:00', 'Runtime_Minutes': 0.4289, 'CPU_Avg_Pct': 94.54, 'Cost_USD': 0.003, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2sv3-n4-1.csv
+Downloading events_100mb.csv (excluded from timer)...
+Replicating dataset to worker 20.219.63.13 (excluded from timer)...
+Replicating dataset to worker 20.198.88.100 (excluded from timer)...
+Replicating dataset to worker 52.140.114.228 (excluded from timer)...
+
+=== Standard_D2s_v3 | 4 nodes | 100MB | cpu | run 1 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 4, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '100MB.csv', 'Dataset_Size_MB': 100, 'Workload': 'cpu', 'Run_Number': 1, 'Timestamp': '2026-07-22T22:04:51.483112+00:00', 'Runtime_Minutes': 0.4122, 'CPU_Avg_Pct': 55.45, 'Cost_USD': 0.0029, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2sv3-n4-1.csv
+
+=== Standard_D2s_v3 | 4 nodes | 100MB | cpu | run 2 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 4, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '100MB.csv', 'Dataset_Size_MB': 100, 'Workload': 'cpu', 'Run_Number': 2, 'Timestamp': '2026-07-22T22:05:21.719707+00:00', 'Runtime_Minutes': 0.4156, 'CPU_Avg_Pct': 54.58, 'Cost_USD': 0.0029, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2sv3-n4-1.csv
+
+=== Standard_D2s_v3 | 4 nodes | 100MB | memory | run 1 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 4, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '100MB.csv', 'Dataset_Size_MB': 100, 'Workload': 'memory', 'Run_Number': 1, 'Timestamp': '2026-07-22T22:05:59.345522+00:00', 'Runtime_Minutes': 0.5549, 'CPU_Avg_Pct': 49.7, 'Cost_USD': 0.0039, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2sv3-n4-1.csv
+
+=== Standard_D2s_v3 | 4 nodes | 100MB | memory | run 2 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 4, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '100MB.csv', 'Dataset_Size_MB': 100, 'Workload': 'memory', 'Run_Number': 2, 'Timestamp': '2026-07-22T22:06:35.821102+00:00', 'Runtime_Minutes': 0.548, 'CPU_Avg_Pct': 52.64, 'Cost_USD': 0.0038, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2sv3-n4-1.csv
+
+=== Standard_D2s_v3 | 4 nodes | 100MB | io | run 1 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 4, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '100MB.csv', 'Dataset_Size_MB': 100, 'Workload': 'io', 'Run_Number': 1, 'Timestamp': '2026-07-22T22:07:18.244705+00:00', 'Runtime_Minutes': 0.6086, 'CPU_Avg_Pct': 86.94, 'Cost_USD': 0.0043, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2sv3-n4-1.csv
+
+=== Standard_D2s_v3 | 4 nodes | 100MB | io | run 2 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 4, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '100MB.csv', 'Dataset_Size_MB': 100, 'Workload': 'io', 'Run_Number': 2, 'Timestamp': '2026-07-22T22:08:00.713991+00:00', 'Runtime_Minutes': 0.6253, 'CPU_Avg_Pct': 97.05, 'Cost_USD': 0.0044, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2sv3-n4-1.csv
+Downloading events_500mb.csv (excluded from timer)...
+Replicating dataset to worker 20.219.63.13 (excluded from timer)...
+Replicating dataset to worker 20.198.88.100 (excluded from timer)...
+Replicating dataset to worker 52.140.114.228 (excluded from timer)...
+
+=== Standard_D2s_v3 | 4 nodes | 500MB | cpu | run 1 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 4, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '500MB.csv', 'Dataset_Size_MB': 500, 'Workload': 'cpu', 'Run_Number': 1, 'Timestamp': '2026-07-22T22:09:00.415102+00:00', 'Runtime_Minutes': 0.5375, 'CPU_Avg_Pct': 37.51, 'Cost_USD': 0.0038, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2sv3-n4-1.csv
+
+=== Standard_D2s_v3 | 4 nodes | 500MB | cpu | run 2 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 4, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '500MB.csv', 'Dataset_Size_MB': 500, 'Workload': 'cpu', 'Run_Number': 2, 'Timestamp': '2026-07-22T22:09:36.829995+00:00', 'Runtime_Minutes': 0.5324, 'CPU_Avg_Pct': 47.16, 'Cost_USD': 0.0037, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2sv3-n4-1.csv
+
+=== Standard_D2s_v3 | 4 nodes | 500MB | memory | run 1 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 4, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '500MB.csv', 'Dataset_Size_MB': 500, 'Workload': 'memory', 'Run_Number': 1, 'Timestamp': '2026-07-22T22:10:25.100948+00:00', 'Runtime_Minutes': 0.7477, 'CPU_Avg_Pct': 28.33, 'Cost_USD': 0.0052, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2sv3-n4-1.csv
+Warning: Permanently added '20.219.63.13' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.198.88.100' (ED25519) to the list of known hosts.
+Warning: Permanently added '52.140.114.228' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.219.63.13' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.219.63.13' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.198.88.100' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.198.88.100' (ED25519) to the list of known hosts.
+Warning: Permanently added '52.140.114.228' (ED25519) to the list of known hosts.
+Warning: Permanently added '52.140.114.228' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.219.63.13' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.198.88.100' (ED25519) to the list of known hosts.
+Warning: Permanently added '52.140.114.228' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.219.63.13' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.219.63.13' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.198.88.100' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.198.88.100' (ED25519) to the list of known hosts.
+Warning: Permanently added '52.140.114.228' (ED25519) to the list of known hosts.
+Warning: Permanently added '52.140.114.228' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.219.63.13' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.198.88.100' (ED25519) to the list of known hosts.
+Warning: Permanently added '52.140.114.228' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.219.63.13' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.219.63.13' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.198.88.100' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.198.88.100' (ED25519) to the list of known hosts.
+
+=== Standard_D2s_v3 | 4 nodes | 500MB | memory | run 2 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 4, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '500MB.csv', 'Dataset_Size_MB': 500, 'Workload': 'memory', 'Run_Number': 2, 'Timestamp': '2026-07-22T22:11:13.538597+00:00', 'Runtime_Minutes': 0.7452, 'CPU_Avg_Pct': 34.35, 'Cost_USD': 0.0052, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2sv3-n4-1.csv
+
+=== Standard_D2s_v3 | 4 nodes | 500MB | io | run 1 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 4, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '500MB.csv', 'Dataset_Size_MB': 500, 'Workload': 'io', 'Run_Number': 1, 'Timestamp': '2026-07-22T22:12:38.075135+00:00', 'Runtime_Minutes': 1.3285, 'CPU_Avg_Pct': 97.61, 'Cost_USD': 0.0093, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2sv3-n4-1.csv
+
+=== Standard_D2s_v3 | 4 nodes | 500MB | io | run 2 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 4, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '500MB.csv', 'Dataset_Size_MB': 500, 'Workload': 'io', 'Run_Number': 2, 'Timestamp': '2026-07-22T22:14:02.581085+00:00', 'Runtime_Minutes': 1.3432, 'CPU_Avg_Pct': 98.14, 'Cost_USD': 0.0094, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2sv3-n4-1.csv
+Downloading events_1024mb.csv (excluded from timer)...
+Replicating dataset to worker 20.219.63.13 (excluded from timer)...
+Replicating dataset to worker 20.198.88.100 (excluded from timer)...
+Replicating dataset to worker 52.140.114.228 (excluded from timer)...
+
+=== Standard_D2s_v3 | 4 nodes | 1024MB | cpu | run 1 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 4, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '1024MB.csv', 'Dataset_Size_MB': 1024, 'Workload': 'cpu', 'Run_Number': 1, 'Timestamp': '2026-07-22T22:15:36.628520+00:00', 'Runtime_Minutes': 0.7643, 'CPU_Avg_Pct': 24.5, 'Cost_USD': 0.0054, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2sv3-n4-1.csv
+
+=== Standard_D2s_v3 | 4 nodes | 1024MB | cpu | run 2 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 4, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '1024MB.csv', 'Dataset_Size_MB': 1024, 'Workload': 'cpu', 'Run_Number': 2, 'Timestamp': '2026-07-22T22:16:31.091146+00:00', 'Runtime_Minutes': 0.831, 'CPU_Avg_Pct': 37.4, 'Cost_USD': 0.0058, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2sv3-n4-1.csv
+
+=== Standard_D2s_v3 | 4 nodes | 1024MB | memory | run 1 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 4, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '1024MB.csv', 'Dataset_Size_MB': 1024, 'Workload': 'memory', 'Run_Number': 1, 'Timestamp': '2026-07-22T22:17:37.544106+00:00', 'Runtime_Minutes': 1.0819, 'CPU_Avg_Pct': 33.19, 'Cost_USD': 0.0076, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2sv3-n4-1.csv
+
+=== Standard_D2s_v3 | 4 nodes | 1024MB | memory | run 2 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 4, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '1024MB.csv', 'Dataset_Size_MB': 1024, 'Workload': 'memory', 'Run_Number': 2, 'Timestamp': '2026-07-22T22:18:44.050095+00:00', 'Runtime_Minutes': 1.0744, 'CPU_Avg_Pct': 25.98, 'Cost_USD': 0.0075, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2sv3-n4-1.csv
+
+=== Standard_D2s_v3 | 4 nodes | 1024MB | io | run 1 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 4, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '1024MB.csv', 'Dataset_Size_MB': 1024, 'Workload': 'io', 'Run_Number': 1, 'Timestamp': '2026-07-22T22:21:02.733722+00:00', 'Runtime_Minutes': 2.2438, 'CPU_Avg_Pct': 96.95, 'Cost_USD': 0.0157, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2sv3-n4-1.csv
+
+=== Standard_D2s_v3 | 4 nodes | 1024MB | io | run 2 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 4, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '1024MB.csv', 'Dataset_Size_MB': 1024, 'Workload': 'io', 'Run_Number': 2, 'Timestamp': '2026-07-22T22:23:27.473579+00:00', 'Runtime_Minutes': 2.3376, 'CPU_Avg_Pct': 97.06, 'Cost_USD': 0.0164, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2sv3-n4-1.csv
+Downloading events_2048.csv (excluded from timer)...
+Replicating dataset to worker 20.219.63.13 (excluded from timer)...
+Replicating dataset to worker 20.198.88.100 (excluded from timer)...
+Replicating dataset to worker 52.140.114.228 (excluded from timer)...
+
+=== Standard_D2s_v3 | 4 nodes | 2048MB | cpu | run 1 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 4, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '2048MB.csv', 'Dataset_Size_MB': 2048, 'Workload': 'cpu', 'Run_Number': 1, 'Timestamp': '2026-07-22T22:26:11.249118+00:00', 'Runtime_Minutes': 1.0406, 'CPU_Avg_Pct': 20.18, 'Cost_USD': 0.0073, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2sv3-n4-1.csv
+
+=== Standard_D2s_v3 | 4 nodes | 2048MB | cpu | run 2 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 4, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '2048MB.csv', 'Dataset_Size_MB': 2048, 'Workload': 'cpu', 'Run_Number': 2, 'Timestamp': '2026-07-22T22:27:17.728115+00:00', 'Runtime_Minutes': 1.0235, 'CPU_Avg_Pct': 33.39, 'Cost_USD': 0.0072, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2sv3-n4-1.csv
+
+=== Standard_D2s_v3 | 4 nodes | 2048MB | memory | run 1 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 4, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '2048MB.csv', 'Dataset_Size_MB': 2048, 'Workload': 'memory', 'Run_Number': 1, 'Timestamp': '2026-07-22T22:28:54.204593+00:00', 'Runtime_Minutes': 1.5582, 'CPU_Avg_Pct': 21.43, 'Cost_USD': 0.0109, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2sv3-n4-1.csv
+
+=== Standard_D2s_v3 | 4 nodes | 2048MB | memory | run 2 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 4, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '2048MB.csv', 'Dataset_Size_MB': 2048, 'Workload': 'memory', 'Run_Number': 2, 'Timestamp': '2026-07-22T22:30:30.708556+00:00', 'Runtime_Minutes': 1.5436, 'CPU_Avg_Pct': 16.33, 'Cost_USD': 0.0108, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2sv3-n4-1.csv
+
+=== Standard_D2s_v3 | 4 nodes | 2048MB | io | run 1 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 4, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '2048MB.csv', 'Dataset_Size_MB': 2048, 'Workload': 'io', 'Run_Number': 1, 'Timestamp': '2026-07-22T22:34:25.676000+00:00', 'Runtime_Minutes': 3.903, 'CPU_Avg_Pct': 97.55, 'Cost_USD': 0.0273, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2sv3-n4-1.csv
+
+=== Standard_D2s_v3 | 4 nodes | 2048MB | io | run 2 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 4, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '2048MB.csv', 'Dataset_Size_MB': 2048, 'Workload': 'io', 'Run_Number': 2, 'Timestamp': '2026-07-22T22:38:26.470073+00:00', 'Runtime_Minutes': 3.9216, 'CPU_Avg_Pct': 95.38, 'Cost_USD': 0.0275, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2sv3-n4-1.csv
+Downloading events_3072.csv (excluded from timer)...
+Replicating dataset to worker 20.219.63.13 (excluded from timer)...
+Replicating dataset to worker 20.198.88.100 (excluded from timer)...
+Warning: Permanently added '52.140.114.228' (ED25519) to the list of known hosts.
+Warning: Permanently added '52.140.114.228' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.219.63.13' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.198.88.100' (ED25519) to the list of known hosts.
+Warning: Permanently added '52.140.114.228' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.219.63.13' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.219.63.13' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.198.88.100' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.198.88.100' (ED25519) to the list of known hosts.
+Warning: Permanently added '52.140.114.228' (ED25519) to the list of known hosts.
+Warning: Permanently added '52.140.114.228' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.219.63.13' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.198.88.100' (ED25519) to the list of known hosts.
+Warning: Permanently added '52.140.114.228' (ED25519) to the list of known hosts.
+Replicating dataset to worker 52.140.114.228 (excluded from timer)...
+
+=== Standard_D2s_v3 | 4 nodes | 3072MB | cpu | run 1 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 4, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '3072MB.csv', 'Dataset_Size_MB': 3072, 'Workload': 'cpu', 'Run_Number': 1, 'Timestamp': '2026-07-22T22:42:15.078657+00:00', 'Runtime_Minutes': 1.266, 'CPU_Avg_Pct': 15.56, 'Cost_USD': 0.0089, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2sv3-n4-1.csv
+
+=== Standard_D2s_v3 | 4 nodes | 3072MB | cpu | run 2 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 4, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '3072MB.csv', 'Dataset_Size_MB': 3072, 'Workload': 'cpu', 'Run_Number': 2, 'Timestamp': '2026-07-22T22:43:33.547798+00:00', 'Runtime_Minutes': 1.2947, 'CPU_Avg_Pct': 16.93, 'Cost_USD': 0.0091, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2sv3-n4-1.csv
+
+=== Standard_D2s_v3 | 4 nodes | 3072MB | memory | run 1 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 4, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '3072MB.csv', 'Dataset_Size_MB': 3072, 'Workload': 'memory', 'Run_Number': 1, 'Timestamp': '2026-07-22T22:45:34.068549+00:00', 'Runtime_Minutes': 1.9393, 'CPU_Avg_Pct': 19.74, 'Cost_USD': 0.0136, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2sv3-n4-1.csv
+
+=== Standard_D2s_v3 | 4 nodes | 3072MB | memory | run 2 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 4, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '3072MB.csv', 'Dataset_Size_MB': 3072, 'Workload': 'memory', 'Run_Number': 2, 'Timestamp': '2026-07-22T22:47:28.570855+00:00', 'Runtime_Minutes': 1.8812, 'CPU_Avg_Pct': 13.11, 'Cost_USD': 0.0132, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2sv3-n4-1.csv
+
+=== Standard_D2s_v3 | 4 nodes | 3072MB | io | run 1 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 4, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '3072MB.csv', 'Dataset_Size_MB': 3072, 'Workload': 'io', 'Run_Number': 1, 'Timestamp': '2026-07-22T22:53:05.693710+00:00', 'Runtime_Minutes': 5.6074, 'CPU_Avg_Pct': 96.34, 'Cost_USD': 0.0393, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2sv3-n4-1.csv
+
+=== Standard_D2s_v3 | 4 nodes | 3072MB | io | run 2 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 4, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '3072MB.csv', 'Dataset_Size_MB': 3072, 'Workload': 'io', 'Run_Number': 2, 'Timestamp': '2026-07-22T22:59:00.881667+00:00', 'Runtime_Minutes': 5.9057, 'CPU_Avg_Pct': 96.23, 'Cost_USD': 0.0413, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2sv3-n4-1.csv
+Downloading events_5120mb.csv (excluded from timer)...
+Replicating dataset to worker 20.219.63.13 (excluded from timer)...
+Replicating dataset to worker 20.198.88.100 (excluded from timer)...
+Replicating dataset to worker 52.140.114.228 (excluded from timer)...
+
+=== Standard_D2s_v3 | 4 nodes | 5120MB | cpu | run 1 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 4, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '5120MB.csv', 'Dataset_Size_MB': 5120, 'Workload': 'cpu', 'Run_Number': 1, 'Timestamp': '2026-07-22T23:05:13.542692+00:00', 'Runtime_Minutes': 1.9179, 'CPU_Avg_Pct': 12.59, 'Cost_USD': 0.0134, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2sv3-n4-1.csv
+
+=== Standard_D2s_v3 | 4 nodes | 5120MB | cpu | run 2 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 4, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '5120MB.csv', 'Dataset_Size_MB': 5120, 'Workload': 'cpu', 'Run_Number': 2, 'Timestamp': '2026-07-22T23:07:14.146572+00:00', 'Runtime_Minutes': 1.9217, 'CPU_Avg_Pct': 12.77, 'Cost_USD': 0.0135, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2sv3-n4-1.csv
+
+=== Standard_D2s_v3 | 4 nodes | 5120MB | memory | run 1 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 4, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '5120MB.csv', 'Dataset_Size_MB': 5120, 'Workload': 'memory', 'Run_Number': 1, 'Timestamp': '2026-07-22T23:10:20.737133+00:00', 'Runtime_Minutes': 3.0188, 'CPU_Avg_Pct': 13.41, 'Cost_USD': 0.0211, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2sv3-n4-1.csv
+
+=== Standard_D2s_v3 | 4 nodes | 5120MB | memory | run 2 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 4, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '5120MB.csv', 'Dataset_Size_MB': 5120, 'Workload': 'memory', 'Run_Number': 2, 'Timestamp': '2026-07-22T23:13:27.278726+00:00', 'Runtime_Minutes': 3.0896, 'CPU_Avg_Pct': 10.54, 'Cost_USD': 0.0216, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2sv3-n4-1.csv
+
+=== Standard_D2s_v3 | 4 nodes | 5120MB | io | run 1 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 4, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '5120MB.csv', 'Dataset_Size_MB': 5120, 'Workload': 'io', 'Run_Number': 1, 'Timestamp': '2026-07-22T23:22:28.823357+00:00', 'Runtime_Minutes': 9.0042, 'CPU_Avg_Pct': 96.73, 'Cost_USD': 0.063, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2sv3-n4-1.csv
+
+=== Standard_D2s_v3 | 4 nodes | 5120MB | io | run 2 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 4, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '5120MB.csv', 'Dataset_Size_MB': 5120, 'Workload': 'io', 'Run_Number': 2, 'Timestamp': '2026-07-22T23:31:30.451443+00:00', 'Runtime_Minutes': 8.9882, 'CPU_Avg_Pct': 96.77, 'Cost_USD': 0.0629, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2sv3-n4-1.csv
+Uploaded results to results/results_bench-cin-d2sv3-n4-1.csv
+
+All runs complete for this cluster configuration.
+Deleting VMs for this combo...
+Combo done: centralindia / Standard_D2s_v3 / 4 nodes
+
+############################################################
+# centralindia | Standard_D4s_v3 | 2 nodes 
+############################################################
+Creating bench-cin-d4s_v3-n2-1...
+Creating bench-cin-d4s_v3-n2-2...
+Waiting for bench-cin-d4s_v3-n2-1 to finish provisioning...
+  bench-cin-d4s_v3-n2-1 -> 20.219.137.179
+Waiting for bench-cin-d4s_v3-n2-2 to finish provisioning...
+  bench-cin-d4s_v3-n2-2 -> 20.207.193.148
+  waiting for install on 20.219.137.179 (1/180)...
+  waiting for install on 20.219.137.179 (2/180)...
+  waiting for install on 20.219.137.179 (3/180)...
+  waiting for install on 20.219.137.179 (4/180)...
+  install finished on 20.219.137.179
+  install finished on 20.207.193.148
+Repairing /opt/benchmark permissions on all VMs...
+Warning: Permanently added '20.219.137.179' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.207.193.148' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.219.137.179' (ED25519) to the list of known hosts.
+starting org.apache.spark.deploy.master.Master, logging to /opt/spark/logs/spark-benchadmin-org.apache.spark.deploy.master.Master-1-bench-cin-d4sv3-n2-1.out
+Warning: Permanently added '20.207.193.148' (ED25519) to the list of known hosts.
+starting org.apache.spark.deploy.worker.Worker, logging to /opt/spark/logs/spark-benchadmin-org.apache.spark.deploy.worker.Worker-1-bench-cin-d4sv3-n2-2.out
+Cluster up: spark://10.0.0.10:7077 (2 nodes)
+Warning: Permanently added '20.219.137.179' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.219.137.179' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.219.137.179' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.207.193.148' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.207.193.148' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.207.193.148' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.207.193.148' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.207.193.148' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.207.193.148' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.207.193.148' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.207.193.148' (ED25519) to the list of known hosts.
+Downloading events_10mb.csv (excluded from timer)...
+Replicating dataset to worker 20.207.193.148 (excluded from timer)...
+
+=== Standard_D4s_v3 | 2 nodes | 10MB | cpu | run 1 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D4s_v3', 'vCPU': 4, 'RAM_GB': 16, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '10MB.csv', 'Dataset_Size_MB': 10, 'Workload': 'cpu', 'Run_Number': 1, 'Timestamp': '2026-07-22T23:35:35.052930+00:00', 'Runtime_Minutes': 0.2501, 'CPU_Avg_Pct': 54.14, 'Cost_USD': 0.0018, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d4sv3-n2-1.csv
+
+=== Standard_D4s_v3 | 2 nodes | 10MB | cpu | run 2 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D4s_v3', 'vCPU': 4, 'RAM_GB': 16, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '10MB.csv', 'Dataset_Size_MB': 10, 'Workload': 'cpu', 'Run_Number': 2, 'Timestamp': '2026-07-22T23:35:53.440156+00:00', 'Runtime_Minutes': 0.2563, 'CPU_Avg_Pct': 53.34, 'Cost_USD': 0.0018, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d4sv3-n2-1.csv
+
+=== Standard_D4s_v3 | 2 nodes | 10MB | memory | run 1 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D4s_v3', 'vCPU': 4, 'RAM_GB': 16, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '10MB.csv', 'Dataset_Size_MB': 10, 'Workload': 'memory', 'Run_Number': 1, 'Timestamp': '2026-07-22T23:36:17.807103+00:00', 'Runtime_Minutes': 0.3308, 'CPU_Avg_Pct': 54.97, 'Cost_USD': 0.0023, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d4sv3-n2-1.csv
+
+=== Standard_D4s_v3 | 2 nodes | 10MB | memory | run 2 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D4s_v3', 'vCPU': 4, 'RAM_GB': 16, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '10MB.csv', 'Dataset_Size_MB': 10, 'Workload': 'memory', 'Run_Number': 2, 'Timestamp': '2026-07-22T23:36:42.029267+00:00', 'Runtime_Minutes': 0.3322, 'CPU_Avg_Pct': 51.99, 'Cost_USD': 0.0023, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d4sv3-n2-1.csv
+
+=== Standard_D4s_v3 | 2 nodes | 10MB | io | run 1 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D4s_v3', 'vCPU': 4, 'RAM_GB': 16, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '10MB.csv', 'Dataset_Size_MB': 10, 'Workload': 'io', 'Run_Number': 1, 'Timestamp': '2026-07-22T23:37:00.434228+00:00', 'Runtime_Minutes': 0.298, 'CPU_Avg_Pct': 68.84, 'Cost_USD': 0.0021, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d4sv3-n2-1.csv
+
+=== Standard_D4s_v3 | 2 nodes | 10MB | io | run 2 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D4s_v3', 'vCPU': 4, 'RAM_GB': 16, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '10MB.csv', 'Dataset_Size_MB': 10, 'Workload': 'io', 'Run_Number': 2, 'Timestamp': '2026-07-22T23:37:24.827545+00:00', 'Runtime_Minutes': 0.3126, 'CPU_Avg_Pct': 62.19, 'Cost_USD': 0.0022, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d4sv3-n2-1.csv
+Downloading events_100mb.csv (excluded from timer)...
+Replicating dataset to worker 20.207.193.148 (excluded from timer)...
+
+=== Standard_D4s_v3 | 2 nodes | 100MB | cpu | run 1 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D4s_v3', 'vCPU': 4, 'RAM_GB': 16, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '100MB.csv', 'Dataset_Size_MB': 100, 'Workload': 'cpu', 'Run_Number': 1, 'Timestamp': '2026-07-22T23:37:45.869274+00:00', 'Runtime_Minutes': 0.2916, 'CPU_Avg_Pct': 41.47, 'Cost_USD': 0.002, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d4sv3-n2-1.csv
+
+=== Standard_D4s_v3 | 2 nodes | 100MB | cpu | run 2 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D4s_v3', 'vCPU': 4, 'RAM_GB': 16, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '100MB.csv', 'Dataset_Size_MB': 100, 'Workload': 'cpu', 'Run_Number': 2, 'Timestamp': '2026-07-22T23:38:04.081227+00:00', 'Runtime_Minutes': 0.2904, 'CPU_Avg_Pct': 42.73, 'Cost_USD': 0.002, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d4sv3-n2-1.csv
+
+=== Standard_D4s_v3 | 2 nodes | 100MB | memory | run 1 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D4s_v3', 'vCPU': 4, 'RAM_GB': 16, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '100MB.csv', 'Dataset_Size_MB': 100, 'Workload': 'memory', 'Run_Number': 1, 'Timestamp': '2026-07-22T23:38:34.474334+00:00', 'Runtime_Minutes': 0.4061, 'CPU_Avg_Pct': 34.6, 'Cost_USD': 0.0028, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d4sv3-n2-1.csv
+
+=== Standard_D4s_v3 | 2 nodes | 100MB | memory | run 2 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D4s_v3', 'vCPU': 4, 'RAM_GB': 16, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '100MB.csv', 'Dataset_Size_MB': 100, 'Workload': 'memory', 'Run_Number': 2, 'Timestamp': '2026-07-22T23:38:58.881213+00:00', 'Runtime_Minutes': 0.3977, 'CPU_Avg_Pct': 38.84, 'Cost_USD': 0.0028, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d4sv3-n2-1.csv
+
+=== Standard_D4s_v3 | 2 nodes | 100MB | io | run 1 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D4s_v3', 'vCPU': 4, 'RAM_GB': 16, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '100MB.csv', 'Dataset_Size_MB': 100, 'Workload': 'io', 'Run_Number': 1, 'Timestamp': '2026-07-22T23:39:23.289167+00:00', 'Runtime_Minutes': 0.3961, 'CPU_Avg_Pct': 79.63, 'Cost_USD': 0.0028, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d4sv3-n2-1.csv
+
+=== Standard_D4s_v3 | 2 nodes | 100MB | io | run 2 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D4s_v3', 'vCPU': 4, 'RAM_GB': 16, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '100MB.csv', 'Dataset_Size_MB': 100, 'Workload': 'io', 'Run_Number': 2, 'Timestamp': '2026-07-22T23:39:53.681782+00:00', 'Runtime_Minutes': 0.411, 'CPU_Avg_Pct': 70.62, 'Cost_USD': 0.0029, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d4sv3-n2-1.csv
+Downloading events_500mb.csv (excluded from timer)...
+Replicating dataset to worker 20.207.193.148 (excluded from timer)...
+
+=== Standard_D4s_v3 | 2 nodes | 500MB | cpu | run 1 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D4s_v3', 'vCPU': 4, 'RAM_GB': 16, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '500MB.csv', 'Dataset_Size_MB': 500, 'Workload': 'cpu', 'Run_Number': 1, 'Timestamp': '2026-07-22T23:40:34.302616+00:00', 'Runtime_Minutes': 0.4733, 'CPU_Avg_Pct': 24.58, 'Cost_USD': 0.0033, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d4sv3-n2-1.csv
+
+=== Standard_D4s_v3 | 2 nodes | 500MB | cpu | run 2 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D4s_v3', 'vCPU': 4, 'RAM_GB': 16, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '500MB.csv', 'Dataset_Size_MB': 500, 'Workload': 'cpu', 'Run_Number': 2, 'Timestamp': '2026-07-22T23:41:04.706083+00:00', 'Runtime_Minutes': 0.4749, 'CPU_Avg_Pct': 25.04, 'Cost_USD': 0.0033, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d4sv3-n2-1.csv
+
+=== Standard_D4s_v3 | 2 nodes | 500MB | memory | run 1 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D4s_v3', 'vCPU': 4, 'RAM_GB': 16, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '500MB.csv', 'Dataset_Size_MB': 500, 'Workload': 'memory', 'Run_Number': 1, 'Timestamp': '2026-07-22T23:41:47.124554+00:00', 'Runtime_Minutes': 0.6819, 'CPU_Avg_Pct': 26.93, 'Cost_USD': 0.0048, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d4sv3-n2-1.csv
+
+=== Standard_D4s_v3 | 2 nodes | 500MB | memory | run 2 ===
+Warning: Permanently added '20.207.193.148' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.207.193.148' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.207.193.148' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.207.193.148' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.207.193.148' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.207.193.148' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.207.193.148' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.207.193.148' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.207.193.148' (ED25519) to the list of known hosts.
+{'Region': 'centralindia', 'VM_Size': 'Standard_D4s_v3', 'vCPU': 4, 'RAM_GB': 16, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '500MB.csv', 'Dataset_Size_MB': 500, 'Workload': 'memory', 'Run_Number': 2, 'Timestamp': '2026-07-22T23:42:29.520511+00:00', 'Runtime_Minutes': 0.6752, 'CPU_Avg_Pct': 26.93, 'Cost_USD': 0.0047, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d4sv3-n2-1.csv
+
+=== Standard_D4s_v3 | 2 nodes | 500MB | io | run 1 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D4s_v3', 'vCPU': 4, 'RAM_GB': 16, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '500MB.csv', 'Dataset_Size_MB': 500, 'Workload': 'io', 'Run_Number': 1, 'Timestamp': '2026-07-22T23:43:18.111374+00:00', 'Runtime_Minutes': 0.7719, 'CPU_Avg_Pct': 80.44, 'Cost_USD': 0.0054, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d4sv3-n2-1.csv
+
+=== Standard_D4s_v3 | 2 nodes | 500MB | io | run 2 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D4s_v3', 'vCPU': 4, 'RAM_GB': 16, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '500MB.csv', 'Dataset_Size_MB': 500, 'Workload': 'io', 'Run_Number': 2, 'Timestamp': '2026-07-22T23:44:06.565677+00:00', 'Runtime_Minutes': 0.7718, 'CPU_Avg_Pct': 79.04, 'Cost_USD': 0.0054, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d4sv3-n2-1.csv
+Downloading events_1024mb.csv (excluded from timer)...
+Replicating dataset to worker 20.207.193.148 (excluded from timer)...
+
+=== Standard_D4s_v3 | 2 nodes | 1024MB | cpu | run 1 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D4s_v3', 'vCPU': 4, 'RAM_GB': 16, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '1024MB.csv', 'Dataset_Size_MB': 1024, 'Workload': 'cpu', 'Run_Number': 1, 'Timestamp': '2026-07-22T23:45:15.962442+00:00', 'Runtime_Minutes': 0.7135, 'CPU_Avg_Pct': 26.38, 'Cost_USD': 0.005, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d4sv3-n2-1.csv
+
+=== Standard_D4s_v3 | 2 nodes | 1024MB | cpu | run 2 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D4s_v3', 'vCPU': 4, 'RAM_GB': 16, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '1024MB.csv', 'Dataset_Size_MB': 1024, 'Workload': 'cpu', 'Run_Number': 2, 'Timestamp': '2026-07-22T23:45:58.466623+00:00', 'Runtime_Minutes': 0.7005, 'CPU_Avg_Pct': 17.93, 'Cost_USD': 0.0049, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d4sv3-n2-1.csv
+
+=== Standard_D4s_v3 | 2 nodes | 1024MB | memory | run 1 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D4s_v3', 'vCPU': 4, 'RAM_GB': 16, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '1024MB.csv', 'Dataset_Size_MB': 1024, 'Workload': 'memory', 'Run_Number': 1, 'Timestamp': '2026-07-22T23:47:04.896845+00:00', 'Runtime_Minutes': 1.0428, 'CPU_Avg_Pct': 15.06, 'Cost_USD': 0.0073, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d4sv3-n2-1.csv
+
+=== Standard_D4s_v3 | 2 nodes | 1024MB | memory | run 2 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D4s_v3', 'vCPU': 4, 'RAM_GB': 16, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '1024MB.csv', 'Dataset_Size_MB': 1024, 'Workload': 'memory', 'Run_Number': 2, 'Timestamp': '2026-07-22T23:48:11.330046+00:00', 'Runtime_Minutes': 1.0753, 'CPU_Avg_Pct': 14.95, 'Cost_USD': 0.0075, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d4sv3-n2-1.csv
+
+=== Standard_D4s_v3 | 2 nodes | 1024MB | io | run 1 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D4s_v3', 'vCPU': 4, 'RAM_GB': 16, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '1024MB.csv', 'Dataset_Size_MB': 1024, 'Workload': 'io', 'Run_Number': 1, 'Timestamp': '2026-07-22T23:49:29.695993+00:00', 'Runtime_Minutes': 1.2872, 'CPU_Avg_Pct': 86.86, 'Cost_USD': 0.009, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d4sv3-n2-1.csv
+
+=== Standard_D4s_v3 | 2 nodes | 1024MB | io | run 2 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D4s_v3', 'vCPU': 4, 'RAM_GB': 16, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '1024MB.csv', 'Dataset_Size_MB': 1024, 'Workload': 'io', 'Run_Number': 2, 'Timestamp': '2026-07-22T23:50:48.074365+00:00', 'Runtime_Minutes': 1.2863, 'CPU_Avg_Pct': 89.39, 'Cost_USD': 0.009, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d4sv3-n2-1.csv
+Downloading events_2048.csv (excluded from timer)...
+Replicating dataset to worker 20.207.193.148 (excluded from timer)...
+
+=== Standard_D4s_v3 | 2 nodes | 2048MB | cpu | run 1 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D4s_v3', 'vCPU': 4, 'RAM_GB': 16, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '2048MB.csv', 'Dataset_Size_MB': 2048, 'Workload': 'cpu', 'Run_Number': 1, 'Timestamp': '2026-07-22T23:52:40.569352+00:00', 'Runtime_Minutes': 1.1582, 'CPU_Avg_Pct': 20.13, 'Cost_USD': 0.0081, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d4sv3-n2-1.csv
+
+=== Standard_D4s_v3 | 2 nodes | 2048MB | cpu | run 2 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D4s_v3', 'vCPU': 4, 'RAM_GB': 16, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '2048MB.csv', 'Dataset_Size_MB': 2048, 'Workload': 'cpu', 'Run_Number': 2, 'Timestamp': '2026-07-22T23:53:53.012634+00:00', 'Runtime_Minutes': 1.1352, 'CPU_Avg_Pct': 10.75, 'Cost_USD': 0.0079, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d4sv3-n2-1.csv
+
+=== Standard_D4s_v3 | 2 nodes | 2048MB | memory | run 1 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D4s_v3', 'vCPU': 4, 'RAM_GB': 16, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '2048MB.csv', 'Dataset_Size_MB': 2048, 'Workload': 'memory', 'Run_Number': 1, 'Timestamp': '2026-07-22T23:55:41.582672+00:00', 'Runtime_Minutes': 1.7842, 'CPU_Avg_Pct': 7.71, 'Cost_USD': 0.0125, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d4sv3-n2-1.csv
+
+=== Standard_D4s_v3 | 2 nodes | 2048MB | memory | run 2 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D4s_v3', 'vCPU': 4, 'RAM_GB': 16, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '2048MB.csv', 'Dataset_Size_MB': 2048, 'Workload': 'memory', 'Run_Number': 2, 'Timestamp': '2026-07-22T23:57:30.071027+00:00', 'Runtime_Minutes': 1.8009, 'CPU_Avg_Pct': 7.47, 'Cost_USD': 0.0126, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d4sv3-n2-1.csv
+
+=== Standard_D4s_v3 | 2 nodes | 2048MB | io | run 1 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D4s_v3', 'vCPU': 4, 'RAM_GB': 16, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '2048MB.csv', 'Dataset_Size_MB': 2048, 'Workload': 'io', 'Run_Number': 1, 'Timestamp': '2026-07-22T23:59:48.993348+00:00', 'Runtime_Minutes': 2.2653, 'CPU_Avg_Pct': 92.78, 'Cost_USD': 0.0159, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d4sv3-n2-1.csv
+
+=== Standard_D4s_v3 | 2 nodes | 2048MB | io | run 2 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D4s_v3', 'vCPU': 4, 'RAM_GB': 16, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '2048MB.csv', 'Dataset_Size_MB': 2048, 'Workload': 'io', 'Run_Number': 2, 'Timestamp': '2026-07-23T00:02:07.674466+00:00', 'Runtime_Minutes': 2.2465, 'CPU_Avg_Pct': 91.03, 'Cost_USD': 0.0157, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d4sv3-n2-1.csv
+Downloading events_3072.csv (excluded from timer)...
+Replicating dataset to worker 20.207.193.148 (excluded from timer)...
+
+=== Standard_D4s_v3 | 2 nodes | 3072MB | cpu | run 1 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D4s_v3', 'vCPU': 4, 'RAM_GB': 16, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '3072MB.csv', 'Dataset_Size_MB': 3072, 'Workload': 'cpu', 'Run_Number': 1, 'Timestamp': '2026-07-23T00:04:53.038285+00:00', 'Runtime_Minutes': 1.5806, 'CPU_Avg_Pct': 8.37, 'Cost_USD': 0.0111, 'Exit_Status': 'SUCCESS'}
+Warning: Permanently added '20.207.193.148' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.207.193.148' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.207.193.148' (ED25519) to the list of known hosts.
+Uploaded results to results/results_bench-cin-d4sv3-n2-1.csv
+
+=== Standard_D4s_v3 | 2 nodes | 3072MB | cpu | run 2 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D4s_v3', 'vCPU': 4, 'RAM_GB': 16, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '3072MB.csv', 'Dataset_Size_MB': 3072, 'Workload': 'cpu', 'Run_Number': 2, 'Timestamp': '2026-07-23T00:06:32.182725+00:00', 'Runtime_Minutes': 1.6003, 'CPU_Avg_Pct': 8.43, 'Cost_USD': 0.0112, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d4sv3-n2-1.csv
+
+=== Standard_D4s_v3 | 2 nodes | 3072MB | memory | run 1 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D4s_v3', 'vCPU': 4, 'RAM_GB': 16, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '3072MB.csv', 'Dataset_Size_MB': 3072, 'Workload': 'memory', 'Run_Number': 1, 'Timestamp': '2026-07-23T00:09:08.741399+00:00', 'Runtime_Minutes': 2.544, 'CPU_Avg_Pct': 5.26, 'Cost_USD': 0.0178, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d4sv3-n2-1.csv
+
+=== Standard_D4s_v3 | 2 nodes | 3072MB | memory | run 2 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D4s_v3', 'vCPU': 4, 'RAM_GB': 16, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '3072MB.csv', 'Dataset_Size_MB': 3072, 'Workload': 'memory', 'Run_Number': 2, 'Timestamp': '2026-07-23T00:11:45.277718+00:00', 'Runtime_Minutes': 2.5206, 'CPU_Avg_Pct': 5.91, 'Cost_USD': 0.0176, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d4sv3-n2-1.csv
+
+=== Standard_D4s_v3 | 2 nodes | 3072MB | io | run 1 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D4s_v3', 'vCPU': 4, 'RAM_GB': 16, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '3072MB.csv', 'Dataset_Size_MB': 3072, 'Workload': 'io', 'Run_Number': 1, 'Timestamp': '2026-07-23T00:15:10.109891+00:00', 'Runtime_Minutes': 3.4005, 'CPU_Avg_Pct': 91.0, 'Cost_USD': 0.0238, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d4sv3-n2-1.csv
+
+=== Standard_D4s_v3 | 2 nodes | 3072MB | io | run 2 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D4s_v3', 'vCPU': 4, 'RAM_GB': 16, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '3072MB.csv', 'Dataset_Size_MB': 3072, 'Workload': 'io', 'Run_Number': 2, 'Timestamp': '2026-07-23T00:18:47.002847+00:00', 'Runtime_Minutes': 3.5846, 'CPU_Avg_Pct': 87.46, 'Cost_USD': 0.0251, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d4sv3-n2-1.csv
+Downloading events_5120mb.csv (excluded from timer)...
+Replicating dataset to worker 20.207.193.148 (excluded from timer)...
+
+=== Standard_D4s_v3 | 2 nodes | 5120MB | cpu | run 1 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D4s_v3', 'vCPU': 4, 'RAM_GB': 16, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '5120MB.csv', 'Dataset_Size_MB': 5120, 'Workload': 'cpu', 'Run_Number': 1, 'Timestamp': '2026-07-23T00:23:56.437769+00:00', 'Runtime_Minutes': 3.1953, 'CPU_Avg_Pct': 10.69, 'Cost_USD': 0.0224, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d4sv3-n2-1.csv
+
+=== Standard_D4s_v3 | 2 nodes | 5120MB | cpu | run 2 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D4s_v3', 'vCPU': 4, 'RAM_GB': 16, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '5120MB.csv', 'Dataset_Size_MB': 5120, 'Workload': 'cpu', 'Run_Number': 2, 'Timestamp': '2026-07-23T00:26:27.204053+00:00', 'Runtime_Minutes': 2.4608, 'CPU_Avg_Pct': 5.41, 'Cost_USD': 0.0172, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d4sv3-n2-1.csv
+
+=== Standard_D4s_v3 | 2 nodes | 5120MB | memory | run 1 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D4s_v3', 'vCPU': 4, 'RAM_GB': 16, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '5120MB.csv', 'Dataset_Size_MB': 5120, 'Workload': 'memory', 'Run_Number': 1, 'Timestamp': '2026-07-23T00:30:27.818355+00:00', 'Runtime_Minutes': 3.9344, 'CPU_Avg_Pct': 4.4, 'Cost_USD': 0.0275, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d4sv3-n2-1.csv
+
+=== Standard_D4s_v3 | 2 nodes | 5120MB | memory | run 2 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D4s_v3', 'vCPU': 4, 'RAM_GB': 16, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '5120MB.csv', 'Dataset_Size_MB': 5120, 'Workload': 'memory', 'Run_Number': 2, 'Timestamp': '2026-07-23T00:34:28.527277+00:00', 'Runtime_Minutes': 3.9862, 'CPU_Avg_Pct': 3.97, 'Cost_USD': 0.0279, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d4sv3-n2-1.csv
+
+=== Standard_D4s_v3 | 2 nodes | 5120MB | io | run 1 ===
+Job failed: r.Executor$TaskRunner.$anonfun$run$4(Executor.scala:620)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:64)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:61)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:94)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:623)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: java.lang.OutOfMemoryError: Java heap space
+
+Driver stacktrace:
+26/07/23 00:38:23 INFO MemoryStore: MemoryStore cleared
+26/07/23 00:38:23 INFO BlockManager: BlockManager stopped
+26/07/23 00:38:23 INFO BlockManagerMaster: BlockManagerMaster stopped
+26/07/23 00:38:23 INFO OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+26/07/23 00:38:23 INFO SparkContext: Successfully stopped SparkContext
+26/07/23 00:38:23 INFO ShutdownHookManager: Shutdown hook called
+26/07/23 00:38:23 INFO ShutdownHookManager: Deleting directory /tmp/spark-3f6cfd76-af1a-45e5-8622-1bf95c5d2604
+26/07/23 00:38:23 INFO ShutdownHookManager: Deleting directory /tmp/spark-ecd30e23-1437-459f-9483-058d73077ee7
+26/07/23 00:38:23 INFO ShutdownHookManager: Deleting directory /tmp/spark-ecd30e23-1437-459f-9483-058d73077ee7/pyspark-30141da0-f7a5-4fab-8313-767bd064ab37
+
+{'Region': 'centralindia', 'VM_Size': 'Standard_D4s_v3', 'vCPU': 4, 'RAM_GB': 16, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '5120MB.csv', 'Dataset_Size_MB': 5120, 'Workload': 'io', 'Run_Number': 1, 'Timestamp': '2026-07-23T00:38:29.440564+00:00', 'Runtime_Minutes': 3.9279, 'CPU_Avg_Pct': 96.9, 'Cost_USD': 0.0275, 'Exit_Status': 'FAILED'}
+Uploaded results to results/results_bench-cin-d4sv3-n2-1.csv
+
+=== Standard_D4s_v3 | 2 nodes | 5120MB | io | run 2 ===
+Job failed: Warning: Permanently added '20.207.193.148' (ED25519) to the list of known hosts.
+ter.scala:92)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.$anonfun$executeTask$1(FileFormatWriter.scala:403)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$$$Lambda$3734/0x00007f96c8fd8ee8.apply(Unknown Source)
+	at org.apache.spark.util.Utils$.tryWithSafeFinallyAndFailureCallbacks(Utils.scala:1397)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.executeTask(FileFormatWriter.scala:410)
+	at org.apache.spark.sql.execution.datasources.WriteFilesExec.$anonfun$doExecuteWrite$1(WriteFiles.scala:100)
+	at org.apache.spark.sql.execution.datasources.WriteFilesExec$$Lambda$3645/0x00007f96c8fa73e8.apply(Unknown Source)
+
+Driver stacktrace:
+26/07/23 00:42:29 INFO MemoryStore: MemoryStore cleared
+26/07/23 00:42:29 INFO BlockManager: BlockManager stopped
+26/07/23 00:42:29 INFO BlockManagerMaster: BlockManagerMaster stopped
+26/07/23 00:42:29 INFO OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+26/07/23 00:42:29 INFO SparkContext: Successfully stopped SparkContext
+26/07/23 00:42:29 INFO ShutdownHookManager: Shutdown hook called
+26/07/23 00:42:29 INFO ShutdownHookManager: Deleting directory /tmp/spark-0738daec-a852-4a9d-83ca-15f47ba86052
+26/07/23 00:42:29 INFO ShutdownHookManager: Deleting directory /tmp/spark-0be12d44-ed38-4cee-a9eb-e0d352c49a40/pyspark-3703b1a4-4246-45c3-9d84-57a3a520332b
+26/07/23 00:42:29 INFO ShutdownHookManager: Deleting directory /tmp/spark-0be12d44-ed38-4cee-a9eb-e0d352c49a40
+
+{'Region': 'centralindia', 'VM_Size': 'Standard_D4s_v3', 'vCPU': 4, 'RAM_GB': 16, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '5120MB.csv', 'Dataset_Size_MB': 5120, 'Workload': 'io', 'Run_Number': 2, 'Timestamp': '2026-07-23T00:42:30.336936+00:00', 'Runtime_Minutes': 3.9966, 'CPU_Avg_Pct': 94.96, 'Cost_USD': 0.028, 'Exit_Status': 'FAILED'}
+Uploaded results to results/results_bench-cin-d4sv3-n2-1.csv
+Uploaded results to results/results_bench-cin-d4sv3-n2-1.csv
+
+All runs complete for this cluster configuration.
+Deleting VMs for this combo...
+Combo done: centralindia / Standard_D4s_v3 / 2 nodes
+
+############################################################
+# centralindia | Standard_D4s_v3 | 4 nodes 
+############################################################
+SKIP: needs 16 vCPUs, DSv3 family cap in centralindia is 10.
+
+############################################################
+# centralindia | Standard_D2as_v4 | 2 nodes 
+############################################################
+Creating bench-cin-d2as_v4-n2-1...
+Creating bench-cin-d2as_v4-n2-2...
+Waiting for bench-cin-d2as_v4-n2-1 to finish provisioning...
+  bench-cin-d2as_v4-n2-1 -> 104.211.72.149
+Waiting for bench-cin-d2as_v4-n2-2 to finish provisioning...
+  bench-cin-d2as_v4-n2-2 -> 20.219.196.162
+  waiting for install on 104.211.72.149 (1/180)...
+  waiting for install on 104.211.72.149 (2/180)...
+  waiting for install on 104.211.72.149 (3/180)...
+  waiting for install on 104.211.72.149 (4/180)...
+  waiting for install on 104.211.72.149 (5/180)...
+  waiting for install on 104.211.72.149 (6/180)...
+  waiting for install on 104.211.72.149 (7/180)...
+  waiting for install on 104.211.72.149 (8/180)...
+  waiting for install on 104.211.72.149 (9/180)...
+  waiting for install on 104.211.72.149 (10/180)...
+  waiting for install on 104.211.72.149 (11/180)...
+  waiting for install on 104.211.72.149 (12/180)...
+  waiting for install on 104.211.72.149 (13/180)...
+  waiting for install on 104.211.72.149 (14/180)...
+  waiting for install on 104.211.72.149 (15/180)...
+  waiting for install on 104.211.72.149 (16/180)...
+  install finished on 104.211.72.149
+  install finished on 20.219.196.162
+Repairing /opt/benchmark permissions on all VMs...
+Warning: Permanently added '104.211.72.149' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.219.196.162' (ED25519) to the list of known hosts.
+Warning: Permanently added '104.211.72.149' (ED25519) to the list of known hosts.
+starting org.apache.spark.deploy.master.Master, logging to /opt/spark/logs/spark-benchadmin-org.apache.spark.deploy.master.Master-1-bench-cin-d2asv4-n2-1.out
+Warning: Permanently added '20.219.196.162' (ED25519) to the list of known hosts.
+starting org.apache.spark.deploy.worker.Worker, logging to /opt/spark/logs/spark-benchadmin-org.apache.spark.deploy.worker.Worker-1-bench-cin-d2asv4-n2-2.out
+Cluster up: spark://10.0.0.12:7077 (2 nodes)
+Warning: Permanently added '104.211.72.149' (ED25519) to the list of known hosts.
+Warning: Permanently added '104.211.72.149' (ED25519) to the list of known hosts.
+Warning: Permanently added '104.211.72.149' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.219.196.162' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.219.196.162' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.219.196.162' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.219.196.162' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.219.196.162' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.219.196.162' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.219.196.162' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.219.196.162' (ED25519) to the list of known hosts.
+Downloading events_10mb.csv (excluded from timer)...
+Replicating dataset to worker 20.219.196.162 (excluded from timer)...
+
+=== Standard_D2as_v4 | 2 nodes | 10MB | cpu | run 1 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2as_v4', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '10MB.csv', 'Dataset_Size_MB': 10, 'Workload': 'cpu', 'Run_Number': 1, 'Timestamp': '2026-07-23T00:49:11.220836+00:00', 'Runtime_Minutes': 0.2713, 'CPU_Avg_Pct': 62.8, 'Cost_USD': 0.0006, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2asv4-n2-1.csv
+
+=== Standard_D2as_v4 | 2 nodes | 10MB | cpu | run 2 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2as_v4', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '10MB.csv', 'Dataset_Size_MB': 10, 'Workload': 'cpu', 'Run_Number': 2, 'Timestamp': '2026-07-23T00:49:29.611606+00:00', 'Runtime_Minutes': 0.2769, 'CPU_Avg_Pct': 62.97, 'Cost_USD': 0.0006, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2asv4-n2-1.csv
+
+=== Standard_D2as_v4 | 2 nodes | 10MB | memory | run 1 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2as_v4', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '10MB.csv', 'Dataset_Size_MB': 10, 'Workload': 'memory', 'Run_Number': 1, 'Timestamp': '2026-07-23T00:49:53.802830+00:00', 'Runtime_Minutes': 0.3661, 'CPU_Avg_Pct': 69.94, 'Cost_USD': 0.0008, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2asv4-n2-1.csv
+
+=== Standard_D2as_v4 | 2 nodes | 10MB | memory | run 2 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2as_v4', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '10MB.csv', 'Dataset_Size_MB': 10, 'Workload': 'memory', 'Run_Number': 2, 'Timestamp': '2026-07-23T00:50:18.161483+00:00', 'Runtime_Minutes': 0.3825, 'CPU_Avg_Pct': 65.47, 'Cost_USD': 0.0008, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2asv4-n2-1.csv
+
+=== Standard_D2as_v4 | 2 nodes | 10MB | io | run 1 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2as_v4', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '10MB.csv', 'Dataset_Size_MB': 10, 'Workload': 'io', 'Run_Number': 1, 'Timestamp': '2026-07-23T00:50:42.762748+00:00', 'Runtime_Minutes': 0.3392, 'CPU_Avg_Pct': 94.98, 'Cost_USD': 0.0007, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2asv4-n2-1.csv
+
+=== Standard_D2as_v4 | 2 nodes | 10MB | io | run 2 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2as_v4', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '10MB.csv', 'Dataset_Size_MB': 10, 'Workload': 'io', 'Run_Number': 2, 'Timestamp': '2026-07-23T00:51:07.167467+00:00', 'Runtime_Minutes': 0.3485, 'CPU_Avg_Pct': 97.1, 'Cost_USD': 0.0007, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2asv4-n2-1.csv
+Downloading events_100mb.csv (excluded from timer)...
+Replicating dataset to worker 20.219.196.162 (excluded from timer)...
+
+=== Standard_D2as_v4 | 2 nodes | 100MB | cpu | run 1 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2as_v4', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '100MB.csv', 'Dataset_Size_MB': 100, 'Workload': 'cpu', 'Run_Number': 1, 'Timestamp': '2026-07-23T00:51:34.304794+00:00', 'Runtime_Minutes': 0.3181, 'CPU_Avg_Pct': 64.16, 'Cost_USD': 0.0007, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2asv4-n2-1.csv
+
+=== Standard_D2as_v4 | 2 nodes | 100MB | cpu | run 2 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2as_v4', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '100MB.csv', 'Dataset_Size_MB': 100, 'Workload': 'cpu', 'Run_Number': 2, 'Timestamp': '2026-07-23T00:51:58.659560+00:00', 'Runtime_Minutes': 0.3172, 'CPU_Avg_Pct': 59.28, 'Cost_USD': 0.0007, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2asv4-n2-1.csv
+
+=== Standard_D2as_v4 | 2 nodes | 100MB | memory | run 1 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2as_v4', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '100MB.csv', 'Dataset_Size_MB': 100, 'Workload': 'memory', 'Run_Number': 1, 'Timestamp': '2026-07-23T00:52:29.069823+00:00', 'Runtime_Minutes': 0.4763, 'CPU_Avg_Pct': 50.62, 'Cost_USD': 0.001, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2asv4-n2-1.csv
+
+=== Standard_D2as_v4 | 2 nodes | 100MB | memory | run 2 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2as_v4', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '100MB.csv', 'Dataset_Size_MB': 100, 'Workload': 'memory', 'Run_Number': 2, 'Timestamp': '2026-07-23T00:52:59.457389+00:00', 'Runtime_Minutes': 0.4682, 'CPU_Avg_Pct': 50.16, 'Cost_USD': 0.001, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2asv4-n2-1.csv
+
+=== Standard_D2as_v4 | 2 nodes | 100MB | io | run 1 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2as_v4', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '100MB.csv', 'Dataset_Size_MB': 100, 'Workload': 'io', 'Run_Number': 1, 'Timestamp': '2026-07-23T00:53:29.699007+00:00', 'Runtime_Minutes': 0.4558, 'CPU_Avg_Pct': 95.37, 'Cost_USD': 0.0009, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2asv4-n2-1.csv
+
+=== Standard_D2as_v4 | 2 nodes | 100MB | io | run 2 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2as_v4', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '100MB.csv', 'Dataset_Size_MB': 100, 'Workload': 'io', 'Run_Number': 2, 'Timestamp': '2026-07-23T00:54:00.092694+00:00', 'Runtime_Minutes': 0.4625, 'CPU_Avg_Pct': 96.68, 'Cost_USD': 0.001, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2asv4-n2-1.csv
+Downloading events_500mb.csv (excluded from timer)...
+Replicating dataset to worker 20.219.196.162 (excluded from timer)...
+
+=== Standard_D2as_v4 | 2 nodes | 500MB | cpu | run 1 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2as_v4', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '500MB.csv', 'Dataset_Size_MB': 500, 'Workload': 'cpu', 'Run_Number': 1, 'Timestamp': '2026-07-23T00:54:47.629148+00:00', 'Runtime_Minutes': 0.5348, 'CPU_Avg_Pct': 35.78, 'Cost_USD': 0.0011, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2asv4-n2-1.csv
+
+=== Standard_D2as_v4 | 2 nodes | 500MB | cpu | run 2 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2as_v4', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '500MB.csv', 'Dataset_Size_MB': 500, 'Workload': 'cpu', 'Run_Number': 2, 'Timestamp': '2026-07-23T00:55:24.007347+00:00', 'Runtime_Minutes': 0.5588, 'CPU_Avg_Pct': 46.54, 'Cost_USD': 0.0012, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2asv4-n2-1.csv
+
+=== Standard_D2as_v4 | 2 nodes | 500MB | memory | run 1 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2as_v4', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '500MB.csv', 'Dataset_Size_MB': 500, 'Workload': 'memory', 'Run_Number': 1, 'Timestamp': '2026-07-23T00:56:18.411249+00:00', 'Runtime_Minutes': 0.8111, 'CPU_Avg_Pct': 31.42, 'Cost_USD': 0.0017, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2asv4-n2-1.csv
+
+=== Standard_D2as_v4 | 2 nodes | 500MB | memory | run 2 ===
+Warning: Permanently added '20.219.196.162' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.219.196.162' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.219.196.162' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.219.196.162' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.219.196.162' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.219.196.162' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.219.196.162' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.219.196.162' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.219.196.162' (ED25519) to the list of known hosts.
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2as_v4', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '500MB.csv', 'Dataset_Size_MB': 500, 'Workload': 'memory', 'Run_Number': 2, 'Timestamp': '2026-07-23T00:57:12.817586+00:00', 'Runtime_Minutes': 0.8365, 'CPU_Avg_Pct': 24.45, 'Cost_USD': 0.0017, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2asv4-n2-1.csv
+
+=== Standard_D2as_v4 | 2 nodes | 500MB | io | run 1 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2as_v4', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '500MB.csv', 'Dataset_Size_MB': 500, 'Workload': 'io', 'Run_Number': 1, 'Timestamp': '2026-07-23T00:58:13.310008+00:00', 'Runtime_Minutes': 0.9392, 'CPU_Avg_Pct': 97.44, 'Cost_USD': 0.0019, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2asv4-n2-1.csv
+
+=== Standard_D2as_v4 | 2 nodes | 500MB | io | run 2 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2as_v4', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '500MB.csv', 'Dataset_Size_MB': 500, 'Workload': 'io', 'Run_Number': 2, 'Timestamp': '2026-07-23T00:59:13.783244+00:00', 'Runtime_Minutes': 0.9407, 'CPU_Avg_Pct': 98.09, 'Cost_USD': 0.002, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2asv4-n2-1.csv
+Downloading events_1024mb.csv (excluded from timer)...
+Replicating dataset to worker 20.219.196.162 (excluded from timer)...
+
+=== Standard_D2as_v4 | 2 nodes | 1024MB | cpu | run 1 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2as_v4', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '1024MB.csv', 'Dataset_Size_MB': 1024, 'Workload': 'cpu', 'Run_Number': 1, 'Timestamp': '2026-07-23T01:00:29.484439+00:00', 'Runtime_Minutes': 0.8704, 'CPU_Avg_Pct': 21.9, 'Cost_USD': 0.0018, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2asv4-n2-1.csv
+
+=== Standard_D2as_v4 | 2 nodes | 1024MB | cpu | run 2 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2as_v4', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '1024MB.csv', 'Dataset_Size_MB': 1024, 'Workload': 'cpu', 'Run_Number': 2, 'Timestamp': '2026-07-23T01:01:23.872939+00:00', 'Runtime_Minutes': 0.8355, 'CPU_Avg_Pct': 21.95, 'Cost_USD': 0.0017, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2asv4-n2-1.csv
+
+=== Standard_D2as_v4 | 2 nodes | 1024MB | memory | run 1 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2as_v4', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '1024MB.csv', 'Dataset_Size_MB': 1024, 'Workload': 'memory', 'Run_Number': 1, 'Timestamp': '2026-07-23T01:02:42.317147+00:00', 'Runtime_Minutes': 1.3013, 'CPU_Avg_Pct': 24.45, 'Cost_USD': 0.0027, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2asv4-n2-1.csv
+
+=== Standard_D2as_v4 | 2 nodes | 1024MB | memory | run 2 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2as_v4', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '1024MB.csv', 'Dataset_Size_MB': 1024, 'Workload': 'memory', 'Run_Number': 2, 'Timestamp': '2026-07-23T01:04:00.742892+00:00', 'Runtime_Minutes': 1.277, 'CPU_Avg_Pct': 23.41, 'Cost_USD': 0.0026, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2asv4-n2-1.csv
+
+=== Standard_D2as_v4 | 2 nodes | 1024MB | io | run 1 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2as_v4', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '1024MB.csv', 'Dataset_Size_MB': 1024, 'Workload': 'io', 'Run_Number': 1, 'Timestamp': '2026-07-23T01:05:37.334949+00:00', 'Runtime_Minutes': 1.5251, 'CPU_Avg_Pct': 95.06, 'Cost_USD': 0.0032, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2asv4-n2-1.csv
+
+=== Standard_D2as_v4 | 2 nodes | 1024MB | io | run 2 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2as_v4', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '1024MB.csv', 'Dataset_Size_MB': 1024, 'Workload': 'io', 'Run_Number': 2, 'Timestamp': '2026-07-23T01:07:13.921329+00:00', 'Runtime_Minutes': 1.589, 'CPU_Avg_Pct': 98.18, 'Cost_USD': 0.0033, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2asv4-n2-1.csv
+Downloading events_2048.csv (excluded from timer)...
+Replicating dataset to worker 20.219.196.162 (excluded from timer)...
+
+=== Standard_D2as_v4 | 2 nodes | 2048MB | cpu | run 1 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2as_v4', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '2048MB.csv', 'Dataset_Size_MB': 2048, 'Workload': 'cpu', 'Run_Number': 1, 'Timestamp': '2026-07-23T01:09:44.286502+00:00', 'Runtime_Minutes': 1.6974, 'CPU_Avg_Pct': 13.48, 'Cost_USD': 0.0035, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2asv4-n2-1.csv
+
+=== Standard_D2as_v4 | 2 nodes | 2048MB | cpu | run 2 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2as_v4', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '2048MB.csv', 'Dataset_Size_MB': 2048, 'Workload': 'cpu', 'Run_Number': 2, 'Timestamp': '2026-07-23T01:11:14.762116+00:00', 'Runtime_Minutes': 1.436, 'CPU_Avg_Pct': 14.22, 'Cost_USD': 0.003, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2asv4-n2-1.csv
+
+=== Standard_D2as_v4 | 2 nodes | 2048MB | memory | run 1 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2as_v4', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '2048MB.csv', 'Dataset_Size_MB': 2048, 'Workload': 'memory', 'Run_Number': 1, 'Timestamp': '2026-07-23T01:13:39.271317+00:00', 'Runtime_Minutes': 2.3082, 'CPU_Avg_Pct': 12.83, 'Cost_USD': 0.0048, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2asv4-n2-1.csv
+
+=== Standard_D2as_v4 | 2 nodes | 2048MB | memory | run 2 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2as_v4', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '2048MB.csv', 'Dataset_Size_MB': 2048, 'Workload': 'memory', 'Run_Number': 2, 'Timestamp': '2026-07-23T01:15:58.531677+00:00', 'Runtime_Minutes': 2.2532, 'CPU_Avg_Pct': 12.14, 'Cost_USD': 0.0047, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2asv4-n2-1.csv
+
+=== Standard_D2as_v4 | 2 nodes | 2048MB | io | run 1 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2as_v4', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '2048MB.csv', 'Dataset_Size_MB': 2048, 'Workload': 'io', 'Run_Number': 1, 'Timestamp': '2026-07-23T01:18:47.845878+00:00', 'Runtime_Minutes': 2.7594, 'CPU_Avg_Pct': 96.98, 'Cost_USD': 0.0057, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2asv4-n2-1.csv
+
+=== Standard_D2as_v4 | 2 nodes | 2048MB | io | run 2 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2as_v4', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '2048MB.csv', 'Dataset_Size_MB': 2048, 'Workload': 'io', 'Run_Number': 2, 'Timestamp': '2026-07-23T01:21:42.587822+00:00', 'Runtime_Minutes': 2.8137, 'CPU_Avg_Pct': 96.95, 'Cost_USD': 0.0058, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2asv4-n2-1.csv
+Downloading events_3072.csv (excluded from timer)...
+Replicating dataset to worker 20.219.196.162 (excluded from timer)...
+
+=== Standard_D2as_v4 | 2 nodes | 3072MB | cpu | run 1 ===
+Warning: Permanently added '20.219.196.162' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.219.196.162' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.219.196.162' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.219.196.162' (ED25519) to the list of known hosts.
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2as_v4', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '3072MB.csv', 'Dataset_Size_MB': 3072, 'Workload': 'cpu', 'Run_Number': 1, 'Timestamp': '2026-07-23T01:25:10.009377+00:00', 'Runtime_Minutes': 1.8319, 'CPU_Avg_Pct': 12.56, 'Cost_USD': 0.0038, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2asv4-n2-1.csv
+
+=== Standard_D2as_v4 | 2 nodes | 3072MB | cpu | run 2 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2as_v4', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '3072MB.csv', 'Dataset_Size_MB': 3072, 'Workload': 'cpu', 'Run_Number': 2, 'Timestamp': '2026-07-23T01:27:04.493863+00:00', 'Runtime_Minutes': 1.894, 'CPU_Avg_Pct': 10.42, 'Cost_USD': 0.0039, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2asv4-n2-1.csv
+
+=== Standard_D2as_v4 | 2 nodes | 3072MB | memory | run 1 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2as_v4', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '3072MB.csv', 'Dataset_Size_MB': 3072, 'Workload': 'memory', 'Run_Number': 1, 'Timestamp': '2026-07-23T01:30:23.062582+00:00', 'Runtime_Minutes': 3.272, 'CPU_Avg_Pct': 7.45, 'Cost_USD': 0.0068, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2asv4-n2-1.csv
+
+=== Standard_D2as_v4 | 2 nodes | 3072MB | memory | run 2 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2as_v4', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '3072MB.csv', 'Dataset_Size_MB': 3072, 'Workload': 'memory', 'Run_Number': 2, 'Timestamp': '2026-07-23T01:33:29.635278+00:00', 'Runtime_Minutes': 3.0465, 'CPU_Avg_Pct': 10.15, 'Cost_USD': 0.0063, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2asv4-n2-1.csv
+
+=== Standard_D2as_v4 | 2 nodes | 3072MB | io | run 1 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2as_v4', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '3072MB.csv', 'Dataset_Size_MB': 3072, 'Workload': 'io', 'Run_Number': 1, 'Timestamp': '2026-07-23T01:37:36.614717+00:00', 'Runtime_Minutes': 4.0281, 'CPU_Avg_Pct': 97.56, 'Cost_USD': 0.0084, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2asv4-n2-1.csv
+
+=== Standard_D2as_v4 | 2 nodes | 3072MB | io | run 2 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2as_v4', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '3072MB.csv', 'Dataset_Size_MB': 3072, 'Workload': 'io', 'Run_Number': 2, 'Timestamp': '2026-07-23T01:41:37.601437+00:00', 'Runtime_Minutes': 3.98, 'CPU_Avg_Pct': 96.92, 'Cost_USD': 0.0083, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2asv4-n2-1.csv
+Downloading events_5120mb.csv (excluded from timer)...
+Replicating dataset to worker 20.219.196.162 (excluded from timer)...
+
+=== Standard_D2as_v4 | 2 nodes | 5120MB | cpu | run 1 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2as_v4', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '5120MB.csv', 'Dataset_Size_MB': 5120, 'Workload': 'cpu', 'Run_Number': 1, 'Timestamp': '2026-07-23T01:48:01.587786+00:00', 'Runtime_Minutes': 3.2612, 'CPU_Avg_Pct': 6.06, 'Cost_USD': 0.0068, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2asv4-n2-1.csv
+
+=== Standard_D2as_v4 | 2 nodes | 5120MB | cpu | run 2 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2as_v4', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '5120MB.csv', 'Dataset_Size_MB': 5120, 'Workload': 'cpu', 'Run_Number': 2, 'Timestamp': '2026-07-23T01:51:08.179566+00:00', 'Runtime_Minutes': 3.0963, 'CPU_Avg_Pct': 7.23, 'Cost_USD': 0.0064, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2asv4-n2-1.csv
+
+=== Standard_D2as_v4 | 2 nodes | 5120MB | memory | run 1 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2as_v4', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '5120MB.csv', 'Dataset_Size_MB': 5120, 'Workload': 'memory', 'Run_Number': 1, 'Timestamp': '2026-07-23T01:56:14.966407+00:00', 'Runtime_Minutes': 5.0835, 'CPU_Avg_Pct': 6.19, 'Cost_USD': 0.0105, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2asv4-n2-1.csv
+
+=== Standard_D2as_v4 | 2 nodes | 5120MB | memory | run 2 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2as_v4', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '5120MB.csv', 'Dataset_Size_MB': 5120, 'Workload': 'memory', 'Run_Number': 2, 'Timestamp': '2026-07-23T02:01:09.529306+00:00', 'Runtime_Minutes': 4.8219, 'CPU_Avg_Pct': 6.77, 'Cost_USD': 0.01, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2asv4-n2-1.csv
+
+=== Standard_D2as_v4 | 2 nodes | 5120MB | io | run 1 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2as_v4', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '5120MB.csv', 'Dataset_Size_MB': 5120, 'Workload': 'io', 'Run_Number': 1, 'Timestamp': '2026-07-23T02:08:04.901841+00:00', 'Runtime_Minutes': 6.8575, 'CPU_Avg_Pct': 97.26, 'Cost_USD': 0.0142, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2asv4-n2-1.csv
+
+=== Standard_D2as_v4 | 2 nodes | 5120MB | io | run 2 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2as_v4', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '5120MB.csv', 'Dataset_Size_MB': 5120, 'Workload': 'io', 'Run_Number': 2, 'Timestamp': '2026-07-23T02:14:12.241743+00:00', 'Runtime_Minutes': 6.0998, 'CPU_Avg_Pct': 96.55, 'Cost_USD': 0.0126, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2asv4-n2-1.csv
+Uploaded results to results/results_bench-cin-d2asv4-n2-1.csv
+
+All runs complete for this cluster configuration.
+Deleting VMs for this combo...
+Combo done: centralindia / Standard_D2as_v4 / 2 nodes
+
+############################################################
+# centralindia | Standard_D2as_v4 | 4 nodes 
+############################################################
+Creating bench-cin-d2as_v4-n4-1...
+Creating bench-cin-d2as_v4-n4-2...
+Creating bench-cin-d2as_v4-n4-3...
+Creating bench-cin-d2as_v4-n4-4...
+Waiting for bench-cin-d2as_v4-n4-1 to finish provisioning...
+  bench-cin-d2as_v4-n4-1 -> 20.235.118.188
+Waiting for bench-cin-d2as_v4-n4-2 to finish provisioning...
+  bench-cin-d2as_v4-n4-2 -> 20.192.5.116
+Waiting for bench-cin-d2as_v4-n4-3 to finish provisioning...
+  bench-cin-d2as_v4-n4-3 -> 20.198.115.40
+Waiting for bench-cin-d2as_v4-n4-4 to finish provisioning...
+  bench-cin-d2as_v4-n4-4 -> 20.192.6.64
+  waiting for install on 20.235.118.188 (1/180)...
+  waiting for install on 20.235.118.188 (2/180)...
+  waiting for install on 20.235.118.188 (3/180)...
+  waiting for install on 20.235.118.188 (4/180)...
+  waiting for install on 20.235.118.188 (5/180)...
+  waiting for install on 20.235.118.188 (6/180)...
+  install finished on 20.235.118.188
+  waiting for install on 20.192.5.116 (1/180)...
+  install finished on 20.192.5.116
+  waiting for install on 20.198.115.40 (1/180)...
+  install finished on 20.198.115.40
+  install finished on 20.192.6.64
+Repairing /opt/benchmark permissions on all VMs...
+Warning: Permanently added '20.235.118.188' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.192.5.116' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.198.115.40' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.192.6.64' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.235.118.188' (ED25519) to the list of known hosts.
+starting org.apache.spark.deploy.master.Master, logging to /opt/spark/logs/spark-benchadmin-org.apache.spark.deploy.master.Master-1-bench-cin-d2asv4-n4-1.out
+Warning: Permanently added '20.192.5.116' (ED25519) to the list of known hosts.
+starting org.apache.spark.deploy.worker.Worker, logging to /opt/spark/logs/spark-benchadmin-org.apache.spark.deploy.worker.Worker-1-bench-cin-d2asv4-n4-2.out
+Warning: Permanently added '20.198.115.40' (ED25519) to the list of known hosts.
+starting org.apache.spark.deploy.worker.Worker, logging to /opt/spark/logs/spark-benchadmin-org.apache.spark.deploy.worker.Worker-1-bench-cin-d2asv4-n4-3.out
+Warning: Permanently added '20.192.6.64' (ED25519) to the list of known hosts.
+starting org.apache.spark.deploy.worker.Worker, logging to /opt/spark/logs/spark-benchadmin-org.apache.spark.deploy.worker.Worker-1-bench-cin-d2asv4-n4-4.out
+Cluster up: spark://10.0.0.14:7077 (4 nodes)
+Warning: Permanently added '20.235.118.188' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.235.118.188' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.235.118.188' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.192.5.116' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.192.5.116' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.198.115.40' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.198.115.40' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.192.6.64' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.192.6.64' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.192.5.116' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.198.115.40' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.192.6.64' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.192.5.116' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.192.5.116' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.198.115.40' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.198.115.40' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.192.6.64' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.192.6.64' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.192.5.116' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.198.115.40' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.192.6.64' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.192.5.116' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.192.5.116' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.198.115.40' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.198.115.40' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.192.6.64' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.192.6.64' (ED25519) to the list of known hosts.
+Downloading events_10mb.csv (excluded from timer)...
+Replicating dataset to worker 20.192.5.116 (excluded from timer)...
+Replicating dataset to worker 20.198.115.40 (excluded from timer)...
+Replicating dataset to worker 20.192.6.64 (excluded from timer)...
+
+=== Standard_D2as_v4 | 4 nodes | 10MB | cpu | run 1 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2as_v4', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 4, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '10MB.csv', 'Dataset_Size_MB': 10, 'Workload': 'cpu', 'Run_Number': 1, 'Timestamp': '2026-07-23T02:19:23.570776+00:00', 'Runtime_Minutes': 0.2839, 'CPU_Avg_Pct': 63.68, 'Cost_USD': 0.0012, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2asv4-n4-1.csv
+
+=== Standard_D2as_v4 | 4 nodes | 10MB | cpu | run 2 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2as_v4', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 4, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '10MB.csv', 'Dataset_Size_MB': 10, 'Workload': 'cpu', 'Run_Number': 2, 'Timestamp': '2026-07-23T02:19:41.935082+00:00', 'Runtime_Minutes': 0.2827, 'CPU_Avg_Pct': 62.33, 'Cost_USD': 0.0012, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2asv4-n4-1.csv
+
+=== Standard_D2as_v4 | 4 nodes | 10MB | memory | run 1 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2as_v4', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 4, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '10MB.csv', 'Dataset_Size_MB': 10, 'Workload': 'memory', 'Run_Number': 1, 'Timestamp': '2026-07-23T02:20:06.292768+00:00', 'Runtime_Minutes': 0.369, 'CPU_Avg_Pct': 63.98, 'Cost_USD': 0.0015, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2asv4-n4-1.csv
+
+=== Standard_D2as_v4 | 4 nodes | 10MB | memory | run 2 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2as_v4', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 4, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '10MB.csv', 'Dataset_Size_MB': 10, 'Workload': 'memory', 'Run_Number': 2, 'Timestamp': '2026-07-23T02:20:30.494440+00:00', 'Runtime_Minutes': 0.3699, 'CPU_Avg_Pct': 67.08, 'Cost_USD': 0.0015, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2asv4-n4-1.csv
+
+=== Standard_D2as_v4 | 4 nodes | 10MB | io | run 1 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2as_v4', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 4, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '10MB.csv', 'Dataset_Size_MB': 10, 'Workload': 'io', 'Run_Number': 1, 'Timestamp': '2026-07-23T02:20:54.861670+00:00', 'Runtime_Minutes': 0.3389, 'CPU_Avg_Pct': 95.24, 'Cost_USD': 0.0014, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2asv4-n4-1.csv
+
+=== Standard_D2as_v4 | 4 nodes | 10MB | io | run 2 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2as_v4', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 4, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '10MB.csv', 'Dataset_Size_MB': 10, 'Workload': 'io', 'Run_Number': 2, 'Timestamp': '2026-07-23T02:21:19.271051+00:00', 'Runtime_Minutes': 0.3401, 'CPU_Avg_Pct': 96.1, 'Cost_USD': 0.0014, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2asv4-n4-1.csv
+Downloading events_100mb.csv (excluded from timer)...
+Replicating dataset to worker 20.192.5.116 (excluded from timer)...
+Replicating dataset to worker 20.198.115.40 (excluded from timer)...
+Replicating dataset to worker 20.192.6.64 (excluded from timer)...
+
+=== Standard_D2as_v4 | 4 nodes | 100MB | cpu | run 1 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2as_v4', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 4, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '100MB.csv', 'Dataset_Size_MB': 100, 'Workload': 'cpu', 'Run_Number': 1, 'Timestamp': '2026-07-23T02:21:49.043059+00:00', 'Runtime_Minutes': 0.3085, 'CPU_Avg_Pct': 52.02, 'Cost_USD': 0.0013, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2asv4-n4-1.csv
+
+=== Standard_D2as_v4 | 4 nodes | 100MB | cpu | run 2 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2as_v4', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 4, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '100MB.csv', 'Dataset_Size_MB': 100, 'Workload': 'cpu', 'Run_Number': 2, 'Timestamp': '2026-07-23T02:22:13.392600+00:00', 'Runtime_Minutes': 0.3086, 'CPU_Avg_Pct': 56.13, 'Cost_USD': 0.0013, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2asv4-n4-1.csv
+
+=== Standard_D2as_v4 | 4 nodes | 100MB | memory | run 1 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2as_v4', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 4, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '100MB.csv', 'Dataset_Size_MB': 100, 'Workload': 'memory', 'Run_Number': 1, 'Timestamp': '2026-07-23T02:22:43.772210+00:00', 'Runtime_Minutes': 0.4096, 'CPU_Avg_Pct': 50.83, 'Cost_USD': 0.0017, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2asv4-n4-1.csv
+
+=== Standard_D2as_v4 | 4 nodes | 100MB | memory | run 2 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2as_v4', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 4, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '100MB.csv', 'Dataset_Size_MB': 100, 'Workload': 'memory', 'Run_Number': 2, 'Timestamp': '2026-07-23T02:23:14.131431+00:00', 'Runtime_Minutes': 0.4017, 'CPU_Avg_Pct': 52.3, 'Cost_USD': 0.0017, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2asv4-n4-1.csv
+
+=== Standard_D2as_v4 | 4 nodes | 100MB | io | run 1 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2as_v4', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 4, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '100MB.csv', 'Dataset_Size_MB': 100, 'Workload': 'io', 'Run_Number': 1, 'Timestamp': '2026-07-23T02:23:44.525788+00:00', 'Runtime_Minutes': 0.459, 'CPU_Avg_Pct': 96.17, 'Cost_USD': 0.0019, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2asv4-n4-1.csv
+
+=== Standard_D2as_v4 | 4 nodes | 100MB | io | run 2 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2as_v4', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 4, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '100MB.csv', 'Dataset_Size_MB': 100, 'Workload': 'io', 'Run_Number': 2, 'Timestamp': '2026-07-23T02:24:14.902824+00:00', 'Runtime_Minutes': 0.4531, 'CPU_Avg_Pct': 97.07, 'Cost_USD': 0.0019, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2asv4-n4-1.csv
+Downloading events_500mb.csv (excluded from timer)...
+Replicating dataset to worker 20.192.5.116 (excluded from timer)...
+Replicating dataset to worker 20.198.115.40 (excluded from timer)...
+Replicating dataset to worker 20.192.6.64 (excluded from timer)...
+
+=== Standard_D2as_v4 | 4 nodes | 500MB | cpu | run 1 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2as_v4', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 4, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '500MB.csv', 'Dataset_Size_MB': 500, 'Workload': 'cpu', 'Run_Number': 1, 'Timestamp': '2026-07-23T02:24:56.315377+00:00', 'Runtime_Minutes': 0.3933, 'CPU_Avg_Pct': 74.34, 'Cost_USD': 0.0016, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2asv4-n4-1.csv
+
+=== Standard_D2as_v4 | 4 nodes | 500MB | cpu | run 2 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2as_v4', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 4, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '500MB.csv', 'Dataset_Size_MB': 500, 'Workload': 'cpu', 'Run_Number': 2, 'Timestamp': '2026-07-23T02:25:20.658779+00:00', 'Runtime_Minutes': 0.3834, 'CPU_Avg_Pct': 60.98, 'Cost_USD': 0.0016, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2asv4-n4-1.csv
+
+=== Standard_D2as_v4 | 4 nodes | 500MB | memory | run 1 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2as_v4', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 4, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '500MB.csv', 'Dataset_Size_MB': 500, 'Workload': 'memory', 'Run_Number': 1, 'Timestamp': '2026-07-23T02:25:57.024926+00:00', 'Runtime_Minutes': 0.5364, 'CPU_Avg_Pct': 48.76, 'Cost_USD': 0.0022, 'Exit_Status': 'SUCCESS'}
+Warning: Permanently added '20.192.5.116' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.198.115.40' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.192.6.64' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.192.5.116' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.192.5.116' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.198.115.40' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.198.115.40' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.192.6.64' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.192.6.64' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.192.5.116' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.198.115.40' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.192.6.64' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.192.5.116' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.192.5.116' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.198.115.40' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.198.115.40' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.192.6.64' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.192.6.64' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.192.5.116' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.198.115.40' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.192.6.64' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.192.5.116' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.192.5.116' (ED25519) to the list of known hosts.
+Uploaded results to results/results_bench-cin-d2asv4-n4-1.csv
+
+=== Standard_D2as_v4 | 4 nodes | 500MB | memory | run 2 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2as_v4', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 4, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '500MB.csv', 'Dataset_Size_MB': 500, 'Workload': 'memory', 'Run_Number': 2, 'Timestamp': '2026-07-23T02:26:33.559158+00:00', 'Runtime_Minutes': 0.5288, 'CPU_Avg_Pct': 49.03, 'Cost_USD': 0.0022, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2asv4-n4-1.csv
+
+=== Standard_D2as_v4 | 4 nodes | 500MB | io | run 1 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2as_v4', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 4, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '500MB.csv', 'Dataset_Size_MB': 500, 'Workload': 'io', 'Run_Number': 1, 'Timestamp': '2026-07-23T02:27:34.040171+00:00', 'Runtime_Minutes': 0.9391, 'CPU_Avg_Pct': 98.25, 'Cost_USD': 0.0039, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2asv4-n4-1.csv
+
+=== Standard_D2as_v4 | 4 nodes | 500MB | io | run 2 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2as_v4', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 4, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '500MB.csv', 'Dataset_Size_MB': 500, 'Workload': 'io', 'Run_Number': 2, 'Timestamp': '2026-07-23T02:28:34.782013+00:00', 'Runtime_Minutes': 0.9473, 'CPU_Avg_Pct': 97.73, 'Cost_USD': 0.0039, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2asv4-n4-1.csv
+Downloading events_1024mb.csv (excluded from timer)...
+Replicating dataset to worker 20.192.5.116 (excluded from timer)...
+Replicating dataset to worker 20.198.115.40 (excluded from timer)...
+Replicating dataset to worker 20.192.6.64 (excluded from timer)...
+
+=== Standard_D2as_v4 | 4 nodes | 1024MB | cpu | run 1 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2as_v4', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 4, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '1024MB.csv', 'Dataset_Size_MB': 1024, 'Workload': 'cpu', 'Run_Number': 1, 'Timestamp': '2026-07-23T02:29:43.584952+00:00', 'Runtime_Minutes': 0.5529, 'CPU_Avg_Pct': 41.77, 'Cost_USD': 0.0023, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2asv4-n4-1.csv
+
+=== Standard_D2as_v4 | 4 nodes | 1024MB | cpu | run 2 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2as_v4', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 4, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '1024MB.csv', 'Dataset_Size_MB': 1024, 'Workload': 'cpu', 'Run_Number': 2, 'Timestamp': '2026-07-23T02:30:19.959625+00:00', 'Runtime_Minutes': 0.5508, 'CPU_Avg_Pct': 42.47, 'Cost_USD': 0.0023, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2asv4-n4-1.csv
+
+=== Standard_D2as_v4 | 4 nodes | 1024MB | memory | run 1 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2as_v4', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 4, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '1024MB.csv', 'Dataset_Size_MB': 1024, 'Workload': 'memory', 'Run_Number': 1, 'Timestamp': '2026-07-23T02:31:14.358387+00:00', 'Runtime_Minutes': 0.82, 'CPU_Avg_Pct': 33.16, 'Cost_USD': 0.0034, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2asv4-n4-1.csv
+
+=== Standard_D2as_v4 | 4 nodes | 1024MB | memory | run 2 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2as_v4', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 4, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '1024MB.csv', 'Dataset_Size_MB': 1024, 'Workload': 'memory', 'Run_Number': 2, 'Timestamp': '2026-07-23T02:32:02.583169+00:00', 'Runtime_Minutes': 0.7677, 'CPU_Avg_Pct': 40.58, 'Cost_USD': 0.0032, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2asv4-n4-1.csv
+
+=== Standard_D2as_v4 | 4 nodes | 1024MB | io | run 1 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2as_v4', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 4, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '1024MB.csv', 'Dataset_Size_MB': 1024, 'Workload': 'io', 'Run_Number': 1, 'Timestamp': '2026-07-23T02:33:39.126191+00:00', 'Runtime_Minutes': 1.5325, 'CPU_Avg_Pct': 98.15, 'Cost_USD': 0.0064, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2asv4-n4-1.csv
+
+=== Standard_D2as_v4 | 4 nodes | 1024MB | io | run 2 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2as_v4', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 4, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '1024MB.csv', 'Dataset_Size_MB': 1024, 'Workload': 'io', 'Run_Number': 2, 'Timestamp': '2026-07-23T02:35:15.686840+00:00', 'Runtime_Minutes': 1.59, 'CPU_Avg_Pct': 97.42, 'Cost_USD': 0.0066, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2asv4-n4-1.csv
+Downloading events_2048.csv (excluded from timer)...
+Replicating dataset to worker 20.192.5.116 (excluded from timer)...
+Replicating dataset to worker 20.198.115.40 (excluded from timer)...
+Replicating dataset to worker 20.192.6.64 (excluded from timer)...
+
+=== Standard_D2as_v4 | 4 nodes | 2048MB | cpu | run 1 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2as_v4', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 4, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '2048MB.csv', 'Dataset_Size_MB': 2048, 'Workload': 'cpu', 'Run_Number': 1, 'Timestamp': '2026-07-23T02:37:10.666411+00:00', 'Runtime_Minutes': 0.691, 'CPU_Avg_Pct': 29.08, 'Cost_USD': 0.0029, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2asv4-n4-1.csv
+
+=== Standard_D2as_v4 | 4 nodes | 2048MB | cpu | run 2 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2as_v4', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 4, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '2048MB.csv', 'Dataset_Size_MB': 2048, 'Workload': 'cpu', 'Run_Number': 2, 'Timestamp': '2026-07-23T02:37:59.086968+00:00', 'Runtime_Minutes': 0.7172, 'CPU_Avg_Pct': 39.36, 'Cost_USD': 0.003, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2asv4-n4-1.csv
+
+=== Standard_D2as_v4 | 4 nodes | 2048MB | memory | run 1 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2as_v4', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 4, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '2048MB.csv', 'Dataset_Size_MB': 2048, 'Workload': 'memory', 'Run_Number': 1, 'Timestamp': '2026-07-23T02:39:05.522708+00:00', 'Runtime_Minutes': 1.0671, 'CPU_Avg_Pct': 24.84, 'Cost_USD': 0.0044, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2asv4-n4-1.csv
+
+=== Standard_D2as_v4 | 4 nodes | 2048MB | memory | run 2 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2as_v4', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 4, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '2048MB.csv', 'Dataset_Size_MB': 2048, 'Workload': 'memory', 'Run_Number': 2, 'Timestamp': '2026-07-23T02:40:12.131188+00:00', 'Runtime_Minutes': 1.05, 'CPU_Avg_Pct': 25.79, 'Cost_USD': 0.0044, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2asv4-n4-1.csv
+
+=== Standard_D2as_v4 | 4 nodes | 2048MB | io | run 1 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2as_v4', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 4, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '2048MB.csv', 'Dataset_Size_MB': 2048, 'Workload': 'io', 'Run_Number': 1, 'Timestamp': '2026-07-23T02:43:12.871348+00:00', 'Runtime_Minutes': 2.9252, 'CPU_Avg_Pct': 96.36, 'Cost_USD': 0.0121, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2asv4-n4-1.csv
+
+=== Standard_D2as_v4 | 4 nodes | 2048MB | io | run 2 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2as_v4', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 4, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '2048MB.csv', 'Dataset_Size_MB': 2048, 'Workload': 'io', 'Run_Number': 2, 'Timestamp': '2026-07-23T02:46:01.576297+00:00', 'Runtime_Minutes': 2.7182, 'CPU_Avg_Pct': 95.42, 'Cost_USD': 0.0113, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2asv4-n4-1.csv
+Downloading events_3072.csv (excluded from timer)...
+Replicating dataset to worker 20.192.5.116 (excluded from timer)...
+Warning: Permanently added '20.198.115.40' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.198.115.40' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.192.6.64' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.192.6.64' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.192.5.116' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.198.115.40' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.192.6.64' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.192.5.116' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.192.5.116' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.198.115.40' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.198.115.40' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.192.6.64' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.192.6.64' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.192.5.116' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.198.115.40' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.192.6.64' (ED25519) to the list of known hosts.
+Replicating dataset to worker 20.198.115.40 (excluded from timer)...
+Replicating dataset to worker 20.192.6.64 (excluded from timer)...
+
+=== Standard_D2as_v4 | 4 nodes | 3072MB | cpu | run 1 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2as_v4', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 4, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '3072MB.csv', 'Dataset_Size_MB': 3072, 'Workload': 'cpu', 'Run_Number': 1, 'Timestamp': '2026-07-23T02:49:01.895837+00:00', 'Runtime_Minutes': 0.844, 'CPU_Avg_Pct': 24.16, 'Cost_USD': 0.0035, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2asv4-n4-1.csv
+
+=== Standard_D2as_v4 | 4 nodes | 3072MB | cpu | run 2 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2as_v4', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 4, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '3072MB.csv', 'Dataset_Size_MB': 3072, 'Workload': 'cpu', 'Run_Number': 2, 'Timestamp': '2026-07-23T02:49:56.137254+00:00', 'Runtime_Minutes': 0.9002, 'CPU_Avg_Pct': 26.56, 'Cost_USD': 0.0037, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2asv4-n4-1.csv
+
+=== Standard_D2as_v4 | 4 nodes | 3072MB | memory | run 1 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2as_v4', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 4, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '3072MB.csv', 'Dataset_Size_MB': 3072, 'Workload': 'memory', 'Run_Number': 1, 'Timestamp': '2026-07-23T02:51:14.539494+00:00', 'Runtime_Minutes': 1.3007, 'CPU_Avg_Pct': 21.32, 'Cost_USD': 0.0054, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2asv4-n4-1.csv
+
+=== Standard_D2as_v4 | 4 nodes | 3072MB | memory | run 2 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2as_v4', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 4, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '3072MB.csv', 'Dataset_Size_MB': 3072, 'Workload': 'memory', 'Run_Number': 2, 'Timestamp': '2026-07-23T02:52:32.960942+00:00', 'Runtime_Minutes': 1.2928, 'CPU_Avg_Pct': 23.58, 'Cost_USD': 0.0054, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2asv4-n4-1.csv
+
+=== Standard_D2as_v4 | 4 nodes | 3072MB | io | run 1 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2as_v4', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 4, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '3072MB.csv', 'Dataset_Size_MB': 3072, 'Workload': 'io', 'Run_Number': 1, 'Timestamp': '2026-07-23T02:56:27.850560+00:00', 'Runtime_Minutes': 3.8753, 'CPU_Avg_Pct': 97.06, 'Cost_USD': 0.0161, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2asv4-n4-1.csv
+
+=== Standard_D2as_v4 | 4 nodes | 3072MB | io | run 2 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2as_v4', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 4, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '3072MB.csv', 'Dataset_Size_MB': 3072, 'Workload': 'io', 'Run_Number': 2, 'Timestamp': '2026-07-23T03:00:22.784227+00:00', 'Runtime_Minutes': 3.8224, 'CPU_Avg_Pct': 95.9, 'Cost_USD': 0.0159, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2asv4-n4-1.csv
+Downloading events_5120mb.csv (excluded from timer)...
+Replicating dataset to worker 20.192.5.116 (excluded from timer)...
+Replicating dataset to worker 20.198.115.40 (excluded from timer)...
+Replicating dataset to worker 20.192.6.64 (excluded from timer)...
+
+=== Standard_D2as_v4 | 4 nodes | 5120MB | cpu | run 1 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2as_v4', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 4, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '5120MB.csv', 'Dataset_Size_MB': 5120, 'Workload': 'cpu', 'Run_Number': 1, 'Timestamp': '2026-07-23T03:05:40.274725+00:00', 'Runtime_Minutes': 1.2262, 'CPU_Avg_Pct': 19.34, 'Cost_USD': 0.0051, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2asv4-n4-1.csv
+
+=== Standard_D2as_v4 | 4 nodes | 5120MB | cpu | run 2 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2as_v4', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 4, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '5120MB.csv', 'Dataset_Size_MB': 5120, 'Workload': 'cpu', 'Run_Number': 2, 'Timestamp': '2026-07-23T03:06:58.739151+00:00', 'Runtime_Minutes': 1.2663, 'CPU_Avg_Pct': 15.97, 'Cost_USD': 0.0053, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2asv4-n4-1.csv
+
+=== Standard_D2as_v4 | 4 nodes | 5120MB | memory | run 1 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2as_v4', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 4, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '5120MB.csv', 'Dataset_Size_MB': 5120, 'Workload': 'memory', 'Run_Number': 1, 'Timestamp': '2026-07-23T03:08:59.208205+00:00', 'Runtime_Minutes': 1.9953, 'CPU_Avg_Pct': 12.38, 'Cost_USD': 0.0083, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2asv4-n4-1.csv
+
+=== Standard_D2as_v4 | 4 nodes | 5120MB | memory | run 2 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2as_v4', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 4, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '5120MB.csv', 'Dataset_Size_MB': 5120, 'Workload': 'memory', 'Run_Number': 2, 'Timestamp': '2026-07-23T03:10:59.666065+00:00', 'Runtime_Minutes': 1.9945, 'CPU_Avg_Pct': 11.32, 'Cost_USD': 0.0083, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2asv4-n4-1.csv
+
+=== Standard_D2as_v4 | 4 nodes | 5120MB | io | run 1 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2as_v4', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 4, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '5120MB.csv', 'Dataset_Size_MB': 5120, 'Workload': 'io', 'Run_Number': 1, 'Timestamp': '2026-07-23T03:17:25.157974+00:00', 'Runtime_Minutes': 6.3119, 'CPU_Avg_Pct': 94.92, 'Cost_USD': 0.0262, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2asv4-n4-1.csv
+
+=== Standard_D2as_v4 | 4 nodes | 5120MB | io | run 2 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2as_v4', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 4, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '5120MB.csv', 'Dataset_Size_MB': 5120, 'Workload': 'io', 'Run_Number': 2, 'Timestamp': '2026-07-23T03:23:44.451450+00:00', 'Runtime_Minutes': 6.2357, 'CPU_Avg_Pct': 97.3, 'Cost_USD': 0.0259, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2asv4-n4-1.csv
+Uploaded results to results/results_bench-cin-d2asv4-n4-1.csv
+
+All runs complete for this cluster configuration.
+Deleting VMs for this combo...
+Combo done: centralindia / Standard_D2as_v4 / 4 nodes
+
+############################################################
+# centralindia | Standard_D4as_v4 | 2 nodes 
+############################################################
+Creating bench-cin-d4as_v4-n2-1...
+Creating bench-cin-d4as_v4-n2-2...
+Waiting for bench-cin-d4as_v4-n2-1 to finish provisioning...
+  bench-cin-d4as_v4-n2-1 -> 20.244.126.115
+Waiting for bench-cin-d4as_v4-n2-2 to finish provisioning...
+  bench-cin-d4as_v4-n2-2 -> 20.235.120.221
+  waiting for install on 20.244.126.115 (1/180)...
+  waiting for install on 20.244.126.115 (2/180)...
+  waiting for install on 20.244.126.115 (3/180)...
+  waiting for install on 20.244.126.115 (4/180)...
+  waiting for install on 20.244.126.115 (5/180)...
+  waiting for install on 20.244.126.115 (6/180)...
+  waiting for install on 20.244.126.115 (7/180)...
+  waiting for install on 20.244.126.115 (8/180)...
+  waiting for install on 20.244.126.115 (9/180)...
+  waiting for install on 20.244.126.115 (10/180)...
+  waiting for install on 20.244.126.115 (11/180)...
+  waiting for install on 20.244.126.115 (12/180)...
+  waiting for install on 20.244.126.115 (13/180)...
+  waiting for install on 20.244.126.115 (14/180)...
+  waiting for install on 20.244.126.115 (15/180)...
+  waiting for install on 20.244.126.115 (16/180)...
+  waiting for install on 20.244.126.115 (17/180)...
+  waiting for install on 20.244.126.115 (18/180)...
+  waiting for install on 20.244.126.115 (19/180)...
+  waiting for install on 20.244.126.115 (20/180)...
+  waiting for install on 20.244.126.115 (21/180)...
+  waiting for install on 20.244.126.115 (22/180)...
+  install finished on 20.244.126.115
+  install finished on 20.235.120.221
+Repairing /opt/benchmark permissions on all VMs...
+Warning: Permanently added '20.244.126.115' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.235.120.221' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.244.126.115' (ED25519) to the list of known hosts.
+starting org.apache.spark.deploy.master.Master, logging to /opt/spark/logs/spark-benchadmin-org.apache.spark.deploy.master.Master-1-bench-cin-d4asv4-n2-1.out
+Warning: Permanently added '20.235.120.221' (ED25519) to the list of known hosts.
+starting org.apache.spark.deploy.worker.Worker, logging to /opt/spark/logs/spark-benchadmin-org.apache.spark.deploy.worker.Worker-1-bench-cin-d4asv4-n2-2.out
+Cluster up: spark://10.0.0.18:7077 (2 nodes)
+Warning: Permanently added '20.244.126.115' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.244.126.115' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.244.126.115' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.235.120.221' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.235.120.221' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.235.120.221' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.235.120.221' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.235.120.221' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.235.120.221' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.235.120.221' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.235.120.221' (ED25519) to the list of known hosts.
+Downloading events_10mb.csv (excluded from timer)...
+Replicating dataset to worker 20.235.120.221 (excluded from timer)...
+
+=== Standard_D4as_v4 | 2 nodes | 10MB | cpu | run 1 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D4as_v4', 'vCPU': 4, 'RAM_GB': 16, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '10MB.csv', 'Dataset_Size_MB': 10, 'Workload': 'cpu', 'Run_Number': 1, 'Timestamp': '2026-07-23T03:32:05.440650+00:00', 'Runtime_Minutes': 0.185, 'CPU_Avg_Pct': 36.89, 'Cost_USD': 0.0008, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d4asv4-n2-1.csv
+
+=== Standard_D4as_v4 | 2 nodes | 10MB | cpu | run 2 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D4as_v4', 'vCPU': 4, 'RAM_GB': 16, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '10MB.csv', 'Dataset_Size_MB': 10, 'Workload': 'cpu', 'Run_Number': 2, 'Timestamp': '2026-07-23T03:32:17.790532+00:00', 'Runtime_Minutes': 0.1927, 'CPU_Avg_Pct': 38.77, 'Cost_USD': 0.0008, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d4asv4-n2-1.csv
+
+=== Standard_D4as_v4 | 2 nodes | 10MB | memory | run 1 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D4as_v4', 'vCPU': 4, 'RAM_GB': 16, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '10MB.csv', 'Dataset_Size_MB': 10, 'Workload': 'memory', 'Run_Number': 1, 'Timestamp': '2026-07-23T03:32:36.127075+00:00', 'Runtime_Minutes': 0.2514, 'CPU_Avg_Pct': 43.34, 'Cost_USD': 0.001, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d4asv4-n2-1.csv
+
+=== Standard_D4as_v4 | 2 nodes | 10MB | memory | run 2 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D4as_v4', 'vCPU': 4, 'RAM_GB': 16, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '10MB.csv', 'Dataset_Size_MB': 10, 'Workload': 'memory', 'Run_Number': 2, 'Timestamp': '2026-07-23T03:32:54.491696+00:00', 'Runtime_Minutes': 0.2511, 'CPU_Avg_Pct': 47.72, 'Cost_USD': 0.001, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d4asv4-n2-1.csv
+
+=== Standard_D4as_v4 | 2 nodes | 10MB | io | run 1 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D4as_v4', 'vCPU': 4, 'RAM_GB': 16, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '10MB.csv', 'Dataset_Size_MB': 10, 'Workload': 'io', 'Run_Number': 1, 'Timestamp': '2026-07-23T03:33:12.848150+00:00', 'Runtime_Minutes': 0.2245, 'CPU_Avg_Pct': 83.17, 'Cost_USD': 0.0009, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d4asv4-n2-1.csv
+
+=== Standard_D4as_v4 | 2 nodes | 10MB | io | run 2 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D4as_v4', 'vCPU': 4, 'RAM_GB': 16, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '10MB.csv', 'Dataset_Size_MB': 10, 'Workload': 'io', 'Run_Number': 2, 'Timestamp': '2026-07-23T03:33:32.220274+00:00', 'Runtime_Minutes': 0.2238, 'CPU_Avg_Pct': 81.87, 'Cost_USD': 0.0009, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d4asv4-n2-1.csv
+Downloading events_100mb.csv (excluded from timer)...
+Replicating dataset to worker 20.235.120.221 (excluded from timer)...
+
+=== Standard_D4as_v4 | 2 nodes | 100MB | cpu | run 1 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D4as_v4', 'vCPU': 4, 'RAM_GB': 16, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '100MB.csv', 'Dataset_Size_MB': 100, 'Workload': 'cpu', 'Run_Number': 1, 'Timestamp': '2026-07-23T03:33:52.779164+00:00', 'Runtime_Minutes': 0.2191, 'CPU_Avg_Pct': 40.04, 'Cost_USD': 0.0009, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d4asv4-n2-1.csv
+
+=== Standard_D4as_v4 | 2 nodes | 100MB | cpu | run 2 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D4as_v4', 'vCPU': 4, 'RAM_GB': 16, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '100MB.csv', 'Dataset_Size_MB': 100, 'Workload': 'cpu', 'Run_Number': 2, 'Timestamp': '2026-07-23T03:34:11.129323+00:00', 'Runtime_Minutes': 0.2189, 'CPU_Avg_Pct': 36.96, 'Cost_USD': 0.0009, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d4asv4-n2-1.csv
+
+=== Standard_D4as_v4 | 2 nodes | 100MB | memory | run 1 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D4as_v4', 'vCPU': 4, 'RAM_GB': 16, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '100MB.csv', 'Dataset_Size_MB': 100, 'Workload': 'memory', 'Run_Number': 1, 'Timestamp': '2026-07-23T03:34:35.473223+00:00', 'Runtime_Minutes': 0.3018, 'CPU_Avg_Pct': 21.66, 'Cost_USD': 0.0012, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d4asv4-n2-1.csv
+
+=== Standard_D4as_v4 | 2 nodes | 100MB | memory | run 2 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D4as_v4', 'vCPU': 4, 'RAM_GB': 16, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '100MB.csv', 'Dataset_Size_MB': 100, 'Workload': 'memory', 'Run_Number': 2, 'Timestamp': '2026-07-23T03:34:53.836966+00:00', 'Runtime_Minutes': 0.2936, 'CPU_Avg_Pct': 27.25, 'Cost_USD': 0.0012, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d4asv4-n2-1.csv
+
+=== Standard_D4as_v4 | 2 nodes | 100MB | io | run 1 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D4as_v4', 'vCPU': 4, 'RAM_GB': 16, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '100MB.csv', 'Dataset_Size_MB': 100, 'Workload': 'io', 'Run_Number': 1, 'Timestamp': '2026-07-23T03:35:18.202275+00:00', 'Runtime_Minutes': 0.3007, 'CPU_Avg_Pct': 60.69, 'Cost_USD': 0.0012, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d4asv4-n2-1.csv
+
+=== Standard_D4as_v4 | 2 nodes | 100MB | io | run 2 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D4as_v4', 'vCPU': 4, 'RAM_GB': 16, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '100MB.csv', 'Dataset_Size_MB': 100, 'Workload': 'io', 'Run_Number': 2, 'Timestamp': '2026-07-23T03:35:36.575351+00:00', 'Runtime_Minutes': 0.2913, 'CPU_Avg_Pct': 84.31, 'Cost_USD': 0.0012, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d4asv4-n2-1.csv
+Downloading events_500mb.csv (excluded from timer)...
+Replicating dataset to worker 20.235.120.221 (excluded from timer)...
+
+=== Standard_D4as_v4 | 2 nodes | 500MB | cpu | run 1 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D4as_v4', 'vCPU': 4, 'RAM_GB': 16, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '500MB.csv', 'Dataset_Size_MB': 500, 'Workload': 'cpu', 'Run_Number': 1, 'Timestamp': '2026-07-23T03:36:10.636872+00:00', 'Runtime_Minutes': 0.3259, 'CPU_Avg_Pct': 30.53, 'Cost_USD': 0.0013, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d4asv4-n2-1.csv
+
+=== Standard_D4as_v4 | 2 nodes | 500MB | cpu | run 2 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D4as_v4', 'vCPU': 4, 'RAM_GB': 16, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '500MB.csv', 'Dataset_Size_MB': 500, 'Workload': 'cpu', 'Run_Number': 2, 'Timestamp': '2026-07-23T03:36:34.987744+00:00', 'Runtime_Minutes': 0.3444, 'CPU_Avg_Pct': 22.02, 'Cost_USD': 0.0014, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d4asv4-n2-1.csv
+
+=== Standard_D4as_v4 | 2 nodes | 500MB | memory | run 1 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D4as_v4', 'vCPU': 4, 'RAM_GB': 16, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '500MB.csv', 'Dataset_Size_MB': 500, 'Workload': 'memory', 'Run_Number': 1, 'Timestamp': '2026-07-23T03:37:05.346186+00:00', 'Runtime_Minutes': 0.4605, 'CPU_Avg_Pct': 26.6, 'Cost_USD': 0.0019, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d4asv4-n2-1.csv
+
+=== Standard_D4as_v4 | 2 nodes | 500MB | memory | run 2 ===
+Warning: Permanently added '20.235.120.221' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.235.120.221' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.235.120.221' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.235.120.221' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.235.120.221' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.235.120.221' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.235.120.221' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.235.120.221' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.235.120.221' (ED25519) to the list of known hosts.
+{'Region': 'centralindia', 'VM_Size': 'Standard_D4as_v4', 'vCPU': 4, 'RAM_GB': 16, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '500MB.csv', 'Dataset_Size_MB': 500, 'Workload': 'memory', 'Run_Number': 2, 'Timestamp': '2026-07-23T03:37:35.914498+00:00', 'Runtime_Minutes': 0.493, 'CPU_Avg_Pct': 23.38, 'Cost_USD': 0.002, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d4asv4-n2-1.csv
+
+=== Standard_D4as_v4 | 2 nodes | 500MB | io | run 1 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D4as_v4', 'vCPU': 4, 'RAM_GB': 16, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '500MB.csv', 'Dataset_Size_MB': 500, 'Workload': 'io', 'Run_Number': 1, 'Timestamp': '2026-07-23T03:38:12.323873+00:00', 'Runtime_Minutes': 0.5252, 'CPU_Avg_Pct': 87.42, 'Cost_USD': 0.0022, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d4asv4-n2-1.csv
+
+=== Standard_D4as_v4 | 2 nodes | 500MB | io | run 2 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D4as_v4', 'vCPU': 4, 'RAM_GB': 16, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '500MB.csv', 'Dataset_Size_MB': 500, 'Workload': 'io', 'Run_Number': 2, 'Timestamp': '2026-07-23T03:38:48.765073+00:00', 'Runtime_Minutes': 0.5497, 'CPU_Avg_Pct': 79.92, 'Cost_USD': 0.0023, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d4asv4-n2-1.csv
+Downloading events_1024mb.csv (excluded from timer)...
+Replicating dataset to worker 20.235.120.221 (excluded from timer)...
+
+=== Standard_D4as_v4 | 2 nodes | 1024MB | cpu | run 1 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D4as_v4', 'vCPU': 4, 'RAM_GB': 16, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '1024MB.csv', 'Dataset_Size_MB': 1024, 'Workload': 'cpu', 'Run_Number': 1, 'Timestamp': '2026-07-23T03:39:44.426031+00:00', 'Runtime_Minutes': 0.5022, 'CPU_Avg_Pct': 18.34, 'Cost_USD': 0.0021, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d4asv4-n2-1.csv
+
+=== Standard_D4as_v4 | 2 nodes | 1024MB | cpu | run 2 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D4as_v4', 'vCPU': 4, 'RAM_GB': 16, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '1024MB.csv', 'Dataset_Size_MB': 1024, 'Workload': 'cpu', 'Run_Number': 2, 'Timestamp': '2026-07-23T03:40:14.779162+00:00', 'Runtime_Minutes': 0.4932, 'CPU_Avg_Pct': 56.93, 'Cost_USD': 0.002, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d4asv4-n2-1.csv
+
+=== Standard_D4as_v4 | 2 nodes | 1024MB | memory | run 1 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D4as_v4', 'vCPU': 4, 'RAM_GB': 16, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '1024MB.csv', 'Dataset_Size_MB': 1024, 'Workload': 'memory', 'Run_Number': 1, 'Timestamp': '2026-07-23T03:41:03.167355+00:00', 'Runtime_Minutes': 0.7192, 'CPU_Avg_Pct': 15.08, 'Cost_USD': 0.0029, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d4asv4-n2-1.csv
+
+=== Standard_D4as_v4 | 2 nodes | 1024MB | memory | run 2 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D4as_v4', 'vCPU': 4, 'RAM_GB': 16, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '1024MB.csv', 'Dataset_Size_MB': 1024, 'Workload': 'memory', 'Run_Number': 2, 'Timestamp': '2026-07-23T03:41:51.573245+00:00', 'Runtime_Minutes': 0.7266, 'CPU_Avg_Pct': 11.58, 'Cost_USD': 0.003, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d4asv4-n2-1.csv
+
+=== Standard_D4as_v4 | 2 nodes | 1024MB | io | run 1 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D4as_v4', 'vCPU': 4, 'RAM_GB': 16, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '1024MB.csv', 'Dataset_Size_MB': 1024, 'Workload': 'io', 'Run_Number': 1, 'Timestamp': '2026-07-23T03:42:54.121811+00:00', 'Runtime_Minutes': 0.9947, 'CPU_Avg_Pct': 89.99, 'Cost_USD': 0.0041, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d4asv4-n2-1.csv
+
+=== Standard_D4as_v4 | 2 nodes | 1024MB | io | run 2 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D4as_v4', 'vCPU': 4, 'RAM_GB': 16, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '1024MB.csv', 'Dataset_Size_MB': 1024, 'Workload': 'io', 'Run_Number': 2, 'Timestamp': '2026-07-23T03:43:48.608210+00:00', 'Runtime_Minutes': 0.8924, 'CPU_Avg_Pct': 83.61, 'Cost_USD': 0.0037, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d4asv4-n2-1.csv
+Downloading events_2048.csv (excluded from timer)...
+Replicating dataset to worker 20.235.120.221 (excluded from timer)...
+
+=== Standard_D4as_v4 | 2 nodes | 2048MB | cpu | run 1 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D4as_v4', 'vCPU': 4, 'RAM_GB': 16, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '2048MB.csv', 'Dataset_Size_MB': 2048, 'Workload': 'cpu', 'Run_Number': 1, 'Timestamp': '2026-07-23T03:45:27.444791+00:00', 'Runtime_Minutes': 0.9104, 'CPU_Avg_Pct': 35.74, 'Cost_USD': 0.0037, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d4asv4-n2-1.csv
+
+=== Standard_D4as_v4 | 2 nodes | 2048MB | cpu | run 2 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D4as_v4', 'vCPU': 4, 'RAM_GB': 16, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '2048MB.csv', 'Dataset_Size_MB': 2048, 'Workload': 'cpu', 'Run_Number': 2, 'Timestamp': '2026-07-23T03:46:15.858500+00:00', 'Runtime_Minutes': 0.768, 'CPU_Avg_Pct': 14.22, 'Cost_USD': 0.0031, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d4asv4-n2-1.csv
+
+=== Standard_D4as_v4 | 2 nodes | 2048MB | memory | run 1 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D4as_v4', 'vCPU': 4, 'RAM_GB': 16, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '2048MB.csv', 'Dataset_Size_MB': 2048, 'Workload': 'memory', 'Run_Number': 1, 'Timestamp': '2026-07-23T03:47:28.299923+00:00', 'Runtime_Minutes': 1.1877, 'CPU_Avg_Pct': 14.0, 'Cost_USD': 0.0049, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d4asv4-n2-1.csv
+
+=== Standard_D4as_v4 | 2 nodes | 2048MB | memory | run 2 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D4as_v4', 'vCPU': 4, 'RAM_GB': 16, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '2048MB.csv', 'Dataset_Size_MB': 2048, 'Workload': 'memory', 'Run_Number': 2, 'Timestamp': '2026-07-23T03:48:46.568349+00:00', 'Runtime_Minutes': 1.2035, 'CPU_Avg_Pct': 10.7, 'Cost_USD': 0.0049, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d4asv4-n2-1.csv
+
+=== Standard_D4as_v4 | 2 nodes | 2048MB | io | run 1 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D4as_v4', 'vCPU': 4, 'RAM_GB': 16, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '2048MB.csv', 'Dataset_Size_MB': 2048, 'Workload': 'io', 'Run_Number': 1, 'Timestamp': '2026-07-23T03:50:18.131288+00:00', 'Runtime_Minutes': 1.443, 'CPU_Avg_Pct': 90.71, 'Cost_USD': 0.0059, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d4asv4-n2-1.csv
+
+=== Standard_D4as_v4 | 2 nodes | 2048MB | io | run 2 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D4as_v4', 'vCPU': 4, 'RAM_GB': 16, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '2048MB.csv', 'Dataset_Size_MB': 2048, 'Workload': 'io', 'Run_Number': 2, 'Timestamp': '2026-07-23T03:51:48.748071+00:00', 'Runtime_Minutes': 1.4518, 'CPU_Avg_Pct': 90.62, 'Cost_USD': 0.006, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d4asv4-n2-1.csv
+Downloading events_3072.csv (excluded from timer)...
+Replicating dataset to worker 20.235.120.221 (excluded from timer)...
+
+=== Standard_D4as_v4 | 2 nodes | 3072MB | cpu | run 1 ===
+Warning: Permanently added '20.235.120.221' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.235.120.221' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.235.120.221' (ED25519) to the list of known hosts.
+{'Region': 'centralindia', 'VM_Size': 'Standard_D4as_v4', 'vCPU': 4, 'RAM_GB': 16, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '3072MB.csv', 'Dataset_Size_MB': 3072, 'Workload': 'cpu', 'Run_Number': 1, 'Timestamp': '2026-07-23T03:54:04.852943+00:00', 'Runtime_Minutes': 1.1207, 'CPU_Avg_Pct': 16.33, 'Cost_USD': 0.0046, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d4asv4-n2-1.csv
+
+=== Standard_D4as_v4 | 2 nodes | 3072MB | cpu | run 2 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D4as_v4', 'vCPU': 4, 'RAM_GB': 16, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '3072MB.csv', 'Dataset_Size_MB': 3072, 'Workload': 'cpu', 'Run_Number': 2, 'Timestamp': '2026-07-23T03:55:11.293841+00:00', 'Runtime_Minutes': 1.0533, 'CPU_Avg_Pct': 7.87, 'Cost_USD': 0.0043, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d4asv4-n2-1.csv
+
+=== Standard_D4as_v4 | 2 nodes | 3072MB | memory | run 1 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D4as_v4', 'vCPU': 4, 'RAM_GB': 16, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '3072MB.csv', 'Dataset_Size_MB': 3072, 'Workload': 'memory', 'Run_Number': 1, 'Timestamp': '2026-07-23T03:56:53.740896+00:00', 'Runtime_Minutes': 1.6194, 'CPU_Avg_Pct': 9.54, 'Cost_USD': 0.0066, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d4asv4-n2-1.csv
+
+=== Standard_D4as_v4 | 2 nodes | 3072MB | memory | run 2 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D4as_v4', 'vCPU': 4, 'RAM_GB': 16, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '3072MB.csv', 'Dataset_Size_MB': 3072, 'Workload': 'memory', 'Run_Number': 2, 'Timestamp': '2026-07-23T03:58:36.563644+00:00', 'Runtime_Minutes': 1.6031, 'CPU_Avg_Pct': 7.9, 'Cost_USD': 0.0066, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d4asv4-n2-1.csv
+
+=== Standard_D4as_v4 | 2 nodes | 3072MB | io | run 1 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D4as_v4', 'vCPU': 4, 'RAM_GB': 16, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '3072MB.csv', 'Dataset_Size_MB': 3072, 'Workload': 'io', 'Run_Number': 1, 'Timestamp': '2026-07-23T04:00:49.159556+00:00', 'Runtime_Minutes': 2.1523, 'CPU_Avg_Pct': 90.27, 'Cost_USD': 0.0088, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d4asv4-n2-1.csv
+
+=== Standard_D4as_v4 | 2 nodes | 3072MB | io | run 2 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D4as_v4', 'vCPU': 4, 'RAM_GB': 16, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '3072MB.csv', 'Dataset_Size_MB': 3072, 'Workload': 'io', 'Run_Number': 2, 'Timestamp': '2026-07-23T04:03:26.609235+00:00', 'Runtime_Minutes': 2.5536, 'CPU_Avg_Pct': 93.28, 'Cost_USD': 0.0105, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d4asv4-n2-1.csv
+Downloading events_5120mb.csv (excluded from timer)...
+Replicating dataset to worker 20.235.120.221 (excluded from timer)...
+
+=== Standard_D4as_v4 | 2 nodes | 5120MB | cpu | run 1 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D4as_v4', 'vCPU': 4, 'RAM_GB': 16, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '5120MB.csv', 'Dataset_Size_MB': 5120, 'Workload': 'cpu', 'Run_Number': 1, 'Timestamp': '2026-07-23T04:08:12.784266+00:00', 'Runtime_Minutes': 1.788, 'CPU_Avg_Pct': 12.08, 'Cost_USD': 0.0073, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d4asv4-n2-1.csv
+
+=== Standard_D4as_v4 | 2 nodes | 5120MB | cpu | run 2 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D4as_v4', 'vCPU': 4, 'RAM_GB': 16, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '5120MB.csv', 'Dataset_Size_MB': 5120, 'Workload': 'cpu', 'Run_Number': 2, 'Timestamp': '2026-07-23T04:09:49.327295+00:00', 'Runtime_Minutes': 1.5771, 'CPU_Avg_Pct': 5.79, 'Cost_USD': 0.0065, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d4asv4-n2-1.csv
+
+=== Standard_D4as_v4 | 2 nodes | 5120MB | memory | run 1 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D4as_v4', 'vCPU': 4, 'RAM_GB': 16, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '5120MB.csv', 'Dataset_Size_MB': 5120, 'Workload': 'memory', 'Run_Number': 1, 'Timestamp': '2026-07-23T04:12:25.854438+00:00', 'Runtime_Minutes': 2.5959, 'CPU_Avg_Pct': 3.52, 'Cost_USD': 0.0106, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d4asv4-n2-1.csv
+
+=== Standard_D4as_v4 | 2 nodes | 5120MB | memory | run 2 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D4as_v4', 'vCPU': 4, 'RAM_GB': 16, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '5120MB.csv', 'Dataset_Size_MB': 5120, 'Workload': 'memory', 'Run_Number': 2, 'Timestamp': '2026-07-23T04:15:02.425557+00:00', 'Runtime_Minutes': 2.5975, 'CPU_Avg_Pct': 4.41, 'Cost_USD': 0.0106, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d4asv4-n2-1.csv
+
+=== Standard_D4as_v4 | 2 nodes | 5120MB | io | run 1 ===
+Job failed: t org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:93)
+	at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:166)
+	at org.apache.spark.scheduler.Task.run(Task.scala:141)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$4(Executor.scala:620)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:64)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:61)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:94)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:623)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: java.lang.OutOfMemoryError: Java heap space
+26/07/23 04:17:49 INFO ShutdownHookManager: Shutdown hook called
+26/07/23 04:17:49 INFO ShutdownHookManager: Deleting directory /tmp/spark-28f6d56f-0a1f-4427-bfc1-2de905e7fae6/pyspark-cd3571f3-4060-4ea3-9bc4-2f262135f044
+26/07/23 04:17:49 INFO ShutdownHookManager: Deleting directory /tmp/spark-54716e6e-c7b0-4872-8bd1-3d36bb7129c2
+26/07/23 04:17:49 INFO ShutdownHookManager: Deleting directory /tmp/spark-28f6d56f-0a1f-4427-bfc1-2de905e7fae6
+26/07/23 04:17:49 INFO ShutdownHookManager: Deleting directory /tmp/spark-28f6d56f-0a1f-4427-bfc1-2de905e7fae6/userFiles-99d184a2-d529-44b5-b8d1-03ad93907102
+
+{'Region': 'centralindia', 'VM_Size': 'Standard_D4as_v4', 'vCPU': 4, 'RAM_GB': 16, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '5120MB.csv', 'Dataset_Size_MB': 5120, 'Workload': 'io', 'Run_Number': 1, 'Timestamp': '2026-07-23T04:17:51.114154+00:00', 'Runtime_Minutes': 2.7897, 'CPU_Avg_Pct': 97.05, 'Cost_USD': 0.0114, 'Exit_Status': 'FAILED'}
+Uploaded results to results/results_bench-cin-d4asv4-n2-1.csv
+
+=== Standard_D4as_v4 | 2 nodes | 5120MB | io | run 2 ===
+Job failed: Warning: Permanently added '20.235.120.221' (ED25519) to the list of known hosts.
+ter.scala:92)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.$anonfun$executeTask$1(FileFormatWriter.scala:403)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$$$Lambda$3740/0x00007ad844fd93c0.apply(Unknown Source)
+	at org.apache.spark.util.Utils$.tryWithSafeFinallyAndFailureCallbacks(Utils.scala:1397)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.executeTask(FileFormatWriter.scala:410)
+	at org.apache.spark.sql.execution.datasources.WriteFilesExec.$anonfun$doExecuteWrite$1(WriteFiles.scala:100)
+	at org.apache.spark.sql.execution.datasources.WriteFilesExec$$Lambda$3633/0x00007ad844fa0d80.apply(Unknown Source)
+
+Driver stacktrace:
+26/07/23 04:21:00 INFO MemoryStore: MemoryStore cleared
+26/07/23 04:21:00 INFO BlockManager: BlockManager stopped
+26/07/23 04:21:00 INFO BlockManagerMaster: BlockManagerMaster stopped
+26/07/23 04:21:00 INFO OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+26/07/23 04:21:00 INFO SparkContext: Successfully stopped SparkContext
+26/07/23 04:21:00 INFO ShutdownHookManager: Shutdown hook called
+26/07/23 04:21:00 INFO ShutdownHookManager: Deleting directory /tmp/spark-3afc283d-15a9-4253-b694-5fa4b6d7cd8a/pyspark-ccbc6d04-a15a-4ac0-9b4b-b089b6953149
+26/07/23 04:21:00 INFO ShutdownHookManager: Deleting directory /tmp/spark-54ae6b99-689d-4e57-a31b-bdf0858ae77b
+26/07/23 04:21:00 INFO ShutdownHookManager: Deleting directory /tmp/spark-3afc283d-15a9-4253-b694-5fa4b6d7cd8a
+
+{'Region': 'centralindia', 'VM_Size': 'Standard_D4as_v4', 'vCPU': 4, 'RAM_GB': 16, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '5120MB.csv', 'Dataset_Size_MB': 5120, 'Workload': 'io', 'Run_Number': 2, 'Timestamp': '2026-07-23T04:21:03.766770+00:00', 'Runtime_Minutes': 3.1569, 'CPU_Avg_Pct': 96.8, 'Cost_USD': 0.0129, 'Exit_Status': 'FAILED'}
+Uploaded results to results/results_bench-cin-d4asv4-n2-1.csv
+Uploaded results to results/results_bench-cin-d4asv4-n2-1.csv
+
+All runs complete for this cluster configuration.
+Deleting VMs for this combo...
+Combo done: centralindia / Standard_D4as_v4 / 2 nodes
+
+############################################################
+# centralindia | Standard_D4as_v4 | 4 nodes 
+############################################################
+SKIP: needs 16 vCPUs, DASv4 family cap in centralindia is 10.
+
+############################################################
+# centralindia | Standard_D2ds_v4 | 2 nodes 
+############################################################
+Creating bench-cin-d2ds_v4-n2-1...
+Creating bench-cin-d2ds_v4-n2-2...
+Waiting for bench-cin-d2ds_v4-n2-1 to finish provisioning...
+  bench-cin-d2ds_v4-n2-1 -> 40.80.90.38
+Waiting for bench-cin-d2ds_v4-n2-2 to finish provisioning...
+  bench-cin-d2ds_v4-n2-2 -> 20.235.127.42
+  waiting for install on 40.80.90.38 (1/180)...
+  waiting for install on 40.80.90.38 (2/180)...
+  waiting for install on 40.80.90.38 (3/180)...
+  waiting for install on 40.80.90.38 (4/180)...
+  waiting for install on 40.80.90.38 (5/180)...
+  waiting for install on 40.80.90.38 (6/180)...
+  waiting for install on 40.80.90.38 (7/180)...
+  waiting for install on 40.80.90.38 (8/180)...
+  waiting for install on 40.80.90.38 (9/180)...
+  waiting for install on 40.80.90.38 (10/180)...
+  waiting for install on 40.80.90.38 (11/180)...
+  waiting for install on 40.80.90.38 (12/180)...
+  waiting for install on 40.80.90.38 (13/180)...
+  waiting for install on 40.80.90.38 (14/180)...
+  waiting for install on 40.80.90.38 (15/180)...
+  waiting for install on 40.80.90.38 (16/180)...
+  waiting for install on 40.80.90.38 (17/180)...
+  waiting for install on 40.80.90.38 (18/180)...
+  waiting for install on 40.80.90.38 (19/180)...
+  waiting for install on 40.80.90.38 (20/180)...
+  waiting for install on 40.80.90.38 (21/180)...
+  waiting for install on 40.80.90.38 (22/180)...
+  waiting for install on 40.80.90.38 (23/180)...
+  waiting for install on 40.80.90.38 (24/180)...
+  waiting for install on 40.80.90.38 (25/180)...
+  waiting for install on 40.80.90.38 (26/180)...
+  waiting for install on 40.80.90.38 (27/180)...
+  waiting for install on 40.80.90.38 (28/180)...
+  waiting for install on 40.80.90.38 (29/180)...
+  waiting for install on 40.80.90.38 (30/180)...
+  waiting for install on 40.80.90.38 (31/180)...
+  waiting for install on 40.80.90.38 (32/180)...
+  waiting for install on 40.80.90.38 (33/180)...
+  waiting for install on 40.80.90.38 (34/180)...
+  waiting for install on 40.80.90.38 (35/180)...
+  waiting for install on 40.80.90.38 (36/180)...
+  waiting for install on 40.80.90.38 (37/180)...
+  waiting for install on 40.80.90.38 (38/180)...
+  waiting for install on 40.80.90.38 (39/180)...
+  waiting for install on 40.80.90.38 (40/180)...
+  waiting for install on 40.80.90.38 (41/180)...
+  waiting for install on 40.80.90.38 (42/180)...
+  waiting for install on 40.80.90.38 (43/180)...
+  waiting for install on 40.80.90.38 (44/180)...
+  waiting for install on 40.80.90.38 (45/180)...
+  waiting for install on 40.80.90.38 (46/180)...
+  waiting for install on 40.80.90.38 (47/180)...
+  waiting for install on 40.80.90.38 (48/180)...
+  waiting for install on 40.80.90.38 (49/180)...
+  waiting for install on 40.80.90.38 (50/180)...
+  waiting for install on 40.80.90.38 (51/180)...
+  waiting for install on 40.80.90.38 (52/180)...
+  waiting for install on 40.80.90.38 (53/180)...
+  waiting for install on 40.80.90.38 (54/180)...
+  waiting for install on 40.80.90.38 (55/180)...
+  waiting for install on 40.80.90.38 (56/180)...
+  waiting for install on 40.80.90.38 (57/180)...
+  waiting for install on 40.80.90.38 (58/180)...
+  waiting for install on 40.80.90.38 (59/180)...
+  waiting for install on 40.80.90.38 (60/180)...
+  waiting for install on 40.80.90.38 (61/180)...
+  waiting for install on 40.80.90.38 (62/180)...
+  waiting for install on 40.80.90.38 (63/180)...
+  waiting for install on 40.80.90.38 (64/180)...
+  waiting for install on 40.80.90.38 (65/180)...
+  waiting for install on 40.80.90.38 (66/180)...
+  waiting for install on 40.80.90.38 (67/180)...
+  waiting for install on 40.80.90.38 (68/180)...
+  waiting for install on 40.80.90.38 (69/180)...
+  waiting for install on 40.80.90.38 (70/180)...
+  waiting for install on 40.80.90.38 (71/180)...
+  waiting for install on 40.80.90.38 (72/180)...
+  waiting for install on 40.80.90.38 (73/180)...
+  waiting for install on 40.80.90.38 (74/180)...
+  waiting for install on 40.80.90.38 (75/180)...
+  waiting for install on 40.80.90.38 (76/180)...
+  waiting for install on 40.80.90.38 (77/180)...
+  waiting for install on 40.80.90.38 (78/180)...
+  waiting for install on 40.80.90.38 (79/180)...
+  waiting for install on 40.80.90.38 (80/180)...
+  waiting for install on 40.80.90.38 (81/180)...
+  waiting for install on 40.80.90.38 (82/180)...
+  install finished on 40.80.90.38
+  install finished on 20.235.127.42
+Repairing /opt/benchmark permissions on all VMs...
+Warning: Permanently added '40.80.90.38' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.235.127.42' (ED25519) to the list of known hosts.
+Warning: Permanently added '40.80.90.38' (ED25519) to the list of known hosts.
+starting org.apache.spark.deploy.master.Master, logging to /opt/spark/logs/spark-benchadmin-org.apache.spark.deploy.master.Master-1-bench-cin-d2dsv4-n2-1.out
+Warning: Permanently added '20.235.127.42' (ED25519) to the list of known hosts.
+starting org.apache.spark.deploy.worker.Worker, logging to /opt/spark/logs/spark-benchadmin-org.apache.spark.deploy.worker.Worker-1-bench-cin-d2dsv4-n2-2.out
+Cluster up: spark://10.0.0.20:7077 (2 nodes)
+Warning: Permanently added '40.80.90.38' (ED25519) to the list of known hosts.
+Warning: Permanently added '40.80.90.38' (ED25519) to the list of known hosts.
+Warning: Permanently added '40.80.90.38' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.235.127.42' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.235.127.42' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.235.127.42' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.235.127.42' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.235.127.42' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.235.127.42' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.235.127.42' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.235.127.42' (ED25519) to the list of known hosts.
+Downloading events_10mb.csv (excluded from timer)...
+Replicating dataset to worker 20.235.127.42 (excluded from timer)...
+
+=== Standard_D2ds_v4 | 2 nodes | 10MB | cpu | run 1 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2ds_v4', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '10MB.csv', 'Dataset_Size_MB': 10, 'Workload': 'cpu', 'Run_Number': 1, 'Timestamp': '2026-07-23T04:46:22.090119+00:00', 'Runtime_Minutes': 0.3014, 'CPU_Avg_Pct': 48.24, 'Cost_USD': 0.0012, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2dsv4-n2-1.csv
+
+=== Standard_D2ds_v4 | 2 nodes | 10MB | cpu | run 2 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2ds_v4', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '10MB.csv', 'Dataset_Size_MB': 10, 'Workload': 'cpu', 'Run_Number': 2, 'Timestamp': '2026-07-23T04:46:46.339182+00:00', 'Runtime_Minutes': 0.3074, 'CPU_Avg_Pct': 53.0, 'Cost_USD': 0.0013, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2dsv4-n2-1.csv
+
+=== Standard_D2ds_v4 | 2 nodes | 10MB | memory | run 1 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2ds_v4', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '10MB.csv', 'Dataset_Size_MB': 10, 'Workload': 'memory', 'Run_Number': 1, 'Timestamp': '2026-07-23T04:47:16.808878+00:00', 'Runtime_Minutes': 0.436, 'CPU_Avg_Pct': 61.82, 'Cost_USD': 0.0018, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2dsv4-n2-1.csv
+
+=== Standard_D2ds_v4 | 2 nodes | 10MB | memory | run 2 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2ds_v4', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '10MB.csv', 'Dataset_Size_MB': 10, 'Workload': 'memory', 'Run_Number': 2, 'Timestamp': '2026-07-23T04:47:47.195120+00:00', 'Runtime_Minutes': 0.4174, 'CPU_Avg_Pct': 53.96, 'Cost_USD': 0.0017, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2dsv4-n2-1.csv
+
+=== Standard_D2ds_v4 | 2 nodes | 10MB | io | run 1 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2ds_v4', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '10MB.csv', 'Dataset_Size_MB': 10, 'Workload': 'io', 'Run_Number': 1, 'Timestamp': '2026-07-23T04:48:11.596457+00:00', 'Runtime_Minutes': 0.3792, 'CPU_Avg_Pct': 96.09, 'Cost_USD': 0.0015, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2dsv4-n2-1.csv
+
+=== Standard_D2ds_v4 | 2 nodes | 10MB | io | run 2 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2ds_v4', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '10MB.csv', 'Dataset_Size_MB': 10, 'Workload': 'io', 'Run_Number': 2, 'Timestamp': '2026-07-23T04:48:35.980372+00:00', 'Runtime_Minutes': 0.3927, 'CPU_Avg_Pct': 95.46, 'Cost_USD': 0.0016, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2dsv4-n2-1.csv
+Downloading events_100mb.csv (excluded from timer)...
+Replicating dataset to worker 20.235.127.42 (excluded from timer)...
+
+=== Standard_D2ds_v4 | 2 nodes | 100MB | cpu | run 1 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2ds_v4', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '100MB.csv', 'Dataset_Size_MB': 100, 'Workload': 'cpu', 'Run_Number': 1, 'Timestamp': '2026-07-23T04:49:02.558149+00:00', 'Runtime_Minutes': 0.3684, 'CPU_Avg_Pct': 45.95, 'Cost_USD': 0.0015, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2dsv4-n2-1.csv
+
+=== Standard_D2ds_v4 | 2 nodes | 100MB | cpu | run 2 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2ds_v4', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '100MB.csv', 'Dataset_Size_MB': 100, 'Workload': 'cpu', 'Run_Number': 2, 'Timestamp': '2026-07-23T04:49:26.785415+00:00', 'Runtime_Minutes': 0.3663, 'CPU_Avg_Pct': 48.62, 'Cost_USD': 0.0015, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2dsv4-n2-1.csv
+
+=== Standard_D2ds_v4 | 2 nodes | 100MB | memory | run 1 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2ds_v4', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '100MB.csv', 'Dataset_Size_MB': 100, 'Workload': 'memory', 'Run_Number': 1, 'Timestamp': '2026-07-23T04:50:03.184682+00:00', 'Runtime_Minutes': 0.5332, 'CPU_Avg_Pct': 40.33, 'Cost_USD': 0.0022, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2dsv4-n2-1.csv
+
+=== Standard_D2ds_v4 | 2 nodes | 100MB | memory | run 2 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2ds_v4', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '100MB.csv', 'Dataset_Size_MB': 100, 'Workload': 'memory', 'Run_Number': 2, 'Timestamp': '2026-07-23T04:50:39.615911+00:00', 'Runtime_Minutes': 0.5453, 'CPU_Avg_Pct': 56.85, 'Cost_USD': 0.0022, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2dsv4-n2-1.csv
+
+=== Standard_D2ds_v4 | 2 nodes | 100MB | io | run 1 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2ds_v4', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '100MB.csv', 'Dataset_Size_MB': 100, 'Workload': 'io', 'Run_Number': 1, 'Timestamp': '2026-07-23T04:51:16.052362+00:00', 'Runtime_Minutes': 0.5207, 'CPU_Avg_Pct': 96.07, 'Cost_USD': 0.0021, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2dsv4-n2-1.csv
+
+=== Standard_D2ds_v4 | 2 nodes | 100MB | io | run 2 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2ds_v4', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '100MB.csv', 'Dataset_Size_MB': 100, 'Workload': 'io', 'Run_Number': 2, 'Timestamp': '2026-07-23T04:51:52.463573+00:00', 'Runtime_Minutes': 0.5298, 'CPU_Avg_Pct': 96.23, 'Cost_USD': 0.0022, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2dsv4-n2-1.csv
+Downloading events_500mb.csv (excluded from timer)...
+Replicating dataset to worker 20.235.127.42 (excluded from timer)...
+
+=== Standard_D2ds_v4 | 2 nodes | 500MB | cpu | run 1 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2ds_v4', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '500MB.csv', 'Dataset_Size_MB': 500, 'Workload': 'cpu', 'Run_Number': 1, 'Timestamp': '2026-07-23T04:52:44.451845+00:00', 'Runtime_Minutes': 0.6512, 'CPU_Avg_Pct': 32.34, 'Cost_USD': 0.0026, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2dsv4-n2-1.csv
+
+=== Standard_D2ds_v4 | 2 nodes | 500MB | cpu | run 2 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2ds_v4', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '500MB.csv', 'Dataset_Size_MB': 500, 'Workload': 'cpu', 'Run_Number': 2, 'Timestamp': '2026-07-23T04:53:26.707803+00:00', 'Runtime_Minutes': 0.6456, 'CPU_Avg_Pct': 26.99, 'Cost_USD': 0.0026, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2dsv4-n2-1.csv
+
+=== Standard_D2ds_v4 | 2 nodes | 500MB | memory | run 1 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2ds_v4', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '500MB.csv', 'Dataset_Size_MB': 500, 'Workload': 'memory', 'Run_Number': 1, 'Timestamp': '2026-07-23T04:54:33.335453+00:00', 'Runtime_Minutes': 1.0162, 'CPU_Avg_Pct': 27.21, 'Cost_USD': 0.0041, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2dsv4-n2-1.csv
+
+=== Standard_D2ds_v4 | 2 nodes | 500MB | memory | run 2 ===
+Warning: Permanently added '20.235.127.42' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.235.127.42' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.235.127.42' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.235.127.42' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.235.127.42' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.235.127.42' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.235.127.42' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.235.127.42' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.235.127.42' (ED25519) to the list of known hosts.
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2ds_v4', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '500MB.csv', 'Dataset_Size_MB': 500, 'Workload': 'memory', 'Run_Number': 2, 'Timestamp': '2026-07-23T04:55:39.801817+00:00', 'Runtime_Minutes': 1.0025, 'CPU_Avg_Pct': 24.12, 'Cost_USD': 0.0041, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2dsv4-n2-1.csv
+
+=== Standard_D2ds_v4 | 2 nodes | 500MB | io | run 1 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2ds_v4', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '500MB.csv', 'Dataset_Size_MB': 500, 'Workload': 'io', 'Run_Number': 1, 'Timestamp': '2026-07-23T04:56:52.154109+00:00', 'Runtime_Minutes': 1.1402, 'CPU_Avg_Pct': 98.66, 'Cost_USD': 0.0046, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2dsv4-n2-1.csv
+
+=== Standard_D2ds_v4 | 2 nodes | 500MB | io | run 2 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2ds_v4', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '500MB.csv', 'Dataset_Size_MB': 500, 'Workload': 'io', 'Run_Number': 2, 'Timestamp': '2026-07-23T04:58:04.646656+00:00', 'Runtime_Minutes': 1.165, 'CPU_Avg_Pct': 98.53, 'Cost_USD': 0.0047, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2dsv4-n2-1.csv
+Downloading events_1024mb.csv (excluded from timer)...
+Replicating dataset to worker 20.235.127.42 (excluded from timer)...
+
+=== Standard_D2ds_v4 | 2 nodes | 1024MB | cpu | run 1 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2ds_v4', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '1024MB.csv', 'Dataset_Size_MB': 1024, 'Workload': 'cpu', 'Run_Number': 1, 'Timestamp': '2026-07-23T04:59:36.472414+00:00', 'Runtime_Minutes': 1.1154, 'CPU_Avg_Pct': 20.01, 'Cost_USD': 0.0045, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2dsv4-n2-1.csv
+
+=== Standard_D2ds_v4 | 2 nodes | 1024MB | cpu | run 2 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2ds_v4', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '1024MB.csv', 'Dataset_Size_MB': 1024, 'Workload': 'cpu', 'Run_Number': 2, 'Timestamp': '2026-07-23T05:00:42.899113+00:00', 'Runtime_Minutes': 1.0172, 'CPU_Avg_Pct': 27.0, 'Cost_USD': 0.0041, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2dsv4-n2-1.csv
+
+=== Standard_D2ds_v4 | 2 nodes | 1024MB | memory | run 1 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2ds_v4', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '1024MB.csv', 'Dataset_Size_MB': 1024, 'Workload': 'memory', 'Run_Number': 1, 'Timestamp': '2026-07-23T05:02:19.488791+00:00', 'Runtime_Minutes': 1.5846, 'CPU_Avg_Pct': 14.87, 'Cost_USD': 0.0064, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2dsv4-n2-1.csv
+
+=== Standard_D2ds_v4 | 2 nodes | 1024MB | memory | run 2 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2ds_v4', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '1024MB.csv', 'Dataset_Size_MB': 1024, 'Workload': 'memory', 'Run_Number': 2, 'Timestamp': '2026-07-23T05:04:02.022313+00:00', 'Runtime_Minutes': 1.6227, 'CPU_Avg_Pct': 21.59, 'Cost_USD': 0.0066, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2dsv4-n2-1.csv
+
+=== Standard_D2ds_v4 | 2 nodes | 1024MB | io | run 1 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2ds_v4', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '1024MB.csv', 'Dataset_Size_MB': 1024, 'Workload': 'io', 'Run_Number': 1, 'Timestamp': '2026-07-23T05:06:08.674539+00:00', 'Runtime_Minutes': 2.0283, 'CPU_Avg_Pct': 96.99, 'Cost_USD': 0.0082, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2dsv4-n2-1.csv
+
+=== Standard_D2ds_v4 | 2 nodes | 1024MB | io | run 2 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2ds_v4', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '1024MB.csv', 'Dataset_Size_MB': 1024, 'Workload': 'io', 'Run_Number': 2, 'Timestamp': '2026-07-23T05:08:09.257620+00:00', 'Runtime_Minutes': 1.9708, 'CPU_Avg_Pct': 99.04, 'Cost_USD': 0.008, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2dsv4-n2-1.csv
+Downloading events_2048.csv (excluded from timer)...
+Replicating dataset to worker 20.235.127.42 (excluded from timer)...
+
+=== Standard_D2ds_v4 | 2 nodes | 2048MB | cpu | run 1 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2ds_v4', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '2048MB.csv', 'Dataset_Size_MB': 2048, 'Workload': 'cpu', 'Run_Number': 1, 'Timestamp': '2026-07-23T05:11:10.017409+00:00', 'Runtime_Minutes': 1.8497, 'CPU_Avg_Pct': 10.2, 'Cost_USD': 0.0075, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2dsv4-n2-1.csv
+
+=== Standard_D2ds_v4 | 2 nodes | 2048MB | cpu | run 2 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2ds_v4', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '2048MB.csv', 'Dataset_Size_MB': 2048, 'Workload': 'cpu', 'Run_Number': 2, 'Timestamp': '2026-07-23T05:13:04.342660+00:00', 'Runtime_Minutes': 1.8045, 'CPU_Avg_Pct': 11.42, 'Cost_USD': 0.0073, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2dsv4-n2-1.csv
+
+=== Standard_D2ds_v4 | 2 nodes | 2048MB | memory | run 1 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2ds_v4', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '2048MB.csv', 'Dataset_Size_MB': 2048, 'Workload': 'memory', 'Run_Number': 1, 'Timestamp': '2026-07-23T05:15:58.905535+00:00', 'Runtime_Minutes': 2.8786, 'CPU_Avg_Pct': 10.42, 'Cost_USD': 0.0117, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2dsv4-n2-1.csv
+
+=== Standard_D2ds_v4 | 2 nodes | 2048MB | memory | run 2 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2ds_v4', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '2048MB.csv', 'Dataset_Size_MB': 2048, 'Workload': 'memory', 'Run_Number': 2, 'Timestamp': '2026-07-23T05:18:53.491761+00:00', 'Runtime_Minutes': 2.8579, 'CPU_Avg_Pct': 8.37, 'Cost_USD': 0.0116, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2dsv4-n2-1.csv
+
+=== Standard_D2ds_v4 | 2 nodes | 2048MB | io | run 1 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2ds_v4', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '2048MB.csv', 'Dataset_Size_MB': 2048, 'Workload': 'io', 'Run_Number': 1, 'Timestamp': '2026-07-23T05:22:18.262189+00:00', 'Runtime_Minutes': 3.3641, 'CPU_Avg_Pct': 98.18, 'Cost_USD': 0.0137, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2dsv4-n2-1.csv
+
+=== Standard_D2ds_v4 | 2 nodes | 2048MB | io | run 2 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2ds_v4', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '2048MB.csv', 'Dataset_Size_MB': 2048, 'Workload': 'io', 'Run_Number': 2, 'Timestamp': '2026-07-23T05:25:49.455998+00:00', 'Runtime_Minutes': 3.4163, 'CPU_Avg_Pct': 96.66, 'Cost_USD': 0.0139, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2dsv4-n2-1.csv
+Downloading events_3072.csv (excluded from timer)...
+Replicating dataset to worker 20.235.127.42 (excluded from timer)...
+
+=== Standard_D2ds_v4 | 2 nodes | 3072MB | cpu | run 1 ===
+Read from remote host 40.80.90.38: Connection reset by peer
+client_loop: send disconnect: Broken pipe
+Deleting VMs for this combo...
+Combo done: centralindia / Standard_D2ds_v4 / 2 nodes
+
+############################################################
+# centralindia | Standard_D2ds_v4 | 4 nodes 
+############################################################
+Creating bench-cin-d2ds_v4-n4-1...
+ERROR: {"error":{"code":"InvalidTemplateDeployment","message":"The template deployment 'vm_deploy_QX7fgmbOPJHgqKEKo3jLx5iLZXw7RXN6' is not valid according to the validation procedure. The following resource provider(s) - 'Microsoft.Network/publicIPAddresses (2022-01-01)' reported preflight validation errors. Tracking id is '33ea8154-7cde-4f89-bfbd-2965a292000c'. See inner errors for details.","details":[{"code":"ResourceCountExceedsLimitDueToTemplate","message":"Subscription 63c94c0e-467b-44be-9821-3a8f21d2e8ab has a quota of 20 for resources of type PublicIpAddress with sku SkuNotSpecified. Subscription currently has 20 resources and the template contains 1 new resources of the this type which exceeds the quota. Please contact support to increase the quota for resource type PublicIpAddress","details":[]}]}}
+ERROR: az vm create request failed for bench-cin-d2ds_v4-n4-1
+Creating bench-cin-d2ds_v4-n4-2...
+ERROR: {"error":{"code":"InvalidTemplateDeployment","message":"The template deployment 'vm_deploy_iDxGDeRnIuExjJTBwcy132sBhx90JQaE' is not valid according to the validation procedure. The following resource provider(s) - 'Microsoft.Network/publicIPAddresses (2022-01-01)' reported preflight validation errors. Tracking id is 'a064cbc9-b3c1-4ee7-879b-b378a770ec60'. See inner errors for details.","details":[{"code":"ResourceCountExceedsLimitDueToTemplate","message":"Subscription 63c94c0e-467b-44be-9821-3a8f21d2e8ab has a quota of 20 for resources of type PublicIpAddress with sku SkuNotSpecified. Subscription currently has 20 resources and the template contains 1 new resources of the this type which exceeds the quota. Please contact support to increase the quota for resource type PublicIpAddress","details":[]}]}}
+ERROR: az vm create request failed for bench-cin-d2ds_v4-n4-2
+Creating bench-cin-d2ds_v4-n4-3...
+ERROR: {"error":{"code":"InvalidTemplateDeployment","message":"The template deployment 'vm_deploy_N11DpKEVezavYQNIVLZlIw1Bs44bDcbo' is not valid according to the validation procedure. The following resource provider(s) - 'Microsoft.Network/publicIPAddresses (2022-01-01)' reported preflight validation errors. Tracking id is '2ef0df91-ff9f-414e-bbdb-2dba883c550c'. See inner errors for details.","details":[{"code":"ResourceCountExceedsLimitDueToTemplate","message":"Subscription 63c94c0e-467b-44be-9821-3a8f21d2e8ab has a quota of 20 for resources of type PublicIpAddress with sku SkuNotSpecified. Subscription currently has 20 resources and the template contains 1 new resources of the this type which exceeds the quota. Please contact support to increase the quota for resource type PublicIpAddress","details":[]}]}}
+ERROR: az vm create request failed for bench-cin-d2ds_v4-n4-3
+Creating bench-cin-d2ds_v4-n4-4...
+ERROR: {"error":{"code":"InvalidTemplateDeployment","message":"The template deployment 'vm_deploy_a44uidgdOJ1WbtY3XtoZa7yv1CwmfEFt' is not valid according to the validation procedure. The following resource provider(s) - 'Microsoft.Network/publicIPAddresses (2022-01-01)' reported preflight validation errors. Tracking id is 'ada970bd-17ab-4571-a816-f706bc8c396d'. See inner errors for details.","details":[{"code":"ResourceCountExceedsLimitDueToTemplate","message":"Subscription 63c94c0e-467b-44be-9821-3a8f21d2e8ab has a quota of 20 for resources of type PublicIpAddress with sku SkuNotSpecified. Subscription currently has 20 resources and the template contains 1 new resources of the this type which exceeds the quota. Please contact support to increase the quota for resource type PublicIpAddress","details":[]}]}}
+ERROR: az vm create request failed for bench-cin-d2ds_v4-n4-4
+Waiting for bench-cin-d2ds_v4-n4-1 to finish provisioning...

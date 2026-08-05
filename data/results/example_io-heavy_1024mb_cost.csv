@@ -1,0 +1,6 @@
+Rank,Cloud,Region,Machine Type,Nodes,Predicted Runtime (minutes),Predicted Cost (USD),Carbon Intensity,Renewable Percentage,Optimization Score,Recommendation Reason
+1,Azure,Central India,Standard_D4as_v4,2,0.01,0.0,540.0,32.0,0.0,ranked by lowest predicted cost.
+2,Azure,Central India,Standard_D2as_v4,2,1.7356876257657736,0.0029556595360594705,540.0,32.0,0.09935040617127665,ranked by lowest predicted cost.
+3,AWS,ap-south-1,c5a.xlarge,2,1.8451586879012496,0.0055609095698913365,605.22265625,23.890625,0.18692228171415723,ranked by lowest predicted cost.
+4,Azure,Central India,Standard_D2s_v3,2,2.2244730951462164,0.007507933108915422,540.0,32.0,0.25236878428561826,ranked by lowest predicted cost.
+5,Azure,Central India,Standard_D2as_v4,4,1.6383382257450783,0.00823401348759238,540.0,32.0,0.2767749716879479,ranked by lowest predicted cost.

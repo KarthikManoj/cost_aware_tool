@@ -1,0 +1,6 @@
+Region,VM_Size,vCPU,RAM_GB,Nodes,Spark_Version,Java_Version,Dataset,Dataset_Size_MB,Workload,Run_Number,Timestamp,Runtime_Minutes,CPU_Avg_Pct,Cost_USD,Exit_Status
+centralindia,Standard_D4ds_v4,4,16,2,3.5.1,17.0.19,3072MB.csv,3072,cpu,1,2026-07-24T09:17:24.914360+00:00,1.4126,10.12,0.0115,SUCCESS
+centralindia,Standard_D4ds_v4,4,16,2,3.5.1,17.0.19,3072MB.csv,3072,cpu,2,2026-07-24T09:18:55.486536+00:00,1.4602,8.7,0.0119,SUCCESS
+centralindia,Standard_D4ds_v4,4,16,2,3.5.1,17.0.19,3072MB.csv,3072,memory,1,2026-07-24T09:21:20.004392+00:00,2.3773,7.4,0.0193,SUCCESS
+centralindia,Standard_D4ds_v4,4,16,2,3.5.1,17.0.19,3072MB.csv,3072,memory,2,2026-07-24T09:23:44.525515+00:00,2.3106,7.77,0.0188,SUCCESS
+centralindia,Standard_D4ds_v4,4,16,2,3.5.1,17.0.19,3072MB.csv,3072,io,1,2026-07-24T09:26:51.296507+00:00,3.0536,89.31,0.0248,SUCCESS

@@ -1,0 +1,29 @@
+Dataset: /sessions/peaceful-gracious-johnson/mnt/cost-aware-infrastructure-optimization/data/models/cloud_carbon_model_dataset.csv
+Rows: 1811  Scenarios: 21
+Models: Linear Regression, Decision Tree, Random Forest, Gradient Boosting
+
+                 method sla_level  scenarios  top1_accuracy  top3_hit_rate  mean_cost_regret_pct  median_cost_regret_pct  max_cost_regret_pct  mean_runtime_regret_pct  mean_carbon_regret_pct  sla_violation_rate  infeasible_rate
+model_linear_regression     tight         21         0.1905         0.4762              100.2261                 87.5000             453.8813                  37.4216                 55.1199              0.1429           0.0476
+model_linear_regression    medium         21         0.2857         0.7619               50.7079                 29.4118             216.3462                  50.0269                 71.7534              0.1905           0.0000
+model_linear_regression     loose         21         0.2857         0.9048               37.2006                 22.3744             150.2994                  76.0369                 97.7641              0.0476           0.0000
+    model_decision_tree     tight         21         0.8571         0.9048                9.6201                  0.0000             220.0000                  27.7769                 46.0432              0.0952           0.0000
+    model_decision_tree    medium         21         0.8571         0.9048               19.3751                  0.0000             414.6000                  35.9664                 56.5582              0.0952           0.0000
+    model_decision_tree     loose         21         0.9524         0.9524                1.0654                  0.0000              22.3744                  33.7866                 53.6856              0.0000           0.0000
+    model_random_forest     tight         21         0.8095         0.9048               16.5638                  0.0000             216.3462                  31.9062                 51.6310              0.1429           0.0476
+    model_random_forest    medium         21         0.9048         0.9048               -0.3677                  0.0000              22.3744                  33.7866                 53.6856              0.0952           0.0000
+    model_random_forest     loose         21         0.9524         0.9524                1.0654                  0.0000              22.3744                  33.7866                 53.6856              0.0000           0.0000
+model_gradient_boosting     tight         21         0.6190         0.7619               30.9382                  0.0000             214.8148                  26.2802                 44.1813              0.1429           0.0000
+model_gradient_boosting    medium         21         0.8571         0.9048                3.7139                  0.0000              85.7143                  33.6461                 53.5354              0.0952           0.0000
+model_gradient_boosting     loose         21         0.7619         0.9524                7.1289                  0.0000              85.7143                  54.0280                 75.6259              0.0000           0.0000
+        historical_mean     tight         21         0.5238         0.7143               52.0861                  0.0000             781.1966                  72.6481                 89.9951              0.3333           0.4286
+        historical_mean    medium         21         0.4286         0.7143               16.4294                  6.9444             100.0000                  72.9424                 92.7230              0.2381           0.3810
+        historical_mean     loose         21         0.4286         0.7143               37.4950                  7.9545             482.8696                  75.0258                 95.0035              0.0000           0.2857
+           nearest_size     tight         21         0.7619         0.9048                1.0661                  0.0000              74.7123                  44.4542                 65.9441              0.2381           0.0000
+           nearest_size    medium         21         0.8095         0.9524                0.4953                  0.0000              22.3744                  45.1183                 66.7260              0.1429           0.0000
+           nearest_size     loose         21         0.8571         0.9524                1.9285                  0.0000              22.3744                  45.1183                 66.7260              0.0000           0.0000
+        largest_cluster     tight         21         0.2857         0.3810               82.9584                 33.9473             781.1966                  22.5597                 38.2398              0.1429           0.4286
+        largest_cluster    medium         21         0.2857         0.3333               54.4304                 39.1304             137.8995                  22.1138                 39.3446              0.0952           0.3810
+        largest_cluster     loose         21         0.2857         0.2857               78.3070                 85.7143             482.8696                  28.7603                 46.7829              0.0000           0.2857
+                 random     tight         21         0.0000         0.0952              588.7717                430.6747            1985.4286                 140.4531                132.6472              0.3333           0.4286
+                 random    medium         21         0.0000         0.0476              520.9259                453.8813            1677.6316                 114.3260                112.0290              0.0952           0.3810
+                 random     loose         21         0.0000         0.0952              725.5585                531.5000            2539.7895                 127.6071                123.1012              0.0952           0.2857

@@ -1,0 +1,13 @@
+region,vm_size,nodes,status,note
+southeastasia,Standard_D2s_v3,2,SUCCESS,
+southeastasia,Standard_D2s_v3,4,FAILED,benchmark run error
+southeastasia,Standard_D4s_v3,2,FAILED,benchmark run error
+southeastasia,Standard_D4s_v3,4,FAILED,benchmark run error
+southeastasia,Standard_D2as_v4,2,FAILED,vm creation or provisioning error
+southeastasia,Standard_D2as_v4,4,FAILED,vm creation or provisioning error
+southeastasia,Standard_D4as_v4,2,FAILED,vm creation or provisioning error
+southeastasia,Standard_D4as_v4,4,SKIPPED,needs 16 vCPU > DASv4 cap 10
+southeastasia,Standard_D2ds_v4,2,FAILED,vm creation or provisioning error
+southeastasia,Standard_D2ds_v4,4,FAILED,vm creation or provisioning error
+southeastasia,Standard_D4ds_v4,2,FAILED,vm creation or provisioning error
+southeastasia,Standard_D4ds_v4,4,SKIPPED,needs 16 vCPU > DDSv4 cap 10

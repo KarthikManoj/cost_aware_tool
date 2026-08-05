@@ -1,0 +1,67 @@
+[
+  {
+    "Rank":1,
+    "Cloud":"Azure",
+    "Region":"Southeast Asia",
+    "Machine Type":"Standard_D2s_v3",
+    "Nodes":2,
+    "Predicted Runtime (minutes)":1.0101124618,
+    "Predicted Cost (USD)":0.0042113203,
+    "Carbon Intensity":479.62890625,
+    "Renewable Percentage":5.9921875,
+    "Optimization Score":0.25,
+    "Recommendation Reason":"ranked by lowest carbon intensity and higher renewable percentage."
+  },
+  {
+    "Rank":2,
+    "Cloud":"Azure",
+    "Region":"Southeast Asia",
+    "Machine Type":"Standard_D4s_v3",
+    "Nodes":2,
+    "Predicted Runtime (minutes)":0.6128740471,
+    "Predicted Cost (USD)":0.0051224761,
+    "Carbon Intensity":479.62890625,
+    "Renewable Percentage":5.9921875,
+    "Optimization Score":0.25,
+    "Recommendation Reason":"ranked by lowest carbon intensity and higher renewable percentage."
+  },
+  {
+    "Rank":3,
+    "Cloud":"Azure",
+    "Region":"Southeast Asia",
+    "Machine Type":"Standard_D2s_v3",
+    "Nodes":4,
+    "Predicted Runtime (minutes)":0.7006878949,
+    "Predicted Cost (USD)":0.005822846,
+    "Carbon Intensity":479.62890625,
+    "Renewable Percentage":5.9921875,
+    "Optimization Score":0.25,
+    "Recommendation Reason":"ranked by lowest carbon intensity and higher renewable percentage."
+  },
+  {
+    "Rank":4,
+    "Cloud":"AWS",
+    "Region":"ap-southeast-1",
+    "Machine Type":"c5a.xlarge",
+    "Nodes":2,
+    "Predicted Runtime (minutes)":1.1249366325,
+    "Predicted Cost (USD)":0.0067705282,
+    "Carbon Intensity":479.62890625,
+    "Renewable Percentage":5.9921875,
+    "Optimization Score":0.25,
+    "Recommendation Reason":"ranked by lowest carbon intensity and higher renewable percentage."
+  },
+  {
+    "Rank":5,
+    "Cloud":"AWS",
+    "Region":"ap-southeast-1",
+    "Machine Type":"c6i.xlarge",
+    "Nodes":2,
+    "Predicted Runtime (minutes)":1.0966160311,
+    "Predicted Cost (USD)":0.0072626946,
+    "Carbon Intensity":479.62890625,
+    "Renewable Percentage":5.9921875,
+    "Optimization Score":0.25,
+    "Recommendation Reason":"ranked by lowest carbon intensity and higher renewable percentage."
+  }
+]

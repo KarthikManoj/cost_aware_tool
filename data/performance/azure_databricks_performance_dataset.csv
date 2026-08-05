@@ -1,0 +1,6 @@
+cloud_provider,region,pricing_model,dataset_size_mb,workload_type,instance_type,nodes,runtime_minutes,cost_usd,cpu_avg_pct,memory_avg_pct,source
+Azure,centralindia,on-demand,10.0,cpu-heavy,Standard_D4ds_v4,1,6.283333,0.025552,,,azure-databricks:centralindia:325019263217994
+Azure,centralindia,on-demand,10.0,cpu-heavy,Standard_D4ds_v4,2,6.483333,0.052731,,,azure-databricks:centralindia:275179836268033
+Azure,centralindia,on-demand,10.0,cpu-heavy,Standard_D4ds_v4,4,6.583333,0.107089,,,azure-databricks:centralindia:196426403740933
+Azure,centralindia,on-demand,10.0,cpu-heavy,Standard_D4ds_v4,2,11.633333,0.094618,,,azure-databricks:centralindia:431778940389922
+Azure,centralindia,on-demand,10.0,cpu-heavy,Standard_D4ds_v4,4,6.55,0.106547,,,azure-databricks:centralindia:139113899055849

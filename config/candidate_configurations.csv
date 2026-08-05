@@ -1,0 +1,13 @@
+instance_type,nodes
+m5.xlarge,2
+m5.xlarge,4
+m5a.xlarge,2
+m5a.xlarge,4
+m6i.xlarge,2
+m6i.xlarge,4
+c5.xlarge,2
+c5.xlarge,4
+c5a.xlarge,2
+c5a.xlarge,4
+c6i.xlarge,2
+c6i.xlarge,4

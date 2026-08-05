@@ -1,0 +1,6 @@
+Rank,Cloud,Region,Machine Type,Nodes,Predicted Runtime (minutes),Predicted Cost (USD),Carbon Intensity,Renewable Percentage,Optimization Score,Recommendation Reason
+1,Azure,Southeast Asia,Standard_D2s_v3,2,1.0101124618292554,0.00421132026982924,479.62890625,5.9921875,0.25,ranked by lowest carbon intensity and higher renewable percentage.
+2,Azure,Southeast Asia,Standard_D4s_v3,2,0.6128740471139971,0.0051224761216561235,479.62890625,5.9921875,0.25,ranked by lowest carbon intensity and higher renewable percentage.
+3,Azure,Southeast Asia,Standard_D2s_v3,4,0.7006878948751254,0.005822845969585971,479.62890625,5.9921875,0.25,ranked by lowest carbon intensity and higher renewable percentage.
+4,AWS,ap-southeast-1,c5a.xlarge,2,1.124936632476191,0.0067705282333333505,479.62890625,5.9921875,0.25,ranked by lowest carbon intensity and higher renewable percentage.
+5,AWS,ap-southeast-1,c6i.xlarge,2,1.096616031111114,0.007262694600000022,479.62890625,5.9921875,0.25,ranked by lowest carbon intensity and higher renewable percentage.

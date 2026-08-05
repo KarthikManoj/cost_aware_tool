@@ -1,0 +1,181 @@
+{
+  "linear_regression": {
+    "runtime_minutes": {
+      "mae": {
+        "mean": 0.5745,
+        "std": 0.0316
+      },
+      "rmse": {
+        "mean": 0.8888,
+        "std": 0.1191
+      },
+      "r2": {
+        "mean": 0.6833,
+        "std": 0.0308
+      }
+    },
+    "cost_usd": {
+      "mae": {
+        "mean": 0.0043,
+        "std": 0.0001
+      },
+      "rmse": {
+        "mean": 0.0068,
+        "std": 0.0009
+      },
+      "r2": {
+        "mean": 0.7201,
+        "std": 0.0227
+      }
+    },
+    "folds": 5
+  },
+  "decision_tree": {
+    "runtime_minutes": {
+      "mae": {
+        "mean": 0.3344,
+        "std": 0.028
+      },
+      "rmse": {
+        "mean": 0.6222,
+        "std": 0.0856
+      },
+      "r2": {
+        "mean": 0.834,
+        "std": 0.0789
+      }
+    },
+    "cost_usd": {
+      "mae": {
+        "mean": 0.0029,
+        "std": 0.0002
+      },
+      "rmse": {
+        "mean": 0.0055,
+        "std": 0.0005
+      },
+      "r2": {
+        "mean": 0.8078,
+        "std": 0.0596
+      }
+    },
+    "folds": 5
+  },
+  "random_forest": {
+    "runtime_minutes": {
+      "mae": {
+        "mean": 0.2696,
+        "std": 0.0273
+      },
+      "rmse": {
+        "mean": 0.5091,
+        "std": 0.1013
+      },
+      "r2": {
+        "mean": 0.8891,
+        "std": 0.0558
+      }
+    },
+    "cost_usd": {
+      "mae": {
+        "mean": 0.0024,
+        "std": 0.0004
+      },
+      "rmse": {
+        "mean": 0.0042,
+        "std": 0.001
+      },
+      "r2": {
+        "mean": 0.8904,
+        "std": 0.0336
+      }
+    },
+    "folds": 5
+  },
+  "gradient_boosting": {
+    "runtime_minutes": {
+      "mae": {
+        "mean": 0.2849,
+        "std": 0.0235
+      },
+      "rmse": {
+        "mean": 0.5268,
+        "std": 0.1056
+      },
+      "r2": {
+        "mean": 0.8847,
+        "std": 0.0424
+      }
+    },
+    "cost_usd": {
+      "mae": {
+        "mean": 0.0025,
+        "std": 0.0004
+      },
+      "rmse": {
+        "mean": 0.0046,
+        "std": 0.0012
+      },
+      "r2": {
+        "mean": 0.874,
+        "std": 0.0388
+      }
+    },
+    "folds": 5
+  }
+}
+====================================================
+Model Comparison
+====================================================
+
+Linear Regression
+Runtime:
+MAE: 0.5562
+RMSE: 0.8366
+R2: 0.6882
+
+Cost:
+MAE: 0.0043
+RMSE: 0.0063
+R2: 0.7326
+
+Decision Tree
+Runtime:
+MAE: 0.356
+RMSE: 0.643
+R2: 0.8158
+
+Cost:
+MAE: 0.0028
+RMSE: 0.0052
+R2: 0.8185
+
+Random Forest
+Runtime:
+MAE: 0.2688
+RMSE: 0.479
+R2: 0.8978
+
+Cost:
+MAE: 0.0024
+RMSE: 0.004
+R2: 0.8935
+
+Gradient Boosting
+Runtime:
+MAE: 0.2603
+RMSE: 0.4736
+R2: 0.9001
+
+Cost:
+MAE: 0.0023
+RMSE: 0.0036
+R2: 0.915
+
+Best Model:
+Gradient Boosting
+
+Reason:
+Highest overall R2 with lowest RMSE (average R2=0.9076, average RMSE=0.2386).
+
+====================================================

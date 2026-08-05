@@ -1,0 +1,416 @@
+Starting 2048MB cpu-heavy on m6i.xlarge x 4 in ap-southeast-1
+{
+  "JobFlowId": "j-54QFW4QV0UJX",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-54QFW4QV0UJX",
+  "ResponseMetadata": {
+    "RequestId": "49965509-983e-4c2d-9826-d1236667dd28",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "49965509-983e-4c2d-9826-d1236667dd28",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "121",
+      "date": "Fri, 24 Jul 2026 07:19:53 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-54QFW4QV0UJX step s-0927682S1F2F1J2NJ1I is PENDING
+j-54QFW4QV0UJX step s-0927682S1F2F1J2NJ1I is CANCELLED
+j-54QFW4QV0UJX cluster is TERMINATED_WITH_ERRORS
+STEP FAILED: j-54QFW4QV0UJX s-0927682S1F2F1J2NJ1I ended as CANCELLED: {'State': 'CANCELLED', 'StateChangeReason': {'Message': 'Cluster terminated'}, 'Timeline': {'CreationDateTime': datetime.datetime(2026, 7, 24, 12, 49, 53, 212000, tzinfo=tzlocal())}} | cluster_reason={'Code': 'VALIDATION_ERROR', 'Message': 'The subnet configuration was invalid: The subnet subnet-0790d25ecc4deae64 does not exist.'} | error_details=[]
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Skipping completed 10MB memory-heavy m5a.xlarge x 2 in ap-southeast-1
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Skipping completed 10MB io-heavy c6i.xlarge x 2 in ap-southeast-1
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Skipping completed 10MB io-heavy m5a.xlarge x 2 in ap-southeast-1
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Skipping completed 2048MB cpu-heavy c5.xlarge x 4 in ap-southeast-1
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Skipping completed 10MB memory-heavy c5a.xlarge x 2 in ap-southeast-1
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Skipping completed 10MB memory-heavy m5a.xlarge x 4 in ap-southeast-1
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Skipping completed 10MB io-heavy m5.xlarge x 2 in ap-southeast-1
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Skipping completed 500MB io-heavy m5a.xlarge x 4 in ap-southeast-1
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Skipping completed 10MB memory-heavy m5.xlarge x 4 in ap-southeast-1
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Skipping completed 1024MB io-heavy m5.xlarge x 4 in ap-southeast-1
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Skipping completed 10MB cpu-heavy c6i.xlarge x 4 in ap-southeast-1
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Skipping completed 10MB io-heavy m5.xlarge x 2 in ap-southeast-1
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Skipping completed 100MB cpu-heavy c5.xlarge x 4 in ap-southeast-1
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Skipping completed 10MB io-heavy c5.xlarge x 2 in ap-southeast-1
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Skipping completed 10MB io-heavy m5a.xlarge x 4 in ap-southeast-1
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Skipping completed 500MB memory-heavy c5a.xlarge x 2 in ap-southeast-1
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Skipping completed 500MB memory-heavy m6i.xlarge x 2 in ap-southeast-1
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Skipping completed 10MB cpu-heavy c6i.xlarge x 4 in ap-southeast-1
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Skipping completed 10MB memory-heavy c6i.xlarge x 4 in ap-southeast-1
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Skipping completed 3072MB io-heavy c5a.xlarge x 4 in ap-southeast-1
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Skipping completed 1024MB cpu-heavy c5a.xlarge x 2 in ap-southeast-1
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Skipping completed 10MB memory-heavy c5.xlarge x 4 in ap-southeast-1
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Skipping completed 100MB cpu-heavy c6i.xlarge x 2 in ap-southeast-1
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Skipping completed 10MB memory-heavy m5.xlarge x 4 in ap-southeast-1
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Skipping completed 10MB cpu-heavy m5.xlarge x 4 in ap-southeast-1
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Skipping completed 10MB cpu-heavy c5a.xlarge x 4 in ap-southeast-1
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Skipping completed 10MB memory-heavy m5.xlarge x 4 in ap-southeast-1
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Skipping completed 10MB io-heavy c6i.xlarge x 4 in ap-southeast-1
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Skipping completed 500MB cpu-heavy c5a.xlarge x 2 in ap-southeast-1
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Skipping completed 100MB memory-heavy m6i.xlarge x 4 in ap-southeast-1
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Skipping completed 100MB io-heavy c5.xlarge x 2 in ap-southeast-1
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Skipping completed 500MB io-heavy m6i.xlarge x 2 in ap-southeast-1
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Skipping completed 100MB io-heavy m6i.xlarge x 2 in ap-southeast-1
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Skipping completed 10MB memory-heavy m5.xlarge x 4 in ap-southeast-1
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Skipping completed 10MB memory-heavy c6i.xlarge x 2 in ap-southeast-1
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Skipping completed 10MB memory-heavy m5.xlarge x 2 in ap-southeast-1
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Skipping completed 10MB cpu-heavy c5.xlarge x 2 in ap-southeast-1
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Skipping completed 10MB io-heavy c6i.xlarge x 2 in ap-southeast-1
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Starting 3072MB cpu-heavy on m6i.xlarge x 4 in ap-southeast-1
+{
+  "JobFlowId": "j-1V5PQ1U5OA22Y",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-1V5PQ1U5OA22Y",
+  "ResponseMetadata": {
+    "RequestId": "524bc928-4331-4f19-bb4b-7e2ad246c731",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "524bc928-4331-4f19-bb4b-7e2ad246c731",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Fri, 24 Jul 2026 07:21:02 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-1V5PQ1U5OA22Y step s-0929607IXJWYMCNUUXM is PENDING
+j-1V5PQ1U5OA22Y step s-0929607IXJWYMCNUUXM is CANCELLED
+j-1V5PQ1U5OA22Y cluster is TERMINATED_WITH_ERRORS
+STEP FAILED: j-1V5PQ1U5OA22Y s-0929607IXJWYMCNUUXM ended as CANCELLED: {'State': 'CANCELLED', 'StateChangeReason': {'Message': 'Cluster terminated'}, 'Timeline': {'CreationDateTime': datetime.datetime(2026, 7, 24, 12, 51, 2, 111000, tzinfo=tzlocal())}} | cluster_reason={'Code': 'VALIDATION_ERROR', 'Message': 'The subnet configuration was invalid: The subnet subnet-0790d25ecc4deae64 does not exist.'} | error_details=[]
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Skipping completed 100MB memory-heavy m5a.xlarge x 4 in ap-southeast-1
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Skipping completed 500MB cpu-heavy c5a.xlarge x 4 in ap-southeast-1
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Skipping completed 100MB memory-heavy c6i.xlarge x 4 in ap-southeast-1
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Skipping completed 1024MB memory-heavy m5.xlarge x 2 in ap-southeast-1
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Skipping completed 1024MB io-heavy m6i.xlarge x 2 in ap-southeast-1
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Starting 2048MB memory-heavy on m6i.xlarge x 4 in ap-southeast-1
+{
+  "JobFlowId": "j-4ML1O2Q9T02L",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-4ML1O2Q9T02L",
+  "ResponseMetadata": {
+    "RequestId": "c7174e2a-1b4c-42d0-a14e-6448750a9960",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "c7174e2a-1b4c-42d0-a14e-6448750a9960",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "121",
+      "date": "Fri, 24 Jul 2026 07:36:39 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-4ML1O2Q9T02L step s-09271243QPBAOYF4NT0H is PENDING
+j-4ML1O2Q9T02L step s-09271243QPBAOYF4NT0H is CANCELLED
+j-4ML1O2Q9T02L cluster is TERMINATED_WITH_ERRORS
+STEP FAILED: j-4ML1O2Q9T02L s-09271243QPBAOYF4NT0H ended as CANCELLED: {'State': 'CANCELLED', 'StateChangeReason': {'Message': 'Cluster terminated'}, 'Timeline': {'CreationDateTime': datetime.datetime(2026, 7, 24, 13, 6, 39, 822000, tzinfo=tzlocal())}} | cluster_reason={'Code': 'VALIDATION_ERROR', 'Message': 'The subnet configuration was invalid: The subnet subnet-0790d25ecc4deae64 does not exist.'} | error_details=[]
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+bash: line 1: b: command not found
+Starting 1024MB io-heavy on m6i.xlarge x 2 in ap-southeast-1
+{
+  "JobFlowId": "j-CDI5UOZHA6NM",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-CDI5UOZHA6NM",
+  "ResponseMetadata": {
+    "RequestId": "4da05198-a704-4629-a6d2-b23923f8baf9",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "4da05198-a704-4629-a6d2-b23923f8baf9",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "121",
+      "date": "Fri, 24 Jul 2026 07:37:12 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-CDI5UOZHA6NM step s-09306922P7MORD3M3PHX is PENDING
+j-CDI5UOZHA6NM step s-09306922P7MORD3M3PHX is CANCELLED
+j-CDI5UOZHA6NM cluster is TERMINATED_WITH_ERRORS
+STEP FAILED: j-CDI5UOZHA6NM s-09306922P7MORD3M3PHX ended as CANCELLED: {'State': 'CANCELLED', 'StateChangeReason': {'Message': 'Cluster terminated'}, 'Timeline': {'CreationDateTime': datetime.datetime(2026, 7, 24, 13, 7, 12, 231000, tzinfo=tzlocal())}} | cluster_reason={'Code': 'VALIDATION_ERROR', 'Message': 'The subnet configuration was invalid: The subnet subnet-0790d25ecc4deae64 does not exist.'} | error_details=[]
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Starting 2048MB memory-heavy on m6i.xlarge x 4 in ap-southeast-1
+{
+  "JobFlowId": "j-3NQ8S0D1NEYTA",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-3NQ8S0D1NEYTA",
+  "ResponseMetadata": {
+    "RequestId": "cfe97db6-35d3-4c80-bee5-eb858e3b2fd4",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "cfe97db6-35d3-4c80-bee5-eb858e3b2fd4",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Fri, 24 Jul 2026 07:37:45 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-3NQ8S0D1NEYTA step s-09218873EKH5JKD7TLRT is PENDING
+j-3NQ8S0D1NEYTA step s-09218873EKH5JKD7TLRT is CANCELLED
+j-3NQ8S0D1NEYTA cluster is TERMINATED_WITH_ERRORS
+STEP FAILED: j-3NQ8S0D1NEYTA s-09218873EKH5JKD7TLRT ended as CANCELLED: {'State': 'CANCELLED', 'StateChangeReason': {'Message': 'Cluster terminated'}, 'Timeline': {'CreationDateTime': datetime.datetime(2026, 7, 24, 13, 7, 45, 812000, tzinfo=tzlocal())}} | cluster_reason={'Code': 'VALIDATION_ERROR', 'Message': 'The subnet configuration was invalid: The subnet subnet-0790d25ecc4deae64 does not exist.'} | error_details=[]
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Starting 10MB io-heavy on c6i.xlarge x 4 in ap-southeast-1
+{
+  "JobFlowId": "j-2CWEH9LID4AAS",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-2CWEH9LID4AAS",
+  "ResponseMetadata": {
+    "RequestId": "c0ee0c67-3b4f-4344-8cc6-3443913160fa",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "c0ee0c67-3b4f-4344-8cc6-3443913160fa",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Fri, 24 Jul 2026 07:38:18 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-2CWEH9LID4AAS step s-09332091JMI24WP8GI4B is PENDING
+j-2CWEH9LID4AAS step s-09332091JMI24WP8GI4B is CANCELLED
+j-2CWEH9LID4AAS cluster is TERMINATED_WITH_ERRORS
+STEP FAILED: j-2CWEH9LID4AAS s-09332091JMI24WP8GI4B ended as CANCELLED: {'State': 'CANCELLED', 'StateChangeReason': {'Message': 'Cluster terminated'}, 'Timeline': {'CreationDateTime': datetime.datetime(2026, 7, 24, 13, 8, 17, 952000, tzinfo=tzlocal())}} | cluster_reason={'Code': 'VALIDATION_ERROR', 'Message': 'The subnet configuration was invalid: The subnet subnet-0790d25ecc4deae64 does not exist.'} | error_details=[]
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Starting 100MB io-heavy on m5.xlarge x 4 in ap-southeast-1
+{
+  "JobFlowId": "j-1G5VHJ8LJLMEY",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-1G5VHJ8LJLMEY",
+  "ResponseMetadata": {
+    "RequestId": "a887c199-f077-4379-98f9-99bc876b97b0",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "a887c199-f077-4379-98f9-99bc876b97b0",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Fri, 24 Jul 2026 07:42:57 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-1G5VHJ8LJLMEY step s-068321535J31BSMVL92V is PENDING
+j-1G5VHJ8LJLMEY step s-068321535J31BSMVL92V is CANCELLED
+j-1G5VHJ8LJLMEY cluster is TERMINATED_WITH_ERRORS
+STEP FAILED: j-1G5VHJ8LJLMEY s-068321535J31BSMVL92V ended as CANCELLED: {'State': 'CANCELLED', 'StateChangeReason': {'Message': 'Cluster terminated'}, 'Timeline': {'CreationDateTime': datetime.datetime(2026, 7, 24, 13, 12, 57, 504000, tzinfo=tzlocal())}} | cluster_reason={'Code': 'VALIDATION_ERROR', 'Message': 'The subnet configuration was invalid: The subnet subnet-0790d25ecc4deae64 does not exist.'} | error_details=[]
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Starting 500MB cpu-heavy on m5.xlarge x 2 in ap-southeast-1
+{
+  "JobFlowId": "j-OCZ90M63BFZE",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-OCZ90M63BFZE",
+  "ResponseMetadata": {
+    "RequestId": "90de1e33-f8b5-4dbe-85cf-0003f35ff8bb",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "90de1e33-f8b5-4dbe-85cf-0003f35ff8bb",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "121",
+      "date": "Fri, 24 Jul 2026 07:45:35 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-OCZ90M63BFZE step s-040469132N5HLW1UMB19 is PENDING
+j-OCZ90M63BFZE step s-040469132N5HLW1UMB19 is CANCELLED
+j-OCZ90M63BFZE cluster is TERMINATED_WITH_ERRORS
+STEP FAILED: j-OCZ90M63BFZE s-040469132N5HLW1UMB19 ended as CANCELLED: {'State': 'CANCELLED', 'StateChangeReason': {'Message': 'Cluster terminated'}, 'Timeline': {'CreationDateTime': datetime.datetime(2026, 7, 24, 13, 15, 35, 240000, tzinfo=tzlocal())}} | cluster_reason={'Code': 'VALIDATION_ERROR', 'Message': 'The subnet configuration was invalid: The subnet subnet-0790d25ecc4deae64 does not exist.'} | error_details=[]
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Starting 10MB cpu-heavy on m5.xlarge x 4 in ap-southeast-1
+{
+  "JobFlowId": "j-3SH8BH0HMXR32",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-3SH8BH0HMXR32",
+  "ResponseMetadata": {
+    "RequestId": "a73b8d91-6c23-4aca-a7d6-d18d0971e8ce",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "a73b8d91-6c23-4aca-a7d6-d18d0971e8ce",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Fri, 24 Jul 2026 07:46:07 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-3SH8BH0HMXR32 step s-03271072PJYFHFSFRI7E is PENDING
+j-3SH8BH0HMXR32 step s-03271072PJYFHFSFRI7E is CANCELLED
+j-3SH8BH0HMXR32 cluster is TERMINATED_WITH_ERRORS
+STEP FAILED: j-3SH8BH0HMXR32 s-03271072PJYFHFSFRI7E ended as CANCELLED: {'State': 'CANCELLED', 'StateChangeReason': {'Message': 'Cluster terminated'}, 'Timeline': {'CreationDateTime': datetime.datetime(2026, 7, 24, 13, 16, 7, 726000, tzinfo=tzlocal())}} | cluster_reason={'Code': 'VALIDATION_ERROR', 'Message': 'The subnet configuration was invalid: The subnet subnet-0790d25ecc4deae64 does not exist.'} | error_details=[]
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Starting 2048MB cpu-heavy on m6i.xlarge x 2 in ap-southeast-1
+{
+  "JobFlowId": "j-AJJ30JDZMZCV",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-AJJ30JDZMZCV",
+  "ResponseMetadata": {
+    "RequestId": "7808173a-fa40-4eaf-9494-812274b91856",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "7808173a-fa40-4eaf-9494-812274b91856",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "121",
+      "date": "Fri, 24 Jul 2026 07:52:51 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-AJJ30JDZMZCV step s-040381538VZIAHJJBW4M is PENDING
+j-AJJ30JDZMZCV step s-040381538VZIAHJJBW4M is CANCELLED
+j-AJJ30JDZMZCV cluster is TERMINATED_WITH_ERRORS
+STEP FAILED: j-AJJ30JDZMZCV s-040381538VZIAHJJBW4M ended as CANCELLED: {'State': 'CANCELLED', 'StateChangeReason': {'Message': 'Cluster terminated'}, 'Timeline': {'CreationDateTime': datetime.datetime(2026, 7, 24, 13, 22, 51, 105000, tzinfo=tzlocal())}} | cluster_reason={'Code': 'VALIDATION_ERROR', 'Message': 'The subnet configuration was invalid: The subnet subnet-0790d25ecc4deae64 does not exist.'} | error_details=[]
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Starting 500MB cpu-heavy on m5.xlarge x 2 in ap-southeast-1
+{
+  "JobFlowId": "j-3J0AEGZ7HNMFR",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-3J0AEGZ7HNMFR",
+  "ResponseMetadata": {
+    "RequestId": "1cb14f25-501b-442d-8726-98b87be6c8fc",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "1cb14f25-501b-442d-8726-98b87be6c8fc",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Fri, 24 Jul 2026 07:53:23 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-3J0AEGZ7HNMFR step s-01446602DPOPAHPL7OCC is PENDING
+j-3J0AEGZ7HNMFR step s-01446602DPOPAHPL7OCC is CANCELLED
+j-3J0AEGZ7HNMFR cluster is TERMINATED_WITH_ERRORS
+STEP FAILED: j-3J0AEGZ7HNMFR s-01446602DPOPAHPL7OCC ended as CANCELLED: {'State': 'CANCELLED', 'StateChangeReason': {'Message': 'Cluster terminated'}, 'Timeline': {'CreationDateTime': datetime.datetime(2026, 7, 24, 13, 23, 23, 64000, tzinfo=tzlocal())}} | cluster_reason={'Code': 'VALIDATION_ERROR', 'Message': 'The subnet configuration was invalid: The subnet subnet-0790d25ecc4deae64 does not exist.'} | error_details=[]
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Starting 5120MB io-heavy on c6i.xlarge x 2 in ap-southeast-1
+{
+  "JobFlowId": "j-2VDS7ZORVSRPG",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-2VDS7ZORVSRPG",
+  "ResponseMetadata": {
+    "RequestId": "e0d6343d-40a2-472c-a7bf-00961d859f06",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "e0d6343d-40a2-472c-a7bf-00961d859f06",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Fri, 24 Jul 2026 08:08:56 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-2VDS7ZORVSRPG step s-09296371LBYEMM0RPQ78 is PENDING
+j-2VDS7ZORVSRPG step s-09296371LBYEMM0RPQ78 is CANCELLED
+j-2VDS7ZORVSRPG cluster is TERMINATED_WITH_ERRORS
+STEP FAILED: j-2VDS7ZORVSRPG s-09296371LBYEMM0RPQ78 ended as CANCELLED: {'State': 'CANCELLED', 'StateChangeReason': {'Message': 'Cluster terminated'}, 'Timeline': {'CreationDateTime': datetime.datetime(2026, 7, 24, 13, 38, 55, 989000, tzinfo=tzlocal())}} | cluster_reason={'Code': 'VALIDATION_ERROR', 'Message': 'The subnet configuration was invalid: The subnet subnet-0790d25ecc4deae64 does not exist.'} | error_details=[]
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Starting 10MB memory-heavy on c5.xlarge x 4 in ap-southeast-1
+{
+  "JobFlowId": "j-1D2PUJ5ZDC64Q",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-1D2PUJ5ZDC64Q",
+  "ResponseMetadata": {
+    "RequestId": "e4473552-78ad-4f19-99be-c98da6d15d63",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "e4473552-78ad-4f19-99be-c98da6d15d63",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Fri, 24 Jul 2026 08:24:29 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-1D2PUJ5ZDC64Q step s-0404382TJ3HOS7NNQQ3 is PENDING
+j-1D2PUJ5ZDC64Q step s-0404382TJ3HOS7NNQQ3 is CANCELLED
+j-1D2PUJ5ZDC64Q cluster is TERMINATED_WITH_ERRORS
+STEP FAILED: j-1D2PUJ5ZDC64Q s-0404382TJ3HOS7NNQQ3 ended as CANCELLED: {'State': 'CANCELLED', 'StateChangeReason': {'Message': 'Cluster terminated'}, 'Timeline': {'CreationDateTime': datetime.datetime(2026, 7, 24, 13, 54, 29, 449000, tzinfo=tzlocal())}} | cluster_reason={'Code': 'VALIDATION_ERROR', 'Message': 'The subnet configuration was invalid: The subnet subnet-0790d25ecc4deae64 does not exist.'} | error_details=[]
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv

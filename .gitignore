@@ -19,7 +19,4 @@ spark-warehouse/
 .DS_Store
 
 # Data and generated artifacts (regenerate via the scripts/ml pipeline)
-data/
-*.csv
-*.parquet
-*.log
+

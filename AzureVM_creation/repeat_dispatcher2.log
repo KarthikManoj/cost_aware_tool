@@ -1,0 +1,1668 @@
+04:54:25 launching Standard_D2s_v3 x2 tag=r1 (4vCPU, live_used 16->20/32)
+
+############################################################
+# southeastasia | Standard_D2s_v3 | 2 nodes 
+############################################################
+04:54:25 launching Standard_D2s_v3 x2 tag=r2 (4vCPU, live_used 20->24/32)
+
+############################################################
+# southeastasia | Standard_D2s_v3 | 2 nodes 
+############################################################
+04:54:25 launching Standard_D2s_v3 x4 tag=r1 (8vCPU, live_used 24->32/32)
+
+############################################################
+# southeastasia | Standard_D2s_v3 | 4 nodes 
+############################################################
+Creating bench-sea-d2s_v3-n2-r1-1...
+Creating bench-sea-d2s_v3-n2-r2-1...
+Creating bench-sea-d2s_v3-n4-r1-1...
+Creating bench-sea-d2s_v3-n2-r1-2...
+Creating bench-sea-d2s_v3-n2-r2-2...
+Creating bench-sea-d2s_v3-n4-r1-2...
+Creating bench-sea-d2s_v3-n4-r1-3...
+Waiting for bench-sea-d2s_v3-n2-r2-1 to finish provisioning...
+Waiting for bench-sea-d2s_v3-n2-r1-1 to finish provisioning...
+Creating bench-sea-d2s_v3-n4-r1-4...
+Waiting for bench-sea-d2s_v3-n4-r1-1 to finish provisioning...
+  bench-sea-d2s_v3-n2-r2-1 -> 4.193.128.125
+Waiting for bench-sea-d2s_v3-n2-r2-2 to finish provisioning...
+  bench-sea-d2s_v3-n2-r1-1 -> 4.193.206.74
+Waiting for bench-sea-d2s_v3-n2-r1-2 to finish provisioning...
+  bench-sea-d2s_v3-n2-r2-2 -> 20.212.156.34
+  bench-sea-d2s_v3-n2-r1-2 -> 20.212.200.56
+  waiting for install on 4.193.206.74 (1/180)...
+  waiting for install on 4.193.128.125 (1/180)...
+  bench-sea-d2s_v3-n4-r1-1 -> 4.194.59.143
+Waiting for bench-sea-d2s_v3-n4-r1-2 to finish provisioning...
+  bench-sea-d2s_v3-n4-r1-2 -> 20.205.190.160
+Waiting for bench-sea-d2s_v3-n4-r1-3 to finish provisioning...
+  bench-sea-d2s_v3-n4-r1-3 -> 4.193.162.219
+Waiting for bench-sea-d2s_v3-n4-r1-4 to finish provisioning...
+  waiting for install on 4.193.206.74 (2/180)...
+  bench-sea-d2s_v3-n4-r1-4 -> 20.24.17.227
+  waiting for install on 4.193.128.125 (2/180)...
+  waiting for install on 4.194.59.143 (1/180)...
+  waiting for install on 4.193.206.74 (3/180)...
+  waiting for install on 4.193.128.125 (3/180)...
+  waiting for install on 4.194.59.143 (2/180)...
+  waiting for install on 4.193.206.74 (4/180)...
+  waiting for install on 4.193.128.125 (4/180)...
+  waiting for install on 4.194.59.143 (3/180)...
+  waiting for install on 4.193.206.74 (5/180)...
+  waiting for install on 4.193.128.125 (5/180)...
+  waiting for install on 4.194.59.143 (4/180)...
+  waiting for install on 4.193.206.74 (6/180)...
+  waiting for install on 4.193.128.125 (6/180)...
+  waiting for install on 4.194.59.143 (5/180)...
+  waiting for install on 4.193.206.74 (7/180)...
+  waiting for install on 4.193.128.125 (7/180)...
+  waiting for install on 4.194.59.143 (6/180)...
+  install finished on 4.193.206.74
+  waiting for install on 4.193.128.125 (8/180)...
+  install finished on 4.194.59.143
+  waiting for install on 20.212.200.56 (1/180)...
+  waiting for install on 20.205.190.160 (1/180)...
+  install finished on 4.193.128.125
+  install finished on 20.212.200.56
+Repairing /opt/benchmark permissions on all VMs...
+  install finished on 20.212.156.34
+Repairing /opt/benchmark permissions on all VMs...
+Warning: Permanently added '4.193.206.74' (ED25519) to the list of known hosts.
+Warning: Permanently added '4.193.128.125' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.212.200.56' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.212.156.34' (ED25519) to the list of known hosts.
+  install finished on 20.205.190.160
+Warning: Permanently added '4.193.206.74' (ED25519) to the list of known hosts.
+starting org.apache.spark.deploy.master.Master, logging to /opt/spark/logs/spark-benchadmin-org.apache.spark.deploy.master.Master-1-bench-sea-d2sv3-n2-r1-1.out
+Warning: Permanently added '4.193.128.125' (ED25519) to the list of known hosts.
+starting org.apache.spark.deploy.master.Master, logging to /opt/spark/logs/spark-benchadmin-org.apache.spark.deploy.master.Master-1-bench-sea-d2sv3-n2-r2-1.out
+Warning: Permanently added '20.212.200.56' (ED25519) to the list of known hosts.
+starting org.apache.spark.deploy.worker.Worker, logging to /opt/spark/logs/spark-benchadmin-org.apache.spark.deploy.worker.Worker-1-bench-sea-d2sv3-n2-r1-2.out
+Warning: Permanently added '20.212.156.34' (ED25519) to the list of known hosts.
+starting org.apache.spark.deploy.worker.Worker, logging to /opt/spark/logs/spark-benchadmin-org.apache.spark.deploy.worker.Worker-1-bench-sea-d2sv3-n2-r2-2.out
+  install finished on 4.193.162.219
+Cluster up: spark://10.0.0.10:7077 (2 nodes)
+Warning: Permanently added '4.193.206.74' (ED25519) to the list of known hosts.
+Cluster up: spark://10.0.0.8:7077 (2 nodes)
+Warning: Permanently added '4.193.128.125' (ED25519) to the list of known hosts.
+Warning: Permanently added '4.193.206.74' (ED25519) to the list of known hosts.
+Warning: Permanently added '4.193.128.125' (ED25519) to the list of known hosts.
+  install finished on 20.24.17.227
+Repairing /opt/benchmark permissions on all VMs...
+Warning: Permanently added '4.193.206.74' (ED25519) to the list of known hosts.
+Warning: Permanently added '4.194.59.143' (ED25519) to the list of known hosts.
+Warning: Permanently added '4.193.128.125' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.205.190.160' (ED25519) to the list of known hosts.
+Warning: Permanently added '4.193.162.219' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.24.17.227' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.212.200.56' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.212.156.34' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.212.200.56' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.212.156.34' (ED25519) to the list of known hosts.
+Warning: Permanently added '4.194.59.143' (ED25519) to the list of known hosts.
+starting org.apache.spark.deploy.master.Master, logging to /opt/spark/logs/spark-benchadmin-org.apache.spark.deploy.master.Master-1-bench-sea-d2sv3-n4-r1-1.out
+Warning: Permanently added '20.205.190.160' (ED25519) to the list of known hosts.
+starting org.apache.spark.deploy.worker.Worker, logging to /opt/spark/logs/spark-benchadmin-org.apache.spark.deploy.worker.Worker-1-bench-sea-d2sv3-n4-r1-2.out
+Warning: Permanently added '4.193.162.219' (ED25519) to the list of known hosts.
+starting org.apache.spark.deploy.worker.Worker, logging to /opt/spark/logs/spark-benchadmin-org.apache.spark.deploy.worker.Worker-1-bench-sea-d2sv3-n4-r1-3.out
+Warning: Permanently added '20.24.17.227' (ED25519) to the list of known hosts.
+starting org.apache.spark.deploy.worker.Worker, logging to /opt/spark/logs/spark-benchadmin-org.apache.spark.deploy.worker.Worker-1-bench-sea-d2sv3-n4-r1-4.out
+Cluster up: spark://10.0.0.13:7077 (4 nodes)
+Warning: Permanently added '4.194.59.143' (ED25519) to the list of known hosts.
+Warning: Permanently added '4.194.59.143' (ED25519) to the list of known hosts.
+Warning: Permanently added '4.194.59.143' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.205.190.160' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.205.190.160' (ED25519) to the list of known hosts.
+Warning: Permanently added '4.193.162.219' (ED25519) to the list of known hosts.
+Warning: Permanently added '4.193.162.219' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.24.17.227' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.24.17.227' (ED25519) to the list of known hosts.
+04:59:39 launching Standard_D4s_v3 x2 tag=r1 (8vCPU, live_used 24->32/32)
+
+############################################################
+# southeastasia | Standard_D4s_v3 | 2 nodes 
+############################################################
+Creating bench-sea-d4s_v3-n2-r1-1...
+Creating bench-sea-d4s_v3-n2-r1-2...
+Waiting for bench-sea-d4s_v3-n2-r1-1 to finish provisioning...
+  bench-sea-d4s_v3-n2-r1-1 -> 20.212.48.199
+Waiting for bench-sea-d4s_v3-n2-r1-2 to finish provisioning...
+  bench-sea-d4s_v3-n2-r1-2 -> 4.193.216.165
+  waiting for install on 20.212.48.199 (1/180)...
+  waiting for install on 20.212.48.199 (2/180)...
+  waiting for install on 20.212.48.199 (3/180)...
+  waiting for install on 20.212.48.199 (4/180)...
+Warning: Permanently added '20.212.156.34' (ED25519) to the list of known hosts.
+  waiting for install on 20.212.48.199 (5/180)...
+Warning: Permanently added '20.212.156.34' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.212.156.34' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.212.200.56' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.212.200.56' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.212.200.56' (ED25519) to the list of known hosts.
+  waiting for install on 20.212.48.199 (6/180)...
+  waiting for install on 20.212.48.199 (7/180)...
+Warning: Permanently added '20.205.190.160' (ED25519) to the list of known hosts.
+Warning: Permanently added '4.193.162.219' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.24.17.227' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.205.190.160' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.205.190.160' (ED25519) to the list of known hosts.
+Warning: Permanently added '4.193.162.219' (ED25519) to the list of known hosts.
+Warning: Permanently added '4.193.162.219' (ED25519) to the list of known hosts.
+  install finished on 20.212.48.199
+Warning: Permanently added '20.24.17.227' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.24.17.227' (ED25519) to the list of known hosts.
+  install finished on 4.193.216.165
+Repairing /opt/benchmark permissions on all VMs...
+Warning: Permanently added '20.212.48.199' (ED25519) to the list of known hosts.
+Warning: Permanently added '4.193.216.165' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.212.48.199' (ED25519) to the list of known hosts.
+starting org.apache.spark.deploy.master.Master, logging to /opt/spark/logs/spark-benchadmin-org.apache.spark.deploy.master.Master-1-bench-sea-d4sv3-n2-r1-1.out
+Warning: Permanently added '4.193.216.165' (ED25519) to the list of known hosts.
+starting org.apache.spark.deploy.worker.Worker, logging to /opt/spark/logs/spark-benchadmin-org.apache.spark.deploy.worker.Worker-1-bench-sea-d4sv3-n2-r1-2.out
+Cluster up: spark://10.0.0.11:7077 (2 nodes)
+Warning: Permanently added '20.212.48.199' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.212.48.199' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.212.48.199' (ED25519) to the list of known hosts.
+Warning: Permanently added '4.193.216.165' (ED25519) to the list of known hosts.
+Warning: Permanently added '4.193.216.165' (ED25519) to the list of known hosts.
+Warning: Permanently added '4.193.216.165' (ED25519) to the list of known hosts.
+Warning: Permanently added '4.193.216.165' (ED25519) to the list of known hosts.
+Warning: Permanently added '4.193.216.165' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.212.156.34' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.212.156.34' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.212.156.34' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.212.200.56' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.205.190.160' (ED25519) to the list of known hosts.
+Warning: Permanently added '4.193.162.219' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.24.17.227' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.212.200.56' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.212.200.56' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.205.190.160' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.205.190.160' (ED25519) to the list of known hosts.
+Warning: Permanently added '4.193.162.219' (ED25519) to the list of known hosts.
+Warning: Permanently added '4.193.162.219' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.24.17.227' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.24.17.227' (ED25519) to the list of known hosts.
+Warning: Permanently added '4.193.216.165' (ED25519) to the list of known hosts.
+Warning: Permanently added '4.193.216.165' (ED25519) to the list of known hosts.
+Warning: Permanently added '4.193.216.165' (ED25519) to the list of known hosts.
+Downloading events_10mb.csv (excluded from timer)...
+Replicating dataset to worker 20.205.190.160 (excluded from timer)...
+Replicating dataset to worker 4.193.162.219 (excluded from timer)...
+Replicating dataset to worker 20.24.17.227 (excluded from timer)...
+
+=== Standard_D2s_v3 | 4 nodes | 10MB | cpu | run 1 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 4, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '10MB.csv', 'Dataset_Size_MB': 10, 'Workload': 'cpu', 'Run_Number': 1, 'Timestamp': '2026-07-25T23:29:26.117224+00:00', 'Runtime_Minutes': 0.5225, 'CPU_Avg_Pct': 76.98, 'Cost_USD': 0.0044, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n4-r1-1_1785022166.csv
+
+=== Standard_D2s_v3 | 4 nodes | 10MB | cpu | run 2 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 4, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '10MB.csv', 'Dataset_Size_MB': 10, 'Workload': 'cpu', 'Run_Number': 2, 'Timestamp': '2026-07-25T23:30:02.403538+00:00', 'Runtime_Minutes': 0.5087, 'CPU_Avg_Pct': 65.17, 'Cost_USD': 0.0042, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n4-r1-1_1785022202.csv
+
+=== Standard_D2s_v3 | 4 nodes | 10MB | memory | run 1 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 4, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '10MB.csv', 'Dataset_Size_MB': 10, 'Workload': 'memory', 'Run_Number': 1, 'Timestamp': '2026-07-25T23:30:44.701837+00:00', 'Runtime_Minutes': 0.6806, 'CPU_Avg_Pct': 69.6, 'Cost_USD': 0.0057, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n4-r1-1_1785022244.csv
+
+=== Standard_D2s_v3 | 4 nodes | 10MB | memory | run 2 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 4, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '10MB.csv', 'Dataset_Size_MB': 10, 'Workload': 'memory', 'Run_Number': 2, 'Timestamp': '2026-07-25T23:31:26.994190+00:00', 'Runtime_Minutes': 0.6936, 'CPU_Avg_Pct': 65.43, 'Cost_USD': 0.0058, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n4-r1-1_1785022286.csv
+
+=== Standard_D2s_v3 | 4 nodes | 10MB | io | run 1 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 4, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '10MB.csv', 'Dataset_Size_MB': 10, 'Workload': 'io', 'Run_Number': 1, 'Timestamp': '2026-07-25T23:32:09.303485+00:00', 'Runtime_Minutes': 0.6575, 'CPU_Avg_Pct': 96.03, 'Cost_USD': 0.0055, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n4-r1-1_1785022329.csv
+
+=== Standard_D2s_v3 | 4 nodes | 10MB | io | run 2 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 4, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '10MB.csv', 'Dataset_Size_MB': 10, 'Workload': 'io', 'Run_Number': 2, 'Timestamp': '2026-07-25T23:32:51.647814+00:00', 'Runtime_Minutes': 0.6384, 'CPU_Avg_Pct': 96.18, 'Cost_USD': 0.0053, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n4-r1-1_1785022371.csv
+Downloading events_100mb.csv (excluded from timer)...
+Replicating dataset to worker 20.205.190.160 (excluded from timer)...
+Replicating dataset to worker 4.193.162.219 (excluded from timer)...
+Replicating dataset to worker 20.24.17.227 (excluded from timer)...
+
+=== Standard_D2s_v3 | 4 nodes | 100MB | cpu | run 1 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 4, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '100MB.csv', 'Dataset_Size_MB': 100, 'Workload': 'cpu', 'Run_Number': 1, 'Timestamp': '2026-07-25T23:33:38.427930+00:00', 'Runtime_Minutes': 0.5537, 'CPU_Avg_Pct': 54.44, 'Cost_USD': 0.0046, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n4-r1-1_1785022418.csv
+
+=== Standard_D2s_v3 | 4 nodes | 100MB | cpu | run 2 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 4, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '100MB.csv', 'Dataset_Size_MB': 100, 'Workload': 'cpu', 'Run_Number': 2, 'Timestamp': '2026-07-25T23:34:14.714529+00:00', 'Runtime_Minutes': 0.572, 'CPU_Avg_Pct': 59.88, 'Cost_USD': 0.0048, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n4-r1-1_1785022454.csv
+
+=== Standard_D2s_v3 | 4 nodes | 100MB | memory | run 1 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 4, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '100MB.csv', 'Dataset_Size_MB': 100, 'Workload': 'memory', 'Run_Number': 1, 'Timestamp': '2026-07-25T23:35:03.015651+00:00', 'Runtime_Minutes': 0.7601, 'CPU_Avg_Pct': 52.58, 'Cost_USD': 0.0063, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n4-r1-1_1785022503.csv
+
+=== Standard_D2s_v3 | 4 nodes | 100MB | memory | run 2 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 4, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '100MB.csv', 'Dataset_Size_MB': 100, 'Workload': 'memory', 'Run_Number': 2, 'Timestamp': '2026-07-25T23:35:51.333408+00:00', 'Runtime_Minutes': 0.7721, 'CPU_Avg_Pct': 62.6, 'Cost_USD': 0.0064, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n4-r1-1_1785022551.csv
+
+=== Standard_D2s_v3 | 4 nodes | 100MB | io | run 1 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 4, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '100MB.csv', 'Dataset_Size_MB': 100, 'Workload': 'io', 'Run_Number': 1, 'Timestamp': '2026-07-25T23:36:45.674089+00:00', 'Runtime_Minutes': 0.8785, 'CPU_Avg_Pct': 95.81, 'Cost_USD': 0.0073, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n4-r1-1_1785022605.csv
+
+=== Standard_D2s_v3 | 4 nodes | 100MB | io | run 2 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 4, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '100MB.csv', 'Dataset_Size_MB': 100, 'Workload': 'io', 'Run_Number': 2, 'Timestamp': '2026-07-25T23:37:40.029517+00:00', 'Runtime_Minutes': 0.8673, 'CPU_Avg_Pct': 96.59, 'Cost_USD': 0.0072, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n4-r1-1_1785022660.csv
+Downloading events_500mb.csv (excluded from timer)...
+Replicating dataset to worker 20.205.190.160 (excluded from timer)...
+Replicating dataset to worker 4.193.162.219 (excluded from timer)...
+Replicating dataset to worker 20.24.17.227 (excluded from timer)...
+
+=== Standard_D2s_v3 | 4 nodes | 500MB | cpu | run 1 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 4, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '500MB.csv', 'Dataset_Size_MB': 500, 'Workload': 'cpu', 'Run_Number': 1, 'Timestamp': '2026-07-25T23:39:06.687699+00:00', 'Runtime_Minutes': 0.7231, 'CPU_Avg_Pct': 47.78, 'Cost_USD': 0.006, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n4-r1-1_1785022746.csv
+
+=== Standard_D2s_v3 | 4 nodes | 500MB | cpu | run 2 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 4, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '500MB.csv', 'Dataset_Size_MB': 500, 'Workload': 'cpu', 'Run_Number': 2, 'Timestamp': '2026-07-25T23:39:54.985175+00:00', 'Runtime_Minutes': 0.7233, 'CPU_Avg_Pct': 53.98, 'Cost_USD': 0.006, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n4-r1-1_1785022794.csv
+
+=== Standard_D2s_v3 | 4 nodes | 500MB | memory | run 1 ===
+Downloading events_10mb.csv (excluded from timer)...
+Replicating dataset to worker 20.212.156.34 (excluded from timer)...
+
+=== Standard_D2s_v3 | 2 nodes | 10MB | cpu | run 1 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '10MB.csv', 'Dataset_Size_MB': 10, 'Workload': 'cpu', 'Run_Number': 1, 'Timestamp': '2026-07-25T23:28:54.580076+00:00', 'Runtime_Minutes': 0.4645, 'CPU_Avg_Pct': 61.47, 'Cost_USD': 0.0019, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n2-r2-1_1785022134.csv
+
+=== Standard_D2s_v3 | 2 nodes | 10MB | cpu | run 2 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '10MB.csv', 'Dataset_Size_MB': 10, 'Workload': 'cpu', 'Run_Number': 2, 'Timestamp': '2026-07-25T23:29:24.851949+00:00', 'Runtime_Minutes': 0.4444, 'CPU_Avg_Pct': 56.06, 'Cost_USD': 0.0019, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n2-r2-1_1785022164.csv
+
+=== Standard_D2s_v3 | 2 nodes | 10MB | memory | run 1 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '10MB.csv', 'Dataset_Size_MB': 10, 'Workload': 'memory', 'Run_Number': 1, 'Timestamp': '2026-07-25T23:30:07.145465+00:00', 'Runtime_Minutes': 0.626, 'CPU_Avg_Pct': 56.42, 'Cost_USD': 0.0026, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n2-r2-1_1785022207.csv
+
+=== Standard_D2s_v3 | 2 nodes | 10MB | memory | run 2 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '10MB.csv', 'Dataset_Size_MB': 10, 'Workload': 'memory', 'Run_Number': 2, 'Timestamp': '2026-07-25T23:30:49.427610+00:00', 'Runtime_Minutes': 0.6348, 'CPU_Avg_Pct': 53.56, 'Cost_USD': 0.0026, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n2-r2-1_1785022249.csv
+
+=== Standard_D2s_v3 | 2 nodes | 10MB | io | run 1 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '10MB.csv', 'Dataset_Size_MB': 10, 'Workload': 'io', 'Run_Number': 1, 'Timestamp': '2026-07-25T23:31:31.867013+00:00', 'Runtime_Minutes': 0.6173, 'CPU_Avg_Pct': 92.94, 'Cost_USD': 0.0026, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n2-r2-1_1785022291.csv
+
+=== Standard_D2s_v3 | 2 nodes | 10MB | io | run 2 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '10MB.csv', 'Dataset_Size_MB': 10, 'Workload': 'io', 'Run_Number': 2, 'Timestamp': '2026-07-25T23:32:08.164431+00:00', 'Runtime_Minutes': 0.5942, 'CPU_Avg_Pct': 96.37, 'Cost_USD': 0.0025, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n2-r2-1_1785022328.csv
+Downloading events_100mb.csv (excluded from timer)...
+Replicating dataset to worker 20.212.156.34 (excluded from timer)...
+
+=== Standard_D2s_v3 | 2 nodes | 100MB | cpu | run 1 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '100MB.csv', 'Dataset_Size_MB': 100, 'Workload': 'cpu', 'Run_Number': 1, 'Timestamp': '2026-07-25T23:32:50.792582+00:00', 'Runtime_Minutes': 0.552, 'CPU_Avg_Pct': 44.77, 'Cost_USD': 0.0023, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n2-r2-1_1785022370.csv
+
+=== Standard_D2s_v3 | 2 nodes | 100MB | cpu | run 2 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '100MB.csv', 'Dataset_Size_MB': 100, 'Workload': 'cpu', 'Run_Number': 2, 'Timestamp': '2026-07-25T23:33:27.082144+00:00', 'Runtime_Minutes': 0.5339, 'CPU_Avg_Pct': 58.3, 'Cost_USD': 0.0022, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n2-r2-1_1785022407.csv
+
+=== Standard_D2s_v3 | 2 nodes | 100MB | memory | run 1 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '100MB.csv', 'Dataset_Size_MB': 100, 'Workload': 'memory', 'Run_Number': 1, 'Timestamp': '2026-07-25T23:34:15.368886+00:00', 'Runtime_Minutes': 0.7634, 'CPU_Avg_Pct': 46.59, 'Cost_USD': 0.0032, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n2-r2-1_1785022455.csv
+
+=== Standard_D2s_v3 | 2 nodes | 100MB | memory | run 2 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '100MB.csv', 'Dataset_Size_MB': 100, 'Workload': 'memory', 'Run_Number': 2, 'Timestamp': '2026-07-25T23:35:03.661653+00:00', 'Runtime_Minutes': 0.7738, 'CPU_Avg_Pct': 43.01, 'Cost_USD': 0.0032, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n2-r2-1_1785022503.csv
+
+=== Standard_D2s_v3 | 2 nodes | 100MB | io | run 1 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '100MB.csv', 'Dataset_Size_MB': 100, 'Workload': 'io', 'Run_Number': 1, 'Timestamp': '2026-07-25T23:35:57.988277+00:00', 'Runtime_Minutes': 0.8285, 'CPU_Avg_Pct': 96.8, 'Cost_USD': 0.0035, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n2-r2-1_1785022557.csv
+
+=== Standard_D2s_v3 | 2 nodes | 100MB | io | run 2 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '100MB.csv', 'Dataset_Size_MB': 100, 'Workload': 'io', 'Run_Number': 2, 'Timestamp': '2026-07-25T23:36:52.329926+00:00', 'Runtime_Minutes': 0.864, 'CPU_Avg_Pct': 97.08, 'Cost_USD': 0.0036, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n2-r2-1_1785022612.csv
+Downloading events_500mb.csv (excluded from timer)...
+Replicating dataset to worker 20.212.156.34 (excluded from timer)...
+
+=== Standard_D2s_v3 | 2 nodes | 500MB | cpu | run 1 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '500MB.csv', 'Dataset_Size_MB': 500, 'Workload': 'cpu', 'Run_Number': 1, 'Timestamp': '2026-07-25T23:38:15.753365+00:00', 'Runtime_Minutes': 0.9326, 'CPU_Avg_Pct': 35.08, 'Cost_USD': 0.0039, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n2-r2-1_1785022695.csv
+
+=== Standard_D2s_v3 | 2 nodes | 500MB | cpu | run 2 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '500MB.csv', 'Dataset_Size_MB': 500, 'Workload': 'cpu', 'Run_Number': 2, 'Timestamp': '2026-07-25T23:39:16.063586+00:00', 'Runtime_Minutes': 0.9296, 'CPU_Avg_Pct': 37.21, 'Cost_USD': 0.0039, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n2-r2-1_1785022756.csv
+
+=== Standard_D2s_v3 | 2 nodes | 500MB | memory | run 1 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '500MB.csv', 'Dataset_Size_MB': 500, 'Workload': 'memory', 'Run_Number': 1, 'Timestamp': '2026-07-25T23:40:46.430588+00:00', 'Runtime_Minutes': 1.4531, 'CPU_Avg_Pct': 29.6, 'Cost_USD': 0.0061, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n2-r2-1_1785022846.csv
+
+=== Standard_D2s_v3 | 2 nodes | 500MB | memory | run 2 ===
+Downloading events_10mb.csv (excluded from timer)...
+Replicating dataset to worker 4.193.216.165 (excluded from timer)...
+
+=== Standard_D4s_v3 | 2 nodes | 10MB | cpu | run 1 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D4s_v3', 'vCPU': 4, 'RAM_GB': 16, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '10MB.csv', 'Dataset_Size_MB': 10, 'Workload': 'cpu', 'Run_Number': 1, 'Timestamp': '2026-07-25T23:33:46.272662+00:00', 'Runtime_Minutes': 0.34, 'CPU_Avg_Pct': 30.77, 'Cost_USD': 0.0028, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d4sv3-n2-r1-1_1785022426.csv
+
+=== Standard_D4s_v3 | 2 nodes | 10MB | cpu | run 2 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D4s_v3', 'vCPU': 4, 'RAM_GB': 16, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '10MB.csv', 'Dataset_Size_MB': 10, 'Workload': 'cpu', 'Run_Number': 2, 'Timestamp': '2026-07-25T23:34:10.533055+00:00', 'Runtime_Minutes': 0.3561, 'CPU_Avg_Pct': 46.74, 'Cost_USD': 0.003, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d4sv3-n2-r1-1_1785022450.csv
+
+=== Standard_D4s_v3 | 2 nodes | 10MB | memory | run 1 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D4s_v3', 'vCPU': 4, 'RAM_GB': 16, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '10MB.csv', 'Dataset_Size_MB': 10, 'Workload': 'memory', 'Run_Number': 1, 'Timestamp': '2026-07-25T23:34:40.804917+00:00', 'Runtime_Minutes': 0.437, 'CPU_Avg_Pct': 39.23, 'Cost_USD': 0.0036, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d4sv3-n2-r1-1_1785022480.csv
+
+=== Standard_D4s_v3 | 2 nodes | 10MB | memory | run 2 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D4s_v3', 'vCPU': 4, 'RAM_GB': 16, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '10MB.csv', 'Dataset_Size_MB': 10, 'Workload': 'memory', 'Run_Number': 2, 'Timestamp': '2026-07-25T23:35:11.075850+00:00', 'Runtime_Minutes': 0.4496, 'CPU_Avg_Pct': 37.31, 'Cost_USD': 0.0037, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d4sv3-n2-r1-1_1785022511.csv
+
+=== Standard_D4s_v3 | 2 nodes | 10MB | io | run 1 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D4s_v3', 'vCPU': 4, 'RAM_GB': 16, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '10MB.csv', 'Dataset_Size_MB': 10, 'Workload': 'io', 'Run_Number': 1, 'Timestamp': '2026-07-25T23:35:41.369341+00:00', 'Runtime_Minutes': 0.4545, 'CPU_Avg_Pct': 77.13, 'Cost_USD': 0.0038, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d4sv3-n2-r1-1_1785022541.csv
+
+=== Standard_D4s_v3 | 2 nodes | 10MB | io | run 2 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D4s_v3', 'vCPU': 4, 'RAM_GB': 16, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '10MB.csv', 'Dataset_Size_MB': 10, 'Workload': 'io', 'Run_Number': 2, 'Timestamp': '2026-07-25T23:36:11.660662+00:00', 'Runtime_Minutes': 0.4516, 'CPU_Avg_Pct': 78.72, 'Cost_USD': 0.0038, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d4sv3-n2-r1-1_1785022571.csv
+Downloading events_100mb.csv (excluded from timer)...
+Replicating dataset to worker 4.193.216.165 (excluded from timer)...
+
+=== Standard_D4s_v3 | 2 nodes | 100MB | cpu | run 1 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D4s_v3', 'vCPU': 4, 'RAM_GB': 16, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '100MB.csv', 'Dataset_Size_MB': 100, 'Workload': 'cpu', 'Run_Number': 1, 'Timestamp': '2026-07-25T23:36:41.658045+00:00', 'Runtime_Minutes': 0.3924, 'CPU_Avg_Pct': 32.84, 'Cost_USD': 0.0033, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d4sv3-n2-r1-1_1785022601.csv
+
+=== Standard_D4s_v3 | 2 nodes | 100MB | cpu | run 2 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D4s_v3', 'vCPU': 4, 'RAM_GB': 16, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '100MB.csv', 'Dataset_Size_MB': 100, 'Workload': 'cpu', 'Run_Number': 2, 'Timestamp': '2026-07-25T23:37:05.920315+00:00', 'Runtime_Minutes': 0.3977, 'CPU_Avg_Pct': 34.46, 'Cost_USD': 0.0033, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d4sv3-n2-r1-1_1785022625.csv
+
+=== Standard_D4s_v3 | 2 nodes | 100MB | memory | run 1 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D4s_v3', 'vCPU': 4, 'RAM_GB': 16, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '100MB.csv', 'Dataset_Size_MB': 100, 'Workload': 'memory', 'Run_Number': 1, 'Timestamp': '2026-07-25T23:37:42.189941+00:00', 'Runtime_Minutes': 0.5231, 'CPU_Avg_Pct': 39.5, 'Cost_USD': 0.0044, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d4sv3-n2-r1-1_1785022662.csv
+
+=== Standard_D4s_v3 | 2 nodes | 100MB | memory | run 2 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D4s_v3', 'vCPU': 4, 'RAM_GB': 16, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '100MB.csv', 'Dataset_Size_MB': 100, 'Workload': 'memory', 'Run_Number': 2, 'Timestamp': '2026-07-25T23:38:18.456095+00:00', 'Runtime_Minutes': 0.5366, 'CPU_Avg_Pct': 33.51, 'Cost_USD': 0.0045, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d4sv3-n2-r1-1_1785022698.csv
+
+=== Standard_D4s_v3 | 2 nodes | 100MB | io | run 1 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D4s_v3', 'vCPU': 4, 'RAM_GB': 16, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '100MB.csv', 'Dataset_Size_MB': 100, 'Workload': 'io', 'Run_Number': 1, 'Timestamp': '2026-07-25T23:39:00.753951+00:00', 'Runtime_Minutes': 0.6127, 'CPU_Avg_Pct': 72.35, 'Cost_USD': 0.0051, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d4sv3-n2-r1-1_1785022740.csv
+
+=== Standard_D4s_v3 | 2 nodes | 100MB | io | run 2 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D4s_v3', 'vCPU': 4, 'RAM_GB': 16, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '100MB.csv', 'Dataset_Size_MB': 100, 'Workload': 'io', 'Run_Number': 2, 'Timestamp': '2026-07-25T23:39:43.073143+00:00', 'Runtime_Minutes': 0.6014, 'CPU_Avg_Pct': 73.43, 'Cost_USD': 0.005, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d4sv3-n2-r1-1_1785022783.csv
+Downloading events_500mb.csv (excluded from timer)...
+Replicating dataset to worker 4.193.216.165 (excluded from timer)...
+
+=== Standard_D4s_v3 | 2 nodes | 500MB | cpu | run 1 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D4s_v3', 'vCPU': 4, 'RAM_GB': 16, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '500MB.csv', 'Dataset_Size_MB': 500, 'Workload': 'cpu', 'Run_Number': 1, 'Timestamp': '2026-07-25T23:40:44.132050+00:00', 'Runtime_Minutes': 0.598, 'CPU_Avg_Pct': 23.62, 'Cost_USD': 0.005, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d4sv3-n2-r1-1_1785022844.csv
+
+=== Standard_D4s_v3 | 2 nodes | 500MB | cpu | run 2 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D4s_v3', 'vCPU': 4, 'RAM_GB': 16, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '500MB.csv', 'Dataset_Size_MB': 500, 'Workload': 'cpu', 'Run_Number': 2, 'Timestamp': '2026-07-25T23:41:26.400705+00:00', 'Runtime_Minutes': 0.61, 'CPU_Avg_Pct': 21.03, 'Cost_USD': 0.0051, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d4sv3-n2-r1-1_1785022886.csv
+
+=== Standard_D4s_v3 | 2 nodes | 500MB | memory | run 1 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D4s_v3', 'vCPU': 4, 'RAM_GB': 16, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '500MB.csv', 'Dataset_Size_MB': 500, 'Workload': 'memory', 'Run_Number': 1, 'Timestamp': '2026-07-25T23:42:20.692249+00:00', 'Runtime_Minutes': 0.8845, 'CPU_Avg_Pct': 23.47, 'Cost_USD': 0.0074, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d4sv3-n2-r1-1_1785022940.csv
+
+=== Standard_D4s_v3 | 2 nodes | 500MB | memory | run 2 ===
+Downloading events_10mb.csv (excluded from timer)...
+Replicating dataset to worker 20.212.200.56 (excluded from timer)...
+
+=== Standard_D2s_v3 | 2 nodes | 10MB | cpu | run 1 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '10MB.csv', 'Dataset_Size_MB': 10, 'Workload': 'cpu', 'Run_Number': 1, 'Timestamp': '2026-07-25T23:28:54.333460+00:00', 'Runtime_Minutes': 0.4913, 'CPU_Avg_Pct': 74.81, 'Cost_USD': 0.002, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n2-r1-1_1785022134.csv
+
+=== Standard_D2s_v3 | 2 nodes | 10MB | cpu | run 2 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '10MB.csv', 'Dataset_Size_MB': 10, 'Workload': 'cpu', 'Run_Number': 2, 'Timestamp': '2026-07-25T23:29:25.323433+00:00', 'Runtime_Minutes': 0.4908, 'CPU_Avg_Pct': 75.78, 'Cost_USD': 0.002, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n2-r1-1_1785022165.csv
+
+=== Standard_D2s_v3 | 2 nodes | 10MB | memory | run 1 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '10MB.csv', 'Dataset_Size_MB': 10, 'Workload': 'memory', 'Run_Number': 1, 'Timestamp': '2026-07-25T23:30:08.446164+00:00', 'Runtime_Minutes': 0.6827, 'CPU_Avg_Pct': 63.57, 'Cost_USD': 0.0028, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n2-r1-1_1785022208.csv
+
+=== Standard_D2s_v3 | 2 nodes | 10MB | memory | run 2 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '10MB.csv', 'Dataset_Size_MB': 10, 'Workload': 'memory', 'Run_Number': 2, 'Timestamp': '2026-07-25T23:30:56.758796+00:00', 'Runtime_Minutes': 0.7278, 'CPU_Avg_Pct': 69.59, 'Cost_USD': 0.003, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n2-r1-1_1785022256.csv
+
+=== Standard_D2s_v3 | 2 nodes | 10MB | io | run 1 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '10MB.csv', 'Dataset_Size_MB': 10, 'Workload': 'io', 'Run_Number': 1, 'Timestamp': '2026-07-25T23:31:33.241017+00:00', 'Runtime_Minutes': 0.6006, 'CPU_Avg_Pct': 95.82, 'Cost_USD': 0.0025, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n2-r1-1_1785022293.csv
+
+=== Standard_D2s_v3 | 2 nodes | 10MB | io | run 2 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '10MB.csv', 'Dataset_Size_MB': 10, 'Workload': 'io', 'Run_Number': 2, 'Timestamp': '2026-07-25T23:32:15.562185+00:00', 'Runtime_Minutes': 0.6367, 'CPU_Avg_Pct': 95.88, 'Cost_USD': 0.0027, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n2-r1-1_1785022335.csv
+Downloading events_100mb.csv (excluded from timer)...
+Replicating dataset to worker 20.212.200.56 (excluded from timer)...
+
+=== Standard_D2s_v3 | 2 nodes | 100MB | cpu | run 1 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '100MB.csv', 'Dataset_Size_MB': 100, 'Workload': 'cpu', 'Run_Number': 1, 'Timestamp': '2026-07-25T23:33:03.109509+00:00', 'Runtime_Minutes': 0.5769, 'CPU_Avg_Pct': 47.64, 'Cost_USD': 0.0024, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n2-r1-1_1785022383.csv
+
+=== Standard_D2s_v3 | 2 nodes | 100MB | cpu | run 2 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '100MB.csv', 'Dataset_Size_MB': 100, 'Workload': 'cpu', 'Run_Number': 2, 'Timestamp': '2026-07-25T23:33:40.261587+00:00', 'Runtime_Minutes': 0.5892, 'CPU_Avg_Pct': 46.9, 'Cost_USD': 0.0025, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n2-r1-1_1785022420.csv
+
+=== Standard_D2s_v3 | 2 nodes | 100MB | memory | run 1 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '100MB.csv', 'Dataset_Size_MB': 100, 'Workload': 'memory', 'Run_Number': 1, 'Timestamp': '2026-07-25T23:34:35.464496+00:00', 'Runtime_Minutes': 0.8609, 'CPU_Avg_Pct': 49.36, 'Cost_USD': 0.0036, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n2-r1-1_1785022475.csv
+
+=== Standard_D2s_v3 | 2 nodes | 100MB | memory | run 2 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '100MB.csv', 'Dataset_Size_MB': 100, 'Workload': 'memory', 'Run_Number': 2, 'Timestamp': '2026-07-25T23:35:30.188749+00:00', 'Runtime_Minutes': 0.879, 'CPU_Avg_Pct': 49.0, 'Cost_USD': 0.0037, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n2-r1-1_1785022530.csv
+
+=== Standard_D2s_v3 | 2 nodes | 100MB | io | run 1 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '100MB.csv', 'Dataset_Size_MB': 100, 'Workload': 'io', 'Run_Number': 1, 'Timestamp': '2026-07-25T23:36:25.109371+00:00', 'Runtime_Minutes': 0.8642, 'CPU_Avg_Pct': 95.98, 'Cost_USD': 0.0036, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n2-r1-1_1785022585.csv
+
+=== Standard_D2s_v3 | 2 nodes | 100MB | io | run 2 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '100MB.csv', 'Dataset_Size_MB': 100, 'Workload': 'io', 'Run_Number': 2, 'Timestamp': '2026-07-25T23:37:19.500534+00:00', 'Runtime_Minutes': 0.8498, 'CPU_Avg_Pct': 96.14, 'Cost_USD': 0.0035, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n2-r1-1_1785022639.csv
+Downloading events_500mb.csv (excluded from timer)...
+Replicating dataset to worker 20.212.200.56 (excluded from timer)...
+
+=== Standard_D2s_v3 | 2 nodes | 500MB | cpu | run 1 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '500MB.csv', 'Dataset_Size_MB': 500, 'Workload': 'cpu', 'Run_Number': 1, 'Timestamp': '2026-07-25T23:39:04.547230+00:00', 'Runtime_Minutes': 1.0356, 'CPU_Avg_Pct': 30.37, 'Cost_USD': 0.0043, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n2-r1-1_1785022744.csv
+
+=== Standard_D2s_v3 | 2 nodes | 500MB | cpu | run 2 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '500MB.csv', 'Dataset_Size_MB': 500, 'Workload': 'cpu', 'Run_Number': 2, 'Timestamp': '2026-07-25T23:40:11.485623+00:00', 'Runtime_Minutes': 1.0154, 'CPU_Avg_Pct': 30.65, 'Cost_USD': 0.0042, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n2-r1-1_1785022811.csv
+
+=== Standard_D2s_v3 | 2 nodes | 500MB | memory | run 1 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '500MB.csv', 'Dataset_Size_MB': 500, 'Workload': 'memory', 'Run_Number': 1, 'Timestamp': '2026-07-25T23:41:53.866763+00:00', 'Runtime_Minutes': 1.6032, 'CPU_Avg_Pct': 30.64, 'Cost_USD': 0.0067, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n2-r1-1_1785022913.csv
+
+=== Standard_D2s_v3 | 2 nodes | 500MB | memory | run 2 ===
+Warning: Permanently added '4.193.216.165' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.205.190.160' (ED25519) to the list of known hosts.
+Warning: Permanently added '4.193.162.219' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.24.17.227' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.212.156.34' (ED25519) to the list of known hosts.
+Warning: Permanently added '4.193.216.165' (ED25519) to the list of known hosts.
+Warning: Permanently added '4.193.216.165' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.212.156.34' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.212.156.34' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.205.190.160' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.205.190.160' (ED25519) to the list of known hosts.
+Warning: Permanently added '4.193.162.219' (ED25519) to the list of known hosts.
+Warning: Permanently added '4.193.162.219' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.24.17.227' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.24.17.227' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.212.200.56' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.212.200.56' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.212.200.56' (ED25519) to the list of known hosts.
+Warning: Permanently added '4.193.216.165' (ED25519) to the list of known hosts.
+Warning: Permanently added '4.193.216.165' (ED25519) to the list of known hosts.
+Warning: Permanently added '4.193.216.165' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.205.190.160' (ED25519) to the list of known hosts.
+Warning: Permanently added '4.193.162.219' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.24.17.227' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.205.190.160' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.205.190.160' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.212.156.34' (ED25519) to the list of known hosts.
+Warning: Permanently added '4.193.162.219' (ED25519) to the list of known hosts.
+Warning: Permanently added '4.193.162.219' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.24.17.227' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.24.17.227' (ED25519) to the list of known hosts.
+05:32:04 launching Standard_D2s_v3 x4 tag=r2 (8vCPU, live_used 24->32/32)
+
+############################################################
+# southeastasia | Standard_D2s_v3 | 4 nodes 
+############################################################
+Creating bench-sea-d2s_v3-n4-r2-1...
+Creating bench-sea-d2s_v3-n4-r2-2...
+Creating bench-sea-d2s_v3-n4-r2-3...
+Creating bench-sea-d2s_v3-n4-r2-4...
+Waiting for bench-sea-d2s_v3-n4-r2-1 to finish provisioning...
+Warning: Permanently added '20.212.156.34' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.212.156.34' (ED25519) to the list of known hosts.
+  bench-sea-d2s_v3-n4-r2-1 -> 4.193.212.117
+Waiting for bench-sea-d2s_v3-n4-r2-2 to finish provisioning...
+Warning: Permanently added '20.212.200.56' (ED25519) to the list of known hosts.
+  bench-sea-d2s_v3-n4-r2-2 -> 138.91.41.25
+Waiting for bench-sea-d2s_v3-n4-r2-3 to finish provisioning...
+  bench-sea-d2s_v3-n4-r2-3 -> 20.212.104.198
+Waiting for bench-sea-d2s_v3-n4-r2-4 to finish provisioning...
+  bench-sea-d2s_v3-n4-r2-4 -> 4.194.12.44
+  waiting for install on 4.193.212.117 (1/180)...
+  waiting for install on 4.193.212.117 (2/180)...
+  waiting for install on 4.193.212.117 (3/180)...
+  waiting for install on 4.193.212.117 (4/180)...
+  waiting for install on 4.193.212.117 (5/180)...
+  install finished on 4.193.212.117
+  waiting for install on 138.91.41.25 (1/180)...
+Warning: Permanently added '20.212.200.56' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.212.200.56' (ED25519) to the list of known hosts.
+  install finished on 138.91.41.25
+  install finished on 20.212.104.198
+  install finished on 4.194.12.44
+Repairing /opt/benchmark permissions on all VMs...
+Warning: Permanently added '4.193.212.117' (ED25519) to the list of known hosts.
+Warning: Permanently added '138.91.41.25' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.212.104.198' (ED25519) to the list of known hosts.
+Warning: Permanently added '4.194.12.44' (ED25519) to the list of known hosts.
+Warning: Permanently added '4.193.212.117' (ED25519) to the list of known hosts.
+starting org.apache.spark.deploy.master.Master, logging to /opt/spark/logs/spark-benchadmin-org.apache.spark.deploy.master.Master-1-bench-sea-d2sv3-n4-r2-1.out
+Warning: Permanently added '138.91.41.25' (ED25519) to the list of known hosts.
+starting org.apache.spark.deploy.worker.Worker, logging to /opt/spark/logs/spark-benchadmin-org.apache.spark.deploy.worker.Worker-1-bench-sea-d2sv3-n4-r2-2.out
+Warning: Permanently added '20.212.104.198' (ED25519) to the list of known hosts.
+starting org.apache.spark.deploy.worker.Worker, logging to /opt/spark/logs/spark-benchadmin-org.apache.spark.deploy.worker.Worker-1-bench-sea-d2sv3-n4-r2-3.out
+Warning: Permanently added '4.194.12.44' (ED25519) to the list of known hosts.
+starting org.apache.spark.deploy.worker.Worker, logging to /opt/spark/logs/spark-benchadmin-org.apache.spark.deploy.worker.Worker-1-bench-sea-d2sv3-n4-r2-4.out
+Cluster up: spark://10.0.0.12:7077 (4 nodes)
+Warning: Permanently added '4.193.212.117' (ED25519) to the list of known hosts.
+Warning: Permanently added '4.193.212.117' (ED25519) to the list of known hosts.
+Warning: Permanently added '4.193.212.117' (ED25519) to the list of known hosts.
+Warning: Permanently added '138.91.41.25' (ED25519) to the list of known hosts.
+Warning: Permanently added '138.91.41.25' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.212.104.198' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.212.104.198' (ED25519) to the list of known hosts.
+Warning: Permanently added '4.194.12.44' (ED25519) to the list of known hosts.
+Warning: Permanently added '4.194.12.44' (ED25519) to the list of known hosts.
+Warning: Permanently added '138.91.41.25' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.212.104.198' (ED25519) to the list of known hosts.
+Warning: Permanently added '4.194.12.44' (ED25519) to the list of known hosts.
+Warning: Permanently added '138.91.41.25' (ED25519) to the list of known hosts.
+Warning: Permanently added '138.91.41.25' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.212.104.198' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.212.104.198' (ED25519) to the list of known hosts.
+Warning: Permanently added '4.194.12.44' (ED25519) to the list of known hosts.
+Warning: Permanently added '4.194.12.44' (ED25519) to the list of known hosts.
+Warning: Permanently added '4.193.216.165' (ED25519) to the list of known hosts.
+Warning: Permanently added '4.193.216.165' (ED25519) to the list of known hosts.
+Warning: Permanently added '4.193.216.165' (ED25519) to the list of known hosts.
+Warning: Permanently added '138.91.41.25' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.212.104.198' (ED25519) to the list of known hosts.
+Warning: Permanently added '4.194.12.44' (ED25519) to the list of known hosts.
+Warning: Permanently added '138.91.41.25' (ED25519) to the list of known hosts.
+Warning: Permanently added '138.91.41.25' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.212.104.198' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.212.104.198' (ED25519) to the list of known hosts.
+Warning: Permanently added '4.194.12.44' (ED25519) to the list of known hosts.
+Warning: Permanently added '4.194.12.44' (ED25519) to the list of known hosts.
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D4s_v3', 'vCPU': 4, 'RAM_GB': 16, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '500MB.csv', 'Dataset_Size_MB': 500, 'Workload': 'memory', 'Run_Number': 2, 'Timestamp': '2026-07-25T23:43:15.001935+00:00', 'Runtime_Minutes': 0.875, 'CPU_Avg_Pct': 24.3, 'Cost_USD': 0.0073, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d4sv3-n2-r1-1_1785022995.csv
+
+=== Standard_D4s_v3 | 2 nodes | 500MB | io | run 1 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D4s_v3', 'vCPU': 4, 'RAM_GB': 16, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '500MB.csv', 'Dataset_Size_MB': 500, 'Workload': 'io', 'Run_Number': 1, 'Timestamp': '2026-07-25T23:44:27.402046+00:00', 'Runtime_Minutes': 1.177, 'CPU_Avg_Pct': 87.25, 'Cost_USD': 0.0098, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d4sv3-n2-r1-1_1785023067.csv
+
+=== Standard_D4s_v3 | 2 nodes | 500MB | io | run 2 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D4s_v3', 'vCPU': 4, 'RAM_GB': 16, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '500MB.csv', 'Dataset_Size_MB': 500, 'Workload': 'io', 'Run_Number': 2, 'Timestamp': '2026-07-25T23:45:39.820132+00:00', 'Runtime_Minutes': 1.1293, 'CPU_Avg_Pct': 85.68, 'Cost_USD': 0.0094, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d4sv3-n2-r1-1_1785023139.csv
+Downloading events_1024mb.csv (excluded from timer)...
+Replicating dataset to worker 4.193.216.165 (excluded from timer)...
+
+=== Standard_D4s_v3 | 2 nodes | 1024MB | cpu | run 1 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D4s_v3', 'vCPU': 4, 'RAM_GB': 16, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '1024MB.csv', 'Dataset_Size_MB': 1024, 'Workload': 'cpu', 'Run_Number': 1, 'Timestamp': '2026-07-25T23:47:42.623645+00:00', 'Runtime_Minutes': 0.9044, 'CPU_Avg_Pct': 14.63, 'Cost_USD': 0.0075, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d4sv3-n2-r1-1_1785023262.csv
+
+=== Standard_D4s_v3 | 2 nodes | 1024MB | cpu | run 2 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D4s_v3', 'vCPU': 4, 'RAM_GB': 16, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '1024MB.csv', 'Dataset_Size_MB': 1024, 'Workload': 'cpu', 'Run_Number': 2, 'Timestamp': '2026-07-25T23:48:42.921915+00:00', 'Runtime_Minutes': 0.9072, 'CPU_Avg_Pct': 14.58, 'Cost_USD': 0.0076, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d4sv3-n2-r1-1_1785023322.csv
+
+=== Standard_D4s_v3 | 2 nodes | 1024MB | memory | run 1 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D4s_v3', 'vCPU': 4, 'RAM_GB': 16, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '1024MB.csv', 'Dataset_Size_MB': 1024, 'Workload': 'memory', 'Run_Number': 1, 'Timestamp': '2026-07-25T23:50:01.245910+00:00', 'Runtime_Minutes': 1.2836, 'CPU_Avg_Pct': 21.42, 'Cost_USD': 0.0107, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d4sv3-n2-r1-1_1785023401.csv
+
+=== Standard_D4s_v3 | 2 nodes | 1024MB | memory | run 2 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D4s_v3', 'vCPU': 4, 'RAM_GB': 16, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '1024MB.csv', 'Dataset_Size_MB': 1024, 'Workload': 'memory', 'Run_Number': 2, 'Timestamp': '2026-07-25T23:51:25.596917+00:00', 'Runtime_Minutes': 1.3151, 'CPU_Avg_Pct': 17.99, 'Cost_USD': 0.011, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d4sv3-n2-r1-1_1785023485.csv
+
+=== Standard_D4s_v3 | 2 nodes | 1024MB | io | run 1 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D4s_v3', 'vCPU': 4, 'RAM_GB': 16, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '1024MB.csv', 'Dataset_Size_MB': 1024, 'Workload': 'io', 'Run_Number': 1, 'Timestamp': '2026-07-25T23:53:20.126126+00:00', 'Runtime_Minutes': 1.8897, 'CPU_Avg_Pct': 89.46, 'Cost_USD': 0.0157, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d4sv3-n2-r1-1_1785023600.csv
+
+=== Standard_D4s_v3 | 2 nodes | 1024MB | io | run 2 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D4s_v3', 'vCPU': 4, 'RAM_GB': 16, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '1024MB.csv', 'Dataset_Size_MB': 1024, 'Workload': 'io', 'Run_Number': 2, 'Timestamp': '2026-07-25T23:55:20.669281+00:00', 'Runtime_Minutes': 1.905, 'CPU_Avg_Pct': 86.84, 'Cost_USD': 0.0159, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d4sv3-n2-r1-1_1785023720.csv
+Downloading events_2048.csv (excluded from timer)...
+Replicating dataset to worker 4.193.216.165 (excluded from timer)...
+
+=== Standard_D4s_v3 | 2 nodes | 2048MB | cpu | run 1 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D4s_v3', 'vCPU': 4, 'RAM_GB': 16, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '2048MB.csv', 'Dataset_Size_MB': 2048, 'Workload': 'cpu', 'Run_Number': 1, 'Timestamp': '2026-07-25T23:58:35.366812+00:00', 'Runtime_Minutes': 1.4262, 'CPU_Avg_Pct': 17.16, 'Cost_USD': 0.0119, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d4sv3-n2-r1-1_1785023915.csv
+
+=== Standard_D4s_v3 | 2 nodes | 2048MB | cpu | run 2 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D4s_v3', 'vCPU': 4, 'RAM_GB': 16, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '2048MB.csv', 'Dataset_Size_MB': 2048, 'Workload': 'cpu', 'Run_Number': 2, 'Timestamp': '2026-07-26T00:00:07.602013+00:00', 'Runtime_Minutes': 1.4319, 'CPU_Avg_Pct': 11.84, 'Cost_USD': 0.0119, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d4sv3-n2-r1-1_1785024007.csv
+
+=== Standard_D4s_v3 | 2 nodes | 2048MB | memory | run 1 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D4s_v3', 'vCPU': 4, 'RAM_GB': 16, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '2048MB.csv', 'Dataset_Size_MB': 2048, 'Workload': 'memory', 'Run_Number': 1, 'Timestamp': '2026-07-26T00:02:20.038497+00:00', 'Runtime_Minutes': 2.1068, 'CPU_Avg_Pct': 8.29, 'Cost_USD': 0.0176, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d4sv3-n2-r1-1_1785024140.csv
+
+=== Standard_D4s_v3 | 2 nodes | 2048MB | memory | run 2 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D4s_v3', 'vCPU': 4, 'RAM_GB': 16, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '2048MB.csv', 'Dataset_Size_MB': 2048, 'Workload': 'memory', 'Run_Number': 2, 'Timestamp': '2026-07-26T00:04:32.442966+00:00', 'Runtime_Minutes': 2.1081, 'CPU_Avg_Pct': 5.9, 'Cost_USD': 0.0176, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d4sv3-n2-r1-1_1785024272.csv
+
+=== Standard_D4s_v3 | 2 nodes | 2048MB | io | run 1 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D4s_v3', 'vCPU': 4, 'RAM_GB': 16, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '2048MB.csv', 'Dataset_Size_MB': 2048, 'Workload': 'io', 'Run_Number': 1, 'Timestamp': '2026-07-26T00:07:51.176531+00:00', 'Runtime_Minutes': 3.2568, 'CPU_Avg_Pct': 93.19, 'Cost_USD': 0.0271, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d4sv3-n2-r1-1_1785024471.csv
+
+=== Standard_D4s_v3 | 2 nodes | 2048MB | io | run 2 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D4s_v3', 'vCPU': 4, 'RAM_GB': 16, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '2048MB.csv', 'Dataset_Size_MB': 2048, 'Workload': 'io', 'Run_Number': 2, 'Timestamp': '2026-07-26T00:11:16.196632+00:00', 'Runtime_Minutes': 3.3318, 'CPU_Avg_Pct': 88.2, 'Cost_USD': 0.0278, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d4sv3-n2-r1-1_1785024676.csv
+Downloading events_3072.csv (excluded from timer)...
+Replicating dataset to worker 4.193.216.165 (excluded from timer)...
+
+=== Standard_D4s_v3 | 2 nodes | 3072MB | cpu | run 1 ===
+Downloading events_10mb.csv (excluded from timer)...
+Replicating dataset to worker 138.91.41.25 (excluded from timer)...
+Replicating dataset to worker 20.212.104.198 (excluded from timer)...
+Replicating dataset to worker 4.194.12.44 (excluded from timer)...
+
+=== Standard_D2s_v3 | 4 nodes | 10MB | cpu | run 1 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 4, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '10MB.csv', 'Dataset_Size_MB': 10, 'Workload': 'cpu', 'Run_Number': 1, 'Timestamp': '2026-07-26T00:06:59.765498+00:00', 'Runtime_Minutes': 0.475, 'CPU_Avg_Pct': 73.2, 'Cost_USD': 0.004, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n4-r2-1_1785024419.csv
+
+=== Standard_D2s_v3 | 4 nodes | 10MB | cpu | run 2 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 4, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '10MB.csv', 'Dataset_Size_MB': 10, 'Workload': 'cpu', 'Run_Number': 2, 'Timestamp': '2026-07-26T00:07:30.038454+00:00', 'Runtime_Minutes': 0.4918, 'CPU_Avg_Pct': 76.36, 'Cost_USD': 0.0041, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n4-r2-1_1785024450.csv
+
+=== Standard_D2s_v3 | 4 nodes | 10MB | memory | run 1 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 4, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '10MB.csv', 'Dataset_Size_MB': 10, 'Workload': 'memory', 'Run_Number': 1, 'Timestamp': '2026-07-26T00:08:12.342615+00:00', 'Runtime_Minutes': 0.6259, 'CPU_Avg_Pct': 62.0, 'Cost_USD': 0.0052, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n4-r2-1_1785024492.csv
+
+=== Standard_D2s_v3 | 4 nodes | 10MB | memory | run 2 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 4, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '10MB.csv', 'Dataset_Size_MB': 10, 'Workload': 'memory', 'Run_Number': 2, 'Timestamp': '2026-07-26T00:08:54.621202+00:00', 'Runtime_Minutes': 0.6486, 'CPU_Avg_Pct': 64.15, 'Cost_USD': 0.0054, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n4-r2-1_1785024534.csv
+
+=== Standard_D2s_v3 | 4 nodes | 10MB | io | run 1 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 4, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '10MB.csv', 'Dataset_Size_MB': 10, 'Workload': 'io', 'Run_Number': 1, 'Timestamp': '2026-07-26T00:09:30.910566+00:00', 'Runtime_Minutes': 0.5074, 'CPU_Avg_Pct': 82.09, 'Cost_USD': 0.0042, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n4-r2-1_1785024570.csv
+
+=== Standard_D2s_v3 | 4 nodes | 10MB | io | run 2 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 4, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '10MB.csv', 'Dataset_Size_MB': 10, 'Workload': 'io', 'Run_Number': 2, 'Timestamp': '2026-07-26T00:10:07.211509+00:00', 'Runtime_Minutes': 0.5232, 'CPU_Avg_Pct': 96.38, 'Cost_USD': 0.0044, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n4-r2-1_1785024607.csv
+Downloading events_100mb.csv (excluded from timer)...
+Replicating dataset to worker 138.91.41.25 (excluded from timer)...
+Replicating dataset to worker 20.212.104.198 (excluded from timer)...
+Replicating dataset to worker 4.194.12.44 (excluded from timer)...
+
+=== Standard_D2s_v3 | 4 nodes | 100MB | cpu | run 1 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 4, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '100MB.csv', 'Dataset_Size_MB': 100, 'Workload': 'cpu', 'Run_Number': 1, 'Timestamp': '2026-07-26T00:10:53.899820+00:00', 'Runtime_Minutes': 0.5272, 'CPU_Avg_Pct': 53.3, 'Cost_USD': 0.0044, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n4-r2-1_1785024653.csv
+
+=== Standard_D2s_v3 | 4 nodes | 100MB | cpu | run 2 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 4, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '100MB.csv', 'Dataset_Size_MB': 100, 'Workload': 'cpu', 'Run_Number': 2, 'Timestamp': '2026-07-26T00:11:30.198763+00:00', 'Runtime_Minutes': 0.5101, 'CPU_Avg_Pct': 55.14, 'Cost_USD': 0.0043, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n4-r2-1_1785024690.csv
+
+=== Standard_D2s_v3 | 4 nodes | 100MB | memory | run 1 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 4, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '100MB.csv', 'Dataset_Size_MB': 100, 'Workload': 'memory', 'Run_Number': 1, 'Timestamp': '2026-07-26T00:12:12.480198+00:00', 'Runtime_Minutes': 0.6873, 'CPU_Avg_Pct': 53.71, 'Cost_USD': 0.0057, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n4-r2-1_1785024732.csv
+
+=== Standard_D2s_v3 | 4 nodes | 100MB | memory | run 2 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 4, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '100MB.csv', 'Dataset_Size_MB': 100, 'Workload': 'memory', 'Run_Number': 2, 'Timestamp': '2026-07-26T00:12:54.757722+00:00', 'Runtime_Minutes': 0.6905, 'CPU_Avg_Pct': 60.62, 'Cost_USD': 0.0058, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n4-r2-1_1785024774.csv
+
+=== Standard_D2s_v3 | 4 nodes | 100MB | io | run 1 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 4, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '100MB.csv', 'Dataset_Size_MB': 100, 'Workload': 'io', 'Run_Number': 1, 'Timestamp': '2026-07-26T00:13:43.083663+00:00', 'Runtime_Minutes': 0.7437, 'CPU_Avg_Pct': 97.62, 'Cost_USD': 0.0062, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n4-r2-1_1785024823.csv
+
+=== Standard_D2s_v3 | 4 nodes | 100MB | io | run 2 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 4, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '100MB.csv', 'Dataset_Size_MB': 100, 'Workload': 'io', 'Run_Number': 2, 'Timestamp': '2026-07-26T00:14:31.410252+00:00', 'Runtime_Minutes': 0.7152, 'CPU_Avg_Pct': 93.84, 'Cost_USD': 0.006, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n4-r2-1_1785024871.csv
+Downloading events_500mb.csv (excluded from timer)...
+Replicating dataset to worker 138.91.41.25 (excluded from timer)...
+Replicating dataset to worker 20.212.104.198 (excluded from timer)...
+Replicating dataset to worker 4.194.12.44 (excluded from timer)...
+
+=== Standard_D2s_v3 | 4 nodes | 500MB | cpu | run 1 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 4, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '500MB.csv', 'Dataset_Size_MB': 500, 'Workload': 'cpu', 'Run_Number': 1, 'Timestamp': '2026-07-26T00:15:54.718382+00:00', 'Runtime_Minutes': 0.6535, 'CPU_Avg_Pct': 58.24, 'Cost_USD': 0.0054, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n4-r2-1_1785024954.csv
+
+=== Standard_D2s_v3 | 4 nodes | 500MB | cpu | run 2 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 4, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '500MB.csv', 'Dataset_Size_MB': 500, 'Workload': 'cpu', 'Run_Number': 2, 'Timestamp': '2026-07-26T00:16:37.019575+00:00', 'Runtime_Minutes': 0.6724, 'CPU_Avg_Pct': 44.35, 'Cost_USD': 0.0056, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n4-r2-1_1785024997.csv
+
+=== Standard_D2s_v3 | 4 nodes | 500MB | memory | run 1 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 4, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '500MB.csv', 'Dataset_Size_MB': 500, 'Workload': 'memory', 'Run_Number': 1, 'Timestamp': '2026-07-25T23:40:55.295459+00:00', 'Runtime_Minutes': 1.0, 'CPU_Avg_Pct': 53.31, 'Cost_USD': 0.0083, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n4-r1-1_1785022855.csv
+
+=== Standard_D2s_v3 | 4 nodes | 500MB | memory | run 2 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 4, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '500MB.csv', 'Dataset_Size_MB': 500, 'Workload': 'memory', 'Run_Number': 2, 'Timestamp': '2026-07-25T23:41:55.617779+00:00', 'Runtime_Minutes': 0.9813, 'CPU_Avg_Pct': 52.95, 'Cost_USD': 0.0082, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n4-r1-1_1785022915.csv
+
+=== Standard_D2s_v3 | 4 nodes | 500MB | io | run 1 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 4, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '500MB.csv', 'Dataset_Size_MB': 500, 'Workload': 'io', 'Run_Number': 1, 'Timestamp': '2026-07-25T23:43:50.117810+00:00', 'Runtime_Minutes': 1.9029, 'CPU_Avg_Pct': 98.05, 'Cost_USD': 0.0159, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n4-r1-1_1785023030.csv
+
+=== Standard_D2s_v3 | 4 nodes | 500MB | io | run 2 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 4, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '500MB.csv', 'Dataset_Size_MB': 500, 'Workload': 'io', 'Run_Number': 2, 'Timestamp': '2026-07-25T23:45:44.628153+00:00', 'Runtime_Minutes': 1.8702, 'CPU_Avg_Pct': 96.85, 'Cost_USD': 0.0156, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n4-r1-1_1785023144.csv
+Downloading events_1024mb.csv (excluded from timer)...
+Replicating dataset to worker 20.205.190.160 (excluded from timer)...
+Replicating dataset to worker 4.193.162.219 (excluded from timer)...
+Replicating dataset to worker 20.24.17.227 (excluded from timer)...
+
+=== Standard_D2s_v3 | 4 nodes | 1024MB | cpu | run 1 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 4, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '1024MB.csv', 'Dataset_Size_MB': 1024, 'Workload': 'cpu', 'Run_Number': 1, 'Timestamp': '2026-07-25T23:48:27.183723+00:00', 'Runtime_Minutes': 1.0702, 'CPU_Avg_Pct': 34.25, 'Cost_USD': 0.0089, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n4-r1-1_1785023307.csv
+
+=== Standard_D2s_v3 | 4 nodes | 1024MB | cpu | run 2 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 4, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '1024MB.csv', 'Dataset_Size_MB': 1024, 'Workload': 'cpu', 'Run_Number': 2, 'Timestamp': '2026-07-25T23:49:33.532963+00:00', 'Runtime_Minutes': 1.0371, 'CPU_Avg_Pct': 35.87, 'Cost_USD': 0.0086, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n4-r1-1_1785023373.csv
+
+=== Standard_D2s_v3 | 4 nodes | 1024MB | memory | run 1 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 4, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '1024MB.csv', 'Dataset_Size_MB': 1024, 'Workload': 'memory', 'Run_Number': 1, 'Timestamp': '2026-07-25T23:51:09.912571+00:00', 'Runtime_Minutes': 1.5035, 'CPU_Avg_Pct': 30.86, 'Cost_USD': 0.0125, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n4-r1-1_1785023469.csv
+
+=== Standard_D2s_v3 | 4 nodes | 1024MB | memory | run 2 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 4, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '1024MB.csv', 'Dataset_Size_MB': 1024, 'Workload': 'memory', 'Run_Number': 2, 'Timestamp': '2026-07-25T23:52:40.303012+00:00', 'Runtime_Minutes': 1.4393, 'CPU_Avg_Pct': 34.08, 'Cost_USD': 0.012, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n4-r1-1_1785023560.csv
+
+=== Standard_D2s_v3 | 4 nodes | 1024MB | io | run 1 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 4, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '1024MB.csv', 'Dataset_Size_MB': 1024, 'Workload': 'io', 'Run_Number': 1, 'Timestamp': '2026-07-25T23:55:40.970352+00:00', 'Runtime_Minutes': 2.9874, 'CPU_Avg_Pct': 97.63, 'Cost_USD': 0.0249, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n4-r1-1_1785023740.csv
+
+=== Standard_D2s_v3 | 4 nodes | 1024MB | io | run 2 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 4, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '1024MB.csv', 'Dataset_Size_MB': 1024, 'Workload': 'io', 'Run_Number': 2, 'Timestamp': '2026-07-25T23:58:47.643991+00:00', 'Runtime_Minutes': 3.0284, 'CPU_Avg_Pct': 97.15, 'Cost_USD': 0.0252, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n4-r1-1_1785023927.csv
+Downloading events_2048.csv (excluded from timer)...
+Replicating dataset to worker 20.205.190.160 (excluded from timer)...
+Replicating dataset to worker 4.193.162.219 (excluded from timer)...
+Replicating dataset to worker 20.24.17.227 (excluded from timer)...
+
+=== Standard_D2s_v3 | 4 nodes | 2048MB | cpu | run 1 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 4, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '2048MB.csv', 'Dataset_Size_MB': 2048, 'Workload': 'cpu', 'Run_Number': 1, 'Timestamp': '2026-07-26T00:02:58.302988+00:00', 'Runtime_Minutes': 1.3834, 'CPU_Avg_Pct': 27.12, 'Cost_USD': 0.0115, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n4-r1-1_1785024178.csv
+
+=== Standard_D2s_v3 | 4 nodes | 2048MB | cpu | run 2 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 4, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '2048MB.csv', 'Dataset_Size_MB': 2048, 'Workload': 'cpu', 'Run_Number': 2, 'Timestamp': '2026-07-26T00:04:22.660633+00:00', 'Runtime_Minutes': 1.3849, 'CPU_Avg_Pct': 28.12, 'Cost_USD': 0.0115, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n4-r1-1_1785024262.csv
+
+=== Standard_D2s_v3 | 4 nodes | 2048MB | memory | run 1 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 4, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '2048MB.csv', 'Dataset_Size_MB': 2048, 'Workload': 'memory', 'Run_Number': 1, 'Timestamp': '2026-07-26T00:06:29.059980+00:00', 'Runtime_Minutes': 2.0068, 'CPU_Avg_Pct': 21.73, 'Cost_USD': 0.0167, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n4-r1-1_1785024389.csv
+
+=== Standard_D2s_v3 | 4 nodes | 2048MB | memory | run 2 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 4, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '2048MB.csv', 'Dataset_Size_MB': 2048, 'Workload': 'memory', 'Run_Number': 2, 'Timestamp': '2026-07-26T00:08:29.493434+00:00', 'Runtime_Minutes': 1.984, 'CPU_Avg_Pct': 24.91, 'Cost_USD': 0.0165, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n4-r1-1_1785024509.csv
+
+=== Standard_D2s_v3 | 4 nodes | 2048MB | io | run 1 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 4, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '2048MB.csv', 'Dataset_Size_MB': 2048, 'Workload': 'io', 'Run_Number': 1, 'Timestamp': '2026-07-26T00:13:48.700993+00:00', 'Runtime_Minutes': 5.2892, 'CPU_Avg_Pct': 97.92, 'Cost_USD': 0.0441, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n4-r1-1_1785024828.csv
+
+=== Standard_D2s_v3 | 4 nodes | 2048MB | io | run 2 ===
+Warning: Permanently added '20.205.190.160' (ED25519) to the list of known hosts.
+Warning: Permanently added '4.193.162.219' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.24.17.227' (ED25519) to the list of known hosts.
+Warning: Permanently added '138.91.41.25' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.212.104.198' (ED25519) to the list of known hosts.
+Warning: Permanently added '4.194.12.44' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.205.190.160' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.205.190.160' (ED25519) to the list of known hosts.
+Warning: Permanently added '138.91.41.25' (ED25519) to the list of known hosts.
+Warning: Permanently added '138.91.41.25' (ED25519) to the list of known hosts.
+Warning: Permanently added '4.193.162.219' (ED25519) to the list of known hosts.
+kex_exchange_identification: Connection closed by remote host
+Connection closed by 4.193.162.219 port 22
+lost connection
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 4, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '2048MB.csv', 'Dataset_Size_MB': 2048, 'Workload': 'io', 'Run_Number': 2, 'Timestamp': '2026-07-26T00:19:25.959740+00:00', 'Runtime_Minutes': 5.5772, 'CPU_Avg_Pct': 97.5, 'Cost_USD': 0.0465, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n4-r1-1_1785025165.csv
+Downloading events_3072.csv (excluded from timer)...
+Replicating dataset to worker 20.205.190.160 (excluded from timer)...
+Replicating dataset to worker 4.193.162.219 (excluded from timer)...
+Traceback (most recent call last):
+  File "/opt/benchmark/run_benchmark.py", line 337, in <module>
+    main()
+  File "/opt/benchmark/run_benchmark.py", line 282, in main
+    replicate_to_workers(local_path, worker_ips, args.admin_username, args.admin_password)
+  File "/opt/benchmark/run_benchmark.py", line 138, in replicate_to_workers
+    subprocess.run(cmd, shell=True, check=True)
+  File "/usr/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command 'sshpass -p 'IITprojectpassword@!123' ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null benchadmin@4.193.162.219 'mkdir -p /opt/benchmark/datasets/' && sshpass -p 'IITprojectpassword@!123' scp -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null /opt/benchmark/datasets/3072MB.csv benchadmin@4.193.162.219:/opt/benchmark/datasets/' returned non-zero exit status 1.
+Deleting VMs for this combo...
+Warning: Permanently added '20.212.104.198' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.212.104.198' (ED25519) to the list of known hosts.
+Warning: Permanently added '4.194.12.44' (ED25519) to the list of known hosts.
+Warning: Permanently added '4.194.12.44' (ED25519) to the list of known hosts.
+05:53:11 launching Standard_D2s_v3 x2 tag=r3 (4vCPU, live_used 24->28/32)
+
+############################################################
+# southeastasia | Standard_D2s_v3 | 2 nodes 
+############################################################
+Creating bench-sea-d2s_v3-n2-r3-1...
+Creating bench-sea-d2s_v3-n2-r3-2...
+Waiting for bench-sea-d2s_v3-n2-r3-1 to finish provisioning...
+  bench-sea-d2s_v3-n2-r3-1 -> 20.212.54.86
+Waiting for bench-sea-d2s_v3-n2-r3-2 to finish provisioning...
+Combo done: southeastasia / Standard_D2s_v3 / 4 nodes
+05:54:12 job finished (self-tracked slot freed)
+  bench-sea-d2s_v3-n2-r3-2 -> 4.193.192.10
+  waiting for install on 20.212.54.86 (1/180)...
+  waiting for install on 20.212.54.86 (2/180)...
+  waiting for install on 20.212.54.86 (3/180)...
+  waiting for install on 20.212.54.86 (4/180)...
+  install finished on 20.212.54.86
+  waiting for install on 4.193.192.10 (1/180)...
+  waiting for install on 4.193.192.10 (2/180)...
+  install finished on 4.193.192.10
+Repairing /opt/benchmark permissions on all VMs...
+Warning: Permanently added '20.212.54.86' (ED25519) to the list of known hosts.
+Warning: Permanently added '4.193.192.10' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.212.54.86' (ED25519) to the list of known hosts.
+starting org.apache.spark.deploy.master.Master, logging to /opt/spark/logs/spark-benchadmin-org.apache.spark.deploy.master.Master-1-bench-sea-d2sv3-n2-r3-1.out
+Warning: Permanently added '4.193.192.10' (ED25519) to the list of known hosts.
+starting org.apache.spark.deploy.worker.Worker, logging to /opt/spark/logs/spark-benchadmin-org.apache.spark.deploy.worker.Worker-1-bench-sea-d2sv3-n2-r3-2.out
+Cluster up: spark://10.0.0.18:7077 (2 nodes)
+Warning: Permanently added '20.212.54.86' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.212.54.86' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.212.54.86' (ED25519) to the list of known hosts.
+Warning: Permanently added '4.193.192.10' (ED25519) to the list of known hosts.
+Warning: Permanently added '4.193.192.10' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.212.156.34' (ED25519) to the list of known hosts.
+Warning: Permanently added '4.193.192.10' (ED25519) to the list of known hosts.
+Warning: Permanently added '4.193.192.10' (ED25519) to the list of known hosts.
+Warning: Permanently added '4.193.192.10' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.212.156.34' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.212.156.34' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.212.200.56' (ED25519) to the list of known hosts.
+Warning: Permanently added '138.91.41.25' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.212.104.198' (ED25519) to the list of known hosts.
+Warning: Permanently added '4.194.12.44' (ED25519) to the list of known hosts.
+Warning: Permanently added '4.193.216.165' (ED25519) to the list of known hosts.
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '500MB.csv', 'Dataset_Size_MB': 500, 'Workload': 'memory', 'Run_Number': 2, 'Timestamp': '2026-07-25T23:42:10.768736+00:00', 'Runtime_Minutes': 1.3872, 'CPU_Avg_Pct': 30.34, 'Cost_USD': 0.0058, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n2-r2-1_1785022930.csv
+
+=== Standard_D2s_v3 | 2 nodes | 500MB | io | run 1 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '500MB.csv', 'Dataset_Size_MB': 500, 'Workload': 'io', 'Run_Number': 1, 'Timestamp': '2026-07-25T23:43:59.248158+00:00', 'Runtime_Minutes': 1.7997, 'CPU_Avg_Pct': 98.36, 'Cost_USD': 0.0075, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n2-r2-1_1785023039.csv
+
+=== Standard_D2s_v3 | 2 nodes | 500MB | io | run 2 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '500MB.csv', 'Dataset_Size_MB': 500, 'Workload': 'io', 'Run_Number': 2, 'Timestamp': '2026-07-25T23:45:47.723666+00:00', 'Runtime_Minutes': 1.7901, 'CPU_Avg_Pct': 98.32, 'Cost_USD': 0.0075, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n2-r2-1_1785023147.csv
+Downloading events_1024mb.csv (excluded from timer)...
+Replicating dataset to worker 20.212.156.34 (excluded from timer)...
+
+=== Standard_D2s_v3 | 2 nodes | 1024MB | cpu | run 1 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '1024MB.csv', 'Dataset_Size_MB': 1024, 'Workload': 'cpu', 'Run_Number': 1, 'Timestamp': '2026-07-25T23:48:18.164066+00:00', 'Runtime_Minutes': 1.4683, 'CPU_Avg_Pct': 20.18, 'Cost_USD': 0.0061, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n2-r2-1_1785023298.csv
+
+=== Standard_D2s_v3 | 2 nodes | 1024MB | cpu | run 2 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '1024MB.csv', 'Dataset_Size_MB': 1024, 'Workload': 'cpu', 'Run_Number': 2, 'Timestamp': '2026-07-25T23:49:48.496122+00:00', 'Runtime_Minutes': 1.417, 'CPU_Avg_Pct': 23.61, 'Cost_USD': 0.0059, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n2-r2-1_1785023388.csv
+
+=== Standard_D2s_v3 | 2 nodes | 1024MB | memory | run 1 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '1024MB.csv', 'Dataset_Size_MB': 1024, 'Workload': 'memory', 'Run_Number': 1, 'Timestamp': '2026-07-25T23:52:07.005001+00:00', 'Runtime_Minutes': 2.2198, 'CPU_Avg_Pct': 19.27, 'Cost_USD': 0.0092, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n2-r2-1_1785023527.csv
+
+=== Standard_D2s_v3 | 2 nodes | 1024MB | memory | run 2 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '1024MB.csv', 'Dataset_Size_MB': 1024, 'Workload': 'memory', 'Run_Number': 2, 'Timestamp': '2026-07-25T23:54:25.433268+00:00', 'Runtime_Minutes': 2.2557, 'CPU_Avg_Pct': 17.15, 'Cost_USD': 0.0094, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n2-r2-1_1785023665.csv
+
+=== Standard_D2s_v3 | 2 nodes | 1024MB | io | run 1 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '1024MB.csv', 'Dataset_Size_MB': 1024, 'Workload': 'io', 'Run_Number': 1, 'Timestamp': '2026-07-25T23:57:26.086681+00:00', 'Runtime_Minutes': 3.0034, 'CPU_Avg_Pct': 96.92, 'Cost_USD': 0.0125, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n2-r2-1_1785023846.csv
+
+=== Standard_D2s_v3 | 2 nodes | 1024MB | io | run 2 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '1024MB.csv', 'Dataset_Size_MB': 1024, 'Workload': 'io', 'Run_Number': 2, 'Timestamp': '2026-07-26T00:00:38.788058+00:00', 'Runtime_Minutes': 3.1263, 'CPU_Avg_Pct': 97.31, 'Cost_USD': 0.013, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n2-r2-1_1785024038.csv
+Downloading events_2048.csv (excluded from timer)...
+Replicating dataset to worker 20.212.156.34 (excluded from timer)...
+
+=== Standard_D2s_v3 | 2 nodes | 2048MB | cpu | run 1 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '2048MB.csv', 'Dataset_Size_MB': 2048, 'Workload': 'cpu', 'Run_Number': 1, 'Timestamp': '2026-07-26T00:05:44.943379+00:00', 'Runtime_Minutes': 2.8319, 'CPU_Avg_Pct': 20.12, 'Cost_USD': 0.0118, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n2-r2-1_1785024344.csv
+
+=== Standard_D2s_v3 | 2 nodes | 2048MB | cpu | run 2 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '2048MB.csv', 'Dataset_Size_MB': 2048, 'Workload': 'cpu', 'Run_Number': 2, 'Timestamp': '2026-07-26T00:08:09.671428+00:00', 'Runtime_Minutes': 2.3756, 'CPU_Avg_Pct': 15.28, 'Cost_USD': 0.0099, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n2-r2-1_1785024489.csv
+
+=== Standard_D2s_v3 | 2 nodes | 2048MB | memory | run 1 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '2048MB.csv', 'Dataset_Size_MB': 2048, 'Workload': 'memory', 'Run_Number': 1, 'Timestamp': '2026-07-26T00:12:10.207256+00:00', 'Runtime_Minutes': 4.0028, 'CPU_Avg_Pct': 9.67, 'Cost_USD': 0.0167, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n2-r2-1_1785024730.csv
+
+=== Standard_D2s_v3 | 2 nodes | 2048MB | memory | run 2 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '2048MB.csv', 'Dataset_Size_MB': 2048, 'Workload': 'memory', 'Run_Number': 2, 'Timestamp': '2026-07-26T00:16:04.957051+00:00', 'Runtime_Minutes': 3.8651, 'CPU_Avg_Pct': 11.14, 'Cost_USD': 0.0161, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n2-r2-1_1785024964.csv
+
+=== Standard_D2s_v3 | 2 nodes | 2048MB | io | run 1 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '2048MB.csv', 'Dataset_Size_MB': 2048, 'Workload': 'io', 'Run_Number': 1, 'Timestamp': '2026-07-26T00:21:42.299921+00:00', 'Runtime_Minutes': 5.597, 'CPU_Avg_Pct': 97.7, 'Cost_USD': 0.0233, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n2-r2-1_1785025302.csv
+
+=== Standard_D2s_v3 | 2 nodes | 2048MB | io | run 2 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '2048MB.csv', 'Dataset_Size_MB': 2048, 'Workload': 'io', 'Run_Number': 2, 'Timestamp': '2026-07-26T00:27:19.604837+00:00', 'Runtime_Minutes': 5.5366, 'CPU_Avg_Pct': 97.72, 'Cost_USD': 0.0231, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n2-r2-1_1785025639.csv
+Downloading events_3072.csv (excluded from timer)...
+Replicating dataset to worker 20.212.156.34 (excluded from timer)...
+
+=== Standard_D2s_v3 | 2 nodes | 3072MB | cpu | run 1 ===
+Warning: Permanently added '4.193.192.10' (ED25519) to the list of known hosts.
+Warning: Permanently added '4.193.192.10' (ED25519) to the list of known hosts.
+Warning: Permanently added '4.193.192.10' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.212.200.56' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.212.200.56' (ED25519) to the list of known hosts.
+Warning: Permanently added '138.91.41.25' (ED25519) to the list of known hosts.
+Warning: Permanently added '138.91.41.25' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.212.104.198' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.212.104.198' (ED25519) to the list of known hosts.
+Warning: Permanently added '4.194.12.44' (ED25519) to the list of known hosts.
+Warning: Permanently added '4.194.12.44' (ED25519) to the list of known hosts.
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '500MB.csv', 'Dataset_Size_MB': 500, 'Workload': 'memory', 'Run_Number': 2, 'Timestamp': '2026-07-25T23:43:36.325233+00:00', 'Runtime_Minutes': 1.6456, 'CPU_Avg_Pct': 22.56, 'Cost_USD': 0.0069, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n2-r1-1_1785023016.csv
+
+=== Standard_D2s_v3 | 2 nodes | 500MB | io | run 1 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '500MB.csv', 'Dataset_Size_MB': 500, 'Workload': 'io', 'Run_Number': 1, 'Timestamp': '2026-07-25T23:45:31.186895+00:00', 'Runtime_Minutes': 1.8323, 'CPU_Avg_Pct': 97.49, 'Cost_USD': 0.0076, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n2-r1-1_1785023131.csv
+
+=== Standard_D2s_v3 | 2 nodes | 500MB | io | run 2 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '500MB.csv', 'Dataset_Size_MB': 500, 'Workload': 'io', 'Run_Number': 2, 'Timestamp': '2026-07-25T23:47:25.689664+00:00', 'Runtime_Minutes': 1.8225, 'CPU_Avg_Pct': 94.78, 'Cost_USD': 0.0076, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n2-r1-1_1785023245.csv
+Downloading events_1024mb.csv (excluded from timer)...
+Replicating dataset to worker 20.212.200.56 (excluded from timer)...
+
+=== Standard_D2s_v3 | 2 nodes | 1024MB | cpu | run 1 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '1024MB.csv', 'Dataset_Size_MB': 1024, 'Workload': 'cpu', 'Run_Number': 1, 'Timestamp': '2026-07-25T23:50:21.380117+00:00', 'Runtime_Minutes': 1.5827, 'CPU_Avg_Pct': 24.05, 'Cost_USD': 0.0066, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n2-r1-1_1785023421.csv
+
+=== Standard_D2s_v3 | 2 nodes | 1024MB | cpu | run 2 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '1024MB.csv', 'Dataset_Size_MB': 1024, 'Workload': 'cpu', 'Run_Number': 2, 'Timestamp': '2026-07-25T23:52:05.148436+00:00', 'Runtime_Minutes': 1.5628, 'CPU_Avg_Pct': 23.59, 'Cost_USD': 0.0065, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n2-r1-1_1785023525.csv
+
+=== Standard_D2s_v3 | 2 nodes | 1024MB | memory | run 1 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '1024MB.csv', 'Dataset_Size_MB': 1024, 'Workload': 'memory', 'Run_Number': 1, 'Timestamp': '2026-07-25T23:54:41.612637+00:00', 'Runtime_Minutes': 2.5723, 'CPU_Avg_Pct': 18.94, 'Cost_USD': 0.0107, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n2-r1-1_1785023681.csv
+
+=== Standard_D2s_v3 | 2 nodes | 1024MB | memory | run 2 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '1024MB.csv', 'Dataset_Size_MB': 1024, 'Workload': 'memory', 'Run_Number': 2, 'Timestamp': '2026-07-25T23:57:18.057342+00:00', 'Runtime_Minutes': 2.5978, 'CPU_Avg_Pct': 14.37, 'Cost_USD': 0.0108, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n2-r1-1_1785023838.csv
+
+=== Standard_D2s_v3 | 2 nodes | 1024MB | io | run 1 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '1024MB.csv', 'Dataset_Size_MB': 1024, 'Workload': 'io', 'Run_Number': 1, 'Timestamp': '2026-07-26T00:00:20.991423+00:00', 'Runtime_Minutes': 2.9901, 'CPU_Avg_Pct': 97.34, 'Cost_USD': 0.0125, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n2-r1-1_1785024020.csv
+
+=== Standard_D2s_v3 | 2 nodes | 1024MB | io | run 2 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '1024MB.csv', 'Dataset_Size_MB': 1024, 'Workload': 'io', 'Run_Number': 2, 'Timestamp': '2026-07-26T00:03:27.696286+00:00', 'Runtime_Minutes': 3.0858, 'CPU_Avg_Pct': 97.62, 'Cost_USD': 0.0129, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n2-r1-1_1785024207.csv
+Downloading events_2048.csv (excluded from timer)...
+Replicating dataset to worker 20.212.200.56 (excluded from timer)...
+
+=== Standard_D2s_v3 | 2 nodes | 2048MB | cpu | run 1 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '2048MB.csv', 'Dataset_Size_MB': 2048, 'Workload': 'cpu', 'Run_Number': 1, 'Timestamp': '2026-07-26T00:09:04.521534+00:00', 'Runtime_Minutes': 2.8317, 'CPU_Avg_Pct': 13.62, 'Cost_USD': 0.0118, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n2-r1-1_1785024544.csv
+
+=== Standard_D2s_v3 | 2 nodes | 2048MB | cpu | run 2 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '2048MB.csv', 'Dataset_Size_MB': 2048, 'Workload': 'cpu', 'Run_Number': 2, 'Timestamp': '2026-07-26T00:11:47.210410+00:00', 'Runtime_Minutes': 2.6197, 'CPU_Avg_Pct': 15.3, 'Cost_USD': 0.0109, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n2-r1-1_1785024707.csv
+
+=== Standard_D2s_v3 | 2 nodes | 2048MB | memory | run 1 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '2048MB.csv', 'Dataset_Size_MB': 2048, 'Workload': 'memory', 'Run_Number': 1, 'Timestamp': '2026-07-26T00:16:23.806393+00:00', 'Runtime_Minutes': 4.5779, 'CPU_Avg_Pct': 11.38, 'Cost_USD': 0.0191, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n2-r1-1_1785024983.csv
+
+=== Standard_D2s_v3 | 2 nodes | 2048MB | memory | run 2 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '2048MB.csv', 'Dataset_Size_MB': 2048, 'Workload': 'memory', 'Run_Number': 2, 'Timestamp': '2026-07-26T00:21:06.666584+00:00', 'Runtime_Minutes': 4.6525, 'CPU_Avg_Pct': 8.88, 'Cost_USD': 0.0194, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n2-r1-1_1785025266.csv
+
+=== Standard_D2s_v3 | 2 nodes | 2048MB | io | run 1 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '2048MB.csv', 'Dataset_Size_MB': 2048, 'Workload': 'io', 'Run_Number': 1, 'Timestamp': '2026-07-26T00:26:49.960410+00:00', 'Runtime_Minutes': 5.6305, 'CPU_Avg_Pct': 97.51, 'Cost_USD': 0.0235, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n2-r1-1_1785025609.csv
+
+=== Standard_D2s_v3 | 2 nodes | 2048MB | io | run 2 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '2048MB.csv', 'Dataset_Size_MB': 2048, 'Workload': 'io', 'Run_Number': 2, 'Timestamp': '2026-07-26T00:32:21.239684+00:00', 'Runtime_Minutes': 5.4457, 'CPU_Avg_Pct': 95.94, 'Cost_USD': 0.0227, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n2-r1-1_1785025941.csv
+Downloading events_3072.csv (excluded from timer)...
+Replicating dataset to worker 20.212.200.56 (excluded from timer)...
+
+=== Standard_D2s_v3 | 2 nodes | 3072MB | cpu | run 1 ===
+Warning: Permanently added '4.193.216.165' (ED25519) to the list of known hosts.
+Warning: Permanently added '4.193.216.165' (ED25519) to the list of known hosts.
+Downloading events_10mb.csv (excluded from timer)...
+Replicating dataset to worker 4.193.192.10 (excluded from timer)...
+
+=== Standard_D2s_v3 | 2 nodes | 10MB | cpu | run 1 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '10MB.csv', 'Dataset_Size_MB': 10, 'Workload': 'cpu', 'Run_Number': 1, 'Timestamp': '2026-07-26T00:27:10.502506+00:00', 'Runtime_Minutes': 0.4326, 'CPU_Avg_Pct': 65.42, 'Cost_USD': 0.0018, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n2-r3-1_1785025630.csv
+
+=== Standard_D2s_v3 | 2 nodes | 10MB | cpu | run 2 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '10MB.csv', 'Dataset_Size_MB': 10, 'Workload': 'cpu', 'Run_Number': 2, 'Timestamp': '2026-07-26T00:27:40.789790+00:00', 'Runtime_Minutes': 0.4176, 'CPU_Avg_Pct': 69.26, 'Cost_USD': 0.0017, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n2-r3-1_1785025660.csv
+
+=== Standard_D2s_v3 | 2 nodes | 10MB | memory | run 1 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '10MB.csv', 'Dataset_Size_MB': 10, 'Workload': 'memory', 'Run_Number': 1, 'Timestamp': '2026-07-26T00:28:23.101623+00:00', 'Runtime_Minutes': 0.602, 'CPU_Avg_Pct': 47.73, 'Cost_USD': 0.0025, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n2-r3-1_1785025703.csv
+
+=== Standard_D2s_v3 | 2 nodes | 10MB | memory | run 2 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '10MB.csv', 'Dataset_Size_MB': 10, 'Workload': 'memory', 'Run_Number': 2, 'Timestamp': '2026-07-26T00:28:59.414456+00:00', 'Runtime_Minutes': 0.5927, 'CPU_Avg_Pct': 65.0, 'Cost_USD': 0.0025, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n2-r3-1_1785025739.csv
+
+=== Standard_D2s_v3 | 2 nodes | 10MB | io | run 1 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '10MB.csv', 'Dataset_Size_MB': 10, 'Workload': 'io', 'Run_Number': 1, 'Timestamp': '2026-07-26T00:29:35.728468+00:00', 'Runtime_Minutes': 0.5537, 'CPU_Avg_Pct': 96.45, 'Cost_USD': 0.0023, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n2-r3-1_1785025775.csv
+
+=== Standard_D2s_v3 | 2 nodes | 10MB | io | run 2 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '10MB.csv', 'Dataset_Size_MB': 10, 'Workload': 'io', 'Run_Number': 2, 'Timestamp': '2026-07-26T00:30:12.017765+00:00', 'Runtime_Minutes': 0.5358, 'CPU_Avg_Pct': 97.33, 'Cost_USD': 0.0022, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n2-r3-1_1785025812.csv
+Downloading events_100mb.csv (excluded from timer)...
+Replicating dataset to worker 4.193.192.10 (excluded from timer)...
+
+=== Standard_D2s_v3 | 2 nodes | 100MB | cpu | run 1 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '100MB.csv', 'Dataset_Size_MB': 100, 'Workload': 'cpu', 'Run_Number': 1, 'Timestamp': '2026-07-26T00:30:53.913736+00:00', 'Runtime_Minutes': 0.5279, 'CPU_Avg_Pct': 58.39, 'Cost_USD': 0.0022, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n2-r3-1_1785025853.csv
+
+=== Standard_D2s_v3 | 2 nodes | 100MB | cpu | run 2 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '100MB.csv', 'Dataset_Size_MB': 100, 'Workload': 'cpu', 'Run_Number': 2, 'Timestamp': '2026-07-26T00:31:30.200565+00:00', 'Runtime_Minutes': 0.5054, 'CPU_Avg_Pct': 54.01, 'Cost_USD': 0.0021, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n2-r3-1_1785025890.csv
+
+=== Standard_D2s_v3 | 2 nodes | 100MB | memory | run 1 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '100MB.csv', 'Dataset_Size_MB': 100, 'Workload': 'memory', 'Run_Number': 1, 'Timestamp': '2026-07-26T00:32:18.539122+00:00', 'Runtime_Minutes': 0.7264, 'CPU_Avg_Pct': 53.55, 'Cost_USD': 0.003, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n2-r3-1_1785025938.csv
+
+=== Standard_D2s_v3 | 2 nodes | 100MB | memory | run 2 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '100MB.csv', 'Dataset_Size_MB': 100, 'Workload': 'memory', 'Run_Number': 2, 'Timestamp': '2026-07-26T00:33:06.848368+00:00', 'Runtime_Minutes': 0.7366, 'CPU_Avg_Pct': 44.32, 'Cost_USD': 0.0031, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n2-r3-1_1785025986.csv
+
+=== Standard_D2s_v3 | 2 nodes | 100MB | io | run 1 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '100MB.csv', 'Dataset_Size_MB': 100, 'Workload': 'io', 'Run_Number': 1, 'Timestamp': '2026-07-26T00:33:55.204709+00:00', 'Runtime_Minutes': 0.7403, 'CPU_Avg_Pct': 96.24, 'Cost_USD': 0.0031, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n2-r3-1_1785026035.csv
+
+=== Standard_D2s_v3 | 2 nodes | 100MB | io | run 2 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '100MB.csv', 'Dataset_Size_MB': 100, 'Workload': 'io', 'Run_Number': 2, 'Timestamp': '2026-07-26T00:34:43.602344+00:00', 'Runtime_Minutes': 0.7061, 'CPU_Avg_Pct': 84.82, 'Cost_USD': 0.0029, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n2-r3-1_1785026083.csv
+Downloading events_500mb.csv (excluded from timer)...
+Replicating dataset to worker 4.193.192.10 (excluded from timer)...
+
+=== Standard_D2s_v3 | 2 nodes | 500MB | cpu | run 1 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '500MB.csv', 'Dataset_Size_MB': 500, 'Workload': 'cpu', 'Run_Number': 1, 'Timestamp': '2026-07-26T00:36:19.202023+00:00', 'Runtime_Minutes': 0.9413, 'CPU_Avg_Pct': 32.07, 'Cost_USD': 0.0039, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n2-r3-1_1785026179.csv
+
+=== Standard_D2s_v3 | 2 nodes | 500MB | cpu | run 2 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '500MB.csv', 'Dataset_Size_MB': 500, 'Workload': 'cpu', 'Run_Number': 2, 'Timestamp': '2026-07-26T00:37:14.213567+00:00', 'Runtime_Minutes': 0.885, 'CPU_Avg_Pct': 24.09, 'Cost_USD': 0.0037, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n2-r3-1_1785026234.csv
+
+=== Standard_D2s_v3 | 2 nodes | 500MB | memory | run 1 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '500MB.csv', 'Dataset_Size_MB': 500, 'Workload': 'memory', 'Run_Number': 1, 'Timestamp': '2026-07-26T00:38:38.531785+00:00', 'Runtime_Minutes': 1.3842, 'CPU_Avg_Pct': 24.95, 'Cost_USD': 0.0058, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n2-r3-1_1785026318.csv
+
+=== Standard_D2s_v3 | 2 nodes | 500MB | memory | run 2 ===
+Warning: Permanently added '4.193.192.10' (ED25519) to the list of known hosts.
+Warning: Permanently added '4.193.192.10' (ED25519) to the list of known hosts.
+Warning: Permanently added '4.193.192.10' (ED25519) to the list of known hosts.
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 4, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '500MB.csv', 'Dataset_Size_MB': 500, 'Workload': 'memory', 'Run_Number': 1, 'Timestamp': '2026-07-26T00:17:37.333092+00:00', 'Runtime_Minutes': 0.9279, 'CPU_Avg_Pct': 43.03, 'Cost_USD': 0.0077, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n4-r2-1_1785025057.csv
+
+=== Standard_D2s_v3 | 4 nodes | 500MB | memory | run 2 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 4, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '500MB.csv', 'Dataset_Size_MB': 500, 'Workload': 'memory', 'Run_Number': 2, 'Timestamp': '2026-07-26T00:18:37.640880+00:00', 'Runtime_Minutes': 0.9656, 'CPU_Avg_Pct': 32.59, 'Cost_USD': 0.008, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n4-r2-1_1785025117.csv
+
+=== Standard_D2s_v3 | 4 nodes | 500MB | io | run 1 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 4, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '500MB.csv', 'Dataset_Size_MB': 500, 'Workload': 'io', 'Run_Number': 1, 'Timestamp': '2026-07-26T00:20:20.084769+00:00', 'Runtime_Minutes': 1.6079, 'CPU_Avg_Pct': 90.48, 'Cost_USD': 0.0134, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n4-r2-1_1785025220.csv
+
+=== Standard_D2s_v3 | 4 nodes | 500MB | io | run 2 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 4, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '500MB.csv', 'Dataset_Size_MB': 500, 'Workload': 'io', 'Run_Number': 2, 'Timestamp': '2026-07-26T00:21:56.511829+00:00', 'Runtime_Minutes': 1.5811, 'CPU_Avg_Pct': 98.28, 'Cost_USD': 0.0132, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n4-r2-1_1785025316.csv
+Downloading events_1024mb.csv (excluded from timer)...
+Replicating dataset to worker 138.91.41.25 (excluded from timer)...
+Replicating dataset to worker 20.212.104.198 (excluded from timer)...
+Replicating dataset to worker 4.194.12.44 (excluded from timer)...
+
+=== Standard_D2s_v3 | 4 nodes | 1024MB | cpu | run 1 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 4, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '1024MB.csv', 'Dataset_Size_MB': 1024, 'Workload': 'cpu', 'Run_Number': 1, 'Timestamp': '2026-07-26T00:24:23.920705+00:00', 'Runtime_Minutes': 1.0188, 'CPU_Avg_Pct': 29.37, 'Cost_USD': 0.0085, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n4-r2-1_1785025463.csv
+
+=== Standard_D2s_v3 | 4 nodes | 1024MB | cpu | run 2 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 4, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '1024MB.csv', 'Dataset_Size_MB': 1024, 'Workload': 'cpu', 'Run_Number': 2, 'Timestamp': '2026-07-26T00:25:24.226558+00:00', 'Runtime_Minutes': 0.9812, 'CPU_Avg_Pct': 30.7, 'Cost_USD': 0.0082, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n4-r2-1_1785025524.csv
+
+=== Standard_D2s_v3 | 4 nodes | 1024MB | memory | run 1 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 4, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '1024MB.csv', 'Dataset_Size_MB': 1024, 'Workload': 'memory', 'Run_Number': 1, 'Timestamp': '2026-07-26T00:26:54.584688+00:00', 'Runtime_Minutes': 1.4917, 'CPU_Avg_Pct': 25.97, 'Cost_USD': 0.0124, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n4-r2-1_1785025614.csv
+
+=== Standard_D2s_v3 | 4 nodes | 1024MB | memory | run 2 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 4, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '1024MB.csv', 'Dataset_Size_MB': 1024, 'Workload': 'memory', 'Run_Number': 2, 'Timestamp': '2026-07-26T00:28:24.948670+00:00', 'Runtime_Minutes': 1.4718, 'CPU_Avg_Pct': 24.2, 'Cost_USD': 0.0123, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n4-r2-1_1785025704.csv
+
+=== Standard_D2s_v3 | 4 nodes | 1024MB | io | run 1 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 4, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '1024MB.csv', 'Dataset_Size_MB': 1024, 'Workload': 'io', 'Run_Number': 1, 'Timestamp': '2026-07-26T00:31:13.527107+00:00', 'Runtime_Minutes': 2.7395, 'CPU_Avg_Pct': 96.05, 'Cost_USD': 0.0228, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n4-r2-1_1785025873.csv
+
+=== Standard_D2s_v3 | 4 nodes | 1024MB | io | run 2 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 4, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '1024MB.csv', 'Dataset_Size_MB': 1024, 'Workload': 'io', 'Run_Number': 2, 'Timestamp': '2026-07-26T00:33:56.119139+00:00', 'Runtime_Minutes': 2.6155, 'CPU_Avg_Pct': 94.14, 'Cost_USD': 0.0218, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n4-r2-1_1785026036.csv
+Downloading events_2048.csv (excluded from timer)...
+Replicating dataset to worker 138.91.41.25 (excluded from timer)...
+Replicating dataset to worker 20.212.104.198 (excluded from timer)...
+Replicating dataset to worker 4.194.12.44 (excluded from timer)...
+
+=== Standard_D2s_v3 | 4 nodes | 2048MB | cpu | run 1 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 4, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '2048MB.csv', 'Dataset_Size_MB': 2048, 'Workload': 'cpu', 'Run_Number': 1, 'Timestamp': '2026-07-26T00:38:03.148194+00:00', 'Runtime_Minutes': 1.277, 'CPU_Avg_Pct': 23.86, 'Cost_USD': 0.0106, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n4-r2-1_1785026283.csv
+
+=== Standard_D2s_v3 | 4 nodes | 2048MB | cpu | run 2 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 4, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '2048MB.csv', 'Dataset_Size_MB': 2048, 'Workload': 'cpu', 'Run_Number': 2, 'Timestamp': '2026-07-26T00:39:21.474803+00:00', 'Runtime_Minutes': 1.2803, 'CPU_Avg_Pct': 29.77, 'Cost_USD': 0.0107, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n4-r2-1_1785026361.csv
+
+=== Standard_D2s_v3 | 4 nodes | 2048MB | memory | run 1 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 4, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '2048MB.csv', 'Dataset_Size_MB': 2048, 'Workload': 'memory', 'Run_Number': 1, 'Timestamp': '2026-07-26T00:41:21.904616+00:00', 'Runtime_Minutes': 1.9414, 'CPU_Avg_Pct': 19.67, 'Cost_USD': 0.0162, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n4-r2-1_1785026481.csv
+
+=== Standard_D2s_v3 | 4 nodes | 2048MB | memory | run 2 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 4, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '2048MB.csv', 'Dataset_Size_MB': 2048, 'Workload': 'memory', 'Run_Number': 2, 'Timestamp': '2026-07-26T00:43:28.308188+00:00', 'Runtime_Minutes': 2.0068, 'CPU_Avg_Pct': 16.25, 'Cost_USD': 0.0167, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n4-r2-1_1785026608.csv
+
+=== Standard_D2s_v3 | 4 nodes | 2048MB | io | run 1 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 4, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '2048MB.csv', 'Dataset_Size_MB': 2048, 'Workload': 'io', 'Run_Number': 1, 'Timestamp': '2026-07-26T00:48:11.420511+00:00', 'Runtime_Minutes': 4.6917, 'CPU_Avg_Pct': 96.44, 'Cost_USD': 0.0391, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n4-r2-1_1785026891.csv
+
+=== Standard_D2s_v3 | 4 nodes | 2048MB | io | run 2 ===
+Warning: Permanently added '138.91.41.25' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.212.104.198' (ED25519) to the list of known hosts.
+Warning: Permanently added '4.194.12.44' (ED25519) to the list of known hosts.
+Warning: Permanently added '138.91.41.25' (ED25519) to the list of known hosts.
+Warning: Permanently added '138.91.41.25' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.212.104.198' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.212.104.198' (ED25519) to the list of known hosts.
+Warning: Permanently added '4.194.12.44' (ED25519) to the list of known hosts.
+Warning: Permanently added '4.194.12.44' (ED25519) to the list of known hosts.
+Warning: Permanently added '4.193.192.10' (ED25519) to the list of known hosts.
+Warning: Permanently added '4.193.192.10' (ED25519) to the list of known hosts.
+Warning: Permanently added '4.193.192.10' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.212.156.34' (ED25519) to the list of known hosts.
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D4s_v3', 'vCPU': 4, 'RAM_GB': 16, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '3072MB.csv', 'Dataset_Size_MB': 3072, 'Workload': 'cpu', 'Run_Number': 1, 'Timestamp': '2026-07-26T00:16:19.972916+00:00', 'Runtime_Minutes': 1.9543, 'CPU_Avg_Pct': 8.29, 'Cost_USD': 0.0163, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d4sv3-n2-r1-1_1785024979.csv
+
+=== Standard_D4s_v3 | 2 nodes | 3072MB | cpu | run 2 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D4s_v3', 'vCPU': 4, 'RAM_GB': 16, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '3072MB.csv', 'Dataset_Size_MB': 3072, 'Workload': 'cpu', 'Run_Number': 2, 'Timestamp': '2026-07-26T00:18:20.378518+00:00', 'Runtime_Minutes': 1.9568, 'CPU_Avg_Pct': 7.71, 'Cost_USD': 0.0163, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d4sv3-n2-r1-1_1785025100.csv
+
+=== Standard_D4s_v3 | 2 nodes | 3072MB | memory | run 1 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D4s_v3', 'vCPU': 4, 'RAM_GB': 16, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '3072MB.csv', 'Dataset_Size_MB': 3072, 'Workload': 'memory', 'Run_Number': 1, 'Timestamp': '2026-07-26T00:21:26.848486+00:00', 'Runtime_Minutes': 3.0928, 'CPU_Avg_Pct': 5.31, 'Cost_USD': 0.0258, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d4sv3-n2-r1-1_1785025286.csv
+
+=== Standard_D4s_v3 | 2 nodes | 3072MB | memory | run 2 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D4s_v3', 'vCPU': 4, 'RAM_GB': 16, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '3072MB.csv', 'Dataset_Size_MB': 3072, 'Workload': 'memory', 'Run_Number': 2, 'Timestamp': '2026-07-26T00:24:39.646408+00:00', 'Runtime_Minutes': 3.1175, 'CPU_Avg_Pct': 8.71, 'Cost_USD': 0.026, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d4sv3-n2-r1-1_1785025479.csv
+
+=== Standard_D4s_v3 | 2 nodes | 3072MB | io | run 1 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D4s_v3', 'vCPU': 4, 'RAM_GB': 16, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '3072MB.csv', 'Dataset_Size_MB': 3072, 'Workload': 'io', 'Run_Number': 1, 'Timestamp': '2026-07-26T00:29:28.904040+00:00', 'Runtime_Minutes': 4.7109, 'CPU_Avg_Pct': 90.06, 'Cost_USD': 0.0393, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d4sv3-n2-r1-1_1785025768.csv
+
+=== Standard_D4s_v3 | 2 nodes | 3072MB | io | run 2 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D4s_v3', 'vCPU': 4, 'RAM_GB': 16, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '3072MB.csv', 'Dataset_Size_MB': 3072, 'Workload': 'io', 'Run_Number': 2, 'Timestamp': '2026-07-26T00:34:12.160417+00:00', 'Runtime_Minutes': 4.6907, 'CPU_Avg_Pct': 90.3, 'Cost_USD': 0.0391, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d4sv3-n2-r1-1_1785026052.csv
+Downloading events_5120mb.csv (excluded from timer)...
+Replicating dataset to worker 4.193.216.165 (excluded from timer)...
+
+=== Standard_D4s_v3 | 2 nodes | 5120MB | cpu | run 1 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D4s_v3', 'vCPU': 4, 'RAM_GB': 16, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '5120MB.csv', 'Dataset_Size_MB': 5120, 'Workload': 'cpu', 'Run_Number': 1, 'Timestamp': '2026-07-26T00:43:39.372510+00:00', 'Runtime_Minutes': 3.0942, 'CPU_Avg_Pct': 6.54, 'Cost_USD': 0.0258, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d4sv3-n2-r1-1_1785026619.csv
+
+=== Standard_D4s_v3 | 2 nodes | 5120MB | cpu | run 2 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D4s_v3', 'vCPU': 4, 'RAM_GB': 16, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '5120MB.csv', 'Dataset_Size_MB': 5120, 'Workload': 'cpu', 'Run_Number': 2, 'Timestamp': '2026-07-26T00:46:40.103245+00:00', 'Runtime_Minutes': 2.9843, 'CPU_Avg_Pct': 6.71, 'Cost_USD': 0.0249, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d4sv3-n2-r1-1_1785026800.csv
+
+=== Standard_D4s_v3 | 2 nodes | 5120MB | memory | run 1 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D4s_v3', 'vCPU': 4, 'RAM_GB': 16, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '5120MB.csv', 'Dataset_Size_MB': 5120, 'Workload': 'memory', 'Run_Number': 1, 'Timestamp': '2026-07-26T00:51:28.714735+00:00', 'Runtime_Minutes': 4.7426, 'CPU_Avg_Pct': 5.54, 'Cost_USD': 0.0395, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d4sv3-n2-r1-1_1785027088.csv
+
+=== Standard_D4s_v3 | 2 nodes | 5120MB | memory | run 2 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D4s_v3', 'vCPU': 4, 'RAM_GB': 16, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '5120MB.csv', 'Dataset_Size_MB': 5120, 'Workload': 'memory', 'Run_Number': 2, 'Timestamp': '2026-07-26T00:56:17.761405+00:00', 'Runtime_Minutes': 4.8018, 'CPU_Avg_Pct': 4.74, 'Cost_USD': 0.04, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d4sv3-n2-r1-1_1785027377.csv
+
+=== Standard_D4s_v3 | 2 nodes | 5120MB | io | run 1 ===
+Job failed: .MessageLoop.org$apache$spark$rpc$netty$MessageLoop$$receiveLoop(MessageLoop.scala:75)
+	at org.apache.spark.rpc.netty.MessageLoop$$anon$1.run(MessageLoop.scala:41)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: java.lang.OutOfMemoryError: Java heap space
+Exception in thread "dispatcher-event-loop-2" java.lang.OutOfMemoryError: Java heap space
+26/07/26 01:02:12 ERROR Executor: Exception in task 4.0 in stage 4.0 (TID 83): [TASK_WRITE_FAILED] Task failed while writing rows to file:/opt/benchmark/output/io_1785027378.
+26/07/26 01:02:12 ERROR Executor: Exception in task 6.0 in stage 4.0 (TID 84): [TASK_WRITE_FAILED] Task failed while writing rows to file:/opt/benchmark/output/io_1785027378.
+26/07/26 01:02:12 INFO ShutdownHookManager: Shutdown hook called
+26/07/26 01:02:12 INFO ShutdownHookManager: Deleting directory /tmp/spark-89bd8077-8cab-4ce0-a1a6-5207d6567514
+26/07/26 01:02:12 INFO ShutdownHookManager: Deleting directory /tmp/spark-89bd8077-8cab-4ce0-a1a6-5207d6567514/pyspark-ad6447b3-837d-4bf3-8ac4-69466bad9738
+26/07/26 01:02:12 INFO ShutdownHookManager: Deleting directory /tmp/spark-89bd8077-8cab-4ce0-a1a6-5207d6567514/userFiles-5240e5f4-8be6-4f5c-9e1d-4da9d9707688
+26/07/26 01:02:12 INFO ShutdownHookManager: Deleting directory /tmp/spark-fabeb17c-5eb9-4de6-8b59-42f8f5f0438c
+
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D4s_v3', 'vCPU': 4, 'RAM_GB': 16, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '5120MB.csv', 'Dataset_Size_MB': 5120, 'Workload': 'io', 'Run_Number': 1, 'Timestamp': '2026-07-26T01:02:19.013482+00:00', 'Runtime_Minutes': 5.923, 'CPU_Avg_Pct': 96.47, 'Cost_USD': 0.0494, 'Exit_Status': 'FAILED'}
+Uploaded results to results/results_bench-sea-d4sv3-n2-r1-1_1785027739.csv
+
+=== Standard_D4s_v3 | 2 nodes | 5120MB | io | run 2 ===
+Job failed: Warning: Permanently added '4.193.216.165' (ED25519) to the list of known hosts.
+ter.scala:92)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.$anonfun$executeTask$1(FileFormatWriter.scala:403)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$$$Lambda$3740/0x00007eb8b0fd5800.apply(Unknown Source)
+	at org.apache.spark.util.Utils$.tryWithSafeFinallyAndFailureCallbacks(Utils.scala:1397)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.executeTask(FileFormatWriter.scala:410)
+	at org.apache.spark.sql.execution.datasources.WriteFilesExec.$anonfun$doExecuteWrite$1(WriteFiles.scala:100)
+	at org.apache.spark.sql.execution.datasources.WriteFilesExec$$Lambda$3636/0x00007eb8b0fa0da0.apply(Unknown Source)
+
+Driver stacktrace:
+26/07/26 01:07:55 INFO MemoryStore: MemoryStore cleared
+26/07/26 01:07:55 INFO BlockManager: BlockManager stopped
+26/07/26 01:07:55 INFO BlockManagerMaster: BlockManagerMaster stopped
+26/07/26 01:07:55 INFO OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+26/07/26 01:07:55 INFO SparkContext: Successfully stopped SparkContext
+26/07/26 01:07:55 INFO ShutdownHookManager: Shutdown hook called
+26/07/26 01:07:55 INFO ShutdownHookManager: Deleting directory /tmp/spark-b0903d2a-70cb-4fb5-8030-1305b2bbc15e/pyspark-cd02962f-fea8-4010-baa9-08df727e782f
+26/07/26 01:07:55 INFO ShutdownHookManager: Deleting directory /tmp/spark-a20e87ec-baf7-49d9-91af-8b262d883e3f
+26/07/26 01:07:55 INFO ShutdownHookManager: Deleting directory /tmp/spark-b0903d2a-70cb-4fb5-8030-1305b2bbc15e
+
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D4s_v3', 'vCPU': 4, 'RAM_GB': 16, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '5120MB.csv', 'Dataset_Size_MB': 5120, 'Workload': 'io', 'Run_Number': 2, 'Timestamp': '2026-07-26T01:07:56.205707+00:00', 'Runtime_Minutes': 5.6049, 'CPU_Avg_Pct': 96.8, 'Cost_USD': 0.0467, 'Exit_Status': 'FAILED'}
+Uploaded results to results/results_bench-sea-d4sv3-n2-r1-1_1785028076.csv
+Uploaded results to results/results_bench-sea-d4sv3-n2-r1-1_1785028083.csv
+
+All runs complete for this cluster configuration.
+Deleting VMs for this combo...
+./combo_runner.sh: line 32:  3615 Killed: 9                  sshpass -p "$ADMIN_PASSWORD" ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null "$ADMIN_USERNAME@$master_ip" "$remote_cmd"
+Deleting VMs for this combo...
+06:38:46 launching Standard_D4s_v3 x2 tag=r2 (8vCPU, live_used 20->28/32)
+
+############################################################
+# southeastasia | Standard_D4s_v3 | 2 nodes 
+############################################################
+Creating bench-sea-d4s_v3-n2-r2-1...
+Creating bench-sea-d4s_v3-n2-r2-2...
+Waiting for bench-sea-d4s_v3-n2-r2-1 to finish provisioning...
+Warning: Permanently added '20.212.156.34' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.212.156.34' (ED25519) to the list of known hosts.
+Combo done: southeastasia / Standard_D4s_v3 / 2 nodes
+06:39:16 job finished (self-tracked slot freed)
+  bench-sea-d4s_v3-n2-r2-1 -> 4.193.90.217
+Waiting for bench-sea-d4s_v3-n2-r2-2 to finish provisioning...
+  bench-sea-d4s_v3-n2-r2-2 -> 23.98.69.142
+  waiting for install on 4.193.90.217 (1/180)...
+Combo done: southeastasia / Standard_D2s_v3 / 2 nodes
+  waiting for install on 4.193.90.217 (2/180)...
+  waiting for install on 4.193.90.217 (3/180)...
+06:40:18 job finished (self-tracked slot freed)
+  waiting for install on 4.193.90.217 (4/180)...
+  waiting for install on 4.193.90.217 (5/180)...
+  waiting for install on 4.193.90.217 (6/180)...
+  waiting for install on 4.193.90.217 (7/180)...
+  waiting for install on 4.193.90.217 (8/180)...
+  install finished on 4.193.90.217
+  waiting for install on 23.98.69.142 (1/180)...
+  waiting for install on 23.98.69.142 (2/180)...
+  waiting for install on 23.98.69.142 (3/180)...
+  waiting for install on 23.98.69.142 (4/180)...
+  waiting for install on 23.98.69.142 (5/180)...
+  waiting for install on 23.98.69.142 (6/180)...
+  waiting for install on 23.98.69.142 (7/180)...
+  waiting for install on 23.98.69.142 (8/180)...
+  waiting for install on 23.98.69.142 (9/180)...
+  waiting for install on 23.98.69.142 (10/180)...
+  waiting for install on 23.98.69.142 (11/180)...
+  waiting for install on 23.98.69.142 (12/180)...
+  waiting for install on 23.98.69.142 (13/180)...
+  waiting for install on 23.98.69.142 (14/180)...
+  waiting for install on 23.98.69.142 (15/180)...
+  waiting for install on 23.98.69.142 (16/180)...
+  waiting for install on 23.98.69.142 (17/180)...
+  waiting for install on 23.98.69.142 (18/180)...
+  waiting for install on 23.98.69.142 (19/180)...
+Warning: Permanently added '138.91.41.25' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.212.104.198' (ED25519) to the list of known hosts.
+Warning: Permanently added '4.194.12.44' (ED25519) to the list of known hosts.
+  waiting for install on 23.98.69.142 (20/180)...
+  waiting for install on 23.98.69.142 (21/180)...
+  waiting for install on 23.98.69.142 (22/180)...
+  waiting for install on 23.98.69.142 (23/180)...
+  waiting for install on 23.98.69.142 (24/180)...
+Warning: Permanently added '4.193.192.10' (ED25519) to the list of known hosts.
+  waiting for install on 23.98.69.142 (25/180)...
+  waiting for install on 23.98.69.142 (26/180)...
+  waiting for install on 23.98.69.142 (27/180)...
+  waiting for install on 23.98.69.142 (28/180)...
+  waiting for install on 23.98.69.142 (29/180)...
+  waiting for install on 23.98.69.142 (30/180)...
+  waiting for install on 23.98.69.142 (31/180)...
+  waiting for install on 23.98.69.142 (32/180)...
+Warning: Permanently added '138.91.41.25' (ED25519) to the list of known hosts.
+Warning: Permanently added '138.91.41.25' (ED25519) to the list of known hosts.
+  waiting for install on 23.98.69.142 (33/180)...
+  waiting for install on 23.98.69.142 (34/180)...
+Warning: Permanently added '4.193.192.10' (ED25519) to the list of known hosts.
+Warning: Permanently added '4.193.192.10' (ED25519) to the list of known hosts.
+  waiting for install on 23.98.69.142 (35/180)...
+Warning: Permanently added '20.212.104.198' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.212.104.198' (ED25519) to the list of known hosts.
+  waiting for install on 23.98.69.142 (36/180)...
+  waiting for install on 23.98.69.142 (37/180)...
+  waiting for install on 23.98.69.142 (38/180)...
+  waiting for install on 23.98.69.142 (39/180)...
+Warning: Permanently added '4.194.12.44' (ED25519) to the list of known hosts.
+Warning: Permanently added '4.194.12.44' (ED25519) to the list of known hosts.
+  waiting for install on 23.98.69.142 (40/180)...
+  waiting for install on 23.98.69.142 (41/180)...
+  waiting for install on 23.98.69.142 (42/180)...
+  waiting for install on 23.98.69.142 (43/180)...
+  waiting for install on 23.98.69.142 (44/180)...
+  waiting for install on 23.98.69.142 (45/180)...
+  waiting for install on 23.98.69.142 (46/180)...
+  waiting for install on 23.98.69.142 (47/180)...
+  waiting for install on 23.98.69.142 (48/180)...
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '500MB.csv', 'Dataset_Size_MB': 500, 'Workload': 'memory', 'Run_Number': 2, 'Timestamp': '2026-07-26T00:40:02.871007+00:00', 'Runtime_Minutes': 1.3449, 'CPU_Avg_Pct': 27.38, 'Cost_USD': 0.0056, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n2-r3-1_1785026402.csv
+
+=== Standard_D2s_v3 | 2 nodes | 500MB | io | run 1 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '500MB.csv', 'Dataset_Size_MB': 500, 'Workload': 'io', 'Run_Number': 1, 'Timestamp': '2026-07-26T00:41:39.320721+00:00', 'Runtime_Minutes': 1.5548, 'CPU_Avg_Pct': 98.17, 'Cost_USD': 0.0065, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n2-r3-1_1785026499.csv
+
+=== Standard_D2s_v3 | 2 nodes | 500MB | io | run 2 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '500MB.csv', 'Dataset_Size_MB': 500, 'Workload': 'io', 'Run_Number': 2, 'Timestamp': '2026-07-26T00:43:21.761770+00:00', 'Runtime_Minutes': 1.6125, 'CPU_Avg_Pct': 92.02, 'Cost_USD': 0.0067, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n2-r3-1_1785026601.csv
+Downloading events_1024mb.csv (excluded from timer)...
+Replicating dataset to worker 4.193.192.10 (excluded from timer)...
+
+=== Standard_D2s_v3 | 2 nodes | 1024MB | cpu | run 1 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '1024MB.csv', 'Dataset_Size_MB': 1024, 'Workload': 'cpu', 'Run_Number': 1, 'Timestamp': '2026-07-26T00:45:57.303082+00:00', 'Runtime_Minutes': 1.4782, 'CPU_Avg_Pct': 24.53, 'Cost_USD': 0.0062, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n2-r3-1_1785026757.csv
+
+=== Standard_D2s_v3 | 2 nodes | 1024MB | cpu | run 2 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '1024MB.csv', 'Dataset_Size_MB': 1024, 'Workload': 'cpu', 'Run_Number': 2, 'Timestamp': '2026-07-26T00:47:21.844105+00:00', 'Runtime_Minutes': 1.3862, 'CPU_Avg_Pct': 19.2, 'Cost_USD': 0.0058, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n2-r3-1_1785026841.csv
+
+=== Standard_D2s_v3 | 2 nodes | 1024MB | memory | run 1 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '1024MB.csv', 'Dataset_Size_MB': 1024, 'Workload': 'memory', 'Run_Number': 1, 'Timestamp': '2026-07-26T00:49:40.265467+00:00', 'Runtime_Minutes': 2.2345, 'CPU_Avg_Pct': 17.04, 'Cost_USD': 0.0093, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n2-r3-1_1785026980.csv
+
+=== Standard_D2s_v3 | 2 nodes | 1024MB | memory | run 2 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '1024MB.csv', 'Dataset_Size_MB': 1024, 'Workload': 'memory', 'Run_Number': 2, 'Timestamp': '2026-07-26T00:51:58.707414+00:00', 'Runtime_Minutes': 2.2734, 'CPU_Avg_Pct': 18.61, 'Cost_USD': 0.0095, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n2-r3-1_1785027118.csv
+
+=== Standard_D2s_v3 | 2 nodes | 1024MB | io | run 1 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '1024MB.csv', 'Dataset_Size_MB': 1024, 'Workload': 'io', 'Run_Number': 1, 'Timestamp': '2026-07-26T00:54:41.448024+00:00', 'Runtime_Minutes': 2.6813, 'CPU_Avg_Pct': 97.51, 'Cost_USD': 0.0112, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n2-r3-1_1785027281.csv
+
+=== Standard_D2s_v3 | 2 nodes | 1024MB | io | run 2 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '1024MB.csv', 'Dataset_Size_MB': 1024, 'Workload': 'io', 'Run_Number': 2, 'Timestamp': '2026-07-26T00:57:30.050888+00:00', 'Runtime_Minutes': 2.7102, 'CPU_Avg_Pct': 94.37, 'Cost_USD': 0.0113, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n2-r3-1_1785027450.csv
+Downloading events_2048.csv (excluded from timer)...
+Replicating dataset to worker 4.193.192.10 (excluded from timer)...
+
+=== Standard_D2s_v3 | 2 nodes | 2048MB | cpu | run 1 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '2048MB.csv', 'Dataset_Size_MB': 2048, 'Workload': 'cpu', 'Run_Number': 1, 'Timestamp': '2026-07-26T01:02:22.038896+00:00', 'Runtime_Minutes': 2.542, 'CPU_Avg_Pct': 13.08, 'Cost_USD': 0.0106, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n2-r3-1_1785027742.csv
+
+=== Standard_D2s_v3 | 2 nodes | 2048MB | cpu | run 2 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '2048MB.csv', 'Dataset_Size_MB': 2048, 'Workload': 'cpu', 'Run_Number': 2, 'Timestamp': '2026-07-26T01:04:46.428519+00:00', 'Runtime_Minutes': 2.3284, 'CPU_Avg_Pct': 12.95, 'Cost_USD': 0.0097, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n2-r3-1_1785027886.csv
+
+=== Standard_D2s_v3 | 2 nodes | 2048MB | memory | run 1 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '2048MB.csv', 'Dataset_Size_MB': 2048, 'Workload': 'memory', 'Run_Number': 1, 'Timestamp': '2026-07-26T01:08:52.937096+00:00', 'Runtime_Minutes': 4.0242, 'CPU_Avg_Pct': 8.56, 'Cost_USD': 0.0168, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n2-r3-1_1785028132.csv
+
+=== Standard_D2s_v3 | 2 nodes | 2048MB | memory | run 2 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '2048MB.csv', 'Dataset_Size_MB': 2048, 'Workload': 'memory', 'Run_Number': 2, 'Timestamp': '2026-07-26T01:12:53.690471+00:00', 'Runtime_Minutes': 3.9121, 'CPU_Avg_Pct': 7.11, 'Cost_USD': 0.0163, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n2-r3-1_1785028373.csv
+
+=== Standard_D2s_v3 | 2 nodes | 2048MB | io | run 1 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '2048MB.csv', 'Dataset_Size_MB': 2048, 'Workload': 'io', 'Run_Number': 1, 'Timestamp': '2026-07-26T01:17:30.809824+00:00', 'Runtime_Minutes': 4.561, 'CPU_Avg_Pct': 98.36, 'Cost_USD': 0.019, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n2-r3-1_1785028650.csv
+
+=== Standard_D2s_v3 | 2 nodes | 2048MB | io | run 2 ===
+{'Region': 'southeastasia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '2048MB.csv', 'Dataset_Size_MB': 2048, 'Workload': 'io', 'Run_Number': 2, 'Timestamp': '2026-07-26T01:22:13.870414+00:00', 'Runtime_Minutes': 4.6109, 'CPU_Avg_Pct': 95.49, 'Cost_USD': 0.0192, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-sea-d2sv3-n2-r3-1_1785028933.csv
+Downloading events_3072.csv (excluded from timer)...
+Replicating dataset to worker 4.193.192.10 (excluded from timer)...
+
+=== Standard_D2s_v3 | 2 nodes | 3072MB | cpu | run 1 ===
+  waiting for install on 23.98.69.142 (49/180)...
+  waiting for install on 23.98.69.142 (50/180)...
+  waiting for install on 23.98.69.142 (51/180)...
+  waiting for install on 23.98.69.142 (52/180)...
+  waiting for install on 23.98.69.142 (53/180)...
+  waiting for install on 23.98.69.142 (54/180)...
+  waiting for install on 23.98.69.142 (55/180)...
+  waiting for install on 23.98.69.142 (56/180)...
+  waiting for install on 23.98.69.142 (57/180)...
+  waiting for install on 23.98.69.142 (58/180)...
+  waiting for install on 23.98.69.142 (59/180)...
+  waiting for install on 23.98.69.142 (60/180)...
+  waiting for install on 23.98.69.142 (61/180)...
+  waiting for install on 23.98.69.142 (62/180)...
+  waiting for install on 23.98.69.142 (63/180)...
+  waiting for install on 23.98.69.142 (64/180)...
+  waiting for install on 23.98.69.142 (65/180)...
+  waiting for install on 23.98.69.142 (66/180)...
+  waiting for install on 23.98.69.142 (67/180)...
+  waiting for install on 23.98.69.142 (68/180)...
+  waiting for install on 23.98.69.142 (69/180)...
+  waiting for install on 23.98.69.142 (70/180)...
+  waiting for install on 23.98.69.142 (71/180)...
+  waiting for install on 23.98.69.142 (72/180)...
+  waiting for install on 23.98.69.142 (73/180)...
+  waiting for install on 23.98.69.142 (74/180)...
+  waiting for install on 23.98.69.142 (75/180)...
+  waiting for install on 23.98.69.142 (76/180)...
+  waiting for install on 23.98.69.142 (77/180)...
+  waiting for install on 23.98.69.142 (78/180)...
+  waiting for install on 23.98.69.142 (79/180)...
+  waiting for install on 23.98.69.142 (80/180)...
+  waiting for install on 23.98.69.142 (81/180)...
+  waiting for install on 23.98.69.142 (82/180)...
+  waiting for install on 23.98.69.142 (83/180)...
+  waiting for install on 23.98.69.142 (84/180)...
+  waiting for install on 23.98.69.142 (85/180)...
+  waiting for install on 23.98.69.142 (86/180)...
+  waiting for install on 23.98.69.142 (87/180)...
+  waiting for install on 23.98.69.142 (88/180)...
+  waiting for install on 23.98.69.142 (89/180)...
+  waiting for install on 23.98.69.142 (90/180)...
+  waiting for install on 23.98.69.142 (91/180)...
+  waiting for install on 23.98.69.142 (92/180)...
+  waiting for install on 23.98.69.142 (93/180)...
+  waiting for install on 23.98.69.142 (94/180)...
+  waiting for install on 23.98.69.142 (95/180)...
+  waiting for install on 23.98.69.142 (96/180)...
+  waiting for install on 23.98.69.142 (97/180)...
+  waiting for install on 23.98.69.142 (98/180)...
+  waiting for install on 23.98.69.142 (99/180)...
+  waiting for install on 23.98.69.142 (100/180)...
+  waiting for install on 23.98.69.142 (101/180)...
+  waiting for install on 23.98.69.142 (102/180)...
+  waiting for install on 23.98.69.142 (103/180)...
+  waiting for install on 23.98.69.142 (104/180)...
+  waiting for install on 23.98.69.142 (105/180)...
+  waiting for install on 23.98.69.142 (106/180)...
+  waiting for install on 23.98.69.142 (107/180)...
+  waiting for install on 23.98.69.142 (108/180)...
+  waiting for install on 23.98.69.142 (109/180)...
+  waiting for install on 23.98.69.142 (110/180)...
+  waiting for install on 23.98.69.142 (111/180)...
+  waiting for install on 23.98.69.142 (112/180)...
+  waiting for install on 23.98.69.142 (113/180)...
+  waiting for install on 23.98.69.142 (114/180)...
+  waiting for install on 23.98.69.142 (115/180)...
+  waiting for install on 23.98.69.142 (116/180)...
+  waiting for install on 23.98.69.142 (117/180)...
+  waiting for install on 23.98.69.142 (118/180)...
+  waiting for install on 23.98.69.142 (119/180)...
+  waiting for install on 23.98.69.142 (120/180)...
+  waiting for install on 23.98.69.142 (121/180)...
+  waiting for install on 23.98.69.142 (122/180)...
+  waiting for install on 23.98.69.142 (123/180)...
+  waiting for install on 23.98.69.142 (124/180)...
+  waiting for install on 23.98.69.142 (125/180)...
+  waiting for install on 23.98.69.142 (126/180)...
+  waiting for install on 23.98.69.142 (127/180)...
+  waiting for install on 23.98.69.142 (128/180)...
+  waiting for install on 23.98.69.142 (129/180)...
+  waiting for install on 23.98.69.142 (130/180)...
+  waiting for install on 23.98.69.142 (131/180)...
+  waiting for install on 23.98.69.142 (132/180)...
+  waiting for install on 23.98.69.142 (133/180)...
+  waiting for install on 23.98.69.142 (134/180)...
+  waiting for install on 23.98.69.142 (135/180)...
+  waiting for install on 23.98.69.142 (136/180)...
+  waiting for install on 23.98.69.142 (137/180)...
+  waiting for install on 23.98.69.142 (138/180)...
+  waiting for install on 23.98.69.142 (139/180)...
+  waiting for install on 23.98.69.142 (140/180)...
+  waiting for install on 23.98.69.142 (141/180)...
+  waiting for install on 23.98.69.142 (142/180)...
+  waiting for install on 23.98.69.142 (143/180)...
+  waiting for install on 23.98.69.142 (144/180)...
+  waiting for install on 23.98.69.142 (145/180)...
+  waiting for install on 23.98.69.142 (146/180)...
+  waiting for install on 23.98.69.142 (147/180)...
+  waiting for install on 23.98.69.142 (148/180)...
+  waiting for install on 23.98.69.142 (149/180)...
+  waiting for install on 23.98.69.142 (150/180)...
+  waiting for install on 23.98.69.142 (151/180)...
+  waiting for install on 23.98.69.142 (152/180)...
+  waiting for install on 23.98.69.142 (153/180)...
+  waiting for install on 23.98.69.142 (154/180)...
+  waiting for install on 23.98.69.142 (155/180)...
+  waiting for install on 23.98.69.142 (156/180)...
+  waiting for install on 23.98.69.142 (157/180)...
+  waiting for install on 23.98.69.142 (158/180)...
+  waiting for install on 23.98.69.142 (159/180)...
+  waiting for install on 23.98.69.142 (160/180)...
+  waiting for install on 23.98.69.142 (161/180)...
+  waiting for install on 23.98.69.142 (162/180)...
+  waiting for install on 23.98.69.142 (163/180)...
+  waiting for install on 23.98.69.142 (164/180)...
+  waiting for install on 23.98.69.142 (165/180)...
+  waiting for install on 23.98.69.142 (166/180)...
+  waiting for install on 23.98.69.142 (167/180)...
+  waiting for install on 23.98.69.142 (168/180)...
+  waiting for install on 23.98.69.142 (169/180)...
+  waiting for install on 23.98.69.142 (170/180)...
+  waiting for install on 23.98.69.142 (171/180)...
+  waiting for install on 23.98.69.142 (172/180)...
+  waiting for install on 23.98.69.142 (173/180)...
+  waiting for install on 23.98.69.142 (174/180)...
+  waiting for install on 23.98.69.142 (175/180)...
+  waiting for install on 23.98.69.142 (176/180)...
+  waiting for install on 23.98.69.142 (177/180)...
+  waiting for install on 23.98.69.142 (178/180)...
+  waiting for install on 23.98.69.142 (179/180)...
+  waiting for install on 23.98.69.142 (180/180)...
+  install marker was not found on 23.98.69.142
+  last cloud-init status/log lines from 23.98.69.142:
+Warning: Permanently added '23.98.69.142' (ED25519) to the list of known hosts.
+status: error
+extended_status: error - done
+boot_status_code: enabled-by-generator
+last_update: Thu, 01 Jan 1970 00:51:50 +0000
+detail: DataSourceAzure [seed=/dev/sr0]
+errors:
+	- ('scripts_user', RuntimeError('Runparts: 1 failures (runcmd) in 1 attempted commands'))
+recoverable_errors:
+WARNING:
+	- Polling IMDS failed attempt 1 with exception: UrlError('404 Client Error: Not Found for url: http://169.254.169.254/metadata/reprovisiondata?api-version=2019-06-01')
+	- Polling IMDS failed attempt 1 with exception: UrlError('404 Client Error: Not Found for url: http://169.254.169.254/metadata/reprovisiondata?api-version=2019-06-01')
+	- Polling IMDS failed attempt 1 with exception: UrlError('404 Client Error: Not Found for url: http://169.254.169.254/metadata/reprovisiondata?api-version=2019-06-01')
+	- Failed to run module scripts_user (scripts in /var/lib/cloud/instance/scripts)
+	- Running module scripts_user (<module 'cloudinit.config.cc_scripts_user' from '/usr/lib/python3/dist-packages/cloudinit/config/cc_scripts_user.py'>) failed
+Adding debian:T-TeleSec_GlobalRoot_Class_3.pem
+Adding debian:emSign_ECC_Root_CA_-_G3.pem
+Adding debian:GDCA_TrustAUTH_R5_ROOT.pem
+Adding debian:TrustAsia_Global_Root_CA_G3.pem
+Adding debian:ACCVRAIZ1.pem
+Adding debian:USERTrust_ECC_Certification_Authority.pem
+Adding debian:SSL.com_TLS_RSA_Root_CA_2022.pem
+Adding debian:DigiCert_Assured_ID_Root_G3.pem
+Adding debian:QuoVadis_Root_CA_2_G3.pem
+Adding debian:DigiCert_Assured_ID_Root_G2.pem
+Adding debian:TrustAsia_TLS_RSA_Root_CA.pem
+Adding debian:QuoVadis_Root_CA_3_G3.pem
+Adding debian:Sectigo_Public_Server_Authentication_Root_R46.pem
+Adding debian:emSign_ECC_Root_CA_-_C3.pem
+Adding debian:NAVER_Global_Root_Certification_Authority.pem
+Adding debian:COMODO_RSA_Certification_Authority.pem
+Adding debian:Actalis_Authentication_Root_CA.pem
+Adding debian:GTS_Root_R3.pem
+Adding debian:D-TRUST_BR_Root_CA_1_2020.pem
+Adding debian:SwissSign_RSA_TLS_Root_CA_2022_-_1.pem
+Adding debian:HiPKI_Root_CA_-_G1.pem
+Adding debian:Hellenic_Academic_and_Research_Institutions_RootCA_2015.pem
+Adding debian:Security_Communication_RootCA2.pem
+Adding debian:Amazon_Root_CA_2.pem
+Adding debian:GTS_Root_R1.pem
+Adding debian:Microsec_e-Szigno_Root_CA_2009.pem
+Adding debian:SSL.com_EV_Root_Certification_Authority_ECC.pem
+Adding debian:OISTE_Server_Root_ECC_G1.pem
+Adding debian:GlobalSign_Root_CA_-_R6.pem
+Adding debian:Telekom_Security_TLS_ECC_Root_2020.pem
+Adding debian:emSign_Root_CA_-_C1.pem
+Adding debian:certSIGN_Root_CA_G2.pem
+done.
+Setting up openjdk-17-jdk-headless:amd64 (17.0.19+10-1~22.04.2) ...
+update-alternatives: using /usr/lib/jvm/java-17-openjdk-amd64/bin/jar to provide /usr/bin/jar (jar) in auto mode
+update-alternatives: using /usr/lib/jvm/java-17-openjdk-amd64/bin/jarsigner to provide /usr/bin/jarsigner (jarsigner) in auto mode
+update-alternatives: using /usr/lib/jvm/java-17-openjdk-amd64/bin/javac to provide /usr/bin/javac (javac) in auto mode
+update-alternatives: using /usr/lib/jvm/java-17-openjdk-amd64/bin/javadoc to provide /usr/bin/javadoc (javadoc) in auto mode
+update-alternatives: using /usr/lib/jvm/java-17-openjdk-amd64/bin/javap to provide /usr/bin/javap (javap) in auto mode
+update-alternatives: using /usr/lib/jvm/java-17-openjdk-amd64/bin/jcmd to provide /usr/bin/jcmd (jcmd) in auto mode
+update-alternatives: using /usr/lib/jvm/java-17-openjdk-amd64/bin/jdb to provide /usr/bin/jdb (jdb) in auto mode
+update-alternatives: using /usr/lib/jvm/java-17-openjdk-amd64/bin/jdeprscan to provide /usr/bin/jdeprscan (jdeprscan) in auto mode
+update-alternatives: using /usr/lib/jvm/java-17-openjdk-amd64/bin/jdeps to provide /usr/bin/jdeps (jdeps) in auto mode
+update-alternatives: using /usr/lib/jvm/java-17-openjdk-amd64/bin/jfr to provide /usr/bin/jfr (jfr) in auto mode
+update-alternatives: using /usr/lib/jvm/java-17-openjdk-amd64/bin/jimage to provide /usr/bin/jimage (jimage) in auto mode
+update-alternatives: using /usr/lib/jvm/java-17-openjdk-amd64/bin/jinfo to provide /usr/bin/jinfo (jinfo) in auto mode
+update-alternatives: using /usr/lib/jvm/java-17-openjdk-amd64/bin/jlink to provide /usr/bin/jlink (jlink) in auto mode
+update-alternatives: using /usr/lib/jvm/java-17-openjdk-amd64/bin/jmap to provide /usr/bin/jmap (jmap) in auto mode
+update-alternatives: using /usr/lib/jvm/java-17-openjdk-amd64/bin/jmod to provide /usr/bin/jmod (jmod) in auto mode
+update-alternatives: using /usr/lib/jvm/java-17-openjdk-amd64/bin/jps to provide /usr/bin/jps (jps) in auto mode
+update-alternatives: using /usr/lib/jvm/java-17-openjdk-amd64/bin/jrunscript to provide /usr/bin/jrunscript (jrunscript) in auto mode
+update-alternatives: using /usr/lib/jvm/java-17-openjdk-amd64/bin/jshell to provide /usr/bin/jshell (jshell) in auto mode
+update-alternatives: using /usr/lib/jvm/java-17-openjdk-amd64/bin/jstack to provide /usr/bin/jstack (jstack) in auto mode
+update-alternatives: using /usr/lib/jvm/java-17-openjdk-amd64/bin/jstat to provide /usr/bin/jstat (jstat) in auto mode
+update-alternatives: using /usr/lib/jvm/java-17-openjdk-amd64/bin/jstatd to provide /usr/bin/jstatd (jstatd) in auto mode
+update-alternatives: using /usr/lib/jvm/java-17-openjdk-amd64/bin/serialver to provide /usr/bin/serialver (serialver) in auto mode
+update-alternatives: using /usr/lib/jvm/java-17-openjdk-amd64/bin/jhsdb to provide /usr/bin/jhsdb (jhsdb) in auto mode
+Processing triggers for install-info (6.8-4build1) ...
+Processing triggers for libc-bin (2.35-0ubuntu3.13) ...
+Processing triggers for man-db (2.10.2-1) ...
+Processing triggers for ca-certificates (20260601~22.04.1) ...
+Updating certificates in /etc/ssl/certs...
+0 added, 0 removed; done.
+Running hooks in /etc/ca-certificates/update.d...
+
+done.
+done.
+
+Running kernel seems to be up-to-date.
+
+No services need to be restarted.
+
+No containers need to be restarted.
+
+No user sessions are running outdated binaries.
+
+No VM guests are running outdated hypervisor (qemu) binaries on this host.
+2026-07-26 01:12:42,939 - cc_scripts_user.py[WARNING]: Failed to run module scripts_user (scripts in /var/lib/cloud/instance/scripts)
+2026-07-26 01:12:42,939 - log_util.py[WARNING]: Running module scripts_user (<module 'cloudinit.config.cc_scripts_user' from '/usr/lib/python3/dist-packages/cloudinit/config/cc_scripts_user.py'>) failed
+Cloud-init v. 26.1-0ubuntu1~22.04.1 finished at Sun, 26 Jul 2026 01:12:43 +0000. Datasource DataSourceAzure [seed=/dev/sr0].  Up 3110.51 seconds
+ERROR: install did not finish on 23.98.69.142 within timeout
+Install failed. Keeping partially-broken VMs for debugging.
+VMs kept: bench-sea-d4s_v3-n2-r2-1 bench-sea-d4s_v3-n2-r2-2
+VM IPs: 4.193.90.217 23.98.69.142
+After you inspect them, run ./delete_all_vms.sh or rerun with KEEP_FAILED_VMS=0 to auto-delete.
+07:51:48 job finished (self-tracked slot freed)
+08:01:27 launching Standard_D4s_v3 x4 tag=r1 (16vCPU, live_used 0->16/32)
+
+############################################################
+# southeastasia | Standard_D4s_v3 | 4 nodes 
+############################################################
+Creating bench-sea-d4s_v3-n4-r1-1...
+WARNING: Failed to retrieve image alias doc 'https://raw.githubusercontent.com/Azure/azure-rest-api-specs/main/arm-compute/quickstart-templates/aliases.json'. Error: 'ConnectionError'. Use local copy instead.
+ERROR: <urllib3.connection.HTTPSConnection object at 0x10c0a9d60>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known
+ERROR: az vm create request failed for bench-sea-d4s_v3-n4-r1-1
+Creating bench-sea-d4s_v3-n4-r1-2...
+WARNING: Failed to retrieve image alias doc 'https://raw.githubusercontent.com/Azure/azure-rest-api-specs/main/arm-compute/quickstart-templates/aliases.json'. Error: 'ConnectionError'. Use local copy instead.
+ERROR: <urllib3.connection.HTTPSConnection object at 0x108991dc0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known
+ERROR: az vm create request failed for bench-sea-d4s_v3-n4-r1-2
+Creating bench-sea-d4s_v3-n4-r1-3...
+WARNING: Failed to retrieve image alias doc 'https://raw.githubusercontent.com/Azure/azure-rest-api-specs/main/arm-compute/quickstart-templates/aliases.json'. Error: 'ConnectionError'. Use local copy instead.
+ERROR: <urllib3.connection.HTTPSConnection object at 0x10bd120f0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known
+ERROR: az vm create request failed for bench-sea-d4s_v3-n4-r1-3
+Creating bench-sea-d4s_v3-n4-r1-4...
+WARNING: Failed to retrieve image alias doc 'https://raw.githubusercontent.com/Azure/azure-rest-api-specs/main/arm-compute/quickstart-templates/aliases.json'. Error: 'ConnectionError'. Use local copy instead.
+ERROR: <urllib3.connection.HTTPSConnection object at 0x10cc2deb0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known
+ERROR: az vm create request failed for bench-sea-d4s_v3-n4-r1-4
+Cleaning up any VMs created for this failed combo...
+ERROR: <urllib3.connection.HTTPSConnection object at 0x10caa4dd0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known
+ERROR: <urllib3.connection.HTTPSConnection object at 0x10a0a8d40>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known
+ERROR: <urllib3.connection.HTTPSConnection object at 0x108b7cd40>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known
+ERROR: <urllib3.connection.HTTPSConnection object at 0x10a848b90>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known
+08:02:32 job finished (self-tracked slot freed)
+Read from remote host 4.193.128.125: Operation timed out
+client_loop: send disconnect: Broken pipe
+Deleting VMs for this combo...
+Combo done: southeastasia / Standard_D2s_v3 / 2 nodes
+Read from remote host 20.212.54.86: Operation timed out
+client_loop: send disconnect: Broken pipe
+Deleting VMs for this combo...
+Read from remote host 4.193.212.117: Operation timed out
+client_loop: send disconnect: Broken pipe
+Deleting VMs for this combo...
+18:50:37 job finished (self-tracked slot freed)
+Combo done: southeastasia / Standard_D2s_v3 / 2 nodes
+Combo done: southeastasia / Standard_D2s_v3 / 4 nodes
+18:51:40 job finished (self-tracked slot freed)
+18:51:40 job finished (self-tracked slot freed)
+All repeat jobs (batch 2) finished. See repeat_run_summary.csv.

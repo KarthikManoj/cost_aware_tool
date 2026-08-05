@@ -1,0 +1,19 @@
+{
+  "dataset": "/sessions/peaceful-gracious-johnson/mnt/cost-aware-infrastructure-optimization/data/models/cloud_carbon_model_dataset.csv",
+  "folds": 5,
+  "metric_tested": "mae",
+  "models_compared": [
+    "decision_tree",
+    "gradient_boosting",
+    "linear_regression",
+    "random_forest"
+  ],
+  "significant_pairs": 9,
+  "total_pairs": 12,
+  "repeatability": {
+    "configurations_with_repeats": 439,
+    "median_coefficient_of_variation_pct": 4.15,
+    "max_coefficient_of_variation_pct": 84.45
+  },
+  "caveat": "With 5 folds the Wilcoxon test cannot reach p < 0.05; quote the paired t-test and the effect size instead."
+}

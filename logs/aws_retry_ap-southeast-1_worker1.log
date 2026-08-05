@@ -1,0 +1,49 @@
+Skipping completed 10MB memory-heavy m5.xlarge x 4 in ap-southeast-1
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Skipping completed 10MB cpu-heavy m5.xlarge x 4 in ap-southeast-1
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Skipping completed 10MB io-heavy m5.xlarge x 4 in ap-southeast-1
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Skipping completed 10MB memory-heavy c5.xlarge x 4 in ap-southeast-1
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Skipping completed 100MB cpu-heavy c5.xlarge x 4 in ap-southeast-1
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Skipping completed 100MB cpu-heavy m5.xlarge x 2 in ap-southeast-1
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Skipping completed 100MB io-heavy m5.xlarge x 2 in ap-southeast-1
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Skipping completed 500MB memory-heavy m5.xlarge x 2 in ap-southeast-1
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Skipping completed 1024MB io-heavy c5.xlarge x 4 in ap-southeast-1
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Skipping completed 5120MB memory-heavy c5.xlarge x 4 in ap-southeast-1
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Skipping completed 10MB cpu-heavy c5a.xlarge x 2 in ap-southeast-1
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+usage: run_emr_regional_resumable_batch.py [-h] [--config CONFIG]
+                                           [--region REGION]
+                                           [--subnet-id SUBNET_ID]
+                                           [--ec2-key-name EC2_KEY_NAME]
+                                           [--dataset-sizes-mb DATASET_SIZES_MB]
+                                           [--workloads WORKLOADS]
+                                           [--instance-types INSTANCE_TYPES]
+                                           [--nodes-list NODES_LIST]
+                                           [--pricing-model {on-demand,spot}]
+                                           [--poll-seconds POLL_SECONDS]
+                                           [--step-timeout-minutes STEP_TIMEOUT_MINUTES]
+                                           [--price-path PRICE_PATH]
+                                           [--output OUTPUT]
+                                           [--failed-output FAILED_OUTPUT]
+                                           [--skip-completed] [--submit]
+run_emr_regional_resumable_batch.py: error: argument --ec2-key-name: expected one argument

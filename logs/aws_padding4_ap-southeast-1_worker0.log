@@ -1,0 +1,1874 @@
+Starting 10MB io-heavy on m5a.xlarge x 2 in ap-southeast-1
+{
+  "JobFlowId": "j-1I7MO283ZD41F",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-1I7MO283ZD41F",
+  "ResponseMetadata": {
+    "RequestId": "e066781f-9fb6-41c5-82ae-a7f69a4597a3",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "e066781f-9fb6-41c5-82ae-a7f69a4597a3",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Fri, 24 Jul 2026 13:08:44 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-1I7MO283ZD41F step s-06765681Z0WN4VFUT5MU is PENDING
+j-1I7MO283ZD41F step s-06765681Z0WN4VFUT5MU is PENDING
+j-1I7MO283ZD41F step s-06765681Z0WN4VFUT5MU is PENDING
+j-1I7MO283ZD41F step s-06765681Z0WN4VFUT5MU is PENDING
+j-1I7MO283ZD41F step s-06765681Z0WN4VFUT5MU is PENDING
+j-1I7MO283ZD41F step s-06765681Z0WN4VFUT5MU is PENDING
+j-1I7MO283ZD41F step s-06765681Z0WN4VFUT5MU is PENDING
+j-1I7MO283ZD41F step s-06765681Z0WN4VFUT5MU is RUNNING
+j-1I7MO283ZD41F step s-06765681Z0WN4VFUT5MU is RUNNING
+j-1I7MO283ZD41F step s-06765681Z0WN4VFUT5MU is COMPLETED
+j-1I7MO283ZD41F cluster is TERMINATING
+j-1I7MO283ZD41F cluster is TERMINATED
+Saved io-heavy 10MB m5a.xlarge x 2 runtime=1.2078 min cost=$0.0087; cluster=TERMINATED
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Starting 1024MB memory-heavy on m5a.xlarge x 2 in ap-southeast-1
+{
+  "JobFlowId": "j-1V3PVS7EJSSK5",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-1V3PVS7EJSSK5",
+  "ResponseMetadata": {
+    "RequestId": "a1a0bf38-0fa5-49fe-b448-ca546050b1d8",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "a1a0bf38-0fa5-49fe-b448-ca546050b1d8",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Fri, 24 Jul 2026 13:13:54 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-1V3PVS7EJSSK5 step s-01608123TQOX1KRXYU3R is PENDING
+j-1V3PVS7EJSSK5 step s-01608123TQOX1KRXYU3R is PENDING
+j-1V3PVS7EJSSK5 step s-01608123TQOX1KRXYU3R is PENDING
+j-1V3PVS7EJSSK5 step s-01608123TQOX1KRXYU3R is PENDING
+j-1V3PVS7EJSSK5 step s-01608123TQOX1KRXYU3R is PENDING
+j-1V3PVS7EJSSK5 step s-01608123TQOX1KRXYU3R is PENDING
+j-1V3PVS7EJSSK5 step s-01608123TQOX1KRXYU3R is PENDING
+j-1V3PVS7EJSSK5 step s-01608123TQOX1KRXYU3R is PENDING
+j-1V3PVS7EJSSK5 step s-01608123TQOX1KRXYU3R is RUNNING
+j-1V3PVS7EJSSK5 step s-01608123TQOX1KRXYU3R is RUNNING
+j-1V3PVS7EJSSK5 step s-01608123TQOX1KRXYU3R is RUNNING
+j-1V3PVS7EJSSK5 step s-01608123TQOX1KRXYU3R is RUNNING
+j-1V3PVS7EJSSK5 step s-01608123TQOX1KRXYU3R is RUNNING
+j-1V3PVS7EJSSK5 step s-01608123TQOX1KRXYU3R is COMPLETED
+j-1V3PVS7EJSSK5 cluster is TERMINATED
+Saved memory-heavy 1024MB m5a.xlarge x 2 runtime=2.5446 min cost=$0.0183; cluster=TERMINATED
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Starting 500MB cpu-heavy on m5a.xlarge x 4 in ap-southeast-1
+{
+  "JobFlowId": "j-1PYXHXJBV3HY0",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-1PYXHXJBV3HY0",
+  "ResponseMetadata": {
+    "RequestId": "af696c29-46cf-4383-befd-9a4b38511ad6",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "af696c29-46cf-4383-befd-9a4b38511ad6",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Fri, 24 Jul 2026 13:35:51 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-1PYXHXJBV3HY0 step s-04053071TEYSMIN49NH0 is PENDING
+j-1PYXHXJBV3HY0 step s-04053071TEYSMIN49NH0 is PENDING
+j-1PYXHXJBV3HY0 step s-04053071TEYSMIN49NH0 is PENDING
+j-1PYXHXJBV3HY0 step s-04053071TEYSMIN49NH0 is PENDING
+j-1PYXHXJBV3HY0 step s-04053071TEYSMIN49NH0 is RUNNING
+j-1PYXHXJBV3HY0 step s-04053071TEYSMIN49NH0 is RUNNING
+j-1PYXHXJBV3HY0 step s-04053071TEYSMIN49NH0 is RUNNING
+j-1PYXHXJBV3HY0 step s-04053071TEYSMIN49NH0 is COMPLETED
+j-1PYXHXJBV3HY0 cluster is TERMINATING
+j-1PYXHXJBV3HY0 cluster is TERMINATING
+j-1PYXHXJBV3HY0 cluster is TERMINATED
+Saved cpu-heavy 500MB m5a.xlarge x 4 runtime=1.5413 min cost=$0.0222; cluster=TERMINATED
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Starting 10MB cpu-heavy on c5.xlarge x 4 in ap-southeast-1
+{
+  "JobFlowId": "j-1BWEK6D5FZL43",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-1BWEK6D5FZL43",
+  "ResponseMetadata": {
+    "RequestId": "ed10ff83-5d8e-4553-8854-4f8dcf72dc58",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "ed10ff83-5d8e-4553-8854-4f8dcf72dc58",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Fri, 24 Jul 2026 13:42:33 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-1BWEK6D5FZL43 step s-01250422MF6SYABEQADQ is PENDING
+j-1BWEK6D5FZL43 step s-01250422MF6SYABEQADQ is PENDING
+j-1BWEK6D5FZL43 step s-01250422MF6SYABEQADQ is PENDING
+j-1BWEK6D5FZL43 step s-01250422MF6SYABEQADQ is PENDING
+j-1BWEK6D5FZL43 step s-01250422MF6SYABEQADQ is PENDING
+j-1BWEK6D5FZL43 step s-01250422MF6SYABEQADQ is PENDING
+j-1BWEK6D5FZL43 step s-01250422MF6SYABEQADQ is PENDING
+j-1BWEK6D5FZL43 step s-01250422MF6SYABEQADQ is RUNNING
+j-1BWEK6D5FZL43 step s-01250422MF6SYABEQADQ is COMPLETED
+j-1BWEK6D5FZL43 cluster is TERMINATING
+j-1BWEK6D5FZL43 cluster is TERMINATING
+j-1BWEK6D5FZL43 cluster is TERMINATING
+j-1BWEK6D5FZL43 cluster is TERMINATED
+Saved cpu-heavy 10MB c5.xlarge x 4 runtime=0.9069 min cost=$0.0119; cluster=TERMINATED
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Starting 100MB io-heavy on c5a.xlarge x 2 in ap-southeast-1
+{
+  "JobFlowId": "j-17CAB08OYDYDJ",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-17CAB08OYDYDJ",
+  "ResponseMetadata": {
+    "RequestId": "4e35411f-40ed-4380-b8ac-bb476883696d",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "4e35411f-40ed-4380-b8ac-bb476883696d",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Fri, 24 Jul 2026 13:48:13 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-17CAB08OYDYDJ step s-06771932PIRO1FXZKDGI is PENDING
+j-17CAB08OYDYDJ step s-06771932PIRO1FXZKDGI is PENDING
+j-17CAB08OYDYDJ step s-06771932PIRO1FXZKDGI is PENDING
+j-17CAB08OYDYDJ step s-06771932PIRO1FXZKDGI is PENDING
+j-17CAB08OYDYDJ step s-06771932PIRO1FXZKDGI is PENDING
+j-17CAB08OYDYDJ step s-06771932PIRO1FXZKDGI is PENDING
+j-17CAB08OYDYDJ step s-06771932PIRO1FXZKDGI is PENDING
+j-17CAB08OYDYDJ step s-06771932PIRO1FXZKDGI is RUNNING
+j-17CAB08OYDYDJ step s-06771932PIRO1FXZKDGI is RUNNING
+j-17CAB08OYDYDJ step s-06771932PIRO1FXZKDGI is COMPLETED
+j-17CAB08OYDYDJ cluster is TERMINATING
+j-17CAB08OYDYDJ cluster is TERMINATING
+j-17CAB08OYDYDJ cluster is TERMINATING
+j-17CAB08OYDYDJ cluster is TERMINATED
+Saved io-heavy 100MB c5a.xlarge x 2 runtime=0.9729 min cost=$0.0057; cluster=TERMINATED
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Starting 100MB memory-heavy on c6i.xlarge x 2 in ap-southeast-1
+{
+  "JobFlowId": "j-2Z74ZIRAEA5KB",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-2Z74ZIRAEA5KB",
+  "ResponseMetadata": {
+    "RequestId": "55f68362-84eb-4da1-8456-fa666b522816",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "55f68362-84eb-4da1-8456-fa666b522816",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Fri, 24 Jul 2026 13:54:24 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-2Z74ZIRAEA5KB step s-084033521TLUCQDZ05KI is PENDING
+j-2Z74ZIRAEA5KB step s-084033521TLUCQDZ05KI is PENDING
+j-2Z74ZIRAEA5KB step s-084033521TLUCQDZ05KI is PENDING
+j-2Z74ZIRAEA5KB step s-084033521TLUCQDZ05KI is PENDING
+j-2Z74ZIRAEA5KB step s-084033521TLUCQDZ05KI is PENDING
+j-2Z74ZIRAEA5KB step s-084033521TLUCQDZ05KI is PENDING
+j-2Z74ZIRAEA5KB step s-084033521TLUCQDZ05KI is PENDING
+j-2Z74ZIRAEA5KB step s-084033521TLUCQDZ05KI is RUNNING
+j-2Z74ZIRAEA5KB step s-084033521TLUCQDZ05KI is RUNNING
+j-2Z74ZIRAEA5KB step s-084033521TLUCQDZ05KI is COMPLETED
+j-2Z74ZIRAEA5KB cluster is TERMINATING
+j-2Z74ZIRAEA5KB cluster is TERMINATED
+Saved memory-heavy 100MB c6i.xlarge x 2 runtime=0.8062 min cost=$0.0053; cluster=TERMINATED
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Starting 500MB io-heavy on c6i.xlarge x 2 in ap-southeast-1
+{
+  "JobFlowId": "j-1Z85V8F5KDFJO",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-1Z85V8F5KDFJO",
+  "ResponseMetadata": {
+    "RequestId": "9f214d66-b099-44f4-9850-cd401af91ffd",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "9f214d66-b099-44f4-9850-cd401af91ffd",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Fri, 24 Jul 2026 13:59:34 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-1Z85V8F5KDFJO step s-04035631A3CY3IHZ8RWX is PENDING
+j-1Z85V8F5KDFJO step s-04035631A3CY3IHZ8RWX is PENDING
+j-1Z85V8F5KDFJO step s-04035631A3CY3IHZ8RWX is PENDING
+j-1Z85V8F5KDFJO step s-04035631A3CY3IHZ8RWX is PENDING
+j-1Z85V8F5KDFJO step s-04035631A3CY3IHZ8RWX is PENDING
+j-1Z85V8F5KDFJO step s-04035631A3CY3IHZ8RWX is PENDING
+j-1Z85V8F5KDFJO step s-04035631A3CY3IHZ8RWX is RUNNING
+j-1Z85V8F5KDFJO step s-04035631A3CY3IHZ8RWX is RUNNING
+j-1Z85V8F5KDFJO step s-04035631A3CY3IHZ8RWX is RUNNING
+j-1Z85V8F5KDFJO step s-04035631A3CY3IHZ8RWX is COMPLETED
+j-1Z85V8F5KDFJO cluster is TERMINATING
+j-1Z85V8F5KDFJO cluster is TERMINATED
+Saved io-heavy 500MB c6i.xlarge x 2 runtime=1.3059 min cost=$0.0085; cluster=TERMINATED
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Starting 100MB io-heavy on m6i.xlarge x 2 in ap-southeast-1
+{
+  "JobFlowId": "j-3IS1X8TT40I0K",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-3IS1X8TT40I0K",
+  "ResponseMetadata": {
+    "RequestId": "b713518d-57c4-48fd-bd9e-1287618f283f",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "b713518d-57c4-48fd-bd9e-1287618f283f",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Fri, 24 Jul 2026 14:04:44 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-3IS1X8TT40I0K step s-0402033IIPOTDW4DHN is PENDING
+j-3IS1X8TT40I0K step s-0402033IIPOTDW4DHN is PENDING
+j-3IS1X8TT40I0K step s-0402033IIPOTDW4DHN is PENDING
+j-3IS1X8TT40I0K step s-0402033IIPOTDW4DHN is PENDING
+j-3IS1X8TT40I0K step s-0402033IIPOTDW4DHN is PENDING
+j-3IS1X8TT40I0K step s-0402033IIPOTDW4DHN is PENDING
+j-3IS1X8TT40I0K step s-0402033IIPOTDW4DHN is RUNNING
+j-3IS1X8TT40I0K step s-0402033IIPOTDW4DHN is RUNNING
+j-3IS1X8TT40I0K step s-0402033IIPOTDW4DHN is COMPLETED
+j-3IS1X8TT40I0K cluster is TERMINATING
+j-3IS1X8TT40I0K cluster is TERMINATING
+j-3IS1X8TT40I0K cluster is TERMINATED
+Saved io-heavy 100MB m6i.xlarge x 2 runtime=0.9722 min cost=$0.0078; cluster=TERMINATED
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Starting 100MB memory-heavy on c6i.xlarge x 2 in ap-southeast-1
+{
+  "JobFlowId": "j-2ZMEL6UBT19EQ",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-2ZMEL6UBT19EQ",
+  "ResponseMetadata": {
+    "RequestId": "1c4b3606-98b1-4b54-b382-cd507b16f927",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "1c4b3606-98b1-4b54-b382-cd507b16f927",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Fri, 24 Jul 2026 14:09:54 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-2ZMEL6UBT19EQ step s-0665034139U6CHAB8G6H is PENDING
+j-2ZMEL6UBT19EQ step s-0665034139U6CHAB8G6H is PENDING
+j-2ZMEL6UBT19EQ step s-0665034139U6CHAB8G6H is PENDING
+j-2ZMEL6UBT19EQ step s-0665034139U6CHAB8G6H is PENDING
+j-2ZMEL6UBT19EQ step s-0665034139U6CHAB8G6H is PENDING
+j-2ZMEL6UBT19EQ step s-0665034139U6CHAB8G6H is PENDING
+j-2ZMEL6UBT19EQ step s-0665034139U6CHAB8G6H is RUNNING
+j-2ZMEL6UBT19EQ step s-0665034139U6CHAB8G6H is RUNNING
+j-2ZMEL6UBT19EQ step s-0665034139U6CHAB8G6H is COMPLETED
+j-2ZMEL6UBT19EQ cluster is TERMINATING
+j-2ZMEL6UBT19EQ cluster is TERMINATING
+j-2ZMEL6UBT19EQ cluster is TERMINATED
+Saved memory-heavy 100MB c6i.xlarge x 2 runtime=0.8051 min cost=$0.0053; cluster=TERMINATED
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Starting 10MB io-heavy on m6i.xlarge x 4 in ap-southeast-1
+{
+  "JobFlowId": "j-8T7TUYGZR63W",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-8T7TUYGZR63W",
+  "ResponseMetadata": {
+    "RequestId": "fa9b5c75-eb90-4b8a-afeb-b23d2479dc6e",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "fa9b5c75-eb90-4b8a-afeb-b23d2479dc6e",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "121",
+      "date": "Fri, 24 Jul 2026 14:15:04 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-8T7TUYGZR63W step s-040476620AOJHIS0BBP3 is PENDING
+j-8T7TUYGZR63W step s-040476620AOJHIS0BBP3 is PENDING
+j-8T7TUYGZR63W step s-040476620AOJHIS0BBP3 is PENDING
+j-8T7TUYGZR63W step s-040476620AOJHIS0BBP3 is PENDING
+j-8T7TUYGZR63W step s-040476620AOJHIS0BBP3 is PENDING
+j-8T7TUYGZR63W step s-040476620AOJHIS0BBP3 is PENDING
+j-8T7TUYGZR63W step s-040476620AOJHIS0BBP3 is RUNNING
+j-8T7TUYGZR63W step s-040476620AOJHIS0BBP3 is RUNNING
+j-8T7TUYGZR63W step s-040476620AOJHIS0BBP3 is COMPLETED
+j-8T7TUYGZR63W cluster is TERMINATING
+j-8T7TUYGZR63W cluster is TERMINATED
+Saved io-heavy 10MB m6i.xlarge x 4 runtime=0.9384 min cost=$0.0150; cluster=TERMINATED
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Starting 500MB memory-heavy on m6i.xlarge x 2 in ap-southeast-1
+{
+  "JobFlowId": "j-394976QMA6FUC",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-394976QMA6FUC",
+  "ResponseMetadata": {
+    "RequestId": "a80b7c9e-614a-4fcb-850c-16b67420124f",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "a80b7c9e-614a-4fcb-850c-16b67420124f",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Fri, 24 Jul 2026 14:37:09 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-394976QMA6FUC step s-092723812VWFGQNHOCIO is PENDING
+j-394976QMA6FUC step s-092723812VWFGQNHOCIO is PENDING
+j-394976QMA6FUC step s-092723812VWFGQNHOCIO is PENDING
+j-394976QMA6FUC step s-092723812VWFGQNHOCIO is COMPLETED
+j-394976QMA6FUC cluster is TERMINATED
+Saved memory-heavy 500MB m6i.xlarge x 2 runtime=1.0719 min cost=$0.0086; cluster=TERMINATED
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Starting 10MB cpu-heavy on m5.xlarge x 4 in ap-southeast-1
+{
+  "JobFlowId": "j-2TK09FWH4KXLL",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-2TK09FWH4KXLL",
+  "ResponseMetadata": {
+    "RequestId": "9894eccf-d391-4c93-8546-5457606c61d2",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "9894eccf-d391-4c93-8546-5457606c61d2",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Fri, 24 Jul 2026 14:53:48 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-2TK09FWH4KXLL step s-040546610JO10ZIWK51L is PENDING
+j-2TK09FWH4KXLL step s-040546610JO10ZIWK51L is COMPLETED
+j-2TK09FWH4KXLL cluster is TERMINATED
+Saved cpu-heavy 10MB m5.xlarge x 4 runtime=1.0395 min cost=$0.0166; cluster=TERMINATED
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Starting 10MB io-heavy on c5a.xlarge x 2 in ap-southeast-1
+{
+  "JobFlowId": "j-2SBKP4BHG8TUB",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-2SBKP4BHG8TUB",
+  "ResponseMetadata": {
+    "RequestId": "b01469fa-af01-449e-8c0d-8fbb3a473d10",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "b01469fa-af01-449e-8c0d-8fbb3a473d10",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Fri, 24 Jul 2026 15:09:20 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-2SBKP4BHG8TUB step s-04047691RI12FZXESYBA is PENDING
+j-2SBKP4BHG8TUB step s-04047691RI12FZXESYBA is COMPLETED
+j-2SBKP4BHG8TUB cluster is TERMINATED
+Saved io-heavy 10MB c5a.xlarge x 2 runtime=0.8717 min cost=$0.0051; cluster=TERMINATED
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Starting 10MB cpu-heavy on m6i.xlarge x 4 in ap-southeast-1
+{
+  "JobFlowId": "j-1F27L3HY5CKPY",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-1F27L3HY5CKPY",
+  "ResponseMetadata": {
+    "RequestId": "c93d3536-796f-4125-bf18-60b5447ba146",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "c93d3536-796f-4125-bf18-60b5447ba146",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Fri, 24 Jul 2026 15:18:55 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-1F27L3HY5CKPY step s-09269731C49MGJO8O16U is PENDING
+j-1F27L3HY5CKPY step s-09269731C49MGJO8O16U is COMPLETED
+j-1F27L3HY5CKPY cluster is TERMINATED
+Saved cpu-heavy 10MB m6i.xlarge x 4 runtime=0.8392 min cost=$0.0134; cluster=TERMINATED
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Starting 100MB memory-heavy on m5.xlarge x 4 in ap-southeast-1
+{
+  "JobFlowId": "j-3RZHOXF7MM01H",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-3RZHOXF7MM01H",
+  "ResponseMetadata": {
+    "RequestId": "11586b22-14fd-427a-9d64-42c660e12b7a",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "11586b22-14fd-427a-9d64-42c660e12b7a",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Fri, 24 Jul 2026 15:34:28 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-3RZHOXF7MM01H step s-0927416IW56ZAH1MRLR is PENDING
+j-3RZHOXF7MM01H step s-0927416IW56ZAH1MRLR is PENDING
+j-3RZHOXF7MM01H step s-0927416IW56ZAH1MRLR is COMPLETED
+j-3RZHOXF7MM01H cluster is TERMINATED
+Saved memory-heavy 100MB m5.xlarge x 4 runtime=1.1394 min cost=$0.0182; cluster=TERMINATED
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Starting 1024MB cpu-heavy on c5a.xlarge x 2 in ap-southeast-1
+{
+  "JobFlowId": "j-X0IIZRLJI81M",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-X0IIZRLJI81M",
+  "ResponseMetadata": {
+    "RequestId": "55e978dc-b776-4918-92d6-00f80a18502c",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "55e978dc-b776-4918-92d6-00f80a18502c",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "121",
+      "date": "Fri, 24 Jul 2026 15:50:39 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-X0IIZRLJI81M step s-01300027LD5RF4DXMZ1 is PENDING
+j-X0IIZRLJI81M step s-01300027LD5RF4DXMZ1 is RUNNING
+j-X0IIZRLJI81M step s-01300027LD5RF4DXMZ1 is RUNNING
+j-X0IIZRLJI81M step s-01300027LD5RF4DXMZ1 is RUNNING
+j-X0IIZRLJI81M step s-01300027LD5RF4DXMZ1 is COMPLETED
+j-X0IIZRLJI81M cluster is TERMINATING
+j-X0IIZRLJI81M cluster is TERMINATING
+j-X0IIZRLJI81M cluster is TERMINATED
+Saved cpu-heavy 1024MB c5a.xlarge x 2 runtime=1.6054 min cost=$0.0094; cluster=TERMINATED
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Starting 500MB cpu-heavy on m5.xlarge x 2 in ap-southeast-1
+{
+  "JobFlowId": "j-3MZQB928FNQA1",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-3MZQB928FNQA1",
+  "ResponseMetadata": {
+    "RequestId": "9c157d1e-6216-45d8-86b5-782cdf3ba74d",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "9c157d1e-6216-45d8-86b5-782cdf3ba74d",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Fri, 24 Jul 2026 16:11:56 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-3MZQB928FNQA1 step s-01695393MNUGZJJR6P9S is PENDING
+j-3MZQB928FNQA1 step s-01695393MNUGZJJR6P9S is COMPLETED
+j-3MZQB928FNQA1 cluster is TERMINATED
+Saved cpu-heavy 500MB m5.xlarge x 2 runtime=1.3065 min cost=$0.0105; cluster=TERMINATED
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Starting 10MB cpu-heavy on c6i.xlarge x 4 in ap-southeast-1
+{
+  "JobFlowId": "j-FIS94EIU8NR9",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-FIS94EIU8NR9",
+  "ResponseMetadata": {
+    "RequestId": "28821def-a2e0-41e7-8b9d-68a6edce3506",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "28821def-a2e0-41e7-8b9d-68a6edce3506",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "121",
+      "date": "Fri, 24 Jul 2026 16:27:28 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-FIS94EIU8NR9 step s-01656251MGT5A8598YYK is PENDING
+j-FIS94EIU8NR9 step s-01656251MGT5A8598YYK is COMPLETED
+j-FIS94EIU8NR9 cluster is TERMINATED
+Saved cpu-heavy 10MB c6i.xlarge x 4 runtime=0.8046 min cost=$0.0105; cluster=TERMINATED
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Starting 500MB io-heavy on c5.xlarge x 2 in ap-southeast-1
+{
+  "JobFlowId": "j-M0FV0VW9BGYT",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-M0FV0VW9BGYT",
+  "ResponseMetadata": {
+    "RequestId": "3683c1d9-205b-4790-a1b1-33a173edfd83",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "3683c1d9-205b-4790-a1b1-33a173edfd83",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "121",
+      "date": "Fri, 24 Jul 2026 16:43:01 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-M0FV0VW9BGYT step s-04240562G41QVBSBRID5 is PENDING
+j-M0FV0VW9BGYT step s-04240562G41QVBSBRID5 is PENDING
+j-M0FV0VW9BGYT step s-04240562G41QVBSBRID5 is COMPLETED
+j-M0FV0VW9BGYT cluster is TERMINATED
+Saved io-heavy 500MB c5.xlarge x 2 runtime=1.4745 min cost=$0.0096; cluster=TERMINATED
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Starting 2048MB cpu-heavy on m6i.xlarge x 2 in ap-southeast-1
+{
+  "JobFlowId": "j-3C8E73ZOFR2KM",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-3C8E73ZOFR2KM",
+  "ResponseMetadata": {
+    "RequestId": "8ab5544b-041f-4cf2-a153-7bc986c97a98",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "8ab5544b-041f-4cf2-a153-7bc986c97a98",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Fri, 24 Jul 2026 16:59:04 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-3C8E73ZOFR2KM step s-06688961835ZDL5HDB4Q is PENDING
+j-3C8E73ZOFR2KM step s-06688961835ZDL5HDB4Q is PENDING
+j-3C8E73ZOFR2KM step s-06688961835ZDL5HDB4Q is COMPLETED
+j-3C8E73ZOFR2KM cluster is TERMINATED
+Saved cpu-heavy 2048MB m6i.xlarge x 2 runtime=2.2732 min cost=$0.0182; cluster=TERMINATED
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Starting 2048MB memory-heavy on m6i.xlarge x 2 in ap-southeast-1
+{
+  "JobFlowId": "j-31X4319732OX1",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-31X4319732OX1",
+  "ResponseMetadata": {
+    "RequestId": "f013c0c6-35b0-4924-84d2-e131ce2ff7b7",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "f013c0c6-35b0-4924-84d2-e131ce2ff7b7",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Fri, 24 Jul 2026 17:15:17 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-31X4319732OX1 step s-09212883J98ZMQ24SCLM is PENDING
+j-31X4319732OX1 step s-09212883J98ZMQ24SCLM is PENDING
+j-31X4319732OX1 step s-09212883J98ZMQ24SCLM is RUNNING
+j-31X4319732OX1 step s-09212883J98ZMQ24SCLM is COMPLETED
+j-31X4319732OX1 cluster is TERMINATED
+Saved memory-heavy 2048MB m6i.xlarge x 2 runtime=2.2391 min cost=$0.0179; cluster=TERMINATED
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Starting 2048MB memory-heavy on m5a.xlarge x 4 in ap-southeast-1
+{
+  "JobFlowId": "j-6Y1QJL2F1IOM",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-6Y1QJL2F1IOM",
+  "ResponseMetadata": {
+    "RequestId": "915fd7a4-0d68-46b6-b9b4-28b07a9a2b8d",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "915fd7a4-0d68-46b6-b9b4-28b07a9a2b8d",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "121",
+      "date": "Fri, 24 Jul 2026 17:36:05 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-6Y1QJL2F1IOM step s-06687021YJXLV9IESRAL is PENDING
+j-6Y1QJL2F1IOM step s-06687021YJXLV9IESRAL is PENDING
+j-6Y1QJL2F1IOM step s-06687021YJXLV9IESRAL is COMPLETED
+j-6Y1QJL2F1IOM cluster is TERMINATING
+j-6Y1QJL2F1IOM cluster is TERMINATED
+Saved memory-heavy 2048MB m5a.xlarge x 4 runtime=2.6084 min cost=$0.0376; cluster=TERMINATED
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Starting 2048MB io-heavy on m6i.xlarge x 4 in ap-southeast-1
+{
+  "JobFlowId": "j-SQV3PY9JEU5Z",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-SQV3PY9JEU5Z",
+  "ResponseMetadata": {
+    "RequestId": "c89711fd-340e-40ef-ae80-20c0bfd1142e",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "c89711fd-340e-40ef-ae80-20c0bfd1142e",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "121",
+      "date": "Fri, 24 Jul 2026 17:43:23 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-SQV3PY9JEU5Z step s-09262159HQK5NTC6K37 is PENDING
+j-SQV3PY9JEU5Z step s-09262159HQK5NTC6K37 is PENDING
+j-SQV3PY9JEU5Z step s-09262159HQK5NTC6K37 is PENDING
+j-SQV3PY9JEU5Z step s-09262159HQK5NTC6K37 is RUNNING
+j-SQV3PY9JEU5Z step s-09262159HQK5NTC6K37 is COMPLETED
+j-SQV3PY9JEU5Z cluster is TERMINATED
+Saved io-heavy 2048MB m6i.xlarge x 4 runtime=1.9713 min cost=$0.0315; cluster=TERMINATED
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Starting 100MB io-heavy on c5a.xlarge x 2 in ap-southeast-1
+{
+  "JobFlowId": "j-TRXUWYAYRHT5",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-TRXUWYAYRHT5",
+  "ResponseMetadata": {
+    "RequestId": "143aa844-d34c-4e55-9f82-6c7d6bf9360c",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "143aa844-d34c-4e55-9f82-6c7d6bf9360c",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "121",
+      "date": "Fri, 24 Jul 2026 17:52:23 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-TRXUWYAYRHT5 step s-0405359227ZAECTXHVDV is PENDING
+j-TRXUWYAYRHT5 step s-0405359227ZAECTXHVDV is PENDING
+j-TRXUWYAYRHT5 step s-0405359227ZAECTXHVDV is PENDING
+j-TRXUWYAYRHT5 step s-0405359227ZAECTXHVDV is PENDING
+j-TRXUWYAYRHT5 step s-0405359227ZAECTXHVDV is PENDING
+j-TRXUWYAYRHT5 step s-0405359227ZAECTXHVDV is COMPLETED
+j-TRXUWYAYRHT5 cluster is TERMINATED
+Saved io-heavy 100MB c5a.xlarge x 2 runtime=0.9727 min cost=$0.0057; cluster=TERMINATED
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Starting 10MB memory-heavy on m5a.xlarge x 2 in ap-southeast-1
+{
+  "JobFlowId": "j-IUV4IQ0UDMRH",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-IUV4IQ0UDMRH",
+  "ResponseMetadata": {
+    "RequestId": "8dd9514a-8929-4734-ba78-769d3add0bfb",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "8dd9514a-8929-4734-ba78-769d3add0bfb",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "121",
+      "date": "Fri, 24 Jul 2026 18:09:56 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-IUV4IQ0UDMRH step s-06833181QMSI5OW0NZ0D is PENDING
+j-IUV4IQ0UDMRH step s-06833181QMSI5OW0NZ0D is COMPLETED
+j-IUV4IQ0UDMRH cluster is TERMINATING
+j-IUV4IQ0UDMRH cluster is TERMINATED
+Saved memory-heavy 10MB m5a.xlarge x 2 runtime=1.1759 min cost=$0.0085; cluster=TERMINATED
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Starting 500MB memory-heavy on m6i.xlarge x 4 in ap-southeast-1
+{
+  "JobFlowId": "j-1Y2WUAN9TW3C0",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-1Y2WUAN9TW3C0",
+  "ResponseMetadata": {
+    "RequestId": "91b322b3-8da2-4cb9-ba35-6f07e530a5f5",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "91b322b3-8da2-4cb9-ba35-6f07e530a5f5",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Fri, 24 Jul 2026 18:15:40 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-1Y2WUAN9TW3C0 step s-01463618ZAKI48F80PO is PENDING
+j-1Y2WUAN9TW3C0 step s-01463618ZAKI48F80PO is COMPLETED
+j-1Y2WUAN9TW3C0 cluster is TERMINATED
+Saved memory-heavy 500MB m6i.xlarge x 4 runtime=1.1055 min cost=$0.0177; cluster=TERMINATED
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Starting 2048MB cpu-heavy on m5a.xlarge x 4 in ap-southeast-1
+{
+  "JobFlowId": "j-2O323UFL1HH6U",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-2O323UFL1HH6U",
+  "ResponseMetadata": {
+    "RequestId": "deafb8ab-5e44-4deb-b492-be8ed1b6b599",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "deafb8ab-5e44-4deb-b492-be8ed1b6b599",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Fri, 24 Jul 2026 18:34:34 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-2O323UFL1HH6U step s-01326222O6WZAGL6U2Q4 is PENDING
+j-2O323UFL1HH6U step s-01326222O6WZAGL6U2Q4 is PENDING
+j-2O323UFL1HH6U step s-01326222O6WZAGL6U2Q4 is PENDING
+j-2O323UFL1HH6U step s-01326222O6WZAGL6U2Q4 is PENDING
+j-2O323UFL1HH6U step s-01326222O6WZAGL6U2Q4 is PENDING
+j-2O323UFL1HH6U step s-01326222O6WZAGL6U2Q4 is RUNNING
+j-2O323UFL1HH6U step s-01326222O6WZAGL6U2Q4 is RUNNING
+j-2O323UFL1HH6U step s-01326222O6WZAGL6U2Q4 is RUNNING
+j-2O323UFL1HH6U step s-01326222O6WZAGL6U2Q4 is RUNNING
+j-2O323UFL1HH6U step s-01326222O6WZAGL6U2Q4 is RUNNING
+j-2O323UFL1HH6U step s-01326222O6WZAGL6U2Q4 is COMPLETED
+j-2O323UFL1HH6U cluster is TERMINATING
+j-2O323UFL1HH6U cluster is TERMINATING
+j-2O323UFL1HH6U cluster is TERMINATING
+j-2O323UFL1HH6U cluster is TERMINATED
+Saved cpu-heavy 2048MB m5a.xlarge x 4 runtime=2.4084 min cost=$0.0347; cluster=TERMINATED
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Starting 1024MB cpu-heavy on m5.xlarge x 2 in ap-southeast-1
+{
+  "JobFlowId": "j-2GKGPT8YWFMRW",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-2GKGPT8YWFMRW",
+  "ResponseMetadata": {
+    "RequestId": "7b3a3c45-2cea-4e8a-8a2e-46791456e1f8",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "7b3a3c45-2cea-4e8a-8a2e-46791456e1f8",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Fri, 24 Jul 2026 18:42:05 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-2GKGPT8YWFMRW step s-06775533UICTJMN29D8V is PENDING
+j-2GKGPT8YWFMRW step s-06775533UICTJMN29D8V is PENDING
+j-2GKGPT8YWFMRW step s-06775533UICTJMN29D8V is PENDING
+j-2GKGPT8YWFMRW step s-06775533UICTJMN29D8V is RUNNING
+j-2GKGPT8YWFMRW step s-06775533UICTJMN29D8V is RUNNING
+j-2GKGPT8YWFMRW step s-06775533UICTJMN29D8V is RUNNING
+j-2GKGPT8YWFMRW step s-06775533UICTJMN29D8V is COMPLETED
+j-2GKGPT8YWFMRW cluster is TERMINATING
+j-2GKGPT8YWFMRW cluster is TERMINATED
+Saved cpu-heavy 1024MB m5.xlarge x 2 runtime=1.8404 min cost=$0.0147; cluster=TERMINATED
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Starting 10MB io-heavy on m5.xlarge x 4 in ap-southeast-1
+{
+  "JobFlowId": "j-1XDTB1527EUPH",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-1XDTB1527EUPH",
+  "ResponseMetadata": {
+    "RequestId": "e2d91420-aad6-4e87-b760-c014b5bab3d7",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "e2d91420-aad6-4e87-b760-c014b5bab3d7",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Fri, 24 Jul 2026 19:00:51 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-1XDTB1527EUPH step s-012980822KOUJCA1D9KW is PENDING
+j-1XDTB1527EUPH step s-012980822KOUJCA1D9KW is PENDING
+j-1XDTB1527EUPH step s-012980822KOUJCA1D9KW is PENDING
+j-1XDTB1527EUPH step s-012980822KOUJCA1D9KW is PENDING
+j-1XDTB1527EUPH step s-012980822KOUJCA1D9KW is PENDING
+j-1XDTB1527EUPH step s-012980822KOUJCA1D9KW is PENDING
+j-1XDTB1527EUPH step s-012980822KOUJCA1D9KW is PENDING
+j-1XDTB1527EUPH step s-012980822KOUJCA1D9KW is PENDING
+j-1XDTB1527EUPH step s-012980822KOUJCA1D9KW is RUNNING
+j-1XDTB1527EUPH step s-012980822KOUJCA1D9KW is RUNNING
+j-1XDTB1527EUPH step s-012980822KOUJCA1D9KW is COMPLETED
+j-1XDTB1527EUPH cluster is TERMINATING
+j-1XDTB1527EUPH cluster is TERMINATING
+j-1XDTB1527EUPH cluster is TERMINATING
+j-1XDTB1527EUPH cluster is TERMINATED
+Saved io-heavy 10MB m5.xlarge x 4 runtime=1.1395 min cost=$0.0182; cluster=TERMINATED
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Starting 100MB memory-heavy on c5.xlarge x 4 in ap-southeast-1
+{
+  "JobFlowId": "j-3ASVDHSBGY5H3",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-3ASVDHSBGY5H3",
+  "ResponseMetadata": {
+    "RequestId": "9586795e-b33c-40b4-90af-ba45730d14d6",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "9586795e-b33c-40b4-90af-ba45730d14d6",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Fri, 24 Jul 2026 19:07:27 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-3ASVDHSBGY5H3 step s-0031990XXK1CK2W3C61 is PENDING
+j-3ASVDHSBGY5H3 step s-0031990XXK1CK2W3C61 is PENDING
+j-3ASVDHSBGY5H3 step s-0031990XXK1CK2W3C61 is PENDING
+j-3ASVDHSBGY5H3 step s-0031990XXK1CK2W3C61 is PENDING
+j-3ASVDHSBGY5H3 step s-0031990XXK1CK2W3C61 is PENDING
+j-3ASVDHSBGY5H3 step s-0031990XXK1CK2W3C61 is PENDING
+j-3ASVDHSBGY5H3 step s-0031990XXK1CK2W3C61 is PENDING
+j-3ASVDHSBGY5H3 step s-0031990XXK1CK2W3C61 is RUNNING
+j-3ASVDHSBGY5H3 step s-0031990XXK1CK2W3C61 is RUNNING
+j-3ASVDHSBGY5H3 step s-0031990XXK1CK2W3C61 is COMPLETED
+j-3ASVDHSBGY5H3 cluster is TERMINATING
+j-3ASVDHSBGY5H3 cluster is TERMINATING
+j-3ASVDHSBGY5H3 cluster is TERMINATING
+j-3ASVDHSBGY5H3 cluster is TERMINATED
+Saved memory-heavy 100MB c5.xlarge x 4 runtime=1.0066 min cost=$0.0132; cluster=TERMINATED
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Starting 10MB memory-heavy on m6i.xlarge x 2 in ap-southeast-1
+{
+  "JobFlowId": "j-R241WY6RE6BS",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-R241WY6RE6BS",
+  "ResponseMetadata": {
+    "RequestId": "bc1d2996-7fbe-491d-a1cf-a4a0d1e51184",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "bc1d2996-7fbe-491d-a1cf-a4a0d1e51184",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "121",
+      "date": "Fri, 24 Jul 2026 19:13:34 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-R241WY6RE6BS step s-06564642FUWPC37M513K is PENDING
+j-R241WY6RE6BS step s-06564642FUWPC37M513K is PENDING
+j-R241WY6RE6BS step s-06564642FUWPC37M513K is PENDING
+j-R241WY6RE6BS step s-06564642FUWPC37M513K is PENDING
+j-R241WY6RE6BS step s-06564642FUWPC37M513K is PENDING
+j-R241WY6RE6BS step s-06564642FUWPC37M513K is PENDING
+j-R241WY6RE6BS step s-06564642FUWPC37M513K is PENDING
+j-R241WY6RE6BS step s-06564642FUWPC37M513K is RUNNING
+j-R241WY6RE6BS step s-06564642FUWPC37M513K is COMPLETED
+j-R241WY6RE6BS cluster is TERMINATING
+j-R241WY6RE6BS cluster is TERMINATING
+j-R241WY6RE6BS cluster is TERMINATED
+Saved memory-heavy 10MB m6i.xlarge x 2 runtime=0.7392 min cost=$0.0059; cluster=TERMINATED
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Starting 500MB cpu-heavy on c5.xlarge x 4 in ap-southeast-1
+{
+  "JobFlowId": "j-369VU8236GJJU",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-369VU8236GJJU",
+  "ResponseMetadata": {
+    "RequestId": "84e4cf0b-309f-4b0e-982d-14aea3b7c995",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "84e4cf0b-309f-4b0e-982d-14aea3b7c995",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Fri, 24 Jul 2026 19:18:39 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-369VU8236GJJU step s-01729183RMKESQ0X5W4 is PENDING
+j-369VU8236GJJU step s-01729183RMKESQ0X5W4 is PENDING
+j-369VU8236GJJU step s-01729183RMKESQ0X5W4 is PENDING
+j-369VU8236GJJU step s-01729183RMKESQ0X5W4 is PENDING
+j-369VU8236GJJU step s-01729183RMKESQ0X5W4 is PENDING
+j-369VU8236GJJU step s-01729183RMKESQ0X5W4 is PENDING
+j-369VU8236GJJU step s-01729183RMKESQ0X5W4 is PENDING
+j-369VU8236GJJU step s-01729183RMKESQ0X5W4 is RUNNING
+j-369VU8236GJJU step s-01729183RMKESQ0X5W4 is RUNNING
+j-369VU8236GJJU step s-01729183RMKESQ0X5W4 is COMPLETED
+j-369VU8236GJJU cluster is TERMINATING
+j-369VU8236GJJU cluster is TERMINATING
+j-369VU8236GJJU cluster is TERMINATING
+j-369VU8236GJJU cluster is TERMINATED
+Saved cpu-heavy 500MB c5.xlarge x 4 runtime=1.0399 min cost=$0.0136; cluster=TERMINATED
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Starting 10MB cpu-heavy on c6i.xlarge x 2 in ap-southeast-1
+{
+  "JobFlowId": "j-1TCC7RBT5QXTY",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-1TCC7RBT5QXTY",
+  "ResponseMetadata": {
+    "RequestId": "57cf4fec-23b0-445b-a00c-1f1fc86b4b19",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "57cf4fec-23b0-445b-a00c-1f1fc86b4b19",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Fri, 24 Jul 2026 19:24:45 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-1TCC7RBT5QXTY step s-015545132VQ24736S9O6 is PENDING
+j-1TCC7RBT5QXTY step s-015545132VQ24736S9O6 is PENDING
+j-1TCC7RBT5QXTY step s-015545132VQ24736S9O6 is PENDING
+j-1TCC7RBT5QXTY step s-015545132VQ24736S9O6 is PENDING
+j-1TCC7RBT5QXTY step s-015545132VQ24736S9O6 is PENDING
+j-1TCC7RBT5QXTY step s-015545132VQ24736S9O6 is PENDING
+j-1TCC7RBT5QXTY step s-015545132VQ24736S9O6 is RUNNING
+j-1TCC7RBT5QXTY step s-015545132VQ24736S9O6 is COMPLETED
+j-1TCC7RBT5QXTY cluster is TERMINATING
+j-1TCC7RBT5QXTY cluster is TERMINATING
+j-1TCC7RBT5QXTY cluster is TERMINATING
+j-1TCC7RBT5QXTY cluster is TERMINATED
+Saved cpu-heavy 10MB c6i.xlarge x 2 runtime=0.7062 min cost=$0.0046; cluster=TERMINATED
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Starting 100MB cpu-heavy on c6i.xlarge x 4 in ap-southeast-1
+{
+  "JobFlowId": "j-4TEREINZOWJ4",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-4TEREINZOWJ4",
+  "ResponseMetadata": {
+    "RequestId": "31a73903-f36f-412f-82d4-325ff18c920d",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "31a73903-f36f-412f-82d4-325ff18c920d",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "121",
+      "date": "Fri, 24 Jul 2026 19:29:50 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-4TEREINZOWJ4 step s-07027422BSW8I60FVJ16 is PENDING
+j-4TEREINZOWJ4 step s-07027422BSW8I60FVJ16 is PENDING
+j-4TEREINZOWJ4 step s-07027422BSW8I60FVJ16 is PENDING
+j-4TEREINZOWJ4 step s-07027422BSW8I60FVJ16 is PENDING
+j-4TEREINZOWJ4 step s-07027422BSW8I60FVJ16 is PENDING
+j-4TEREINZOWJ4 step s-07027422BSW8I60FVJ16 is PENDING
+j-4TEREINZOWJ4 step s-07027422BSW8I60FVJ16 is PENDING
+j-4TEREINZOWJ4 step s-07027422BSW8I60FVJ16 is RUNNING
+j-4TEREINZOWJ4 step s-07027422BSW8I60FVJ16 is RUNNING
+j-4TEREINZOWJ4 step s-07027422BSW8I60FVJ16 is COMPLETED
+j-4TEREINZOWJ4 cluster is TERMINATING
+j-4TEREINZOWJ4 cluster is TERMINATED
+Saved cpu-heavy 100MB c6i.xlarge x 4 runtime=0.8050 min cost=$0.0105; cluster=TERMINATED
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Starting 500MB io-heavy on m5a.xlarge x 4 in ap-southeast-1
+{
+  "JobFlowId": "j-38ZE72DPPZ1Q2",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-38ZE72DPPZ1Q2",
+  "ResponseMetadata": {
+    "RequestId": "894fad8e-a4db-4ceb-8b0b-aeddf25ad921",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "894fad8e-a4db-4ceb-8b0b-aeddf25ad921",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Fri, 24 Jul 2026 19:34:56 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-38ZE72DPPZ1Q2 step s-0141187A8Y4RKT385HT is PENDING
+j-38ZE72DPPZ1Q2 step s-0141187A8Y4RKT385HT is PENDING
+j-38ZE72DPPZ1Q2 step s-0141187A8Y4RKT385HT is PENDING
+j-38ZE72DPPZ1Q2 step s-0141187A8Y4RKT385HT is PENDING
+j-38ZE72DPPZ1Q2 step s-0141187A8Y4RKT385HT is PENDING
+j-38ZE72DPPZ1Q2 step s-0141187A8Y4RKT385HT is PENDING
+j-38ZE72DPPZ1Q2 step s-0141187A8Y4RKT385HT is PENDING
+j-38ZE72DPPZ1Q2 step s-0141187A8Y4RKT385HT is PENDING
+j-38ZE72DPPZ1Q2 step s-0141187A8Y4RKT385HT is RUNNING
+j-38ZE72DPPZ1Q2 step s-0141187A8Y4RKT385HT is RUNNING
+j-38ZE72DPPZ1Q2 step s-0141187A8Y4RKT385HT is RUNNING
+j-38ZE72DPPZ1Q2 step s-0141187A8Y4RKT385HT is RUNNING
+j-38ZE72DPPZ1Q2 step s-0141187A8Y4RKT385HT is COMPLETED
+j-38ZE72DPPZ1Q2 cluster is TERMINATING
+j-38ZE72DPPZ1Q2 cluster is TERMINATING
+j-38ZE72DPPZ1Q2 cluster is TERMINATING
+j-38ZE72DPPZ1Q2 cluster is TERMINATED
+Saved io-heavy 500MB m5a.xlarge x 4 runtime=1.9085 min cost=$0.0275; cluster=TERMINATED
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Starting 10MB memory-heavy on m5.xlarge x 2 in ap-southeast-1
+{
+  "JobFlowId": "j-2YX3BVLWNPZN5",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-2YX3BVLWNPZN5",
+  "ResponseMetadata": {
+    "RequestId": "86648a03-2dde-4a53-9b37-6f84a63f3061",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "86648a03-2dde-4a53-9b37-6f84a63f3061",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Fri, 24 Jul 2026 19:42:32 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-2YX3BVLWNPZN5 step s-05217804OQYX7RKIQDH is PENDING
+j-2YX3BVLWNPZN5 step s-05217804OQYX7RKIQDH is PENDING
+j-2YX3BVLWNPZN5 step s-05217804OQYX7RKIQDH is PENDING
+j-2YX3BVLWNPZN5 step s-05217804OQYX7RKIQDH is PENDING
+j-2YX3BVLWNPZN5 step s-05217804OQYX7RKIQDH is PENDING
+j-2YX3BVLWNPZN5 step s-05217804OQYX7RKIQDH is PENDING
+j-2YX3BVLWNPZN5 step s-05217804OQYX7RKIQDH is PENDING
+j-2YX3BVLWNPZN5 step s-05217804OQYX7RKIQDH is RUNNING
+j-2YX3BVLWNPZN5 step s-05217804OQYX7RKIQDH is COMPLETED
+j-2YX3BVLWNPZN5 cluster is TERMINATED
+Saved memory-heavy 10MB m5.xlarge x 2 runtime=0.9395 min cost=$0.0075; cluster=TERMINATED
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Starting 3072MB memory-heavy on m6i.xlarge x 4 in ap-southeast-1
+{
+  "JobFlowId": "j-2V7IK2ZZWQXPF",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-2V7IK2ZZWQXPF",
+  "ResponseMetadata": {
+    "RequestId": "e25c146f-6ce4-4049-af74-2cf219238a47",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "e25c146f-6ce4-4049-af74-2cf219238a47",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Fri, 24 Jul 2026 19:57:05 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-2V7IK2ZZWQXPF step s-06833841S9NFISN11BD9 is PENDING
+j-2V7IK2ZZWQXPF step s-06833841S9NFISN11BD9 is PENDING
+j-2V7IK2ZZWQXPF step s-06833841S9NFISN11BD9 is PENDING
+j-2V7IK2ZZWQXPF step s-06833841S9NFISN11BD9 is PENDING
+j-2V7IK2ZZWQXPF step s-06833841S9NFISN11BD9 is PENDING
+j-2V7IK2ZZWQXPF step s-06833841S9NFISN11BD9 is PENDING
+j-2V7IK2ZZWQXPF step s-06833841S9NFISN11BD9 is PENDING
+j-2V7IK2ZZWQXPF step s-06833841S9NFISN11BD9 is RUNNING
+j-2V7IK2ZZWQXPF step s-06833841S9NFISN11BD9 is RUNNING
+j-2V7IK2ZZWQXPF step s-06833841S9NFISN11BD9 is RUNNING
+j-2V7IK2ZZWQXPF step s-06833841S9NFISN11BD9 is RUNNING
+j-2V7IK2ZZWQXPF step s-06833841S9NFISN11BD9 is COMPLETED
+j-2V7IK2ZZWQXPF cluster is TERMINATING
+j-2V7IK2ZZWQXPF cluster is TERMINATING
+j-2V7IK2ZZWQXPF cluster is TERMINATING
+j-2V7IK2ZZWQXPF cluster is TERMINATED
+Saved memory-heavy 3072MB m6i.xlarge x 4 runtime=1.9380 min cost=$0.0310; cluster=TERMINATED
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Starting 500MB memory-heavy on m5.xlarge x 4 in ap-southeast-1
+{
+  "JobFlowId": "j-13D4D44PO2WCO",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-13D4D44PO2WCO",
+  "ResponseMetadata": {
+    "RequestId": "5f2333ad-ea34-46a0-97d6-40e6a700c529",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "5f2333ad-ea34-46a0-97d6-40e6a700c529",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Fri, 24 Jul 2026 20:04:12 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-13D4D44PO2WCO step s-06769861PA223HX4M2YI is PENDING
+j-13D4D44PO2WCO step s-06769861PA223HX4M2YI is PENDING
+j-13D4D44PO2WCO step s-06769861PA223HX4M2YI is PENDING
+j-13D4D44PO2WCO step s-06769861PA223HX4M2YI is PENDING
+j-13D4D44PO2WCO step s-06769861PA223HX4M2YI is PENDING
+j-13D4D44PO2WCO step s-06769861PA223HX4M2YI is PENDING
+j-13D4D44PO2WCO step s-06769861PA223HX4M2YI is PENDING
+j-13D4D44PO2WCO step s-06769861PA223HX4M2YI is RUNNING
+j-13D4D44PO2WCO step s-06769861PA223HX4M2YI is RUNNING
+j-13D4D44PO2WCO step s-06769861PA223HX4M2YI is RUNNING
+j-13D4D44PO2WCO step s-06769861PA223HX4M2YI is COMPLETED
+j-13D4D44PO2WCO cluster is TERMINATING
+j-13D4D44PO2WCO cluster is TERMINATED
+Saved memory-heavy 500MB m5.xlarge x 4 runtime=1.3738 min cost=$0.0220; cluster=TERMINATED
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Starting 1024MB io-heavy on c5a.xlarge x 4 in ap-southeast-1
+{
+  "JobFlowId": "j-3N6YIX3C0X7A0",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-3N6YIX3C0X7A0",
+  "ResponseMetadata": {
+    "RequestId": "2434ada7-2fcd-47f2-85fb-99ac82df218c",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "2434ada7-2fcd-47f2-85fb-99ac82df218c",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Fri, 24 Jul 2026 20:18:52 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-3N6YIX3C0X7A0 step s-06975843GKF8N0U4Z81B is PENDING
+j-3N6YIX3C0X7A0 step s-06975843GKF8N0U4Z81B is PENDING
+j-3N6YIX3C0X7A0 step s-06975843GKF8N0U4Z81B is PENDING
+j-3N6YIX3C0X7A0 step s-06975843GKF8N0U4Z81B is PENDING
+j-3N6YIX3C0X7A0 step s-06975843GKF8N0U4Z81B is PENDING
+j-3N6YIX3C0X7A0 step s-06975843GKF8N0U4Z81B is PENDING
+j-3N6YIX3C0X7A0 step s-06975843GKF8N0U4Z81B is PENDING
+j-3N6YIX3C0X7A0 step s-06975843GKF8N0U4Z81B is RUNNING
+j-3N6YIX3C0X7A0 step s-06975843GKF8N0U4Z81B is RUNNING
+j-3N6YIX3C0X7A0 step s-06975843GKF8N0U4Z81B is RUNNING
+j-3N6YIX3C0X7A0 step s-06975843GKF8N0U4Z81B is COMPLETED
+j-3N6YIX3C0X7A0 cluster is TERMINATING
+j-3N6YIX3C0X7A0 cluster is TERMINATING
+j-3N6YIX3C0X7A0 cluster is TERMINATED
+Saved io-heavy 1024MB c5a.xlarge x 4 runtime=1.3718 min cost=$0.0161; cluster=TERMINATED
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Starting 10MB memory-heavy on c6i.xlarge x 4 in ap-southeast-1
+{
+  "JobFlowId": "j-A8TW8U5JK84Z",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-A8TW8U5JK84Z",
+  "ResponseMetadata": {
+    "RequestId": "17d0d1db-979d-4800-8f52-35a2c4242bae",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "17d0d1db-979d-4800-8f52-35a2c4242bae",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "121",
+      "date": "Fri, 24 Jul 2026 20:24:59 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-A8TW8U5JK84Z step s-0537437R0SAJZNI9X0H is PENDING
+j-A8TW8U5JK84Z step s-0537437R0SAJZNI9X0H is PENDING
+j-A8TW8U5JK84Z step s-0537437R0SAJZNI9X0H is PENDING
+j-A8TW8U5JK84Z step s-0537437R0SAJZNI9X0H is PENDING
+j-A8TW8U5JK84Z step s-0537437R0SAJZNI9X0H is PENDING
+j-A8TW8U5JK84Z step s-0537437R0SAJZNI9X0H is PENDING
+j-A8TW8U5JK84Z step s-0537437R0SAJZNI9X0H is PENDING
+j-A8TW8U5JK84Z step s-0537437R0SAJZNI9X0H is RUNNING
+j-A8TW8U5JK84Z step s-0537437R0SAJZNI9X0H is COMPLETED
+j-A8TW8U5JK84Z cluster is TERMINATING
+j-A8TW8U5JK84Z cluster is TERMINATING
+j-A8TW8U5JK84Z cluster is TERMINATED
+Saved memory-heavy 10MB c6i.xlarge x 4 runtime=0.8049 min cost=$0.0105; cluster=TERMINATED
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Starting 10MB cpu-heavy on m5.xlarge x 2 in ap-southeast-1
+{
+  "JobFlowId": "j-XJDDFPAILLTZ",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-XJDDFPAILLTZ",
+  "ResponseMetadata": {
+    "RequestId": "325ae979-4acd-4733-9c74-645863710a61",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "325ae979-4acd-4733-9c74-645863710a61",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "121",
+      "date": "Fri, 24 Jul 2026 20:30:05 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-XJDDFPAILLTZ step s-067885923YZYZ9TQI0F1 is PENDING
+j-XJDDFPAILLTZ step s-067885923YZYZ9TQI0F1 is PENDING
+j-XJDDFPAILLTZ step s-067885923YZYZ9TQI0F1 is PENDING
+j-XJDDFPAILLTZ step s-067885923YZYZ9TQI0F1 is PENDING
+j-XJDDFPAILLTZ step s-067885923YZYZ9TQI0F1 is PENDING
+j-XJDDFPAILLTZ step s-067885923YZYZ9TQI0F1 is PENDING
+j-XJDDFPAILLTZ step s-067885923YZYZ9TQI0F1 is PENDING
+j-XJDDFPAILLTZ step s-067885923YZYZ9TQI0F1 is RUNNING
+j-XJDDFPAILLTZ step s-067885923YZYZ9TQI0F1 is RUNNING
+j-XJDDFPAILLTZ step s-067885923YZYZ9TQI0F1 is COMPLETED
+j-XJDDFPAILLTZ cluster is TERMINATING
+j-XJDDFPAILLTZ cluster is TERMINATED
+Saved cpu-heavy 10MB m5.xlarge x 2 runtime=0.8721 min cost=$0.0070; cluster=TERMINATED
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Starting 10MB memory-heavy on m6i.xlarge x 2 in ap-southeast-1
+{
+  "JobFlowId": "j-1GP8ZYCLPWESL",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-1GP8ZYCLPWESL",
+  "ResponseMetadata": {
+    "RequestId": "aa2e385e-de54-4ec6-abd9-4ec8c6e9ba3d",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "aa2e385e-de54-4ec6-abd9-4ec8c6e9ba3d",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Fri, 24 Jul 2026 20:35:10 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-1GP8ZYCLPWESL step s-09327292VWLCF8ZU69BD is PENDING
+j-1GP8ZYCLPWESL step s-09327292VWLCF8ZU69BD is PENDING
+j-1GP8ZYCLPWESL step s-09327292VWLCF8ZU69BD is PENDING
+j-1GP8ZYCLPWESL step s-09327292VWLCF8ZU69BD is PENDING
+j-1GP8ZYCLPWESL step s-09327292VWLCF8ZU69BD is PENDING
+j-1GP8ZYCLPWESL step s-09327292VWLCF8ZU69BD is PENDING
+j-1GP8ZYCLPWESL step s-09327292VWLCF8ZU69BD is RUNNING
+j-1GP8ZYCLPWESL step s-09327292VWLCF8ZU69BD is RUNNING
+j-1GP8ZYCLPWESL step s-09327292VWLCF8ZU69BD is COMPLETED
+j-1GP8ZYCLPWESL cluster is TERMINATING
+j-1GP8ZYCLPWESL cluster is TERMINATING
+j-1GP8ZYCLPWESL cluster is TERMINATED
+Saved memory-heavy 10MB m6i.xlarge x 2 runtime=0.7387 min cost=$0.0059; cluster=TERMINATED
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Starting 10MB memory-heavy on m6i.xlarge x 4 in ap-southeast-1
+{
+  "JobFlowId": "j-SK4D6H274D8W",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-SK4D6H274D8W",
+  "ResponseMetadata": {
+    "RequestId": "6d3069ba-3777-4513-bb36-131e541b20b0",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "6d3069ba-3777-4513-bb36-131e541b20b0",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "121",
+      "date": "Fri, 24 Jul 2026 20:40:16 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-SK4D6H274D8W step s-01323081EAVPWCJV3C7N is PENDING
+j-SK4D6H274D8W step s-01323081EAVPWCJV3C7N is PENDING
+j-SK4D6H274D8W step s-01323081EAVPWCJV3C7N is PENDING
+j-SK4D6H274D8W step s-01323081EAVPWCJV3C7N is PENDING
+j-SK4D6H274D8W step s-01323081EAVPWCJV3C7N is PENDING
+j-SK4D6H274D8W step s-01323081EAVPWCJV3C7N is PENDING
+j-SK4D6H274D8W step s-01323081EAVPWCJV3C7N is PENDING
+j-SK4D6H274D8W step s-01323081EAVPWCJV3C7N is RUNNING
+j-SK4D6H274D8W step s-01323081EAVPWCJV3C7N is COMPLETED
+j-SK4D6H274D8W cluster is TERMINATED
+Saved memory-heavy 10MB m6i.xlarge x 4 runtime=0.9052 min cost=$0.0145; cluster=TERMINATED
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Starting 3072MB memory-heavy on m5.xlarge x 2 in ap-southeast-1
+{
+  "JobFlowId": "j-37VEZW6K4IFQ0",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-37VEZW6K4IFQ0",
+  "ResponseMetadata": {
+    "RequestId": "7fa37bb8-5cee-4093-b924-fd708c4ad219",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "7fa37bb8-5cee-4093-b924-fd708c4ad219",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Fri, 24 Jul 2026 20:59:28 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-37VEZW6K4IFQ0 step s-04226511U4XJIVLB5EHF is PENDING
+j-37VEZW6K4IFQ0 step s-04226511U4XJIVLB5EHF is PENDING
+j-37VEZW6K4IFQ0 step s-04226511U4XJIVLB5EHF is COMPLETED
+j-37VEZW6K4IFQ0 cluster is TERMINATED
+Saved memory-heavy 3072MB m5.xlarge x 2 runtime=3.7727 min cost=$0.0302; cluster=TERMINATED
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Starting 10MB memory-heavy on c5.xlarge x 4 in ap-southeast-1
+{
+  "JobFlowId": "j-28PDKY53Z5ADH",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-28PDKY53Z5ADH",
+  "ResponseMetadata": {
+    "RequestId": "7c0c94c9-09a2-470e-9dc1-ea0783e83912",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "7c0c94c9-09a2-470e-9dc1-ea0783e83912",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Fri, 24 Jul 2026 21:15:32 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-28PDKY53Z5ADH step s-0933861HQE7VO2EYN8V is PENDING
+j-28PDKY53Z5ADH step s-0933861HQE7VO2EYN8V is COMPLETED
+j-28PDKY53Z5ADH cluster is TERMINATED
+Saved memory-heavy 10MB c5.xlarge x 4 runtime=0.9402 min cost=$0.0123; cluster=TERMINATED
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Starting 100MB io-heavy on m5.xlarge x 2 in ap-southeast-1
+{
+  "JobFlowId": "j-221XER0GFNPVQ",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-221XER0GFNPVQ",
+  "ResponseMetadata": {
+    "RequestId": "1c3c60ab-5af6-4291-8470-b37df33ee022",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "1c3c60ab-5af6-4291-8470-b37df33ee022",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Fri, 24 Jul 2026 21:31:05 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-221XER0GFNPVQ step s-04217772ECMQ516J1IW9 is PENDING
+MONITOR FAILED: ClientError: An error occurred (InvalidSignatureException) when calling the ListSteps operation: Signature expired: 20260724T213135Z is now earlier than 20260724T214136Z (20260724T214636Z - 5 min.)
+Traceback (most recent call last):
+  File "/Users/manojanbalagan/Documents/research/research/cost-aware-infrastructure-optimization/scripts/run_emr_regional_resumable_batch.py", line 352, in run_one
+    step = wait_for_step(emr, cluster_id, args.poll_seconds, args.step_timeout_minutes)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/manojanbalagan/Documents/research/research/cost-aware-infrastructure-optimization/scripts/run_emr_regional_resumable_batch.py", line 229, in wait_for_step
+    response = emr.list_steps(ClusterId=cluster_id)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/manojanbalagan/Documents/research/research/cost-aware-infrastructure-optimization/.venv/lib/python3.11/site-packages/botocore/client.py", line 606, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/manojanbalagan/Documents/research/research/cost-aware-infrastructure-optimization/.venv/lib/python3.11/site-packages/botocore/context.py", line 123, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+botocore.exceptions.ClientError: An error occurred (InvalidSignatureException) when calling the ListSteps operation: Signature expired: 20260724T213135Z is now earlier than 20260724T214136Z (20260724T214636Z - 5 min.)
+
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Starting 10MB cpu-heavy on c5a.xlarge x 2 in ap-southeast-1
+{
+  "JobFlowId": "j-N1YHDDGJPFHE",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-N1YHDDGJPFHE",
+  "ResponseMetadata": {
+    "RequestId": "ccfb56c4-bff0-4ea2-8a4a-eba891b551a8",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "ccfb56c4-bff0-4ea2-8a4a-eba891b551a8",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "121",
+      "date": "Fri, 24 Jul 2026 21:46:38 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-N1YHDDGJPFHE step s-00258641K35R963FIFY2 is PENDING
+j-N1YHDDGJPFHE step s-00258641K35R963FIFY2 is PENDING
+j-N1YHDDGJPFHE step s-00258641K35R963FIFY2 is COMPLETED
+j-N1YHDDGJPFHE cluster is TERMINATED
+Saved cpu-heavy 10MB c5a.xlarge x 2 runtime=0.7719 min cost=$0.0045; cluster=TERMINATED
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Starting 2048MB memory-heavy on m5a.xlarge x 4 in ap-southeast-1
+{
+  "JobFlowId": "j-2VPHSOO5UFCCW",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-2VPHSOO5UFCCW",
+  "ResponseMetadata": {
+    "RequestId": "2ba445e0-d028-4b8d-9134-1d48e483da69",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "2ba445e0-d028-4b8d-9134-1d48e483da69",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Fri, 24 Jul 2026 22:02:41 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-2VPHSOO5UFCCW step s-0694989RZXJUERMONKH is PENDING
+j-2VPHSOO5UFCCW step s-0694989RZXJUERMONKH is COMPLETED
+j-2VPHSOO5UFCCW cluster is TERMINATED
+Saved memory-heavy 2048MB m5a.xlarge x 4 runtime=2.5758 min cost=$0.0371; cluster=TERMINATED
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Starting 500MB memory-heavy on c5.xlarge x 4 in ap-southeast-1
+{
+  "JobFlowId": "j-1K80I3Q1H6WZ9",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-1K80I3Q1H6WZ9",
+  "ResponseMetadata": {
+    "RequestId": "53fbe486-78aa-45bb-b184-aceb8c59e93f",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "53fbe486-78aa-45bb-b184-aceb8c59e93f",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Fri, 24 Jul 2026 22:18:14 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-1K80I3Q1H6WZ9 step s-05579202F7RRO64QETOE is PENDING
+j-1K80I3Q1H6WZ9 step s-05579202F7RRO64QETOE is PENDING
+j-1K80I3Q1H6WZ9 step s-05579202F7RRO64QETOE is COMPLETED
+j-1K80I3Q1H6WZ9 cluster is TERMINATED
+Saved memory-heavy 500MB c5.xlarge x 4 runtime=1.1066 min cost=$0.0145; cluster=TERMINATED
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Starting 2048MB io-heavy on m6i.xlarge x 2 in ap-southeast-1
+{
+  "JobFlowId": "j-2KLED6Z4C1D0P",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-2KLED6Z4C1D0P",
+  "ResponseMetadata": {
+    "RequestId": "c9e5c0c2-deea-44bf-8e5f-21f80397b37a",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "c9e5c0c2-deea-44bf-8e5f-21f80397b37a",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Fri, 24 Jul 2026 22:34:17 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-2KLED6Z4C1D0P step s-04054252T42LNC0WIH2D is PENDING
+j-2KLED6Z4C1D0P step s-04054252T42LNC0WIH2D is COMPLETED
+j-2KLED6Z4C1D0P cluster is TERMINATED
+Saved io-heavy 2048MB m6i.xlarge x 2 runtime=2.9051 min cost=$0.0232; cluster=TERMINATED
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Starting 500MB io-heavy on m6i.xlarge x 2 in ap-southeast-1
+{
+  "JobFlowId": "j-1RYEQMG9KYLZW",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-1RYEQMG9KYLZW",
+  "ResponseMetadata": {
+    "RequestId": "1866e918-6f26-4821-9217-58299dd826a5",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "1866e918-6f26-4821-9217-58299dd826a5",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Fri, 24 Jul 2026 22:44:28 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-1RYEQMG9KYLZW step s-0404433CCX6YWERC174 is PENDING
+j-1RYEQMG9KYLZW step s-0404433CCX6YWERC174 is PENDING
+j-1RYEQMG9KYLZW step s-0404433CCX6YWERC174 is COMPLETED
+j-1RYEQMG9KYLZW cluster is TERMINATED
+Saved io-heavy 500MB m6i.xlarge x 2 runtime=1.3051 min cost=$0.0104; cluster=TERMINATED
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Starting 3072MB io-heavy on m5a.xlarge x 4 in ap-southeast-1
+{
+  "JobFlowId": "j-AT6YKFFOFNBM",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-AT6YKFFOFNBM",
+  "ResponseMetadata": {
+    "RequestId": "723e5f10-bf1d-4c34-991c-a810e1ad00b1",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "723e5f10-bf1d-4c34-991c-a810e1ad00b1",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "121",
+      "date": "Fri, 24 Jul 2026 23:00:32 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-AT6YKFFOFNBM step s-05577141NUQWR4R48PBE is PENDING
+j-AT6YKFFOFNBM step s-05577141NUQWR4R48PBE is COMPLETED
+j-AT6YKFFOFNBM cluster is TERMINATED
+Saved io-heavy 3072MB m5a.xlarge x 4 runtime=3.7421 min cost=$0.0539; cluster=TERMINATED
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Starting 500MB io-heavy on m6i.xlarge x 4 in ap-southeast-1
+{
+  "JobFlowId": "j-3HWBTTWHYA91B",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-3HWBTTWHYA91B",
+  "ResponseMetadata": {
+    "RequestId": "bef68a78-0652-461d-a328-e355172dd4c2",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "bef68a78-0652-461d-a328-e355172dd4c2",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Fri, 24 Jul 2026 23:16:04 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-3HWBTTWHYA91B step s-07021007M2OPX2WTKZD is PENDING
+j-3HWBTTWHYA91B step s-07021007M2OPX2WTKZD is PENDING
+j-3HWBTTWHYA91B step s-07021007M2OPX2WTKZD is COMPLETED
+j-3HWBTTWHYA91B cluster is TERMINATED
+Saved io-heavy 500MB m6i.xlarge x 4 runtime=1.2386 min cost=$0.0198; cluster=TERMINATED
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Starting 500MB memory-heavy on c5.xlarge x 4 in ap-southeast-1
+{
+  "JobFlowId": "j-2WUUZ7KK2O4EK",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-2WUUZ7KK2O4EK",
+  "ResponseMetadata": {
+    "RequestId": "76ea2a92-c279-42da-bfca-c39e21daf1ed",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "76ea2a92-c279-42da-bfca-c39e21daf1ed",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Fri, 24 Jul 2026 23:32:07 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-2WUUZ7KK2O4EK step s-03183282C3GTHEKMGLGR is PENDING
+j-2WUUZ7KK2O4EK step s-03183282C3GTHEKMGLGR is COMPLETED
+j-2WUUZ7KK2O4EK cluster is TERMINATED
+Saved memory-heavy 500MB c5.xlarge x 4 runtime=1.1738 min cost=$0.0153; cluster=TERMINATED
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Starting 3072MB cpu-heavy on c5.xlarge x 2 in ap-southeast-1
+{
+  "JobFlowId": "j-2T0F4969DT4JY",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-2T0F4969DT4JY",
+  "ResponseMetadata": {
+    "RequestId": "c3b73c30-c945-4d67-b90e-b9ba0c9a93df",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "c3b73c30-c945-4d67-b90e-b9ba0c9a93df",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Fri, 24 Jul 2026 23:45:33 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-2T0F4969DT4JY step s-01665002EH7D4LMT36Q0 is PENDING
+j-2T0F4969DT4JY step s-01665002EH7D4LMT36Q0 is PENDING
+j-2T0F4969DT4JY step s-01665002EH7D4LMT36Q0 is COMPLETED
+j-2T0F4969DT4JY cluster is TERMINATED
+Saved cpu-heavy 3072MB c5.xlarge x 2 runtime=3.8743 min cost=$0.0253; cluster=TERMINATED
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Starting 500MB io-heavy on m6i.xlarge x 4 in ap-southeast-1
+{
+  "JobFlowId": "j-22HENHXILFJDY",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-22HENHXILFJDY",
+  "ResponseMetadata": {
+    "RequestId": "a4cc463f-d250-482d-a83f-417eb43b24a7",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "a4cc463f-d250-482d-a83f-417eb43b24a7",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Fri, 24 Jul 2026 23:54:28 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-22HENHXILFJDY step s-018004413PSYQXUI7UTU is PENDING
+j-22HENHXILFJDY step s-018004413PSYQXUI7UTU is COMPLETED
+j-22HENHXILFJDY cluster is TERMINATED
+Saved io-heavy 500MB m6i.xlarge x 4 runtime=1.2715 min cost=$0.0203; cluster=TERMINATED
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Starting 10MB cpu-heavy on c5a.xlarge x 4 in ap-southeast-1
+{
+  "JobFlowId": "j-MGTT99ELH032",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-MGTT99ELH032",
+  "ResponseMetadata": {
+    "RequestId": "3c32afe0-efc9-4762-9434-8cf7bc129b67",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "3c32afe0-efc9-4762-9434-8cf7bc129b67",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "121",
+      "date": "Sat, 25 Jul 2026 00:10:01 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-MGTT99ELH032 step s-037112533PUURZ8AOC8F is PENDING
+j-MGTT99ELH032 step s-037112533PUURZ8AOC8F is COMPLETED
+j-MGTT99ELH032 cluster is TERMINATED
+Saved cpu-heavy 10MB c5a.xlarge x 4 runtime=0.8726 min cost=$0.0102; cluster=TERMINATED
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Starting 10MB memory-heavy on c5a.xlarge x 4 in ap-southeast-1
+{
+  "JobFlowId": "j-26RQXARO5UP8R",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-26RQXARO5UP8R",
+  "ResponseMetadata": {
+    "RequestId": "8be45bb8-0f02-40bb-a501-1292b4b7606c",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "8be45bb8-0f02-40bb-a501-1292b4b7606c",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Sat, 25 Jul 2026 00:25:34 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-26RQXARO5UP8R step s-067618419HWNA8XSU5NI is PENDING
+j-26RQXARO5UP8R step s-067618419HWNA8XSU5NI is PENDING
+j-26RQXARO5UP8R step s-067618419HWNA8XSU5NI is COMPLETED
+j-26RQXARO5UP8R cluster is TERMINATED
+Saved memory-heavy 10MB c5a.xlarge x 4 runtime=0.8720 min cost=$0.0102; cluster=TERMINATED
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Starting 500MB io-heavy on m6i.xlarge x 2 in ap-southeast-1
+{
+  "JobFlowId": "j-3SLFJLQRBFB43",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-3SLFJLQRBFB43",
+  "ResponseMetadata": {
+    "RequestId": "d3db45ea-011d-4be5-bd59-011a9e7d7db5",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "d3db45ea-011d-4be5-bd59-011a9e7d7db5",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Sat, 25 Jul 2026 00:41:37 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-3SLFJLQRBFB43 step s-038215532VX3Q6FH81KV is PENDING
+j-3SLFJLQRBFB43 step s-038215532VX3Q6FH81KV is COMPLETED
+j-3SLFJLQRBFB43 cluster is TERMINATING
+j-3SLFJLQRBFB43 cluster is TERMINATED
+Saved io-heavy 500MB m6i.xlarge x 2 runtime=1.4722 min cost=$0.0118; cluster=TERMINATED
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Starting 100MB cpu-heavy on c5.xlarge x 2 in ap-southeast-1
+{
+  "JobFlowId": "j-2TFJAUABT4Y4R",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-2TFJAUABT4Y4R",
+  "ResponseMetadata": {
+    "RequestId": "ba71e624-255d-46ea-ac2e-06edeaf3fd6e",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "ba71e624-255d-46ea-ac2e-06edeaf3fd6e",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Sat, 25 Jul 2026 01:02:10 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-2TFJAUABT4Y4R step s-09275912O14TCKN0GYEI is PENDING
+j-2TFJAUABT4Y4R step s-09275912O14TCKN0GYEI is COMPLETED
+j-2TFJAUABT4Y4R cluster is TERMINATED
+Saved cpu-heavy 100MB c5.xlarge x 2 runtime=0.9051 min cost=$0.0059; cluster=TERMINATED
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Starting 100MB io-heavy on m6i.xlarge x 4 in ap-southeast-1
+{
+  "JobFlowId": "j-1V0KMTS6YVXIM",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-1V0KMTS6YVXIM",
+  "ResponseMetadata": {
+    "RequestId": "32622e41-e343-4ee4-b93c-c8c3417223ff",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "32622e41-e343-4ee4-b93c-c8c3417223ff",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Sat, 25 Jul 2026 01:17:44 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-1V0KMTS6YVXIM step s-0676899ASDSGI3X4882 is PENDING
+j-1V0KMTS6YVXIM step s-0676899ASDSGI3X4882 is COMPLETED
+j-1V0KMTS6YVXIM cluster is TERMINATED
+Saved io-heavy 100MB m6i.xlarge x 4 runtime=1.0390 min cost=$0.0166; cluster=TERMINATED
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Starting 10MB io-heavy on m6i.xlarge x 2 in ap-southeast-1
+{
+  "JobFlowId": "j-21XWBF3NISIX0",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-21XWBF3NISIX0",
+  "ResponseMetadata": {
+    "RequestId": "6801f750-fc31-4b91-a0d1-dabfa35d3957",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "6801f750-fc31-4b91-a0d1-dabfa35d3957",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Sat, 25 Jul 2026 01:33:16 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-21XWBF3NISIX0 step s-071527520E0OW41B648N is PENDING
+j-21XWBF3NISIX0 step s-071527520E0OW41B648N is COMPLETED
+j-21XWBF3NISIX0 cluster is TERMINATED
+Saved io-heavy 10MB m6i.xlarge x 2 runtime=0.8396 min cost=$0.0067; cluster=TERMINATED
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Skipping completed 2048MB memory-heavy m6i.xlarge x 4 in ap-southeast-1
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Starting 10MB cpu-heavy on c5a.xlarge x 2 in ap-southeast-1
+{
+  "JobFlowId": "j-2TJ7Q30XN5G93",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-2TJ7Q30XN5G93",
+  "ResponseMetadata": {
+    "RequestId": "53a8f52e-21e8-4bf0-9710-42b5e271bc92",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "53a8f52e-21e8-4bf0-9710-42b5e271bc92",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Sat, 25 Jul 2026 01:47:25 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-2TJ7Q30XN5G93 step s-07020124MSXGYC79L7F is PENDING
+j-2TJ7Q30XN5G93 step s-07020124MSXGYC79L7F is PENDING
+j-2TJ7Q30XN5G93 step s-07020124MSXGYC79L7F is COMPLETED
+j-2TJ7Q30XN5G93 cluster is TERMINATED
+Saved cpu-heavy 10MB c5a.xlarge x 2 runtime=0.7386 min cost=$0.0043; cluster=TERMINATED
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Starting 100MB io-heavy on c5.xlarge x 2 in ap-southeast-1
+{
+  "JobFlowId": "j-3MVJXMFZOT1SQ",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-3MVJXMFZOT1SQ",
+  "ResponseMetadata": {
+    "RequestId": "26fc547c-cc36-4e36-80a5-7708c444593e",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "26fc547c-cc36-4e36-80a5-7708c444593e",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Sat, 25 Jul 2026 02:03:29 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-3MVJXMFZOT1SQ step s-04378833MU5E8YLY621V is PENDING
+j-3MVJXMFZOT1SQ step s-04378833MU5E8YLY621V is COMPLETED
+j-3MVJXMFZOT1SQ cluster is TERMINATED
+Saved io-heavy 100MB c5.xlarge x 2 runtime=1.1068 min cost=$0.0072; cluster=TERMINATED
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Starting 1024MB memory-heavy on m5a.xlarge x 4 in ap-southeast-1
+{
+  "JobFlowId": "j-17RKKZGHPYZG4",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-17RKKZGHPYZG4",
+  "ResponseMetadata": {
+    "RequestId": "d7f7aef6-133e-437c-a837-ad523b0079fd",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "d7f7aef6-133e-437c-a837-ad523b0079fd",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Sat, 25 Jul 2026 02:19:01 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-17RKKZGHPYZG4 step s-06762311D1VM9POH67UR is PENDING
+j-17RKKZGHPYZG4 step s-06762311D1VM9POH67UR is PENDING
+j-17RKKZGHPYZG4 step s-06762311D1VM9POH67UR is COMPLETED
+j-17RKKZGHPYZG4 cluster is TERMINATED
+Saved memory-heavy 1024MB m5a.xlarge x 4 runtime=2.0423 min cost=$0.0294; cluster=TERMINATED
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Starting 10MB memory-heavy on c5.xlarge x 2 in ap-southeast-1
+{
+  "JobFlowId": "j-ZUQUMD43LA34",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-ZUQUMD43LA34",
+  "ResponseMetadata": {
+    "RequestId": "b04900da-3eae-4255-8c55-90db4dad088c",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "b04900da-3eae-4255-8c55-90db4dad088c",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "121",
+      "date": "Sat, 25 Jul 2026 02:35:04 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-ZUQUMD43LA34 step s-0025752YBAAYCIZD5GP is PENDING
+j-ZUQUMD43LA34 step s-0025752YBAAYCIZD5GP is COMPLETED
+j-ZUQUMD43LA34 cluster is TERMINATED
+Saved memory-heavy 10MB c5.xlarge x 2 runtime=0.9056 min cost=$0.0059; cluster=TERMINATED
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Starting 10MB io-heavy on c5.xlarge x 2 in ap-southeast-1
+{
+  "JobFlowId": "j-1HH0O4JWT0SCV",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-1HH0O4JWT0SCV",
+  "ResponseMetadata": {
+    "RequestId": "f4e58d9f-4a95-45db-b6c5-51242a1caeac",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "f4e58d9f-4a95-45db-b6c5-51242a1caeac",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Sat, 25 Jul 2026 02:48:37 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-1HH0O4JWT0SCV step s-04036411A95PP62KAUL0 is PENDING
+j-1HH0O4JWT0SCV step s-04036411A95PP62KAUL0 is COMPLETED
+j-1HH0O4JWT0SCV cluster is TERMINATED
+Saved io-heavy 10MB c5.xlarge x 2 runtime=0.9060 min cost=$0.0059; cluster=TERMINATED
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Starting 100MB cpu-heavy on c5a.xlarge x 2 in ap-southeast-1
+{
+  "JobFlowId": "j-2ZJFCX7AE0QSS",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-2ZJFCX7AE0QSS",
+  "ResponseMetadata": {
+    "RequestId": "3d0b2584-4e63-409f-ad15-28b5482d985d",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "3d0b2584-4e63-409f-ad15-28b5482d985d",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Sat, 25 Jul 2026 03:06:37 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-2ZJFCX7AE0QSS step s-0137873FVX0H4BJYU9Q is PENDING
+j-2ZJFCX7AE0QSS step s-0137873FVX0H4BJYU9Q is COMPLETED
+j-2ZJFCX7AE0QSS cluster is TERMINATED
+Saved cpu-heavy 100MB c5a.xlarge x 2 runtime=0.8719 min cost=$0.0051; cluster=TERMINATED
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Starting 10MB cpu-heavy on m6i.xlarge x 4 in ap-southeast-1
+{
+  "JobFlowId": "j-2SKSB9FH69GVT",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-2SKSB9FH69GVT",
+  "ResponseMetadata": {
+    "RequestId": "2f3f87b1-6027-4260-a947-8de124d1fd8e",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "2f3f87b1-6027-4260-a947-8de124d1fd8e",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Sat, 25 Jul 2026 03:49:22 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-2SKSB9FH69GVT step s-07022381WEAE4TL2ZIMV is PENDING
+j-2SKSB9FH69GVT step s-07022381WEAE4TL2ZIMV is PENDING
+j-2SKSB9FH69GVT step s-07022381WEAE4TL2ZIMV is COMPLETED
+j-2SKSB9FH69GVT cluster is TERMINATED
+Saved cpu-heavy 10MB m6i.xlarge x 4 runtime=0.8386 min cost=$0.0134; cluster=TERMINATED
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Starting 10MB io-heavy on c6i.xlarge x 2 in ap-southeast-1
+{
+  "JobFlowId": "j-3JJEBYNUX9A3",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-3JJEBYNUX9A3",
+  "ResponseMetadata": {
+    "RequestId": "b53b8186-caf9-407a-b6b5-18b402a0a2e6",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "b53b8186-caf9-407a-b6b5-18b402a0a2e6",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "121",
+      "date": "Sat, 25 Jul 2026 04:05:25 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-3JJEBYNUX9A3 step s-067840327L6T11M1FGBR is PENDING
+j-3JJEBYNUX9A3 step s-067840327L6T11M1FGBR is COMPLETED
+j-3JJEBYNUX9A3 cluster is TERMINATED
+Saved io-heavy 10MB c6i.xlarge x 2 runtime=0.8052 min cost=$0.0053; cluster=TERMINATED
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Starting 10MB memory-heavy on m6i.xlarge x 4 in ap-southeast-1
+{
+  "JobFlowId": "j-2V7B76D4P0T6Y",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-2V7B76D4P0T6Y",
+  "ResponseMetadata": {
+    "RequestId": "3feb0061-de84-4d08-a704-97d6ab2e4149",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "3feb0061-de84-4d08-a704-97d6ab2e4149",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Sat, 25 Jul 2026 04:20:58 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-2V7B76D4P0T6Y step s-07020782ZP9LXJBSUUVF is PENDING
+j-2V7B76D4P0T6Y step s-07020782ZP9LXJBSUUVF is PENDING
+j-2V7B76D4P0T6Y step s-07020782ZP9LXJBSUUVF is COMPLETED
+j-2V7B76D4P0T6Y cluster is TERMINATED
+Saved memory-heavy 10MB m6i.xlarge x 4 runtime=0.9050 min cost=$0.0145; cluster=TERMINATED
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv

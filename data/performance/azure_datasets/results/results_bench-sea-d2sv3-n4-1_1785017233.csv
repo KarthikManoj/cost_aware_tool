@@ -1,0 +1,16 @@
+Region,VM_Size,vCPU,RAM_GB,Nodes,Spark_Version,Java_Version,Dataset,Dataset_Size_MB,Workload,Run_Number,Timestamp,Runtime_Minutes,CPU_Avg_Pct,Cost_USD,Exit_Status
+southeastasia,Standard_D2s_v3,2,8,4,3.5.1,17.0.19,10MB.csv,10,cpu,1,2026-07-25T21:56:01.717854+00:00,0.5,66.71,0.0042,SUCCESS
+southeastasia,Standard_D2s_v3,2,8,4,3.5.1,17.0.19,10MB.csv,10,cpu,2,2026-07-25T21:56:38.011324+00:00,0.5208,57.8,0.0043,SUCCESS
+southeastasia,Standard_D2s_v3,2,8,4,3.5.1,17.0.19,10MB.csv,10,memory,1,2026-07-25T21:57:20.333711+00:00,0.6773,59.8,0.0056,SUCCESS
+southeastasia,Standard_D2s_v3,2,8,4,3.5.1,17.0.19,10MB.csv,10,memory,2,2026-07-25T21:58:02.661253+00:00,0.6751,64.11,0.0056,SUCCESS
+southeastasia,Standard_D2s_v3,2,8,4,3.5.1,17.0.19,10MB.csv,10,io,1,2026-07-25T21:58:44.982212+00:00,0.6097,86.81,0.0051,SUCCESS
+southeastasia,Standard_D2s_v3,2,8,4,3.5.1,17.0.19,10MB.csv,10,io,2,2026-07-25T21:59:21.309758+00:00,0.5788,95.42,0.0048,SUCCESS
+southeastasia,Standard_D2s_v3,2,8,4,3.5.1,17.0.19,100MB.csv,100,cpu,1,2026-07-25T22:00:08.072568+00:00,0.5564,47.48,0.0046,SUCCESS
+southeastasia,Standard_D2s_v3,2,8,4,3.5.1,17.0.19,100MB.csv,100,cpu,2,2026-07-25T22:00:44.345816+00:00,0.5479,46.57,0.0046,SUCCESS
+southeastasia,Standard_D2s_v3,2,8,4,3.5.1,17.0.19,100MB.csv,100,memory,1,2026-07-25T22:01:32.650336+00:00,0.7522,41.08,0.0063,SUCCESS
+southeastasia,Standard_D2s_v3,2,8,4,3.5.1,17.0.19,100MB.csv,100,memory,2,2026-07-25T22:02:20.947615+00:00,0.7419,43.98,0.0062,SUCCESS
+southeastasia,Standard_D2s_v3,2,8,4,3.5.1,17.0.19,100MB.csv,100,io,1,2026-07-25T22:03:15.313206+00:00,0.8282,97.43,0.0069,SUCCESS
+southeastasia,Standard_D2s_v3,2,8,4,3.5.1,17.0.19,100MB.csv,100,io,2,2026-07-25T22:04:09.646404+00:00,0.8056,86.56,0.0067,SUCCESS
+southeastasia,Standard_D2s_v3,2,8,4,3.5.1,17.0.19,500MB.csv,500,cpu,1,2026-07-25T22:05:30.529448+00:00,0.6942,45.33,0.0058,SUCCESS
+southeastasia,Standard_D2s_v3,2,8,4,3.5.1,17.0.19,500MB.csv,500,cpu,2,2026-07-25T22:06:12.800206+00:00,0.6962,41.69,0.0058,SUCCESS
+southeastasia,Standard_D2s_v3,2,8,4,3.5.1,17.0.19,500MB.csv,500,memory,1,2026-07-25T22:07:13.108405+00:00,0.9596,32.84,0.008,SUCCESS

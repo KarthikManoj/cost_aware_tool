@@ -1,0 +1,14 @@
+instance_type,hourly_price_usd,category,vcpus,memory_gb
+t3.medium,0.0416,general,2,4
+m5.large,0.096,general,2,8
+m5.xlarge,0.192,general,4,16
+m5a.xlarge,0.172,general,4,16
+m6i.xlarge,0.202,general,4,16
+c5.xlarge,0.17,compute,4,8
+c5a.xlarge,0.154,compute,4,8
+c5.2xlarge,0.34,compute,8,16
+c6i.xlarge,0.192,compute,4,8
+r5.large,0.126,memory,2,16
+r5.xlarge,0.252,memory,4,32
+i3.large,0.156,storage,2,15.25
+i3.xlarge,0.312,storage,4,30.5

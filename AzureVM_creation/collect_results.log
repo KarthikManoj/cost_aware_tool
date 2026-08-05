@@ -1,0 +1,8 @@
+Pulled 598 individual run rows from Blob into combined_results.csv
+
+Passed:          500
+Failed/missing:  508
+Combos to retry: 20  -> see combos_to_retry.csv
+Per-combo retry lists written to retry_lists/
+
+Next: ./retry_failed.sh

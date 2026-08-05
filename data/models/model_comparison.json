@@ -1,0 +1,58 @@
+{
+  "linear_regression": {
+    "runtime_minutes": {
+      "mae": 0.5562,
+      "rmse": 0.8366,
+      "r2": 0.6882
+    },
+    "cost_usd": {
+      "mae": 0.0043,
+      "rmse": 0.0063,
+      "r2": 0.7326
+    },
+    "average_r2": 0.7104,
+    "average_rmse": 0.4214
+  },
+  "decision_tree": {
+    "runtime_minutes": {
+      "mae": 0.356,
+      "rmse": 0.643,
+      "r2": 0.8158
+    },
+    "cost_usd": {
+      "mae": 0.0028,
+      "rmse": 0.0052,
+      "r2": 0.8185
+    },
+    "average_r2": 0.8172,
+    "average_rmse": 0.3241
+  },
+  "random_forest": {
+    "runtime_minutes": {
+      "mae": 0.2681,
+      "rmse": 0.4774,
+      "r2": 0.8985
+    },
+    "cost_usd": {
+      "mae": 0.0024,
+      "rmse": 0.004,
+      "r2": 0.8938
+    },
+    "average_r2": 0.8962,
+    "average_rmse": 0.2407
+  },
+  "gradient_boosting": {
+    "runtime_minutes": {
+      "mae": 0.2603,
+      "rmse": 0.4736,
+      "r2": 0.9001
+    },
+    "cost_usd": {
+      "mae": 0.0023,
+      "rmse": 0.0036,
+      "r2": 0.915
+    },
+    "average_r2": 0.9076,
+    "average_rmse": 0.2386
+  }
+}

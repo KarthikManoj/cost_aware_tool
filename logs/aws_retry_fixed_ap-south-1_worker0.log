@@ -1,0 +1,85 @@
+Skipping completed 2048MB cpu-heavy m5.xlarge x 2 in ap-south-1
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Skipping completed 2048MB cpu-heavy m5a.xlarge x 2 in ap-south-1
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Skipping completed 2048MB cpu-heavy m6i.xlarge x 2 in ap-south-1
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Skipping completed 2048MB cpu-heavy c5.xlarge x 2 in ap-south-1
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Skipping completed 2048MB cpu-heavy c5a.xlarge x 2 in ap-south-1
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Skipping completed 2048MB cpu-heavy c6i.xlarge x 2 in ap-south-1
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Skipping completed 2048MB memory-heavy m5.xlarge x 2 in ap-south-1
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Skipping completed 2048MB memory-heavy m5a.xlarge x 2 in ap-south-1
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Skipping completed 2048MB memory-heavy m6i.xlarge x 2 in ap-south-1
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Skipping completed 2048MB memory-heavy c5.xlarge x 2 in ap-south-1
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Skipping completed 2048MB memory-heavy c5a.xlarge x 2 in ap-south-1
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Skipping completed 2048MB memory-heavy c6i.xlarge x 2 in ap-south-1
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Skipping completed 2048MB io-heavy m5.xlarge x 2 in ap-south-1
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Skipping completed 2048MB io-heavy m5a.xlarge x 2 in ap-south-1
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Skipping completed 2048MB io-heavy m6i.xlarge x 2 in ap-south-1
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Skipping completed 2048MB io-heavy c5.xlarge x 2 in ap-south-1
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Starting 1024MB io-heavy on m6i.xlarge x 2 in ap-south-1
+{
+  "JobFlowId": "j-2IXMC8FMP2MAR",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-south-1:435097195936:cluster/j-2IXMC8FMP2MAR",
+  "ResponseMetadata": {
+    "RequestId": "d06fdd9e-4807-4ebc-990a-cbb8e93bd515",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "d06fdd9e-4807-4ebc-990a-cbb8e93bd515",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "119",
+      "date": "Fri, 24 Jul 2026 06:04:07 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-2IXMC8FMP2MAR step s-03716413OYPN3Y9OUAJ1 is PENDING
+j-2IXMC8FMP2MAR step s-03716413OYPN3Y9OUAJ1 is PENDING
+j-2IXMC8FMP2MAR step s-03716413OYPN3Y9OUAJ1 is PENDING
+j-2IXMC8FMP2MAR step s-03716413OYPN3Y9OUAJ1 is PENDING
+j-2IXMC8FMP2MAR step s-03716413OYPN3Y9OUAJ1 is PENDING
+j-2IXMC8FMP2MAR step s-03716413OYPN3Y9OUAJ1 is PENDING
+j-2IXMC8FMP2MAR step s-03716413OYPN3Y9OUAJ1 is PENDING
+j-2IXMC8FMP2MAR step s-03716413OYPN3Y9OUAJ1 is PENDING
+j-2IXMC8FMP2MAR step s-03716413OYPN3Y9OUAJ1 is PENDING
+j-2IXMC8FMP2MAR step s-03716413OYPN3Y9OUAJ1 is PENDING
+j-2IXMC8FMP2MAR step s-03716413OYPN3Y9OUAJ1 is PENDING
+j-2IXMC8FMP2MAR step s-03716413OYPN3Y9OUAJ1 is PENDING
+j-2IXMC8FMP2MAR step s-03716413OYPN3Y9OUAJ1 is RUNNING
+j-2IXMC8FMP2MAR step s-03716413OYPN3Y9OUAJ1 is RUNNING
+j-2IXMC8FMP2MAR step s-03716413OYPN3Y9OUAJ1 is RUNNING
+j-2IXMC8FMP2MAR step s-03716413OYPN3Y9OUAJ1 is COMPLETED
+j-2IXMC8FMP2MAR cluster is TERMINATING
+j-2IXMC8FMP2MAR cluster is TERMINATED
+Saved io-heavy 1024MB m6i.xlarge x 2 runtime=1.5725 min cost=$0.0106; cluster=TERMINATED
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv

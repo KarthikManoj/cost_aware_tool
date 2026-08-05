@@ -1,0 +1,39 @@
+{
+  "rows": 1011,
+  "dataset_sizes_mb": [
+    10,
+    100,
+    500,
+    1024,
+    2048,
+    3072,
+    5120
+  ],
+  "workloads": [
+    "cpu-heavy",
+    "io-heavy",
+    "memory-heavy"
+  ],
+  "machine_types": [
+    "c5.xlarge",
+    "c5a.xlarge",
+    "c6i.xlarge",
+    "m5.xlarge",
+    "m5a.xlarge",
+    "m6i.xlarge"
+  ],
+  "node_counts": [
+    2,
+    4
+  ],
+  "runtime_minutes": {
+    "min": 0.6385,
+    "mean": 1.8169,
+    "max": 9.8097
+  },
+  "cost_usd": {
+    "min": 0.002105,
+    "mean": 0.016631,
+    "max": 0.076028
+  }
+}

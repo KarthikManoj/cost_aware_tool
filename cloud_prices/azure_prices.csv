@@ -1,0 +1,185 @@
+region,vm_size,vcpus,tier,price_usd_hr
+centralindia,Standard_D2s_v3,2,D2s v3,0.105
+centralindia,Standard_D2s_v3,2,D2s v3 Spot,0.019404
+centralindia,Standard_D2s_v3,2,D2s v3 Low Priority,0.021
+southeastasia,Standard_D2s_v3,2,D2s v3 Spot,0.0231
+southeastasia,Standard_D2s_v3,2,D2s v3 Low Priority,0.025
+southeastasia,Standard_D2s_v3,2,D2s v3,0.125
+centralindia,Standard_D4s_v3,4,D4s v3 Spot,0.038808
+centralindia,Standard_D4s_v3,4,D4s v3 Low Priority,0.042
+centralindia,Standard_D4s_v3,4,D4s v3,0.21
+southeastasia,Standard_D4s_v3,4,D4s v3,0.25
+southeastasia,Standard_D4s_v3,4,D4s v3 Spot,0.0462
+southeastasia,Standard_D4s_v3,4,D4s v3 Low Priority,0.05
+centralindia,Standard_D8s_v3,8,D8s v3,0.42
+centralindia,Standard_D8s_v3,8,D8s v3 Spot,0.077616
+centralindia,Standard_D8s_v3,8,D8s v3 Low Priority,0.084
+southeastasia,Standard_D8s_v3,8,D8s v3 Low Priority,0.1
+southeastasia,Standard_D8s_v3,8,D8s v3,0.5
+southeastasia,Standard_D8s_v3,8,D8s v3 Spot,0.0924
+centralindia,Standard_D16s_v3,16,D16s v3,0.84
+centralindia,Standard_D16s_v3,16,D16s v3 Spot,0.155232
+centralindia,Standard_D16s_v3,16,D16s v3 Low Priority,0.168
+southeastasia,Standard_D16s_v3,16,D16s v3 Low Priority,0.2
+southeastasia,Standard_D16s_v3,16,D16s v3 Spot,0.1848
+southeastasia,Standard_D16s_v3,16,D16s v3,1.0
+centralindia,Standard_F2s_v2,2,F2s v2 Spot,0.015708
+centralindia,Standard_F2s_v2,2,F2s v2,0.085
+centralindia,Standard_F2s_v2,2,F2s v2 Low Priority,0.017
+southeastasia,Standard_F2s_v2,2,F2s v2 Low Priority,0.0196
+southeastasia,Standard_F2s_v2,2,F2s v2 Spot,0.01811
+southeastasia,Standard_F2s_v2,2,F2s v2,0.098
+centralindia,Standard_F4s_v2,4,F4s v2 Low Priority,0.034
+centralindia,Standard_F4s_v2,4,F4s v2 Spot,0.031416
+centralindia,Standard_F4s_v2,4,F4s v2,0.17
+southeastasia,Standard_F4s_v2,4,F4s v2,0.196
+southeastasia,Standard_F4s_v2,4,F4s v2 Spot,0.036221
+southeastasia,Standard_F4s_v2,4,F4s v2 Low Priority,0.039
+centralindia,Standard_F8s_v2,8,F8s v2 Low Priority,0.068
+centralindia,Standard_F8s_v2,8,F8s v2,0.34
+centralindia,Standard_F8s_v2,8,F8s v2 Spot,0.062832
+southeastasia,Standard_F8s_v2,8,F8s v2 Low Priority,0.0784
+southeastasia,Standard_F8s_v2,8,F8s v2 Spot,0.072442
+southeastasia,Standard_F8s_v2,8,F8s v2,0.392
+centralindia,Standard_F16s_v2,16,F16s v2 Low Priority,0.136
+centralindia,Standard_F16s_v2,16,F16s v2 Spot,0.125664
+centralindia,Standard_F16s_v2,16,F16s v2,0.68
+southeastasia,Standard_F16s_v2,16,F16s v2,0.784
+southeastasia,Standard_F16s_v2,16,F16s v2 Spot,0.144883
+southeastasia,Standard_F16s_v2,16,F16s v2 Low Priority,0.157
+centralindia,Standard_D2as_v4,2,D2as v4,0.0622
+centralindia,Standard_D2as_v4,2,D2as v4 Spot,0.011047
+centralindia,Standard_D2as_v4,2,D2as v4 Low Priority,0.0202
+southeastasia,Standard_D2as_v4,2,D2as v4 Spot,0.022176
+southeastasia,Standard_D2as_v4,2,D2as v4,0.12
+southeastasia,Standard_D2as_v4,2,D2as v4 Low Priority,0.024
+centralindia,Standard_D4as_v4,4,D4as v4 Spot,0.021845
+centralindia,Standard_D4as_v4,4,D4as v4 Low Priority,0.0404
+centralindia,Standard_D4as_v4,4,D4as v4,0.123
+southeastasia,Standard_D4as_v4,4,D4as v4 Low Priority,0.048
+southeastasia,Standard_D4as_v4,4,D4as v4,0.24
+southeastasia,Standard_D4as_v4,4,D4as v4 Spot,0.044352
+centralindia,Standard_D8as_v4,8,D8as v4 Low Priority,0.0808
+centralindia,Standard_D8as_v4,8,D8as v4,0.246
+centralindia,Standard_D8as_v4,8,D8as v4 Spot,0.04369
+southeastasia,Standard_D8as_v4,8,D8as v4 Low Priority,0.096
+southeastasia,Standard_D8as_v4,8,D8as v4,0.48
+southeastasia,Standard_D8as_v4,8,D8as v4 Spot,0.088704
+centralindia,Standard_D16as_v4,16,D16as v4,0.493
+centralindia,Standard_D16as_v4,16,D16as v4 Low Priority,0.162
+centralindia,Standard_D16as_v4,16,D16as v4 Spot,0.087557
+southeastasia,Standard_D16as_v4,16,D16as v4,0.96
+southeastasia,Standard_D16as_v4,16,D16as v4 Spot,0.177408
+southeastasia,Standard_D16as_v4,16,D16as v4 Low Priority,0.192
+centralindia,Standard_D2s_v5,2,D2s v5 Spot,0.018665
+centralindia,Standard_D2s_v5,2,D2s v5 Low Priority,0.0202
+centralindia,Standard_D2s_v5,2,D2s v5,0.101
+southeastasia,Standard_D2s_v5,2,D2s v5,0.12
+southeastasia,Standard_D2s_v5,2,D2s v5 Low Priority,0.024
+southeastasia,Standard_D2s_v5,2,D2s v5 Spot,0.022248
+centralindia,Standard_D4s_v5,4,D4s v5,0.202
+centralindia,Standard_D4s_v5,4,D4s v5 Low Priority,0.0404
+centralindia,Standard_D4s_v5,4,D4s v5 Spot,0.03733
+southeastasia,Standard_D4s_v5,4,D4s v5 Low Priority,0.048
+southeastasia,Standard_D4s_v5,4,D4s v5 Spot,0.044496
+southeastasia,Standard_D4s_v5,4,D4s v5,0.24
+centralindia,Standard_D8s_v5,8,D8s v5,0.404
+centralindia,Standard_D8s_v5,8,D8s v5 Spot,0.074659
+centralindia,Standard_D8s_v5,8,D8s v5 Low Priority,0.0808
+southeastasia,Standard_D8s_v5,8,D8s v5 Low Priority,0.096
+southeastasia,Standard_D8s_v5,8,D8s v5,0.48
+southeastasia,Standard_D8s_v5,8,D8s v5 Spot,0.088992
+centralindia,Standard_D16s_v5,16,D16s v5 Spot,0.149318
+centralindia,Standard_D16s_v5,16,D16s v5,0.808
+centralindia,Standard_D16s_v5,16,D16s v5 Low Priority,0.162
+southeastasia,Standard_D16s_v5,16,D16s v5 Spot,0.177984
+southeastasia,Standard_D16s_v5,16,D16s v5 Low Priority,0.192
+southeastasia,Standard_D16s_v5,16,D16s v5,0.96
+centralindia,Standard_D2ls_v5,2,D2ls v5 Spot,0.015708
+centralindia,Standard_D2ls_v5,2,D2ls v5,0.085
+centralindia,Standard_D2ls_v5,2,D2ls v5 Low Priority,0.017
+southeastasia,Standard_D2ls_v5,2,D2ls v5,0.098
+southeastasia,Standard_D2ls_v5,2,D2ls v5 Spot,0.018169
+southeastasia,Standard_D2ls_v5,2,D2ls v5 Low Priority,0.0196
+centralindia,Standard_D4ls_v5,4,D4ls v5 Low Priority,0.034
+centralindia,Standard_D4ls_v5,4,D4ls v5,0.17
+centralindia,Standard_D4ls_v5,4,D4ls v5 Spot,0.031416
+southeastasia,Standard_D4ls_v5,4,D4ls v5 Low Priority,0.0392
+southeastasia,Standard_D4ls_v5,4,D4ls v5,0.196
+southeastasia,Standard_D4ls_v5,4,D4ls v5 Spot,0.036338
+centralindia,Standard_D8ls_v5,8,D8ls v5 Spot,0.062832
+centralindia,Standard_D8ls_v5,8,D8ls v5 Low Priority,0.068
+centralindia,Standard_D8ls_v5,8,D8ls v5,0.34
+southeastasia,Standard_D8ls_v5,8,D8ls v5,0.392
+southeastasia,Standard_D8ls_v5,8,D8ls v5 Spot,0.072677
+southeastasia,Standard_D8ls_v5,8,D8ls v5 Low Priority,0.0784
+centralindia,Standard_D16ls_v5,16,D16ls v5 Spot,0.125664
+centralindia,Standard_D16ls_v5,16,D16ls v5 Low Priority,0.136
+centralindia,Standard_D16ls_v5,16,D16ls v5,0.68
+southeastasia,Standard_D16ls_v5,16,D16ls v5 Low Priority,0.157
+southeastasia,Standard_D16ls_v5,16,D16ls v5,0.784
+southeastasia,Standard_D16ls_v5,16,D16ls v5 Spot,0.145354
+centralindia,Standard_D2as_v5,2,D2as v5 Low Priority,0.059
+centralindia,Standard_D2as_v5,2,D2as v5 Low Priority,0.0111
+centralindia,Standard_D2as_v5,2,D2as v5,0.148
+centralindia,Standard_D2as_v5,2,D2as v5,0.0556
+centralindia,Standard_D2as_v5,2,D2as v5 Spot,0.010275
+southeastasia,Standard_D2as_v5,2,D2as v5,0.2
+southeastasia,Standard_D2as_v5,2,D2as v5 Low Priority,0.08
+southeastasia,Standard_D2as_v5,2,D2as v5,0.108
+southeastasia,Standard_D2as_v5,2,D2as v5 Spot,0.019958
+southeastasia,Standard_D2as_v5,2,D2as v5 Low Priority,0.0216
+centralindia,Standard_D4as_v5,4,D4as v5,0.111
+centralindia,Standard_D4as_v5,4,D4as v5,0.295
+centralindia,Standard_D4as_v5,4,D4as v5 Low Priority,0.118
+centralindia,Standard_D4as_v5,4,D4as v5 Low Priority,0.0222
+centralindia,Standard_D4as_v5,4,D4as v5 Spot,0.020513
+southeastasia,Standard_D4as_v5,4,D4as v5 Low Priority,0.16
+southeastasia,Standard_D4as_v5,4,D4as v5,0.4
+southeastasia,Standard_D4as_v5,4,D4as v5 Spot,0.039917
+southeastasia,Standard_D4as_v5,4,D4as v5,0.216
+southeastasia,Standard_D4as_v5,4,D4as v5 Low Priority,0.0432
+centralindia,Standard_D8as_v5,8,D8as v5,0.59
+centralindia,Standard_D8as_v5,8,D8as v5 Low Priority,0.0444
+centralindia,Standard_D8as_v5,8,D8as v5 Spot,0.041026
+centralindia,Standard_D8as_v5,8,D8as v5,0.222
+centralindia,Standard_D8as_v5,8,D8as v5 Low Priority,0.236
+southeastasia,Standard_D8as_v5,8,D8as v5 Low Priority,0.0864
+southeastasia,Standard_D8as_v5,8,D8as v5,0.432
+southeastasia,Standard_D8as_v5,8,D8as v5 Low Priority,0.32
+southeastasia,Standard_D8as_v5,8,D8as v5 Spot,0.079834
+southeastasia,Standard_D8as_v5,8,D8as v5,0.8
+centralindia,Standard_D16as_v5,16,D16as v5,1.18
+centralindia,Standard_D16as_v5,16,D16as v5 Low Priority,0.0889
+centralindia,Standard_D16as_v5,16,D16as v5 Low Priority,0.472
+centralindia,Standard_D16as_v5,16,D16as v5,0.444
+centralindia,Standard_D16as_v5,16,D16as v5 Spot,0.082051
+southeastasia,Standard_D16as_v5,16,D16as v5 Low Priority,0.173
+southeastasia,Standard_D16as_v5,16,D16as v5 Low Priority,0.64
+southeastasia,Standard_D16as_v5,16,D16as v5,0.864
+southeastasia,Standard_D16as_v5,16,D16as v5,1.6
+southeastasia,Standard_D16as_v5,16,D16as v5 Spot,0.159667
+centralindia,Standard_D2ds_v4,2,D2ds v4 Spot,0.022546
+centralindia,Standard_D2ds_v4,2,D2ds v4,0.122
+centralindia,Standard_D2ds_v4,2,D2ds v4 Low Priority,0.0244
+southeastasia,Standard_D2ds_v4,2,D2ds v4,0.141
+southeastasia,Standard_D2ds_v4,2,D2ds v4 Spot,0.026141
+southeastasia,Standard_D2ds_v4,2,D2ds v4 Low Priority,0.0282
+centralindia,Standard_D4ds_v4,4,D4ds v4 Spot,0.045091
+centralindia,Standard_D4ds_v4,4,D4ds v4 Low Priority,0.0488
+centralindia,Standard_D4ds_v4,4,D4ds v4,0.244
+southeastasia,Standard_D4ds_v4,4,D4ds v4,0.282
+southeastasia,Standard_D4ds_v4,4,D4ds v4 Spot,0.052283
+southeastasia,Standard_D4ds_v4,4,D4ds v4 Low Priority,0.0564
+centralindia,Standard_D8ds_v4,8,D8ds v4 Low Priority,0.0976
+centralindia,Standard_D8ds_v4,8,D8ds v4 Spot,0.090182
+centralindia,Standard_D8ds_v4,8,D8ds v4,0.488
+southeastasia,Standard_D8ds_v4,8,D8ds v4 Low Priority,0.113
+southeastasia,Standard_D8ds_v4,8,D8ds v4 Spot,0.104566
+southeastasia,Standard_D8ds_v4,8,D8ds v4,0.564
+centralindia,Standard_D16ds_v4,16,D16ds v4,0.976
+centralindia,Standard_D16ds_v4,16,D16ds v4 Low Priority,0.195
+centralindia,Standard_D16ds_v4,16,D16ds v4 Spot,0.180365
+southeastasia,Standard_D16ds_v4,16,D16ds v4,1.128
+southeastasia,Standard_D16ds_v4,16,D16ds v4 Low Priority,0.226
+southeastasia,Standard_D16ds_v4,16,D16ds v4 Spot,0.209131

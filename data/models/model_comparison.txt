@@ -1,0 +1,55 @@
+====================================================
+Model Comparison
+====================================================
+
+Linear Regression
+Runtime:
+MAE: 0.5562
+RMSE: 0.8366
+R2: 0.6882
+
+Cost:
+MAE: 0.0043
+RMSE: 0.0063
+R2: 0.7326
+
+Decision Tree
+Runtime:
+MAE: 0.3602
+RMSE: 0.6451
+R2: 0.8146
+
+Cost:
+MAE: 0.0027
+RMSE: 0.005
+R2: 0.8317
+
+Random Forest
+Runtime:
+MAE: 0.2643
+RMSE: 0.4747
+R2: 0.8996
+
+Cost:
+MAE: 0.0024
+RMSE: 0.004
+R2: 0.8952
+
+Gradient Boosting
+Runtime:
+MAE: 0.2603
+RMSE: 0.4736
+R2: 0.9001
+
+Cost:
+MAE: 0.0023
+RMSE: 0.0036
+R2: 0.915
+
+Best Model:
+Gradient Boosting
+
+Reason:
+Highest overall R2 with lowest RMSE (average R2=0.9076, average RMSE=0.2386).
+
+====================================================

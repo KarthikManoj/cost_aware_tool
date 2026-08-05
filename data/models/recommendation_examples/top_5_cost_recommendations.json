@@ -1,0 +1,67 @@
+[
+  {
+    "Rank":1,
+    "Cloud":"Azure",
+    "Region":"Central India",
+    "Machine Type":"Standard_D2as_v4",
+    "Nodes":2,
+    "Predicted Runtime (minutes)":0.5807005571,
+    "Predicted Cost (USD)":0.0012539287,
+    "Carbon Intensity":605.22265625,
+    "Renewable Percentage":23.890625,
+    "Optimization Score":0.0,
+    "Recommendation Reason":"ranked by lowest predicted cost."
+  },
+  {
+    "Rank":2,
+    "Cloud":"Azure",
+    "Region":"Central India",
+    "Machine Type":"Standard_D2as_v4",
+    "Nodes":4,
+    "Predicted Runtime (minutes)":0.4045450175,
+    "Predicted Cost (USD)":0.0017327,
+    "Carbon Intensity":605.22265625,
+    "Renewable Percentage":23.890625,
+    "Optimization Score":0.0212778552,
+    "Recommendation Reason":"ranked by lowest predicted cost."
+  },
+  {
+    "Rank":3,
+    "Cloud":"Azure",
+    "Region":"Central India",
+    "Machine Type":"Standard_D2ds_v4",
+    "Nodes":2,
+    "Predicted Runtime (minutes)":0.7063789314,
+    "Predicted Cost (USD)":0.0023559131,
+    "Carbon Intensity":605.22265625,
+    "Renewable Percentage":23.890625,
+    "Optimization Score":0.048975083,
+    "Recommendation Reason":"ranked by lowest predicted cost."
+  },
+  {
+    "Rank":4,
+    "Cloud":"Azure",
+    "Region":"Central India",
+    "Machine Type":"Standard_D4ds_v4",
+    "Nodes":2,
+    "Predicted Runtime (minutes)":0.7063789314,
+    "Predicted Cost (USD)":0.0023559131,
+    "Carbon Intensity":605.22265625,
+    "Renewable Percentage":23.890625,
+    "Optimization Score":0.048975083,
+    "Recommendation Reason":"ranked by lowest predicted cost."
+  },
+  {
+    "Rank":5,
+    "Cloud":"Azure",
+    "Region":"Central India",
+    "Machine Type":"Standard_D2s_v3",
+    "Nodes":2,
+    "Predicted Runtime (minutes)":0.9149498445,
+    "Predicted Cost (USD)":0.0031951672,
+    "Carbon Intensity":605.22265625,
+    "Renewable Percentage":23.890625,
+    "Optimization Score":0.0862737396,
+    "Recommendation Reason":"ranked by lowest predicted cost."
+  }
+]

@@ -1,0 +1,2 @@
+Region,VM_Size,vCPU,RAM_GB,Nodes,Spark_Version,Java_Version,Dataset,Dataset_Size_MB,Workload,Run_Number,Timestamp,Runtime_Minutes,CPU_Avg_Pct,Cost_USD,Exit_Status
+southeastasia,Standard_D2s_v3,2,8,2,3.5.1,17.0.19,10MB.csv,10,cpu,1,2026-07-25T18:54:20.473783+00:00,0.4829,77.48,0.002,SUCCESS

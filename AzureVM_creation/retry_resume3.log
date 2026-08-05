@@ -1,0 +1,33 @@
+
+############################################################
+# southeastasia | Standard_D4s_v3 | 2 nodes (RETRY: retry_lists/southeastasia_Standard_D4s_v3_n2.csv)
+############################################################
+Creating bench-sea-d4s_v3-n2-1...
+Creating bench-sea-d4s_v3-n2-2...
+Waiting for bench-sea-d4s_v3-n2-1 to finish provisioning...
+  bench-sea-d4s_v3-n2-1 -> 20.212.82.194
+Waiting for bench-sea-d4s_v3-n2-2 to finish provisioning...
+  bench-sea-d4s_v3-n2-2 -> 20.212.82.240
+  install finished on 20.212.82.194
+  install finished on 20.212.82.240
+Repairing /opt/benchmark permissions on all VMs...
+Warning: Permanently added '20.212.82.194' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.212.82.240' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.212.82.194' (ED25519) to the list of known hosts.
+starting org.apache.spark.deploy.master.Master, logging to /opt/spark/logs/spark-benchadmin-org.apache.spark.deploy.master.Master-1-bench-sea-d4sv3-n2-1.out
+Warning: Permanently added '20.212.82.240' (ED25519) to the list of known hosts.
+starting org.apache.spark.deploy.worker.Worker, logging to /opt/spark/logs/spark-benchadmin-org.apache.spark.deploy.worker.Worker-1-bench-sea-d4sv3-n2-2.out
+Cluster up: spark://10.0.0.10:7077 (2 nodes)
+Warning: Permanently added '20.212.82.194' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.212.82.194' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.212.82.194' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.212.82.194' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.212.82.194' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.212.82.240' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.212.82.240' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.212.82.240' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.212.82.240' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.212.82.240' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.212.82.240' (ED25519) to the list of known hosts.
+Read from remote host 20.212.82.194: Operation timed out
+client_loop: send disconnect: Broken pipe

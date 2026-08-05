@@ -1,0 +1,6 @@
+Rank,Cloud,Region,Machine Type,Nodes,Predicted Runtime (minutes),Predicted Cost (USD),Carbon Intensity,Renewable Percentage,Optimization Score,Recommendation Reason
+1,AWS,ap-southeast-1,c5a.xlarge,2,1.595574333075983,0.009577920694008587,479.62890625,5.9921875,0.25,ranked by lowest carbon intensity and higher renewable percentage.
+2,AWS,ap-southeast-1,c6i.xlarge,2,1.5421847068077819,0.009860777830949897,479.62890625,5.9921875,0.25,ranked by lowest carbon intensity and higher renewable percentage.
+3,AWS,ap-southeast-1,c5.xlarge,2,1.607702015334546,0.010906413062123563,479.62890625,5.9921875,0.25,ranked by lowest carbon intensity and higher renewable percentage.
+4,AWS,ap-southeast-1,m6i.xlarge,2,1.5129292215136603,0.011607565256401248,479.62890625,5.9921875,0.25,ranked by lowest carbon intensity and higher renewable percentage.
+5,AWS,ap-southeast-1,m5.xlarge,2,1.7642918985071003,0.012956462142808418,479.62890625,5.9921875,0.25,ranked by lowest carbon intensity and higher renewable percentage.

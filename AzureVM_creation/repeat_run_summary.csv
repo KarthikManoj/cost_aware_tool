@@ -1,0 +1,20 @@
+region,vm_size,nodes,status,note
+southeastasia,Standard_D4s_v3,2,FAILED,benchmark run error
+southeastasia,Standard_D2s_v3,2,FAILED,benchmark run error
+southeastasia,Standard_D2s_v3,4,FAILED,benchmark run error
+southeastasia,Standard_D2s_v3,2,FAILED,orphaned session (all 3 concurrent jobs stalled simultaneously) - kept its 15 successful rows before dying
+southeastasia,Standard_D2s_v3,4,FAILED,orphaned session (all 3 concurrent jobs stalled simultaneously) - kept its 14 successful rows before dying
+southeastasia,Standard_D4s_v3,2,FAILED,orphaned session (all 3 concurrent jobs stalled simultaneously) - kept its 15 successful rows before dying
+southeastasia,Standard_D2s_v3,2,FAILED,benchmark run error
+southeastasia,Standard_D4s_v3,4,FAILED,benchmark run error
+southeastasia,Standard_D4s_v3,4,SUCCESS,
+southeastasia,Standard_D4s_v3,2,SUCCESS,
+southeastasia,Standard_D2s_v3,4,SUCCESS,
+southeastasia,Standard_D2s_v3,4,FAILED,benchmark run error
+southeastasia,Standard_D4s_v3,2,SUCCESS,
+southeastasia,Standard_D2s_v3,2,FAILED,benchmark run error
+southeastasia,Standard_D4s_v3,2,FAILED,install timeout
+southeastasia,Standard_D4s_v3,4,FAILED,vm creation or provisioning error
+southeastasia,Standard_D2s_v3,2,FAILED,benchmark run error
+southeastasia,Standard_D2s_v3,2,FAILED,benchmark run error
+southeastasia,Standard_D2s_v3,4,FAILED,benchmark run error

@@ -1,0 +1,758 @@
+
+############################################################
+# centralindia | Standard_D2s_v3 | 2 nodes (RETRY: retry_lists/centralindia_Standard_D2s_v3_n2.csv)
+############################################################
+Creating bench-cin-d2s_v3-n2-1...
+Creating bench-cin-d2s_v3-n2-2...
+Waiting for bench-cin-d2s_v3-n2-1 to finish provisioning...
+  bench-cin-d2s_v3-n2-1 -> 74.225.169.226
+Waiting for bench-cin-d2s_v3-n2-2 to finish provisioning...
+  bench-cin-d2s_v3-n2-2 -> 20.204.49.234
+  waiting for install on 74.225.169.226 (1/180)...
+  waiting for install on 74.225.169.226 (2/180)...
+  waiting for install on 74.225.169.226 (3/180)...
+  waiting for install on 74.225.169.226 (4/180)...
+  waiting for install on 74.225.169.226 (5/180)...
+  waiting for install on 74.225.169.226 (6/180)...
+  waiting for install on 74.225.169.226 (7/180)...
+  waiting for install on 74.225.169.226 (8/180)...
+  waiting for install on 74.225.169.226 (9/180)...
+  waiting for install on 74.225.169.226 (10/180)...
+  waiting for install on 74.225.169.226 (11/180)...
+  waiting for install on 74.225.169.226 (12/180)...
+  waiting for install on 74.225.169.226 (13/180)...
+  waiting for install on 74.225.169.226 (14/180)...
+  waiting for install on 74.225.169.226 (15/180)...
+  waiting for install on 74.225.169.226 (16/180)...
+  waiting for install on 74.225.169.226 (17/180)...
+  waiting for install on 74.225.169.226 (18/180)...
+  waiting for install on 74.225.169.226 (19/180)...
+  install finished on 74.225.169.226
+  install finished on 20.204.49.234
+Repairing /opt/benchmark permissions on all VMs...
+Warning: Permanently added '74.225.169.226' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.204.49.234' (ED25519) to the list of known hosts.
+Warning: Permanently added '74.225.169.226' (ED25519) to the list of known hosts.
+starting org.apache.spark.deploy.master.Master, logging to /opt/spark/logs/spark-benchadmin-org.apache.spark.deploy.master.Master-1-bench-cin-d2sv3-n2-1.out
+Warning: Permanently added '20.204.49.234' (ED25519) to the list of known hosts.
+starting org.apache.spark.deploy.worker.Worker, logging to /opt/spark/logs/spark-benchadmin-org.apache.spark.deploy.worker.Worker-1-bench-cin-d2sv3-n2-2.out
+Cluster up: spark://10.0.0.10:7077 (2 nodes)
+Warning: Permanently added '74.225.169.226' (ED25519) to the list of known hosts.
+Warning: Permanently added '74.225.169.226' (ED25519) to the list of known hosts.
+Warning: Permanently added '74.225.169.226' (ED25519) to the list of known hosts.
+Warning: Permanently added '74.225.169.226' (ED25519) to the list of known hosts.
+Warning: Permanently added '74.225.169.226' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.204.49.234' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.204.49.234' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.204.49.234' (ED25519) to the list of known hosts.
+Retry mode: 4 specific runs to redo.
+Downloading events_5120mb.csv (excluded from timer)...
+Replicating dataset to worker 20.204.49.234 (excluded from timer)...
+
+=== Standard_D2s_v3 | 2 nodes | 5120MB | cpu | run 1 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '5120MB.csv', 'Dataset_Size_MB': 5120, 'Workload': 'cpu', 'Run_Number': 1, 'Timestamp': '2026-07-24T05:49:01.749490+00:00', 'Runtime_Minutes': 4.8331, 'CPU_Avg_Pct': 6.28, 'Cost_USD': 0.0169, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2sv3-n2-1.csv
+
+=== Standard_D2s_v3 | 2 nodes | 5120MB | cpu | run 2 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '5120MB.csv', 'Dataset_Size_MB': 5120, 'Workload': 'cpu', 'Run_Number': 2, 'Timestamp': '2026-07-24T05:53:56.929097+00:00', 'Runtime_Minutes': 4.8475, 'CPU_Avg_Pct': 5.13, 'Cost_USD': 0.017, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2sv3-n2-1.csv
+
+=== Standard_D2s_v3 | 2 nodes | 5120MB | memory | run 1 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '5120MB.csv', 'Dataset_Size_MB': 5120, 'Workload': 'memory', 'Run_Number': 1, 'Timestamp': '2026-07-24T06:01:21.843002+00:00', 'Runtime_Minutes': 7.3859, 'CPU_Avg_Pct': 5.25, 'Cost_USD': 0.0259, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2sv3-n2-1.csv
+
+=== Standard_D2s_v3 | 2 nodes | 5120MB | memory | run 2 ===
+{'Region': 'centralindia', 'VM_Size': 'Standard_D2s_v3', 'vCPU': 2, 'RAM_GB': 8, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '5120MB.csv', 'Dataset_Size_MB': 5120, 'Workload': 'memory', 'Run_Number': 2, 'Timestamp': '2026-07-24T06:08:58.820448+00:00', 'Runtime_Minutes': 7.5991, 'CPU_Avg_Pct': 4.39, 'Cost_USD': 0.0266, 'Exit_Status': 'SUCCESS'}
+Uploaded results to results/results_bench-cin-d2sv3-n2-1.csv
+Uploaded results to results/results_bench-cin-d2sv3-n2-1.csv
+
+All runs complete for this cluster configuration.
+Deleting VMs for this combo...
+Combo done: centralindia / Standard_D2s_v3 / 2 nodes
+
+############################################################
+# centralindia | Standard_D4s_v3 | 2 nodes (RETRY: retry_lists/centralindia_Standard_D4s_v3_n2.csv)
+############################################################
+Creating bench-cin-d4s_v3-n2-1...
+Creating bench-cin-d4s_v3-n2-2...
+Waiting for bench-cin-d4s_v3-n2-1 to finish provisioning...
+  bench-cin-d4s_v3-n2-1 -> 4.224.240.140
+Waiting for bench-cin-d4s_v3-n2-2 to finish provisioning...
+  bench-cin-d4s_v3-n2-2 -> 4.224.248.66
+  waiting for install on 4.224.240.140 (1/180)...
+  waiting for install on 4.224.240.140 (2/180)...
+  waiting for install on 4.224.240.140 (3/180)...
+  waiting for install on 4.224.240.140 (4/180)...
+  waiting for install on 4.224.240.140 (5/180)...
+  waiting for install on 4.224.240.140 (6/180)...
+  install finished on 4.224.240.140
+  waiting for install on 4.224.248.66 (1/180)...
+  waiting for install on 4.224.248.66 (2/180)...
+  install finished on 4.224.248.66
+Repairing /opt/benchmark permissions on all VMs...
+Warning: Permanently added '4.224.240.140' (ED25519) to the list of known hosts.
+Warning: Permanently added '4.224.248.66' (ED25519) to the list of known hosts.
+Warning: Permanently added '4.224.240.140' (ED25519) to the list of known hosts.
+starting org.apache.spark.deploy.master.Master, logging to /opt/spark/logs/spark-benchadmin-org.apache.spark.deploy.master.Master-1-bench-cin-d4sv3-n2-1.out
+Warning: Permanently added '4.224.248.66' (ED25519) to the list of known hosts.
+starting org.apache.spark.deploy.worker.Worker, logging to /opt/spark/logs/spark-benchadmin-org.apache.spark.deploy.worker.Worker-1-bench-cin-d4sv3-n2-2.out
+Cluster up: spark://10.0.0.10:7077 (2 nodes)
+Warning: Permanently added '4.224.240.140' (ED25519) to the list of known hosts.
+Warning: Permanently added '4.224.240.140' (ED25519) to the list of known hosts.
+Warning: Permanently added '4.224.240.140' (ED25519) to the list of known hosts.
+Warning: Permanently added '4.224.240.140' (ED25519) to the list of known hosts.
+Warning: Permanently added '4.224.240.140' (ED25519) to the list of known hosts.
+Warning: Permanently added '4.224.248.66' (ED25519) to the list of known hosts.
+Warning: Permanently added '4.224.248.66' (ED25519) to the list of known hosts.
+Warning: Permanently added '4.224.248.66' (ED25519) to the list of known hosts.
+Retry mode: 2 specific runs to redo.
+Downloading events_5120mb.csv (excluded from timer)...
+Replicating dataset to worker 4.224.248.66 (excluded from timer)...
+
+=== Standard_D4s_v3 | 2 nodes | 5120MB | io | run 1 ===
+Job failed: ter.scala:92)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.$anonfun$executeTask$1(FileFormatWriter.scala:403)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$$$Lambda$3722/0x0000753924fd55d0.apply(Unknown Source)
+	at org.apache.spark.util.Utils$.tryWithSafeFinallyAndFailureCallbacks(Utils.scala:1397)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.executeTask(FileFormatWriter.scala:410)
+	at org.apache.spark.sql.execution.datasources.WriteFilesExec.$anonfun$doExecuteWrite$1(WriteFiles.scala:100)
+	at org.apache.spark.sql.execution.datasources.WriteFilesExec$$Lambda$3620/0x0000753924f9e638.apply(Unknown Source)
+
+Driver stacktrace:
+26/07/24 06:19:57 INFO MemoryStore: MemoryStore cleared
+26/07/24 06:19:57 INFO BlockManager: BlockManager stopped
+26/07/24 06:19:57 INFO BlockManagerMaster: BlockManagerMaster stopped
+26/07/24 06:19:57 INFO OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+26/07/24 06:19:57 INFO SparkContext: Successfully stopped SparkContext
+26/07/24 06:19:57 INFO ShutdownHookManager: Shutdown hook called
+26/07/24 06:19:57 INFO ShutdownHookManager: Deleting directory /tmp/spark-5703ca36-501e-43cb-841e-7be0290f0468
+26/07/24 06:19:57 INFO ShutdownHookManager: Deleting directory /tmp/spark-d83c84ff-d829-4360-99d3-285bdff063a1
+26/07/24 06:19:57 INFO ShutdownHookManager: Deleting directory /tmp/spark-5703ca36-501e-43cb-841e-7be0290f0468/pyspark-f8763b7a-04bd-4071-8f0f-1ce73af34d14
+
+{'Region': 'centralindia', 'VM_Size': 'Standard_D4s_v3', 'vCPU': 4, 'RAM_GB': 16, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '5120MB.csv', 'Dataset_Size_MB': 5120, 'Workload': 'io', 'Run_Number': 1, 'Timestamp': '2026-07-24T06:20:04.807892+00:00', 'Runtime_Minutes': 4.3174, 'CPU_Avg_Pct': 94.54, 'Cost_USD': 0.0302, 'Exit_Status': 'FAILED'}
+Uploaded results to results/results_bench-cin-d4sv3-n2-1.csv
+
+=== Standard_D4s_v3 | 2 nodes | 5120MB | io | run 2 ===
+Job failed: ils.scala:1397)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.executeTask(FileFormatWriter.scala:410)
+	at org.apache.spark.sql.execution.datasources.WriteFilesExec.$anonfun$doExecuteWrite$1(WriteFiles.scala:100)
+	at org.apache.spark.sql.execution.datasources.WriteFilesExec$$Lambda$3611/0x000077fef0f9deb8.apply(Unknown Source)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2(RDD.scala:893)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2$adapted(RDD.scala:893)
+	at org.apache.spark.rdd.RDD$$Lambda$2774/0x000077fef0dd4ec0.apply(Unknown Source)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+
+Driver stacktrace:
+26/07/24 06:24:02 INFO MemoryStore: MemoryStore cleared
+26/07/24 06:24:02 INFO BlockManager: BlockManager stopped
+26/07/24 06:24:02 INFO BlockManagerMaster: BlockManagerMaster stopped
+26/07/24 06:24:02 INFO OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+26/07/24 06:24:02 INFO SparkContext: Successfully stopped SparkContext
+26/07/24 06:24:02 INFO ShutdownHookManager: Shutdown hook called
+26/07/24 06:24:02 INFO ShutdownHookManager: Deleting directory /tmp/spark-b2bc8ff5-25c8-4cac-b146-2661eaef4ff3
+26/07/24 06:24:02 INFO ShutdownHookManager: Deleting directory /tmp/spark-b2bc8ff5-25c8-4cac-b146-2661eaef4ff3/pyspark-8a41c894-a33e-47ec-bbf5-d689af76ccac
+26/07/24 06:24:02 INFO ShutdownHookManager: Deleting directory /tmp/spark-40da793d-3af7-482c-b346-4af452cb3e51
+
+{'Region': 'centralindia', 'VM_Size': 'Standard_D4s_v3', 'vCPU': 4, 'RAM_GB': 16, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '5120MB.csv', 'Dataset_Size_MB': 5120, 'Workload': 'io', 'Run_Number': 2, 'Timestamp': '2026-07-24T06:24:05.714964+00:00', 'Runtime_Minutes': 3.9583, 'CPU_Avg_Pct': 96.57, 'Cost_USD': 0.0277, 'Exit_Status': 'FAILED'}
+Uploaded results to results/results_bench-cin-d4sv3-n2-1.csv
+Uploaded results to results/results_bench-cin-d4sv3-n2-1.csv
+
+All runs complete for this cluster configuration.
+Deleting VMs for this combo...
+Combo done: centralindia / Standard_D4s_v3 / 2 nodes
+
+############################################################
+# centralindia | Standard_D4s_v3 | 4 nodes (RETRY: retry_lists/centralindia_Standard_D4s_v3_n4.csv)
+############################################################
+SKIP: needs 16 vCPUs, DSv3 family cap in centralindia is 10.
+
+############################################################
+# centralindia | Standard_D4as_v4 | 2 nodes (RETRY: retry_lists/centralindia_Standard_D4as_v4_n2.csv)
+############################################################
+Creating bench-cin-d4as_v4-n2-1...
+Creating bench-cin-d4as_v4-n2-2...
+Waiting for bench-cin-d4as_v4-n2-1 to finish provisioning...
+  bench-cin-d4as_v4-n2-1 -> 4.240.12.72
+Waiting for bench-cin-d4as_v4-n2-2 to finish provisioning...
+  bench-cin-d4as_v4-n2-2 -> 4.240.13.82
+  waiting for install on 4.240.12.72 (1/180)...
+  waiting for install on 4.240.12.72 (2/180)...
+  waiting for install on 4.240.12.72 (3/180)...
+  waiting for install on 4.240.12.72 (4/180)...
+  waiting for install on 4.240.12.72 (5/180)...
+  waiting for install on 4.240.12.72 (6/180)...
+  waiting for install on 4.240.12.72 (7/180)...
+  waiting for install on 4.240.12.72 (8/180)...
+  waiting for install on 4.240.12.72 (9/180)...
+  waiting for install on 4.240.12.72 (10/180)...
+  waiting for install on 4.240.12.72 (11/180)...
+  install finished on 4.240.12.72
+  waiting for install on 4.240.13.82 (1/180)...
+  waiting for install on 4.240.13.82 (2/180)...
+  waiting for install on 4.240.13.82 (3/180)...
+  waiting for install on 4.240.13.82 (4/180)...
+  waiting for install on 4.240.13.82 (5/180)...
+  waiting for install on 4.240.13.82 (6/180)...
+  waiting for install on 4.240.13.82 (7/180)...
+  waiting for install on 4.240.13.82 (8/180)...
+  install finished on 4.240.13.82
+Repairing /opt/benchmark permissions on all VMs...
+Warning: Permanently added '4.240.12.72' (ED25519) to the list of known hosts.
+Warning: Permanently added '4.240.13.82' (ED25519) to the list of known hosts.
+Warning: Permanently added '4.240.12.72' (ED25519) to the list of known hosts.
+starting org.apache.spark.deploy.master.Master, logging to /opt/spark/logs/spark-benchadmin-org.apache.spark.deploy.master.Master-1-bench-cin-d4asv4-n2-1.out
+Warning: Permanently added '4.240.13.82' (ED25519) to the list of known hosts.
+starting org.apache.spark.deploy.worker.Worker, logging to /opt/spark/logs/spark-benchadmin-org.apache.spark.deploy.worker.Worker-1-bench-cin-d4asv4-n2-2.out
+Cluster up: spark://10.0.0.10:7077 (2 nodes)
+Warning: Permanently added '4.240.12.72' (ED25519) to the list of known hosts.
+Warning: Permanently added '4.240.12.72' (ED25519) to the list of known hosts.
+Warning: Permanently added '4.240.12.72' (ED25519) to the list of known hosts.
+Warning: Permanently added '4.240.12.72' (ED25519) to the list of known hosts.
+Warning: Permanently added '4.240.12.72' (ED25519) to the list of known hosts.
+Warning: Permanently added '4.240.13.82' (ED25519) to the list of known hosts.
+Warning: Permanently added '4.240.13.82' (ED25519) to the list of known hosts.
+Warning: Permanently added '4.240.13.82' (ED25519) to the list of known hosts.
+Retry mode: 2 specific runs to redo.
+Downloading events_5120mb.csv (excluded from timer)...
+Replicating dataset to worker 4.240.13.82 (excluded from timer)...
+
+=== Standard_D4as_v4 | 2 nodes | 5120MB | io | run 1 ===
+Job failed: sources.BaseDynamicPartitionDataWriter.writeRecord(FileFormatDataWriter.scala:328)
+	at org.apache.spark.sql.execution.datasources.DynamicPartitionDataSingleWriter.write(FileFormatDataWriter.scala:370)
+	at org.apache.spark.sql.execution.datasources.FileFormatDataWriter.writeWithMetrics(FileFormatDataWriter.scala:85)
+	at org.apache.spark.sql.execution.datasources.FileFormatDataWriter.writeWithIterator(FileFormatDataWriter.scala:92)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.$anonfun$executeTask$1(FileFormatWriter.scala:403)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$$$Lambda$3750/0x00007d53b0fdd5d0.apply(Unknown Source)
+
+Driver stacktrace:
+26/07/24 06:37:15 INFO MemoryStore: MemoryStore cleared
+26/07/24 06:37:15 INFO BlockManager: BlockManager stopped
+26/07/24 06:37:15 INFO BlockManagerMaster: BlockManagerMaster stopped
+26/07/24 06:37:15 INFO OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+26/07/24 06:37:15 INFO SparkContext: Successfully stopped SparkContext
+26/07/24 06:37:15 INFO ShutdownHookManager: Shutdown hook called
+26/07/24 06:37:15 INFO ShutdownHookManager: Deleting directory /tmp/spark-20380b8d-237d-4983-8273-72ccd3566680
+26/07/24 06:37:15 INFO ShutdownHookManager: Deleting directory /tmp/spark-20380b8d-237d-4983-8273-72ccd3566680/pyspark-c4b7eb32-fdb0-4996-94da-3e53d115152d
+26/07/24 06:37:15 INFO ShutdownHookManager: Deleting directory /tmp/spark-83a3f7ef-018b-4a4a-9ad8-74b5de2fda6d
+
+{'Region': 'centralindia', 'VM_Size': 'Standard_D4as_v4', 'vCPU': 4, 'RAM_GB': 16, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '5120MB.csv', 'Dataset_Size_MB': 5120, 'Workload': 'io', 'Run_Number': 1, 'Timestamp': '2026-07-24T06:37:19.755492+00:00', 'Runtime_Minutes': 2.6376, 'CPU_Avg_Pct': 95.81, 'Cost_USD': 0.0108, 'Exit_Status': 'FAILED'}
+Uploaded results to results/results_bench-cin-d4asv4-n2-1.csv
+
+=== Standard_D4as_v4 | 2 nodes | 5120MB | io | run 2 ===
+Job failed: ter.scala:92)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.$anonfun$executeTask$1(FileFormatWriter.scala:403)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$$$Lambda$3712/0x0000742eb4fd0a78.apply(Unknown Source)
+	at org.apache.spark.util.Utils$.tryWithSafeFinallyAndFailureCallbacks(Utils.scala:1397)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.executeTask(FileFormatWriter.scala:410)
+	at org.apache.spark.sql.execution.datasources.WriteFilesExec.$anonfun$doExecuteWrite$1(WriteFiles.scala:100)
+	at org.apache.spark.sql.execution.datasources.WriteFilesExec$$Lambda$3636/0x0000742eb4f9f5b0.apply(Unknown Source)
+
+Driver stacktrace:
+26/07/24 06:39:53 INFO MemoryStore: MemoryStore cleared
+26/07/24 06:39:53 INFO BlockManager: BlockManager stopped
+26/07/24 06:39:53 INFO BlockManagerMaster: BlockManagerMaster stopped
+26/07/24 06:39:53 INFO OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+26/07/24 06:39:53 INFO SparkContext: Successfully stopped SparkContext
+26/07/24 06:39:53 INFO ShutdownHookManager: Shutdown hook called
+26/07/24 06:39:53 INFO ShutdownHookManager: Deleting directory /tmp/spark-7ce54fc1-3ac0-4adf-95e3-be974d632919/pyspark-fdd42381-7a80-429b-8786-cec975ba044c
+26/07/24 06:39:53 INFO ShutdownHookManager: Deleting directory /tmp/spark-f1dcfcd2-0306-446d-bbfa-d799741da475
+26/07/24 06:39:53 INFO ShutdownHookManager: Deleting directory /tmp/spark-7ce54fc1-3ac0-4adf-95e3-be974d632919
+
+{'Region': 'centralindia', 'VM_Size': 'Standard_D4as_v4', 'vCPU': 4, 'RAM_GB': 16, 'Nodes': 2, 'Spark_Version': '3.5.1', 'Java_Version': '17.0.19', 'Dataset': '5120MB.csv', 'Dataset_Size_MB': 5120, 'Workload': 'io', 'Run_Number': 2, 'Timestamp': '2026-07-24T06:40:08.461864+00:00', 'Runtime_Minutes': 2.7108, 'CPU_Avg_Pct': 93.82, 'Cost_USD': 0.0111, 'Exit_Status': 'FAILED'}
+Uploaded results to results/results_bench-cin-d4asv4-n2-1.csv
+Uploaded results to results/results_bench-cin-d4asv4-n2-1.csv
+
+All runs complete for this cluster configuration.
+Deleting VMs for this combo...
+Combo done: centralindia / Standard_D4as_v4 / 2 nodes
+
+############################################################
+# centralindia | Standard_D4as_v4 | 4 nodes (RETRY: retry_lists/centralindia_Standard_D4as_v4_n4.csv)
+############################################################
+SKIP: needs 16 vCPUs, DASv4 family cap in centralindia is 10.
+
+############################################################
+# centralindia | Standard_D2ds_v4 | 2 nodes (RETRY: retry_lists/centralindia_Standard_D2ds_v4_n2.csv)
+############################################################
+Creating bench-cin-d2ds_v4-n2-1...
+Creating bench-cin-d2ds_v4-n2-2...
+Waiting for bench-cin-d2ds_v4-n2-1 to finish provisioning...
+  bench-cin-d2ds_v4-n2-1 -> 4.224.242.86
+Waiting for bench-cin-d2ds_v4-n2-2 to finish provisioning...
+  bench-cin-d2ds_v4-n2-2 -> 20.219.222.175
+  waiting for install on 4.224.242.86 (1/180)...
+  waiting for install on 4.224.242.86 (2/180)...
+  waiting for install on 4.224.242.86 (3/180)...
+  waiting for install on 4.224.242.86 (4/180)...
+  waiting for install on 4.224.242.86 (5/180)...
+  waiting for install on 4.224.242.86 (6/180)...
+  waiting for install on 4.224.242.86 (7/180)...
+  waiting for install on 4.224.242.86 (8/180)...
+  install finished on 4.224.242.86
+  waiting for install on 20.219.222.175 (1/180)...
+  waiting for install on 20.219.222.175 (2/180)...
+  waiting for install on 20.219.222.175 (3/180)...
+  waiting for install on 20.219.222.175 (4/180)...
+  install finished on 20.219.222.175
+Repairing /opt/benchmark permissions on all VMs...
+Warning: Permanently added '4.224.242.86' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.219.222.175' (ED25519) to the list of known hosts.
+Warning: Permanently added '4.224.242.86' (ED25519) to the list of known hosts.
+starting org.apache.spark.deploy.master.Master, logging to /opt/spark/logs/spark-benchadmin-org.apache.spark.deploy.master.Master-1-bench-cin-d2dsv4-n2-1.out
+Warning: Permanently added '20.219.222.175' (ED25519) to the list of known hosts.
+starting org.apache.spark.deploy.worker.Worker, logging to /opt/spark/logs/spark-benchadmin-org.apache.spark.deploy.worker.Worker-1-bench-cin-d2dsv4-n2-2.out
+Cluster up: spark://10.0.0.10:7077 (2 nodes)
+Warning: Permanently added '4.224.242.86' (ED25519) to the list of known hosts.
+Warning: Permanently added '4.224.242.86' (ED25519) to the list of known hosts.
+Warning: Permanently added '4.224.242.86' (ED25519) to the list of known hosts.
+Warning: Permanently added '4.224.242.86' (ED25519) to the list of known hosts.
+Warning: Permanently added '4.224.242.86' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.219.222.175' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.219.222.175' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.219.222.175' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.219.222.175' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.219.222.175' (ED25519) to the list of known hosts.
+Read from remote host 4.224.242.86: Connection reset by peer
+client_loop: send disconnect: Broken pipe
+Deleting VMs for this combo...
+Combo done: centralindia / Standard_D2ds_v4 / 2 nodes
+
+############################################################
+# centralindia | Standard_D2ds_v4 | 4 nodes (RETRY: retry_lists/centralindia_Standard_D2ds_v4_n4.csv)
+############################################################
+Creating bench-cin-d2ds_v4-n4-1...
+Creating bench-cin-d2ds_v4-n4-2...
+Creating bench-cin-d2ds_v4-n4-3...
+WARNING: Failed to retrieve image alias doc 'https://raw.githubusercontent.com/Azure/azure-rest-api-specs/main/arm-compute/quickstart-templates/aliases.json'. Error: 'ConnectionError'. Use local copy instead.
+Creating bench-cin-d2ds_v4-n4-4...
+Waiting for bench-cin-d2ds_v4-n4-1 to finish provisioning...
+  bench-cin-d2ds_v4-n4-1 -> 4.240.1.130
+Waiting for bench-cin-d2ds_v4-n4-2 to finish provisioning...
+  bench-cin-d2ds_v4-n4-2 -> 4.224.48.143
+Waiting for bench-cin-d2ds_v4-n4-3 to finish provisioning...
+  bench-cin-d2ds_v4-n4-3 -> 20.204.76.56
+Waiting for bench-cin-d2ds_v4-n4-4 to finish provisioning...
+  bench-cin-d2ds_v4-n4-4 -> 20.204.64.130
+  install finished on 4.240.1.130
+  install finished on 4.224.48.143
+  waiting for install on 20.204.76.56 (1/180)...
+  waiting for install on 20.204.76.56 (2/180)...
+  waiting for install on 20.204.76.56 (3/180)...
+  install finished on 20.204.76.56
+  install finished on 20.204.64.130
+Repairing /opt/benchmark permissions on all VMs...
+Warning: Permanently added '4.240.1.130' (ED25519) to the list of known hosts.
+Warning: Permanently added '4.224.48.143' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.204.76.56' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.204.64.130' (ED25519) to the list of known hosts.
+Warning: Permanently added '4.240.1.130' (ED25519) to the list of known hosts.
+starting org.apache.spark.deploy.master.Master, logging to /opt/spark/logs/spark-benchadmin-org.apache.spark.deploy.master.Master-1-bench-cin-d2dsv4-n4-1.out
+Warning: Permanently added '4.224.48.143' (ED25519) to the list of known hosts.
+starting org.apache.spark.deploy.worker.Worker, logging to /opt/spark/logs/spark-benchadmin-org.apache.spark.deploy.worker.Worker-1-bench-cin-d2dsv4-n4-2.out
+Warning: Permanently added '20.204.76.56' (ED25519) to the list of known hosts.
+starting org.apache.spark.deploy.worker.Worker, logging to /opt/spark/logs/spark-benchadmin-org.apache.spark.deploy.worker.Worker-1-bench-cin-d2dsv4-n4-3.out
+Warning: Permanently added '20.204.64.130' (ED25519) to the list of known hosts.
+starting org.apache.spark.deploy.worker.Worker, logging to /opt/spark/logs/spark-benchadmin-org.apache.spark.deploy.worker.Worker-1-bench-cin-d2dsv4-n4-4.out
+Cluster up: spark://10.0.0.10:7077 (4 nodes)
+Warning: Permanently added '4.240.1.130' (ED25519) to the list of known hosts.
+Warning: Permanently added '4.240.1.130' (ED25519) to the list of known hosts.
+Warning: Permanently added '4.240.1.130' (ED25519) to the list of known hosts.
+Warning: Permanently added '4.240.1.130' (ED25519) to the list of known hosts.
+Warning: Permanently added '4.240.1.130' (ED25519) to the list of known hosts.
+Warning: Permanently added '4.224.48.143' (ED25519) to the list of known hosts.
+Warning: Permanently added '4.224.48.143' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.204.76.56' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.204.76.56' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.204.64.130' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.204.64.130' (ED25519) to the list of known hosts.
+Read from remote host 4.240.1.130: Connection reset by peer
+client_loop: send disconnect: Broken pipe
+Deleting VMs for this combo...
+Combo done: centralindia / Standard_D2ds_v4 / 4 nodes
+
+############################################################
+# centralindia | Standard_D4ds_v4 | 2 nodes (RETRY: retry_lists/centralindia_Standard_D4ds_v4_n2.csv)
+############################################################
+Creating bench-cin-d4ds_v4-n2-1...
+Creating bench-cin-d4ds_v4-n2-2...
+Waiting for bench-cin-d4ds_v4-n2-1 to finish provisioning...
+  bench-cin-d4ds_v4-n2-1 -> 20.204.106.85
+Waiting for bench-cin-d4ds_v4-n2-2 to finish provisioning...
+  bench-cin-d4ds_v4-n2-2 -> 4.213.160.231
+  waiting for install on 20.204.106.85 (1/180)...
+  waiting for install on 20.204.106.85 (2/180)...
+  waiting for install on 20.204.106.85 (3/180)...
+  waiting for install on 20.204.106.85 (4/180)...
+  waiting for install on 20.204.106.85 (5/180)...
+  install finished on 20.204.106.85
+  install finished on 4.213.160.231
+Repairing /opt/benchmark permissions on all VMs...
+Warning: Permanently added '20.204.106.85' (ED25519) to the list of known hosts.
+Warning: Permanently added '4.213.160.231' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.204.106.85' (ED25519) to the list of known hosts.
+starting org.apache.spark.deploy.master.Master, logging to /opt/spark/logs/spark-benchadmin-org.apache.spark.deploy.master.Master-1-bench-cin-d4dsv4-n2-1.out
+Warning: Permanently added '4.213.160.231' (ED25519) to the list of known hosts.
+starting org.apache.spark.deploy.worker.Worker, logging to /opt/spark/logs/spark-benchadmin-org.apache.spark.deploy.worker.Worker-1-bench-cin-d4dsv4-n2-2.out
+Cluster up: spark://10.0.0.10:7077 (2 nodes)
+Warning: Permanently added '20.204.106.85' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.204.106.85' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.204.106.85' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.204.106.85' (ED25519) to the list of known hosts.
+Warning: Permanently added '20.204.106.85' (ED25519) to the list of known hosts.
+Read from remote host 20.204.106.85: Connection reset by peer
+client_loop: send disconnect: Broken pipe
+Deleting VMs for this combo...
+ERROR: The command failed with an unexpected error. Here is the traceback:
+ERROR: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+Traceback (most recent call last):
+  File "/opt/homebrew/Cellar/azure-cli/2.71.0/libexec/lib/python3.12/site-packages/urllib3/connectionpool.py", line 715, in urlopen
+    httplib_response = self._make_request(
+                       ^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/azure-cli/2.71.0/libexec/lib/python3.12/site-packages/urllib3/connectionpool.py", line 467, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/opt/homebrew/Cellar/azure-cli/2.71.0/libexec/lib/python3.12/site-packages/urllib3/connectionpool.py", line 462, in _make_request
+    httplib_response = conn.getresponse()
+                       ^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.12/3.12.10/Frameworks/Python.framework/Versions/3.12/lib/python3.12/http/client.py", line 1430, in getresponse
+    response.begin()
+  File "/opt/homebrew/Cellar/python@3.12/3.12.10/Frameworks/Python.framework/Versions/3.12/lib/python3.12/http/client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.12/3.12.10/Frameworks/Python.framework/Versions/3.12/lib/python3.12/http/client.py", line 300, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+http.client.RemoteDisconnected: Remote end closed connection without response
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/homebrew/Cellar/azure-cli/2.71.0/libexec/lib/python3.12/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/azure-cli/2.71.0/libexec/lib/python3.12/site-packages/urllib3/connectionpool.py", line 801, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/azure-cli/2.71.0/libexec/lib/python3.12/site-packages/urllib3/util/retry.py", line 552, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/azure-cli/2.71.0/libexec/lib/python3.12/site-packages/urllib3/packages/six.py", line 769, in reraise
+    raise value.with_traceback(tb)
+  File "/opt/homebrew/Cellar/azure-cli/2.71.0/libexec/lib/python3.12/site-packages/urllib3/connectionpool.py", line 715, in urlopen
+    httplib_response = self._make_request(
+                       ^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/azure-cli/2.71.0/libexec/lib/python3.12/site-packages/urllib3/connectionpool.py", line 467, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/opt/homebrew/Cellar/azure-cli/2.71.0/libexec/lib/python3.12/site-packages/urllib3/connectionpool.py", line 462, in _make_request
+    httplib_response = conn.getresponse()
+                       ^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.12/3.12.10/Frameworks/Python.framework/Versions/3.12/lib/python3.12/http/client.py", line 1430, in getresponse
+    response.begin()
+  File "/opt/homebrew/Cellar/python@3.12/3.12.10/Frameworks/Python.framework/Versions/3.12/lib/python3.12/http/client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.12/3.12.10/Frameworks/Python.framework/Versions/3.12/lib/python3.12/http/client.py", line 300, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+urllib3.exceptions.ProtocolError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/homebrew/Cellar/azure-cli/2.71.0/libexec/lib/python3.12/site-packages/knack/cli.py", line 233, in invoke
+    cmd_result = self.invocation.execute(args)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/azure-cli/2.71.0/libexec/lib/python3.12/site-packages/azure/cli/core/commands/__init__.py", line 666, in execute
+    raise ex
+  File "/opt/homebrew/Cellar/azure-cli/2.71.0/libexec/lib/python3.12/site-packages/azure/cli/core/commands/__init__.py", line 734, in _run_jobs_serially
+    results.append(self._run_job(expanded_arg, cmd_copy))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/azure-cli/2.71.0/libexec/lib/python3.12/site-packages/azure/cli/core/commands/__init__.py", line 714, in _run_job
+    result = LongRunningOperation(cmd_copy.cli_ctx, 'Starting {}'.format(cmd_copy.name))(result)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/azure-cli/2.71.0/libexec/lib/python3.12/site-packages/azure/cli/core/commands/__init__.py", line 1063, in __call__
+    result = poller.result()
+             ^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/azure-cli/2.71.0/libexec/lib/python3.12/site-packages/azure/core/polling/_poller.py", line 251, in result
+    self.wait(timeout)
+  File "/opt/homebrew/Cellar/azure-cli/2.71.0/libexec/lib/python3.12/site-packages/azure/core/tracing/decorator.py", line 94, in wrapper_use_tracer
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/azure-cli/2.71.0/libexec/lib/python3.12/site-packages/azure/core/polling/_poller.py", line 270, in wait
+    raise self._exception  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/azure-cli/2.71.0/libexec/lib/python3.12/site-packages/azure/core/polling/_poller.py", line 185, in _start
+    self._polling_method.run()
+  File "/opt/homebrew/Cellar/azure-cli/2.71.0/libexec/lib/python3.12/site-packages/azure/core/polling/base_polling.py", line 757, in run
+    self._poll()
+  File "/opt/homebrew/Cellar/azure-cli/2.71.0/libexec/lib/python3.12/site-packages/azure/core/polling/base_polling.py", line 786, in _poll
+    self.update_status()
+  File "/opt/homebrew/Cellar/azure-cli/2.71.0/libexec/lib/python3.12/site-packages/azure/core/polling/base_polling.py", line 808, in update_status
+    self._pipeline_response = self.request_status(self._operation.get_polling_url())
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/azure-cli/2.71.0/libexec/lib/python3.12/site-packages/azure/core/polling/base_polling.py", line 833, in request_status
+    self._client.send_request(rest_request, _return_pipeline_response=True, **self._operation_config),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/azure-cli/2.71.0/libexec/lib/python3.12/site-packages/azure/core/_pipeline_client.py", line 198, in send_request
+    pipeline_response = self._pipeline.run(request, stream=stream, **kwargs)  # pylint: disable=protected-access
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/azure-cli/2.71.0/libexec/lib/python3.12/site-packages/azure/core/pipeline/_base.py", line 229, in run
+    return first_node.send(pipeline_request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/azure-cli/2.71.0/libexec/lib/python3.12/site-packages/azure/core/pipeline/_base.py", line 86, in send
+    response = self.next.send(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/azure-cli/2.71.0/libexec/lib/python3.12/site-packages/azure/core/pipeline/_base.py", line 86, in send
+    response = self.next.send(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/azure-cli/2.71.0/libexec/lib/python3.12/site-packages/azure/core/pipeline/_base.py", line 86, in send
+    response = self.next.send(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  [Previous line repeated 2 more times]
+  File "/opt/homebrew/Cellar/azure-cli/2.71.0/libexec/lib/python3.12/site-packages/azure/mgmt/core/policies/_base.py", line 47, in send
+    response = self.next.send(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/azure-cli/2.71.0/libexec/lib/python3.12/site-packages/azure/core/pipeline/policies/_redirect.py", line 197, in send
+    response = self.next.send(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/azure-cli/2.71.0/libexec/lib/python3.12/site-packages/azure/core/pipeline/policies/_retry.py", line 532, in send
+    response = self.next.send(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/azure-cli/2.71.0/libexec/lib/python3.12/site-packages/azure/core/pipeline/policies/_authentication.py", line 145, in send
+    self.on_request(request)
+  File "/opt/homebrew/Cellar/azure-cli/2.71.0/libexec/lib/python3.12/site-packages/azure/core/pipeline/policies/_authentication.py", line 120, in on_request
+    self._request_token(*self._scopes)
+  File "/opt/homebrew/Cellar/azure-cli/2.71.0/libexec/lib/python3.12/site-packages/azure/core/pipeline/policies/_authentication.py", line 94, in _request_token
+    self._token = cast(SupportsTokenInfo, self._credential).get_token_info(*scopes, options=options)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/azure-cli/2.71.0/libexec/lib/python3.12/site-packages/azure/cli/core/auth/credential_adaptor.py", line 43, in get_token_info
+    msal_result = self._credential.acquire_token(list(scopes), **msal_kwargs)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/azure-cli/2.71.0/libexec/lib/python3.12/site-packages/azure/cli/core/auth/msal_credentials.py", line 56, in acquire_token
+    result = self._msal_app.acquire_token_silent_with_error(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/azure-cli/2.71.0/libexec/lib/python3.12/site-packages/msal/application.py", line 1416, in acquire_token_silent_with_error
+    return _clean_up(self._acquire_token_silent_with_error(
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/azure-cli/2.71.0/libexec/lib/python3.12/site-packages/msal/application.py", line 1439, in _acquire_token_silent_with_error
+    result = self._acquire_token_silent_from_cache_and_possibly_refresh_it(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/azure-cli/2.71.0/libexec/lib/python3.12/site-packages/msal/application.py", line 1574, in _acquire_token_silent_from_cache_and_possibly_refresh_it
+    result = self._acquire_token_silent_by_finding_rt_belongs_to_me_or_my_family(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/azure-cli/2.71.0/libexec/lib/python3.12/site-packages/msal/application.py", line 1642, in _acquire_token_silent_by_finding_rt_belongs_to_me_or_my_family
+    return self._acquire_token_silent_by_finding_specific_refresh_token(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/azure-cli/2.71.0/libexec/lib/python3.12/site-packages/msal/application.py", line 1683, in _acquire_token_silent_by_finding_specific_refresh_token
+    response = client.obtain_token_by_refresh_token(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/azure-cli/2.71.0/libexec/lib/python3.12/site-packages/msal/oauth2cli/oauth2.py", line 835, in obtain_token_by_refresh_token
+    resp = super(Client, self).obtain_token_by_refresh_token(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/azure-cli/2.71.0/libexec/lib/python3.12/site-packages/msal/oauth2cli/oauth2.py", line 265, in obtain_token_by_refresh_token
+    return self._obtain_token("refresh_token", data=data, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/azure-cli/2.71.0/libexec/lib/python3.12/site-packages/msal/oauth2cli/oidc.py", line 170, in _obtain_token
+    ret = super(Client, self)._obtain_token(grant_type, *args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/azure-cli/2.71.0/libexec/lib/python3.12/site-packages/msal/oauth2cli/oauth2.py", line 776, in _obtain_token
+    resp = super(Client, self)._obtain_token(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/azure-cli/2.71.0/libexec/lib/python3.12/site-packages/msal/oauth2cli/oauth2.py", line 237, in _obtain_token
+    resp = (post or self._http_client.post)(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/azure-cli/2.71.0/libexec/lib/python3.12/site-packages/msal/individual_cache.py", line 269, in wrapper
+    value = function(*args, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/azure-cli/2.71.0/libexec/lib/python3.12/site-packages/msal/individual_cache.py", line 269, in wrapper
+    value = function(*args, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/azure-cli/2.71.0/libexec/lib/python3.12/site-packages/requests/sessions.py", line 637, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/azure-cli/2.71.0/libexec/lib/python3.12/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/azure-cli/2.71.0/libexec/lib/python3.12/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/azure-cli/2.71.0/libexec/lib/python3.12/site-packages/requests/adapters.py", line 682, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+To check existing issues, please visit: https://github.com/Azure/azure-cli/issues
+ERROR: The command failed with an unexpected error. Here is the traceback:
+ERROR: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+Traceback (most recent call last):
+  File "/opt/homebrew/Cellar/azure-cli/2.71.0/libexec/lib/python3.12/site-packages/urllib3/connectionpool.py", line 715, in urlopen
+    httplib_response = self._make_request(
+                       ^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/azure-cli/2.71.0/libexec/lib/python3.12/site-packages/urllib3/connectionpool.py", line 467, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/opt/homebrew/Cellar/azure-cli/2.71.0/libexec/lib/python3.12/site-packages/urllib3/connectionpool.py", line 462, in _make_request
+    httplib_response = conn.getresponse()
+                       ^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.12/3.12.10/Frameworks/Python.framework/Versions/3.12/lib/python3.12/http/client.py", line 1430, in getresponse
+    response.begin()
+  File "/opt/homebrew/Cellar/python@3.12/3.12.10/Frameworks/Python.framework/Versions/3.12/lib/python3.12/http/client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.12/3.12.10/Frameworks/Python.framework/Versions/3.12/lib/python3.12/http/client.py", line 300, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+http.client.RemoteDisconnected: Remote end closed connection without response
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/homebrew/Cellar/azure-cli/2.71.0/libexec/lib/python3.12/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/azure-cli/2.71.0/libexec/lib/python3.12/site-packages/urllib3/connectionpool.py", line 801, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/azure-cli/2.71.0/libexec/lib/python3.12/site-packages/urllib3/util/retry.py", line 552, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/azure-cli/2.71.0/libexec/lib/python3.12/site-packages/urllib3/packages/six.py", line 769, in reraise
+    raise value.with_traceback(tb)
+  File "/opt/homebrew/Cellar/azure-cli/2.71.0/libexec/lib/python3.12/site-packages/urllib3/connectionpool.py", line 715, in urlopen
+    httplib_response = self._make_request(
+                       ^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/azure-cli/2.71.0/libexec/lib/python3.12/site-packages/urllib3/connectionpool.py", line 467, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/opt/homebrew/Cellar/azure-cli/2.71.0/libexec/lib/python3.12/site-packages/urllib3/connectionpool.py", line 462, in _make_request
+    httplib_response = conn.getresponse()
+                       ^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.12/3.12.10/Frameworks/Python.framework/Versions/3.12/lib/python3.12/http/client.py", line 1430, in getresponse
+    response.begin()
+  File "/opt/homebrew/Cellar/python@3.12/3.12.10/Frameworks/Python.framework/Versions/3.12/lib/python3.12/http/client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.12/3.12.10/Frameworks/Python.framework/Versions/3.12/lib/python3.12/http/client.py", line 300, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+urllib3.exceptions.ProtocolError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/homebrew/Cellar/azure-cli/2.71.0/libexec/lib/python3.12/site-packages/knack/cli.py", line 233, in invoke
+    cmd_result = self.invocation.execute(args)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/azure-cli/2.71.0/libexec/lib/python3.12/site-packages/azure/cli/core/commands/__init__.py", line 666, in execute
+    raise ex
+  File "/opt/homebrew/Cellar/azure-cli/2.71.0/libexec/lib/python3.12/site-packages/azure/cli/core/commands/__init__.py", line 734, in _run_jobs_serially
+    results.append(self._run_job(expanded_arg, cmd_copy))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/azure-cli/2.71.0/libexec/lib/python3.12/site-packages/azure/cli/core/commands/__init__.py", line 714, in _run_job
+    result = LongRunningOperation(cmd_copy.cli_ctx, 'Starting {}'.format(cmd_copy.name))(result)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/azure-cli/2.71.0/libexec/lib/python3.12/site-packages/azure/cli/core/commands/__init__.py", line 1063, in __call__
+    result = poller.result()
+             ^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/azure-cli/2.71.0/libexec/lib/python3.12/site-packages/azure/core/polling/_poller.py", line 251, in result
+    self.wait(timeout)
+  File "/opt/homebrew/Cellar/azure-cli/2.71.0/libexec/lib/python3.12/site-packages/azure/core/tracing/decorator.py", line 94, in wrapper_use_tracer
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/azure-cli/2.71.0/libexec/lib/python3.12/site-packages/azure/core/polling/_poller.py", line 270, in wait
+    raise self._exception  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/azure-cli/2.71.0/libexec/lib/python3.12/site-packages/azure/core/polling/_poller.py", line 185, in _start
+    self._polling_method.run()
+  File "/opt/homebrew/Cellar/azure-cli/2.71.0/libexec/lib/python3.12/site-packages/azure/core/polling/base_polling.py", line 757, in run
+    self._poll()
+  File "/opt/homebrew/Cellar/azure-cli/2.71.0/libexec/lib/python3.12/site-packages/azure/core/polling/base_polling.py", line 786, in _poll
+    self.update_status()
+  File "/opt/homebrew/Cellar/azure-cli/2.71.0/libexec/lib/python3.12/site-packages/azure/core/polling/base_polling.py", line 808, in update_status
+    self._pipeline_response = self.request_status(self._operation.get_polling_url())
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/azure-cli/2.71.0/libexec/lib/python3.12/site-packages/azure/core/polling/base_polling.py", line 833, in request_status
+    self._client.send_request(rest_request, _return_pipeline_response=True, **self._operation_config),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/azure-cli/2.71.0/libexec/lib/python3.12/site-packages/azure/core/_pipeline_client.py", line 198, in send_request
+    pipeline_response = self._pipeline.run(request, stream=stream, **kwargs)  # pylint: disable=protected-access
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/azure-cli/2.71.0/libexec/lib/python3.12/site-packages/azure/core/pipeline/_base.py", line 229, in run
+    return first_node.send(pipeline_request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/azure-cli/2.71.0/libexec/lib/python3.12/site-packages/azure/core/pipeline/_base.py", line 86, in send
+    response = self.next.send(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/azure-cli/2.71.0/libexec/lib/python3.12/site-packages/azure/core/pipeline/_base.py", line 86, in send
+    response = self.next.send(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/azure-cli/2.71.0/libexec/lib/python3.12/site-packages/azure/core/pipeline/_base.py", line 86, in send
+    response = self.next.send(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  [Previous line repeated 2 more times]
+  File "/opt/homebrew/Cellar/azure-cli/2.71.0/libexec/lib/python3.12/site-packages/azure/mgmt/core/policies/_base.py", line 47, in send
+    response = self.next.send(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/azure-cli/2.71.0/libexec/lib/python3.12/site-packages/azure/core/pipeline/policies/_redirect.py", line 197, in send
+    response = self.next.send(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/azure-cli/2.71.0/libexec/lib/python3.12/site-packages/azure/core/pipeline/policies/_retry.py", line 532, in send
+    response = self.next.send(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/azure-cli/2.71.0/libexec/lib/python3.12/site-packages/azure/core/pipeline/policies/_authentication.py", line 145, in send
+    self.on_request(request)
+  File "/opt/homebrew/Cellar/azure-cli/2.71.0/libexec/lib/python3.12/site-packages/azure/core/pipeline/policies/_authentication.py", line 120, in on_request
+    self._request_token(*self._scopes)
+  File "/opt/homebrew/Cellar/azure-cli/2.71.0/libexec/lib/python3.12/site-packages/azure/core/pipeline/policies/_authentication.py", line 94, in _request_token
+    self._token = cast(SupportsTokenInfo, self._credential).get_token_info(*scopes, options=options)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/azure-cli/2.71.0/libexec/lib/python3.12/site-packages/azure/cli/core/auth/credential_adaptor.py", line 43, in get_token_info
+    msal_result = self._credential.acquire_token(list(scopes), **msal_kwargs)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/azure-cli/2.71.0/libexec/lib/python3.12/site-packages/azure/cli/core/auth/msal_credentials.py", line 56, in acquire_token
+    result = self._msal_app.acquire_token_silent_with_error(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/azure-cli/2.71.0/libexec/lib/python3.12/site-packages/msal/application.py", line 1416, in acquire_token_silent_with_error
+    return _clean_up(self._acquire_token_silent_with_error(
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/azure-cli/2.71.0/libexec/lib/python3.12/site-packages/msal/application.py", line 1439, in _acquire_token_silent_with_error
+    result = self._acquire_token_silent_from_cache_and_possibly_refresh_it(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/azure-cli/2.71.0/libexec/lib/python3.12/site-packages/msal/application.py", line 1574, in _acquire_token_silent_from_cache_and_possibly_refresh_it
+    result = self._acquire_token_silent_by_finding_rt_belongs_to_me_or_my_family(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/azure-cli/2.71.0/libexec/lib/python3.12/site-packages/msal/application.py", line 1642, in _acquire_token_silent_by_finding_rt_belongs_to_me_or_my_family
+    return self._acquire_token_silent_by_finding_specific_refresh_token(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/azure-cli/2.71.0/libexec/lib/python3.12/site-packages/msal/application.py", line 1683, in _acquire_token_silent_by_finding_specific_refresh_token
+    response = client.obtain_token_by_refresh_token(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/azure-cli/2.71.0/libexec/lib/python3.12/site-packages/msal/oauth2cli/oauth2.py", line 835, in obtain_token_by_refresh_token
+    resp = super(Client, self).obtain_token_by_refresh_token(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/azure-cli/2.71.0/libexec/lib/python3.12/site-packages/msal/oauth2cli/oauth2.py", line 265, in obtain_token_by_refresh_token
+    return self._obtain_token("refresh_token", data=data, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/azure-cli/2.71.0/libexec/lib/python3.12/site-packages/msal/oauth2cli/oidc.py", line 170, in _obtain_token
+    ret = super(Client, self)._obtain_token(grant_type, *args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/azure-cli/2.71.0/libexec/lib/python3.12/site-packages/msal/oauth2cli/oauth2.py", line 776, in _obtain_token
+    resp = super(Client, self)._obtain_token(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/azure-cli/2.71.0/libexec/lib/python3.12/site-packages/msal/oauth2cli/oauth2.py", line 237, in _obtain_token
+    resp = (post or self._http_client.post)(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/azure-cli/2.71.0/libexec/lib/python3.12/site-packages/msal/individual_cache.py", line 269, in wrapper
+    value = function(*args, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/azure-cli/2.71.0/libexec/lib/python3.12/site-packages/msal/individual_cache.py", line 269, in wrapper
+    value = function(*args, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/azure-cli/2.71.0/libexec/lib/python3.12/site-packages/requests/sessions.py", line 637, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/azure-cli/2.71.0/libexec/lib/python3.12/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/azure-cli/2.71.0/libexec/lib/python3.12/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/azure-cli/2.71.0/libexec/lib/python3.12/site-packages/requests/adapters.py", line 682, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+To check existing issues, please visit: https://github.com/Azure/azure-cli/issues

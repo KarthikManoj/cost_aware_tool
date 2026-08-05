@@ -1,0 +1,8 @@
+Region,VM_Size,vCPU,RAM_GB,Nodes,Spark_Version,Java_Version,Dataset,Dataset_Size_MB,Workload,Run_Number,Timestamp,Runtime_Minutes,CPU_Avg_Pct,Cost_USD,Exit_Status
+southeastasia,Standard_D2s_v3,2,8,2,3.5.1,17.0.19,10MB.csv,10,cpu,1,2026-07-25T23:28:54.580076+00:00,0.4645,61.47,0.0019,SUCCESS
+southeastasia,Standard_D2s_v3,2,8,2,3.5.1,17.0.19,10MB.csv,10,cpu,2,2026-07-25T23:29:24.851949+00:00,0.4444,56.06,0.0019,SUCCESS
+southeastasia,Standard_D2s_v3,2,8,2,3.5.1,17.0.19,10MB.csv,10,memory,1,2026-07-25T23:30:07.145465+00:00,0.626,56.42,0.0026,SUCCESS
+southeastasia,Standard_D2s_v3,2,8,2,3.5.1,17.0.19,10MB.csv,10,memory,2,2026-07-25T23:30:49.427610+00:00,0.6348,53.56,0.0026,SUCCESS
+southeastasia,Standard_D2s_v3,2,8,2,3.5.1,17.0.19,10MB.csv,10,io,1,2026-07-25T23:31:31.867013+00:00,0.6173,92.94,0.0026,SUCCESS
+southeastasia,Standard_D2s_v3,2,8,2,3.5.1,17.0.19,10MB.csv,10,io,2,2026-07-25T23:32:08.164431+00:00,0.5942,96.37,0.0025,SUCCESS
+southeastasia,Standard_D2s_v3,2,8,2,3.5.1,17.0.19,100MB.csv,100,cpu,1,2026-07-25T23:32:50.792582+00:00,0.552,44.77,0.0023,SUCCESS

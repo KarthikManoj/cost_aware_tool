@@ -1,0 +1,44 @@
+Starting 2048MB cpu-heavy on m6i.xlarge x 2 in ap-southeast-1
+{
+  "JobFlowId": "j-7XYDOUIYWWLZ",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-7XYDOUIYWWLZ",
+  "ResponseMetadata": {
+    "RequestId": "23d56529-4859-4d22-9490-5556d18260d9",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "23d56529-4859-4d22-9490-5556d18260d9",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "121",
+      "date": "Fri, 24 Jul 2026 06:03:52 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-7XYDOUIYWWLZ step s-04040001MR445QT1RGOR is PENDING
+j-7XYDOUIYWWLZ step s-04040001MR445QT1RGOR is CANCELLED
+j-7XYDOUIYWWLZ cluster is TERMINATED_WITH_ERRORS
+STEP FAILED: j-7XYDOUIYWWLZ s-04040001MR445QT1RGOR ended as CANCELLED: {'State': 'CANCELLED', 'StateChangeReason': {'Message': 'Cluster terminated'}, 'Timeline': {'CreationDateTime': datetime.datetime(2026, 7, 24, 11, 33, 52, 723000, tzinfo=tzlocal())}} | cluster_reason={'Code': 'VALIDATION_ERROR', 'Message': 'The subnet configuration was invalid: The subnet subnet-0790d25ecc4deae64 does not exist.'} | error_details=[]
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv
+Starting 2048MB io-heavy on m6i.xlarge x 2 in ap-southeast-1
+{
+  "JobFlowId": "j-3NJQN5AT8OWC5",
+  "ClusterArn": "arn:aws:elasticmapreduce:ap-southeast-1:435097195936:cluster/j-3NJQN5AT8OWC5",
+  "ResponseMetadata": {
+    "RequestId": "c363437c-f345-4ea4-b18d-9f5bbf02aa97",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "c363437c-f345-4ea4-b18d-9f5bbf02aa97",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "123",
+      "date": "Fri, 24 Jul 2026 06:04:25 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
+j-3NJQN5AT8OWC5 step s-0123365A2PDYPNN9BXV is PENDING
+j-3NJQN5AT8OWC5 step s-0123365A2PDYPNN9BXV is CANCELLED
+j-3NJQN5AT8OWC5 cluster is TERMINATED_WITH_ERRORS
+STEP FAILED: j-3NJQN5AT8OWC5 s-0123365A2PDYPNN9BXV ended as CANCELLED: {'State': 'CANCELLED', 'StateChangeReason': {'Message': 'Cluster terminated'}, 'Timeline': {'CreationDateTime': datetime.datetime(2026, 7, 24, 11, 34, 24, 987000, tzinfo=tzlocal())}} | cluster_reason={'Code': 'VALIDATION_ERROR', 'Message': 'The subnet configuration was invalid: The subnet subnet-0790d25ecc4deae64 does not exist.'} | error_details=[]
+Batch finished. Success CSV: data/performance/performance_dataset.csv
+Failed experiments CSV: data/performance/failed_emr_experiments.csv

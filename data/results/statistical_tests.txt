@@ -1,0 +1,32 @@
+Dataset: /sessions/peaceful-gracious-johnson/mnt/cost-aware-infrastructure-optimization/data/models/cloud_carbon_model_dataset.csv  (1811 rows)
+Running grouped cross-validation and retaining per-fold errors...
+
+Per-fold summary:
+            model       model_label          target  folds  mae_mean  mae_std  rmse_mean  rmse_std  r2_mean   r2_std
+    decision_tree     Decision Tree        cost_usd      5  0.002950 0.000215   0.005531  0.000504 0.807837 0.059578
+    decision_tree     Decision Tree runtime_minutes      5  0.334407 0.028007   0.622243  0.085592 0.834017 0.078908
+gradient_boosting Gradient Boosting        cost_usd      5  0.002507 0.000371   0.004579  0.001138 0.873969 0.038844
+gradient_boosting Gradient Boosting runtime_minutes      5  0.284848 0.023472   0.526793  0.105628 0.884725 0.042377
+linear_regression Linear Regression        cost_usd      5  0.004313 0.000082   0.006818  0.000893 0.720050 0.022718
+linear_regression Linear Regression runtime_minutes      5  0.574468 0.031549   0.888803  0.119146 0.683310 0.030746
+    random_forest     Random Forest        cost_usd      5  0.002391 0.000376   0.004266  0.001043 0.890361 0.033623
+    random_forest     Random Forest runtime_minutes      5  0.269578 0.027345   0.509103  0.101266 0.889125 0.055776
+
+Paired comparisons on mae:
+         target           model_a           model_b  mean_difference  ci95_lower  ci95_upper  paired_t_p_value  significant_at_0_05
+runtime_minutes     decision_tree gradient_boosting         0.049559    0.012834    0.086285            0.0200                 True
+runtime_minutes     decision_tree linear_regression        -0.240060   -0.310826   -0.169294            0.0007                 True
+runtime_minutes     decision_tree     random_forest         0.064830    0.041290    0.088369            0.0016                 True
+runtime_minutes gradient_boosting linear_regression        -0.289620   -0.335562   -0.243678            0.0001                 True
+runtime_minutes gradient_boosting     random_forest         0.015270   -0.011271    0.041812            0.1854                False
+runtime_minutes linear_regression     random_forest         0.304890    0.244531    0.365248            0.0001                 True
+       cost_usd     decision_tree gradient_boosting         0.000443   -0.000108    0.000995            0.0895                False
+       cost_usd     decision_tree linear_regression        -0.001363   -0.001621   -0.001104            0.0001                 True
+       cost_usd     decision_tree     random_forest         0.000560    0.000070    0.001049            0.0337                 True
+       cost_usd gradient_boosting linear_regression        -0.001806   -0.002189   -0.001423            0.0002                 True
+       cost_usd gradient_boosting     random_forest         0.000117   -0.000040    0.000274            0.1074                False
+       cost_usd linear_regression     random_forest         0.001923    0.001532    0.002313            0.0002                 True
+
+Benchmark repeatability: median CV 4.15%, max 84.45% across 439 configurations.
+
+Wrote results to /sessions/peaceful-gracious-johnson/mnt/cost-aware-infrastructure-optimization/data/results
