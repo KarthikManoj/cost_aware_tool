@@ -44,6 +44,11 @@ MODEL_REGISTRY = {
             "n_estimators": 250,
             "random_state": 42,
             "min_samples_leaf": 1,
+            # Parallel tree fitting. Does not affect predictions -- the forest
+            # is fully determined by random_state -- but the leave-one-
+            # scenario-out evaluation refits the model 21 times per model
+            # type, which is impractically slow single-threaded.
+            "n_jobs": -1,
         },
     },
     "gradient_boosting": {
@@ -375,7 +380,10 @@ def cross_validate_models(
             target: {
                 metric_name: {
                     "mean": round(float(np.mean(values)), 4),
-                    "std": round(float(np.std(values)), 4),
+                    # ddof=1 to match ml/statistical_tests.py, which uses the
+                    # pandas default. Without this the two files report
+                    # different standard deviations for identical folds.
+                    "std": round(float(np.std(values, ddof=1)), 4),
                 }
                 for metric_name, values in metrics.items()
             }

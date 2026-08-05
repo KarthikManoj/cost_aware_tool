@@ -18,6 +18,15 @@ if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
 from ml.preprocessing import FEATURE_COLUMNS
+from ml.carbon_analysis import (
+    DEFAULT_POWER_W,
+    DEFAULT_PUE,
+    PUE,
+    WATTS_PER_VCPU,
+    infer_vcpus,
+    load_power_table,
+    load_vcpu_lookup,
+)
 
 
 OptimizationGoal = Literal["cost", "runtime", "carbon", "balanced"]
@@ -25,12 +34,21 @@ OptimizationGoal = Literal["cost", "runtime", "carbon", "balanced"]
 DEFAULT_MODEL_PATH = ROOT / "data/models/best_cloud_model.joblib"
 DEFAULT_DATASET_PATH = ROOT / "data/models/cloud_carbon_model_dataset.csv"
 
+# Columns that identify a distinct deployable configuration. Carbon features
+# are deliberately excluded: they vary per row when carbon is matched
+# per-run, so including them here would emit one "candidate" per distinct
+# daily carbon reading and fill the ranked output with duplicates of the same
+# machine. They are joined back on at region level in
+# `_build_candidate_frame`.
 CANDIDATE_COLUMNS = [
     "cloud",
     "region",
     "electricity_zone",
     "machine_type",
     "nodes",
+]
+
+CARBON_COLUMNS = [
     "carbon_intensity_mean",
     "renewable_percentage_mean",
 ]
@@ -43,6 +61,7 @@ OUTPUT_COLUMNS = [
     "Nodes",
     "Predicted Runtime (minutes)",
     "Predicted Cost (USD)",
+    "Predicted Emissions (gCO2eq)",
     "Carbon Intensity",
     "Renewable Percentage",
     "Optimization Score",
@@ -78,6 +97,26 @@ class RecommendationEngine:
         self.model: Pipeline = joblib.load(self.model_path)
         self.dataset = pd.read_csv(self.dataset_path)
         self._validate_dataset()
+
+        # Power draw is needed to turn a predicted runtime into predicted
+        # emissions. When config/instance_power_draw.csv is absent the
+        # per-vCPU fallback is used, exactly as in ml/carbon_analysis.py.
+        power_table = load_power_table()
+        self.power_lookup: dict[str, float] = (
+            dict(zip(power_table["machine_type"], power_table["power_w"].astype(float)))
+            if power_table is not None
+            else {}
+        )
+        self.vcpu_lookup = load_vcpu_lookup()
+
+    def _power_w(self, machine_type: str) -> float:
+        """Per-node power draw, preferring the published table."""
+        if machine_type in self.power_lookup:
+            return float(self.power_lookup[machine_type])
+        vcpus = infer_vcpus(machine_type, self.vcpu_lookup)
+        if vcpus:
+            return float(vcpus) * WATTS_PER_VCPU
+        return DEFAULT_POWER_W
 
     def recommend(
         self,
@@ -136,6 +175,7 @@ class RecommendationEngine:
         numeric_columns = [
             "Predicted Runtime (minutes)",
             "Predicted Cost (USD)",
+            "Predicted Emissions (gCO2eq)",
             "Carbon Intensity",
             "Renewable Percentage",
             "Optimization Score",
@@ -187,6 +227,23 @@ class RecommendationEngine:
         scored = candidates.copy()
         scored["predicted_runtime_minutes"] = np.clip(predictions[:, 0], 0.01, None)
         scored["predicted_cost_usd"] = np.clip(predictions[:, 1], 0.0, None)
+
+        # Predicted emissions, not raw grid intensity. Ranking on intensity
+        # alone ignores how long the job runs and how many nodes it runs on,
+        # so it would always pick the lowest-intensity region even when a
+        # slower, larger cluster there emits more in absolute terms. Same
+        # formula as ml/carbon_analysis.py so the two agree.
+        scored["power_w"] = scored["machine_type"].map(self._power_w)
+        scored["pue"] = (
+            scored["cloud"].astype(str).str.strip().str.lower().map(PUE).fillna(DEFAULT_PUE)
+        )
+        scored["predicted_emissions_gco2eq"] = (
+            (scored["power_w"] * scored["nodes"] / 1000.0)
+            * (scored["predicted_runtime_minutes"] / 60.0)
+            * scored["carbon_intensity_mean"]
+            * scored["pue"]
+        )
+
         scored["sla_valid"] = scored["predicted_runtime_minutes"] <= sla_runtime_minutes
 
         score_source = scored.loc[scored["sla_valid"]].copy()
@@ -220,6 +277,12 @@ class RecommendationEngine:
             )
 
         candidates = workload_rows[CANDIDATE_COLUMNS].drop_duplicates().copy()
+        # Carbon features are a property of the region, not of the machine, so
+        # they are averaged per region and joined back after deduplication.
+        carbon = self.dataset.groupby(["cloud", "region"], as_index=False)[
+            CARBON_COLUMNS
+        ].mean()
+        candidates = candidates.merge(carbon, on=["cloud", "region"], how="left")
         candidates["dataset_size_mb"] = dataset_size_mb
         candidates["workload_type"] = workload_type
         return candidates[FEATURE_COLUMNS].reset_index(drop=True)
@@ -231,7 +294,7 @@ class RecommendationEngine:
     ) -> pd.Series:
         runtime_score = self._min_max(candidates["predicted_runtime_minutes"])
         cost_score = self._min_max(candidates["predicted_cost_usd"])
-        carbon_score = self._min_max(candidates["carbon_intensity_mean"])
+        carbon_score = self._min_max(candidates["predicted_emissions_gco2eq"])
         renewable_score = self._min_max(candidates["renewable_percentage_mean"])
         renewable_penalty = 1.0 - renewable_score
 
@@ -272,6 +335,7 @@ class RecommendationEngine:
             ],
             "carbon": [
                 "optimization_score",
+                "predicted_emissions_gco2eq",
                 "carbon_intensity_mean",
                 "renewable_percentage_mean",
                 "predicted_cost_usd",
@@ -304,6 +368,7 @@ class RecommendationEngine:
                 "nodes": "Nodes",
                 "predicted_runtime_minutes": "Predicted Runtime (minutes)",
                 "predicted_cost_usd": "Predicted Cost (USD)",
+                "predicted_emissions_gco2eq": "Predicted Emissions (gCO2eq)",
                 "carbon_intensity_mean": "Carbon Intensity",
                 "renewable_percentage_mean": "Renewable Percentage",
                 "optimization_score": "Optimization Score",
@@ -342,7 +407,10 @@ class RecommendationEngine:
         elif goal == "runtime":
             reason = "ranked by fastest predicted runtime"
         elif goal == "carbon":
-            reason = "ranked by lowest carbon intensity and higher renewable percentage"
+            reason = (
+                "ranked by lowest predicted emissions for this job "
+                "and higher renewable percentage"
+            )
         else:
             reason = (
                 "ranked by best trade-off between runtime, cost, carbon, "

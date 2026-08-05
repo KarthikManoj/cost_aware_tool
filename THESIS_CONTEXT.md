@@ -1,5 +1,15 @@
 # THESIS CONTEXT — read this first in every new chat
 
+> **Report location:** the assembled dissertation (`final report2.docx`) lives at
+> `/Users/manojanbalagan/Documents/Projects/IIT/Research`. The code and results live in this repo
+> (`~/Documents/research/research/cost-aware-infrastructure-optimization`).
+>
+> **NOTE — structure superseded.** The 13-chapter skeleton below was replaced by the supervisor's
+> 9-chapter structure now in `final report2.docx`: 1 Introduction · 2 Literature Review ·
+> 3 Software Requirements Analysis (SRS) · 4 Methodology and Project Management · 5 Design ·
+> 6 Implementation · 7 Testing · 8 Evaluation (incl. 8.10 LEPSI) · 9 Conclusion and Future Work.
+> Workload fingerprinting does **not** appear anywhere in the current report and is future work only.
+
 > **New chat? Do this:** Read this file, then `DISSERTATION_SKELETON.md`, then any already-written
 > chapter files in `thesis/`. Then draft the requested chapter. Update the Status table below when done.
 

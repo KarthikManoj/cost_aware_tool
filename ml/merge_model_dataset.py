@@ -197,12 +197,26 @@ def attach_carbon_features(
     performance: pd.DataFrame,
     daily: pd.DataFrame,
     regional_means: pd.DataFrame,
+    basis: str = "regional_mean",
 ) -> pd.DataFrame:
     """Attach carbon/renewable features to each performance row.
 
-    Rows with a real run_date are matched to that region's nearest daily
-    carbon reading via `pd.merge_asof`. Rows without one fall back to the
-    region's all-time mean.
+    Two bases are available.
+
+    "regional_mean" (default) gives every row that region's mean over the
+    whole carbon collection window. This is the only basis under which AWS
+    and Azure are comparable: the AWS EMR benchmark never recorded a run
+    timestamp, so per-run matching would give AWS an all-time regional mean
+    while Azure got a single day's reading. Because AWS ap-south-1 and Azure
+    Central India sit on the *same* grid zone (IN-WE), that asymmetry alone
+    manufactures a difference in carbon intensity between the two providers
+    and makes "which region is greenest" an artefact of the matching rule
+    rather than a finding.
+
+    "per_run" matches rows that have a real run_date to that region's nearest
+    daily carbon reading via `pd.merge_asof`, falling back to the regional
+    mean for rows without one. Retained for future work: it becomes the
+    correct choice once every run in the dataset carries a timestamp.
     """
     performance = performance.reset_index(drop=True)
     # Must match `daily["timestamp"]`'s resolution exactly (see the comment
@@ -211,7 +225,12 @@ def attach_carbon_features(
         pd.to_datetime(performance["run_date"], utc=True, errors="coerce").astype("datetime64[ns, UTC]")
     )
 
-    has_date = performance["run_timestamp"].notna()
+    if basis == "regional_mean":
+        # Route every row down the regional-mean path regardless of whether
+        # it has a timestamp, so both clouds share one carbon basis.
+        has_date = pd.Series(False, index=performance.index)
+    else:
+        has_date = performance["run_timestamp"].notna()
     dated = performance.loc[has_date].sort_values("run_timestamp").copy()
     undated = performance.loc[~has_date].copy()
 
@@ -251,7 +270,7 @@ def attach_carbon_features(
     return combined.drop(columns=["run_timestamp"], errors="ignore")
 
 
-def build_dataset(output_path: Path) -> pd.DataFrame:
+def build_dataset(output_path: Path, basis: str = "regional_mean") -> pd.DataFrame:
     aws = load_aws_performance(AWS_PERFORMANCE)
     azure = load_azure_performance(AZURE_PERFORMANCE)
     performance = pd.concat([aws, azure], ignore_index=True)
@@ -260,7 +279,7 @@ def build_dataset(output_path: Path) -> pd.DataFrame:
 
     regional_means = load_carbon_features(CARBON_INTENSITY, RENEWABLE_INTENSITY)
     daily = load_daily_carbon(CARBON_INTENSITY, RENEWABLE_INTENSITY)
-    merged = attach_carbon_features(performance, daily, regional_means)
+    merged = attach_carbon_features(performance, daily, regional_means, basis)
     merged = merged.drop(columns=["cloud_key", "region_key"], errors="ignore")
 
     merged["estimated_emissions_gco2eq"] = (
@@ -276,9 +295,20 @@ def build_dataset(output_path: Path) -> pd.DataFrame:
 def main() -> None:
     parser = argparse.ArgumentParser(description="Merge performance, carbon, and renewable datasets.")
     parser.add_argument("--output", default=str(OUTPUT))
+    parser.add_argument(
+        "--carbon-basis",
+        choices=["regional_mean", "per_run"],
+        default="regional_mean",
+        help=(
+            "How carbon features are attached. 'regional_mean' (default) puts "
+            "AWS and Azure on the same basis; 'per_run' matches timestamped "
+            "rows to the nearest daily reading and is only valid once every "
+            "run has a timestamp."
+        ),
+    )
     args = parser.parse_args()
 
-    merged = build_dataset(Path(args.output))
+    merged = build_dataset(Path(args.output), args.carbon_basis)
     print(f"Wrote {len(merged)} rows to {args.output}")
     print("Missing carbon rows:", int(merged["carbon_intensity_mean"].isna().sum()))
     print("Rows by cloud:")
