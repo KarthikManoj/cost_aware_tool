@@ -1,16 +1,10 @@
 {
-  "dataset": "/sessions/peaceful-gracious-johnson/mnt/cost-aware-infrastructure-optimization/data/models/cloud_carbon_model_dataset.csv",
+  "dataset": "/Users/manojanbalagan/Documents/research/research/cost-aware-infrastructure-optimization/data/models/cloud_carbon_model_dataset.csv",
   "model_types": [
-    "linear_regression",
-    "decision_tree",
-    "random_forest",
-    "gradient_boosting"
+    "random_forest"
   ],
   "methods": [
-    "model_linear_regression",
-    "model_decision_tree",
     "model_random_forest",
-    "model_gradient_boosting",
     "historical_mean",
     "nearest_size",
     "largest_cluster",
@@ -32,90 +26,6 @@
   },
   "skipped_scenarios": [],
   "summary": [
-    {
-      "method": "model_linear_regression",
-      "sla_level": "tight",
-      "scenarios": 21,
-      "top1_accuracy": 0.1905,
-      "top3_hit_rate": 0.4762,
-      "mean_cost_regret_pct": 100.2261,
-      "median_cost_regret_pct": 87.5,
-      "max_cost_regret_pct": 453.8813,
-      "mean_runtime_regret_pct": 37.4216,
-      "mean_carbon_regret_pct": 55.1199,
-      "sla_violation_rate": 0.1429,
-      "infeasible_rate": 0.0476
-    },
-    {
-      "method": "model_linear_regression",
-      "sla_level": "medium",
-      "scenarios": 21,
-      "top1_accuracy": 0.2857,
-      "top3_hit_rate": 0.7619,
-      "mean_cost_regret_pct": 50.7079,
-      "median_cost_regret_pct": 29.4118,
-      "max_cost_regret_pct": 216.3462,
-      "mean_runtime_regret_pct": 50.0269,
-      "mean_carbon_regret_pct": 71.7534,
-      "sla_violation_rate": 0.1905,
-      "infeasible_rate": 0.0
-    },
-    {
-      "method": "model_linear_regression",
-      "sla_level": "loose",
-      "scenarios": 21,
-      "top1_accuracy": 0.2857,
-      "top3_hit_rate": 0.9048,
-      "mean_cost_regret_pct": 37.2006,
-      "median_cost_regret_pct": 22.3744,
-      "max_cost_regret_pct": 150.2994,
-      "mean_runtime_regret_pct": 76.0369,
-      "mean_carbon_regret_pct": 97.7641,
-      "sla_violation_rate": 0.0476,
-      "infeasible_rate": 0.0
-    },
-    {
-      "method": "model_decision_tree",
-      "sla_level": "tight",
-      "scenarios": 21,
-      "top1_accuracy": 0.8571,
-      "top3_hit_rate": 0.9048,
-      "mean_cost_regret_pct": 9.6201,
-      "median_cost_regret_pct": 0.0,
-      "max_cost_regret_pct": 220.0,
-      "mean_runtime_regret_pct": 27.7769,
-      "mean_carbon_regret_pct": 46.0432,
-      "sla_violation_rate": 0.0952,
-      "infeasible_rate": 0.0
-    },
-    {
-      "method": "model_decision_tree",
-      "sla_level": "medium",
-      "scenarios": 21,
-      "top1_accuracy": 0.8571,
-      "top3_hit_rate": 0.9048,
-      "mean_cost_regret_pct": 19.3751,
-      "median_cost_regret_pct": 0.0,
-      "max_cost_regret_pct": 414.6,
-      "mean_runtime_regret_pct": 35.9664,
-      "mean_carbon_regret_pct": 56.5582,
-      "sla_violation_rate": 0.0952,
-      "infeasible_rate": 0.0
-    },
-    {
-      "method": "model_decision_tree",
-      "sla_level": "loose",
-      "scenarios": 21,
-      "top1_accuracy": 0.9524,
-      "top3_hit_rate": 0.9524,
-      "mean_cost_regret_pct": 1.0654,
-      "median_cost_regret_pct": 0.0,
-      "max_cost_regret_pct": 22.3744,
-      "mean_runtime_regret_pct": 33.7866,
-      "mean_carbon_regret_pct": 53.6856,
-      "sla_violation_rate": 0.0,
-      "infeasible_rate": 0.0
-    },
     {
       "method": "model_random_forest",
       "sla_level": "tight",
@@ -155,48 +65,6 @@
       "max_cost_regret_pct": 22.3744,
       "mean_runtime_regret_pct": 33.7866,
       "mean_carbon_regret_pct": 53.6856,
-      "sla_violation_rate": 0.0,
-      "infeasible_rate": 0.0
-    },
-    {
-      "method": "model_gradient_boosting",
-      "sla_level": "tight",
-      "scenarios": 21,
-      "top1_accuracy": 0.619,
-      "top3_hit_rate": 0.7619,
-      "mean_cost_regret_pct": 30.9382,
-      "median_cost_regret_pct": 0.0,
-      "max_cost_regret_pct": 214.8148,
-      "mean_runtime_regret_pct": 26.2802,
-      "mean_carbon_regret_pct": 44.1813,
-      "sla_violation_rate": 0.1429,
-      "infeasible_rate": 0.0
-    },
-    {
-      "method": "model_gradient_boosting",
-      "sla_level": "medium",
-      "scenarios": 21,
-      "top1_accuracy": 0.8571,
-      "top3_hit_rate": 0.9048,
-      "mean_cost_regret_pct": 3.7139,
-      "median_cost_regret_pct": 0.0,
-      "max_cost_regret_pct": 85.7143,
-      "mean_runtime_regret_pct": 33.6461,
-      "mean_carbon_regret_pct": 53.5354,
-      "sla_violation_rate": 0.0952,
-      "infeasible_rate": 0.0
-    },
-    {
-      "method": "model_gradient_boosting",
-      "sla_level": "loose",
-      "scenarios": 21,
-      "top1_accuracy": 0.7619,
-      "top3_hit_rate": 0.9524,
-      "mean_cost_regret_pct": 7.1289,
-      "median_cost_regret_pct": 0.0,
-      "max_cost_regret_pct": 85.7143,
-      "mean_runtime_regret_pct": 54.028,
-      "mean_carbon_regret_pct": 75.6259,
       "sla_violation_rate": 0.0,
       "infeasible_rate": 0.0
     },
@@ -368,6 +236,5 @@
       "sla_violation_rate": 0.0952,
       "infeasible_rate": 0.2857
     }
-  ],
-  "note": "Model types evaluated in separate invocations and merged; baselines taken from the random_forest run."
+  ]
 }

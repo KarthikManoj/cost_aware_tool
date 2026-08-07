@@ -1,13 +1,14 @@
+
 """Train and compare cloud performance prediction models."""
-
+ 
 from __future__ import annotations
-
+ 
 import argparse
 import json
 import sys
 from pathlib import Path
 from typing import Any
-
+ 
 import joblib
 import numpy as np
 import pandas as pd
@@ -18,14 +19,14 @@ from sklearn.model_selection import GroupKFold, GroupShuffleSplit, train_test_sp
 from sklearn.multioutput import MultiOutputRegressor
 from sklearn.pipeline import Pipeline
 from sklearn.tree import DecisionTreeRegressor
-
+ 
 ROOT = Path(__file__).resolve().parents[1]
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
-
+ 
 from ml.preprocessing import FEATURE_COLUMNS, TARGET_COLUMNS, build_preprocessor
-
-
+ 
+ 
 MODEL_REGISTRY = {
     "linear_regression": {
         "label": "Linear Regression",
@@ -57,7 +58,7 @@ MODEL_REGISTRY = {
         "params": {"random_state": 42},
     },
 }
-
+ 
 PREDICTION_OUTPUT_COLUMNS = [
     "model",
     "cloud",
@@ -71,15 +72,15 @@ PREDICTION_OUTPUT_COLUMNS = [
     "actual_cost_usd",
     "predicted_cost_usd",
 ]
-
+ 
 # Columns that identify a distinct benchmark configuration, as opposed to a
 # repeated run of the same configuration. The dataset intentionally contains
 # multiple runs of identical configurations (to capture runtime variance), so
 # splits must group on this key -- otherwise near-duplicate rows can appear in
 # both the train and test fold and inflate reported R2/RMSE.
 GROUP_COLUMNS = ["cloud", "region", "dataset_size_mb", "workload_type", "machine_type", "nodes"]
-
-
+ 
+ 
 def build_model(model_type: str) -> Pipeline:
     """Create a model pipeline with shared preprocessing."""
     if model_type == "linear":
@@ -87,7 +88,7 @@ def build_model(model_type: str) -> Pipeline:
     if model_type not in MODEL_REGISTRY:
         choices = ", ".join(MODEL_REGISTRY)
         raise ValueError(f"Unknown model_type '{model_type}'. Choose from: {choices}.")
-
+ 
     config = MODEL_REGISTRY[model_type]
     estimator = config["estimator"](**config["params"])
     return Pipeline(
@@ -96,8 +97,8 @@ def build_model(model_type: str) -> Pipeline:
             ("model", MultiOutputRegressor(estimator)),
         ]
     )
-
-
+ 
+ 
 def load_training_data(input_path: str) -> tuple[pd.DataFrame, pd.DataFrame]:
     """Load the merged dataset and keep only complete model rows."""
     data = pd.read_csv(input_path).dropna(subset=FEATURE_COLUMNS + TARGET_COLUMNS)
@@ -106,14 +107,14 @@ def load_training_data(input_path: str) -> tuple[pd.DataFrame, pd.DataFrame]:
             "Need at least 6 performance rows for a useful train/test split."
         )
     return data[FEATURE_COLUMNS], data[TARGET_COLUMNS]
-
-
+ 
+ 
 def build_groups(x: pd.DataFrame) -> pd.Series:
     """Build a per-row configuration key so repeated benchmark runs of the
     same setup are treated as one group and never split across train/test."""
     return x[GROUP_COLUMNS].astype(str).agg("|".join, axis=1)
-
-
+ 
+ 
 def grouped_train_test_split(
     x: pd.DataFrame,
     y: pd.DataFrame,
@@ -126,12 +127,12 @@ def grouped_train_test_split(
     groups = build_groups(x)
     if groups.nunique() < 2:
         return train_test_split(x, y, test_size=test_size, random_state=random_state)
-
+ 
     splitter = GroupShuffleSplit(n_splits=1, test_size=test_size, random_state=random_state)
     train_idx, test_idx = next(splitter.split(x, y, groups=groups))
     return x.iloc[train_idx], x.iloc[test_idx], y.iloc[train_idx], y.iloc[test_idx]
-
-
+ 
+ 
 def evaluate(y_true: pd.DataFrame, y_pred: np.ndarray) -> dict[str, dict[str, float]]:
     """Calculate target-level regression metrics."""
     metrics: dict[str, dict[str, float]] = {}
@@ -158,8 +159,8 @@ def evaluate(y_true: pd.DataFrame, y_pred: np.ndarray) -> dict[str, dict[str, fl
             "r2": round(r2_score(y_true.iloc[:, index], y_pred[:, index]), 4),
         }
     return metrics
-
-
+ 
+ 
 def add_average_metrics(metrics: dict[str, dict[str, float]]) -> dict[str, Any]:
     """Add average R2 and RMSE for best-model selection."""
     average_r2 = float(
@@ -173,8 +174,8 @@ def add_average_metrics(metrics: dict[str, dict[str, float]]) -> dict[str, Any]:
         "average_r2": round(average_r2, 4),
         "average_rmse": round(average_rmse, 4),
     }
-
-
+ 
+ 
 def create_prediction_frame(
     model_label: str,
     x_test: pd.DataFrame,
@@ -189,10 +190,53 @@ def create_prediction_frame(
     frame["actual_cost_usd"] = y_test["cost_usd"].reset_index(drop=True)
     frame["predicted_cost_usd"] = predictions[:, 1]
     return frame[PREDICTION_OUTPUT_COLUMNS]
-
-
-def select_best_model(comparison: dict[str, dict[str, Any]]) -> str:
-    """Select highest average R2, then lowest average RMSE."""
+ 
+ 
+def select_best_model(
+    comparison: dict[str, dict[str, Any]],
+    cv_summary: dict[str, dict[str, Any]] | None = None,
+) -> str:
+    """Select the best model on cross-validated average R2 where available.
+ 
+    The holdout split in `compare_models` is a single draw: one 25% test
+    partition of the configuration groups. With 439 configurations that were
+    run more than once, and benchmark runtime noise reaching a coefficient of
+    variation of 84% on the worst configuration, that single estimate carries
+    real variance -- enough that the holdout and cross-validated rankings can
+    disagree, which on this dataset they do.
+ 
+    Grouped k-fold uses every configuration as test data exactly once and
+    averages over folds, so it is the more reliable basis for selection. The
+    holdout metrics are still written to model_comparison.json for
+    comparison, and the difference between the top two models is not
+    statistically significant on paired fold errors (see
+    ml/statistical_tests.py), so this is a preference on stability rather
+    than a demonstrated superiority.
+ 
+    Falls back to the holdout ranking when no cross-validation summary is
+    supplied, preserving the previous behaviour for callers that do not run
+    cross-validation.
+    """
+    if cv_summary:
+        def cv_average_r2(model_type: str) -> float:
+            return float(
+                np.mean(
+                    [cv_summary[model_type][target]["r2"]["mean"] for target in TARGET_COLUMNS]
+                )
+            )
+ 
+        def cv_average_rmse(model_type: str) -> float:
+            return float(
+                np.mean(
+                    [cv_summary[model_type][target]["rmse"]["mean"] for target in TARGET_COLUMNS]
+                )
+            )
+ 
+        return max(
+            cv_summary,
+            key=lambda model_type: (cv_average_r2(model_type), -cv_average_rmse(model_type)),
+        )
+ 
     return max(
         comparison,
         key=lambda model_type: (
@@ -200,17 +244,17 @@ def select_best_model(comparison: dict[str, dict[str, Any]]) -> str:
             -comparison[model_type]["average_rmse"],
         ),
     )
-
-
+ 
+ 
 def save_json(path: Path, payload: dict[str, Any]) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     with open(path, "w", encoding="utf-8") as handle:
         json.dump(payload, handle, indent=2)
-
-
+ 
+ 
 def extract_feature_importance(pipeline: Pipeline) -> dict[str, dict[str, float]] | None:
     """Return per-target feature importances, ranked highest first.
-
+ 
     Only tree-based estimators (decision tree, random forest, gradient
     boosting) expose `feature_importances_`. Linear regression exposes
     `coef_` instead, which is not directly comparable in magnitude across
@@ -220,10 +264,10 @@ def extract_feature_importance(pipeline: Pipeline) -> dict[str, dict[str, float]
     estimators = getattr(model, "estimators_", None)
     if not estimators or not hasattr(estimators[0], "feature_importances_"):
         return None
-
+ 
     preprocessor = pipeline.named_steps["preprocess"]
     feature_names = preprocessor.get_feature_names_out()
-
+ 
     importances: dict[str, dict[str, float]] = {}
     for target, estimator in zip(TARGET_COLUMNS, estimators):
         ranked = sorted(
@@ -233,8 +277,8 @@ def extract_feature_importance(pipeline: Pipeline) -> dict[str, dict[str, float]
         )
         importances[target] = {name: round(float(score), 6) for name, score in ranked}
     return importances
-
-
+ 
+ 
 def format_metric_block(label: str, metrics: dict[str, dict[str, float]]) -> list[str]:
     return [
         label,
@@ -249,8 +293,8 @@ def format_metric_block(label: str, metrics: dict[str, dict[str, float]]) -> lis
         f"R2: {metrics['cost_usd']['r2']}",
         "",
     ]
-
-
+ 
+ 
 def print_comparison_summary(
     comparison: dict[str, dict[str, Any]],
     best_model: str,
@@ -260,11 +304,11 @@ def print_comparison_summary(
     print("Model Comparison")
     print("=" * 52)
     print()
-
+ 
     for model_type, config in MODEL_REGISTRY.items():
         for line in format_metric_block(config["label"], comparison[model_type]):
             print(line)
-
+ 
     best_metrics = comparison[best_model]
     best_label = MODEL_REGISTRY[best_model]["label"]
     print("Best Model:")
@@ -272,50 +316,58 @@ def print_comparison_summary(
     print()
     print("Reason:")
     print(
-        "Highest overall R2 with lowest RMSE "
-        f"(average R2={best_metrics['average_r2']}, "
-        f"average RMSE={best_metrics['average_rmse']})."
+        "Highest cross-validated average R2 with lowest average RMSE. "
+        f"Holdout figures for this model: average R2={best_metrics['average_r2']}, "
+        f"average RMSE={best_metrics['average_rmse']}."
     )
     print()
     print("=" * 52)
-
-
+ 
+ 
 def compare_models(
     input_path: str,
     output_dir: str,
     best_model_output: str,
 ) -> dict[str, dict[str, Any]]:
     """Train, evaluate, compare, and persist all model artifacts.
-
+ 
     Uses a group-aware holdout split (see `grouped_train_test_split`) so that
     repeated benchmark runs of the same configuration cannot leak between
-    train and test.
+    train and test. The holdout metrics are what model_comparison.json
+    reports; the best model, however, is chosen on grouped cross-validation
+    (see `select_best_model`), which also writes cross_validation_metrics.json.
     """
     x, y = load_training_data(input_path)
     test_size = 0.25 if len(x) >= 12 else 0.34
     x_train, x_test, y_train, y_test = grouped_train_test_split(x, y, test_size=test_size)
-
+ 
     output = Path(output_dir)
     output.mkdir(parents=True, exist_ok=True)
-
+ 
     comparison: dict[str, dict[str, Any]] = {}
     prediction_frames: list[pd.DataFrame] = []
-
+ 
     for model_type, config in MODEL_REGISTRY.items():
         pipeline = build_model(model_type)
         pipeline.fit(x_train, y_train)
         predictions = pipeline.predict(x_test)
-
+ 
         metrics = evaluate(y_test, predictions)
         comparison[model_type] = add_average_metrics(metrics)
         prediction_frames.append(
             create_prediction_frame(config["label"], x_test, y_test, predictions)
         )
-
-    best_model = select_best_model(comparison)
+ 
+    # Selection is made on grouped cross-validation rather than the single
+    # holdout split above; see select_best_model for the reasoning.
+    cv_summary = cross_validate_models(
+        input_path,
+        str(output / "cross_validation_metrics.json"),
+    )
+    best_model = select_best_model(comparison, cv_summary)
     best_pipeline = build_model(best_model)
     best_pipeline.fit(x, y)
-
+ 
     save_json(output / "model_comparison.json", comparison)
     pd.concat(prediction_frames, ignore_index=True).to_csv(
         output / "prediction_comparison.csv",
@@ -323,22 +375,22 @@ def compare_models(
     )
     Path(best_model_output).parent.mkdir(parents=True, exist_ok=True)
     joblib.dump(best_pipeline, best_model_output)
-
+ 
     feature_importance = extract_feature_importance(best_pipeline)
     if feature_importance is not None:
         save_json(output / "feature_importance.json", feature_importance)
-
+ 
     print_comparison_summary(comparison, best_model)
     return comparison
-
-
+ 
+ 
 def cross_validate_models(
     input_path: str,
     output_path: str,
     n_splits: int = 5,
 ) -> dict[str, dict[str, Any]]:
     """Grouped k-fold cross-validation for every model in MODEL_REGISTRY.
-
+ 
     A single holdout split (see `compare_models`) gives one point estimate of
     R2/RMSE, which can be unstable on a dataset this size. This reports the
     mean and standard deviation of each metric across folds instead, which is
@@ -355,13 +407,13 @@ def cross_validate_models(
             f"Warning: only {unique_groups} unique configurations available; "
             f"reducing cross-validation folds from {n_splits} to {effective_splits}."
         )
-
+ 
     splitter = GroupKFold(n_splits=effective_splits)
     fold_metrics: dict[str, dict[str, dict[str, list[float]]]] = {
         model_type: {target: {"mae": [], "rmse": [], "r2": []} for target in TARGET_COLUMNS}
         for model_type in MODEL_REGISTRY
     }
-
+ 
     for train_idx, test_idx in splitter.split(x, y, groups=groups):
         x_train, x_test = x.iloc[train_idx], x.iloc[test_idx]
         y_train, y_test = y.iloc[train_idx], y.iloc[test_idx]
@@ -373,7 +425,7 @@ def cross_validate_models(
             for target in TARGET_COLUMNS:
                 for metric_name in ("mae", "rmse", "r2"):
                     fold_metrics[model_type][target][metric_name].append(metrics[target][metric_name])
-
+ 
     summary: dict[str, dict[str, Any]] = {}
     for model_type, target_metrics in fold_metrics.items():
         model_summary: dict[str, Any] = {
@@ -391,11 +443,11 @@ def cross_validate_models(
         }
         model_summary["folds"] = effective_splits
         summary[model_type] = model_summary
-
+ 
     save_json(Path(output_path), summary)
     return summary
-
-
+ 
+ 
 def train(
     input_path: str,
     model_output: str,
@@ -406,19 +458,19 @@ def train(
     x, y = load_training_data(input_path)
     test_size = 0.25 if len(x) >= 12 else 0.34
     x_train, x_test, y_train, y_test = grouped_train_test_split(x, y, test_size=test_size)
-
+ 
     pipeline = build_model(model_type)
     pipeline.fit(x_train, y_train)
     predictions = pipeline.predict(x_test)
     metrics = evaluate(y_test, predictions)
-
+ 
     pipeline.fit(x, y)
     Path(model_output).parent.mkdir(parents=True, exist_ok=True)
     joblib.dump(pipeline, model_output)
     save_json(Path(metrics_output), metrics)
     return metrics
-
-
+ 
+ 
 def main() -> None:
     parser = argparse.ArgumentParser(
         description="Train and compare cloud regression models."
@@ -462,14 +514,14 @@ def main() -> None:
         default=str(ROOT / "data/models/cross_validation_metrics.json"),
     )
     args = parser.parse_args()
-
+ 
     if args.compare_output_dir:
         args.output_dir = args.compare_output_dir
-
+ 
     if args.cross_validate:
         cv_summary = cross_validate_models(args.input, args.cv_output, n_splits=args.cv_folds)
         print(json.dumps(cv_summary, indent=2))
-
+ 
     if args.single_model:
         metrics = train(
             args.input,
@@ -479,9 +531,10 @@ def main() -> None:
         )
         print(json.dumps(metrics, indent=2))
         return
-
+ 
     compare_models(args.input, args.output_dir, args.best_model_output)
-
-
+ 
+ 
 if __name__ == "__main__":
     main()
+ 

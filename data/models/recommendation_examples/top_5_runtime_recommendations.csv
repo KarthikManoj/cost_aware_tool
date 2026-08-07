@@ -1,6 +1,6 @@
-Rank,Cloud,Region,Machine Type,Nodes,Predicted Runtime (minutes),Predicted Cost (USD),Carbon Intensity,Renewable Percentage,Optimization Score,Recommendation Reason
-1,Azure,Central India,Standard_D2as_v4,4,0.40454501748917737,0.0017326999999999935,605.22265625,23.890625,0.0,ranked by fastest predicted runtime.
-2,Azure,Southeast Asia,Standard_D4s_v3,4,0.46520494878898894,0.007725992474192474,479.62890625,5.9921875,0.047981088639020446,ranked by fastest predicted runtime.
-3,Azure,Central India,Standard_D2ds_v4,4,0.4887024280657337,0.003219653751803761,605.22265625,23.890625,0.0665672395266417,ranked by fastest predicted runtime.
-4,Azure,Central India,Standard_D4ds_v4,4,0.4887024280657337,0.003219653751803761,605.22265625,23.890625,0.0665672395266417,ranked by fastest predicted runtime.
-5,Azure,Central India,Standard_D2s_v3,4,0.5620637581754008,0.004064722857142868,605.22265625,23.890625,0.12459494261240679,ranked by fastest predicted runtime.
+Rank,Cloud,Region,Machine Type,Nodes,Predicted Runtime (minutes),Predicted Cost (USD),Predicted Emissions (gCO2eq),Carbon Intensity,Renewable Percentage,Optimization Score,Recommendation Reason
+1,Azure,Central India,Standard_D2as_v4,4,0.4045450174891774,0.0017326999999999937,0.044427025794499767,643.32421875,18.9296875,0.0,ranked by fastest predicted runtime.
+2,Azure,Southeast Asia,Standard_D4s_v3,4,0.46520494878898894,0.007725992474192474,0.191399551203223,480.703125,5.83203125,0.0479810886390204,ranked by fastest predicted runtime.
+3,Azure,Central India,Standard_D2ds_v4,4,0.4887024280657337,0.003219653751803761,0.114016071151043,643.32421875,18.9296875,0.06656723952664166,ranked by fastest predicted runtime.
+4,Azure,Central India,Standard_D4ds_v4,4,0.4887024280657337,0.003219653751803761,0.2277848189373332,643.32421875,18.9296875,0.06656723952664166,ranked by fastest predicted runtime.
+5,Azure,Central India,Standard_D2s_v3,4,0.5620637581754009,0.004064722857142867,0.15474090487476325,643.32421875,18.9296875,0.12459494261240685,ranked by fastest predicted runtime.

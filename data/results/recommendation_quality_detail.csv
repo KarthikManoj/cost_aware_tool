@@ -1,504 +1,315 @@
 workload_type,dataset_size_mb,sla_level,sla_minutes,method,candidates,feasible_candidates,chosen_cloud,chosen_region,chosen_machine_type,chosen_nodes,top1_correct,top3_correct,cost_regret_pct,runtime_regret_pct,carbon_regret_pct,sla_violation,no_feasible_prediction,measured_runtime_minutes,measured_cost_usd
-cpu-heavy,10,tight,0.6306,model_linear_regression,32,8,Azure,Central India,Standard_D2as_v4,4,0,1,100.0,3.3564,13.89,0,0,0.2833,0.0012
-cpu-heavy,10,medium,0.7833,model_linear_regression,32,16,Azure,Central India,Standard_D2as_v4,4,0,1,100.0,3.3564,13.89,0,0,0.2833,0.0012
-cpu-heavy,10,loose,0.9594,model_linear_regression,32,24,Azure,Central India,Standard_D2as_v4,4,0,1,100.0,3.3564,13.89,0,0,0.2833,0.0012
-cpu-heavy,100,tight,0.6954,model_linear_regression,32,8,Azure,Central India,Standard_D2as_v4,4,0,1,85.7143,0.0,6.9495,0,0,0.3085,0.0013
-cpu-heavy,100,medium,0.8724,model_linear_regression,32,16,Azure,Central India,Standard_D2as_v4,4,0,1,85.7143,0.0,6.9495,0,0,0.3085,0.0013
-cpu-heavy,100,loose,1.051,model_linear_regression,32,24,Azure,Central India,Standard_D2as_v4,4,0,1,85.7143,0.0,6.9495,0,0,0.3085,0.0013
-cpu-heavy,500,tight,0.9613,model_linear_regression,32,8,Azure,Central India,Standard_D2as_v4,4,0,1,39.1304,0.0,11.9139,0,0,0.3883,0.0016
-cpu-heavy,500,medium,1.0891,model_linear_regression,32,16,Azure,Central India,Standard_D2as_v4,4,0,1,39.1304,0.0,11.9139,0,0,0.3883,0.0016
-cpu-heavy,500,loose,1.3073,model_linear_regression,32,24,Azure,Central India,Standard_D2as_v4,4,0,1,39.1304,0.0,11.9139,0,0,0.3883,0.0016
-cpu-heavy,1024,tight,1.1697,model_linear_regression,32,8,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,54.5619,103.682,0,0,0.8529,0.00175
-cpu-heavy,1024,medium,1.472,model_linear_regression,32,16,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,54.5619,103.682,0,0,0.8529,0.00175
-cpu-heavy,1024,loose,1.6388,model_linear_regression,32,24,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,54.5619,103.682,0,0,0.8529,0.00175
-cpu-heavy,2048,tight,1.4385,model_linear_regression,32,8,Azure,Central India,Standard_D2as_v4,4,1,1,0.0,0.0,13.8176,0,0,0.7041,0.00295
-cpu-heavy,2048,medium,2.1007,model_linear_regression,32,16,Azure,Central India,Standard_D2as_v4,2,0,1,10.1695,122.511,153.2567,0,0,1.5667,0.00325
-cpu-heavy,2048,loose,2.4061,model_linear_regression,32,24,Azure,Central India,Standard_D2as_v4,2,0,1,10.1695,122.511,153.2567,0,0,1.5667,0.00325
-cpu-heavy,3072,tight,1.725,model_linear_regression,35,9,Azure,Central India,Standard_D4ds_v4,2,0,0,225.0,105.1267,105.1267,0,0,1.4364,0.0117
-cpu-heavy,3072,medium,2.2562,model_linear_regression,35,18,Azure,Central India,Standard_D2as_v4,4,1,1,0.0,24.5412,24.5412,0,0,0.8721,0.0036
-cpu-heavy,3072,loose,3.0556,model_linear_regression,35,26,Azure,Central India,Standard_D2as_v4,2,0,1,6.9444,166.0407,166.0407,0,0,1.863,0.00385
-cpu-heavy,5120,tight,2.5172,model_linear_regression,34,9,Azure,Central India,Standard_D2as_v4,2,0,0,26.9231,214.3231,214.3231,0,1,3.1787,0.0066
-cpu-heavy,5120,medium,3.292,model_linear_regression,34,17,Azure,Central India,Standard_D4ds_v4,4,0,0,216.3462,0.0,0.0,0,0,1.0113,0.01645
-cpu-heavy,5120,loose,4.5973,model_linear_regression,34,25,Azure,Central India,Standard_D2as_v4,2,0,1,26.9231,214.3231,214.3231,0,0,3.1787,0.0066
-io-heavy,10,tight,0.6967,model_linear_regression,32,8,Azure,Central India,Standard_D2as_v4,4,0,0,100.0,0.0,15.3666,0,0,0.3395,0.0014
-io-heavy,10,medium,0.8667,model_linear_regression,32,16,Azure,Central India,Standard_D2as_v4,4,0,0,100.0,0.0,15.3666,0,0,0.3395,0.0014
-io-heavy,10,loose,1.0583,model_linear_regression,32,24,Azure,Central India,Standard_D2as_v4,4,0,0,100.0,0.0,15.3666,0,0,0.3395,0.0014
-io-heavy,100,tight,0.8311,model_linear_regression,32,8,Azure,Central India,Standard_D2as_v4,4,0,0,100.0,0.0,15.5529,0,0,0.4561,0.0019
-io-heavy,100,medium,1.0133,model_linear_regression,32,16,Azure,Central India,Standard_D2as_v4,4,0,0,100.0,0.0,15.5529,0,0,0.4561,0.0019
-io-heavy,100,loose,1.1886,model_linear_regression,32,24,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,0.6798,16.3383,0,0,0.4592,0.00095
-io-heavy,500,tight,1.2042,model_linear_regression,32,8,Azure,Central India,Standard_D2as_v4,4,0,0,100.0,0.3458,26.74,0,0,0.9432,0.0039
-io-heavy,500,medium,1.3415,model_linear_regression,32,16,Azure,Central India,Standard_D2as_v4,4,0,0,100.0,0.3458,26.74,0,0,0.9432,0.0039
-io-heavy,500,loose,1.5852,model_linear_regression,32,24,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,0.0,26.3033,0,0,0.94,0.00195
-io-heavy,1024,tight,1.5786,model_linear_regression,32,8,Azure,Central India,Standard_D2as_v4,4,0,0,100.0,29.3639,41.9056,0,0,1.5613,0.0065
-io-heavy,1024,medium,1.8224,model_linear_regression,32,16,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,29.0159,41.5239,0,0,1.557,0.00325
-io-heavy,1024,loose,2.1907,model_linear_regression,32,24,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,29.0159,41.5239,0,0,1.557,0.00325
-io-heavy,2048,tight,2.1733,model_linear_regression,32,8,Azure,Central India,Standard_D2as_v4,4,0,0,21.3693,83.4258,113.024,1,0,2.8217,0.0117
-io-heavy,2048,medium,2.8545,model_linear_regression,32,16,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,81.1409,110.3704,0,0,2.7866,0.00575
-io-heavy,2048,loose,3.3388,model_linear_regression,32,24,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,81.1409,110.3704,0,0,2.7866,0.00575
-io-heavy,3072,tight,2.8945,model_linear_regression,36,9,Azure,Central India,Standard_D4ds_v4,2,0,0,107.6183,69.1058,114.3768,1,0,3.0536,0.0248
-io-heavy,3072,medium,3.7389,model_linear_regression,36,18,Azure,Central India,Standard_D2ds_v4,2,0,0,74.9686,184.4108,260.5498,1,0,5.1357,0.0209
-io-heavy,3072,loose,4.581,model_linear_regression,36,27,Azure,Central India,Standard_D2ds_v4,2,0,1,150.2994,184.4108,260.5498,1,0,5.1357,0.0209
-io-heavy,5120,tight,3.9446,model_linear_regression,35,9,Azure,Central India,Standard_D4ds_v4,4,0,0,453.8813,39.4099,64.1392,0,0,3.7281,0.06065
-io-heavy,5120,medium,5.2289,model_linear_regression,35,18,Azure,Central India,Standard_D2as_v4,2,0,1,22.3744,142.265,185.2392,1,0,6.4787,0.0134
-io-heavy,5120,loose,6.7096,model_linear_regression,35,26,Azure,Central India,Standard_D2as_v4,2,0,1,22.3744,142.265,185.2392,0,0,6.4787,0.0134
-memory-heavy,10,tight,0.6949,model_linear_regression,32,8,Azure,Central India,Standard_D2as_v4,4,0,1,87.5,0.0,15.0382,0,0,0.3695,0.0015
-memory-heavy,10,medium,0.8647,model_linear_regression,32,16,Azure,Central India,Standard_D2as_v4,4,0,1,87.5,0.0,15.0382,0,0,0.3695,0.0015
-memory-heavy,10,loose,1.0307,model_linear_regression,32,24,Azure,Central India,Standard_D2as_v4,4,0,1,87.5,0.0,15.0382,0,0,0.3695,0.0015
-memory-heavy,100,tight,0.7916,model_linear_regression,32,8,Azure,Central India,Standard_D2as_v4,4,0,1,70.0,0.0,9.4738,0,0,0.4057,0.0017
-memory-heavy,100,medium,0.9172,model_linear_regression,32,16,Azure,Central India,Standard_D2as_v4,4,0,1,70.0,0.0,9.4738,0,0,0.4057,0.0017
-memory-heavy,100,loose,1.0898,model_linear_regression,32,24,Azure,Central India,Standard_D2as_v4,4,0,1,70.0,0.0,9.4738,0,0,0.4057,0.0017
-memory-heavy,500,tight,1.0474,model_linear_regression,32,8,Azure,Central India,Standard_D2as_v4,4,0,1,29.4118,0.0,13.8895,0,0,0.5326,0.0022
-memory-heavy,500,medium,1.1721,model_linear_regression,32,16,Azure,Central India,Standard_D2as_v4,4,0,1,29.4118,0.0,13.8895,0,0,0.5326,0.0022
-memory-heavy,500,loose,1.3915,model_linear_regression,32,24,Azure,Central India,Standard_D2as_v4,4,0,1,29.4118,0.0,13.8895,0,0,0.5326,0.0022
-memory-heavy,1024,tight,1.3836,model_linear_regression,32,8,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,62.7475,117.8047,0,0,1.2891,0.00265
-memory-heavy,1024,medium,1.5608,model_linear_regression,32,16,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,62.7475,117.8047,0,0,1.2891,0.00265
-memory-heavy,1024,loose,1.7443,model_linear_regression,32,24,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,62.7475,117.8047,0,0,1.2891,0.00265
-memory-heavy,2048,tight,1.5479,model_linear_regression,32,8,Azure,Central India,Standard_D2as_v4,4,1,1,0.0,0.0,16.4167,0,0,1.0585,0.0044
-memory-heavy,2048,medium,2.1642,model_linear_regression,32,16,Azure,Central India,Standard_D2as_v4,2,0,1,7.9545,115.4551,150.8258,1,0,2.2807,0.00475
-memory-heavy,2048,loose,2.5563,model_linear_regression,32,24,Azure,Central India,Standard_D2as_v4,2,0,1,7.9545,115.4551,150.8258,0,0,2.2807,0.00475
-memory-heavy,3072,tight,1.8316,model_linear_regression,35,9,Azure,Central India,Standard_D4ds_v4,2,0,0,252.7778,124.087,124.087,1,0,2.3439,0.01905
-memory-heavy,3072,medium,2.8391,model_linear_regression,35,18,Azure,Central India,Standard_D2as_v4,2,0,1,21.2963,202.0315,202.0315,1,0,3.1593,0.00655
-memory-heavy,3072,loose,3.1886,model_linear_regression,35,26,Azure,Central India,Standard_D2as_v4,2,0,1,21.2963,202.0315,202.0315,0,0,3.1593,0.00655
-memory-heavy,5120,tight,3.052,model_linear_regression,34,9,Azure,Central India,Standard_D4ds_v4,4,0,0,205.4217,0.0,0.0,0,0,1.5563,0.02535
-memory-heavy,5120,medium,4.3169,model_linear_regression,34,17,Azure,Central India,Standard_D2as_v4,4,1,1,0.0,28.1822,28.1822,0,0,1.9949,0.0083
-memory-heavy,5120,loose,5.0423,model_linear_regression,34,25,Azure,Central India,Standard_D2as_v4,2,0,0,23.494,218.2356,218.2356,0,0,4.9527,0.01025
-cpu-heavy,10,tight,0.6306,model_decision_tree,32,8,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,0.0,10.1915,0,0,0.2741,0.0006
-cpu-heavy,10,medium,0.7833,model_decision_tree,32,16,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,0.0,10.1915,0,0,0.2741,0.0006
-cpu-heavy,10,loose,0.9594,model_decision_tree,32,24,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,0.0,10.1915,0,0,0.2741,0.0006
-cpu-heavy,100,tight,0.6954,model_decision_tree,32,8,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,2.9493,10.1037,0,0,0.3176,0.0007
-cpu-heavy,100,medium,0.8724,model_decision_tree,32,16,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,2.9493,10.1037,0,0,0.3176,0.0007
-cpu-heavy,100,loose,1.051,model_decision_tree,32,24,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,2.9493,10.1037,0,0,0.3176,0.0007
-cpu-heavy,500,tight,0.9613,model_decision_tree,32,8,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,40.8008,57.5757,0,0,0.5468,0.00115
-cpu-heavy,500,medium,1.0891,model_decision_tree,32,16,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,40.8008,57.5757,0,0,0.5468,0.00115
-cpu-heavy,500,loose,1.3073,model_decision_tree,32,24,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,40.8008,57.5757,0,0,0.5468,0.00115
-cpu-heavy,1024,tight,1.1697,model_decision_tree,32,8,Azure,Central India,Standard_D2s_v3,4,0,0,220.0,44.5411,90.4765,0,0,0.7976,0.0056
-cpu-heavy,1024,medium,1.472,model_decision_tree,32,16,AWS,ap-south-1,c5a.xlarge,4,0,0,414.6,100.3382,164.006,0,0,1.1056,0.009005
-cpu-heavy,1024,loose,1.6388,model_decision_tree,32,24,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,54.5619,103.682,0,0,0.8529,0.00175
-cpu-heavy,2048,tight,1.4385,model_decision_tree,32,8,Azure,Central India,Standard_D2as_v4,4,1,1,0.0,0.0,13.8176,0,0,0.7041,0.00295
-cpu-heavy,2048,medium,2.1007,model_decision_tree,32,16,Azure,Central India,Standard_D2as_v4,4,1,1,0.0,0.0,13.8176,0,0,0.7041,0.00295
-cpu-heavy,2048,loose,2.4061,model_decision_tree,32,24,Azure,Central India,Standard_D2as_v4,4,1,1,0.0,0.0,13.8176,0,0,0.7041,0.00295
-cpu-heavy,3072,tight,1.725,model_decision_tree,35,9,Azure,Central India,Standard_D2as_v4,4,1,1,0.0,24.5412,24.5412,0,0,0.8721,0.0036
-cpu-heavy,3072,medium,2.2562,model_decision_tree,35,18,Azure,Central India,Standard_D2as_v4,4,1,1,0.0,24.5412,24.5412,0,0,0.8721,0.0036
-cpu-heavy,3072,loose,3.0556,model_decision_tree,35,26,Azure,Central India,Standard_D2as_v4,4,1,1,0.0,24.5412,24.5412,0,0,0.8721,0.0036
-cpu-heavy,5120,tight,2.5172,model_decision_tree,34,9,Azure,Central India,Standard_D2as_v4,4,1,1,0.0,23.2325,23.2325,0,0,1.2462,0.0052
-cpu-heavy,5120,medium,3.292,model_decision_tree,34,17,Azure,Central India,Standard_D2as_v4,4,1,1,0.0,23.2325,23.2325,0,0,1.2462,0.0052
-cpu-heavy,5120,loose,4.5973,model_decision_tree,34,25,Azure,Central India,Standard_D2as_v4,4,1,1,0.0,23.2325,23.2325,0,0,1.2462,0.0052
-io-heavy,10,tight,0.6967,model_decision_tree,32,8,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,1.2813,16.8448,0,0,0.3438,0.0007
-io-heavy,10,medium,0.8667,model_decision_tree,32,16,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,1.2813,16.8448,0,0,0.3438,0.0007
-io-heavy,10,loose,1.0583,model_decision_tree,32,24,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,1.2813,16.8448,0,0,0.3438,0.0007
-io-heavy,100,tight,0.8311,model_decision_tree,32,8,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,0.6798,16.3383,0,0,0.4592,0.00095
-io-heavy,100,medium,1.0133,model_decision_tree,32,16,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,0.6798,16.3383,0,0,0.4592,0.00095
-io-heavy,100,loose,1.1886,model_decision_tree,32,24,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,0.6798,16.3383,0,0,0.4592,0.00095
-io-heavy,500,tight,1.2042,model_decision_tree,32,8,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,0.0,26.3033,0,0,0.94,0.00195
-io-heavy,500,medium,1.3415,model_decision_tree,32,16,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,0.0,26.3033,0,0,0.94,0.00195
-io-heavy,500,loose,1.5852,model_decision_tree,32,24,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,0.0,26.3033,0,0,0.94,0.00195
-io-heavy,1024,tight,1.5786,model_decision_tree,32,8,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,29.0159,41.5239,0,0,1.557,0.00325
-io-heavy,1024,medium,1.8224,model_decision_tree,32,16,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,29.0159,41.5239,0,0,1.557,0.00325
-io-heavy,1024,loose,2.1907,model_decision_tree,32,24,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,29.0159,41.5239,0,0,1.557,0.00325
-io-heavy,2048,tight,2.1733,model_decision_tree,32,8,Azure,Central India,Standard_D2as_v4,2,0,1,-40.3527,81.1409,110.3704,1,0,2.7866,0.00575
-io-heavy,2048,medium,2.8545,model_decision_tree,32,16,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,81.1409,110.3704,0,0,2.7866,0.00575
-io-heavy,2048,loose,3.3388,model_decision_tree,32,24,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,81.1409,110.3704,0,0,2.7866,0.00575
-io-heavy,3072,tight,2.8945,model_decision_tree,36,9,AWS,ap-south-1,c5a.xlarge,4,1,1,0.0,5.5582,33.817,0,0,1.9061,0.011945
-io-heavy,3072,medium,3.7389,model_decision_tree,36,18,Azure,Central India,Standard_D2as_v4,2,0,1,-30.0963,121.741,181.1027,1,0,4.0041,0.00835
-io-heavy,3072,loose,4.581,model_decision_tree,36,27,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,121.741,181.1027,0,0,4.0041,0.00835
-io-heavy,5120,tight,3.9446,model_decision_tree,35,9,Azure,Central India,Standard_D2as_v4,2,0,0,22.3744,142.265,185.2392,1,0,6.4787,0.0134
-io-heavy,5120,medium,5.2289,model_decision_tree,35,18,Azure,Central India,Standard_D2as_v4,2,0,0,22.3744,142.265,185.2392,1,0,6.4787,0.0134
-io-heavy,5120,loose,6.7096,model_decision_tree,35,26,Azure,Central India,Standard_D2as_v4,2,0,0,22.3744,142.265,185.2392,0,0,6.4787,0.0134
-memory-heavy,10,tight,0.6949,model_decision_tree,32,8,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,1.3128,16.5484,0,0,0.3743,0.0008
-memory-heavy,10,medium,0.8647,model_decision_tree,32,16,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,1.3128,16.5484,0,0,0.3743,0.0008
-memory-heavy,10,loose,1.0307,model_decision_tree,32,24,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,1.3128,16.5484,0,0,0.3743,0.0008
-memory-heavy,100,tight,0.7916,model_decision_tree,32,8,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,16.4181,27.4474,0,0,0.4723,0.001
-memory-heavy,100,medium,0.9172,model_decision_tree,32,16,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,16.4181,27.4474,0,0,0.4723,0.001
-memory-heavy,100,loose,1.0898,model_decision_tree,32,24,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,16.4181,27.4474,0,0,0.4723,0.001
-memory-heavy,500,tight,1.0474,model_decision_tree,32,8,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,54.6752,76.1589,0,0,0.8238,0.0017
-memory-heavy,500,medium,1.1721,model_decision_tree,32,16,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,54.6752,76.1589,0,0,0.8238,0.0017
-memory-heavy,500,loose,1.3915,model_decision_tree,32,24,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,54.6752,76.1589,0,0,0.8238,0.0017
-memory-heavy,1024,tight,1.3836,model_decision_tree,32,8,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,62.7475,117.8047,0,0,1.2891,0.00265
-memory-heavy,1024,medium,1.5608,model_decision_tree,32,16,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,62.7475,117.8047,0,0,1.2891,0.00265
-memory-heavy,1024,loose,1.7443,model_decision_tree,32,24,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,62.7475,117.8047,0,0,1.2891,0.00265
-memory-heavy,2048,tight,1.5479,model_decision_tree,32,8,Azure,Central India,Standard_D2as_v4,4,1,1,0.0,0.0,16.4167,0,0,1.0585,0.0044
-memory-heavy,2048,medium,2.1642,model_decision_tree,32,16,Azure,Central India,Standard_D2as_v4,4,1,1,0.0,0.0,16.4167,0,0,1.0585,0.0044
-memory-heavy,2048,loose,2.5563,model_decision_tree,32,24,Azure,Central India,Standard_D2as_v4,4,1,1,0.0,0.0,16.4167,0,0,1.0585,0.0044
-memory-heavy,3072,tight,1.8316,model_decision_tree,35,9,Azure,Central India,Standard_D2as_v4,4,1,1,0.0,23.9723,23.9723,0,0,1.2967,0.0054
-memory-heavy,3072,medium,2.8391,model_decision_tree,35,18,Azure,Central India,Standard_D2as_v4,4,1,1,0.0,23.9723,23.9723,0,0,1.2967,0.0054
-memory-heavy,3072,loose,3.1886,model_decision_tree,35,26,Azure,Central India,Standard_D2as_v4,4,1,1,0.0,23.9723,23.9723,0,0,1.2967,0.0054
-memory-heavy,5120,tight,3.052,model_decision_tree,34,9,Azure,Central India,Standard_D2as_v4,4,1,1,0.0,28.1822,28.1822,0,0,1.9949,0.0083
-memory-heavy,5120,medium,4.3169,model_decision_tree,34,17,Azure,Central India,Standard_D2as_v4,4,1,1,0.0,28.1822,28.1822,0,0,1.9949,0.0083
-memory-heavy,5120,loose,5.0423,model_decision_tree,34,25,Azure,Central India,Standard_D2as_v4,4,1,1,0.0,28.1822,28.1822,0,0,1.9949,0.0083
 cpu-heavy,10,tight,0.6306,model_random_forest,32,8,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,0.0,10.1915,0,0,0.2741,0.0006
-cpu-heavy,10,medium,0.7833,model_random_forest,32,16,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,0.0,10.1915,0,0,0.2741,0.0006
-cpu-heavy,10,loose,0.9594,model_random_forest,32,24,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,0.0,10.1915,0,0,0.2741,0.0006
-cpu-heavy,100,tight,0.6954,model_random_forest,32,8,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,2.9493,10.1037,0,0,0.3176,0.0007
-cpu-heavy,100,medium,0.8724,model_random_forest,32,16,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,2.9493,10.1037,0,0,0.3176,0.0007
-cpu-heavy,100,loose,1.051,model_random_forest,32,24,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,2.9493,10.1037,0,0,0.3176,0.0007
-cpu-heavy,500,tight,0.9613,model_random_forest,32,8,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,40.8008,57.5757,0,0,0.5468,0.00115
-cpu-heavy,500,medium,1.0891,model_random_forest,32,16,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,40.8008,57.5757,0,0,0.5468,0.00115
-cpu-heavy,500,loose,1.3073,model_random_forest,32,24,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,40.8008,57.5757,0,0,0.5468,0.00115
-cpu-heavy,1024,tight,1.1697,model_random_forest,32,8,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,54.5619,103.682,0,1,0.8529,0.00175
-cpu-heavy,1024,medium,1.472,model_random_forest,32,16,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,54.5619,103.682,0,0,0.8529,0.00175
-cpu-heavy,1024,loose,1.6388,model_random_forest,32,24,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,54.5619,103.682,0,0,0.8529,0.00175
-cpu-heavy,2048,tight,1.4385,model_random_forest,32,8,Azure,Central India,Standard_D2as_v4,4,1,1,0.0,0.0,13.8176,0,0,0.7041,0.00295
-cpu-heavy,2048,medium,2.1007,model_random_forest,32,16,Azure,Central India,Standard_D2as_v4,4,1,1,0.0,0.0,13.8176,0,0,0.7041,0.00295
-cpu-heavy,2048,loose,2.4061,model_random_forest,32,24,Azure,Central India,Standard_D2as_v4,4,1,1,0.0,0.0,13.8176,0,0,0.7041,0.00295
-cpu-heavy,3072,tight,1.725,model_random_forest,35,9,Azure,Central India,Standard_D2as_v4,4,1,1,0.0,24.5412,24.5412,0,0,0.8721,0.0036
-cpu-heavy,3072,medium,2.2562,model_random_forest,35,18,Azure,Central India,Standard_D2as_v4,4,1,1,0.0,24.5412,24.5412,0,0,0.8721,0.0036
-cpu-heavy,3072,loose,3.0556,model_random_forest,35,26,Azure,Central India,Standard_D2as_v4,4,1,1,0.0,24.5412,24.5412,0,0,0.8721,0.0036
-cpu-heavy,5120,tight,2.5172,model_random_forest,34,9,Azure,Central India,Standard_D4ds_v4,4,0,0,216.3462,0.0,0.0,0,0,1.0113,0.01645
-cpu-heavy,5120,medium,3.292,model_random_forest,34,17,Azure,Central India,Standard_D2as_v4,4,1,1,0.0,23.2325,23.2325,0,0,1.2462,0.0052
-cpu-heavy,5120,loose,4.5973,model_random_forest,34,25,Azure,Central India,Standard_D2as_v4,4,1,1,0.0,23.2325,23.2325,0,0,1.2462,0.0052
-io-heavy,10,tight,0.6967,model_random_forest,32,8,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,1.2813,16.8448,0,0,0.3438,0.0007
-io-heavy,10,medium,0.8667,model_random_forest,32,16,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,1.2813,16.8448,0,0,0.3438,0.0007
-io-heavy,10,loose,1.0583,model_random_forest,32,24,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,1.2813,16.8448,0,0,0.3438,0.0007
-io-heavy,100,tight,0.8311,model_random_forest,32,8,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,0.6798,16.3383,0,0,0.4592,0.00095
-io-heavy,100,medium,1.0133,model_random_forest,32,16,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,0.6798,16.3383,0,0,0.4592,0.00095
-io-heavy,100,loose,1.1886,model_random_forest,32,24,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,0.6798,16.3383,0,0,0.4592,0.00095
-io-heavy,500,tight,1.2042,model_random_forest,32,8,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,0.0,26.3033,0,0,0.94,0.00195
-io-heavy,500,medium,1.3415,model_random_forest,32,16,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,0.0,26.3033,0,0,0.94,0.00195
-io-heavy,500,loose,1.5852,model_random_forest,32,24,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,0.0,26.3033,0,0,0.94,0.00195
-io-heavy,1024,tight,1.5786,model_random_forest,32,8,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,29.0159,41.5239,0,0,1.557,0.00325
-io-heavy,1024,medium,1.8224,model_random_forest,32,16,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,29.0159,41.5239,0,0,1.557,0.00325
-io-heavy,1024,loose,2.1907,model_random_forest,32,24,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,29.0159,41.5239,0,0,1.557,0.00325
-io-heavy,2048,tight,2.1733,model_random_forest,32,8,Azure,Central India,Standard_D2as_v4,2,0,1,-40.3527,81.1409,110.3704,1,0,2.7866,0.00575
-io-heavy,2048,medium,2.8545,model_random_forest,32,16,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,81.1409,110.3704,0,0,2.7866,0.00575
-io-heavy,2048,loose,3.3388,model_random_forest,32,24,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,81.1409,110.3704,0,0,2.7866,0.00575
-io-heavy,3072,tight,2.8945,model_random_forest,36,9,Azure,Central India,Standard_D2as_v4,4,0,1,33.9473,113.1461,170.207,1,0,3.8489,0.016
-io-heavy,3072,medium,3.7389,model_random_forest,36,18,Azure,Central India,Standard_D2as_v4,2,0,0,-30.0963,121.741,181.1027,1,0,4.0041,0.00835
-io-heavy,3072,loose,4.581,model_random_forest,36,27,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,121.741,181.1027,0,0,4.0041,0.00835
-io-heavy,5120,tight,3.9446,model_random_forest,35,9,Azure,Central India,Standard_D2as_v4,4,0,0,137.8995,134.6047,176.2201,1,0,6.2738,0.02605
-io-heavy,5120,medium,5.2289,model_random_forest,35,18,Azure,Central India,Standard_D2as_v4,2,0,0,22.3744,142.265,185.2392,1,0,6.4787,0.0134
-io-heavy,5120,loose,6.7096,model_random_forest,35,26,Azure,Central India,Standard_D2as_v4,2,0,0,22.3744,142.265,185.2392,0,0,6.4787,0.0134
-memory-heavy,10,tight,0.6949,model_random_forest,32,8,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,1.3128,16.5484,0,0,0.3743,0.0008
-memory-heavy,10,medium,0.8647,model_random_forest,32,16,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,1.3128,16.5484,0,0,0.3743,0.0008
-memory-heavy,10,loose,1.0307,model_random_forest,32,24,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,1.3128,16.5484,0,0,0.3743,0.0008
-memory-heavy,100,tight,0.7916,model_random_forest,32,8,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,16.4181,27.4474,0,0,0.4723,0.001
-memory-heavy,100,medium,0.9172,model_random_forest,32,16,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,16.4181,27.4474,0,0,0.4723,0.001
-memory-heavy,100,loose,1.0898,model_random_forest,32,24,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,16.4181,27.4474,0,0,0.4723,0.001
-memory-heavy,500,tight,1.0474,model_random_forest,32,8,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,54.6752,76.1589,0,0,0.8238,0.0017
-memory-heavy,500,medium,1.1721,model_random_forest,32,16,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,54.6752,76.1589,0,0,0.8238,0.0017
-memory-heavy,500,loose,1.3915,model_random_forest,32,24,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,54.6752,76.1589,0,0,0.8238,0.0017
-memory-heavy,1024,tight,1.3836,model_random_forest,32,8,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,62.7475,117.8047,0,0,1.2891,0.00265
-memory-heavy,1024,medium,1.5608,model_random_forest,32,16,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,62.7475,117.8047,0,0,1.2891,0.00265
-memory-heavy,1024,loose,1.7443,model_random_forest,32,24,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,62.7475,117.8047,0,0,1.2891,0.00265
-memory-heavy,2048,tight,1.5479,model_random_forest,32,8,Azure,Central India,Standard_D2as_v4,4,1,1,0.0,0.0,16.4167,0,0,1.0585,0.0044
-memory-heavy,2048,medium,2.1642,model_random_forest,32,16,Azure,Central India,Standard_D2as_v4,4,1,1,0.0,0.0,16.4167,0,0,1.0585,0.0044
-memory-heavy,2048,loose,2.5563,model_random_forest,32,24,Azure,Central India,Standard_D2as_v4,4,1,1,0.0,0.0,16.4167,0,0,1.0585,0.0044
-memory-heavy,3072,tight,1.8316,model_random_forest,35,9,Azure,Central India,Standard_D2as_v4,4,1,1,0.0,23.9723,23.9723,0,0,1.2967,0.0054
-memory-heavy,3072,medium,2.8391,model_random_forest,35,18,Azure,Central India,Standard_D2as_v4,4,1,1,0.0,23.9723,23.9723,0,0,1.2967,0.0054
-memory-heavy,3072,loose,3.1886,model_random_forest,35,26,Azure,Central India,Standard_D2as_v4,4,1,1,0.0,23.9723,23.9723,0,0,1.2967,0.0054
-memory-heavy,5120,tight,3.052,model_random_forest,34,9,Azure,Central India,Standard_D2as_v4,4,1,1,0.0,28.1822,28.1822,0,0,1.9949,0.0083
-memory-heavy,5120,medium,4.3169,model_random_forest,34,17,Azure,Central India,Standard_D2as_v4,4,1,1,0.0,28.1822,28.1822,0,0,1.9949,0.0083
-memory-heavy,5120,loose,5.0423,model_random_forest,34,25,Azure,Central India,Standard_D2as_v4,4,1,1,0.0,28.1822,28.1822,0,0,1.9949,0.0083
-cpu-heavy,10,tight,0.6306,model_gradient_boosting,32,8,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,0.0,10.1915,0,0,0.2741,0.0006
-cpu-heavy,10,medium,0.7833,model_gradient_boosting,32,16,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,0.0,10.1915,0,0,0.2741,0.0006
-cpu-heavy,10,loose,0.9594,model_gradient_boosting,32,24,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,0.0,10.1915,0,0,0.2741,0.0006
-cpu-heavy,100,tight,0.6954,model_gradient_boosting,32,8,Azure,Central India,Standard_D2as_v4,4,0,1,85.7143,0.0,6.9495,0,0,0.3085,0.0013
-cpu-heavy,100,medium,0.8724,model_gradient_boosting,32,16,Azure,Central India,Standard_D2as_v4,4,0,1,85.7143,0.0,6.9495,0,0,0.3085,0.0013
-cpu-heavy,100,loose,1.051,model_gradient_boosting,32,24,Azure,Central India,Standard_D2as_v4,4,0,1,85.7143,0.0,6.9495,0,0,0.3085,0.0013
-cpu-heavy,500,tight,0.9613,model_gradient_boosting,32,8,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,40.8008,57.5757,0,0,0.5468,0.00115
-cpu-heavy,500,medium,1.0891,model_gradient_boosting,32,16,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,40.8008,57.5757,0,0,0.5468,0.00115
-cpu-heavy,500,loose,1.3073,model_gradient_boosting,32,24,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,40.8008,57.5757,0,0,0.5468,0.00115
-cpu-heavy,1024,tight,1.1697,model_gradient_boosting,32,8,Azure,Central India,Standard_D2as_v4,4,0,0,31.4286,0.0,31.7802,0,0,0.5518,0.0023
-cpu-heavy,1024,medium,1.472,model_gradient_boosting,32,16,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,54.5619,103.682,0,0,0.8529,0.00175
-cpu-heavy,1024,loose,1.6388,model_gradient_boosting,32,24,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,54.5619,103.682,0,0,0.8529,0.00175
-cpu-heavy,2048,tight,1.4385,model_gradient_boosting,32,8,Azure,Central India,Standard_D2as_v4,4,1,1,0.0,0.0,13.8176,0,0,0.7041,0.00295
-cpu-heavy,2048,medium,2.1007,model_gradient_boosting,32,16,Azure,Central India,Standard_D2as_v4,4,1,1,0.0,0.0,13.8176,0,0,0.7041,0.00295
-cpu-heavy,2048,loose,2.4061,model_gradient_boosting,32,24,Azure,Central India,Standard_D2as_v4,2,0,1,10.1695,122.511,153.2567,0,0,1.5667,0.00325
-cpu-heavy,3072,tight,1.725,model_gradient_boosting,35,9,Azure,Central India,Standard_D2as_v4,4,1,1,0.0,24.5412,24.5412,0,0,0.8721,0.0036
-cpu-heavy,3072,medium,2.2562,model_gradient_boosting,35,18,Azure,Central India,Standard_D2as_v4,4,1,1,0.0,24.5412,24.5412,0,0,0.8721,0.0036
-cpu-heavy,3072,loose,3.0556,model_gradient_boosting,35,26,Azure,Central India,Standard_D2as_v4,4,1,1,0.0,24.5412,24.5412,0,0,0.8721,0.0036
-cpu-heavy,5120,tight,2.5172,model_gradient_boosting,34,9,Azure,Central India,Standard_D2as_v4,4,1,1,0.0,23.2325,23.2325,0,0,1.2462,0.0052
-cpu-heavy,5120,medium,3.292,model_gradient_boosting,34,17,Azure,Central India,Standard_D2as_v4,4,1,1,0.0,23.2325,23.2325,0,0,1.2462,0.0052
-cpu-heavy,5120,loose,4.5973,model_gradient_boosting,34,25,Azure,Central India,Standard_D2as_v4,4,1,1,0.0,23.2325,23.2325,0,0,1.2462,0.0052
-io-heavy,10,tight,0.6967,model_gradient_boosting,32,8,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,1.2813,16.8448,0,0,0.3438,0.0007
-io-heavy,10,medium,0.8667,model_gradient_boosting,32,16,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,1.2813,16.8448,0,0,0.3438,0.0007
-io-heavy,10,loose,1.0583,model_gradient_boosting,32,24,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,1.2813,16.8448,0,0,0.3438,0.0007
-io-heavy,100,tight,0.8311,model_gradient_boosting,32,8,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,0.6798,16.3383,0,0,0.4592,0.00095
-io-heavy,100,medium,1.0133,model_gradient_boosting,32,16,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,0.6798,16.3383,0,0,0.4592,0.00095
-io-heavy,100,loose,1.1886,model_gradient_boosting,32,24,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,0.6798,16.3383,0,0,0.4592,0.00095
-io-heavy,500,tight,1.2042,model_gradient_boosting,32,8,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,0.0,26.3033,0,0,0.94,0.00195
-io-heavy,500,medium,1.3415,model_gradient_boosting,32,16,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,0.0,26.3033,0,0,0.94,0.00195
-io-heavy,500,loose,1.5852,model_gradient_boosting,32,24,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,0.0,26.3033,0,0,0.94,0.00195
-io-heavy,1024,tight,1.5786,model_gradient_boosting,32,8,Azure,Central India,Standard_D2as_v4,4,0,0,100.0,29.3639,41.9056,0,0,1.5613,0.0065
-io-heavy,1024,medium,1.8224,model_gradient_boosting,32,16,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,29.0159,41.5239,0,0,1.557,0.00325
-io-heavy,1024,loose,2.1907,model_gradient_boosting,32,24,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,29.0159,41.5239,0,0,1.557,0.00325
-io-heavy,2048,tight,2.1733,model_gradient_boosting,32,8,Azure,Central India,Standard_D2as_v4,4,0,1,21.3693,83.4258,113.024,1,0,2.8217,0.0117
-io-heavy,2048,medium,2.8545,model_gradient_boosting,32,16,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,81.1409,110.3704,0,0,2.7866,0.00575
-io-heavy,2048,loose,3.3388,model_gradient_boosting,32,24,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,81.1409,110.3704,0,0,2.7866,0.00575
-io-heavy,3072,tight,2.8945,model_gradient_boosting,36,9,Azure,Central India,Standard_D2as_v4,4,0,1,33.9473,113.1461,170.207,1,0,3.8489,0.016
-io-heavy,3072,medium,3.7389,model_gradient_boosting,36,18,Azure,Central India,Standard_D2as_v4,2,0,0,-30.0963,121.741,181.1027,1,0,4.0041,0.00835
-io-heavy,3072,loose,4.581,model_gradient_boosting,36,27,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,121.741,181.1027,0,0,4.0041,0.00835
-io-heavy,5120,tight,3.9446,model_gradient_boosting,35,9,Azure,Central India,Standard_D2as_v4,4,0,0,137.8995,134.6047,176.2201,1,0,6.2738,0.02605
-io-heavy,5120,medium,5.2289,model_gradient_boosting,35,18,Azure,Central India,Standard_D2as_v4,2,0,0,22.3744,142.265,185.2392,1,0,6.4787,0.0134
-io-heavy,5120,loose,6.7096,model_gradient_boosting,35,26,Azure,Central India,Standard_D2as_v4,2,0,0,22.3744,142.265,185.2392,0,0,6.4787,0.0134
-memory-heavy,10,tight,0.6949,model_gradient_boosting,32,8,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,1.3128,16.5484,0,0,0.3743,0.0008
-memory-heavy,10,medium,0.8647,model_gradient_boosting,32,16,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,1.3128,16.5484,0,0,0.3743,0.0008
-memory-heavy,10,loose,1.0307,model_gradient_boosting,32,24,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,1.3128,16.5484,0,0,0.3743,0.0008
-memory-heavy,100,tight,0.7916,model_gradient_boosting,32,8,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,16.4181,27.4474,0,0,0.4723,0.001
-memory-heavy,100,medium,0.9172,model_gradient_boosting,32,16,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,16.4181,27.4474,0,0,0.4723,0.001
-memory-heavy,100,loose,1.0898,model_gradient_boosting,32,24,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,16.4181,27.4474,0,0,0.4723,0.001
-memory-heavy,500,tight,1.0474,model_gradient_boosting,32,8,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,54.6752,76.1589,0,0,0.8238,0.0017
-memory-heavy,500,medium,1.1721,model_gradient_boosting,32,16,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,54.6752,76.1589,0,0,0.8238,0.0017
-memory-heavy,500,loose,1.3915,model_gradient_boosting,32,24,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,54.6752,76.1589,0,0,0.8238,0.0017
-memory-heavy,1024,tight,1.3836,model_gradient_boosting,32,8,Azure,Central India,Standard_D2as_v4,4,0,0,24.5283,0.2188,34.1227,0,0,0.7938,0.0033
-memory-heavy,1024,medium,1.5608,model_gradient_boosting,32,16,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,62.7475,117.8047,0,0,1.2891,0.00265
-memory-heavy,1024,loose,1.7443,model_gradient_boosting,32,24,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,62.7475,117.8047,0,0,1.2891,0.00265
-memory-heavy,2048,tight,1.5479,model_gradient_boosting,32,8,Azure,Central India,Standard_D2as_v4,4,1,1,0.0,0.0,16.4167,0,0,1.0585,0.0044
-memory-heavy,2048,medium,2.1642,model_gradient_boosting,32,16,Azure,Central India,Standard_D2as_v4,4,1,1,0.0,0.0,16.4167,0,0,1.0585,0.0044
-memory-heavy,2048,loose,2.5563,model_gradient_boosting,32,24,Azure,Central India,Standard_D2as_v4,2,0,1,7.9545,115.4551,150.8258,0,0,2.2807,0.00475
-memory-heavy,3072,tight,1.8316,model_gradient_boosting,35,9,Azure,Central India,Standard_D4ds_v4,4,0,0,214.8148,0.0,0.0,0,0,1.046,0.017
-memory-heavy,3072,medium,2.8391,model_gradient_boosting,35,18,Azure,Central India,Standard_D2as_v4,4,1,1,0.0,23.9723,23.9723,0,0,1.2967,0.0054
-memory-heavy,3072,loose,3.1886,model_gradient_boosting,35,26,Azure,Central India,Standard_D2as_v4,4,1,1,0.0,23.9723,23.9723,0,0,1.2967,0.0054
-memory-heavy,5120,tight,3.052,model_gradient_boosting,34,9,Azure,Central India,Standard_D2as_v4,4,1,1,0.0,28.1822,28.1822,0,0,1.9949,0.0083
-memory-heavy,5120,medium,4.3169,model_gradient_boosting,34,17,Azure,Central India,Standard_D2as_v4,4,1,1,0.0,28.1822,28.1822,0,0,1.9949,0.0083
-memory-heavy,5120,loose,5.0423,model_gradient_boosting,34,25,Azure,Central India,Standard_D2as_v4,2,0,1,23.494,218.2356,218.2356,0,0,4.9527,0.01025
 cpu-heavy,10,tight,0.6306,historical_mean,32,8,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,0.0,10.1915,0,1,0.2741,0.0006
 cpu-heavy,10,tight,0.6306,nearest_size,32,8,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,0.0,10.1915,0,0,0.2741,0.0006
 cpu-heavy,10,tight,0.6306,largest_cluster,32,8,Azure,Central India,Standard_D2as_v4,4,0,0,100.0,3.3564,13.89,0,1,0.2833,0.0012
 cpu-heavy,10,tight,0.6306,random,32,8,AWS,ap-southeast-1,m5a.xlarge,2,0,0,1256.9444,312.5401,239.6733,0,1,1.1308,0.008142
+cpu-heavy,10,medium,0.7833,model_random_forest,32,16,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,0.0,10.1915,0,0,0.2741,0.0006
 cpu-heavy,10,medium,0.7833,historical_mean,32,16,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,0.0,10.1915,0,1,0.2741,0.0006
 cpu-heavy,10,medium,0.7833,nearest_size,32,16,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,0.0,10.1915,0,0,0.2741,0.0006
 cpu-heavy,10,medium,0.7833,largest_cluster,32,16,Azure,Central India,Standard_D2as_v4,4,0,0,100.0,3.3564,13.89,0,1,0.2833,0.0012
 cpu-heavy,10,medium,0.7833,random,32,16,AWS,ap-south-1,c6i.xlarge,2,0,0,503.0833,132.9593,156.7014,0,1,0.6385,0.003619
+cpu-heavy,10,loose,0.9594,model_random_forest,32,24,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,0.0,10.1915,0,0,0.2741,0.0006
 cpu-heavy,10,loose,0.9594,historical_mean,32,24,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,0.0,10.1915,0,1,0.2741,0.0006
 cpu-heavy,10,loose,0.9594,nearest_size,32,24,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,0.0,10.1915,0,0,0.2741,0.0006
 cpu-heavy,10,loose,0.9594,largest_cluster,32,24,Azure,Central India,Standard_D2as_v4,4,0,0,100.0,3.3564,13.89,0,1,0.2833,0.0012
 cpu-heavy,10,loose,0.9594,random,32,24,AWS,ap-south-1,c5.xlarge,4,0,1,1613.1667,230.8909,264.6137,0,1,0.907,0.010279
+cpu-heavy,100,tight,0.6954,model_random_forest,32,8,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,2.9493,10.1037,0,0,0.3176,0.0007
 cpu-heavy,100,tight,0.6954,historical_mean,32,8,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,2.9493,10.1037,0,1,0.3176,0.0007
 cpu-heavy,100,tight,0.6954,nearest_size,32,8,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,2.9493,10.1037,0,0,0.3176,0.0007
 cpu-heavy,100,tight,0.6954,largest_cluster,32,8,Azure,Central India,Standard_D2as_v4,4,0,0,85.7143,0.0,6.9495,0,1,0.3085,0.0013
 cpu-heavy,100,tight,0.6954,random,32,8,AWS,ap-southeast-1,m5.xlarge,4,0,0,1985.4286,269.6159,195.3768,0,1,1.1404,0.014598
+cpu-heavy,100,medium,0.8724,model_random_forest,32,16,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,2.9493,10.1037,0,0,0.3176,0.0007
 cpu-heavy,100,medium,0.8724,historical_mean,32,16,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,2.9493,10.1037,0,1,0.3176,0.0007
 cpu-heavy,100,medium,0.8724,nearest_size,32,16,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,2.9493,10.1037,0,0,0.3176,0.0007
 cpu-heavy,100,medium,0.8724,largest_cluster,32,16,Azure,Central India,Standard_D2as_v4,4,0,0,85.7143,0.0,6.9495,0,1,0.3085,0.0013
 cpu-heavy,100,medium,0.8724,random,32,16,AWS,ap-south-1,c5.xlarge,4,0,0,1313.1786,182.8836,202.5426,0,1,0.8728,0.009892
+cpu-heavy,100,loose,1.051,model_random_forest,32,24,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,2.9493,10.1037,0,0,0.3176,0.0007
 cpu-heavy,100,loose,1.051,historical_mean,32,24,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,2.9493,10.1037,0,1,0.3176,0.0007
 cpu-heavy,100,loose,1.051,nearest_size,32,24,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,2.9493,10.1037,0,0,0.3176,0.0007
 cpu-heavy,100,loose,1.051,largest_cluster,32,24,Azure,Central India,Standard_D2as_v4,4,0,0,85.7143,0.0,6.9495,0,1,0.3085,0.0013
 cpu-heavy,100,loose,1.051,random,32,24,AWS,ap-southeast-1,m6i.xlarge,2,0,0,858.2857,171.7495,117.1673,0,1,0.8385,0.006708
+cpu-heavy,500,tight,0.9613,model_random_forest,32,8,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,40.8008,57.5757,0,0,0.5468,0.00115
 cpu-heavy,500,tight,0.9613,historical_mean,32,8,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,40.8008,57.5757,0,1,0.5468,0.00115
 cpu-heavy,500,tight,0.9613,nearest_size,32,8,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,40.8008,57.5757,0,0,0.5468,0.00115
 cpu-heavy,500,tight,0.9613,largest_cluster,32,8,Azure,Central India,Standard_D2as_v4,4,0,0,39.1304,0.0,11.9139,0,1,0.3883,0.0016
 cpu-heavy,500,tight,0.9613,random,32,8,AWS,ap-south-1,c6i.xlarge,2,0,0,378.7391,150.1823,179.9888,0,1,0.9716,0.005505
+cpu-heavy,500,medium,1.0891,model_random_forest,32,16,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,40.8008,57.5757,0,0,0.5468,0.00115
 cpu-heavy,500,medium,1.0891,historical_mean,32,16,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,40.8008,57.5757,0,1,0.5468,0.00115
 cpu-heavy,500,medium,1.0891,nearest_size,32,16,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,40.8008,57.5757,0,0,0.5468,0.00115
 cpu-heavy,500,medium,1.0891,largest_cluster,32,16,Azure,Central India,Standard_D2as_v4,4,0,0,39.1304,0.0,11.9139,0,1,0.3883,0.0016
 cpu-heavy,500,medium,1.0891,random,32,16,AWS,ap-south-1,m6i.xlarge,4,0,0,1052.6667,153.4627,183.66,0,1,0.9843,0.013256
+cpu-heavy,500,loose,1.3073,model_random_forest,32,24,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,40.8008,57.5757,0,0,0.5468,0.00115
 cpu-heavy,500,loose,1.3073,historical_mean,32,24,AWS,ap-south-1,c5a.xlarge,4,0,0,482.8696,139.5756,168.1184,0,0,0.9304,0.006703
 cpu-heavy,500,loose,1.3073,nearest_size,32,24,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,40.8008,57.5757,0,0,0.5468,0.00115
 cpu-heavy,500,loose,1.3073,largest_cluster,32,24,AWS,ap-south-1,c5a.xlarge,4,0,0,482.8696,139.5756,168.1184,0,0,0.9304,0.006703
 cpu-heavy,500,loose,1.3073,random,32,24,Azure,Southeast Asia,Standard_D4s_v3,4,0,0,572.4638,19.5829,0.0,0,0,0.4644,0.007733
+cpu-heavy,1024,tight,1.1697,model_random_forest,32,8,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,54.5619,103.682,0,1,0.8529,0.00175
 cpu-heavy,1024,tight,1.1697,historical_mean,32,8,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,54.5619,103.682,0,1,0.8529,0.00175
 cpu-heavy,1024,tight,1.1697,nearest_size,32,8,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,54.5619,103.682,0,0,0.8529,0.00175
 cpu-heavy,1024,tight,1.1697,largest_cluster,32,8,Azure,Central India,Standard_D2as_v4,4,0,0,31.4286,0.0,31.7802,0,1,0.5518,0.0023
 cpu-heavy,1024,tight,1.1697,random,32,8,AWS,ap-south-1,m5.xlarge,2,0,0,537.9286,211.8201,310.917,0,1,1.7208,0.011164
+cpu-heavy,1024,medium,1.472,model_random_forest,32,16,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,54.5619,103.682,0,0,0.8529,0.00175
 cpu-heavy,1024,medium,1.472,historical_mean,32,16,Azure,Central India,Standard_D2as_v4,4,0,0,31.4286,0.0,31.7802,0,0,0.5518,0.0023
 cpu-heavy,1024,medium,1.472,nearest_size,32,16,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,54.5619,103.682,0,0,0.8529,0.00175
 cpu-heavy,1024,medium,1.472,largest_cluster,32,16,Azure,Central India,Standard_D2as_v4,4,0,0,31.4286,0.0,31.7802,0,0,0.5518,0.0023
 cpu-heavy,1024,medium,1.472,random,32,16,AWS,ap-southeast-1,m6i.xlarge,4,0,0,1001.8286,118.3746,115.03,0,0,1.2051,0.019282
+cpu-heavy,1024,loose,1.6388,model_random_forest,32,24,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,54.5619,103.682,0,0,0.8529,0.00175
 cpu-heavy,1024,loose,1.6388,historical_mean,32,24,Azure,Central India,Standard_D2as_v4,4,0,0,31.4286,0.0,31.7802,0,0,0.5518,0.0023
 cpu-heavy,1024,loose,1.6388,nearest_size,32,24,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,54.5619,103.682,0,0,0.8529,0.00175
 cpu-heavy,1024,loose,1.6388,largest_cluster,32,24,Azure,Central India,Standard_D2as_v4,4,0,0,31.4286,0.0,31.7802,0,0,0.5518,0.0023
 cpu-heavy,1024,loose,1.6388,random,32,24,AWS,ap-south-1,c5.xlarge,4,0,0,671.3714,115.8346,184.4273,0,0,1.1911,0.013499
+cpu-heavy,2048,tight,1.4385,model_random_forest,32,8,Azure,Central India,Standard_D2as_v4,4,1,1,0.0,0.0,13.8176,0,0,0.7041,0.00295
 cpu-heavy,2048,tight,1.4385,historical_mean,32,8,Azure,Central India,Standard_D2as_v4,4,1,1,0.0,0.0,13.8176,0,0,0.7041,0.00295
 cpu-heavy,2048,tight,1.4385,nearest_size,32,8,Azure,Central India,Standard_D2as_v4,2,0,1,10.1695,122.511,153.2567,1,0,1.5667,0.00325
 cpu-heavy,2048,tight,1.4385,largest_cluster,32,8,Azure,Central India,Standard_D2as_v4,4,1,1,0.0,0.0,13.8176,0,0,0.7041,0.00295
 cpu-heavy,2048,tight,1.4385,random,32,8,AWS,ap-south-1,c5a.xlarge,4,0,1,233.9322,123.2684,154.1188,1,0,1.572,0.009851
+cpu-heavy,2048,medium,2.1007,model_random_forest,32,16,Azure,Central India,Standard_D2as_v4,4,1,1,0.0,0.0,13.8176,0,0,0.7041,0.00295
 cpu-heavy,2048,medium,2.1007,historical_mean,32,16,Azure,Central India,Standard_D2as_v4,2,0,1,10.1695,122.511,153.2567,0,0,1.5667,0.00325
 cpu-heavy,2048,medium,2.1007,nearest_size,32,16,Azure,Central India,Standard_D2as_v4,2,0,1,10.1695,122.511,153.2567,0,0,1.5667,0.00325
 cpu-heavy,2048,medium,2.1007,largest_cluster,32,16,Azure,Central India,Standard_D2as_v4,4,1,1,0.0,0.0,13.8176,0,0,0.7041,0.00295
 cpu-heavy,2048,medium,2.1007,random,32,16,AWS,ap-southeast-1,c5a.xlarge,4,0,0,485.4915,109.0707,77.8073,0,0,1.4721,0.017272
+cpu-heavy,2048,loose,2.4061,model_random_forest,32,24,Azure,Central India,Standard_D2as_v4,4,1,1,0.0,0.0,13.8176,0,0,0.7041,0.00295
 cpu-heavy,2048,loose,2.4061,historical_mean,32,24,Azure,Central India,Standard_D2as_v4,2,0,1,10.1695,122.511,153.2567,0,0,1.5667,0.00325
 cpu-heavy,2048,loose,2.4061,nearest_size,32,24,Azure,Central India,Standard_D2as_v4,2,0,1,10.1695,122.511,153.2567,0,0,1.5667,0.00325
 cpu-heavy,2048,loose,2.4061,largest_cluster,32,24,Azure,Central India,Standard_D2as_v4,4,1,1,0.0,0.0,13.8176,0,0,0.7041,0.00295
 cpu-heavy,2048,loose,2.4061,random,32,24,AWS,ap-southeast-1,c5a.xlarge,4,0,0,485.4915,109.0707,77.8073,0,0,1.4721,0.017272
+cpu-heavy,3072,tight,1.725,model_random_forest,35,9,Azure,Central India,Standard_D2as_v4,4,1,1,0.0,24.5412,24.5412,0,0,0.8721,0.0036
 cpu-heavy,3072,tight,1.725,historical_mean,35,9,AWS,ap-south-1,c5a.xlarge,2,0,1,164.4444,333.9022,333.9022,1,0,3.0384,0.00952
 cpu-heavy,3072,tight,1.725,nearest_size,35,9,Azure,Central India,Standard_D2as_v4,4,1,1,0.0,24.5412,24.5412,0,0,0.8721,0.0036
 cpu-heavy,3072,tight,1.725,largest_cluster,35,9,Azure,Central India,Standard_D2as_v4,4,1,1,0.0,24.5412,24.5412,0,0,0.8721,0.0036
 cpu-heavy,3072,tight,1.725,random,35,9,AWS,ap-south-1,c6i.xlarge,4,0,0,373.75,114.9065,114.9065,0,0,1.5049,0.017055
+cpu-heavy,3072,medium,2.2562,model_random_forest,35,18,Azure,Central India,Standard_D2as_v4,4,1,1,0.0,24.5412,24.5412,0,0,0.8721,0.0036
 cpu-heavy,3072,medium,2.2562,historical_mean,35,18,Azure,Central India,Standard_D2as_v4,2,0,1,6.9444,166.0407,166.0407,0,0,1.863,0.00385
 cpu-heavy,3072,medium,2.2562,nearest_size,35,18,Azure,Central India,Standard_D2as_v4,4,1,1,0.0,24.5412,24.5412,0,0,0.8721,0.0036
 cpu-heavy,3072,medium,2.2562,largest_cluster,35,18,Azure,Central India,Standard_D2as_v4,4,1,1,0.0,24.5412,24.5412,0,0,0.8721,0.0036
 cpu-heavy,3072,medium,2.2562,random,35,18,AWS,ap-southeast-1,c5.xlarge,2,0,1,566.7361,424.6519,292.0291,1,0,3.6739,0.024003
+cpu-heavy,3072,loose,3.0556,model_random_forest,35,26,Azure,Central India,Standard_D2as_v4,4,1,1,0.0,24.5412,24.5412,0,0,0.8721,0.0036
 cpu-heavy,3072,loose,3.0556,historical_mean,35,26,Azure,Central India,Standard_D2as_v4,2,0,1,6.9444,166.0407,166.0407,0,0,1.863,0.00385
 cpu-heavy,3072,loose,3.0556,nearest_size,35,26,Azure,Central India,Standard_D2as_v4,4,1,1,0.0,24.5412,24.5412,0,0,0.8721,0.0036
 cpu-heavy,3072,loose,3.0556,largest_cluster,35,26,Azure,Central India,Standard_D2as_v4,4,1,1,0.0,24.5412,24.5412,0,0,0.8721,0.0036
 cpu-heavy,3072,loose,3.0556,random,35,26,Azure,Central India,Standard_D2as_v4,2,0,0,6.9444,166.0407,166.0407,0,0,1.863,0.00385
+cpu-heavy,5120,tight,2.5172,model_random_forest,34,9,Azure,Central India,Standard_D4ds_v4,4,0,0,216.3462,0.0,0.0,0,0,1.0113,0.01645
 cpu-heavy,5120,tight,2.5172,historical_mean,34,9,Azure,Central India,Standard_D2as_v4,2,0,1,26.9231,214.3231,214.3231,1,0,3.1787,0.0066
 cpu-heavy,5120,tight,2.5172,nearest_size,34,9,Azure,Central India,Standard_D2as_v4,4,1,1,0.0,23.2325,23.2325,0,0,1.2462,0.0052
 cpu-heavy,5120,tight,2.5172,largest_cluster,34,9,Azure,Central India,Standard_D2as_v4,4,1,1,0.0,23.2325,23.2325,0,0,1.2462,0.0052
 cpu-heavy,5120,tight,2.5172,random,34,9,AWS,ap-southeast-1,m5.xlarge,2,0,0,602.3269,464.2671,321.6302,1,0,5.7064,0.036521
+cpu-heavy,5120,medium,3.292,model_random_forest,34,17,Azure,Central India,Standard_D2as_v4,4,1,1,0.0,23.2325,23.2325,0,0,1.2462,0.0052
 cpu-heavy,5120,medium,3.292,historical_mean,34,17,Azure,Central India,Standard_D2as_v4,2,0,1,26.9231,214.3231,214.3231,0,0,3.1787,0.0066
 cpu-heavy,5120,medium,3.292,nearest_size,34,17,Azure,Central India,Standard_D2as_v4,4,1,1,0.0,23.2325,23.2325,0,0,1.2462,0.0052
 cpu-heavy,5120,medium,3.292,largest_cluster,34,17,Azure,Central India,Standard_D2as_v4,4,1,1,0.0,23.2325,23.2325,0,0,1.2462,0.0052
 cpu-heavy,5120,medium,3.292,random,34,17,AWS,ap-southeast-1,m5.xlarge,4,0,0,673.0962,210.5607,132.0564,0,0,3.1407,0.040201
+cpu-heavy,5120,loose,4.5973,model_random_forest,34,25,Azure,Central India,Standard_D2as_v4,4,1,1,0.0,23.2325,23.2325,0,0,1.2462,0.0052
 cpu-heavy,5120,loose,4.5973,historical_mean,34,25,Azure,Central India,Standard_D2as_v4,2,0,1,26.9231,214.3231,214.3231,0,0,3.1787,0.0066
 cpu-heavy,5120,loose,4.5973,nearest_size,34,25,Azure,Central India,Standard_D2as_v4,4,1,1,0.0,23.2325,23.2325,0,0,1.2462,0.0052
 cpu-heavy,5120,loose,4.5973,largest_cluster,34,25,Azure,Central India,Standard_D2as_v4,4,1,1,0.0,23.2325,23.2325,0,0,1.2462,0.0052
 cpu-heavy,5120,loose,4.5973,random,34,25,AWS,ap-south-1,m6i.xlarge,4,0,0,531.5,141.1225,141.1225,0,0,2.4385,0.032838
+io-heavy,10,tight,0.6967,model_random_forest,32,8,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,1.2813,16.8448,0,0,0.3438,0.0007
 io-heavy,10,tight,0.6967,historical_mean,32,8,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,1.2813,16.8448,0,1,0.3438,0.0007
 io-heavy,10,tight,0.6967,nearest_size,32,8,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,1.2813,16.8448,0,0,0.3438,0.0007
 io-heavy,10,tight,0.6967,largest_cluster,32,8,Azure,Central India,Standard_D2as_v4,4,0,0,100.0,0.0,15.3666,0,1,0.3395,0.0014
 io-heavy,10,tight,0.6967,random,32,8,Azure,Southeast Asia,Standard_D4s_v3,2,0,0,369.0476,16.0039,0.0,0,1,0.3938,0.003283
+io-heavy,10,medium,0.8667,model_random_forest,32,16,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,1.2813,16.8448,0,0,0.3438,0.0007
 io-heavy,10,medium,0.8667,historical_mean,32,16,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,1.2813,16.8448,0,1,0.3438,0.0007
 io-heavy,10,medium,0.8667,nearest_size,32,16,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,1.2813,16.8448,0,0,0.3438,0.0007
 io-heavy,10,medium,0.8667,largest_cluster,32,16,Azure,Central India,Standard_D2as_v4,4,0,0,100.0,0.0,15.3666,0,1,0.3395,0.0014
 io-heavy,10,medium,0.8667,random,32,16,AWS,ap-south-1,c5.xlarge,2,0,0,551.8571,137.2018,173.6517,0,1,0.8053,0.004563
+io-heavy,10,loose,1.0583,model_random_forest,32,24,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,1.2813,16.8448,0,0,0.3438,0.0007
 io-heavy,10,loose,1.0583,historical_mean,32,24,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,1.2813,16.8448,0,1,0.3438,0.0007
 io-heavy,10,loose,1.0583,nearest_size,32,24,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,1.2813,16.8448,0,0,0.3438,0.0007
 io-heavy,10,loose,1.0583,largest_cluster,32,24,Azure,Central India,Standard_D2as_v4,4,0,0,100.0,0.0,15.3666,0,1,0.3395,0.0014
 io-heavy,10,loose,1.0583,random,32,24,Azure,Central India,Standard_D2s_v3,2,0,0,233.3333,97.8449,128.247,0,1,0.6717,0.002333
+io-heavy,100,tight,0.8311,model_random_forest,32,8,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,0.6798,16.3383,0,0,0.4592,0.00095
 io-heavy,100,tight,0.8311,historical_mean,32,8,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,0.6798,16.3383,0,1,0.4592,0.00095
 io-heavy,100,tight,0.8311,nearest_size,32,8,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,0.6798,16.3383,0,0,0.4592,0.00095
 io-heavy,100,tight,0.8311,largest_cluster,32,8,Azure,Central India,Standard_D2as_v4,4,0,0,100.0,0.0,15.5529,0,1,0.4561,0.0019
 io-heavy,100,tight,0.8311,random,32,8,AWS,ap-south-1,m6i.xlarge,4,0,0,1182.7105,98.4158,129.2751,0,1,0.9049,0.012186
+io-heavy,100,medium,1.0133,model_random_forest,32,16,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,0.6798,16.3383,0,0,0.4592,0.00095
 io-heavy,100,medium,1.0133,historical_mean,32,16,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,0.6798,16.3383,0,1,0.4592,0.00095
 io-heavy,100,medium,1.0133,nearest_size,32,16,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,0.6798,16.3383,0,0,0.4592,0.00095
 io-heavy,100,medium,1.0133,largest_cluster,32,16,Azure,Central India,Standard_D2as_v4,4,0,0,100.0,0.0,15.5529,0,1,0.4561,0.0019
 io-heavy,100,medium,1.0133,random,32,16,AWS,ap-southeast-1,m6i.xlarge,4,0,0,1677.6316,131.4366,99.8296,0,1,1.0555,0.016887
+io-heavy,100,loose,1.1886,model_random_forest,32,24,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,0.6798,16.3383,0,0,0.4592,0.00095
 io-heavy,100,loose,1.1886,historical_mean,32,24,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,0.6798,16.3383,0,1,0.4592,0.00095
 io-heavy,100,loose,1.1886,nearest_size,32,24,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,0.6798,16.3383,0,0,0.4592,0.00095
 io-heavy,100,loose,1.1886,largest_cluster,32,24,Azure,Central India,Standard_D2as_v4,4,0,0,100.0,0.0,15.5529,0,1,0.4561,0.0019
 io-heavy,100,loose,1.1886,random,32,24,AWS,ap-southeast-1,m5a.xlarge,4,0,0,2539.7895,281.8698,229.7183,0,1,1.7415,0.025078
+io-heavy,500,tight,1.2042,model_random_forest,32,8,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,0.0,26.3033,0,0,0.94,0.00195
 io-heavy,500,tight,1.2042,historical_mean,32,8,Azure,Southeast Asia,Standard_D4s_v3,4,0,0,781.1966,9.7097,3.5397,0,0,1.0312,0.017183
 io-heavy,500,tight,1.2042,nearest_size,32,8,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,0.0,26.3033,0,0,0.94,0.00195
 io-heavy,500,tight,1.2042,largest_cluster,32,8,Azure,Southeast Asia,Standard_D4s_v3,4,0,0,781.1966,9.7097,3.5397,0,0,1.0312,0.017183
 io-heavy,500,tight,1.2042,random,32,8,Azure,Southeast Asia,Standard_D4s_v3,4,0,0,781.1966,9.7097,3.5397,0,0,1.0312,0.017183
+io-heavy,500,medium,1.3415,model_random_forest,32,16,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,0.0,26.3033,0,0,0.94,0.00195
 io-heavy,500,medium,1.3415,historical_mean,32,16,Azure,Central India,Standard_D2as_v4,4,0,0,100.0,0.3458,26.74,0,0,0.9432,0.0039
 io-heavy,500,medium,1.3415,nearest_size,32,16,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,0.0,26.3033,0,0,0.94,0.00195
 io-heavy,500,medium,1.3415,largest_cluster,32,16,Azure,Central India,Standard_D2as_v4,4,0,0,100.0,0.3458,26.74,0,0,0.9432,0.0039
 io-heavy,500,medium,1.3415,random,32,16,AWS,ap-south-1,c5a.xlarge,4,0,0,449.1795,31.7978,66.465,0,0,1.2388,0.010709
+io-heavy,500,loose,1.5852,model_random_forest,32,24,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,0.0,26.3033,0,0,0.94,0.00195
 io-heavy,500,loose,1.5852,historical_mean,32,24,Azure,Central India,Standard_D2as_v4,4,0,0,100.0,0.3458,26.74,0,0,0.9432,0.0039
 io-heavy,500,loose,1.5852,nearest_size,32,24,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,0.0,26.3033,0,0,0.94,0.00195
 io-heavy,500,loose,1.5852,largest_cluster,32,24,Azure,Central India,Standard_D2as_v4,4,0,0,100.0,0.3458,26.74,0,0,0.9432,0.0039
 io-heavy,500,loose,1.5852,random,32,24,AWS,ap-south-1,c5.xlarge,4,0,0,673.7308,41.6312,78.8849,0,0,1.3313,0.015088
+io-heavy,1024,tight,1.5786,model_random_forest,32,8,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,29.0159,41.5239,0,0,1.557,0.00325
 io-heavy,1024,tight,1.5786,historical_mean,32,8,Azure,Central India,Standard_D2as_v4,4,0,0,100.0,29.3639,41.9056,0,0,1.5613,0.0065
 io-heavy,1024,tight,1.5786,nearest_size,32,8,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,29.0159,41.5239,0,0,1.557,0.00325
 io-heavy,1024,tight,1.5786,largest_cluster,32,8,Azure,Central India,Standard_D2as_v4,4,0,0,100.0,29.3639,41.9056,0,0,1.5613,0.0065
 io-heavy,1024,tight,1.5786,random,32,8,AWS,ap-southeast-1,m6i.xlarge,4,0,0,624.8615,22.0018,0.0,0,0,1.4724,0.023558
+io-heavy,1024,medium,1.8224,model_random_forest,32,16,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,29.0159,41.5239,0,0,1.557,0.00325
 io-heavy,1024,medium,1.8224,historical_mean,32,16,Azure,Central India,Standard_D2as_v4,4,0,0,100.0,29.3639,41.9056,0,0,1.5613,0.0065
 io-heavy,1024,medium,1.8224,nearest_size,32,16,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,29.0159,41.5239,0,0,1.557,0.00325
 io-heavy,1024,medium,1.8224,largest_cluster,32,16,Azure,Central India,Standard_D2as_v4,4,0,0,100.0,29.3639,41.9056,0,0,1.5613,0.0065
 io-heavy,1024,medium,1.8224,random,32,16,AWS,ap-south-1,c5a.xlarge,2,0,0,66.0462,42.707,56.5423,0,0,1.7223,0.005397
+io-heavy,1024,loose,2.1907,model_random_forest,32,24,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,29.0159,41.5239,0,0,1.557,0.00325
 io-heavy,1024,loose,2.1907,historical_mean,32,24,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,29.0159,41.5239,0,0,1.557,0.00325
 io-heavy,1024,loose,2.1907,nearest_size,32,24,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,29.0159,41.5239,0,0,1.557,0.00325
 io-heavy,1024,loose,2.1907,largest_cluster,32,24,Azure,Central India,Standard_D2as_v4,4,0,0,100.0,29.3639,41.9056,0,0,1.5613,0.0065
 io-heavy,1024,loose,2.1907,random,32,24,AWS,ap-southeast-1,m6i.xlarge,2,0,0,356.6923,53.7265,26.0035,0,0,1.8553,0.014843
+io-heavy,2048,tight,2.1733,model_random_forest,32,8,Azure,Central India,Standard_D2as_v4,2,0,1,-40.3527,81.1409,110.3704,1,0,2.7866,0.00575
 io-heavy,2048,tight,2.1733,historical_mean,32,8,Azure,Central India,Standard_D2as_v4,2,0,0,-40.3527,81.1409,110.3704,1,0,2.7866,0.00575
 io-heavy,2048,tight,2.1733,nearest_size,32,8,Azure,Central India,Standard_D2as_v4,2,0,0,-40.3527,81.1409,110.3704,1,0,2.7866,0.00575
 io-heavy,2048,tight,2.1733,largest_cluster,32,8,Azure,Central India,Standard_D2as_v4,4,0,1,21.3693,83.4258,113.024,1,0,2.8217,0.0117
 io-heavy,2048,tight,2.1733,random,32,8,AWS,ap-south-1,c6i.xlarge,4,0,0,80.9232,0.0358,16.1778,0,0,1.5389,0.017441
+io-heavy,2048,medium,2.8545,model_random_forest,32,16,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,81.1409,110.3704,0,0,2.7866,0.00575
 io-heavy,2048,medium,2.8545,historical_mean,32,16,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,81.1409,110.3704,0,0,2.7866,0.00575
 io-heavy,2048,medium,2.8545,nearest_size,32,16,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,81.1409,110.3704,0,0,2.7866,0.00575
 io-heavy,2048,medium,2.8545,largest_cluster,32,16,Azure,Central India,Standard_D2as_v4,4,0,0,103.4783,83.4258,113.024,0,0,2.8217,0.0117
 io-heavy,2048,medium,2.8545,random,32,16,AWS,ap-southeast-1,c5a.xlarge,2,0,0,237.2174,114.8516,86.4463,1,0,3.3051,0.01939
+io-heavy,2048,loose,3.3388,model_random_forest,32,24,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,81.1409,110.3704,0,0,2.7866,0.00575
 io-heavy,2048,loose,3.3388,historical_mean,32,24,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,81.1409,110.3704,0,0,2.7866,0.00575
 io-heavy,2048,loose,3.3388,nearest_size,32,24,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,81.1409,110.3704,0,0,2.7866,0.00575
 io-heavy,2048,loose,3.3388,largest_cluster,32,24,Azure,Central India,Standard_D2as_v4,4,0,0,103.4783,83.4258,113.024,0,0,2.8217,0.0117
 io-heavy,2048,loose,3.3388,random,32,24,AWS,ap-south-1,c5a.xlarge,2,0,0,52.9391,82.4475,111.8878,0,0,2.8066,0.008794
+io-heavy,3072,tight,2.8945,model_random_forest,36,9,Azure,Central India,Standard_D2as_v4,4,0,1,33.9473,113.1461,170.207,1,0,3.8489,0.016
 io-heavy,3072,tight,2.8945,historical_mean,36,9,Azure,Central India,Standard_D2as_v4,2,0,0,-30.0963,121.741,181.1027,1,0,4.0041,0.00835
 io-heavy,3072,tight,2.8945,nearest_size,36,9,Azure,Central India,Standard_D2as_v4,2,0,1,-30.0963,121.741,181.1027,1,0,4.0041,0.00835
 io-heavy,3072,tight,2.8945,largest_cluster,36,9,Azure,Central India,Standard_D2as_v4,4,0,1,33.9473,113.1461,170.207,1,0,3.8489,0.016
 io-heavy,3072,tight,2.8945,random,36,9,AWS,ap-south-1,c5.xlarge,2,0,0,78.9535,108.9023,164.827,1,0,3.7722,0.021376
+io-heavy,3072,medium,3.7389,model_random_forest,36,18,Azure,Central India,Standard_D2as_v4,2,0,0,-30.0963,121.741,181.1027,1,0,4.0041,0.00835
 io-heavy,3072,medium,3.7389,historical_mean,36,18,Azure,Central India,Standard_D2as_v4,2,0,0,-30.0963,121.741,181.1027,1,0,4.0041,0.00835
 io-heavy,3072,medium,3.7389,nearest_size,36,18,Azure,Central India,Standard_D2as_v4,2,0,1,-30.0963,121.741,181.1027,1,0,4.0041,0.00835
 io-heavy,3072,medium,3.7389,largest_cluster,36,18,Azure,Central India,Standard_D2as_v4,4,0,1,33.9473,113.1461,170.207,1,0,3.8489,0.016
 io-heavy,3072,medium,3.7389,random,36,18,AWS,ap-southeast-1,c5a.xlarge,4,0,0,100.2721,12.9098,6.9542,0,0,2.0389,0.023922
+io-heavy,3072,loose,4.581,model_random_forest,36,27,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,121.741,181.1027,0,0,4.0041,0.00835
 io-heavy,3072,loose,4.581,historical_mean,36,27,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,121.741,181.1027,0,0,4.0041,0.00835
 io-heavy,3072,loose,4.581,nearest_size,36,27,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,121.741,181.1027,0,0,4.0041,0.00835
 io-heavy,3072,loose,4.581,largest_cluster,36,27,Azure,Central India,Standard_D2as_v4,4,0,0,91.6168,113.1461,170.207,0,0,3.8489,0.016
 io-heavy,3072,loose,4.581,random,36,27,Azure,Central India,Standard_D2ds_v4,4,0,0,407.7844,188.6473,265.9204,1,0,5.2122,0.0424
+io-heavy,5120,tight,3.9446,model_random_forest,35,9,Azure,Central India,Standard_D2as_v4,4,0,0,137.8995,134.6047,176.2201,1,0,6.2738,0.02605
 io-heavy,5120,tight,3.9446,historical_mean,35,9,Azure,Central India,Standard_D2as_v4,2,0,0,22.3744,142.265,185.2392,1,0,6.4787,0.0134
 io-heavy,5120,tight,3.9446,nearest_size,35,9,AWS,ap-south-1,c5a.xlarge,2,0,0,74.7123,128.3187,168.8191,1,0,6.1057,0.019131
 io-heavy,5120,tight,3.9446,largest_cluster,35,9,Azure,Central India,Standard_D2as_v4,4,0,0,137.8995,134.6047,176.2201,1,0,6.2738,0.02605
 io-heavy,5120,tight,3.9446,random,35,9,Azure,Southeast Asia,Standard_D4s_v3,2,0,1,257.5342,75.5721,54.4618,1,0,4.6951,0.03915
+io-heavy,5120,medium,5.2289,model_random_forest,35,18,Azure,Central India,Standard_D2as_v4,2,0,0,22.3744,142.265,185.2392,1,0,6.4787,0.0134
 io-heavy,5120,medium,5.2289,historical_mean,35,18,Azure,Central India,Standard_D2as_v4,2,0,0,22.3744,142.265,185.2392,1,0,6.4787,0.0134
 io-heavy,5120,medium,5.2289,nearest_size,35,18,Azure,Central India,Standard_D2as_v4,2,0,0,22.3744,142.265,185.2392,1,0,6.4787,0.0134
 io-heavy,5120,medium,5.2289,largest_cluster,35,18,Azure,Central India,Standard_D2as_v4,4,0,0,137.8995,134.6047,176.2201,1,0,6.2738,0.02605
 io-heavy,5120,medium,5.2289,random,35,18,Azure,Central India,Standard_D4ds_v4,4,0,0,453.8813,39.4099,64.1392,0,0,3.7281,0.06065
+io-heavy,5120,loose,6.7096,model_random_forest,35,26,Azure,Central India,Standard_D2as_v4,2,0,0,22.3744,142.265,185.2392,0,0,6.4787,0.0134
 io-heavy,5120,loose,6.7096,historical_mean,35,26,Azure,Central India,Standard_D2as_v4,2,0,0,22.3744,142.265,185.2392,0,0,6.4787,0.0134
 io-heavy,5120,loose,6.7096,nearest_size,35,26,Azure,Central India,Standard_D2as_v4,2,0,0,22.3744,142.265,185.2392,0,0,6.4787,0.0134
 io-heavy,5120,loose,6.7096,largest_cluster,35,26,Azure,Central India,Standard_D2as_v4,4,0,0,137.8995,134.6047,176.2201,0,0,6.2738,0.02605
 io-heavy,5120,loose,6.7096,random,35,26,AWS,ap-south-1,c5.xlarge,2,0,0,231.589,139.6062,182.1088,0,0,6.4075,0.036309
+memory-heavy,10,tight,0.6949,model_random_forest,32,8,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,1.3128,16.5484,0,0,0.3743,0.0008
 memory-heavy,10,tight,0.6949,historical_mean,32,8,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,1.3128,16.5484,0,1,0.3743,0.0008
 memory-heavy,10,tight,0.6949,nearest_size,32,8,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,1.3128,16.5484,0,0,0.3743,0.0008
 memory-heavy,10,tight,0.6949,largest_cluster,32,8,Azure,Central India,Standard_D2as_v4,4,0,0,87.5,0.0,15.0382,0,1,0.3695,0.0015
 memory-heavy,10,tight,0.6949,random,32,8,AWS,ap-south-1,c6i.xlarge,2,0,0,387.875,86.4438,114.4816,0,1,0.6888,0.003903
+memory-heavy,10,medium,0.8647,model_random_forest,32,16,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,1.3128,16.5484,0,0,0.3743,0.0008
 memory-heavy,10,medium,0.8647,historical_mean,32,16,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,1.3128,16.5484,0,1,0.3743,0.0008
 memory-heavy,10,medium,0.8647,nearest_size,32,16,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,1.3128,16.5484,0,0,0.3743,0.0008
 memory-heavy,10,medium,0.8647,largest_cluster,32,16,Azure,Central India,Standard_D2as_v4,4,0,0,87.5,0.0,15.0382,0,1,0.3695,0.0015
 memory-heavy,10,medium,0.8647,random,32,16,Azure,Central India,Standard_D2as_v4,4,0,0,87.5,0.0,15.0382,0,1,0.3695,0.0015
+memory-heavy,10,loose,1.0307,model_random_forest,32,24,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,1.3128,16.5484,0,0,0.3743,0.0008
 memory-heavy,10,loose,1.0307,historical_mean,32,24,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,1.3128,16.5484,0,1,0.3743,0.0008
 memory-heavy,10,loose,1.0307,nearest_size,32,24,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,1.3128,16.5484,0,0,0.3743,0.0008
 memory-heavy,10,loose,1.0307,largest_cluster,32,24,Azure,Central India,Standard_D2as_v4,4,0,0,87.5,0.0,15.0382,0,1,0.3695,0.0015
 memory-heavy,10,loose,1.0307,random,32,24,AWS,ap-southeast-1,m6i.xlarge,4,0,0,1754.7917,151.0173,115.7709,0,1,0.9274,0.014838
+memory-heavy,100,tight,0.7916,model_random_forest,32,8,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,16.4181,27.4474,0,0,0.4723,0.001
 memory-heavy,100,tight,0.7916,historical_mean,32,8,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,16.4181,27.4474,0,1,0.4723,0.001
 memory-heavy,100,tight,0.7916,nearest_size,32,8,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,16.4181,27.4474,0,0,0.4723,0.001
 memory-heavy,100,tight,0.7916,largest_cluster,32,8,Azure,Central India,Standard_D2as_v4,4,0,0,70.0,0.0,9.4738,0,1,0.4057,0.0017
 memory-heavy,100,tight,0.7916,random,32,8,AWS,ap-southeast-1,m5a.xlarge,2,0,0,817.75,214.2282,157.041,0,1,1.2747,0.009177
+memory-heavy,100,medium,0.9172,model_random_forest,32,16,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,16.4181,27.4474,0,0,0.4723,0.001
 memory-heavy,100,medium,0.9172,historical_mean,32,16,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,16.4181,27.4474,0,1,0.4723,0.001
 memory-heavy,100,medium,0.9172,nearest_size,32,16,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,16.4181,27.4474,0,0,0.4723,0.001
 memory-heavy,100,medium,0.9172,largest_cluster,32,16,Azure,Central India,Standard_D2as_v4,4,0,0,70.0,0.0,9.4738,0,1,0.4057,0.0017
 memory-heavy,100,medium,0.9172,random,32,16,AWS,ap-south-1,c5a.xlarge,2,0,0,152.4,98.6072,117.4229,0,1,0.8056,0.002524
+memory-heavy,100,loose,1.0898,model_random_forest,32,24,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,16.4181,27.4474,0,0,0.4723,0.001
 memory-heavy,100,loose,1.0898,historical_mean,32,24,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,16.4181,27.4474,0,1,0.4723,0.001
 memory-heavy,100,loose,1.0898,nearest_size,32,24,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,16.4181,27.4474,0,0,0.4723,0.001
 memory-heavy,100,loose,1.0898,largest_cluster,32,24,Azure,Central India,Standard_D2as_v4,4,0,0,70.0,0.0,9.4738,0,1,0.4057,0.0017
 memory-heavy,100,loose,1.0898,random,32,24,AWS,ap-southeast-1,m6i.xlarge,4,0,0,2068.05,234.0338,173.2422,0,1,1.355,0.02168
+memory-heavy,500,tight,1.0474,model_random_forest,32,8,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,54.6752,76.1589,0,0,0.8238,0.0017
 memory-heavy,500,tight,1.0474,historical_mean,32,8,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,54.6752,76.1589,0,1,0.8238,0.0017
 memory-heavy,500,tight,1.0474,nearest_size,32,8,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,54.6752,76.1589,0,0,0.8238,0.0017
 memory-heavy,500,tight,1.0474,largest_cluster,32,8,Azure,Central India,Standard_D2as_v4,4,0,0,29.4118,0.0,13.8895,0,1,0.5326,0.0022
 memory-heavy,500,tight,1.0474,random,32,8,AWS,ap-south-1,m5.xlarge,4,0,0,888.9176,139.0637,172.2685,0,1,1.2733,0.016812
+memory-heavy,500,medium,1.1721,model_random_forest,32,16,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,54.6752,76.1589,0,0,0.8238,0.0017
 memory-heavy,500,medium,1.1721,historical_mean,32,16,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,54.6752,76.1589,0,1,0.8238,0.0017
 memory-heavy,500,medium,1.1721,nearest_size,32,16,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,54.6752,76.1589,0,0,0.8238,0.0017
 memory-heavy,500,medium,1.1721,largest_cluster,32,16,Azure,Central India,Standard_D2as_v4,4,0,0,29.4118,0.0,13.8895,0,1,0.5326,0.0022
 memory-heavy,500,medium,1.1721,random,32,16,AWS,ap-south-1,c6i.xlarge,4,0,0,706.902,110.8378,140.1222,0,1,1.1229,0.013717
+memory-heavy,500,loose,1.3915,model_random_forest,32,24,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,54.6752,76.1589,0,0,0.8238,0.0017
 memory-heavy,500,loose,1.3915,historical_mean,32,24,Azure,Central India,Standard_D2as_v4,4,0,0,29.4118,0.0,13.8895,0,0,0.5326,0.0022
 memory-heavy,500,loose,1.3915,nearest_size,32,24,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,54.6752,76.1589,0,0,0.8238,0.0017
 memory-heavy,500,loose,1.3915,largest_cluster,32,24,Azure,Central India,Standard_D2as_v4,4,0,0,29.4118,0.0,13.8895,0,0,0.5326,0.0022
 memory-heavy,500,loose,1.3915,random,32,24,Azure,Central India,Standard_D2as_v4,4,0,0,29.4118,0.0,13.8895,0,0,0.5326,0.0022
+memory-heavy,1024,tight,1.3836,model_random_forest,32,8,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,62.7475,117.8047,0,0,1.2891,0.00265
 memory-heavy,1024,tight,1.3836,historical_mean,32,8,Azure,Central India,Standard_D2as_v4,4,0,0,24.5283,0.2188,34.1227,0,0,0.7938,0.0033
 memory-heavy,1024,tight,1.3836,nearest_size,32,8,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,62.7475,117.8047,0,0,1.2891,0.00265
 memory-heavy,1024,tight,1.3836,largest_cluster,32,8,Azure,Central India,Standard_D2as_v4,4,0,0,24.5283,0.2188,34.1227,0,0,0.7938,0.0033
 memory-heavy,1024,tight,1.3836,random,32,8,Azure,Southeast Asia,Standard_D4s_v3,4,0,0,398.7421,0.0,0.0,0,0,0.7921,0.013217
+memory-heavy,1024,medium,1.5608,model_random_forest,32,16,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,62.7475,117.8047,0,0,1.2891,0.00265
 memory-heavy,1024,medium,1.5608,historical_mean,32,16,Azure,Central India,Standard_D2as_v4,4,0,0,24.5283,0.2188,34.1227,0,0,0.7938,0.0033
 memory-heavy,1024,medium,1.5608,nearest_size,32,16,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,62.7475,117.8047,0,0,1.2891,0.00265
 memory-heavy,1024,medium,1.5608,largest_cluster,32,16,Azure,Central India,Standard_D2as_v4,4,0,0,24.5283,0.2188,34.1227,0,0,0.7938,0.0033
 memory-heavy,1024,medium,1.5608,random,32,16,Azure,Central India,Standard_D2as_v4,4,0,0,24.5283,0.2188,34.1227,0,0,0.7938,0.0033
+memory-heavy,1024,loose,1.7443,model_random_forest,32,24,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,62.7475,117.8047,0,0,1.2891,0.00265
 memory-heavy,1024,loose,1.7443,historical_mean,32,24,Azure,Central India,Standard_D2as_v4,4,0,0,24.5283,0.2188,34.1227,0,0,0.7938,0.0033
 memory-heavy,1024,loose,1.7443,nearest_size,32,24,Azure,Central India,Standard_D2as_v4,2,1,1,0.0,62.7475,117.8047,0,0,1.2891,0.00265
 memory-heavy,1024,loose,1.7443,largest_cluster,32,24,Azure,Central India,Standard_D2as_v4,4,0,0,24.5283,0.2188,34.1227,0,0,0.7938,0.0033
 memory-heavy,1024,loose,1.7443,random,32,24,AWS,ap-southeast-1,m6i.xlarge,4,0,0,648.717,56.5489,56.5489,0,0,1.2401,0.019841
+memory-heavy,2048,tight,1.5479,model_random_forest,32,8,Azure,Central India,Standard_D2as_v4,4,1,1,0.0,0.0,16.4167,0,0,1.0585,0.0044
 memory-heavy,2048,tight,1.5479,historical_mean,32,8,Azure,Central India,Standard_D2as_v4,4,1,1,0.0,0.0,16.4167,0,0,1.0585,0.0044
 memory-heavy,2048,tight,1.5479,nearest_size,32,8,Azure,Central India,Standard_D2as_v4,2,0,1,7.9545,115.4551,150.8258,1,0,2.2807,0.00475
 memory-heavy,2048,tight,1.5479,largest_cluster,32,8,Azure,Central India,Standard_D2as_v4,4,1,1,0.0,0.0,16.4167,0,0,1.0585,0.0044
 memory-heavy,2048,tight,1.5479,random,32,8,AWS,ap-southeast-1,m6i.xlarge,4,0,0,483.9318,51.6965,31.9587,1,0,1.6058,0.025693
+memory-heavy,2048,medium,2.1642,model_random_forest,32,16,Azure,Central India,Standard_D2as_v4,4,1,1,0.0,0.0,16.4167,0,0,1.0585,0.0044
 memory-heavy,2048,medium,2.1642,historical_mean,32,16,Azure,Central India,Standard_D2as_v4,2,0,1,7.9545,115.4551,150.8258,1,0,2.2807,0.00475
 memory-heavy,2048,medium,2.1642,nearest_size,32,16,Azure,Central India,Standard_D2as_v4,2,0,1,7.9545,115.4551,150.8258,1,0,2.2807,0.00475
 memory-heavy,2048,medium,2.1642,largest_cluster,32,16,Azure,Central India,Standard_D2as_v4,4,1,1,0.0,0.0,16.4167,0,0,1.0585,0.0044
 memory-heavy,2048,medium,2.1642,random,32,16,AWS,ap-southeast-1,c6i.xlarge,4,0,0,307.25,29.5515,12.695,0,0,1.3714,0.017919
+memory-heavy,2048,loose,2.5563,model_random_forest,32,24,Azure,Central India,Standard_D2as_v4,4,1,1,0.0,0.0,16.4167,0,0,1.0585,0.0044
 memory-heavy,2048,loose,2.5563,historical_mean,32,24,Azure,Central India,Standard_D2as_v4,2,0,1,7.9545,115.4551,150.8258,0,0,2.2807,0.00475
 memory-heavy,2048,loose,2.5563,nearest_size,32,24,Azure,Central India,Standard_D2as_v4,2,0,1,7.9545,115.4551,150.8258,0,0,2.2807,0.00475
 memory-heavy,2048,loose,2.5563,largest_cluster,32,24,Azure,Central India,Standard_D2as_v4,4,1,1,0.0,0.0,16.4167,0,0,1.0585,0.0044
 memory-heavy,2048,loose,2.5563,random,32,24,AWS,ap-southeast-1,m5a.xlarge,4,0,0,750.1667,145.4049,113.4743,1,0,2.5977,0.037407
+memory-heavy,3072,tight,1.8316,model_random_forest,35,9,Azure,Central India,Standard_D2as_v4,4,1,1,0.0,23.9723,23.9723,0,0,1.2967,0.0054
 memory-heavy,3072,tight,1.8316,historical_mean,35,9,Azure,Central India,Standard_D2as_v4,2,0,1,21.2963,202.0315,202.0315,1,0,3.1593,0.00655
 memory-heavy,3072,tight,1.8316,nearest_size,35,9,Azure,Central India,Standard_D2as_v4,4,1,1,0.0,23.9723,23.9723,0,0,1.2967,0.0054
 memory-heavy,3072,tight,1.8316,largest_cluster,35,9,Azure,Central India,Standard_D2as_v4,4,1,1,0.0,23.9723,23.9723,0,0,1.2967,0.0054
 memory-heavy,3072,tight,1.8316,random,35,9,Azure,Central India,Standard_D2s_v3,2,0,0,212.037,359.7323,359.7323,1,0,4.8088,0.01685
+memory-heavy,3072,medium,2.8391,model_random_forest,35,18,Azure,Central India,Standard_D2as_v4,4,1,1,0.0,23.9723,23.9723,0,0,1.2967,0.0054
 memory-heavy,3072,medium,2.8391,historical_mean,35,18,Azure,Central India,Standard_D2as_v4,2,0,1,21.2963,202.0315,202.0315,1,0,3.1593,0.00655
 memory-heavy,3072,medium,2.8391,nearest_size,35,18,Azure,Central India,Standard_D2as_v4,4,1,1,0.0,23.9723,23.9723,0,0,1.2967,0.0054
 memory-heavy,3072,medium,2.8391,largest_cluster,35,18,Azure,Central India,Standard_D2as_v4,4,1,1,0.0,23.9723,23.9723,0,0,1.2967,0.0054
 memory-heavy,3072,medium,2.8391,random,35,18,AWS,ap-south-1,c6i.xlarge,2,0,0,197.9259,171.4228,171.4228,0,0,2.8391,0.016088
+memory-heavy,3072,loose,3.1886,model_random_forest,35,26,Azure,Central India,Standard_D2as_v4,4,1,1,0.0,23.9723,23.9723,0,0,1.2967,0.0054
 memory-heavy,3072,loose,3.1886,historical_mean,35,26,Azure,Central India,Standard_D2as_v4,2,0,1,21.2963,202.0315,202.0315,0,0,3.1593,0.00655
 memory-heavy,3072,loose,3.1886,nearest_size,35,26,Azure,Central India,Standard_D2as_v4,4,1,1,0.0,23.9723,23.9723,0,0,1.2967,0.0054
 memory-heavy,3072,loose,3.1886,largest_cluster,35,26,Azure,Central India,Standard_D2as_v4,4,1,1,0.0,23.9723,23.9723,0,0,1.2967,0.0054
 memory-heavy,3072,loose,3.1886,random,35,26,AWS,ap-southeast-1,m6i.xlarge,2,0,0,335.4259,180.9895,109.9603,0,0,2.9392,0.023513
+memory-heavy,5120,tight,3.052,model_random_forest,34,9,Azure,Central India,Standard_D2as_v4,4,1,1,0.0,28.1822,28.1822,0,0,1.9949,0.0083
 memory-heavy,5120,tight,3.052,historical_mean,34,9,Azure,Central India,Standard_D2as_v4,2,0,1,23.494,218.2356,218.2356,1,0,4.9527,0.01025
 memory-heavy,5120,tight,3.052,nearest_size,34,9,Azure,Central India,Standard_D2as_v4,4,1,1,0.0,28.1822,28.1822,0,0,1.9949,0.0083
 memory-heavy,5120,tight,3.052,largest_cluster,34,9,Azure,Central India,Standard_D2as_v4,4,1,1,0.0,28.1822,28.1822,0,0,1.9949,0.0083
 memory-heavy,5120,tight,3.052,random,34,9,AWS,ap-southeast-1,c6i.xlarge,4,0,0,430.6747,121.1078,65.2156,1,0,3.4411,0.044046
+memory-heavy,5120,medium,4.3169,model_random_forest,34,17,Azure,Central India,Standard_D2as_v4,4,1,1,0.0,28.1822,28.1822,0,0,1.9949,0.0083
 memory-heavy,5120,medium,4.3169,historical_mean,34,17,Azure,Central India,Standard_D2as_v4,2,0,1,23.494,218.2356,218.2356,1,0,4.9527,0.01025
 memory-heavy,5120,medium,4.3169,nearest_size,34,17,Azure,Central India,Standard_D2as_v4,4,1,1,0.0,28.1822,28.1822,0,0,1.9949,0.0083
 memory-heavy,5120,medium,4.3169,largest_cluster,34,17,Azure,Central India,Standard_D2as_v4,4,1,1,0.0,28.1822,28.1822,0,0,1.9949,0.0083
 memory-heavy,5120,medium,4.3169,random,34,17,AWS,ap-south-1,m5a.xlarge,4,0,0,330.7711,147.9299,147.9299,0,0,3.8585,0.035754
+memory-heavy,5120,loose,5.0423,model_random_forest,34,25,Azure,Central India,Standard_D2as_v4,4,1,1,0.0,28.1822,28.1822,0,0,1.9949,0.0083
 memory-heavy,5120,loose,5.0423,historical_mean,34,25,Azure,Central India,Standard_D2as_v4,2,0,1,23.494,218.2356,218.2356,0,0,4.9527,0.01025
 memory-heavy,5120,loose,5.0423,nearest_size,34,25,Azure,Central India,Standard_D2as_v4,4,1,1,0.0,28.1822,28.1822,0,0,1.9949,0.0083
 memory-heavy,5120,loose,5.0423,largest_cluster,34,25,Azure,Central India,Standard_D2as_v4,4,1,1,0.0,28.1822,28.1822,0,0,1.9949,0.0083

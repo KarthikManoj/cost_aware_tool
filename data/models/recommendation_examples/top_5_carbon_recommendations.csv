@@ -1,6 +1,6 @@
-Rank,Cloud,Region,Machine Type,Nodes,Predicted Runtime (minutes),Predicted Cost (USD),Carbon Intensity,Renewable Percentage,Optimization Score,Recommendation Reason
-1,Azure,Southeast Asia,Standard_D2s_v3,2,1.0101124618292554,0.00421132026982924,479.62890625,5.9921875,0.25,ranked by lowest carbon intensity and higher renewable percentage.
-2,Azure,Southeast Asia,Standard_D4s_v3,2,0.6128740471139971,0.0051224761216561235,479.62890625,5.9921875,0.25,ranked by lowest carbon intensity and higher renewable percentage.
-3,Azure,Southeast Asia,Standard_D2s_v3,4,0.7006878948751254,0.005822845969585971,479.62890625,5.9921875,0.25,ranked by lowest carbon intensity and higher renewable percentage.
-4,AWS,ap-southeast-1,c5a.xlarge,2,1.124936632476191,0.0067705282333333505,479.62890625,5.9921875,0.25,ranked by lowest carbon intensity and higher renewable percentage.
-5,AWS,ap-southeast-1,c6i.xlarge,2,1.096616031111114,0.007262694600000022,479.62890625,5.9921875,0.25,ranked by lowest carbon intensity and higher renewable percentage.
+Rank,Cloud,Region,Machine Type,Nodes,Predicted Runtime (minutes),Predicted Cost (USD),Predicted Emissions (gCO2eq),Carbon Intensity,Renewable Percentage,Optimization Score,Recommendation Reason
+1,Azure,Central India,Standard_D2as_v4,2,0.5807005571428571,0.0012539286666666655,0.031886190060116455,643.32421875,18.9296875,0.0,ranked by lowest predicted emissions for this job and higher renewable percentage.
+2,Azure,Central India,Standard_D2as_v4,4,0.4045450174891775,0.0017326999999999935,0.04442702579449977,643.32421875,18.9296875,0.02308666137807,ranked by lowest predicted emissions for this job and higher renewable percentage.
+3,Azure,Central India,Standard_D2ds_v4,2,0.7063789314176039,0.0023559131255411233,0.08240039938299046,643.32421875,18.9296875,0.09299256206831143,ranked by lowest predicted emissions for this job and higher renewable percentage.
+4,Azure,Central India,Standard_D2ds_v4,4,0.4887024280657337,0.003219653751803761,0.114016071151043,643.32421875,18.9296875,0.15119444939134385,ranked by lowest predicted emissions for this job and higher renewable percentage.
+5,AWS,ap-south-1,c5a.xlarge,2,1.0818022847285709,0.0038191294000000098,0.1155160360442244,643.32421875,18.9296875,0.1539557630949377,ranked by lowest predicted emissions for this job and higher renewable percentage.

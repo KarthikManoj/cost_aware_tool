@@ -1,9 +1,9 @@
 model,model_label,target,folds,mae_mean,mae_std,rmse_mean,rmse_std,r2_mean,r2_std
 decision_tree,Decision Tree,cost_usd,5,0.00295,0.000215,0.005531,0.000504,0.807837,0.059578
 decision_tree,Decision Tree,runtime_minutes,5,0.334407,0.028007,0.622243,0.085592,0.834017,0.078908
-gradient_boosting,Gradient Boosting,cost_usd,5,0.002507,0.000371,0.004579,0.001138,0.873969,0.038844
+gradient_boosting,Gradient Boosting,cost_usd,5,0.002507,0.000371,0.004579,0.001138,0.87397,0.038845
 gradient_boosting,Gradient Boosting,runtime_minutes,5,0.284848,0.023472,0.526793,0.105628,0.884725,0.042377
 linear_regression,Linear Regression,cost_usd,5,0.004313,8.2e-05,0.006818,0.000893,0.72005,0.022718
 linear_regression,Linear Regression,runtime_minutes,5,0.574468,0.031549,0.888803,0.119146,0.68331,0.030746
-random_forest,Random Forest,cost_usd,5,0.002391,0.000376,0.004266,0.001043,0.890361,0.033623
-random_forest,Random Forest,runtime_minutes,5,0.269578,0.027345,0.509103,0.101266,0.889125,0.055776
+random_forest,Random Forest,cost_usd,5,0.002393,0.000376,0.004268,0.001043,0.890245,0.03368
+random_forest,Random Forest,runtime_minutes,5,0.269768,0.027064,0.509954,0.101907,0.888856,0.055407
