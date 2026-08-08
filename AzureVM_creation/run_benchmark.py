@@ -2,10 +2,9 @@
 """
 Run this ON THE MASTER VM after setup_cluster.sh has started the cluster.
 
-Loops: for each dataset size -> download once (untimed) -> replicate to all
-worker nodes (untimed) -> for each workload type -> for each repetition ->
-time ONLY the spark-submit call -> record full metadata row -> delete
-local dataset copy before moving to the next size -> upload results.csv to Blob.
+For each dataset size: download once (untimed), replicate to workers
+(untimed), then for each workload/repetition time only the spark-submit
+call, record a metadata row, and upload results.csv to Blob.
 
 Usage:
   python3 run_benchmark.py \
@@ -99,12 +98,8 @@ def get_hourly_price(vm_size, region):
 
 
 def download_dataset(blob_client, container, size_mb, dest_dir):
-    """Untimed. Downloads once to master's local disk.
-
-    Blob naming in the datasets container isn't fully consistent
-    (e.g. events_1024mb.csv but events_2048.csv with no "mb"), so try
-    both forms rather than assuming one pattern.
-    """
+    """Untimed. Downloads once to master's local disk. Blob naming isn't
+    fully consistent (events_1024mb.csv vs events_2048.csv), so try both."""
     container_client = blob_client.get_container_client(container)
     candidates = [f"events_{size_mb}mb.csv", f"events_{size_mb}.csv"]
     blob_name = next(
@@ -154,19 +149,11 @@ def cleanup_dataset(local_path, worker_ips, admin_user, admin_password):
 def run_one_job(master_url, job_script, dataset_local_path, workload, vcpu):
     """TIMED. Only the spark-submit call is inside the timer.
 
-    Job scripts take --input/--output (argparse), not positional args.
-    io_heavy requires --output (it reads back its own write), which needs
-    the write and the read-back to land on the same local filesystem. In
-    the real cluster the write happens on the worker's executor while the
-    driver (which plans the read) is on the master, so a plain local path
-    doesn't work there, and Azure Blob output hits a Hadoop-client jar
-    version mismatch in this Spark build (hadoop-azure needs internal
-    hadoop-common classes not present in Spark's trimmed client jars).
-    So io runs with --master local[N] instead of the cluster URL: driver
-    and "executors" share one JVM/filesystem, sidestepping the mismatch
-    entirely. Tradeoff: io numbers reflect single-node I/O, not the
-    cluster's combined disk throughput - node count won't move them the
-    way it moves cpu/memory.
+    io_heavy reads back its own write, which needs write and read-back on
+    the same filesystem. That doesn't work over the cluster URL (driver and
+    executors are on different machines) or Azure Blob (jar version
+    mismatch), so io runs with --master local[N] instead. Tradeoff: io
+    numbers reflect single-node I/O, not cluster disk throughput.
     """
     global sampling, cpu_samples
     cpu_samples = []
@@ -208,14 +195,9 @@ def run_one_job(master_url, job_script, dataset_local_path, workload, vcpu):
 
 def upload_results(blob_client, container, local_csv):
     container_client = blob_client.get_container_client(container)
-    # HOSTNAME isn't reliably exported to child processes (e.g. missing
-    # entirely when launched via nohup over a non-interactive SSH command,
-    # which silently collapsed every such run onto the same overwritten
-    # "results_unknown.csv" blob). socket.gethostname() asks the OS directly.
-    # The timestamp suffix is required too: a retry recreates a VM with the
-    # SAME hostname and starts from an empty local results.csv, so without
-    # it a retry's (smaller, partial) upload would overwrite - not add to -
-    # the original full-matrix results already sitting at that blob path.
+    # socket.gethostname() instead of $HOSTNAME, which isn't reliably passed
+    # to child processes. Timestamp suffix avoids a retry (same hostname,
+    # fresh local CSV) overwriting the original full-matrix results.
     blob_name = f"results/results_{socket.gethostname()}_{int(time.time())}.csv"
     with open(local_csv, "rb") as f:
         container_client.upload_blob(name=blob_name, data=f, overwrite=True)

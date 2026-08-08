@@ -5,9 +5,7 @@ from botocore.exceptions import ClientError
 from azure.storage.blob import BlobServiceClient
 from tqdm import tqdm
 
-# ============================================================
-# CONFIGURATION
-# ============================================================
+# Configuration
 
 AWS_BUCKET = "cost-aware-spark-research-manoj-2026"
 AWS_PREFIX = "spark-workloads/data/"
@@ -16,9 +14,7 @@ AZURE_STORAGE_ACCOUNT = os.environ["AZURE_STORAGE_ACCOUNT"]
 AZURE_STORAGE_KEY = os.environ["AZURE_STORAGE_KEY"]
 AZURE_CONTAINER = "datasets"
 
-# ============================================================
-# CONNECT TO AWS
-# ============================================================
+# Connect to aws
 
 s3 = boto3.client(
     "s3",
@@ -33,9 +29,7 @@ s3 = boto3.client(
     )
 )
 
-# ============================================================
-# CONNECT TO AZURE
-# ============================================================
+# Connect to azure
 
 connection_string = (
     f"DefaultEndpointsProtocol=https;"
@@ -47,9 +41,7 @@ connection_string = (
 blob_service = BlobServiceClient.from_connection_string(connection_string)
 container = blob_service.get_container_client(AZURE_CONTAINER)
 
-# ============================================================
-# COPY FILES
-# ============================================================
+# Copy files
 
 uploaded = 0
 failed = 0
@@ -99,9 +91,7 @@ for page in paginator.paginate(
             print(f"\nFailed: {key}")
             print(e)
 
-# ============================================================
-# SUMMARY
-# ============================================================
+# Summary
 
 print("\n==============================")
 print("Transfer Completed")

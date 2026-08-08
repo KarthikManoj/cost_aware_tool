@@ -3,18 +3,14 @@ import boto3
 from botocore.config import Config
 from azure.storage.blob import BlobServiceClient
 
-# ==========================================================
 # Configuration
-# ==========================================================
 
 AWS_BUCKET = "cost-aware-spark-research-manoj-2026"
 AWS_PREFIX = "spark-workloads/scripts/"
 
 AZURE_CONTAINER = "scripts"
 
-# ==========================================================
 # AWS Client
-# ==========================================================
 
 s3 = boto3.client(
     "s3",
@@ -29,9 +25,7 @@ s3 = boto3.client(
     )
 )
 
-# ==========================================================
 # Azure Client
-# ==========================================================
 
 connection_string = (
     f"DefaultEndpointsProtocol=https;"

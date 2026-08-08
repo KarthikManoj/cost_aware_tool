@@ -48,9 +48,7 @@ def test_zone_for_region(region: str, expected_zone: str) -> None:
 
 
 def test_append_metric_writes_header_once_and_matches_live_schema(tmp_path: Path) -> None:
-    """Regression test for the schema-drift bug where collect_metrics.py
-    wrote a 9-column instance_type-based row into a 12-column
-    machine_type-based CSV, silently corrupting performance_dataset.csv."""
+    """Written rows must match the live CSV schema, not drift from it."""
     output = tmp_path / "performance_dataset.csv"
     metric = ExperimentMetric(
         dataset_size_mb=100,

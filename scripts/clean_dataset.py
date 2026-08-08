@@ -9,25 +9,19 @@ from pyspark.sql.functions import (
     when
 )
 
-# ----------------------------------------------------
-# Create Spark Session
-# ----------------------------------------------------
+# Create Spark session
 spark = (
     SparkSession.builder
     .appName("Spark Performance Dataset Preprocessing")
     .getOrCreate()
 )
 
-# ----------------------------------------------------
-# File Paths
-# ----------------------------------------------------
+# File paths
 ROOT = Path(__file__).resolve().parents[1]
 input_path = str(ROOT / "data" / "performance" / "performance_dataset.csv")
 output_path = str(ROOT / "data" / "performance" / "cleaned_data")
 
-# ----------------------------------------------------
-# Load Dataset
-# ----------------------------------------------------
+# Load dataset
 df = (
     spark.read
     .option("header", "true")
@@ -46,9 +40,7 @@ df.printSchema()
 print("\n========== SAMPLE DATA ==========")
 df.show(10, truncate=False)
 
-# ----------------------------------------------------
-# Check Missing Values
-# ----------------------------------------------------
+# Check missing values
 print("\n========== NULL VALUES ==========")
 
 df.select([
@@ -56,9 +48,7 @@ df.select([
     for c in df.columns
 ]).show()
 
-# ----------------------------------------------------
-# Remove Duplicate Rows
-# ----------------------------------------------------
+# Remove duplicate rows
 before = df.count()
 
 df = df.dropDuplicates()
@@ -69,9 +59,7 @@ duplicates_removed = before - after
 
 print(f"\nDuplicate Rows Removed : {duplicates_removed}")
 
-# ----------------------------------------------------
-# Remove Rows with Null Values
-# ----------------------------------------------------
+# Remove rows with null values
 before = df.count()
 
 df = df.dropna(
@@ -92,9 +80,7 @@ null_rows_removed = before - after
 
 print(f"Rows Removed Due To Null Values : {null_rows_removed}")
 
-# ----------------------------------------------------
-# Standardize Text Columns
-# ----------------------------------------------------
+# Standardize text columns
 text_columns = [
     "workload_type",
     "machine_type",
@@ -104,9 +90,7 @@ text_columns = [
 for column in text_columns:
     df = df.withColumn(column, trim(lower(col(column))))
 
-# ----------------------------------------------------
-# Ensure Correct Data Types
-# ----------------------------------------------------
+# Ensure correct data types
 df = (
     df.withColumn("dataset_size_mb", col("dataset_size_mb").cast("double"))
       .withColumn("nodes", col("nodes").cast("int"))
@@ -114,18 +98,14 @@ df = (
       .withColumn("cost_usd", col("cost_usd").cast("double"))
 )
 
-# ----------------------------------------------------
-# Remove Invalid Numeric Values
-# ----------------------------------------------------
+# Remove invalid numeric values
 df = df.filter(col("dataset_size_mb") > 0)
 df = df.filter(col("nodes") > 0)
 df = df.filter(col("runtime_minutes") > 0)
 df = df.filter(col("runtime_minutes") < 1440)
 df = df.filter(col("cost_usd") >= 0)
 
-# ----------------------------------------------------
-# Validate Workload Types
-# ----------------------------------------------------
+# Validate workload types
 valid_workloads = [
     "cpu-heavy",
     "memory-heavy",
@@ -137,9 +117,7 @@ valid_workloads = [
 
 df = df.filter(col("workload_type").isin(valid_workloads))
 
-# ----------------------------------------------------
-# Validate Instance Types
-# ----------------------------------------------------
+# Validate instance types
 valid_instances = [
     "c5.xlarge",
     "c5a.xlarge",
@@ -152,37 +130,27 @@ valid_instances = [
 
 df = df.filter(col("machine_type").isin(valid_instances))
 
-# ----------------------------------------------------
-# Remove Empty Strings
-# ----------------------------------------------------
+# Remove empty strings
 df = df.filter(col("workload_type") != "")
 df = df.filter(col("machine_type") != "")
 df = df.filter(col("source") != "")
 
-# ----------------------------------------------------
-# Cache Cleaned Dataset
-# ----------------------------------------------------
+# Cache cleaned dataset
 df.cache()
 
 final_rows = df.count()
 
-# ----------------------------------------------------
-# Display Summary Statistics
-# ----------------------------------------------------
+# Display summary statistics
 print("\n========== CLEANED DATA SUMMARY ==========")
 
 df.describe().show()
 
-# ----------------------------------------------------
-# Display Sample Records
-# ----------------------------------------------------
+# Display sample records
 print("\n========== CLEANED DATA SAMPLE ==========")
 
 df.show(10, truncate=False)
 
-# ----------------------------------------------------
-# Save Clean Dataset
-# ----------------------------------------------------
+# Save clean dataset
 (
     df.coalesce(1)
       .write
@@ -191,9 +159,7 @@ df.show(10, truncate=False)
       .csv(output_path)
 )
 
-# ----------------------------------------------------
-# Cleaning Report
-# ----------------------------------------------------
+# Cleaning report
 print("\n========== CLEANING REPORT ==========")
 print(f"Original Rows              : {original_rows}")
 print(f"Duplicate Rows Removed     : {duplicates_removed}")

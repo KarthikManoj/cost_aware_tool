@@ -1,8 +1,6 @@
 import pandas as pd
 
-# ============================================================
-# FILE PATHS
-# ============================================================
+# File paths
 
 AWS_FILE = "performance_dataset.csv"
 AZURE_FILE = "merged_azure_results_clean.csv"
@@ -12,9 +10,7 @@ RENEWABLE_FILE = "/Users/manojanbalagan/Documents/research/research/cost-aware-i
 
 OUTPUT_FILE = "cloud_carbon_model_dataset.csv"
 
-# ============================================================
-# LOAD DATA
-# ============================================================
+# Load data
 
 print("Loading datasets...")
 
@@ -24,17 +20,13 @@ azure = pd.read_csv(AZURE_FILE)
 carbon = pd.read_csv(CARBON_FILE)
 renewable = pd.read_csv(RENEWABLE_FILE)
 
-# ============================================================
-# STANDARDIZE AWS DATASET
-# ============================================================
+# Standardize aws dataset
 
 aws = aws.rename(columns={
     "instance_type": "machine_type"
 })
 
-# ============================================================
-# STANDARDIZE AZURE DATASET
-# ============================================================
+# Standardize azure dataset
 
 azure = azure.rename(columns={
     "VM_Size": "machine_type",
@@ -46,9 +38,7 @@ azure = azure.rename(columns={
     "Workload": "workload_type"
 })
 
-# ============================================================
-# KEEP ONLY REQUIRED PERFORMANCE COLUMNS
-# ============================================================
+# Keep only required performance columns
 
 performance_columns = [
     "cloud",
@@ -65,17 +55,13 @@ performance_columns = [
 aws = aws[performance_columns]
 azure = azure[performance_columns]
 
-# ============================================================
-# MERGE AWS + AZURE
-# ============================================================
+# Merge aws + azure
 
 performance = pd.concat([aws, azure], ignore_index=True)
 
 print("\nPerformance dataset shape:", performance.shape)
 
-# ============================================================
-# STANDARDIZE CARBON DATASET COLUMN NAMES
-# ============================================================
+# Standardize carbon dataset column names
 
 carbon = carbon.rename(columns={
     "Cloud": "cloud",
@@ -91,9 +77,7 @@ renewable = renewable.rename(columns={
     "Renewable_Percentage": "renewable_percentage"
 })
 
-# ============================================================
-# NORMALIZE MERGE KEYS
-# ============================================================
+# Normalize merge keys
 
 def normalize_keys(df):
     df["cloud"] = (
@@ -124,9 +108,7 @@ performance = normalize_keys(performance)
 carbon = normalize_keys(carbon)
 renewable = normalize_keys(renewable)
 
-# ============================================================
-# MERGE DAILY CARBON DATA
-# ============================================================
+# Merge daily carbon data
 
 carbon_daily = pd.merge(
     carbon,
@@ -142,9 +124,7 @@ carbon_daily = pd.merge(
 
 print("Carbon daily dataset shape:", carbon_daily.shape)
 
-# ============================================================
-# CALCULATE REGIONAL MEAN VALUES
-# ============================================================
+# Calculate regional mean values
 
 carbon_summary = (
     carbon_daily
@@ -164,9 +144,7 @@ carbon_summary = (
 
 print("Carbon summary shape:", carbon_summary.shape)
 
-# ============================================================
-# DISPLAY UNIQUE VALUES
-# ============================================================
+# Display unique values
 
 print("\n===== PERFORMANCE =====")
 print("Cloud:", performance["cloud"].unique())
@@ -178,9 +156,7 @@ print("Cloud:", carbon_summary["cloud"].unique())
 print("Region:", carbon_summary["region"].unique())
 print("Electricity Zone:", carbon_summary["electricity_zone"].unique())
 
-# ============================================================
-# MERGE PERFORMANCE + CARBON
-# ============================================================
+# Merge performance + carbon
 
 final_dataset = pd.merge(
     performance,
@@ -193,16 +169,12 @@ final_dataset = pd.merge(
     how="left"
 )
 
-# ============================================================
-# CHECK FOR MISSING VALUES
-# ============================================================
+# Check for missing values
 
 print("\nMissing values")
 print(final_dataset.isnull().sum())
 
-# ============================================================
-# SAVE FINAL DATASET
-# ============================================================
+# Save final dataset
 
 final_dataset.to_csv(OUTPUT_FILE, index=False)
 

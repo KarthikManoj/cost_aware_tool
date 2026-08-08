@@ -274,8 +274,7 @@ def already_completed(
         data = pd.read_csv(path, on_bad_lines="skip")
     except Exception:
         return False
-    # The performance CSV names this column machine_type; accept the legacy
-    # instance_type name too so older files still resume correctly.
+    # Accept the legacy instance_type column name too.
     machine_column = "machine_type" if "machine_type" in data.columns else "instance_type"
     required = {"dataset_size_mb", "workload_type", machine_column, "nodes", "source"}
     if not required.issubset(data.columns):

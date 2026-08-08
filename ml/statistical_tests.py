@@ -1,32 +1,16 @@
-"""Statistical significance testing for the model comparison.
+"""Paired significance tests between models, using matched cross-validation
+folds instead of just comparing mean/std metrics.
 
-`train_model.py --cross-validate` reports the mean and standard deviation of
-each metric across folds, which shows *that* one model scored better but not
-whether the difference could plausibly be noise. On 200-odd rows that
-distinction matters: a 0.02 gap in R2 across five folds is not evidence of
-anything.
-
-This module keeps the per-fold errors (rather than collapsing them
-immediately) so that models can be compared with a paired test on matched
-folds, which is the correct design -- every model sees exactly the same splits.
-
-Produces
---------
+Produces:
     per_fold_metrics.csv           one row per model, fold and target
     model_significance.csv         pairwise paired tests between models
     repeatability.csv              variance across repeated identical runs
     statistical_tests_summary.json headline findings
 
-Notes on interpretation
------------------------
-With k folds you have k paired observations. The Wilcoxon signed-rank test
-needs at least six pairs to be able to return p < 0.05 at all, so with five
-folds it is reported for completeness but the paired t-test is the usable one.
-Both are reported alongside the raw mean difference, and you should quote the
-effect size (the difference in seconds) rather than leaning on p-values.
+With 5 folds, Wilcoxon can't reach p < 0.05 -- use the paired t-test and
+effect size instead.
 
-Usage
------
+Usage:
     python ml/statistical_tests.py
     python ml/statistical_tests.py --cv-folds 5 --target runtime_minutes
 """
@@ -141,9 +125,7 @@ def collect_per_fold_metrics(data: pd.DataFrame, n_splits: int) -> pd.DataFrame:
 
 
 def confidence_interval(values: np.ndarray, confidence: float = 0.95) -> tuple[float, float, float]:
-    """Mean and t-based CI half-width. Uses the t distribution, not 1.96 --
-    with five folds the normal approximation understates the interval by
-    roughly a factor of two."""
+    """Mean and t-based confidence interval (t, not z -- too few folds)."""
     values = np.asarray(values, dtype=float)
     n = len(values)
     mean = float(np.mean(values))
@@ -214,12 +196,8 @@ def paired_tests(per_fold: pd.DataFrame, target: str, metric: str) -> pd.DataFra
 
 
 def repeatability(data: pd.DataFrame) -> pd.DataFrame:
-    """Variance across repeated runs of an identical configuration.
-
-    This measures cloud performance noise rather than model error, and is a
-    finding in its own right: it sets a floor on how accurate any predictor
-    could possibly be.
-    """
+    """Variance across repeated runs of the same configuration -- sets a
+    floor on how accurate any predictor could be."""
     grouped = data.groupby(SCENARIO_COLUMNS + CONFIG_COLUMNS)
     rows: list[dict] = []
 

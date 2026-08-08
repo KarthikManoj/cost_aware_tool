@@ -1,20 +1,15 @@
 #!/usr/bin/env python3
-"""
-Run from your control machine after run_sequential_matrix.sh (or a retry)
-finishes or is interrupted. Builds the ground truth of what actually
-succeeded vs failed vs never ran, by combining:
-  - matrix_run_summary.csv (combo-level: which VM configs were skipped/failed
-    entirely, written locally by run_sequential_matrix.sh / retry_failed.sh)
-  - every results_*.csv in Blob under results/ (individual run-level rows)
+"""Run after run_sequential_matrix.sh (or a retry) finishes or is
+interrupted. Combines matrix_run_summary.csv (skipped/failed combos) with
+every results_*.csv in Blob to work out what actually succeeded, failed,
+or never ran.
 
 Outputs:
-  combined_results.csv          - every individual run row collected from Blob
-  passed_runs.csv                - individual runs with Exit_Status=SUCCESS
-  failed_or_missing_runs.csv     - individual runs that failed OR never ran
-  combos_to_retry.csv            - unique (region, vm_size, nodes) needing a retry
-  retry_lists/<region>_<size>_n<nodes>.csv  - per-combo list of exactly which
-                                    (Dataset_Size_MB, Workload, Run_Number)
-                                    to redo, fed straight into retry_failed.sh
+  combined_results.csv       every individual run row collected from Blob
+  passed_runs.csv             runs with Exit_Status=SUCCESS
+  failed_or_missing_runs.csv  runs that failed or never ran
+  combos_to_retry.csv         unique (region, vm_size, nodes) needing a retry
+  retry_lists/<region>_<size>_n<nodes>.csv  exact runs to redo per combo
 """
 
 import argparse
@@ -43,7 +38,7 @@ def main():
     dataset_sizes = [int(x) for x in args.dataset_sizes.split(",")]
     workloads = args.workloads.split(",")
 
-    # ---- Step 1: which combos were skipped (quota) or failed entirely ----
+    # Combos skipped (quota) or failed entirely
     skipped_or_failed_combos = {}  # (region, size, nodes) -> reason
     if os.path.isfile(args.summary_csv):
         with open(args.summary_csv, newline="") as f:
@@ -52,7 +47,7 @@ def main():
                     key = (row["region"], row["vm_size"], int(row["nodes"]))
                     skipped_or_failed_combos[key] = row["status"] + ": " + row.get("note", "")
 
-    # ---- Step 2: download every results_*.csv from Blob ----
+    # Download every results_*.csv from Blob
     conn_str = (
         f"DefaultEndpointsProtocol=https;AccountName={args.storage_account};"
         f"AccountKey={args.storage_key};EndpointSuffix=core.windows.net"
@@ -74,7 +69,7 @@ def main():
             writer.writerows(combined_rows)
     print(f"Pulled {len(combined_rows)} individual run rows from Blob into combined_results.csv")
 
-    # Index actual runs: (region, vm_size, nodes, dataset_size_mb, workload, run_number) -> Exit_Status
+    # actual: (region, vm_size, nodes, dataset_size_mb, workload, run_number) -> Exit_Status
     actual = {}
     for row in combined_rows:
         key = (
@@ -83,7 +78,7 @@ def main():
         )
         actual[key] = row["Exit_Status"]
 
-    # ---- Step 3: build the expected full matrix and diff against actual ----
+    # Build the expected full matrix and diff against actual
     passed_rows = []
     failed_or_missing = []
     retry_combo_lists = {}  # (region, size, nodes) -> list of (size_mb, workload, run_num)
@@ -120,8 +115,7 @@ def main():
                                     "Run_Number": run_num, "Reason": reason,
                                 })
 
-                                # Only queue for retry if it's a run-level gap,
-                                # not a combo that's permanently unrunnable (quota SKIP)
+                                # Don't retry combos that are permanently unrunnable (quota SKIP)
                                 if not (combo_note and combo_note.startswith("SKIPPED")):
                                     retry_combo_lists.setdefault(combo_key, []).append(
                                         (size_mb, workload, run_num)

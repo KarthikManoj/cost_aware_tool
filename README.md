@@ -25,14 +25,18 @@ tests/                  pytest unit tests
 ```bash
 python -m venv .venv
 source .venv/bin/activate          # Windows: .venv\Scripts\activate
-pip install -r requirements.txt
-pip install -r requirements-dev.txt  # only needed to run tests
+pip install -r requirements.txt    # includes pytest and playwright, not just runtime deps
 ```
 
 `requirements.txt` is pinned to the exact versions the reported results were
 produced with. If you upgrade a dependency, re-run the pipeline below and
 diff `data/models/model_comparison.json` before trusting new numbers —
 scikit-learn especially changes model defaults across major versions.
+
+If a venv is ever moved or copied after creation, `.venv/bin/pip` will fail
+with a "bad interpreter" error (its shebang hardcodes the original absolute
+path). Use `.venv/bin/python -m pip install ...` instead — that always
+resolves correctly.
 
 ## Pipeline (run in this order)
 

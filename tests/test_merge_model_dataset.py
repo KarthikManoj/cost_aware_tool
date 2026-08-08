@@ -41,10 +41,8 @@ def _performance_row(**overrides) -> dict:
 
 
 def test_dated_row_uses_nearest_daily_reading_not_flat_mean() -> None:
-    """Regression test for the carbon-join fix: a row with a real run_date
-    should pick up that day's actual carbon reading, not the all-time
-    regional mean (which is deliberately set far away here to make a bug
-    obvious if the fallback path is used by mistake)."""
+    """A row with a real run_date should use that day's carbon reading,
+    not the regional mean (set far away here so a bug would be obvious)."""
     performance = pd.DataFrame(
         [
             _performance_row(
@@ -58,9 +56,7 @@ def test_dated_row_uses_nearest_daily_reading_not_flat_mean() -> None:
     )
     daily = pd.DataFrame(
         {
-            # Must match the datetime64 resolution attach_carbon_features casts
-            # run_timestamp to, or pd.merge_asof raises a MergeError (this is
-            # what load_daily_carbon does for real in production).
+            # Must match run_timestamp's resolution or merge_asof errors.
             "timestamp": pd.to_datetime(
                 ["2025-11-01", "2025-11-05", "2025-11-10"], utc=True
             ).astype("datetime64[ns, UTC]"),
@@ -74,7 +70,7 @@ def test_dated_row_uses_nearest_daily_reading_not_flat_mean() -> None:
     regional_means = pd.DataFrame(
         {
             "electricity_zone": ["IN"],
-            "carbon_intensity_mean": [1000.0],  # deliberately far from any daily value
+            "carbon_intensity_mean": [1000.0],  # far from any daily value on purpose
             "carbon_intensity_min": [400.0],
             "carbon_intensity_max": [500.0],
             "renewable_percentage_mean": [25.0],
@@ -140,8 +136,7 @@ def test_dated_row_picks_nearest_when_no_exact_match() -> None:
 
 
 def test_undated_row_falls_back_to_regional_mean() -> None:
-    """AWS rows have no run_date in this dataset, so they must keep using
-    the region's all-time mean carbon intensity."""
+    """Rows with no run_date fall back to the region's mean intensity."""
     performance = pd.DataFrame([_performance_row()])  # run_date is NaT
     daily = pd.DataFrame(
         columns=[

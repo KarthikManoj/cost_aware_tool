@@ -1,11 +1,5 @@
-"""Streamlit dashboard for the cost-aware and carbon-aware multi-cloud Spark advisor.
-
-This wires the UI directly to `ml.recommendation_engine.RecommendationEngine`, the
-component described in the dissertation: it discovers every AWS/Azure configuration
-present in the merged training dataset (no hardcoded machine list), predicts runtime
-and cost with the trained model, and ranks candidates against one of four
-optimization goals (cost, runtime, carbon, balanced) subject to an SLA.
-"""
+"""Streamlit dashboard for the cost/carbon-aware multi-cloud Spark advisor.
+Wraps RecommendationEngine directly -- no hardcoded machine list."""
 
 from __future__ import annotations
 
@@ -42,11 +36,7 @@ st.set_page_config(page_title="Cost & Carbon-Aware Multi-Cloud Spark Advisor", l
 
 @st.cache_resource
 def load_engine(version: int) -> RecommendationEngine:
-    """Load the recommendation engine. `version` is part of the cache key so
-    bumping st.session_state.model_version after retraining forces a reload
-    instead of returning the stale cached engine (leading underscores in
-    Streamlit's cache decorators are excluded from hashing, which would
-    defeat that purpose)."""
+    """version is part of the cache key so retraining forces a reload."""
     return RecommendationEngine(model_path=MODEL_PATH, dataset_path=DATASET_PATH)
 
 

@@ -1,45 +1,26 @@
-"""Evaluate recommendation quality against measured ground truth.
+"""Evaluate recommendation quality against measured ground truth, not just
+model accuracy.
 
-Regression accuracy (MAE/RMSE/R2) measures whether the model predicts runtime
-well. It does not measure whether the *tool* recommends good configurations,
-which is the actual research claim. This module answers the second question.
+Protocol: leave-one-scenario-out. A "scenario" is (workload_type,
+dataset_size_mb). The model trains on every other row, then recommends for
+the held-out scenario, where every candidate's true runtime/cost is known.
 
-Protocol -- leave-one-scenario-out
-----------------------------------
-A "scenario" is a (workload_type, dataset_size_mb) pair. For each scenario the
-model is trained on every row that does NOT belong to it, then asked to
-recommend a configuration for it. Because the scenario itself is held out
-entirely, the benchmark data contains measured runtime and cost for *every*
-candidate configuration in that scenario, so the true optimum is known exactly
-and the recommendation can be scored against it.
+SLA levels are per-scenario percentiles of measured runtime (tight=25th,
+medium=median, loose=75th) so they scale with job size.
 
-SLA levels are derived per scenario from the distribution of measured runtimes
-(tight = 25th percentile, medium = median, loose = 75th percentile) so that a
-"tight" deadline means the same thing for a 10 MB job as for a 5 GB one.
+Metrics per method/SLA level:
+  top1_accuracy      picked the true cost-optimal configuration
+  top3_hit_rate      true optimum was in the top 3
+  cost_regret_pct    % more expensive than the optimum
+  runtime_regret_pct % slower than the fastest feasible option
+  carbon_regret_pct  % more carbon than the greenest feasible option
+  sla_violation_rate predicted-feasible but measured runtime broke the SLA
+  infeasible_rate    no configuration believed to meet the SLA
 
-Metrics reported per method and SLA level
------------------------------------------
-  top1_accuracy      recommended configuration is the true cost-optimal one
-  top3_hit_rate      true optimum appears in the top 3 recommendations
-  cost_regret_pct    how much more the recommendation costs than the optimum
-  runtime_regret_pct how much slower than the fastest feasible configuration
-  carbon_regret_pct  how much more carbon than the greenest feasible option
-  sla_violation_rate recommendations predicted feasible whose MEASURED runtime
-                     exceeded the SLA -- the most important safety metric
-  infeasible_rate    scenarios where the method found no configuration it
-                     believed satisfied the SLA
+Baseline methods: model (trained regressor), historical_mean, nearest_size,
+largest_cluster, random (the floor).
 
-Baseline methods
-----------------
-  model             the trained regressor (see --model-type)
-  historical_mean   per-configuration mean runtime/cost from the training rows
-  nearest_size      measured values from the nearest dataset size for the same
-                    workload and configuration
-  largest_cluster   always choose the feasible configuration with most nodes
-  random            uniformly random feasible configuration (the floor)
-
-Usage
------
+Usage:
     python ml/evaluate_recommendations.py
     python ml/evaluate_recommendations.py --model-type gradient_boosting
 """
@@ -89,8 +70,7 @@ def method_names(model_types: list[str]) -> list[str]:
 
 
 def resolve_dataset(explicit: str | None) -> Path:
-    """Find the merged dataset, tolerating either of the two paths it has
-    historically been written to."""
+    """Find the merged dataset at either of its two known paths."""
     if explicit:
         path = Path(explicit)
         if not path.exists():
@@ -117,13 +97,9 @@ def load_dataset(path: Path) -> pd.DataFrame:
 
 
 def emissions_gco2eq(runtime_minutes: pd.Series, carbon_intensity: pd.Series) -> pd.Series:
-    """Relative emissions proxy used for carbon regret.
-
-    This deliberately omits instance power draw and PUE: those are constants
-    per configuration and per provider, and carbon *regret* is a ratio between
-    two configurations within the same scenario. For absolute emission figures
-    use ml/carbon_analysis.py, which applies power draw and PUE properly.
-    """
+    """Relative emissions proxy for carbon regret (omits power draw/PUE,
+    fine since this is a ratio within one scenario). For absolute figures
+    use ml/carbon_analysis.py."""
     return (runtime_minutes / 60.0) * carbon_intensity
 
 
@@ -185,12 +161,9 @@ def predict_nearest_size(
     train: pd.DataFrame,
     candidates: pd.DataFrame,
 ) -> tuple[np.ndarray, np.ndarray]:
-    """Measured values from the nearest dataset size, same workload and config.
-
-    A deliberately simple non-ML heuristic: no scaling is applied, because
-    Spark runtime is dominated by fixed overhead at small dataset sizes and
-    linear extrapolation overshoots badly there.
-    """
+    """Measured values from the nearest dataset size, same workload/config.
+    No scaling applied -- small jobs are dominated by fixed overhead, so
+    linear extrapolation overshoots."""
     runtimes: list[float] = []
     costs: list[float] = []
     fallback_runtime = float(train["runtime_minutes"].mean())
@@ -247,8 +220,7 @@ SELECTORS: dict[str, Callable[[pd.DataFrame, np.random.Generator], pd.DataFrame]
 
 
 def selector_for(method: str) -> Callable[[pd.DataFrame, np.random.Generator], pd.DataFrame]:
-    """Rule-based methods have their own ranking; everything else ranks by
-    predicted cost, which is what the production engine does for goal=cost."""
+    """Rule-based methods rank themselves; everything else ranks by cost."""
     return SELECTORS.get(method, select_by_cost)
 
 
@@ -258,7 +230,7 @@ def selector_for(method: str) -> Callable[[pd.DataFrame, np.random.Generator], p
 
 
 def regret_pct(chosen: float, best: float) -> float:
-    """Percentage by which `chosen` exceeds `best`. Zero when best is zero."""
+    """Percent by which chosen exceeds best; zero when best is zero."""
     if best <= 0:
         return 0.0
     return float((chosen - best) / best * 100.0)
@@ -273,8 +245,7 @@ def evaluate_scenario(
 ) -> list[dict]:
     """Score every method on one held-out scenario at every SLA level."""
     workload, size = scenario
-    # One row per configuration. Duplicates would break the ground-truth
-    # lookup below, which indexes on the configuration key.
+    # One row per config -- duplicates would break the ground-truth lookup.
     truth = truth.drop_duplicates(subset=CONFIG_COLUMNS).reset_index(drop=True)
     candidates = truth[CONFIG_COLUMNS + CARBON_COLUMNS].copy()
     candidates["workload_type"] = workload
@@ -289,8 +260,7 @@ def evaluate_scenario(
     hist = predict_historical_mean(train, candidates)
     predictions["historical_mean"] = hist
     predictions["nearest_size"] = predict_nearest_size(train, candidates)
-    # The rule-based methods still need runtime estimates to judge SLA
-    # feasibility; they differ from historical_mean only in how they rank.
+    # Rule-based methods reuse historical_mean's estimates, differ only in ranking.
     predictions["largest_cluster"] = hist
     predictions["random"] = hist
 
@@ -321,7 +291,7 @@ def evaluate_scenario(
             believed_feasible = scored.loc[scored["predicted_runtime_minutes"] <= sla]
             infeasible = believed_feasible.empty
             if infeasible:
-                # Mirror the production engine: fall back to the fastest option.
+                # Fall back to the fastest option, like the production engine.
                 believed_feasible = scored.nsmallest(
                     len(scored), "predicted_runtime_minutes"
                 )

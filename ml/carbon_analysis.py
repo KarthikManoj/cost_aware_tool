@@ -1,28 +1,16 @@
 """Carbon, cost and Pareto-front analysis of the benchmark results.
 
-`merge_model_dataset.py` computes a rough `estimated_emissions_gco2eq` as
-runtime_hours x carbon_intensity. That expression is dimensionally incomplete:
-gCO2eq/kWh multiplied by hours yields gCO2eq only if the cluster draws exactly
-1 kW. This module applies the full formula instead:
+Full emissions formula (merge_model_dataset.py's estimate is simplified):
 
     energy_kWh   = (instance_power_W x nodes / 1000) x (runtime_minutes / 60)
     emissions_g  = energy_kWh x grid_carbon_intensity_gCO2eq_per_kWh x PUE
 
-Power draw
-----------
-Per-instance power draw is not something the benchmark measures, so it must
-come from a published source (Boavizta or Cloud Carbon Footprint). Run
+Power draw isn't measured by the benchmark, so it comes from a published
+source. Run `python ml/carbon_analysis.py --write-power-template` to
+generate config/instance_power_draw.csv with placeholder wattages, then
+replace them with real figures before quoting absolute numbers.
 
-    python ml/carbon_analysis.py --write-power-template
-
-to emit `config/instance_power_draw.csv` pre-populated with every machine type
-in your dataset and PLACEHOLDER wattages. Replace those with real figures and
-cite the source in your dissertation. Until you do, the script still runs but
-prints a warning and marks the affected rows, so placeholder-derived numbers
-can never silently reach the write-up.
-
-Outputs (under data/results/)
------------------------------
+Outputs (under data/results/):
     carbon_per_run.csv              per-configuration emissions
     carbon_by_region.csv            emissions and intensity by cloud and region
     pareto_front.csv                non-dominated configurations per scenario
@@ -54,13 +42,11 @@ DATASET_CANDIDATES = [
 POWER_TABLE = ROOT / "config/instance_power_draw.csv"
 PRICE_TABLE = ROOT / "config/instance_prices.csv"
 
-# Power Usage Effectiveness, from the providers' published sustainability
-# reports. Update these if you cite a different year.
+# Power Usage Effectiveness, from providers' published sustainability reports.
 PUE = {"aws": 1.15, "azure": 1.18}
 DEFAULT_PUE = 1.20
 
-# Fallback used only when neither the power table nor a vCPU count is
-# available. Deliberately conservative and always reported as a placeholder.
+# Fallback when no power table or vCPU count is available.
 DEFAULT_POWER_W = 60.0
 WATTS_PER_VCPU = 12.0
 
@@ -99,17 +85,14 @@ def load_vcpu_lookup() -> dict[str, float]:
 
 
 def infer_vcpus(machine_type: str, lookup: dict[str, float]) -> float | None:
-    """Best-effort vCPU count for a machine type.
-
-    Uses the price table first, then falls back to the digit in an Azure size
-    name (Standard_D4s_v3 -> 4), then to the AWS size suffix.
-    """
+    """Best-effort vCPU count: price table, then Azure size name digit
+    (Standard_D4s_v3 -> 4), then AWS size suffix."""
     if machine_type in lookup:
         return lookup[machine_type]
 
     name = str(machine_type).lower()
 
-    # Azure: ..._d4s_v3 / d4asv4 / d2dsv4  -> the digit after the family letter
+    # Azure: d4s_v3 / d4asv4 / d2dsv4 -> digit after the family letter
     azure = re.search(r"_?d(\d+)[a-z]*_?v\d", name)
     if azure:
         return float(azure.group(1))
@@ -195,8 +178,7 @@ def attach_power(data: pd.DataFrame) -> tuple[pd.DataFrame, list[str]]:
 
     unresolved = merged["power_w"].isna()
     if unresolved.any():
-        # `inferred` is indexed by the unresolved subset only, so it must not
-        # be combined with the full-length `unresolved` mask directly.
+        # inferred is indexed by the unresolved subset only.
         inferred = merged.loc[unresolved, "machine_type"].map(
             lambda machine: infer_vcpus(machine, vcpu_lookup)
         )
@@ -260,11 +242,8 @@ def aggregate_configurations(frame: pd.DataFrame) -> pd.DataFrame:
 
 
 def pareto_mask(objectives: np.ndarray) -> np.ndarray:
-    """Boolean mask of non-dominated rows. All objectives are minimised.
-
-    Row i is dominated when some row j is no worse on every objective and
-    strictly better on at least one.
-    """
+    """Non-dominated rows (all objectives minimised). Row i is dominated if
+    some row j is no worse on everything and strictly better on one."""
     count = objectives.shape[0]
     non_dominated = np.ones(count, dtype=bool)
     for i in range(count):
@@ -290,8 +269,8 @@ def build_pareto(configurations: pd.DataFrame) -> pd.DataFrame:
 
 
 def build_tradeoff(configurations: pd.DataFrame) -> pd.DataFrame:
-    """Cheapest, greenest and fastest option for each scenario, with the cost
-    penalty and carbon saving of choosing green over cheap."""
+    """Cheapest, greenest and fastest option per scenario, plus the cost/
+    carbon trade-off between them."""
     rows: list[dict] = []
     for (workload, size), group in configurations.groupby(SCENARIO_COLUMNS):
         cheapest = group.loc[group["cost_usd"].idxmin()]

@@ -34,12 +34,9 @@ OptimizationGoal = Literal["cost", "runtime", "carbon", "balanced"]
 DEFAULT_MODEL_PATH = ROOT / "data/models/best_cloud_model.joblib"
 DEFAULT_DATASET_PATH = ROOT / "data/models/cloud_carbon_model_dataset.csv"
 
-# Columns that identify a distinct deployable configuration. Carbon features
-# are deliberately excluded: they vary per row when carbon is matched
-# per-run, so including them here would emit one "candidate" per distinct
-# daily carbon reading and fill the ranked output with duplicates of the same
-# machine. They are joined back on at region level in
-# `_build_candidate_frame`.
+# Columns that identify one deployable config. Carbon columns are excluded
+# here (joined back per-region in _build_candidate_frame) since they vary
+# per day and would create duplicate candidates.
 CANDIDATE_COLUMNS = [
     "cloud",
     "region",
@@ -98,9 +95,7 @@ class RecommendationEngine:
         self.dataset = pd.read_csv(self.dataset_path)
         self._validate_dataset()
 
-        # Power draw is needed to turn a predicted runtime into predicted
-        # emissions. When config/instance_power_draw.csv is absent the
-        # per-vCPU fallback is used, exactly as in ml/carbon_analysis.py.
+        # Needed to convert predicted runtime into predicted emissions.
         power_table = load_power_table()
         self.power_lookup: dict[str, float] = (
             dict(zip(power_table["machine_type"], power_table["power_w"].astype(float)))
@@ -228,11 +223,8 @@ class RecommendationEngine:
         scored["predicted_runtime_minutes"] = np.clip(predictions[:, 0], 0.01, None)
         scored["predicted_cost_usd"] = np.clip(predictions[:, 1], 0.0, None)
 
-        # Predicted emissions, not raw grid intensity. Ranking on intensity
-        # alone ignores how long the job runs and how many nodes it runs on,
-        # so it would always pick the lowest-intensity region even when a
-        # slower, larger cluster there emits more in absolute terms. Same
-        # formula as ml/carbon_analysis.py so the two agree.
+        # Emissions, not raw grid intensity -- accounts for runtime and node
+        # count. Same formula as ml/carbon_analysis.py.
         scored["power_w"] = scored["machine_type"].map(self._power_w)
         scored["pue"] = (
             scored["cloud"].astype(str).str.strip().str.lower().map(PUE).fillna(DEFAULT_PUE)
@@ -277,8 +269,7 @@ class RecommendationEngine:
             )
 
         candidates = workload_rows[CANDIDATE_COLUMNS].drop_duplicates().copy()
-        # Carbon features are a property of the region, not of the machine, so
-        # they are averaged per region and joined back after deduplication.
+        # Carbon is a property of the region, so average per region.
         carbon = self.dataset.groupby(["cloud", "region"], as_index=False)[
             CARBON_COLUMNS
         ].mean()
@@ -304,13 +295,20 @@ class RecommendationEngine:
             return runtime_score
         if goal == "carbon":
             return carbon_score + (0.25 * renewable_penalty)
-        # Balanced weights as specified in the dissertation methodology:
-        # 0.35 runtime + 0.35 cost + 0.20 carbon + 0.10 renewable penalty.
-        return (
-            (0.35 * runtime_score)
-            + (0.35 * cost_score)
-            + (0.20 * carbon_score)
-            + (0.10 * renewable_penalty)
+        # Balanced: L2 distance from the ideal point, weights 0.35/0.35/0.20/0.10.
+        # Uses ratio-to-best (see _ratio_to_best), not min-max, so outlier
+        # candidates don't distort one axis more than another.
+        runtime_ratio = self._ratio_to_best(candidates["predicted_runtime_minutes"])
+        cost_ratio = self._ratio_to_best(candidates["predicted_cost_usd"])
+        emissions_ratio = self._ratio_to_best(candidates["predicted_emissions_gco2eq"])
+        renewable_ratio_penalty = self._ratio_to_best(
+            candidates["renewable_percentage_mean"], higher_is_better=True
+        )
+        return np.sqrt(
+            (0.35 * runtime_ratio**2)
+            + (0.35 * cost_ratio**2)
+            + (0.20 * emissions_ratio**2)
+            + (0.10 * renewable_ratio_penalty**2)
         )
 
     def _sort_ranked_candidates(
@@ -343,10 +341,13 @@ class RecommendationEngine:
             ],
             "balanced": [
                 "optimization_score",
+                "predicted_emissions_gco2eq",
                 "predicted_cost_usd",
                 "predicted_runtime_minutes",
-                "carbon_intensity_mean",
-                "renewable_percentage_mean",
+                "cloud",
+                "region",
+                "machine_type",
+                "nodes",
             ],
         }
         ascending = [True] * len(tie_breakers[goal])
@@ -394,6 +395,18 @@ class RecommendationEngine:
         if maximum == minimum:
             return pd.Series(0.0, index=values.index)
         return (values - minimum) / (maximum - minimum)
+
+    @staticmethod
+    def _ratio_to_best(values: pd.Series, higher_is_better: bool = False) -> pd.Series:
+        """Each value's proportional gap from the best in the set.
+        0.0 = best; 0.38 = 38% worse than the best."""
+        best = values.max() if higher_is_better else values.min()
+        if not np.isfinite(best) or best <= 0:
+            # Can't divide by a non-positive optimum, fall back to min-max.
+            return RecommendationEngine._min_max(values)
+        if higher_is_better:
+            return (best - values) / best
+        return (values - best) / best
 
     @staticmethod
     def _build_reason(

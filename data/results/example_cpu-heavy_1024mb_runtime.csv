@@ -1,6 +1,0 @@
-Rank,Cloud,Region,Machine Type,Nodes,Predicted Runtime (minutes),Predicted Cost (USD),Carbon Intensity,Renewable Percentage,Optimization Score,Recommendation Reason
-1,Azure,Central India,Standard_D4ds_v4,2,0.18945941177080874,0.005570389947475943,540.0,32.0,0.0,ranked by fastest predicted runtime.
-2,Azure,Central India,Standard_D4ds_v4,4,0.2562235182430116,0.007030324809629278,540.0,32.0,0.033655895884005416,ranked by fastest predicted runtime.
-3,Azure,Central India,Standard_D2as_v4,4,0.5380021487871298,0.0018877741147156984,540.0,32.0,0.1757009670013568,ranked by fastest predicted runtime.
-4,Azure,Southeast Asia,Standard_D4s_v3,4,0.5472935224622394,0.010868398470749026,480.0,6.0,0.18038476375312,ranked by fastest predicted runtime.
-5,Azure,Central India,Standard_D2ds_v4,4,0.7734978606924638,0.006346944764081765,540.0,32.0,0.29441474270830137,ranked by fastest predicted runtime.

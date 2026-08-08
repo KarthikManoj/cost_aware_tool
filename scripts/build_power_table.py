@@ -1,50 +1,25 @@
-"""Generate config/instance_power_draw.csv from Cloud Carbon Footprint coefficients.
-
-Rather than hand-typing wattages, this script encodes the published Cloud
-Carbon Footprint (CCF) coefficients and the instance -> microarchitecture
-mapping, then derives per-node power draw. Re-run it to regenerate the table,
-and cite it in the dissertation as the provenance of every figure.
-
-Model
------
-CCF estimates processor power with a linear interpolation between the idle and
-fully-loaded draw of the microarchitecture, measured from the SPECpower
-database:
+"""Generate config/instance_power_draw.csv from Cloud Carbon Footprint (CCF)
+coefficients instead of hand-typing wattages.
 
     watts_per_vCPU = min_watts + utilisation * (max_watts - min_watts)
     power_W        = watts_per_vCPU * vCPUs
 
-`utilisation` defaults to 0.5, which is CCF's own fallback when a provider API
-does not report actual CPU utilisation. A fixed value is used for every row on
-purpose: measured CPU utilisation exists for the Azure runs in this project but
-not the AWS ones, so using measured values where available would reintroduce
-exactly the AWS/Azure asymmetry that ml/merge_model_dataset.py was changed to
-remove.
+Utilisation defaults to CCF's own 0.5 fallback and is fixed for every row
+on purpose -- using measured utilisation only where available (Azure, not
+AWS) would reintroduce the same AWS/Azure asymmetry merge_model_dataset.py
+was changed to remove.
 
-Where an instance family spans several microarchitectures (AWS and Azure both
-schedule the same instance type onto different processor generations), the
-per-vCPU figure is the unweighted mean across those architectures. This is
-CCF's approach and it is the reason a D2s_v3 draws more per vCPU than a
-D2ds_v4: the v3 family still includes older, less efficient Haswell parts.
+Where an instance spans several microarchitectures, the per-vCPU figure is
+the unweighted mean across them (CCF's approach).
 
-Scope and limitations
----------------------
-CCF's use-phase coefficients cover the processor only. Memory, storage and
-network energy are excluded, so these figures understate whole-node draw.
-They are nevertheless the right input for `ml/carbon_analysis.py`, which
-compares configurations against each other rather than reporting an absolute
-facility footprint.
+Covers processor power only, not memory/storage/network -- understates
+whole-node draw but fine for comparing configurations against each other.
 
-Sources
--------
-Coefficients: cloud-carbon-footprint/cloud-carbon-coefficients,
-    output/coefficients-aws-use.csv and output/coefficients-azure-use.csv
-Method:       https://www.cloudcarbonfootprint.org/docs/methodology/
-Azure mapping: cloud-carbon-coefficients, data/azure-instances.csv
-AWS mapping:   AWS EC2 instance-type documentation (processor per family)
+Sources: cloud-carbon-footprint/cloud-carbon-coefficients (coefficients +
+Azure instance mapping), cloudcarbonfootprint.org/docs/methodology, AWS
+EC2 instance-type docs (processor per family).
 
-Usage
------
+Usage:
     python scripts/build_power_table.py
     python scripts/build_power_table.py --utilisation 0.35
 """
@@ -80,10 +55,6 @@ COEFFICIENTS: dict[str, dict[str, tuple[float, float]]] = {
 }
 
 # machine_type -> (provider, vCPUs, [microarchitectures], provenance note)
-#
-# Azure architectures are taken directly from cloud-carbon-coefficients
-# data/azure-instances.csv. AWS architectures come from the processor AWS
-# publishes for each instance family.
 INSTANCES: list[tuple[str, str, int, list[str], str]] = [
     # --- AWS -------------------------------------------------------------
     ("m5.xlarge", "AWS", 4, ["Sky Lake", "Cascade Lake"],

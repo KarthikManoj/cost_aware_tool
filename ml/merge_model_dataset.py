@@ -1,20 +1,7 @@
-"""Build a model-ready performance + carbon dataset.
-
-Joins the AWS EMR performance dataset and the cleaned Azure Databricks results
-with regional carbon-intensity and renewable-energy features, producing
-data/models/cloud_carbon_model_dataset.csv used for model training and by the
-recommendation engine.
-
-Carbon features are matched per-row where possible: rows with a real run
-timestamp (currently only Azure Databricks runs) are matched to that
-region's nearest daily carbon/renewable reading via `pd.merge_asof`. Rows
-without a timestamp (AWS EMR runs -- this dataset never recorded one) fall
-back to the region's all-time mean, which is the best available estimate
-without a date to anchor to. A `carbon_feature_source` column on the output
-records which path each row took.
-
-The join is done on case-normalized cloud names because the carbon files mix
-"aws" and "Azure" spellings.
+"""Merge AWS/Azure performance data with regional carbon data into
+data/models/cloud_carbon_model_dataset.csv, used for training and by the
+recommendation engine. Rows with a run timestamp get the nearest daily
+carbon reading; rows without one get the region's all-time mean.
 """
 
 from __future__ import annotations
@@ -52,10 +39,8 @@ AZURE_REGION_MAP = {
     "southeastasia": "Southeast Asia",
 }
 
-# Zones that are coarser than the deployment region. If these appear in the
-# carbon files it means the data was collected before the zone fix in
-# Carbon_dataset/zones.py and every emission figure derived from it will be
-# wrong. See Carbon_dataset/zones.py for the reasoning.
+# Zones coarser than the deployment region -- data collected before the
+# zone fix in Carbon_dataset/zones.py.
 COARSE_ZONES = {"IN": "IN-WE"}
 
 
@@ -119,16 +104,12 @@ def load_azure_performance(path: Path) -> pd.DataFrame:
 
 
 def load_daily_carbon(carbon_path: Path, renewable_path: Path) -> pd.DataFrame:
-    """Return the raw daily carbon+renewable table (not aggregated), sorted
-    by timestamp, for nearest-date matching against rows with a real
-    run_date."""
+    """Raw daily carbon+renewable table, sorted by timestamp, for matching
+    against rows with a real run_date."""
     carbon = pd.read_csv(carbon_path)
     renewable = pd.read_csv(renewable_path)
 
-    # Pin both to the same datetime64 resolution: pandas >= 2.x can infer
-    # different resolutions (e.g. seconds vs microseconds) for columns
-    # parsed from different-looking date strings, and pd.merge_asof requires
-    # its "on" key to match exactly, not just be tz-aware, on both sides.
+    # Pin both to the same datetime64 resolution or merge_asof errors.
     carbon["timestamp"] = pd.to_datetime(carbon["Date"], utc=True).astype("datetime64[ns, UTC]")
     renewable["timestamp"] = pd.to_datetime(renewable["Date"], utc=True).astype("datetime64[ns, UTC]")
 
@@ -152,8 +133,7 @@ def load_daily_carbon(carbon_path: Path, renewable_path: Path) -> pd.DataFrame:
 
 
 def load_carbon_features(carbon_path: Path, renewable_path: Path) -> pd.DataFrame:
-    """Region-level mean/min/max carbon and renewable features, used as the
-    fallback for rows that have no run_date to match against."""
+    """Region-level mean/min/max carbon and renewable features."""
     carbon = pd.read_csv(carbon_path)
     renewable = pd.read_csv(renewable_path)
 
@@ -186,8 +166,7 @@ def load_carbon_features(carbon_path: Path, renewable_path: Path) -> pd.DataFram
             }
         )
     )
-    # The carbon files mix cloud spellings ("aws" vs "Azure"), so build
-    # case-insensitive join keys instead of merging on the raw values.
+    # Case-insensitive join keys -- carbon files mix "aws"/"Azure" spellings.
     features["cloud_key"] = features["cloud"].astype(str).str.strip().str.lower()
     features["region_key"] = features["region"].astype(str).str.strip().str.lower()
     return features.drop(columns=["cloud", "region"])
@@ -201,33 +180,20 @@ def attach_carbon_features(
 ) -> pd.DataFrame:
     """Attach carbon/renewable features to each performance row.
 
-    Two bases are available.
+    "regional_mean" (default): every row gets that region's overall mean.
+    Keeps AWS and Azure comparable since AWS never recorded a run timestamp.
 
-    "regional_mean" (default) gives every row that region's mean over the
-    whole carbon collection window. This is the only basis under which AWS
-    and Azure are comparable: the AWS EMR benchmark never recorded a run
-    timestamp, so per-run matching would give AWS an all-time regional mean
-    while Azure got a single day's reading. Because AWS ap-south-1 and Azure
-    Central India sit on the *same* grid zone (IN-WE), that asymmetry alone
-    manufactures a difference in carbon intensity between the two providers
-    and makes "which region is greenest" an artefact of the matching rule
-    rather than a finding.
-
-    "per_run" matches rows that have a real run_date to that region's nearest
-    daily carbon reading via `pd.merge_asof`, falling back to the regional
-    mean for rows without one. Retained for future work: it becomes the
-    correct choice once every run in the dataset carries a timestamp.
+    "per_run": rows with a run_date get the nearest daily reading via
+    merge_asof; others fall back to the regional mean. Only correct once
+    every run has a timestamp.
     """
     performance = performance.reset_index(drop=True)
-    # Must match `daily["timestamp"]`'s resolution exactly (see the comment
-    # in load_daily_carbon) or pd.merge_asof raises a MergeError.
+    # Must match daily["timestamp"]'s resolution or merge_asof errors.
     performance["run_timestamp"] = (
         pd.to_datetime(performance["run_date"], utc=True, errors="coerce").astype("datetime64[ns, UTC]")
     )
 
     if basis == "regional_mean":
-        # Route every row down the regional-mean path regardless of whether
-        # it has a timestamp, so both clouds share one carbon basis.
         has_date = pd.Series(False, index=performance.index)
     else:
         has_date = performance["run_timestamp"].notna()

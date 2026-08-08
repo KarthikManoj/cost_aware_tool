@@ -45,11 +45,7 @@ MODEL_REGISTRY = {
             "n_estimators": 250,
             "random_state": 42,
             "min_samples_leaf": 1,
-            # Parallel tree fitting. Does not affect predictions -- the forest
-            # is fully determined by random_state -- but the leave-one-
-            # scenario-out evaluation refits the model 21 times per model
-            # type, which is impractically slow single-threaded.
-            "n_jobs": -1,
+            "n_jobs": -1,  # parallel fitting, doesn't affect predictions
         },
     },
     "gradient_boosting": {
@@ -73,11 +69,8 @@ PREDICTION_OUTPUT_COLUMNS = [
     "predicted_cost_usd",
 ]
  
-# Columns that identify a distinct benchmark configuration, as opposed to a
-# repeated run of the same configuration. The dataset intentionally contains
-# multiple runs of identical configurations (to capture runtime variance), so
-# splits must group on this key -- otherwise near-duplicate rows can appear in
-# both the train and test fold and inflate reported R2/RMSE.
+# Identifies one benchmark configuration. Splits must group on this so
+# repeated runs of the same config don't leak across train/test.
 GROUP_COLUMNS = ["cloud", "region", "dataset_size_mb", "workload_type", "machine_type", "nodes"]
  
  
@@ -110,8 +103,7 @@ def load_training_data(input_path: str) -> tuple[pd.DataFrame, pd.DataFrame]:
  
  
 def build_groups(x: pd.DataFrame) -> pd.Series:
-    """Build a per-row configuration key so repeated benchmark runs of the
-    same setup are treated as one group and never split across train/test."""
+    """Per-row configuration key for grouping repeated runs together."""
     return x[GROUP_COLUMNS].astype(str).agg("|".join, axis=1)
  
  
@@ -121,9 +113,8 @@ def grouped_train_test_split(
     test_size: float,
     random_state: int = 42,
 ) -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.DataFrame]:
-    """Train/test split that keeps every row of the same configuration
-    together, falling back to a plain split if there are too few distinct
-    configurations to group on."""
+    """Group-aware train/test split; falls back to a plain split if there
+    are too few distinct configurations to group on."""
     groups = build_groups(x)
     if groups.nunique() < 2:
         return train_test_split(x, y, test_size=test_size, random_state=random_state)
@@ -196,27 +187,9 @@ def select_best_model(
     comparison: dict[str, dict[str, Any]],
     cv_summary: dict[str, dict[str, Any]] | None = None,
 ) -> str:
-    """Select the best model on cross-validated average R2 where available.
- 
-    The holdout split in `compare_models` is a single draw: one 25% test
-    partition of the configuration groups. With 439 configurations that were
-    run more than once, and benchmark runtime noise reaching a coefficient of
-    variation of 84% on the worst configuration, that single estimate carries
-    real variance -- enough that the holdout and cross-validated rankings can
-    disagree, which on this dataset they do.
- 
-    Grouped k-fold uses every configuration as test data exactly once and
-    averages over folds, so it is the more reliable basis for selection. The
-    holdout metrics are still written to model_comparison.json for
-    comparison, and the difference between the top two models is not
-    statistically significant on paired fold errors (see
-    ml/statistical_tests.py), so this is a preference on stability rather
-    than a demonstrated superiority.
- 
-    Falls back to the holdout ranking when no cross-validation summary is
-    supplied, preserving the previous behaviour for callers that do not run
-    cross-validation.
-    """
+    """Pick the best model by cross-validated average R2 where available,
+    since the single holdout split has too much variance to trust alone.
+    Falls back to the holdout ranking if no CV summary is given."""
     if cv_summary:
         def cv_average_r2(model_type: str) -> float:
             return float(
@@ -253,13 +226,8 @@ def save_json(path: Path, payload: dict[str, Any]) -> None:
  
  
 def extract_feature_importance(pipeline: Pipeline) -> dict[str, dict[str, float]] | None:
-    """Return per-target feature importances, ranked highest first.
- 
-    Only tree-based estimators (decision tree, random forest, gradient
-    boosting) expose `feature_importances_`. Linear regression exposes
-    `coef_` instead, which is not directly comparable in magnitude across
-    one-hot encoded categorical features, so it is skipped here.
-    """
+    """Per-target feature importances, ranked highest first. Only tree
+    models expose this; linear regression is skipped."""
     model = pipeline.named_steps["model"]
     estimators = getattr(model, "estimators_", None)
     if not estimators or not hasattr(estimators[0], "feature_importances_"):
@@ -329,14 +297,9 @@ def compare_models(
     output_dir: str,
     best_model_output: str,
 ) -> dict[str, dict[str, Any]]:
-    """Train, evaluate, compare, and persist all model artifacts.
- 
-    Uses a group-aware holdout split (see `grouped_train_test_split`) so that
-    repeated benchmark runs of the same configuration cannot leak between
-    train and test. The holdout metrics are what model_comparison.json
-    reports; the best model, however, is chosen on grouped cross-validation
-    (see `select_best_model`), which also writes cross_validation_metrics.json.
-    """
+    """Train, evaluate, compare, and persist all model artifacts. Holdout
+    metrics go to model_comparison.json; the best model is picked by
+    cross-validation (see select_best_model)."""
     x, y = load_training_data(input_path)
     test_size = 0.25 if len(x) >= 12 else 0.34
     x_train, x_test, y_train, y_test = grouped_train_test_split(x, y, test_size=test_size)
@@ -358,8 +321,7 @@ def compare_models(
             create_prediction_frame(config["label"], x_test, y_test, predictions)
         )
  
-    # Selection is made on grouped cross-validation rather than the single
-    # holdout split above; see select_best_model for the reasoning.
+    # Best model is picked from cross-validation, not the holdout split above.
     cv_summary = cross_validate_models(
         input_path,
         str(output / "cross_validation_metrics.json"),
@@ -390,14 +352,7 @@ def cross_validate_models(
     n_splits: int = 5,
 ) -> dict[str, dict[str, Any]]:
     """Grouped k-fold cross-validation for every model in MODEL_REGISTRY.
- 
-    A single holdout split (see `compare_models`) gives one point estimate of
-    R2/RMSE, which can be unstable on a dataset this size. This reports the
-    mean and standard deviation of each metric across folds instead, which is
-    a stronger basis for the dissertation's model comparison claims. Folds
-    are grouped by configuration for the same reason as the holdout split:
-    repeated runs of the same setup must not leak across folds.
-    """
+    Reports mean/std per metric across folds instead of one holdout estimate."""
     x, y = load_training_data(input_path)
     groups = build_groups(x)
     unique_groups = int(groups.nunique())
@@ -432,10 +387,7 @@ def cross_validate_models(
             target: {
                 metric_name: {
                     "mean": round(float(np.mean(values)), 4),
-                    # ddof=1 to match ml/statistical_tests.py, which uses the
-                    # pandas default. Without this the two files report
-                    # different standard deviations for identical folds.
-                    "std": round(float(np.std(values, ddof=1)), 4),
+                    "std": round(float(np.std(values, ddof=1)), 4),  # matches statistical_tests.py
                 }
                 for metric_name, values in metrics.items()
             }

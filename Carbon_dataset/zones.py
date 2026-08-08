@@ -1,21 +1,9 @@
-"""Cloud region to ElectricityMaps zone mapping.
+"""Cloud region to ElectricityMaps zone mapping, shared by carbon_collect.py
+and renewable_collect.py so both use the same zones.
 
-Single source of truth for both `carbon_collect.py` and `renewable_collect.py`
-so the two datasets can never be fetched for different zones.
-
-Zone choice matters. ElectricityMaps exposes both a national Indian zone
-(`IN`) and finer-grained regional grids. `IN` is the all-India average, which
-blends the coal-heavy eastern grid with the comparatively cleaner western
-grid and therefore misstates the carbon intensity actually seen by workloads
-running in Mumbai or Pune.
-
-    AWS ap-south-1   -> Mumbai, Maharashtra      -> IN-WE (Western India)
-    Azure Central India -> Pune, Maharashtra     -> IN-WE (Western India)
-    AWS ap-southeast-1  -> Singapore             -> SG
-    Azure Southeast Asia -> Singapore            -> SG
-
-Singapore has no sub-national decomposition, so `SG` is already the correct
-granularity there.
+India regions use IN-WE (Western India), not the coarser all-India IN
+average, since that would misstate intensity for Mumbai/Pune workloads.
+Singapore has no sub-national split, so SG is already correct.
 """
 
 from __future__ import annotations
@@ -29,8 +17,7 @@ REGIONS: list[tuple[str, str, str]] = [
     ("Azure", "Southeast Asia", "SG"),
 ]
 
-# Zones that must never be used: they are coarser than the deployment region
-# and would silently produce misleading emission estimates.
+# Zones too coarse to use -- would silently misstate emissions.
 DEPRECATED_ZONES: dict[str, str] = {
     "IN": "IN-WE",
 }

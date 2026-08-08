@@ -1,14 +1,10 @@
 """
-Fetch cloud pricing for specific regions with an expanded on-demand size ladder:
-  AWS   : ap-south-1 (Mumbai), ap-southeast-1 (Singapore)  -> aws_prices.csv
-  Azure : Central India, Southeast Asia                    -> azure_prices.csv
+Fetch cloud pricing for AWS (ap-south-1, ap-southeast-1) and Azure (Central
+India, Southeast Asia), expanding each instance family across 4 sizes
+(large->4xlarge on AWS, 2->16 vCPU on Azure).
 
-Each instance family is expanded across 4 sizes (large -> 4xlarge on AWS,
-2 -> 16 vCPU on Azure), so the on-demand dataset covers 24 instances per
-cloud per region instead of 6.
-
-Requires: boto3, requests  |  AWS credentials must be configured (Azure needs no auth).
-Usage:  python fetch_cloud_prices.py
+Requires: boto3, requests (AWS credentials configured; Azure needs no auth).
+Usage: python fetch_cloud_prices.py
 """
 
 import csv
@@ -23,11 +19,7 @@ AWS_REGIONS = {
 }
 AZURE_REGIONS = ["centralindia", "southeastasia"]
 
-# ---------------------------------------------------------------
-# INSTANCE FAMILIES
-# Each AWS family maps to an Azure family template. {n} = vCPU count.
-# Size ladder: AWS suffix -> vCPUs (Azure size number)
-# ---------------------------------------------------------------
+# Each AWS family maps to an Azure family template; {n} = vCPU count.
 SIZE_LADDER = {          # aws suffix : vCPUs
     "large":   2,
     "xlarge":  4,
