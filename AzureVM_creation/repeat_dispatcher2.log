@@ -799,7 +799,7 @@ Traceback (most recent call last):
     subprocess.run(cmd, shell=True, check=True)
   File "/usr/lib/python3.10/subprocess.py", line 526, in run
     raise CalledProcessError(retcode, process.args,
-subprocess.CalledProcessError: Command 'sshpass -p 'IITprojectpassword@!123' ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null benchadmin@4.193.162.219 'mkdir -p /opt/benchmark/datasets/' && sshpass -p 'IITprojectpassword@!123' scp -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null /opt/benchmark/datasets/3072MB.csv benchadmin@4.193.162.219:/opt/benchmark/datasets/' returned non-zero exit status 1.
+subprocess.CalledProcessError: Command 'sshpass -p '<redacted>' ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null benchadmin@4.193.162.219 'mkdir -p /opt/benchmark/datasets/' && sshpass -p '<redacted>' scp -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null /opt/benchmark/datasets/3072MB.csv benchadmin@4.193.162.219:/opt/benchmark/datasets/' returned non-zero exit status 1.
 Deleting VMs for this combo...
 Warning: Permanently added '20.212.104.198' (ED25519) to the list of known hosts.
 Warning: Permanently added '20.212.104.198' (ED25519) to the list of known hosts.

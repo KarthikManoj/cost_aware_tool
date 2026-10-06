@@ -19,8 +19,8 @@ write_files:
 
       conn_str = (
           "DefaultEndpointsProtocol=https;"
-          "AccountName=newsares;"
-          "AccountKey=7grclRPnHIDxOgZ6FTCfi+kxkxeVn6fAnCF6hL8cQ+MXtBJF95FMxGQZAuPwgS/LaG9vIiCgEOeS+AStfuAOWw==;"
+          "AccountName=yourstorageaccount;"
+          "AccountKey=<add new key here>;"
           "EndpointSuffix=core.windows.net"
       )
       client = BlobServiceClient.from_connection_string(conn_str)

@@ -22,5 +22,5 @@ echo "Running 2048/3072 EMR matrix in ap-south-1..."
 python3 scripts/run_emr_regional_resumable_batch.py   --region ap-south-1   --ec2-key-name ""   "${COMMON_ARGS[@]}"
 
 echo "Running 2048/3072 EMR matrix in ap-southeast-1..."
-echo "Using ap-southeast-1 subnet subnet-0e24ae0acdd26d075."
+echo "Using ap-southeast-1 subnet subnet-REPLACE_ME_AP_SOUTHEAST_1."
 python3 scripts/run_emr_regional_resumable_batch.py   --region ap-southeast-1   --subnet-id ""   --ec2-key-name cost-aware-emr-key   "${COMMON_ARGS[@]}"

@@ -1,5 +1,5 @@
 {
-  "dataset": "/Users/manojanbalagan/Documents/research/research/cost-aware-infrastructure-optimization/data/models/cloud_carbon_model_dataset.csv",
+  "dataset": "<project-root>/data/models/cloud_carbon_model_dataset.csv",
   "assumptions": {
     "formula": "emissions_g = (power_W x nodes / 1000) x (runtime_min / 60) x carbon_intensity_gCO2eq_per_kWh x PUE",
     "pue": {
@@ -9,7 +9,7 @@
     "default_pue": 1.2,
     "watts_per_vcpu_fallback": 12.0,
     "default_power_w": 60.0,
-    "power_table": "/Users/manojanbalagan/Documents/research/research/cost-aware-infrastructure-optimization/config/instance_power_draw.csv"
+    "power_table": "<project-root>/config/instance_power_draw.csv"
   },
   "warnings": [],
   "configurations_evaluated": 689,

@@ -5,8 +5,8 @@ import pandas as pd
 AWS_FILE = "performance_dataset.csv"
 AZURE_FILE = "merged_azure_results_clean.csv"
 
-CARBON_FILE = "/Users/manojanbalagan/Documents/research/research/cost-aware-infrastructure-optimization/Carbon_dataset/carbon_intensity_daily.csv"
-RENEWABLE_FILE = "/Users/manojanbalagan/Documents/research/research/cost-aware-infrastructure-optimization/Carbon_dataset/renewable_intensity_daily.csv"
+CARBON_FILE = "../../Carbon_dataset/carbon_intensity_daily.csv"
+RENEWABLE_FILE = "../../Carbon_dataset/renewable_intensity_daily.csv"
 
 OUTPUT_FILE = "cloud_carbon_model_dataset.csv"
 

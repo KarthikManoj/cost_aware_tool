@@ -1,5 +1,5 @@
 {
-  "dataset": "/Users/manojanbalagan/Documents/research/research/cost-aware-infrastructure-optimization/data/models/cloud_carbon_model_dataset.csv",
+  "dataset": "<project-root>/data/models/cloud_carbon_model_dataset.csv",
   "folds": 5,
   "metric_tested": "mae",
   "models_compared": [

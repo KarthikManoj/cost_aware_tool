@@ -5,7 +5,7 @@ from azure.storage.blob import BlobServiceClient
 
 # Configuration
 
-AWS_BUCKET = "cost-aware-spark-research-manoj-2026"
+AWS_BUCKET = "your-s3-bucket-name"
 AWS_PREFIX = "spark-workloads/scripts/"
 
 AZURE_CONTAINER = "scripts"

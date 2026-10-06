@@ -22,7 +22,7 @@ REGION_OVERRIDES = {
     # cost-aware-emr-key does not exist in ap-south-1, so omit Ec2KeyName there.
     "ap-south-1": ["--ec2-key-name", ""],
     # Region-specific default subnet in ap-southeast-1; avoids inheriting the ap-south-1 subnet.
-    "ap-southeast-1": ["--subnet-id", "subnet-0e24ae0acdd26d075", "--ec2-key-name", "cost-aware-emr-key"],
+    "ap-southeast-1": ["--subnet-id", "subnet-REPLACE_ME_AP_SOUTHEAST_1", "--ec2-key-name", "cost-aware-emr-key"],
 }
 
 REGION_KEY_REQUIREMENTS = {
@@ -73,8 +73,8 @@ def ensure_required_key_pairs(regions: set[str]) -> None:
 
 def ensure_region_overrides_build_valid_requests(args: argparse.Namespace) -> None:
     checks = {
-        "ap-south-1": ("subnet-0790d25ecc4deae64", None),
-        "ap-southeast-1": ("subnet-0e24ae0acdd26d075", "cost-aware-emr-key"),
+        "ap-south-1": ("subnet-REPLACE_ME_AP_SOUTH_1", None),
+        "ap-southeast-1": ("subnet-REPLACE_ME_AP_SOUTHEAST_1", "cost-aware-emr-key"),
     }
     for region, (expected_subnet, expected_key) in checks.items():
         cmd = [
